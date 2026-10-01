@@ -2,6 +2,11 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-01 23:29 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
+`~ resources/[selfcode]/rmc_core/config.lua`
+
 ## 2026-10-01 23:26 Uhr
 **+0** neu · **~0** geändert · **-1** gelöscht
 `− resources/sync_test2.tmp`
