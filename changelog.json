@@ -82,6 +82,22 @@
         "cfg/scripte.cfg"
       ],
       "deleted": []
+    },
+    {
+      "time": "2026-10-01T23:26:17+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 1,
+        "total": 79471
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [],
+      "deleted": [
+        "resources/sync_test2.tmp"
+      ]
     }
   ]
 }
