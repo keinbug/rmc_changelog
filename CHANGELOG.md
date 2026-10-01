@@ -2,6 +2,66 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-02 00:40 Uhr
+**+0** neu · **~1** geändert · **-13** gelöscht
+`~ cfg/scripte.cfg`
+```diff
+-ensure testresource
++ensure testresource2
+```
+`− resources/[selfcode]/rmc_jobs/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/client/cutscene.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/client/npc_clear.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/html/app.js`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/html/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/html/style.css`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/locales/de.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/locales/en.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/server/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_jobs/shared/utils.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-02 00:19 Uhr
 **+13** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_jobs/README.md`

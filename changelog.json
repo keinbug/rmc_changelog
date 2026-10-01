@@ -245,6 +245,137 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-02T00:40:49+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 13,
+        "total": 79479
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "cfg/scripte.cfg"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_jobs/README.md",
+        "resources/[selfcode]/rmc_jobs/client/cutscene.lua",
+        "resources/[selfcode]/rmc_jobs/client/main.lua",
+        "resources/[selfcode]/rmc_jobs/client/npc_clear.lua",
+        "resources/[selfcode]/rmc_jobs/config.lua",
+        "resources/[selfcode]/rmc_jobs/fxmanifest.lua",
+        "resources/[selfcode]/rmc_jobs/html/app.js",
+        "resources/[selfcode]/rmc_jobs/html/index.html",
+        "resources/[selfcode]/rmc_jobs/html/style.css",
+        "resources/[selfcode]/rmc_jobs/locales/de.lua",
+        "resources/[selfcode]/rmc_jobs/locales/en.lua",
+        "resources/[selfcode]/rmc_jobs/server/main.lua",
+        "resources/[selfcode]/rmc_jobs/shared/utils.lua"
+      ],
+      "diffs": [
+        {
+          "path": "cfg/scripte.cfg",
+          "status": "M",
+          "lines": [
+            "-ensure testresource",
+            "+ensure testresource2"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/client/cutscene.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/client/npc_clear.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/html/app.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/html/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/html/style.css",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/locales/de.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/locales/en.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_jobs/shared/utils.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
