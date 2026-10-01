@@ -2,6 +2,65 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-02 00:19 Uhr
+**+13** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_jobs/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/client/cutscene.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/client/npc_clear.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/html/app.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/html/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/html/style.css`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/locales/de.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/locales/en.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_jobs/shared/utils.lua`
+```diff
++ Neue Datei
+```
+`~ cfg/scripte.cfg`
+```diff
+(Binärdatei / kein Text-Diff)
+```
+
 ## 2026-10-01 23:29 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
