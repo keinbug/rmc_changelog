@@ -1,4 +1,19 @@
 {
   "source": "/home/FiveM",
-  "entries": []
+  "entries": [
+    {
+      "time": "2026-10-01T23:21:10+02:00",
+      "initial": true,
+      "counts": {
+        "added": 79471,
+        "modified": 0,
+        "deleted": 0,
+        "total": 79471
+      },
+      "truncated": true,
+      "added": [],
+      "modified": [],
+      "deleted": []
+    }
+  ]
 }
