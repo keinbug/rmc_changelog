@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-02 20:23 Uhr
+**+0** neu · **~2** geändert · **-2** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-        {
+-            "backupDate": "20_03_27_09_2026",
+-            "backupFile": "banlist_20_03_27_09_2026.json",
+-            "backupTimestamp": 1790532196,
+-            "id": 11
+-        },
+-        {
+-            "backupDate": "20_05_27_09_2026",
+-            "backupFile": "banlist_20_05_27_09_2026.json",
+-            "backupTimestamp": 1790532321,
+```
+`~ resources/[oresmon]/rm_hackerv/server/data.json`
+```diff
+-[{"cooldowns":{"atm":1790275271,"tv":0,"crash":1790288778,"location_vehicle":0,"parkmeter":1790278782,"steal_cash":1790291249,"control":1790288882,"trafficLights":1790270949,"location_player":0,"fake_dispatch":1790172475,"unlock":1790288626,"botnet":0},"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","botnet":1500000},{"cooldowns":{"atm":0,"tv":0,"crash":0,"fake_dispatch":0,"unlock":0,"steal_cash":1790434710,"control":0,"trafficLights":0,"parkmeter":0,"location_player":0,"location_vehicle":0,"botnet":0},"identifier":"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","botnet":0}]
++[{"botnet":1500000,"cooldowns":{"steal_cash":1790291249,"tv":0,"trafficLights":1790270949,"location_vehicle":0,"crash":1790288778,"botnet":0,"control":1790288882,"fake_dispatch":1790172475,"location_player":0,"parkmeter":1790278782,"atm":1790275271,"unlock":1790288626},"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"},{"botnet":0,"cooldowns":{"steal_cash":1790964572,"tv":0,"trafficLights":0,"location_vehicle":0,"crash":0,"botnet":0,"location_player":0,"parkmeter":0,"control":0,"fake_dispatch":0,"atm":0,"unlock":0},"identifier":"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"}]
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_03_27_09_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_05_27_09_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-02 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
