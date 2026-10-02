@@ -532,6 +532,39 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-02T21:23:46+02:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 0,
+        "deleted": 0,
+        "total": 79479
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_20_17_02_10_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_20_19_02_10_2026.json"
+      ],
+      "modified": [],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_20_17_02_10_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_20_19_02_10_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        }
+      ]
     }
   ]
 }

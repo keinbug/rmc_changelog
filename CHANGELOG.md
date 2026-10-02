@@ -2,6 +2,17 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-02 21:23 Uhr
+**+2** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_20_17_02_10_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_20_19_02_10_2026.json`
+```diff
++ Neue Datei
+```
+
 ## 2026-10-02 20:23 Uhr
 **+0** neu · **~2** geändert · **-2** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
