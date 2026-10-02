@@ -591,6 +591,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-02T23:23:34+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 79479
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "-            \"date\": \"2026/10/01 - 10:00:31\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "+            \"date\": \"2026/10/01 - 10:00:31\",",
+            "+            \"sender_identifier\": \"bank\"",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Salome Blackwood\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Salome Blackwood\"",
+            "+            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\"",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"value\": 2000,",
+            "+            \"sender_name\": \"Salome Blackwood\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "-            \"value\": 2000,",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"sender_name\": \"Salome Blackwood\"",
+            "+            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"reason\": \"Savings account interest payment (Period 37)\",",
+            "-            \"date\": \"2026/09/23 - 10:00:53\",",
+            "-            \"value\": 2393,",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/09/23 - 10:00:53\",",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"value\": 2393,",
+            "+            \"reason\": \"Savings account interest payment (Period 37)\"",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"date\": \"2026/09/22 - 22:28:50\",",
+            "-            \"value\": 5000,",
+            "+            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"date\": \"2026/09/22 - 22:28:50\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"value\": 5000,",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"date\": \"2026/09/21 - 22:44:46\",",
+            "-            \"value\": 1980000,",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/09/21 - 22:44:46\",",
+            "+            \"receiver_name\": \"Nayara Avany\",",
+            "-            \"receiver_name\": \"Nayara Avany\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"value\": 1980000,",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\""
+          ]
+        }
+      ]
     }
   ]
 }

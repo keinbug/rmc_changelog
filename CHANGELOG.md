@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-02 23:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-            "reason": "Savings account interest payment (Period 38)",
+-            "date": "2026/10/01 - 10:00:31",
+-            "type": "interest_savings",
+-            "sender_identifier": "bank",
++            "type": "interest_savings",
+-            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277"
++            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277",
++            "reason": "Savings account interest payment (Period 38)",
++            "date": "2026/10/01 - 10:00:31",
++            "sender_identifier": "bank"
+```
+
 ## 2026-10-02 22:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
