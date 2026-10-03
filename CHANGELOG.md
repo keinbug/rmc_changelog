@@ -2,6 +2,40 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-03 15:23 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_helfer/client/main.lua`
+```diff
+-local function drawText3D(x, y, z, text)
+-    local onScreen, sx, sy = World3dToScreen2d(x, y, z)
+-    if not onScreen then return end
+-    SetTextScale(0.35, 0.35)
+-    SetTextFont(4)
+-    SetTextProportional(true)
+-    SetTextColour(255, 255, 255, 215)
+-    SetTextDropshadow(0, 0, 0, 0, 255)
+-    SetTextEdge(2, 0, 0, 0, 150)
+-    SetTextEntry('STRING')
+```
+`~ resources/[selfcode]/rmc_helfer/config.lua`
+```diff
+-    { label = 'Aufnahme / Rezeption',   coords = vector3(308.05, -595.24, 43.28),
++    { label = 'Station / Betten',   coords = vector4(316.18, -572.46, 43.19, 339.64),
+-          vector3(310.0, -588.0, 42.19),
+-          vector3(308.5, -592.0, 42.19),
++        vector3(307.5704, -584.7950, 43.1924),
++        vector3(312.5616, -570.9776, 43.1923),
+-    { label = 'Station / Betten',       coords = vector3(317.79, -585.47, 43.28) },
+-    { label = 'Dach / Helipad',         coords = vector3(338.50, -583.85, 74.16) },
++      { label = 'Chef-Büro',                coords = vector3(347.46, -598.38, 43.19),
++      route = {
+```
+`~ resources/[selfcode]/rmc_helfer/server/main.lua`
+```diff
+-    setSpeech(text)
++    notify(src, Config.BrawlLine or L('status_brawl'), 'error')
+```
+
 ## 2026-10-03 14:24 Uhr
 **+0** neu · **~5** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_helfer/client/main.lua`
