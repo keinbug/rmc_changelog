@@ -846,6 +846,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-03T12:23:43+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80127
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_name\": \"Jonas Lindholm\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/10/03 - 11:38:08\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"receiver_identifier\": \"char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"value\": 6588",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }

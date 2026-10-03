@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-03 12:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_name": "Jonas Lindholm",
++            "sender_identifier": "bank",
++            "date": "2026/10/03 - 11:38:08",
++            "reason": "Einzahlung auf Bankkonto",
++            "receiver_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
++            "sender_name": "Geldbörse",
++            "type": "deposit",
++            "value": 6588
++        },
+```
+
 ## 2026-10-03 11:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
