@@ -880,6 +880,98 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-03T13:24:01+02:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 2,
+        "deleted": 0,
+        "total": 80134
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_helfer/README.md",
+        "resources/[selfcode]/rmc_helfer/client/main.lua",
+        "resources/[selfcode]/rmc_helfer/config.lua",
+        "resources/[selfcode]/rmc_helfer/fxmanifest.lua",
+        "resources/[selfcode]/rmc_helfer/locales/de.lua",
+        "resources/[selfcode]/rmc_helfer/locales/en.lua",
+        "resources/[selfcode]/rmc_helfer/server/main.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/esx_basicneeds/locales/de.lua",
+        "resources/[esx_addons]/esx_basicneeds/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_helfer/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/locales/de.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/locales/en.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_helfer/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/esx_basicneeds/locales/de.lua",
+          "status": "M",
+          "lines": [
+            "-  ['got_healed_by'] = 'Du wurdest von %s geheilt.'",
+            "+  ['got_healed_by'] = 'Du wurdest von einem Teammitglied geheilt! Alles wieder Rogger!'"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/esx_basicneeds/server/main.lua",
+          "status": "M",
+          "lines": [
+            "-    help = 'Heal a player, or yourself - restores thirst, hunger, and health.',",
+            "+    help = 'Heile einen Spieler und stelle dessen Gesundheit, Hunger und Durst wieder her.',"
+          ]
+        }
+      ]
     }
   ]
 }

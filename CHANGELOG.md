@@ -2,6 +2,47 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-03 13:24 Uhr
+**+7** neu · **~2** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_helfer/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/locales/de.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/locales/en.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_helfer/server/main.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/esx_basicneeds/locales/de.lua`
+```diff
+-  ['got_healed_by'] = 'Du wurdest von %s geheilt.'
++  ['got_healed_by'] = 'Du wurdest von einem Teammitglied geheilt! Alles wieder Rogger!'
+```
+`~ resources/[esx_addons]/esx_basicneeds/server/main.lua`
+```diff
+-    help = 'Heal a player, or yourself - restores thirst, hunger, and health.',
++    help = 'Heile einen Spieler und stelle dessen Gesundheit, Hunger und Durst wieder her.',
+```
+
 ## 2026-10-03 12:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
