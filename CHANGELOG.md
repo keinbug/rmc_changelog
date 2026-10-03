@@ -2,6 +2,30 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-03 20:23 Uhr
+**+0** neu · **~1** geändert · **-2** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-        {
+-            "backupDate": "20_06_28_09_2026",
+-            "id": 11,
+-            "backupFile": "banlist_20_06_28_09_2026.json",
+-            "backupTimestamp": 1790618777
+-        },
+-        {
+-            "backupDate": "20_08_28_09_2026",
+-            "id": 11,
+-            "backupFile": "banlist_20_08_28_09_2026.json",
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_06_28_09_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_08_28_09_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-03 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
