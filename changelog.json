@@ -762,6 +762,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-03T11:23:52+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80127
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "+    \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\": [",
+            "-            \"value\": 2453,",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "+            \"value\": 8347,",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_identifier\": \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"reason\": \"Savings account interest payment (Period 38)\"",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Salome Blackwood\",",
+            "-            \"date\": \"2026/09/29 - 22:01:51\",",
+            "+            \"sender_identifier\": \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"date\": \"2026/09/24 - 21:36:24\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Mai Anderson\",",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\"",
+            "+            \"value\": 500",
+            "-            \"value\": 2000,",
+            "-            \"sender_name\": \"Salome Blackwood\",",
+            "-            \"date\": \"2026/09/29 - 21:00:33\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"date\": \"2026/09/24 - 21:32:14\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Mai Anderson\",",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "+            \"value\": 500",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"reason\": \"Savings account interest payment (Period 37)\",",
+            "+            \"receiver_identifier\": \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"value\": 8144",
+            "+        },",
+            "+        {",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/09/15 - 10:00:45\",",
+            "+            \"reason\": \"Savings account interest payment (Period 36)\",",
+            "+            \"receiver_identifier\": \"char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "-            \"value\": 2393,",
+            "-            \"reason\": \"Savings account interest payment (Period 37)\"",
+            "+            \"value\": 7946",
+            "-            \"sender_name\": \"Salome Blackwood\",",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"date\": \"2026/09/22 - 22:28:50\",",
+            "-            \"receiver_name\": \"Geldbörse\","
+          ]
+        }
+      ]
     }
   ]
 }
