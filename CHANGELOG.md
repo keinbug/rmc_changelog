@@ -2,6 +2,58 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-03 14:24 Uhr
+**+0** neu · **~5** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_helfer/client/main.lua`
+```diff
++local brawlMove = false
++-- ESX-Notify: ox-Typen auf esx_notify-Typen mappen
++local NOTIFY_TYPES = { inform = 'info', success = 'success', error = 'error', warning = 'warning' }
+-    lib.notify({ title = L('menu_title'), description = msg, type = ntype or 'inform' })
++    ESX.ShowNotification(msg, NOTIFY_TYPES[ntype or 'inform'] or 'info', 5000)
++RegisterNetEvent('rmc_helfer:client:notify', function(msg, ntype)
++    notify(msg, ntype)
++end)
++
+-local function pathBlocked(ped, from, dir, dist)
+```
+`~ resources/[selfcode]/rmc_helfer/config.lua`
+```diff
++-- route = optionale Wegpunkt-Liste. Hinweg IMMER von oben nach unten
++--         (Eintrag 1, dann 2, dann 3, ... , dann coords).
++--         Rueckweg laeuft dieselbe Strecke rueckwaerts zum Posten.
++--         Ohne route wird Config.Waypoints aufsteigend genutzt.
++-- Abstand (m), ab dem ein Wegpunkt als erreicht gilt (kleiner = genaueres Ablaufen)
++Config.WaypointArriveDist = 0.4
++
++-- Hoehendifferenz (m), die beim Ankommen noch zaehlt (darueber = falsche Etage)
++Config.WaypointArriveHeight = 1.5
++
+```
+`~ resources/[selfcode]/rmc_helfer/locales/de.lua`
+```diff
++    status_brawl        = 'Pruegelt jemanden...',
++    call_too_far        = 'Du musst im Radius von %s Metern beim Helfer sein',
+```
+`~ resources/[selfcode]/rmc_helfer/locales/en.lua`
+```diff
++    status_brawl        = 'Beating someone up...',
++    call_too_far        = 'You must be within %s meters of the helper',
+```
+`~ resources/[selfcode]/rmc_helfer/server/main.lua`
+```diff
++local guideTarget = nil    -- serverId der gefuehrten Person
++local guideName = nil      -- Ingame-Name fuer Sprueche
++local guideSex = nil       -- 'm' | 'f' | nil
++local brawlActive = false
++local brawlSince = 0
+-    TriggerClientEvent('ox_lib:notify', src, {
+-        title = L('menu_title'),
+-        description = msg,
+-        type = ntype or 'inform',
+-    })
+```
+
 ## 2026-10-03 13:24 Uhr
 **+7** neu · **~2** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_helfer/README.md`
