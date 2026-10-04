@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-04 12:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_helfer/config.lua`
+```diff
+-Config.Debug = true  -- true = Debug-Prints in F8-Konsole
++Config.Debug = false  -- true = Debug-Prints in F8-Konsole
+```
+
 ## 2026-10-04 10:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`

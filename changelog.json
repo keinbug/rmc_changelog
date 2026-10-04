@@ -1557,6 +1557,33 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-04T12:23:12+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 80134
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "myprofile",
+        "resources/[selfcode]/rmc_helfer/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_helfer/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.Debug = true  -- true = Debug-Prints in F8-Konsole",
+            "+Config.Debug = false  -- true = Debug-Prints in F8-Konsole"
+          ]
+        }
+      ]
     }
   ]
 }
