@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-04 13:24 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
++    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
+-            "receiver_name": "Savings Account",
+-            "value": 8347,
+-            "date": "2026/10/01 - 10:00:31",
++            "value": 205000,
++            "sender_name": "Geldbörse",
++            "type": "deposit",
++            "receiver_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "receiver_name": "Nino Vitale",
+```
+
 ## 2026-10-04 12:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_helfer/config.lua`
