@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-05 15:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++    "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-            "value": 205000,
+-            "sender_name": "Geldbörse",
+-            "type": "deposit",
+-            "receiver_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
+-            "receiver_name": "Nino Vitale",
+-            "sender_identifier": "bank",
+-            "reason": "Einzahlung auf Bankkonto",
+-            "date": "2026/09/16 - 14:08:34"
+```
+
 ## 2026-10-05 14:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -531,8 +547,3 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 (Binärdatei / kein Text-Diff)
 ```
-
-## 2026-10-01 23:29 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-`~ resources/[selfcode]/rmc_core/config.lua`

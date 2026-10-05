@@ -1882,6 +1882,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-05T15:23:38+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80134
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "+    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "-            \"value\": 205000,",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"type\": \"deposit\",",
+            "-            \"receiver_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"receiver_name\": \"Nino Vitale\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"date\": \"2026/09/16 - 14:08:34\"",
+            "+            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "+            \"date\": \"2026/06/05 - 22:49:32\",",
+            "+            \"value\": 21200,",
+            "+            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"type\": \"loan_payment\",",
+            "+            \"sender_name\": \"\"",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Luca Milano\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"reason\": \"Return Vehicle Fee\",",
+            "-            \"date\": \"2026/09/09 - 20:20:19\"",
+            "+            \"receiver_name\": \"Vincent Fischer\",",
+            "+            \"date\": \"2026/06/05 - 22:49:28\",",
+            "+            \"value\": 20000,",
+            "+            \"reason\": \"Kreditauszahlung: Executive Loan\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"type\": \"loan\",",
+            "+            \"sender_name\": \"Bank (Kredit)\"",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Luca Milano\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"reason\": \"Return Vehicle Fee\",",
+            "-            \"date\": \"2026/09/09 - 17:25:38\"",
+            "+            \"receiver_name\": \"Bank (PIN-Änderung)\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"value\": 200,",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"date\": \"2026/06/05 - 22:38:47\",",
+            "+            \"sender_name\": \"Vincent Fischer\"",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Hina Adams\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"reason\": \"return_vehicle\",",
+            "-            \"date\": \"2026/09/07 - 03:38:28\"",
+            "+            \"receiver_name\": \"Bank (PIN-Änderung)\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"value\": 200,",
+            "+            \"receiver_identifier\": \"bank\","
+          ]
+        }
+      ]
     }
   ]
 }
