@@ -1992,6 +1992,100 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-05T17:23:50+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 80134
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_api/server/main.lua",
+        "resources/[selfcode]/rmc_api/server/modules/items.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+    { method = 'GET',    path = '/items/catalog',                      handler = function(req, res) ItemsModule.catalog(req, res) end },",
+            "+    { method = 'GET',    path = '/items/weapons',                      handler = function(req, res) ItemsModule.weapons(req, res) end },",
+            "+    { method = 'GET',    path = '/items/data',                         handler = function(req, res) ItemsModule.data(req, res) end },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/items.lua",
+          "status": "M",
+          "lines": [
+            "+      - GET /items/catalog          - Alle Items aus ox_inventory/data/items.lua als JSON",
+            "+      - GET /items/weapons          - Waffen/Components/Ammo aus ox_inventory/data/weapons.lua",
+            "+      - GET /items/data             - Kombinierter Katalog (items.lua + weapons.lua)",
+            "+local OX_ITEMS_FILE = 'data/items.lua'",
+            "+local OX_WEAPONS_FILE = 'data/weapons.lua'",
+            "+local _fileCache = nil",
+            "+local _fileCacheAt = 0",
+            "+local function jsonSafe(value, seen)",
+            "+    local t = type(value)",
+            "+    if t == 'string' or t == 'number' or t == 'boolean' then",
+            "+        return value",
+            "+    end",
+            "+    if t == 'vector2' or t == 'vector3' or t == 'vector4' then",
+            "+        local out = { x = value.x, y = value.y }",
+            "+        if t ~= 'vector2' then out.z = value.z end",
+            "+        if t == 'vector4' then out.w = value.w end",
+            "+        return out",
+            "+    end",
+            "+    if t ~= 'table' then",
+            "+        return nil",
+            "+    end",
+            "+",
+            "+    seen = seen or {}",
+            "+    if seen[value] then return nil end",
+            "+    seen[value] = true",
+            "+",
+            "+    local n = #value",
+            "+    local isArray = n > 0",
+            "+    if isArray then",
+            "+        for k in pairs(value) do",
+            "+            if type(k) ~= 'number' or k < 1 or k > n or k % 1 ~= 0 then",
+            "+                isArray = false",
+            "+                break",
+            "+            end",
+            "+        end",
+            "+    end",
+            "+",
+            "+    local out = {}",
+            "+    if isArray then",
+            "+        for i = 1, n do",
+            "+            out[i] = jsonSafe(value[i], seen)",
+            "+        end",
+            "+        return out",
+            "+    end",
+            "+",
+            "+    for k, v in pairs(value) do",
+            "+        local kt = type(k)",
+            "+        if kt == 'string' or kt == 'number' then",
+            "+            local converted = jsonSafe(v, seen)",
+            "+            if converted ~= nil then",
+            "+                out[k] = converted",
+            "+            end",
+            "+        end",
+            "+    end",
+            "+    return out",
+            "+end",
+            "+",
+            "+local function imageUrlFor(name)",
+            "+    return '/rmc_api/items/image/' .. name .. '.png'",
+            "+end"
+          ]
+        }
+      ]
     }
   ]
 }
