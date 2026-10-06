@@ -3967,6 +3967,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-06T23:23:45+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 79491
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[oresmon]/rm_hackerv/shared/cfg.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[oresmon]/rm_hackerv/shared/cfg.lua",
+          "status": "M",
+          "lines": [
+            "-    ['phoneJobs'] = {'rosa_nera'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)\r",
+            "+    ['phoneJobs'] = {'ambulance'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)\r"
+          ]
+        }
+      ]
     }
   ]
 }
