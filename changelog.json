@@ -2535,6 +2535,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-06T19:23:50+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 79594
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "-    PricePerDay = 500,",
+            "+    PricePerDay = 100,"
+          ]
+        }
+      ]
     }
   ]
 }
