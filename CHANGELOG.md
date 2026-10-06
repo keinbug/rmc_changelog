@@ -2,6 +2,496 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-06 22:24 Uhr
+**+0** neu · **~7** geändert · **-105** gelöscht
+`~ resources/[selfcode]/rmc_boom/Config.lua`
+```diff
++Config.KeyToCarry = 47 -- G
++Config.KeyToLink = 74 -- H
++
++Config.SpeakerModel = 'ba_prop_battle_club_speaker_large'
++Config.HandModel = 'prop_boombox_01'
++Config.MaxLinked = 3
++Config.LinkDistance = 4.0
++Config.BaseDistance = 20
++Config.LinkDistanceBonus = 8
++Config.MaxDistance = 40
+```
+`~ resources/[selfcode]/rmc_boom/client/client.lua`
+```diff
+-local boomboxLights = {} -- Speichert die Auswahl-Umrandungen für jede Boombox
++local placing = false
++local placingGhost = 0
++local placingHeading = 0.0
++local wantLink = false
++local myLicense = ''
++local lastVolumeSent = {}
++local forceVolumeUntil = {}
++local nextAudioAt = 0
+-function CreateBoomboxLight(speakerId, coords)
+```
+`~ resources/[selfcode]/rmc_boom/server/server.lua`
+```diff
++local nextNuiSlot = 0
++local placingPlayers = {}
++
++local function AssignSlot()
++    local slot = nextNuiSlot
++    nextNuiSlot = nextNuiSlot + 1
++    return slot
++end
++
++local function ToVec3(c)
+```
+`~ resources/[selfcode]/rmc_boom/web/build/index.html`
+```diff
+-    <script type="module" crossorigin src="./assets/index.e6b64af6.js"></script>
++    <script type="module" crossorigin src="./assets/index.e7500d19.js"></script>
+```
+`~ resources/[selfcode]/rmc_boom/web/src/components/App.tsx`
+```diff
+-    const createRepro = (data: string) => {
+-        if (repros.length === 0) {
+-            setRepros([
+-                {
+-                    url: data,
+-                    playerRef: {current: {}},
+-                    volume: 50,
+-                    time: 0
+-                }
+-            ])
+```
+`~ resources/[selfcode]/rmc_boom/web/src/components/Navbar/Navbar.tsx`
+```diff
+-                            <Slider color="gray" size="xs" showLabelOnHover={false} min={2} max={50} className="volumeSLider" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />
++                            <Slider color="gray" size="xs" showLabelOnHover={false} min={2} max={40} className="volumeSLider" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />
+```
+`~ resources/[selfcode]/rmc_boom/web/src/components/Repros/Repros.tsx`
+```diff
+-                    key={val.url}
++                    key={`${i}-${val.url}`}
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/_manifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_bath.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_blinds.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_collision.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_details.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_lights.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_frontdoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garage.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garagedoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_hidden_office.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_insidedoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_librarydoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_marble_reflect.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_mlo.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_room.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_officeroom_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_over_shadow.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_stairs.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_storage.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_01_plants.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_02.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03_rooms.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04_mains1.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_05_mains2.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_detail.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_lights.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_plants.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_wc.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_ytyp.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_zrkadlo.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi_2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/hei_ch1_09_strm_5.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ace_hill_mansion_manifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1_slod_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_2_slod_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_4.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_7.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_arc007_slod1_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_grass_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_hillhousedecals.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_lod.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_props_combo28_slod_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_water.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_lod_slod2_09-03_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_occl_03.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_critical_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_2.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_5.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_7.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_1.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_medium017.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_small000.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_medium017.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_small000.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_building.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fackel_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuerholz.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuersteine.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fire_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_gate.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_helipad.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_logo01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_panther.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_plantcover.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecage.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecross.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ymap/ace_hill_mansion_exterior.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_change_me.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_txt.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytyp/ace_hill_mansion.ytyp`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-06 21:23 Uhr
 **+2** neu · **~4** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/abschleppen.lua`
@@ -579,12 +1069,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "value": 8347,
 -            "sender_identifier": "bank"
 +            "sender_identifier": "bank",
-```
-
-## 2026-10-03 10:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"1551161575690211428"},"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"versicherung":{"webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***","channelId":"1457180906816012401"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245"},"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"expose":{"webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***","channelId":"1551624348660531240"},"faction":{"webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960"},"support":{"webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211136"},"bell":{"webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068"},"frak":{"webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"},"marriage":{"webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"1467556343492640830"},"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172"},"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"freecam_photo":{"webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***","channelId":"1551520126367572008"},"txadmin":{"webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"1552989823604756600"},"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"}},"updatedAt":"2026-10-02T23:45:14Z","categoryId":"1551161549018759170"}
-+{"webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"versicherung":{"url":"https://discord.com/api/webhooks/1457180941750632469/***","webhookId":"1457180941750632469","channelId":"1457180906816012401"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"1552971099317211136"},"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","webhookId":"1474547103081566412","channelId":"1474547082076622979"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789","channelId":"1512475286229356617"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901","channelId":"1467556343492640830"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552","channelId":"1448120760391565352"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715","channelId":"1552989823604756600"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"expose":{"url":"https://discord.com/api/webhooks/1551624352477225113/***","webhookId":"1551624352477225113","channelId":"1551624348660531240"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353","channelId":"1551161585614061618"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709","channelId":"1552971081491419187"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490","channelId":"1513950191936344245"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439208960"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264","channelId":"1552971094267527169"},"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005","channelId":"1551161595436990575"},"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714","channelId":"1552971085937381431"},"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879","channelId":"1551161580324921455"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400","channelId":"1471556817061544068"}},"updatedAt":"2026-10-03T08:00:55Z","categoryId":"1551161549018759170"}
 ```

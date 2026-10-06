@@ -2848,6 +2848,1125 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-06T22:24:07+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 7,
+        "deleted": 105,
+        "total": 79491
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_boom/Config.lua",
+        "resources/[selfcode]/rmc_boom/client/client.lua",
+        "resources/[selfcode]/rmc_boom/server/server.lua",
+        "resources/[selfcode]/rmc_boom/web/build/index.html",
+        "resources/[selfcode]/rmc_boom/web/src/components/App.tsx",
+        "resources/[selfcode]/rmc_boom/web/src/components/Navbar/Navbar.tsx",
+        "resources/[selfcode]/rmc_boom/web/src/components/Repros/Repros.tsx"
+      ],
+      "deleted": [
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/.fxap",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/_manifest.ymf",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_bath.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_blinds.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_collision.ybn",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail2.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down01.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down02.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_details.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_lights.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_frontdoor.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garage.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garagedoor.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor1.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor2.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_hidden_office.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_insidedoor.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_librarydoor.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_marble_reflect.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_mlo.ymap",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_room.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_officeroom_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_over_shadow.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_stairs.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_storage.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_01_plants.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_02.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03_rooms.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04_mains1.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_05_mains2.ytd",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper01.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper02.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_detail.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_lights.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_plants.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_wc.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_ytyp.ytyp",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_zrkadlo.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi_2.ydr",
+        "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/hei_ch1_09_strm_5.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/.fxap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ace_hill_mansion_manifest.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1_slod_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_2_slod_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_4.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_7.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_arc007_slod1_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_grass_1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_hillhousedecals.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_lod.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_props_combo28_slod_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_water.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_lod_slod2_09-03_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_occl_03.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_critical_0.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_2.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_5.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_7.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_1.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_medium017.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_small000.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_medium017.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_small000.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_building.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fackel_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuerholz.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuersteine.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fire_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_gate.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_helipad.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_logo01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_panther.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_plantcover.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecage.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecross.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ymap/ace_hill_mansion_exterior.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_change_me.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_txt.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytyp/ace_hill_mansion.ytyp"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_boom/Config.lua",
+          "status": "M",
+          "lines": [
+            "+Config.KeyToCarry = 47 -- G",
+            "+Config.KeyToLink = 74 -- H",
+            "+",
+            "+Config.SpeakerModel = 'ba_prop_battle_club_speaker_large'",
+            "+Config.HandModel = 'prop_boombox_01'",
+            "+Config.MaxLinked = 3",
+            "+Config.LinkDistance = 4.0",
+            "+Config.BaseDistance = 20",
+            "+Config.LinkDistanceBonus = 8",
+            "+Config.MaxDistance = 40",
+            "+Config.MinSpeakerDistance = 1.6",
+            "+Config.InteractDistance = 2.2",
+            "+Config.PlaceDistance = 2.2",
+            "-    notEnoughDistance = 'Sie sollten ein wenig mehr Abstand zu den anderen Lautsprechern in der Nähe halten..',",
+            "-    helpNotify = 'Drücken Sie ~INPUT_CONTEXT~, um in den Lautsprecher zu gelangen, ~INPUT_FRONTEND_RRIGHT~, um ihn zu löschen oder ~INPUT_REPLAY_SHOWHOTKEY~, um die Boombox zu halten',",
+            "+    notEnoughDistance = 'Du brauchst etwas mehr Abstand zu den anderen Boxen.',",
+            "+    helpNotify = 'Drücke ~INPUT_CONTEXT~ für die Anlage, ~INPUT_FRONTEND_RRIGHT~ zum Einpacken oder ~INPUT_REPLAY_SHOWHOTKEY~ zum Tragen',",
+            "-    holdingBoombox = 'Drücken Sie ~INPUT_FRONTEND_RDOWN~ um den Lautsprecher zu platzieren oder ~INPUT_REPLAY_SHOWHOTKEY~ um die Animation zu ändern'",
+            "-}",
+            "+    holdingBoombox = 'Drücke ~INPUT_FRONTEND_RDOWN~ zum Abstellen oder ~INPUT_REPLAY_SHOWHOTKEY~ für die Animation',",
+            "+    placingBoombox = 'Mausrad dreht die Box  |  ~INPUT_FRONTEND_RDOWN~ hinstellen  |  ~INPUT_DETONATE~ in die Hand  |  ~INPUT_FRONTEND_RRIGHT~ abbrechen',",
+            "+    placingBoomboxLink = 'Mausrad dreht  |  ~INPUT_FRONTEND_RDOWN~ hinstellen  |  ~INPUT_VEH_HEADLIGHT~ verbinden  |  ~INPUT_DETONATE~ in die Hand  |  ~INPUT_FRONTEND_RRIGHT~ abbrechen',",
+            "+    linkedNotify = 'Box hängt jetzt an der Anlage.',",
+            "+    rigFull = 'Die Anlage hat schon 3 Boxen.',",
+            "+    modelFailed = 'Die Box konnte nicht geladen werden.'",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/client/client.lua",
+          "status": "M",
+          "lines": [
+            "-local boomboxLights = {} -- Speichert die Auswahl-Umrandungen für jede Boombox",
+            "+local placing = false",
+            "+local placingGhost = 0",
+            "+local placingHeading = 0.0",
+            "+local wantLink = false",
+            "+local myLicense = ''",
+            "+local lastVolumeSent = {}",
+            "+local forceVolumeUntil = {}",
+            "+local nextAudioAt = 0",
+            "-function CreateBoomboxLight(speakerId, coords)",
+            "-    if boomboxLights[speakerId] then",
+            "-        DeleteBoomboxLight(speakerId)",
+            "+local function asVec3(c)",
+            "+    if not c then return vector3(0.0, 0.0, 0.0) end",
+            "+    if type(c) == 'vector3' then return c end",
+            "+    if type(c) == 'table' then",
+            "+        return vector3((c.x or 0.0) + 0.0, (c.y or 0.0) + 0.0, (c.z or 0.0) + 0.0)",
+            "-    ",
+            "-    local light = {",
+            "-        id = speakerId,",
+            "-        coords = coords,",
+            "-        light = nil",
+            "-    }",
+            "-    ",
+            "-    -- Erstelle eine Auswahl-Umrandung um die Boombox",
+            "-    Citizen.CreateThread(function()",
+            "-        while speakers[speakerId] and not speakers[speakerId].permaDisabled do",
+            "-            if speakers[speakerId].coords then",
+            "-                local currentCoords = speakers[speakerId].coords",
+            "-                -- Zeichne eine blaue Auswahl-Umrandung um die Boombox (wie bei ausgewählten Objekten)",
+            "-                DrawMarker(1, currentCoords.x, currentCoords.y, currentCoords.z - 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.2, 1.2, 0.1, 0, 150, 255, 150, false, true, 2, false, nil, nil, false)",
+            "-            end",
+            "-            Citizen.Wait(0)",
+            "+    return vector3(0.0, 0.0, 0.0)",
+            "+end",
+            "+",
+            "+local function loadModel(model)",
+            "+    local hash = type(model) == 'string' and joaat(model) or model",
+            "+    if not IsModelInCdimage(hash) then return nil end",
+            "+    RequestModel(hash)",
+            "+    local tries = 0",
+            "+    while not HasModelLoaded(hash) and tries < 150 do",
+            "+        Wait(10)",
+            "+        tries = tries + 1",
+            "+    end",
+            "+    if not HasModelLoaded(hash) then return nil end",
+            "+    return hash",
+            "+end",
+            "+",
+            "+local function ensureSpeaker(id, data)",
+            "+    if not data then return end",
+            "+    data.coords = asVec3(data.coords)",
+            "+    speakers[id] = data",
+            "+end",
+            "+",
+            "+local function rigCount(rigId)",
+            "+    local n = 0",
+            "+    for id, s in pairs(speakers) do",
+            "+        if not s.permaDisabled and (s.rigId or id) == rigId then",
+            "+            n = n + 1"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/server/server.lua",
+          "status": "M",
+          "lines": [
+            "+local nextNuiSlot = 0",
+            "+local placingPlayers = {}",
+            "+",
+            "+local function AssignSlot()",
+            "+    local slot = nextNuiSlot",
+            "+    nextNuiSlot = nextNuiSlot + 1",
+            "+    return slot",
+            "+end",
+            "+",
+            "+local function ToVec3(c)",
+            "+    if not c then return nil end",
+            "+    if type(c) == 'vector3' then return c end",
+            "+    if type(c) == 'table' and c.x and c.y and c.z then",
+            "+        return vector3(c.x + 0.0, c.y + 0.0, c.z + 0.0)",
+            "+    end",
+            "+    return nil",
+            "+end",
+            "+",
+            "+local function HasItem(src)",
+            "+    if not Config.useItem then return true end",
+            "+    if Config.framework == 'esx' then",
+            "+        if not ESX then return false end",
+            "+        local xPlayer = ESX.GetPlayerFromId(src)",
+            "+        if not xPlayer then return false end",
+            "+        local item = xPlayer.getInventoryItem(Config.itemName)",
+            "+        return item and tonumber(item.count) and tonumber(item.count) > 0",
+            "+    elseif Config.framework == 'qbcore' then",
+            "+        if not QBCore then return false end",
+            "+        local Player = QBCore.Functions.GetPlayer(src)",
+            "+        if not Player then return false end",
+            "+        return Player.Functions.GetItemByName(Config.itemName) ~= nil",
+            "+    end",
+            "+    return true",
+            "+end",
+            "+",
+            "+local function PlayerLicense(src)",
+            "+    return GetPlayerIdentifierByType(src, 'license') or ''",
+            "+end",
+            "+",
+            "+local function RigMembers(rigId)",
+            "+    local list = {}",
+            "+    for id, s in pairs(Speakers) do",
+            "+        if not s.permaDisabled and (s.rigId or id) == rigId then",
+            "+            list[#list + 1] = id",
+            "+        end",
+            "+    end",
+            "+    table.sort(list)",
+            "+    return list",
+            "+end",
+            "+",
+            "+local function UpdateRigDistance(rigId)",
+            "+    if not rigId then return end",
+            "+    local members = RigMembers(rigId)",
+            "+    if #members < 1 then return end",
+            "+    local dist = (Config.BaseDistance or 20) + math.max(0, #members - 1) * (Config.LinkDistanceBonus or 8)",
+            "+    local cap = Config.MaxDistance or 40",
+            "+    if dist > cap then dist = cap end",
+            "+    for _, id in ipairs(members) do",
+            "+        Speakers[id].maxDistance = dist",
+            "+    end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/web/build/index.html",
+          "status": "M",
+          "lines": [
+            "-    <script type=\"module\" crossorigin src=\"./assets/index.e6b64af6.js\"></script>",
+            "+    <script type=\"module\" crossorigin src=\"./assets/index.e7500d19.js\"></script>"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/web/src/components/App.tsx",
+          "status": "M",
+          "lines": [
+            "-    const createRepro = (data: string) => {",
+            "-        if (repros.length === 0) {",
+            "-            setRepros([",
+            "-                {",
+            "-                    url: data,",
+            "-                    playerRef: {current: {}},",
+            "-                    volume: 50,",
+            "-                    time: 0",
+            "-                }",
+            "-            ])",
+            "-        } else {",
+            "-            const newRepro: VideoObject = {",
+            "-                url: data,",
+            "+    const createRepro = (data: string | { slot?: number, url?: string }) => {",
+            "+        const url = typeof data === 'string' ? data : (data?.url || '')",
+            "+        const slot = typeof data === 'string' ? undefined : data?.slot",
+            "+        setRepros(prev => {",
+            "+            const next = [...prev]",
+            "+            const make = (videoUrl: string): VideoObject => ({",
+            "+                url: videoUrl,",
+            "-            };",
+            "-    ",
+            "-            setRepros(prevRepros => [...prevRepros, newRepro]);",
+            "-        }",
+            "+            })",
+            "+            if (slot === undefined || slot === null || slot < 0) {",
+            "+                next.push(make(url))",
+            "+                return next",
+            "+            }",
+            "+            while (next.length <= slot) {",
+            "+                next.push(make(''))",
+            "+            }",
+            "+            return next",
+            "+        })",
+            "-        if (idx < 0 || idx >= repros.length || !repros[idx]) return;",
+            "-",
+            "-        const updatedRepros = [...repros];",
+            "-        updatedRepros[idx].url = '';",
+            "-        setRepros(updatedRepros);",
+            "-        const uR = [...repros];",
+            "-        uR[idx].url = data.url;",
+            "-        uR[idx].volume = data.volume;",
+            "+        if (idx < 0) return;",
+            "-        uR[idx].time = timeDifferenceInSeconds;",
+            "-        setRepros(uR);",
+            "-        if (uR[idx].playerRef?.current?.seekTo) {",
+            "-            uR[idx].playerRef.current.seekTo(timeDifferenceInSeconds);",
+            "-        }",
+            "+        setRepros(prev => {",
+            "+            const next = [...prev];",
+            "+            while (next.length <= idx) {",
+            "+                next.push({",
+            "+                    url: '',",
+            "+                    playerRef: {current: {}},",
+            "+                    volume: 50,",
+            "+                    time: 0",
+            "+                });",
+            "+            }",
+            "+            const current = next[idx];",
+            "+            if (current.url === data.url && current.playerRef?.current?.seekTo) {"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/web/src/components/Navbar/Navbar.tsx",
+          "status": "M",
+          "lines": [
+            "-                            <Slider color=\"gray\" size=\"xs\" showLabelOnHover={false} min={2} max={50} className=\"volumeSLider\" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />",
+            "+                            <Slider color=\"gray\" size=\"xs\" showLabelOnHover={false} min={2} max={40} className=\"volumeSLider\" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_boom/web/src/components/Repros/Repros.tsx",
+          "status": "M",
+          "lines": [
+            "-                    key={val.url}",
+            "+                    key={`${i}-${val.url}`}"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/_manifest.ymf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_bath.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_blinds.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_collision.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_detail2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down02.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_details.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_lights.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_down_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_frontdoor.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garage.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_garagedoor.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor1.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_glassdoor2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_hidden_office.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_insidedoor.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_librarydoor.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_marble_reflect.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_mlo.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_office_room.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_officeroom_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_over_shadow.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room1_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room2_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room3_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_room4_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_stairs.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_storage.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_01_plants.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_02.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_03_rooms.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_04_mains1.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_txt_05_mains2.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper02.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_detail.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_lights.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_upper_plants.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_wc.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_ytyp.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/brofx_mansion17_zrkadlo.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/ch1_09_arc007_emi_2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/brofx_mansion_17/stream/hei_ch1_09_strm_5.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ace_hill_mansion_manifest.ymf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_1_slod_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_2_slod_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_4.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_7.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_arc007_slod1_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_grass_1.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_hillhousedecals.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_land_04.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_lod.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_props_combo28_slod_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_09_water.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_lod_slod2_09-03_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/ch1_occl_03.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_critical_0.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_1.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_long_2.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_5.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hei_ch1_09_strm_7.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/hi@ch1_09_1.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_medium017.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_distlodlights_small000.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_medium017.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/vanilla/vw_lodlights_small000.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_building.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fackel_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuerholz.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_feuersteine.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_fire_02.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_gate.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_helipad.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_logo01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_panther.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_plantcover.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecage.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ydr/ace_hill_mansion_torturecross.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ymap/ace_hill_mansion_exterior.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_change_me.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytd/ace_hill_mansion_txt.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_ext_hill_mansion/stream/ytyp/ace_hill_mansion.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
