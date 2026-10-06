@@ -2561,6 +2561,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-06T20:23:45+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 79594
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[jaksam_scripte]/vehicles_keys/current_config.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[jaksam_scripte]/vehicles_keys/current_config.json",
+          "status": "M",
+          "lines": [
+            "-{\"shared\":{\"alarmRadarBlip\":{\"sprite\":225,\"interval\":2,\"scale\":1,\"color\":1,\"duration\":60},\"lockpick\":{\"itemName\":\"lockpick\",\"loseOnUse\":true,\"timeToLockpick\":5},\"locale\":\"de\"},\"client\":{\"allowAutoOpenDriverDoorOnUnlock\":false,\"autoStartEngineIfTheVehicleIsOwned\":false,\"alarmSecondsDuration\":40,\"canSearchForKeys\":false,\"lockDrivingVehiclesNPC\":true,\"chancesToFindKeys\":50,\"canMoveVisualWithKeysMenuOpened\":true,\"hotwireAnimDict\":\"veh@std@ds@base\",\"secondsToInstallAlarm\":5,\"canPlayersShareKeys\":true,\"allowBreakingWindowsOfPlayersOwnedVehicles\":true,\"lockParkedVehicles\":false,\"alarmBlip\":{\"color\":1,\"sprite\":161,\"scale\":1,\"duration\":15},\"defaultVehiclekeysMenuKey\":\"comma\",\"use3Dtext\":true,\"defaultVehiclelockKey\":\"u\",\"enableKeyToToggleEngine\":true,\"hotwireAnimName\":\"hotwire\",\"timeToHotwire\":5,\"completelyDisableWindowDestroy\":false,\"canTargetDrivingNPCs\":true,\"secondsToSearchForKeys\":3,\"allowAutoCloseDoorsOnVehicleLock\":false,\"defaultToggleEngineKey\":\"M\",\"vehicleLockAnim\":{\"dict\":\"anim@mp_player_intmenu@key_fob@\",\"name\":\"fob_click\",\"duration\":800},\"isHotwireRequired\":false,\"hotwireProbabilityOfSuccess\":100,\"menuPosition\":\"left\"},\"server\":{\"probabilityPoliceAlertNpcStolenVehicles\":35,\"acePermission\":\"vehicles_keys\",\"jobsThatCanInstallAlarms\":false,\"vehicleTransferContractItemName\":\"vehicle_transfer_contract\",\"vehicleAlarmsItems\":{\"2\":\"vehicle_alarm_2\",\"1\":\"vehicle_alarm_1\",\"4\":\"vehicle_alarm_4\",\"3\":\"vehicle_alarm_3\"}}}",
+            "+{\"server\":{\"vehicleAlarmsItems\":{\"3\":\"vehicle_alarm_3\",\"2\":\"vehicle_alarm_2\",\"1\":\"vehicle_alarm_1\",\"4\":\"vehicle_alarm_4\"},\"acePermission\":\"vehicles_keys\",\"probabilityPoliceAlertNpcStolenVehicles\":35,\"jobsThatCanInstallAlarms\":false,\"vehicleTransferContractItemName\":\"vehicle_transfer_contract\"},\"shared\":{\"locale\":\"de\",\"lockpick\":{\"timeToLockpick\":5,\"itemName\":\"lockpick\",\"loseOnUse\":true},\"alarmRadarBlip\":{\"color\":1,\"interval\":2,\"scale\":1,\"sprite\":225,\"duration\":60}},\"client\":{\"hotwireAnimName\":\"hotwire\",\"allowAutoCloseDoorsOnVehicleLock\":false,\"canSearchForKeys\":false,\"vehicleLockAnim\":{\"duration\":800,\"dict\":\"anim@mp_player_intmenu@key_fob@\",\"name\":\"fob_click\"},\"hotwireAnimDict\":\"veh@std@ds@base\",\"allowBreakingWindowsOfPlayersOwnedVehicles\":true,\"lockDrivingVehiclesNPC\":true,\"completelyDisableWindowDestroy\":false,\"menuPosition\":\"left\",\"timeToHotwire\":20,\"canTargetDrivingNPCs\":true,\"canPlayersShareKeys\":true,\"defaultVehiclekeysMenuKey\":\"comma\",\"autoStartEngineIfTheVehicleIsOwned\":false,\"secondsToInstallAlarm\":5,\"lockParkedVehicles\":false,\"alarmBlip\":{\"duration\":15,\"sprite\":161,\"scale\":1,\"color\":1},\"alarmSecondsDuration\":40,\"canMoveVisualWithKeysMenuOpened\":true,\"enableKeyToToggleEngine\":true,\"defaultVehiclelockKey\":\"u\",\"isHotwireRequired\":true,\"chancesToFindKeys\":50,\"allowAutoOpenDriverDoorOnUnlock\":false,\"secondsToSearchForKeys\":3,\"defaultToggleEngineKey\":\"M\",\"hotwireProbabilityOfSuccess\":100,\"use3Dtext\":true}}"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+    \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\": [",
+            "-            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "-            \"date\": \"2026/06/05 - 22:49:32\",",
+            "-            \"value\": 21200,",
+            "-            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_identifier\": \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Emilia Walker\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 50000,",
+            "+            \"date\": \"2026/09/16 - 15:56:43\",",
+            "-            \"type\": \"loan_payment\",",
+            "-            \"sender_name\": \"\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"receiver_name\": \"Vincent Fischer\",",
+            "-            \"date\": \"2026/06/05 - 22:49:28\",",
+            "-            \"value\": 20000,",
+            "-            \"reason\": \"Kreditauszahlung: Executive Loan\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"receiver_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"type\": \"loan\",",
+            "-            \"sender_name\": \"Bank (Kredit)\"",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_identifier\": \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Nala Sibeko\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 5000,",
+            "+            \"date\": \"2026/07/11 - 00:56:45\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"receiver_name\": \"Bank (PIN-Änderung)\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"value\": 200,",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_identifier\": \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Amyra Lopez\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/06/08 - 16:54:24\",",
+            "-            \"date\": \"2026/06/05 - 22:38:47\",",
+            "-            \"sender_name\": \"Vincent Fischer\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"receiver_name\": \"Bank (PIN-Änderung)\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"value\": 200,",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_identifier\": \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Mika Takamura\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 5000,",
+            "+            \"date\": \"2026/06/02 - 18:26:04\",",
+            "-            \"date\": \"2026/06/05 - 22:36:17\",",
+            "-            \"sender_name\": \"Vincent Fischer\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"date\": \"2026/06/05 - 22:27:18\",",
+            "-            \"value\": 100,",
+            "-            \"reason\": \"Kartenkauf: Standard Card\","
+          ]
+        }
+      ]
     }
   ]
 }
