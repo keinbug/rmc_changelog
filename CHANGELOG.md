@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-07 19:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[oresmon]/rm_hackerv/server/data.json`
+```diff
+-[{"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","cooldowns":{"location_player":0,"atm":1790275271,"tv":0,"botnet":0,"location_vehicle":0,"unlock":1790288626,"crash":1790288778,"fake_dispatch":1790172475,"trafficLights":1790270949,"control":1790288882,"parkmeter":1790278782,"steal_cash":1790291249},"botnet":1500000},{"identifier":"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","cooldowns":{"location_player":0,"atm":0,"tv":0,"botnet":0,"location_vehicle":0,"unlock":1791220730,"crash":0,"fake_dispatch":0,"trafficLights":0,"control":0,"parkmeter":0,"steal_cash":1790981264},"botnet":0}]
++[{"botnet":1500000,"cooldowns":{"botnet":0,"tv":0,"location_vehicle":0,"fake_dispatch":1790172475,"location_player":0,"control":1790288882,"parkmeter":1790278782,"unlock":1790288626,"steal_cash":1790291249,"trafficLights":1790270949,"atm":1790275271,"crash":1790288778},"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"},{"botnet":0,"cooldowns":{"botnet":0,"tv":0,"location_vehicle":0,"fake_dispatch":0,"location_player":0,"control":0,"parkmeter":0,"unlock":1791220730,"steal_cash":1791393050,"trafficLights":0,"atm":0,"crash":0},"identifier":"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"}]
+```
+
 ## 2026-10-07 18:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1023,28 +1031,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_20_22_03_10_2026.json`
 ```diff
 + Neue Datei
-```
-
-## 2026-10-03 20:23 Uhr
-**+0** neu · **~1** geändert · **-2** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--        {
--            "backupDate": "20_06_28_09_2026",
--            "id": 11,
--            "backupFile": "banlist_20_06_28_09_2026.json",
--            "backupTimestamp": 1790618777
--        },
--        {
--            "backupDate": "20_08_28_09_2026",
--            "id": 11,
--            "backupFile": "banlist_20_08_28_09_2026.json",
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_06_28_09_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_08_28_09_2026.json`
-```diff
-- Gelöscht
 ```

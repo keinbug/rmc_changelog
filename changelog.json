@@ -4378,6 +4378,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-07T19:23:43+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 79482
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[oresmon]/rm_hackerv/server/data.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[oresmon]/rm_hackerv/server/data.json",
+          "status": "M",
+          "lines": [
+            "-[{\"identifier\":\"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",\"cooldowns\":{\"location_player\":0,\"atm\":1790275271,\"tv\":0,\"botnet\":0,\"location_vehicle\":0,\"unlock\":1790288626,\"crash\":1790288778,\"fake_dispatch\":1790172475,\"trafficLights\":1790270949,\"control\":1790288882,\"parkmeter\":1790278782,\"steal_cash\":1790291249},\"botnet\":1500000},{\"identifier\":\"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",\"cooldowns\":{\"location_player\":0,\"atm\":0,\"tv\":0,\"botnet\":0,\"location_vehicle\":0,\"unlock\":1791220730,\"crash\":0,\"fake_dispatch\":0,\"trafficLights\":0,\"control\":0,\"parkmeter\":0,\"steal_cash\":1790981264},\"botnet\":0}]",
+            "+[{\"botnet\":1500000,\"cooldowns\":{\"botnet\":0,\"tv\":0,\"location_vehicle\":0,\"fake_dispatch\":1790172475,\"location_player\":0,\"control\":1790288882,\"parkmeter\":1790278782,\"unlock\":1790288626,\"steal_cash\":1790291249,\"trafficLights\":1790270949,\"atm\":1790275271,\"crash\":1790288778},\"identifier\":\"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"},{\"botnet\":0,\"cooldowns\":{\"botnet\":0,\"tv\":0,\"location_vehicle\":0,\"fake_dispatch\":0,\"location_player\":0,\"control\":0,\"parkmeter\":0,\"unlock\":1791220730,\"steal_cash\":1791393050,\"trafficLights\":0,\"atm\":0,\"crash\":0},\"identifier\":\"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"}]"
+          ]
+        }
+      ]
     }
   ]
 }
