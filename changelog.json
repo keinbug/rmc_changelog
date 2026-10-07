@@ -4714,6 +4714,123 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-08T00:22:56+02:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 3,
+        "deleted": 0,
+        "total": 79472
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_core/client/hydraulik.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/client/personalmenu.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/hydraulik.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/personalmenu.lua",
+          "status": "M",
+          "lines": [
+            "-local OpenMainMenu, OpenPersonalienMenu, OpenSettingsMenu, OpenVehicleMenu, OpenGpsMenu, OpenPerfMenu",
+            "+local OpenMainMenu, OpenPersonalienMenu, OpenSettingsMenu, OpenVehicleMenu, OpenGpsMenu, OpenPerfMenu, OpenHydraulikMenu",
+            "+local function WhipLabel(mode, id, text)",
+            "+    if mode == id then",
+            "+        return text .. '  ·  AN'",
+            "+    end",
+            "+    return text",
+            "+end",
+            "+",
+            "+OpenHydraulikMenu = function()",
+            "+    if not Config.Hydraulik or Config.Hydraulik.Enabled == false or type(SetWhipMode) ~= 'function' then",
+            "+        OpenVehicleMenu()",
+            "+        return",
+            "+    end",
+            "+    local ped = PlayerPedId()",
+            "+    local veh = GetVehiclePedIsIn(ped, false)",
+            "+    if veh == 0 or GetPedInVehicleSeat(veh, -1) ~= ped then",
+            "+        ESX.ShowNotification('Du musst am Steuer eines Fahrzeugs sitzen.')",
+            "+        OpenVehicleMenu()",
+            "+        return",
+            "+    end",
+            "+    if type(IsHydraulicVehicle) == 'function' and not IsHydraulicVehicle(veh) then",
+            "+        ESX.ShowNotification('Das geht mit diesem Fahrzeug nicht.')",
+            "+        OpenVehicleMenu()",
+            "+        return",
+            "+    end",
+            "+    local mode = type(GetWhipMode) == 'function' and GetWhipMode() or nil",
+            "+    ShowMenu('hydraulik', 'Whip / Hydraulik', {",
+            "+        { label = WhipLabel(mode, 'dance', 'Dance'), value = 'dance' },",
+            "+        { label = WhipLabel(mode, 'whip', 'Whip'), value = 'whip' },",
+            "+        { label = WhipLabel(mode, 'hop', 'Hop'), value = 'hop' },",
+            "+        { label = WhipLabel(mode, 'front', 'Vorne'), value = 'front' },",
+            "+        { label = WhipLabel(mode, 'back', 'Hinten'), value = 'back' },",
+            "+        { label = WhipLabel(mode, 'left', 'Links'), value = 'left' },",
+            "+        { label = WhipLabel(mode, 'right', 'Rechts'), value = 'right' },",
+            "+        { label = 'Aus', value = 'off' },",
+            "+    }, function(value, menu)",
+            "+        if SetWhipMode(value) then",
+            "+            menu.close()",
+            "+            OpenHydraulikMenu()",
+            "+        end",
+            "+    end, OpenVehicleMenu)",
+            "+end",
+            "+",
+            "-    ShowMenu('vehicle', 'Fahrzeug', {",
+            "+    local elements = {",
+            "-    }, function(value, menu)",
+            "+    }",
+            "+    if not Config.Hydraulik or Config.Hydraulik.Enabled ~= false then",
+            "+        elements[#elements + 1] = { label = 'Whip / Hydraulik', value = 'hydraulik' }",
+            "+    end",
+            "+    ShowMenu('vehicle', 'Fahrzeug', elements, function(value, menu)",
+            "+        elseif value == 'hydraulik' then",
+            "+            menu.close()",
+            "+            OpenHydraulikMenu()",
+            "-local MENU_NAMES = { 'main', 'personalien', 'settings', 'vehicle', 'gps', 'perf' }",
+            "+local MENU_NAMES = { 'main', 'personalien', 'settings', 'vehicle', 'hydraulik', 'gps', 'perf' }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- ====== WHIP / HYDRAULIK (Personalmenü F5 → Fahrzeug) ======",
+            "+-- Schaltet die Hydraulik am Fahrzeug an (Mod 21) und pumpt weich.",
+            "+-- Fahrrad, Boot, Heli, Flugzeug und Zug sind ausgenommen.",
+            "+Config.Hydraulik = {",
+            "+    Enabled = true,",
+            "+    WhipMs = 1500,",
+            "+    HopMs = 820,",
+            "+    AxleMs = 900,",
+            "+    BlockedClasses = { [13] = true, [14] = true, [15] = true, [16] = true, [21] = true },",
+            "+}",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"support\":{\"webhookId\":\"1552971101741654046\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"channelId\":\"1552971099317211136\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"channelId\":\"1552971081491419187\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"channelId\":\"1551161575690211428\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"channelId\":\"1420103430562910370\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"channelId\":\"1551161595436990575\"},\"join\":{\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"channelId\":\"1448120760391565352\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"channelId\":\"1552971110457286766\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\",\"channelId\":\"1551624348660531240\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"channelId\":\"1552971103910236172\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512305664\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"channelId\":\"1551520126367572008\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"channelId\":\"1474547082076622979\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"channelId\":\"1557386361172918374\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"channelId\":\"1557386329686413342\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"channelId\":\"1557386339866120252\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"channelId\":\"1551161550096699392\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"1552971094267527169\"},\"afk\":{\"webhookId\":\"1512475306554953789\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\"},\"me\":{\"webhookId\":\"1513950212480307490\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"channelId\":\"1513950191936344245\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"1471556817061544068\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"channelId\":\"1552971076718297200\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"1417917687723724872\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"channelId\":\"1457180906816012401\"},\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"channelId\":\"1552989823604756600\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"1557386352226598913\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"channelId\":\"1467556343492640830\"}},\"updatedAt\":\"2026-10-07T17:56:20Z\"}",
+            "+{\"updatedAt\":\"2026-10-07T22:00:45Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"afk\":{\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\"},\"join\":{\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"},\"me\":{\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"support\":{\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"channelId\":\"1551624348660531240\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\"}}}"
+          ]
+        }
+      ]
     }
   ]
 }
