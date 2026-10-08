@@ -4857,6 +4857,398 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-08T15:23:32+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 21,
+        "deleted": 0,
+        "total": 79472
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/client/afk.lua",
+        "resources/[selfcode]/rmc_core/client/carradio.lua",
+        "resources/[selfcode]/rmc_core/client/drift.lua",
+        "resources/[selfcode]/rmc_core/client/gps_tracker.lua",
+        "resources/[selfcode]/rmc_core/client/hostage.lua",
+        "resources/[selfcode]/rmc_core/client/hotdog.lua",
+        "resources/[selfcode]/rmc_core/client/hydraulik.lua",
+        "resources/[selfcode]/rmc_core/client/ladenraub.lua",
+        "resources/[selfcode]/rmc_core/client/lux_vehcontrol.lua",
+        "resources/[selfcode]/rmc_core/client/me.lua",
+        "resources/[selfcode]/rmc_core/client/personalmenu.lua",
+        "resources/[selfcode]/rmc_core/client/seatbelt.lua",
+        "resources/[selfcode]/rmc_core/client/troll.lua",
+        "resources/[selfcode]/rmc_core/client/vehicledamage.lua",
+        "resources/[selfcode]/rmc_core/client/vehiclenames.lua",
+        "resources/[selfcode]/rmc_core/client/wanted_level.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/server/abschleppen.lua",
+        "resources/[selfcode]/rmc_core/server/adminjail.lua",
+        "resources/[selfcode]/rmc_core/server/flatbed.lua",
+        "resources/[selfcode]/rmc_core/server/handysteuer.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/afk.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(afkPlayers) then",
+            "+            Wait(1000)",
+            "+        else",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/carradio.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(activeRadios) then",
+            "+            Wait(1000)",
+            "+        else",
+            "+        end",
+            "+        if not next(activeRadios) then",
+            "+            Wait(1000)",
+            "+        else",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/drift.lua",
+          "status": "M",
+          "lines": [
+            "-        local sleep = 200",
+            "+        local sleep = 1000"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/gps_tracker.lua",
+          "status": "M",
+          "lines": [
+            "-            Wait(400)",
+            "+            Wait(1000)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/hostage.lua",
+          "status": "M",
+          "lines": [
+            "-        local sleep = 250",
+            "+        local sleep = 1000",
+            "-        local sleep = 250",
+            "+        local sleep = 1000"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/hotdog.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(Stands) then\r",
+            "+            Wait(1000)\r",
+            "+        else\r",
+            "+        end\r",
+            "+        if not next(Stands) then\r",
+            "+            Wait(1000)\r",
+            "+        else\r",
+            "+        end\r",
+            "+        if not next(Stands) then\r",
+            "+            Wait(1000)\r",
+            "+        else\r",
+            "+        end\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/hydraulik.lua",
+          "status": "M",
+          "lines": [
+            "-CreateThread(function()",
+            "-    local driving = 0",
+            "-    while true do",
+            "-        local veh = driverVehicle()",
+            "-        if veh > 0 then",
+            "-            driving = veh",
+            "-            Wait(500)",
+            "-        else",
+            "-            if driving ~= 0 and DoesEntityExist(driving) then",
+            "-                local st = Entity(driving).state.rmcWhip",
+            "-                if type(st) == 'table' then",
+            "-                    Entity(driving).state:set('rmcWhip', nil, true)",
+            "-                end",
+            "+if lib and lib.onCache then",
+            "+    lib.onCache('vehicle', function(_vehicle, oldVeh)",
+            "+        local ped = PlayerPedId()",
+            "+        if oldVeh and oldVeh ~= 0 and DoesEntityExist(oldVeh) then",
+            "+            local st = Entity(oldVeh).state.rmcWhip",
+            "+            if type(st) == 'table' then",
+            "+                Entity(oldVeh).state:set('rmcWhip', nil, true)",
+            "-            driving = 0",
+            "-            Wait(700)",
+            "-    end",
+            "-end)",
+            "+        local vehicle = GetVehiclePedIsIn(ped, false)",
+            "+        if vehicle ~= 0 and GetPedInVehicleSeat(vehicle, -1) ~= ped and DoesEntityExist(vehicle) then",
+            "+            local st = Entity(vehicle).state.rmcWhip",
+            "+            if type(st) == 'table' then",
+            "+                Entity(vehicle).state:set('rmcWhip', nil, true)",
+            "+            end",
+            "+        end",
+            "+    end)",
+            "+end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/ladenraub.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tWait(0)",
+            "-            Wait(500)",
+            "+            Wait(750)",
+            "+        else",
+            "+            Wait(0)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/lux_vehcontrol.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tCitizen.Wait(0)\r",
+            "-else\r",
+            "-\tSirene = false\r",
+            "-\tSireneFDO.Thread()\r",
+            "-return\r",
+            "-end\r",
+            "+\t\t\tCitizen.Wait(0)\r",
+            "+\t\telse\r",
+            "+\t\t\tSirene = false\r",
+            "+\t\t\tbreak\r",
+            "+\t\tend\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/me.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(activeMeTexts) then\r",
+            "+            Wait(1000)\r",
+            "+        else\r",
+            "+        end\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/personalmenu.lua",
+          "status": "M",
+          "lines": [
+            "-            local minimapEnabled = IsMinimapEnabled()",
+            "-            DisplayRadar(minimapEnabled)",
+            "-            if minimapEnabled and now < forceRadarVisibleUntil then",
+            "+            if IsMinimapEnabled() and now < forceRadarVisibleUntil then",
+            "+                DisplayRadar(true)",
+            "-                Wait(200)",
+            "+                Wait(1000)",
+            "-local PerfFlags = {}",
+            "-",
+            "-local FpsRuntime = {",
+            "-    stage = 1,",
+            "-    fps = 0,",
+            "-    accum = 0.0,",
+            "-    frames = 0,",
+            "-    pending = nil,",
+            "-    pendingCount = 0,",
+            "-    appliedStage = nil,",
+            "-    worldApplied = false,",
+            "-    lastNotify = 0,",
+            "-}",
+            "-",
+            "-local function IsPerfTraffic()",
+            "-    return PerfFlags.traffic",
+            "-end",
+            "-",
+            "-local function IsPerfPeds()",
+            "-    return PerfFlags.peds",
+            "-end",
+            "-",
+            "-local function IsFpsOverlay()",
+            "-    return PerfFlags.overlay",
+            "-end",
+            "-",
+            "-local function IsPerfDecals()",
+            "-    return PerfFlags.decals",
+            "-end",
+            "-",
+            "-local function IsPerfProps()",
+            "-    return PerfFlags.props",
+            "-end",
+            "-",
+            "-local function IsPerfStreamingModels()",
+            "-    return PerfFlags.streaming",
+            "-end",
+            "-",
+            "-local function IsFpsMode()",
+            "-    return PerfFlags.fps",
+            "-end",
+            "-",
+            "-local function GetFpsModeReading()",
+            "-    return FpsRuntime.fps",
+            "-end",
+            "-",
+            "-local function FpsCfg()",
+            "-    return Config.FpsMode or {}",
+            "-end",
+            "-",
+            "-local function loadPerfFlagsFromKvp()",
+            "-    PerfFlags = {",
+            "-        traffic = GetResourceKvpString('rmc_core_perf_traffic') == 'true',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/seatbelt.lua",
+          "status": "M",
+          "lines": [
+            "-            Wait(400)",
+            "+            Wait(1000)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/troll.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(PlayerScales) then",
+            "+            Wait(1000)",
+            "+        else",
+            "-        Wait(active and 0 or 400)",
+            "+        Wait(active and 0 or 1000)",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/vehicledamage.lua",
+          "status": "M",
+          "lines": [
+            "-        local sleep = 400",
+            "+        local sleep = 1000",
+            "-            sleep = 400",
+            "+            sleep = 1000",
+            "-        local sleep = 400",
+            "+        local sleep = 1000",
+            "+        if not next(burning) then",
+            "+            Wait(1500)",
+            "+        else",
+            "+        end",
+            "-            local wait = 400",
+            "+            local wait = 1000"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/vehiclenames.lua",
+          "status": "M",
+          "lines": [
+            "+            Wait(400)",
+            "+        else",
+            "+            Wait(1000)",
+            "-        Wait(400)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/wanted_level.lua",
+          "status": "M",
+          "lines": [
+            "+    SetMaxWantedLevel(0)\r",
+            "-        ClearPlayerWantedLevel(playerId)\r",
+            "-        SetMaxWantedLevel(0)\r",
+            "-        Wait(500)\r",
+            "+        if GetPlayerWantedLevel(playerId) > 0 then\r",
+            "+            ClearPlayerWantedLevel(playerId)\r",
+            "+            SetMaxWantedLevel(0)\r",
+            "+            Wait(200)\r",
+            "+        else\r",
+            "+            Wait(2000)\r",
+            "+        end\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.FpsMode = {",
+            "-    TargetFps = 60,",
+            "-    RelaxFps = 90,",
+            "-    Command = 'fps',",
+            "-}",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/abschleppen.lua",
+          "status": "M",
+          "lines": [
+            "-        Wait(5000)",
+            "+        if not next(locks) then",
+            "+            Wait(5000)",
+            "+        else",
+            "+        Wait(5000)",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/adminjail.lua",
+          "status": "M",
+          "lines": [
+            "+        if not next(ActiveJails) then",
+            "+            Wait(5000)",
+            "+        else",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/flatbed.lua",
+          "status": "M",
+          "lines": [
+            "-        Wait(2000)",
+            "-        if next(beds) then",
+            "-            local seen = {}",
+            "-            for _, ent in ipairs(GetAllVehicles()) do",
+            "-                if ent and ent ~= 0 and DoesEntityExist(ent) then",
+            "-                    local id = NetworkGetNetworkIdFromEntity(ent)",
+            "-                    if id and id > 0 then",
+            "-                        seen[id] = true",
+            "-                    end",
+            "+        if not next(beds) then",
+            "+            Wait(5000)",
+            "+        else",
+            "+        local seen = {}",
+            "+        for _, ent in ipairs(GetAllVehicles()) do",
+            "+            if ent and ent ~= 0 and DoesEntityExist(ent) then",
+            "+                local id = NetworkGetNetworkIdFromEntity(ent)",
+            "+                if id and id > 0 then",
+            "+                    seen[id] = true",
+            "-            for bedNet, cargoNet in pairs(beds) do",
+            "-                if not seen[bedNet] or not seen[cargoNet] then",
+            "-                    dropBed(bedNet, cargoNet)",
+            "-                end",
+            "+        end",
+            "+        for bedNet, cargoNet in pairs(beds) do",
+            "+            if not seen[bedNet] or not seen[cargoNet] then",
+            "+                dropBed(bedNet, cargoNet)",
+            "+        Wait(2000)",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/handysteuer.lua",
+          "status": "M",
+          "lines": [
+            "-                else",
+            "+                elseif LastBlocked[charId] then",
+            "+                    PushState(src, xPlayer)"
+          ]
+        }
+      ]
     }
   ]
 }

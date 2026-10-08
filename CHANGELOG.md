@@ -2,6 +2,203 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-08 15:23 Uhr
+**+0** neu · **~21** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/client/afk.lua`
+```diff
++        if not next(afkPlayers) then
++            Wait(1000)
++        else
++        end
+```
+`~ resources/[selfcode]/rmc_core/client/carradio.lua`
+```diff
++        if not next(activeRadios) then
++            Wait(1000)
++        else
++        end
++        if not next(activeRadios) then
++            Wait(1000)
++        else
++        end
+```
+`~ resources/[selfcode]/rmc_core/client/drift.lua`
+```diff
+-        local sleep = 200
++        local sleep = 1000
+```
+`~ resources/[selfcode]/rmc_core/client/gps_tracker.lua`
+```diff
+-            Wait(400)
++            Wait(1000)
+```
+`~ resources/[selfcode]/rmc_core/client/hostage.lua`
+```diff
+-        local sleep = 250
++        local sleep = 1000
+-        local sleep = 250
++        local sleep = 1000
+```
+`~ resources/[selfcode]/rmc_core/client/hotdog.lua`
+```diff
++        if not next(Stands) then
++            Wait(1000)
++        else
++        end
++        if not next(Stands) then
++            Wait(1000)
++        else
++        end
++        if not next(Stands) then
++            Wait(1000)
+```
+`~ resources/[selfcode]/rmc_core/client/hydraulik.lua`
+```diff
+-CreateThread(function()
+-    local driving = 0
+-    while true do
+-        local veh = driverVehicle()
+-        if veh > 0 then
+-            driving = veh
+-            Wait(500)
+-        else
+-            if driving ~= 0 and DoesEntityExist(driving) then
+-                local st = Entity(driving).state.rmcWhip
+```
+`~ resources/[selfcode]/rmc_core/client/ladenraub.lua`
+```diff
+-		Wait(0)
+-            Wait(500)
++            Wait(750)
++        else
++            Wait(0)
+```
+`~ resources/[selfcode]/rmc_core/client/lux_vehcontrol.lua`
+```diff
+-		Citizen.Wait(0)
+-else
+-	Sirene = false
+-	SireneFDO.Thread()
+-return
+-end
++			Citizen.Wait(0)
++		else
++			Sirene = false
++			break
+```
+`~ resources/[selfcode]/rmc_core/client/me.lua`
+```diff
++        if not next(activeMeTexts) then
++            Wait(1000)
++        else
++        end
+```
+`~ resources/[selfcode]/rmc_core/client/personalmenu.lua`
+```diff
+-            local minimapEnabled = IsMinimapEnabled()
+-            DisplayRadar(minimapEnabled)
+-            if minimapEnabled and now < forceRadarVisibleUntil then
++            if IsMinimapEnabled() and now < forceRadarVisibleUntil then
++                DisplayRadar(true)
+-                Wait(200)
++                Wait(1000)
+-local PerfFlags = {}
+-
+-local FpsRuntime = {
+```
+`~ resources/[selfcode]/rmc_core/client/seatbelt.lua`
+```diff
+-            Wait(400)
++            Wait(1000)
+```
+`~ resources/[selfcode]/rmc_core/client/troll.lua`
+```diff
++        if not next(PlayerScales) then
++            Wait(1000)
++        else
+-        Wait(active and 0 or 400)
++        Wait(active and 0 or 1000)
++        end
+```
+`~ resources/[selfcode]/rmc_core/client/vehicledamage.lua`
+```diff
+-        local sleep = 400
++        local sleep = 1000
+-            sleep = 400
++            sleep = 1000
+-        local sleep = 400
++        local sleep = 1000
++        if not next(burning) then
++            Wait(1500)
++        else
++        end
+```
+`~ resources/[selfcode]/rmc_core/client/vehiclenames.lua`
+```diff
++            Wait(400)
++        else
++            Wait(1000)
+-        Wait(400)
+```
+`~ resources/[selfcode]/rmc_core/client/wanted_level.lua`
+```diff
++    SetMaxWantedLevel(0)
+-        ClearPlayerWantedLevel(playerId)
+-        SetMaxWantedLevel(0)
+-        Wait(500)
++        if GetPlayerWantedLevel(playerId) > 0 then
++            ClearPlayerWantedLevel(playerId)
++            SetMaxWantedLevel(0)
++            Wait(200)
++        else
++            Wait(2000)
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
+-Config.FpsMode = {
+-    TargetFps = 60,
+-    RelaxFps = 90,
+-    Command = 'fps',
+-}
+-
+-
+```
+`~ resources/[selfcode]/rmc_core/server/abschleppen.lua`
+```diff
+-        Wait(5000)
++        if not next(locks) then
++            Wait(5000)
++        else
++        Wait(5000)
++        end
+```
+`~ resources/[selfcode]/rmc_core/server/adminjail.lua`
+```diff
++        if not next(ActiveJails) then
++            Wait(5000)
++        else
++        end
+```
+`~ resources/[selfcode]/rmc_core/server/flatbed.lua`
+```diff
+-        Wait(2000)
+-        if next(beds) then
+-            local seen = {}
+-            for _, ent in ipairs(GetAllVehicles()) do
+-                if ent and ent ~= 0 and DoesEntityExist(ent) then
+-                    local id = NetworkGetNetworkIdFromEntity(ent)
+-                    if id and id > 0 then
+-                        seen[id] = true
+-                    end
++        if not next(beds) then
+```
+`~ resources/[selfcode]/rmc_core/server/handysteuer.lua`
+```diff
+-                else
++                elseif LastBlocked[charId] then
++                    PushState(src, xPlayer)
+```
+
 ## 2026-10-08 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1133,20 +1330,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"1552971099317211136"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490","channelId":"1513950191936344245"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789","channelId":"1512475286229356617"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439208960"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552","channelId":"1448120760391565352"},"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","webhookId":"1474547103081566412","channelId":"1474547082076622979"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901","channelId":"1467556343492640830"},"expose":{"url":"https://discord.com/api/webhooks/1551624352477225113/***","webhookId":"1551624352477225113","channelId":"1551624348660531240"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353","channelId":"1551161585614061618"},"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879","channelId":"1551161580324921455"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709","channelId":"1552971081491419187"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715","channelId":"1552989823604756600"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400","channelId":"1471556817061544068"},"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714","channelId":"1552971085937381431"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"versicherung":{"url":"https://discord.com/api/webhooks/1457180941750632469/***","webhookId":"1457180941750632469","channelId":"1457180906816012401"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005","channelId":"1551161595436990575"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264","channelId":"1552971094267527169"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"}},"updatedAt":"2026-10-04T08:00:32Z","categoryId":"1551161549018759170"}
 +{"webhooks":{"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"willkommen":{"channelId":"1551161595436990575","webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"default":{"channelId":"1551161550096699392","webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"versicherung":{"channelId":"1457180906816012401","webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"freecam_photo":{"channelId":"1551520126367572008","webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"hotdog":{"channelId":"1474547082076622979","webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"afk":{"channelId":"1512475286229356617","webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"lager":{"channelId":"1551161580324921455","webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"expose":{"channelId":"1551624348660531240","webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***"},"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"}},"updatedAt":"2026-10-04T12:53:48Z","categoryId":"1551161549018759170"}
-```
-
-## 2026-10-04 13:24 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
-+    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--            "receiver_name": "Savings Account",
--            "value": 8347,
--            "date": "2026/10/01 - 10:00:31",
-+            "value": 205000,
-+            "sender_name": "Geldbörse",
-+            "type": "deposit",
-+            "receiver_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "receiver_name": "Nino Vitale",
 ```
