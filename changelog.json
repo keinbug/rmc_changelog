@@ -7516,6 +7516,242 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T01:23:32+02:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 8,
+        "deleted": 0,
+        "total": 79371
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_core/client/sit.lua",
+        "resources/[selfcode]/rmc_core/data/sits.json",
+        "resources/[selfcode]/rmc_core/server/sit.lua"
+      ],
+      "modified": [
+        "resources/[manuell_start]/es_extended/client/modules/callback.lua",
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+        "resources/[manuell_start]/ox_inventory/server.lua",
+        "resources/[selfcode]/ox_inventory_discord_logs/server.lua",
+        "resources/[selfcode]/rmc_core/client/marry.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/sit.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/sits.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/sit.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/client/modules/callback.lua",
+          "status": "M",
+          "lines": [
+            "+        local msg = tostring(errorString)",
+            "+        -- Resource wurde neu gestartet, die Callback-Funktion gehört zum alten Script.",
+            "+        if msg:find('script host failed', 1, true) then",
+            "+            return",
+            "+        end"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557875447251861626\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557888280693842059\"}"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/server.lua",
+          "status": "M",
+          "lines": [
+            "+        local adminId = source",
+            "+",
+            "+        TriggerEvent('ox_inventory_discord_logs:adminItem', {",
+            "+            source = adminId,",
+            "+            target = args.target,",
+            "+            itemName = item.name,",
+            "+            itemLabel = item.label,",
+            "+            count = count,",
+            "+            action = 'give',",
+            "+        })",
+            "+        local adminId = source",
+            "+",
+            "+        TriggerEvent('ox_inventory_discord_logs:adminItem', {",
+            "+            source = adminId,",
+            "+            target = args.target,",
+            "+            itemName = item.name,",
+            "+            itemLabel = item.label,",
+            "+            count = count,",
+            "+            action = 'remove',",
+            "+        })",
+            "+        local adminId = source",
+            "+",
+            "+        TriggerEvent('ox_inventory_discord_logs:adminItem', {",
+            "+            source = adminId,",
+            "+            target = args.target,",
+            "+            itemName = item.name,",
+            "+            itemLabel = item.label,",
+            "+            count = count,",
+            "+            action = 'set',",
+            "+        })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/ox_inventory_discord_logs/server.lua",
+          "status": "M",
+          "lines": [
+            "+    admin = 15105570,",
+            "+local FLAG_COMPONENTS_V2 = 32768",
+            "+",
+            "+---@param url string",
+            "+---@return string",
+            "+local function webhookExecuteUrl(url)",
+            "+    if url:find('with_components=', 1, true) then return url end",
+            "+    if url:find('?', 1, true) then",
+            "+        return url .. '&with_components=true'",
+            "+    end",
+            "+    return url .. '?with_components=true'",
+            "+end",
+            "+",
+            "-    embed.color = embed.color or colors.swap",
+            "-    embed.footer = embed.footer or {}",
+            "-    embed.footer.text = ('%s · %s'):format(getServerDisplayName(), os.date('%Y-%m-%d %H:%M:%S'))",
+            "+    local children = {",
+            "+        { type = 10, content = '## ' .. (embed.title or 'Inventar') },",
+            "+    }",
+            "+",
+            "+    if embed.description and embed.description ~= '' then",
+            "+        children[#children + 1] = { type = 10, content = embed.description }",
+            "+    end",
+            "+",
+            "+    local function pushText(text)",
+            "+        if type(text) ~= 'string' or text == '' then return end",
+            "+        if #text > 3900 then text = text:sub(1, 3900) .. '…' end",
+            "+        children[#children + 1] = { type = 14, divider = true, spacing = 1 }",
+            "+        children[#children + 1] = { type = 10, content = text }",
+            "+    end",
+            "+",
+            "+    if type(embed.sections) == 'table' then",
+            "+        for i = 1, #embed.sections do",
+            "+            pushText(embed.sections[i])",
+            "+        end",
+            "+    elseif embed.fields then",
+            "+        local blocks = {}",
+            "+        for i = 1, #embed.fields do",
+            "+            local field = embed.fields[i]",
+            "+            blocks[#blocks + 1] = ('**%s**\\n%s'):format(field.name or '—', tostring(field.value or '—'))",
+            "+        end",
+            "+        pushText(table.concat(blocks, '\\n\\n'))",
+            "+    end",
+            "+",
+            "+    local footer = ('%s  ·  <t:%s:f>'):format(getServerDisplayName(), os.time())",
+            "+    children[#children + 1] = { type = 14, divider = true, spacing = 1 }",
+            "+    children[#children + 1] = { type = 10, content = '-# ' .. footer }",
+            "-        embeds = { embed },",
+            "+        flags = FLAG_COMPONENTS_V2,",
+            "+        allowed_mentions = { parse = {} },",
+            "+        components = {",
+            "+            {",
+            "+                type = 17,",
+            "+                accent_color = embed.color or colors.swap,",
+            "+                components = children,",
+            "+            },",
+            "+        },",
+            "-        PerformHttpRequest(webhook, function(status, text)",
+            "+        PerformHttpRequest(webhookExecuteUrl(webhook), function(status, text)",
+            "+---@param text any"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/marry.lua",
+          "status": "M",
+          "lines": [
+            "+local partnerBlipPending = false",
+            "+local partnerBlipActive = true",
+            "+    if not partnerBlipActive or partnerBlipPending then return end",
+            "+    partnerBlipPending = true",
+            "+        partnerBlipPending = false",
+            "+        if not partnerBlipActive then return end",
+            "+        partnerBlipActive = false"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- ====== SITZ-CREATOR ======",
+            "+-- /sitzcreator: Admin setzt sich mit Animation, justiert exakt und speichert den Platz.",
+            "+-- Gespeicherte Plätze: ox_target „Hinsetzen“, Aufstehen mit Enter.",
+            "+Config.Sit = {",
+            "+    Enabled = true,",
+            "+    Command = 'sitzcreator',",
+            "+    AllowedGroups = { owner = true, superadmin = true, admin = true },",
+            "+    AcePermission = 'rmc.sit',",
+            "+    File = 'data/sits.json',",
+            "+    TargetRadius = 0.8,",
+            "+    TargetDistance = 1.6,",
+            "+    TargetLabel = 'Hinsetzen',",
+            "+    TargetIcon = 'fa-solid fa-chair',",
+            "+    StandText = '[Enter] Aufstehen',",
+            "+    DeleteRadius = 2.5,",
+            "+    MaxSpots = 400,",
+            "+    NudgeNormal = 0.01,",
+            "+    NudgeFine = 0.001,",
+            "+    NudgeCoarse = 0.05,",
+            "+    RotateStep = 0.5,",
+            "+    -- Nur sitchair-Emotes aus rmc_emotes (ohne Stuhl-Prop, ohne Szenario).",
+            "+    Animations = {",
+            "+        { id = 'sitchair2',    label = 'Sit Chair 2',            dict = 'timetable@ron@ig_5_p3',        anim = 'ig_5_p3_base' },",
+            "+        { id = 'sitchair3',    label = 'Sit Chair 3',            dict = 'timetable@reunited@ig_10',     anim = 'base_amanda' },",
+            "+        { id = 'sitchair4',    label = 'Sit Chair 4',            dict = 'timetable@ron@ig_3_couch',     anim = 'base' },",
+            "+        { id = 'sitchair5',    label = 'Sit Chair Legs Crossed', dict = 'timetable@jimmy@mics3_ig_15@', anim = 'mics3_15_base_tracy' },",
+            "+        { id = 'sitchair6',    label = 'Sit Chair Lean Back',    dict = 'timetable@maid@couch@',        anim = 'base' },",
+            "+        { id = 'sitchairside', label = 'Sit Chair Side',         dict = 'timetable@ron@ron_ig_2_alt1',  anim = 'ig_2_alt1_base' },",
+            "+    },",
+            "+}",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-08T22:01:06Z\",\"webhooks\":{\"me\":{\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"channelId\":\"1551624348660531240\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\"},\"afk\":{\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\"},\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\"},\"join\":{\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\"},\"support\":{\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"}},\"categoryId\":\"1551161549018759170\"}",
+            "+{\"webhooks\":{\"join\":{\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"channelId\":\"1448120760391565352\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"channelId\":\"1457180906816012401\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"channelId\":\"1551161575690211428\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"channelId\":\"1551520126367572008\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"channelId\":\"1467556343492640830\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"1471556817061544068\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"1417917687723724872\"},\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"channelId\":\"1552989823604756600\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\",\"channelId\":\"1551624348660531240\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"1557386352226598913\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"channelId\":\"1557386339866120252\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"channelId\":\"1557386329686413342\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"channelId\":\"1552971081491419187\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512305664\"},\"me\":{\"webhookId\":\"1513950212480307490\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"channelId\":\"1513950191936344245\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"channelId\":\"1552971076718297200\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"channelId\":\"1474547082076622979\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"channelId\":\"1552971103910236172\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"1552971094267527169\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"channelId\":\"1551161595436990575\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"channelId\":\"1420103430562910370\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\"},\"afk\":{\"webhookId\":\"1512475306554953789\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\"},\"support\":{\"webhookId\":\"1552971101741654046\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"channelId\":\"1552971099317211136\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"channelId\":\"1551161550096699392\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"channelId\":\"1557386361172918374\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"channelId\":\"1552971110457286766\"}},\"updatedAt\":\"2026-10-08T23:07:36Z\",\"categoryId\":\"1551161549018759170\"}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'data/sits.json',\r"
+          ]
+        }
+      ]
     }
   ]
 }
