@@ -7428,6 +7428,43 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-08T23:24:01+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 79368
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[jaksam_scripte]/jobs_creator/_modules/stash/ox-inventory/sv_stash.lua",
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/_modules/stash/ox-inventory/sv_stash.lua",
+          "status": "M",
+          "lines": [
+            "-    slots = 50,\r",
+            "-    weight = 100000,\r",
+            "+    slots = 500,\r",
+            "+    weight = 10000000000,\r"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557849594405191745\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557866174803476521\"}"
+          ]
+        }
+      ]
     }
   ]
 }
