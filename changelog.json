@@ -5315,6 +5315,1115 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-08T21:24:35+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 123,
+        "deleted": 0,
+        "total": 79368
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[jaksam_scripte]/jobs_creator/.fxap",
+        "resources/[jaksam_scripte]/jobs_creator/_modules/stash/ox-inventory/sv_stash.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/billing.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/checkidentity.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/checkvehicleowner.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/handcuffs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/heal.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/impoundvehicle.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/licenses.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/lockpick.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/placeableobjects.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/repairvehicle.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/revive.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/rob.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/actions/washvehicle.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/main.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/armory.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/boss.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/crafting_table.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/delivery.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/harvest.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/job_outfit.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/job_shop.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/market.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/permanent_garage.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/process.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/safe.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/shop.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/stash.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/teleport.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/temporary_garage.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/wardrobe.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/markers/weapon_upgrader.lua",
+        "resources/[jaksam_scripte]/jobs_creator/client/nui_callbacks.lua",
+        "resources/[jaksam_scripte]/jobs_creator/fxmanifest.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/actions.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/code_integrator.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/functions.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/gangs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/main.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/armory.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/boss.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/crafting_table.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/delivery.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/duty.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/harvest.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/job_outfit.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/job_shop.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/market.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/permanent_garage.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/process.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/safe.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/shop.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/stash.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/teleport.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/temporary_garage.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/wardrobe.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/markers/weapon_upgrader.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/migration.lua",
+        "resources/[jaksam_scripte]/jobs_creator/server/sv_statistics.lua",
+        "resources/[jaksam_scripte]/jobs_creator/shared/shared.lua",
+        "resources/[jaksam_scripte]/jobs_creator/sql/jobs_action_history.sql",
+        "resources/[jaksam_scripte]/jobs_creator/sql/jobs_society_logs.sql",
+        "resources/[jaksam_scripte]/jobs_creator/stream/L1_1.ydr",
+        "resources/[jaksam_scripte]/jobs_creator/utils/callbacks/cl_callbacks.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/callbacks/sv_callbacks.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/database/database.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/animations/cl_animations.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/announcements/cl_announcements.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/announcements/sv_announcements.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/blips/cl_blips.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/blips/sv_blips.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/boss_menu/cl_boss_menu.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/choose_object/cl_choose_object.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/choose_object/sv_choose_object.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/cl_dialogs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/controls/cl_controls.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/external_scripts_names/cl_external_scripts_names.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/external_scripts_names/sv_external_scripts_names.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/items/cl_items.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/items/sv_items.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/jobs/cl_jobs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/jobs/sv_jobs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/markers/cl_markers.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/markers/sv_markers.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/menu/cl_menu.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/misc/cl_misc.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/misc/sv_misc.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/missing_menu/cl_missing_menu.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/missing_menu/sv_missing_menu.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/modules/cl_modules.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/modules/sv_modules.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/multijob/cl_multijob.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/not_allowed/cl_not_allowed.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/not_allowed/sv_not_allowed.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/objects/cl_objects.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/peds/cl_peds.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/peds/sv_peds.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/place_entity/cl_place_entity.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/progressbar/cl_progressbar.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/progressbar/sv_progressbar.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/single_job/cl_single_job.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/single_job/sv_single_job.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/skillcheck/cl_skillcheck.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/sv_dialogs.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/weapons/cl_weapons.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/weapons/sv_weapons.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/framework/cl_framework.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/framework/sh_framework.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/framework/sv_framework.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/cl_miscellaneous.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/sh_miscellaneous.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/sv_miscellaneous.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/settings/cl_settings.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/settings/sv_settings.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/targeting/cl_targeting.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/warnings/sv_escrow.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/warnings/sv_framework_checker.lua",
+        "resources/[jaksam_scripte]/jobs_creator/utils/wrapper/sv_wrapper.js",
+        "resources/[jaksam_scripte]/jobs_creator/utils/wrapper/sv_wrapper.lua",
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+        "resources/[rtx]/rtx_gym/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupTimestamp\": 1791051635,",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"20_20_03_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_20_03_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1791051760,",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"20_22_03_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_22_03_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "+            \"backupDate\": \"20_24_04_10_2026\",",
+            "-            \"backupDate\": \"20_24_04_10_2026\",",
+            "+            \"backupDate\": \"20_26_04_10_2026\",",
+            "-            \"backupDate\": \"20_26_04_10_2026\",",
+            "+            \"backupDate\": \"20_27_05_10_2026\",",
+            "-            \"backupDate\": \"20_27_05_10_2026\",",
+            "+            \"backupDate\": \"20_29_05_10_2026\",",
+            "-            \"backupDate\": \"20_29_05_10_2026\",",
+            "+            \"backupDate\": \"20_29_06_10_2026\",",
+            "-            \"backupDate\": \"20_29_06_10_2026\",",
+            "+            \"backupDate\": \"20_32_06_10_2026\",",
+            "-            \"backupDate\": \"20_32_06_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_32_07_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_32_07_10_2026.json\",",
+            "+            \"backupDate\": \"20_34_07_10_2026\",",
+            "-            \"backupDate\": \"20_34_07_10_2026\",",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_35_08_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791484533,",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_35_08_10_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"backupDate\": \"20_37_08_10_2026\",",
+            "+            \"backupTimestamp\": 1791484658,",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_20_37_08_10_2026.json\"",
+            "-    \"lastBackup\": 1791398074",
+            "+    \"lastBackup\": 1791484658"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/.fxap",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/_modules/stash/ox-inventory/sv_stash.lua",
+          "status": "M",
+          "lines": [
+            "-    slots = 500,\r",
+            "-    weight = 100000000000,\r",
+            "+    slots = 50,\r",
+            "+    weight = 100000,\r"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/billing.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/checkidentity.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/checkvehicleowner.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/handcuffs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/heal.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/impoundvehicle.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/licenses.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/lockpick.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/placeableobjects.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/repairvehicle.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/revive.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/rob.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/actions/washvehicle.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/main.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/armory.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/boss.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/crafting_table.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/delivery.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/harvest.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/job_outfit.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/job_shop.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/market.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/permanent_garage.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/process.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/safe.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/shop.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/stash.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/teleport.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/temporary_garage.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/wardrobe.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/markers/weapon_upgrader.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/client/nui_callbacks.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-version '9.0'\r",
+            "+version '9.0.1'\r"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/actions.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/code_integrator.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/functions.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/gangs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/main.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/armory.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/boss.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/crafting_table.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/delivery.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/duty.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/harvest.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/job_outfit.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/job_shop.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/market.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/permanent_garage.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/process.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/safe.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/shop.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/stash.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/teleport.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/temporary_garage.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/wardrobe.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/markers/weapon_upgrader.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/migration.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/server/sv_statistics.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/shared/shared.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/sql/jobs_action_history.sql",
+          "status": "M",
+          "lines": [
+            "-)\r",
+            "+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;\r"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/sql/jobs_society_logs.sql",
+          "status": "M",
+          "lines": [
+            "-) ENGINE=InnoDB;\r",
+            "+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;\r"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/stream/L1_1.ydr",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/callbacks/cl_callbacks.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/callbacks/sv_callbacks.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/database/database.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/animations/cl_animations.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/announcements/cl_announcements.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/announcements/sv_announcements.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/blips/cl_blips.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/blips/sv_blips.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/boss_menu/cl_boss_menu.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/choose_object/cl_choose_object.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/choose_object/sv_choose_object.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/cl_dialogs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/controls/cl_controls.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/external_scripts_names/cl_external_scripts_names.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/external_scripts_names/sv_external_scripts_names.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/items/cl_items.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/items/sv_items.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/jobs/cl_jobs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/jobs/sv_jobs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/markers/cl_markers.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/markers/sv_markers.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/menu/cl_menu.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/misc/cl_misc.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/misc/sv_misc.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/missing_menu/cl_missing_menu.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/missing_menu/sv_missing_menu.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/modules/cl_modules.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/modules/sv_modules.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/multijob/cl_multijob.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/not_allowed/cl_not_allowed.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/not_allowed/sv_not_allowed.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/objects/cl_objects.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/peds/cl_peds.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/peds/sv_peds.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/place_entity/cl_place_entity.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/progressbar/cl_progressbar.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/progressbar/sv_progressbar.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/single_job/cl_single_job.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/single_job/sv_single_job.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/skillcheck/cl_skillcheck.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/sv_dialogs.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/weapons/cl_weapons.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/dialogs/weapons/sv_weapons.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/framework/cl_framework.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/framework/sh_framework.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/framework/sv_framework.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/cl_miscellaneous.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/sh_miscellaneous.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/miscellaneous/sv_miscellaneous.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/settings/cl_settings.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/settings/sv_settings.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/targeting/cl_targeting.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/warnings/sv_escrow.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/warnings/sv_framework_checker.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/wrapper/sv_wrapper.js",
+          "status": "M",
+          "lines": [
+            "-const {Worker} = require('worker_threads')\r",
+            "-const pathModule = require('path')\r",
+            "-\r",
+            "-const worker = new Worker(pathModule.join(GetResourcePath(GetCurrentResourceName()), 'utils', 'wrapper', 'sv_fs_worker.js'))\r",
+            "-const signal = new SharedArrayBuffer(4)\r",
+            "-\r",
+            "-function workerCall(op, args) {\r",
+            "-\tconst view = new Int32Array(signal)\r",
+            "-\tAtomics.store(view, 0, 0)\r",
+            "-\tworker.postMessage({op, args, signal})\r",
+            "-\tAtomics.wait(view, 0, 0)\r",
+            "-\treturn Atomics.load(view, 0) === 1\r",
+            "-}\r",
+            "-\r",
+            "-exports('SaveResourceFile', (filePath, data) => {\r",
+            "-\tif (!filePath || !data) return false\r",
+            "-\treturn workerCall('writeFile', {path: filePath, data})\r",
+            "-})\r",
+            "+const {Worker} = require('worker_threads')",
+            "+const pathModule = require('path')",
+            "+",
+            "+const resourceName = GetCurrentResourceName()",
+            "+",
+            "+// FXServer refuses worker threads unless server.cfg has add_unsafe_worker_permission for this resource",
+            "+function createWorker() {",
+            "+\ttry {",
+            "+\t\treturn new Worker(pathModule.join(GetResourcePath(resourceName), 'utils', 'wrapper', 'sv_fs_worker.js'))",
+            "+\t} catch(e) {",
+            "+\t\tif (e.code !== 'ERR_ACCESS_DENIED') throw e",
+            "+",
+            "+\t\tconst lines = [",
+            "+\t\t\t'^1=====================================',",
+            "+\t\t\t`^1${resourceName} CAN'T SAVE ANY FILE, your server.cfg is missing a required line`,",
+            "+\t\t\t'^3Add the following line to server.cfg (before ^5ensure jobs_creator^3), then restart the server:',",
+            "+\t\t\t'',",
+            "+\t\t\t'^1    add_unsafe_worker_permission ' + resourceName + '^7 # <------ ADD THIS LINE', // Highlighted in red",
+            "+\t\t\t'^5    ensure jobs_creator^7', // Highlighted in purple",
+            "+\t\t\t'',",
+            "+\t\t\t'^3Without it settings are not saved and the code integrator can\\'t install anything.',",
+            "+\t\t\t'^1=====================================^7'",
+            "+\t\t]",
+            "+\t\t]",
+            "+\t\tconst printWarning = () => lines.forEach((line) => console.log(line))",
+            "+",
+            "+\t\tprintWarning()",
+            "+\t\tsetInterval(printWarning, 10000)",
+            "+",
+            "+\t\treturn null",
+            "+\t}",
+            "+}",
+            "+",
+            "+const worker = createWorker()",
+            "+const signal = new SharedArrayBuffer(4)",
+            "+",
+            "+function workerCall(op, args) {",
+            "+\tconst view = new Int32Array(signal)",
+            "+\tAtomics.store(view, 0, 0)",
+            "+\tworker.postMessage({op, args, signal})",
+            "+\tAtomics.wait(view, 0, 0)",
+            "+\treturn Atomics.load(view, 0) === 1"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/jobs_creator/utils/wrapper/sv_wrapper.lua",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557818913251659848\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557835257644847185\"}"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_gym/config.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tcoords = vector3(330.84, -601.04, 43.40),-- Jonas\r",
+            "+\t\tcoords = vector3(-2764.40, 3749.08, 4.50),-- Jonas\r"
+          ]
+        }
+      ]
     }
   ]
 }
