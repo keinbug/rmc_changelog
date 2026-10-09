@@ -12722,6 +12722,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T22:24:15+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81750
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"value\": 500,",
+            "+            \"date\": \"2026/10/09 - 22:00:20\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Misaki Lee\",",
+            "+            \"receiver_name\": \"cd_garage\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
