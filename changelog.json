@@ -7778,6 +7778,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T05:23:24+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 79371
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557933677806358601\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1557953968288833579\"}"
+          ]
+        }
+      ]
     }
   ]
 }
