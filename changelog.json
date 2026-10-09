@@ -11923,6 +11923,38 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T19:24:01+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81742
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"value\": 100,",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"date\": \"2026/10/09 - 19:09:46\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Bank (Kartenerneuerung)\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
