@@ -11955,6 +11955,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T20:24:08+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 81742
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558150186482671638\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558174842577223761\"}"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:27:18\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:27:10\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:27:01\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:26:55\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:26:53\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/09 - 19:26:49\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
