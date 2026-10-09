@@ -2,6 +2,208 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-09 21:24 Uhr
+**+10** neu · **~16** geändert · **-2** gelöscht
+`+ resources/[selfcode]/lb-lieferlos/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/install/esx_items.sql`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/install/ox_inventory_items.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/client_mocks.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/client_test.py`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/mocks.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/ox_test.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/run.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/tests/run.py`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-lieferlos/ui/dist/assets/index-DkJW2aaQ.js`
+```diff
++ Neue Datei
+```
+`~ resources/[devcore]/devcore_needs/configs/items.lua`
+```diff
++            ['sarke'] = {label = 'Kirschblüten Sake'},
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
++    "lastBackup": 1791571216,
+-            "backupDate": "20_24_04_10_2026",
+-            "backupTimestamp": 1791138260,
+-            "id": 11,
+-            "backupFile": "banlist_20_24_04_10_2026.json"
+-        },
+-        {
+-            "backupDate": "20_26_04_10_2026",
+-            "backupTimestamp": 1791138385,
+-            "id": 11,
+```
+`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
+```diff
+-{"channelId":"1550507281396011150","messageId":"1558174842577223761"}
++{"channelId":"1550507281396011150","messageId":"1558191003817742488"}
+```
+`~ resources/[selfcode]/lb-lieferlos/.luacheckrc`
+```diff
+-globals = { 'Config', 'Postal', 'Bridge' }
++globals = { 'Config', 'Postal', 'Bridge', 'Lieferlos' }
+-    'CreateThread', 'Wait', 'SetTimeout', 'Citizen', 'source',
++    'CreateThread', 'Wait', 'GetConvar', 'RegisterCommand', 'GetGameTimer', 'SetTimeout', 'Citizen', 'source',
+-exclude_files = { 'ui/**' }
+-exclude_files = { 'ui/**', 'install/**' }
++exclude_files = { 'ui/**', 'install/**', 'tests/**' }
+```
+`~ resources/[selfcode]/lb-lieferlos/client/main.lua`
+```diff
++-- Item images: the app tries these base URLs in order and falls back to the built-in icon.
++-- https://cfx-nui-<resource>/ is the current NUI scheme, nui://<resource>/ the older one (ox_inventory's default convar).
++local function imageConfig()
++    local path = Config.ItemImagePath
++    if not path then return nil end
++    local bases = {}
++    local function add(b)
++        if type(b) ~= 'string' or b == '' then return end
++        b = b:gsub('/+$', '')
++        for _, x in ipairs(bases) do if x == b then return end end
+```
+`~ resources/[selfcode]/lb-lieferlos/config.lua`
+```diff
++-- WICHTIG: Alle Artikel aus Config.Shops müssen als Items im Inventar existieren (Standard: die Items
++-- aus dem Consume-Script, die es schon gibt). Für eigene neue Items: install/ox_inventory_items.lua bzw. install/esx_items.sql.
++-- Beim Start prüft die Ressource das und schreibt fehlende Items in die Server-Konsole.
++
++-- Lieferlos-Artikel auf bereits vorhandene Server-Items umleiten: [Lieferlos-Name] = 'Server-Item'
++-- Beispiel: Config.ItemMapping = { tburger = 'tower_burger' }
++Config.ItemMapping = {
++    -- 'napollitano' steht in devcore_needs, existiert aber nicht in ox_inventory -> dort heißt es 'napollitanopizza'
++    napollitano = 'napollitanopizza',
++}
+```
+`~ resources/[selfcode]/lb-lieferlos/fxmanifest.lua`
+```diff
+-version '1.0.1'
++version '1.0.4'
+```
+`~ resources/[selfcode]/lb-lieferlos/server/bridge.lua`
+```diff
+-local inv = Config.Inventory
+-if inv == 'auto' then
+-    inv = GetResourceState('ox_inventory'):find('start') and 'ox_inventory' or 'esx'
++-- ---------------------------------------------------------------- inventory detection
++-- Resolved lazily (not at file load), so the result is correct even if ox_inventory starts after this resource.
++local function detectInventory()
++    local want = Config.Inventory
++    if want == 'ox' then want = 'ox_inventory' end
++    if want == 'ox_inventory' or want == 'esx' then return want end
++    local state = GetResourceState('ox_inventory')
+```
+`~ resources/[selfcode]/lb-lieferlos/server/main.lua`
+```diff
++local driverWentOnline, driverWentOffline -- defined further below
++            if not Bridge.IsAvailable(it.name) then return nil, ('%s ist gerade nicht verfügbar.'):format(it.label) end
++    local droppedDriver = d and d.online
++    if droppedDriver then driverWentOffline() end
++-- ---------------------------------------------------------------- "Fahrer im Dienst" broadcast
++-- One tiny broadcast (LB Phone NotifyEveryone / esx:showNotification to -1), never a per-player loop with data.
++local lastDriverNotify = {}   -- [identifier] = os.time() of the last broadcast caused by this driver
++local lastBroadcast = 0
++local noDriverAnnounced = true
++
+```
+`~ resources/[selfcode]/lb-lieferlos/sql/lieferlos.sql`
+```diff
+-INSERT IGNORE INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
+-    ('burger', 'Burger', 1, 0, 1),
+-    ('burger_xl', 'Heart Stopper', 1, 0, 1),
+-    ('fries', 'Pommes', 1, 0, 1),
+-    ('cola', 'eCola', 1, 0, 1),
+-    ('sprunk', 'Sprunk', 1, 0, 1),
+-    ('milkshake', 'Milchshake', 1, 0, 1),
+-    ('chicken_bucket', 'Cluckin'' Bucket', 2, 0, 1),
+-    ('chicken_wrap', 'Fowl Wrap', 1, 0, 1),
+-    ('pizza', 'Pizza Margherita', 2, 0, 1),
+```
+`~ resources/[selfcode]/lb-lieferlos/ui/dist/index.html`
+```diff
+-      <script type="module" crossorigin src="/ui/dist/assets/index-gkEW31eK.js"></script>
+-      <link rel="stylesheet" crossorigin href="/ui/dist/assets/index-DwGDBUpZ.css">
++      <script type="module" crossorigin src="/ui/dist/assets/index-DkJW2aaQ.js"></script>
++      <link rel="stylesheet" crossorigin href="/ui/dist/assets/index-BJz2cef8.css">
+```
+`~ resources/[selfcode]/lb-lieferlos/ui/src/App.tsx`
+```diff
++    Beer,
++    Cake,
++    Candy,
++    Fish,
++    Martini,
++    Nut,
++    Soup,
++    Wine,
++    Apple,
++    Banana,
+```
+`~ resources/[selfcode]/lb-lieferlos/ui/src/app.css`
+```diff
+-.item-icon { border-radius: 0.7rem; background: var(--background-tertiary); color: var(--accent); display: flex; align-items: center; justify-content: center; flex: none; }
++.item-icon { border-radius: 0.7rem; background: var(--background-tertiary); color: var(--accent); display: flex; align-items: center; justify-content: center; flex: none; overflow: hidden; }
++.item-icon.has-img img { width: 86%; height: 86%; object-fit: contain; pointer-events: none; }
+```
+`~ resources/[selfcode]/lb-lieferlos/ui/src/mock.ts`
+```diff
+-            { name: 'burger', label: 'Bleeder Burger', description: 'Doppeltes Patty, Cheddar, Bleeder-Sauce', price: 9, icon: 'burger', popular: true },
+-            { name: 'burger_xl', label: 'Heart Stopper', description: 'Vier Patties, Bacon, viel Käse', price: 14, icon: 'burger' },
+-            { name: 'fries', label: 'Money Shot Fries', description: 'Knusprige Pommes', price: 4, icon: 'fries' },
+-            { name: 'cola', label: 'eCola', description: '0,5 l', price: 3, icon: 'drink' },
+-            { name: 'milkshake', label: 'Meat Free Shake', description: 'Vanille oder Schoko', price: 5, icon: 'shake' }
++            { name: 'burger', label: 'Burger', description: 'Der Klassiker mit Käse und Soße', price: 8, icon: 'burger', popular: true },
++            { name: 'tburger', label: 'Tower Burger', description: 'Doppelt hoch, doppelt satt', price: 14, icon: 'burger' },
++            { name: 'pulledpork_burger', label: 'Pulled Pork Burger', description: 'Zartes Pulled Pork, BBQ-Soße, Coleslaw', price: 12, icon: 'burger' },
++            { name: 'chips', label: 'Chips', description: 'Die Tüte für nebenbei', price: 3, icon: 'chips' }
+-        id: 'cluckinbell', label: "Cluckin' Bell", category: 'Chicken', color: '#F59E0B', short: 'CB',
+```
+`~ resources/[selfcode]/lb-lieferlos/ui/src/types.ts`
+```diff
++    image?: string // own image (file name or full URL)
++    images?: { bases: string[]; ext: string } // item image base URLs (tried in order), undefined = icons only
+```
+`~ resources/[selfcode]/rmc_core/data/sits.json`
+```diff
+-[]
++[{"id":"sit_1791572244_8861","label":"Sit Chair 4","anim":"base","dict":"timetable@ron@ig_3_couch","y":-420.7482,"x":1225.8873,"h":255.6565,"z":68.0417},{"id":"sit_1791572300_6917","label":"Sit Chair 2","anim":"ig_5_p3_base","dict":"timetable@ron@ig_5_p3","y":-419.3795,"x":1226.4694,"h":271.1957,"z":68.0817}]
+```
+`− resources/[selfcode]/lb-lieferlos/ui/dist/assets/index-Blyp_gGa.js`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/lb-lieferlos/ui/dist/assets/index-gkEW31eK.js`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-09 20:24 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
@@ -3676,12 +3878,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/rmc_helfer/server/main.lua`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-06 23:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[oresmon]/rm_hackerv/shared/cfg.lua`
-```diff
--    ['phoneJobs'] = {'rosa_nera'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)
-+    ['phoneJobs'] = {'ambulance'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)
 ```
