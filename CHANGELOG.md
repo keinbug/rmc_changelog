@@ -2,6 +2,91 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-10 00:24 Uhr
+**+2** neu · **~9** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_doors/audio/data/oxdoorlock_sounds.dat54.rel`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_doors/audio/dlc_oxdoorlock/oxdoorlock.awc`
+```diff
++ Neue Datei
+```
+`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
+```diff
+-{"channelId":"1550507281396011150","messageId":"1558220457289977856"}
++{"channelId":"1550507281396011150","messageId":"1558237349224128575"}
+```
+`~ resources/[selfcode]/rmc_doors/client/main.lua`
+```diff
+-local function distSqTo(coords)
+-    local p = GetEntityCoords(PlayerPedId())
+-    local dx, dy, dz = p.x - coords.x, p.y - coords.y, p.z - coords.z
++local function distSqBetween(a, b)
++    local dx, dy, dz = a.x - b.x, a.y - b.y, a.z - b.z
++local function distSqTo(coords)
++    return distSqBetween(GetEntityCoords(PlayerPedId()), coords)
++end
++
++local function doorDistSqFrom(origin, door)
+```
+`~ resources/[selfcode]/rmc_doors/config.lua`
+```diff
++--- ox_target hängt Aufschließen/Abschließen an die Tür, sobald die Resource läuft.
++--- INPUT_PICKUP (E) ist dann aus. INPUT_DETONATE (G) bleibt der Dietrich.
+-Config.DefaultRate = 1.0
+-
+-Config.Sounds = {
+-    lock = { name = 'DOOR_BUZZ', set = 'MP_PLAYER_APARTMENT' },
+-    unlock = { name = 'DOOR_OPEN', set = 'GTAO_APT_DOOR_DOWNSTAIRS_GLASS_SOUNDS' },
+-}
++--- Door-System-Tempo wie ox_doorlock. Über 10 bleibt die Tür stehen.
++Config.DefaultRate = 10.0
+```
+`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
+```diff
++    'audio/data/oxdoorlock_sounds.dat54.rel',
++    'audio/dlc_oxdoorlock/oxdoorlock.awc',
++data_file 'AUDIO_WAVEPACK' 'audio/dlc_oxdoorlock'
++data_file 'AUDIO_SOUNDDATA' 'audio/data/oxdoorlock_sounds.dat'
++
+```
+`~ resources/[selfcode]/rmc_doors/html/app.js`
+```diff
+-    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 1;
++    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 10;
+```
+`~ resources/[selfcode]/rmc_doors/html/index.html`
+```diff
+-                                <input id="f-rate" type="number" min="0.1" max="20" step="0.1" value="1" />
++                                <input id="f-rate" type="number" min="0.2" max="10" step="0.1" value="10" />
+```
+`~ resources/[selfcode]/rmc_doors/locales/de.lua`
+```diff
++    target_unlock = 'Aufschließen',
++    target_lock = 'Abschließen',
++    target_lockpick = 'Dietrich',
+```
+`~ resources/[selfcode]/rmc_doors/locales/en.lua`
+```diff
++    target_unlock = 'Unlock',
++    target_lock = 'Lock',
++    target_lockpick = 'Lockpick',
+```
+`~ resources/[selfcode]/rmc_doors/server/main.lua`
+```diff
+-        doorRate = math.min(20.0, math.max(0.1, doorRate)),
++        doorRate = math.min(10.0, math.max(0.2, doorRate)),
+-    local c = door.coords
+-    local dx, dy, dz = coords.x - c.x, coords.y - c.y, coords.z - c.z
++
+-    return (dx * dx + dy * dy + dz * dz) <= (limit * limit)
++    local limitSq = limit * limit
++
++    local function near(point)
++        if type(point) ~= 'table' then return false end
+```
+
 ## 2026-10-09 23:24 Uhr
 **+13** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_doors/client/creator.lua`
@@ -3902,12 +3987,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/klaus/main.lua`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-07 14:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[prsim]/prism_loadingscreen/config.lua`
-```diff
--            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/rmcneu.mp4',
-+            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_neu.mp4',
 ```

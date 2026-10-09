@@ -12887,6 +12887,223 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T00:24:09+02:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 9,
+        "deleted": 0,
+        "total": 81765
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_doors/audio/data/oxdoorlock_sounds.dat54.rel",
+        "resources/[selfcode]/rmc_doors/audio/dlc_oxdoorlock/oxdoorlock.awc"
+      ],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+        "resources/[selfcode]/rmc_doors/client/main.lua",
+        "resources/[selfcode]/rmc_doors/config.lua",
+        "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+        "resources/[selfcode]/rmc_doors/html/app.js",
+        "resources/[selfcode]/rmc_doors/html/index.html",
+        "resources/[selfcode]/rmc_doors/locales/de.lua",
+        "resources/[selfcode]/rmc_doors/locales/en.lua",
+        "resources/[selfcode]/rmc_doors/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_doors/audio/data/oxdoorlock_sounds.dat54.rel",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/audio/dlc_oxdoorlock/oxdoorlock.awc",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558220457289977856\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558237349224128575\"}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/client/main.lua",
+          "status": "M",
+          "lines": [
+            "-local function distSqTo(coords)\r",
+            "-    local p = GetEntityCoords(PlayerPedId())\r",
+            "-    local dx, dy, dz = p.x - coords.x, p.y - coords.y, p.z - coords.z\r",
+            "+local function distSqBetween(a, b)\r",
+            "+    local dx, dy, dz = a.x - b.x, a.y - b.y, a.z - b.z\r",
+            "+local function distSqTo(coords)\r",
+            "+    return distSqBetween(GetEntityCoords(PlayerPedId()), coords)\r",
+            "+end\r",
+            "+\r",
+            "+local function doorDistSqFrom(origin, door)\r",
+            "+    local best = distSqBetween(origin, door.coords)\r",
+            "+    local leaves = door.doors\r",
+            "+    if type(leaves) == 'table' then\r",
+            "+        for i = 1, #leaves do\r",
+            "+            local coords = leaves[i].coords\r",
+            "+            if type(coords) == 'table' then\r",
+            "+                local dist = distSqBetween(origin, coords)\r",
+            "+                if dist < best then best = dist end\r",
+            "+            end\r",
+            "+        end\r",
+            "+    end\r",
+            "+    return best\r",
+            "+end\r",
+            "+\r",
+            "-local closeToken = {}\r",
+            "-\r",
+            "-    local rate = tonumber(door.doorRate) or 0.0\r",
+            "-    if rate < 0.1 then\r",
+            "-        rate = door.auto and 10.0 or Config.DefaultRate\r",
+            "+    local rate = tonumber(door.doorRate) or 10.0\r",
+            "+    if rate <= 1.0 or rate > 10.0 then\r",
+            "+        return 10.0\r",
+            "-    if rate > 20.0 then rate = 20.0 end\r",
+            "-local function closeDuration(door)\r",
+            "-    local rate = leafRate(door)\r",
+            "-    return math.max(90, math.min(260, math.floor(220 / rate)))\r",
+            "+local function leafDistance(door)\r",
+            "+    if door.auto then\r",
+            "+        return 30.0\r",
+            "+    end\r",
+            "+    return math.max(tonumber(door.maxDistance) or 2.0, 8.0)\r",
+            "-local function pullShut(door, leaf, from)\r",
+            "-    local hash = leaf.hash\r",
+            "-    closeToken[hash] = (closeToken[hash] or 0) + 1\r",
+            "-    local token = closeToken[hash]\r",
+            "-    local duration = closeDuration(door)\r",
+            "-    local rate = math.max(leafRate(door), 14.0)\r",
+            "-\r",
+            "-    CreateThread(function()\r",
+            "-        Wait(0)\r",
+            "-        if closeToken[hash] ~= token then return end\r",
+            "-\r",
+            "-        leaf.heldOpen = false\r",
+            "-        DoorSystemSetHoldOpen(hash, false)\r",
+            "-        DoorSystemSetAutomaticDistance(hash, 0.0, false, false)\r",
+            "-        DoorSystemSetAutomaticRate(hash, rate, false, false)\r",
+            "-        DoorSystemSetDoorState(hash, 0, false, false)\r",
+            "-\r",
+            "-        if math.abs(from) >= 0.02 then\r",
+            "-            local started = GetGameTimer()\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/config.lua",
+          "status": "M",
+          "lines": [
+            "+--- ox_target hängt Aufschließen/Abschließen an die Tür, sobald die Resource läuft.\r",
+            "+--- INPUT_PICKUP (E) ist dann aus. INPUT_DETONATE (G) bleibt der Dietrich.\r",
+            "-Config.DefaultRate = 1.0\r",
+            "-\r",
+            "-Config.Sounds = {\r",
+            "-    lock = { name = 'DOOR_BUZZ', set = 'MP_PLAYER_APARTMENT' },\r",
+            "-    unlock = { name = 'DOOR_OPEN', set = 'GTAO_APT_DOOR_DOWNSTAIRS_GLASS_SOUNDS' },\r",
+            "-}\r",
+            "+--- Door-System-Tempo wie ox_doorlock. Über 10 bleibt die Tür stehen.\r",
+            "+Config.DefaultRate = 10.0\r",
+            "+\r",
+            "+--- Dieselben Sounds wie ox_doorlock (Audio-Bank im Resource).\r",
+            "+Config.AudioBank = 'dlc_oxdoorlock/oxdoorlock'\r",
+            "+Config.AudioSet = 'DLC_OXDOORLOCK_SET'\r",
+            "+Config.LockSound = 'door_bolt'\r",
+            "+Config.UnlockSound = 'door_bolt'\r",
+            "+Config.AutoLockSound = 'button_remote'\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'audio/data/oxdoorlock_sounds.dat54.rel',\r",
+            "+    'audio/dlc_oxdoorlock/oxdoorlock.awc',\r",
+            "+data_file 'AUDIO_WAVEPACK' 'audio/dlc_oxdoorlock'\r",
+            "+data_file 'AUDIO_SOUNDDATA' 'audio/data/oxdoorlock_sounds.dat'\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/html/app.js",
+          "status": "M",
+          "lines": [
+            "-    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 1;\r",
+            "+    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 10;\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/html/index.html",
+          "status": "M",
+          "lines": [
+            "-                                <input id=\"f-rate\" type=\"number\" min=\"0.1\" max=\"20\" step=\"0.1\" value=\"1\" />\r",
+            "+                                <input id=\"f-rate\" type=\"number\" min=\"0.2\" max=\"10\" step=\"0.1\" value=\"10\" />\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/locales/de.lua",
+          "status": "M",
+          "lines": [
+            "+    target_unlock = 'Aufschließen',\r",
+            "+    target_lock = 'Abschließen',\r",
+            "+    target_lockpick = 'Dietrich',\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/locales/en.lua",
+          "status": "M",
+          "lines": [
+            "+    target_unlock = 'Unlock',\r",
+            "+    target_lock = 'Lock',\r",
+            "+    target_lockpick = 'Lockpick',\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/server/main.lua",
+          "status": "M",
+          "lines": [
+            "-        doorRate = math.min(20.0, math.max(0.1, doorRate)),\r",
+            "+        doorRate = math.min(10.0, math.max(0.2, doorRate)),\r",
+            "-    local c = door.coords\r",
+            "-    local dx, dy, dz = coords.x - c.x, coords.y - c.y, coords.z - c.z\r",
+            "+\r",
+            "-    return (dx * dx + dy * dy + dz * dz) <= (limit * limit)\r",
+            "+    local limitSq = limit * limit\r",
+            "+\r",
+            "+    local function near(point)\r",
+            "+        if type(point) ~= 'table' then return false end\r",
+            "+        local x, y, z = tonumber(point.x), tonumber(point.y), tonumber(point.z)\r",
+            "+        if not x or not y or not z then return false end\r",
+            "+        local dx, dy, dz = coords.x - x, coords.y - y, coords.z - z\r",
+            "+        return (dx * dx + dy * dy + dz * dz) <= limitSq\r",
+            "+    end\r",
+            "+\r",
+            "+    if near(door.coords) then return true end\r",
+            "+\r",
+            "+    local leaves = door.doors\r",
+            "+    if type(leaves) == 'table' then\r",
+            "+        for i = 1, #leaves do\r",
+            "+            if near(leaves[i].coords) then return true end\r",
+            "+        end\r",
+            "+    end\r",
+            "+\r",
+            "+    return false\r"
+          ]
+        }
+      ]
     }
   ]
 }
