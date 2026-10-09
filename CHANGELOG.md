@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-09 04:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
+```diff
+-{"channelId":"1550507281396011150","messageId":"1557888280693842059"}
++{"channelId":"1550507281396011150","messageId":"1557933677806358601"}
+```
+
 ## 2026-10-09 01:23 Uhr
 **+3** neu · **~8** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/sit.lua`
@@ -2413,12 +2421,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +local function jsonSafe(value, seen)
 +    local t = type(value)
 +    if t == 'string' or t == 'number' or t == 'boolean' then
-```
-
-## 2026-10-05 16:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[prsim]/prism_loadingscreen/config.lua`
-```diff
--            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loadingscreen.mp4',
-+            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/rmcneu.mp4',
 ```
