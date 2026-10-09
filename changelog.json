@@ -12756,6 +12756,137 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-09T23:24:13+02:00",
+      "initial": false,
+      "counts": {
+        "added": 13,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81763
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_doors/client/creator.lua",
+        "resources/[selfcode]/rmc_doors/client/main.lua",
+        "resources/[selfcode]/rmc_doors/config.lua",
+        "resources/[selfcode]/rmc_doors/doors.sql",
+        "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+        "resources/[selfcode]/rmc_doors/html/app.js",
+        "resources/[selfcode]/rmc_doors/html/index.html",
+        "resources/[selfcode]/rmc_doors/html/style.css",
+        "resources/[selfcode]/rmc_doors/locales/de.lua",
+        "resources/[selfcode]/rmc_doors/locales/en.lua",
+        "resources/[selfcode]/rmc_doors/server/main.lua",
+        "resources/[selfcode]/rmc_doors/shared/locale.lua",
+        "resources/[selfcode]/rmc_doors/sql/rmc_doors.sql"
+      ],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_doors/client/creator.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/doors.sql",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/html/app.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/html/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/html/style.css",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/locales/de.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/locales/en.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/shared/locale.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/sql/rmc_doors.sql",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558191003817742488\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558220457289977856\"}"
+          ]
+        }
+      ]
     }
   ]
 }
