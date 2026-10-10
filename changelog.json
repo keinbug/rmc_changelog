@@ -13354,6 +13354,71 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T12:23:36+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 6,
+        "total": 81758
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [],
+      "deleted": [
+        "resources/[selfcode]/lb-lieferlos/tests/client_mocks.lua",
+        "resources/[selfcode]/lb-lieferlos/tests/client_test.py",
+        "resources/[selfcode]/lb-lieferlos/tests/mocks.lua",
+        "resources/[selfcode]/lb-lieferlos/tests/ox_test.lua",
+        "resources/[selfcode]/lb-lieferlos/tests/run.lua",
+        "resources/[selfcode]/lb-lieferlos/tests/run.py"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/client_mocks.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/client_test.py",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/mocks.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/ox_test.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/run.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-lieferlos/tests/run.py",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
