@@ -14761,6 +14761,91 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T21:23:54+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 81826
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1791571216,",
+            "+    \"lastBackup\": 1791657760,",
+            "-            \"backupTimestamp\": 1791224822,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_27_05_10_2026.json\",",
+            "-            \"backupDate\": \"20_27_05_10_2026\"",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1791224947,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_29_05_10_2026.json\",",
+            "-            \"backupDate\": \"20_29_05_10_2026\"",
+            "-        },",
+            "-        {",
+            "+            \"backupFile\": \"banlist_20_29_06_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_29_06_10_2026.json\",",
+            "+            \"backupFile\": \"banlist_20_32_06_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_32_06_10_2026.json\",",
+            "+            \"backupDate\": \"20_32_07_10_2026\",",
+            "-            \"backupDate\": \"20_32_07_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_34_07_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_34_07_10_2026.json\",",
+            "+            \"backupDate\": \"20_35_08_10_2026\",",
+            "-            \"backupDate\": \"20_35_08_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_37_08_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_37_08_10_2026.json\",",
+            "+            \"backupDate\": \"20_38_09_10_2026\",",
+            "-            \"backupDate\": \"20_38_09_10_2026\",",
+            "+            \"backupTimestamp\": 1791571216,",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_20_40_09_10_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_40_10_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791657635,",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_40_10_10_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"backupDate\": \"20_42_10_10_2026\",",
+            "+            \"backupTimestamp\": 1791657760,",
+            "-            \"backupFile\": \"banlist_20_40_09_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791571216",
+            "+            \"backupFile\": \"banlist_20_42_10_10_2026.json\""
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"value\": 50000,",
+            "+            \"receiver_name\": \"Fabi Huber\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"reason\": \"Einzahlung auf Kartenkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/10/10 - 20:27:39\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }

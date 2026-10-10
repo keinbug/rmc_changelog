@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-10 21:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1791571216,
++    "lastBackup": 1791657760,
+-            "backupTimestamp": 1791224822,
+-            "id": 11,
+-            "backupFile": "banlist_20_27_05_10_2026.json",
+-            "backupDate": "20_27_05_10_2026"
+-        },
+-        {
+-            "backupTimestamp": 1791224947,
+-            "id": 11,
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
++            "value": 50000,
++            "receiver_name": "Fabi Huber",
++            "sender_name": "Geldbörse",
++            "type": "deposit",
++            "reason": "Einzahlung auf Kartenkonto",
++            "sender_identifier": "bank",
++            "date": "2026/10/10 - 20:27:39"
++        },
+```
+
 ## 2026-10-10 20:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -3141,19 +3170,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ server.cfg.bkp`
 ```diff
 (Secrets — Inhalt unterdrückt)
-```
-
-## 2026-10-08 23:24 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[jaksam_scripte]/jobs_creator/_modules/stash/ox-inventory/sv_stash.lua`
-```diff
--    slots = 50,
--    weight = 100000,
-+    slots = 500,
-+    weight = 10000000000,
-```
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1557849594405191745"}
-+{"channelId":"1550507281396011150","messageId":"1557866174803476521"}
 ```
