@@ -14846,6 +14846,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T22:23:55+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81826
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 100,",
+            "+            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "+            \"sender_name\": \"Jonas Lindholm\",",
+            "+            \"type\": \"card_purchase\",",
+            "+            \"reason\": \"Kartenkauf: Standard Card\",",
+            "+            \"sender_identifier\": \"char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"date\": \"2026/10/10 - 21:44:16\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
