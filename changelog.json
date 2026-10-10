@@ -14727,6 +14727,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T20:23:57+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81826
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"value\": 30000,",
+            "+            \"receiver_name\": \"Fabi Huber\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"reason\": \"Einzahlung auf Kartenkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"date\": \"2026/10/10 - 19:24:31\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
