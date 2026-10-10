@@ -2,6 +2,57 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-11 01:24 Uhr
+**+3** neu · **~4** geändert · **-0** gelöscht
+`+ resources/[rcore]/rcore_casino/server/transactions.txt`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_api/okok_transactions.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_api/server/modules/banking.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[rcore]/rcore_casino/config_server.lua`
+```diff
+-    Discord = false, -- whether to enable Discord notifications (check config_server.lua)
+-    DiscordInterval = 60000 * 15, -- 15 mins
+-    HookUrl = "https://discord.com/api/webhooks/???!",
+-    LogTransactions = false, -- log all transactions to transactions.log file, also print in server console
++    Discord = true, -- whether to enable Discord notifications (check config_server.lua)
++    DiscordInterval = 10000, -- 10 sekunden
++    HookUrl = "https://discord.com/api/webhooks/1558620241477767308/***",
++    LogTransactions = true, -- log all transactions to transactions.log file, also print in server console
+```
+`~ resources/[selfcode]/rmc_api/config/api_key.lua`
+```diff
++
++-- ========================================
++--  OKOKBANKING (transactions.json)
++-- ========================================
++-- Liest die Laufzeitdatei von okokBanking. LoadResourceFile geht in die
++-- andere Resource; falls die Datei dort nicht sichtbar ist, wird der
++-- lokale Symlink okok_transactions.json genutzt.
++Config.Banking = {
++    Resource = 'okokBanking',
++    File = 'transactions.json',
+```
+`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
+```diff
++    'server/modules/banking.lua',
+```
+`~ resources/[selfcode]/rmc_api/server/main.lua`
+```diff
++    -- okokBanking (transactions.json)
++    { method = 'GET', path = '/banking/accounts',                     handler = function(req, res) BankingModule.accounts(req, res) end },
++    { method = 'GET', path = '/banking/transactions/:identifier',     handler = function(req, res, p) BankingModule.transactions(req, res, p[1]) end },
++    { method = 'GET', path = '/banking/transactions',                 handler = function(req, res) BankingModule.transactions(req, res) end },
++
+```
+
 ## 2026-10-11 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -3079,12 +3130,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"channelId":"1550507281396011150","messageId":"1557933677806358601"}
 +{"channelId":"1550507281396011150","messageId":"1557953968288833579"}
-```
-
-## 2026-10-09 04:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1557888280693842059"}
-+{"channelId":"1550507281396011150","messageId":"1557933677806358601"}
 ```

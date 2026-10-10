@@ -14906,6 +14906,103 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-11T01:24:24+02:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 4,
+        "deleted": 0,
+        "total": 81829
+      },
+      "truncated": false,
+      "added": [
+        "resources/[rcore]/rcore_casino/server/transactions.txt",
+        "resources/[selfcode]/rmc_api/okok_transactions.json",
+        "resources/[selfcode]/rmc_api/server/modules/banking.lua"
+      ],
+      "modified": [
+        "resources/[rcore]/rcore_casino/config_server.lua",
+        "resources/[selfcode]/rmc_api/config/api_key.lua",
+        "resources/[selfcode]/rmc_api/fxmanifest.lua",
+        "resources/[selfcode]/rmc_api/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[rcore]/rcore_casino/server/transactions.txt",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/okok_transactions.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/banking.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[rcore]/rcore_casino/config_server.lua",
+          "status": "M",
+          "lines": [
+            "-    Discord = false, -- whether to enable Discord notifications (check config_server.lua)\r",
+            "-    DiscordInterval = 60000 * 15, -- 15 mins\r",
+            "-    HookUrl = \"https://discord.com/api/webhooks/???!\",\r",
+            "-    LogTransactions = false, -- log all transactions to transactions.log file, also print in server console\r",
+            "+    Discord = true, -- whether to enable Discord notifications (check config_server.lua)\r",
+            "+    DiscordInterval = 10000, -- 10 sekunden\r",
+            "+    HookUrl = \"https://discord.com/api/webhooks/1558620241477767308/***\",\r",
+            "+    LogTransactions = true, -- log all transactions to transactions.log file, also print in server console\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/config/api_key.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- ========================================",
+            "+--  OKOKBANKING (transactions.json)",
+            "+-- ========================================",
+            "+-- Liest die Laufzeitdatei von okokBanking. LoadResourceFile geht in die",
+            "+-- andere Resource; falls die Datei dort nicht sichtbar ist, wird der",
+            "+-- lokale Symlink okok_transactions.json genutzt.",
+            "+Config.Banking = {",
+            "+    Resource = 'okokBanking',",
+            "+    File = 'transactions.json',",
+            "+    SymlinkName = 'okok_transactions.json',",
+            "+    CacheMs = 15000,",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/modules/banking.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+    -- okokBanking (transactions.json)",
+            "+    { method = 'GET', path = '/banking/accounts',                     handler = function(req, res) BankingModule.accounts(req, res) end },",
+            "+    { method = 'GET', path = '/banking/transactions/:identifier',     handler = function(req, res, p) BankingModule.transactions(req, res, p[1]) end },",
+            "+    { method = 'GET', path = '/banking/transactions',                 handler = function(req, res) BankingModule.transactions(req, res) end },",
+            "+"
+          ]
+        }
+      ]
     }
   ]
 }
