@@ -13419,6 +13419,752 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T13:23:50+02:00",
+      "initial": false,
+      "counts": {
+        "added": 49,
+        "modified": 11,
+        "deleted": 3,
+        "total": 81804
+      },
+      "truncated": false,
+      "added": [
+        "SAVE/dolu_tool/LICENSE",
+        "SAVE/dolu_tool/README.md",
+        "SAVE/dolu_tool/client/controls.lua",
+        "SAVE/dolu_tool/client/instructionalButtons.lua",
+        "SAVE/dolu_tool/client/keybinds.lua",
+        "SAVE/dolu_tool/client/main.lua",
+        "SAVE/dolu_tool/client/menu.lua",
+        "SAVE/dolu_tool/client/modules/audio.lua",
+        "SAVE/dolu_tool/client/modules/interior.lua",
+        "SAVE/dolu_tool/client/modules/locations.lua",
+        "SAVE/dolu_tool/client/modules/object.lua",
+        "SAVE/dolu_tool/client/modules/peds.lua",
+        "SAVE/dolu_tool/client/modules/vehicles.lua",
+        "SAVE/dolu_tool/client/modules/weapons.lua",
+        "SAVE/dolu_tool/client/modules/world.lua",
+        "SAVE/dolu_tool/client/noclip.lua",
+        "SAVE/dolu_tool/client/target.lua",
+        "SAVE/dolu_tool/client/utils.lua",
+        "SAVE/dolu_tool/config.lua",
+        "SAVE/dolu_tool/fxmanifest.lua",
+        "SAVE/dolu_tool/locales/ar.json",
+        "SAVE/dolu_tool/locales/cs.json",
+        "SAVE/dolu_tool/locales/da.json",
+        "SAVE/dolu_tool/locales/de.json",
+        "SAVE/dolu_tool/locales/en.json",
+        "SAVE/dolu_tool/locales/es.json",
+        "SAVE/dolu_tool/locales/fr.json",
+        "SAVE/dolu_tool/locales/hu.json",
+        "SAVE/dolu_tool/locales/it.json",
+        "SAVE/dolu_tool/locales/ja.json",
+        "SAVE/dolu_tool/locales/pl.json",
+        "SAVE/dolu_tool/locales/pt.json",
+        "SAVE/dolu_tool/locales/th.json",
+        "SAVE/dolu_tool/locales/zh-cn.json",
+        "SAVE/dolu_tool/locales/zh-tw.json",
+        "SAVE/dolu_tool/server/main.lua",
+        "SAVE/dolu_tool/server/version.lua",
+        "SAVE/dolu_tool/shared/data/locations.json",
+        "SAVE/dolu_tool/shared/data/mloInteriors.json",
+        "SAVE/dolu_tool/shared/data/pedList.json",
+        "SAVE/dolu_tool/shared/data/radioStations.json",
+        "SAVE/dolu_tool/shared/data/staticEmitters.json",
+        "SAVE/dolu_tool/shared/data/vehicleList.json",
+        "SAVE/dolu_tool/shared/data/weaponList.json",
+        "SAVE/dolu_tool/shared/init.lua",
+        "SAVE/dolu_tool/web/build/assets/index-BzP1ScT8.js",
+        "SAVE/dolu_tool/web/build/assets/index-GPYetTxq.css",
+        "SAVE/dolu_tool/web/build/index.html",
+        "resources/[manuell_start]/oxmysql/web/build/assets/index-ed335b58.js"
+      ],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/config/discord.lua",
+        "resources/[manuell_start]/es_extended/server/functions.lua",
+        "resources/[manuell_start]/es_extended/server/modules/discord/bot.js",
+        "resources/[manuell_start]/es_extended/server/modules/discord/bridge.lua",
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+        "resources/[manuell_start]/oxmysql/README.md",
+        "resources/[manuell_start]/oxmysql/dist/build.js",
+        "resources/[manuell_start]/oxmysql/fxmanifest.lua",
+        "resources/[manuell_start]/oxmysql/logger/fivemanage.js",
+        "resources/[manuell_start]/oxmysql/web/build/index.html",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "filename.json",
+        "myprofile",
+        "resources/[manuell_start]/oxmysql/web/build/assets/index-856dcf43.js"
+      ],
+      "diffs": [
+        {
+          "path": "SAVE/dolu_tool/LICENSE",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/controls.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/instructionalButtons.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/keybinds.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/menu.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/audio.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/interior.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/locations.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/object.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/peds.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/vehicles.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/weapons.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/modules/world.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/noclip.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/target.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/client/utils.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/ar.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/cs.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/da.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/de.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/en.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/es.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/fr.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/hu.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/it.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/ja.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/pl.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/pt.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/th.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/zh-cn.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/locales/zh-tw.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/server/version.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/locations.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/mloInteriors.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/pedList.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/radioStations.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/staticEmitters.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/vehicleList.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/data/weaponList.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/shared/init.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/web/build/assets/index-BzP1ScT8.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/web/build/assets/index-GPYetTxq.css",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "SAVE/dolu_tool/web/build/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/web/build/assets/index-ed335b58.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/config/discord.lua",
+          "status": "M",
+          "lines": [
+            "-    -- Optional: bestehende Nachrichten-ID. Leer = Bot merkt sich die ID selbst",
+            "-    PanelMessageId = \"1551154479007793154\",",
+            "+    -- Optional: Startwert, nur wenn panel.json noch keine Nachrichten-ID hat",
+            "+    PanelMessageId = \"\",",
+            "-    RefreshInterval = 15000,",
+            "+    RefreshInterval = 30000,"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/functions.lua",
+          "status": "M",
+          "lines": [
+            "+    local metadata = xPlayer.metadata",
+            "+    if type(metadata) ~= \"table\" then",
+            "+        return",
+            "+    end",
+            "+",
+            "-    xPlayer.setMeta(\"health\", GetEntityHealth(ped))",
+            "-    xPlayer.setMeta(\"armor\", GetPedArmour(ped))",
+            "-    xPlayer.setMeta(\"lastPlaytime\", xPlayer.getPlayTime())",
+            "+    metadata.health = GetEntityHealth(ped)",
+            "+    metadata.armor = GetPedArmour(ped)",
+            "+    metadata.lastPlaytime = xPlayer.getPlayTime()",
+            "-        updateHealthAndArmorInMetadata(xPlayer)",
+            "-        parameters[#parameters + 1] = {",
+            "-            json.encode(xPlayer.getAccounts(true)),",
+            "-            xPlayer.job.name,",
+            "-            xPlayer.job.grade,",
+            "-            xPlayer.group,",
+            "-            json.encode(xPlayer.getCoords(false, true)),",
+            "-            json.encode(xPlayer.getInventory(true)),",
+            "-            json.encode(xPlayer.getLoadout(true)),",
+            "-            json.encode(xPlayer.getMeta()),",
+            "-            xPlayer.identifier,",
+            "-        }",
+            "+        if xPlayer.spawned then",
+            "+            updateHealthAndArmorInMetadata(xPlayer)",
+            "+            parameters[#parameters + 1] = {",
+            "+                json.encode(xPlayer.getAccounts(true)),",
+            "+                xPlayer.job.name,",
+            "+                xPlayer.job.grade,",
+            "+                xPlayer.group,",
+            "+                json.encode(xPlayer.getCoords(false, true)),",
+            "+                json.encode(xPlayer.getInventory(true)),",
+            "+                json.encode(xPlayer.getLoadout(true)),",
+            "+                json.encode(xPlayer.getMeta()),",
+            "+                xPlayer.identifier,",
+            "+            }",
+            "+        end",
+            "+    end",
+            "+",
+            "+    if #parameters == 0 then",
+            "+        return cb and cb()"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/bot.js",
+          "status": "M",
+          "lines": [
+            "-let heartbeatTimer = null;",
+            "+let sessionId = null;",
+            "+let resumeGatewayUrl = null;",
+            "+let reconnectTimer = null;",
+            "+let connectGeneration = 0;",
+            "+let builtFingerprint = null;",
+            "+let lastPanelFingerprint = null;",
+            "+function isMissingMessage(err) {",
+            "+    const msg = String(err && err.message ? err.message : err);",
+            "+    return /\\b404\\b/.test(msg) || msg.includes('10008') || msg.includes('Unknown Message');",
+            "+}",
+            "+",
+            "+function resolveGatewayUrl(resume) {",
+            "+    const base = resume && resumeGatewayUrl ? resumeGatewayUrl : GATEWAY;",
+            "+    const url = new URL(base);",
+            "+    if (!url.searchParams.has('v')) {",
+            "+        url.searchParams.set('v', '10');",
+            "+        url.searchParams.set('encoding', 'json');",
+            "+    }",
+            "+    return url;",
+            "+}",
+            "+",
+            "+    builtFingerprint = JSON.stringify({",
+            "+        players: status.players || 0,",
+            "+        maxPlayers: status.maxPlayers || 0,",
+            "+        uptime: status.uptime || '',",
+            "+        resources: status.resources || '',",
+            "+        jobs: status.jobs || '',",
+            "+        time: String(status.time || '').slice(0, 16),",
+            "+        online: players.map((player) => `${player.id}:${player.ping}:${player.job}:${player.name}`).join('|'),",
+            "+        selected: playerId || null,",
+            "+        lastAction,",
+            "+    });",
+            "+",
+            "+    const payload = panelPayload(playerId);",
+            "+    if (builtFingerprint === lastPanelFingerprint) {",
+            "+        return true;",
+            "+    }",
+            "+",
+            "-        await rest('PATCH', `/channels/${panelChannelId}/messages/${panelMessageId}`, panelPayload(playerId));",
+            "+        await rest('PATCH', `/channels/${panelChannelId}/messages/${panelMessageId}`, payload);",
+            "+        lastPanelFingerprint = builtFingerprint;",
+            "-        log(`Panel-Update fehlgeschlagen, erstelle neu: ${err.message}`);",
+            "+        if (!isMissingMessage(err)) {",
+            "+            log(`Panel-Update fehlgeschlagen: ${err.message}`);",
+            "+            return false;",
+            "+        }",
+            "+",
+            "+        log('Panel-Nachricht nicht gefunden, poste einmal neu');",
+            "+        lastPanelFingerprint = null;",
+            "-    panelMessageId = String(botConfig.PanelMessageId || stored.messageId || '');",
+            "+    if (stored.channelId) {",
+            "+        panelChannelId = String(stored.channelId);",
+            "+    }",
+            "+    panelMessageId = String(stored.messageId || botConfig.PanelMessageId || '');",
+            "-            await rest('PATCH', `/channels/${panelChannelId}/messages/${panelMessageId}`, panelPayload());",
+            "+            const payload = panelPayload();",
+            "+            await rest('PATCH', `/channels/${panelChannelId}/messages/${panelMessageId}`, payload);",
+            "+            lastPanelFingerprint = builtFingerprint;",
+            "-            await cleanupOldPanels(panelMessageId);"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/bridge.lua",
+          "status": "M",
+          "lines": [
+            "+local resourceSummary = { at = 0, text = nil }",
+            "+local RESOURCE_CACHE_MS = 60000",
+            "+local function getResourceSummary()",
+            "+    local nowMs = GetGameTimer()",
+            "+    if resourceSummary.text and (nowMs - resourceSummary.at) < RESOURCE_CACHE_MS then",
+            "+        return resourceSummary.text",
+            "+    end",
+            "+",
+            "+    local resourceCount, startedCount = GetNumResources(), 0",
+            "+    for i = 0, resourceCount - 1 do",
+            "+        local name = GetResourceByFindIndex(i)",
+            "+        if name and GetResourceState(name) == \"started\" then",
+            "+            startedCount += 1",
+            "+        end",
+            "+    end",
+            "+",
+            "+    resourceSummary.at = nowMs",
+            "+    resourceSummary.text = (\"%s/%s gestartet\"):format(startedCount, resourceCount)",
+            "+    return resourceSummary.text",
+            "+end",
+            "+",
+            "-    local resourceCount, startedCount = GetNumResources(), 0",
+            "-    for i = 0, resourceCount - 1 do",
+            "-        local name = GetResourceByFindIndex(i)",
+            "-        if name and GetResourceState(name) == \"started\" then",
+            "-            startedCount += 1",
+            "-        end",
+            "-    end",
+            "-",
+            "-            resources = (\"%s/%s gestartet\"):format(startedCount, resourceCount),",
+            "+            resources = getResourceSummary(),"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558405954020581438\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558439293457014815\"}"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/README.md",
+          "status": "M",
+          "lines": [
+            "+<div align=\"center\">",
+            "+",
+            "-![](https://img.shields.io/github/downloads/overextended/oxmysql/total?logo=github)",
+            "-![](https://img.shields.io/github/downloads/overextended/oxmysql/latest/total?logo=github)",
+            "-![](https://img.shields.io/github/contributors/overextended/oxmysql?logo=github)",
+            "-![](https://img.shields.io/github/v/release/overextended/oxmysql?logo=github) ",
+            "+[![](https://img.shields.io/github/downloads/overextended/oxmysql/total?style=for-the-badge&logo=github)](https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip)",
+            "+[![](https://img.shields.io/github/downloads/overextended/oxmysql/latest/total?style=for-the-badge&logo=github)](https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip)",
+            "+[![](https://img.shields.io/github/v/release/overextended/oxmysql?style=for-the-badge&logo=github)](https://github.com/overextended/oxmysql/releases/latest/)\\",
+            "+[![](https://badges.5metrics.dev/oxmysql/serverRank.svg?style=for-the-badge)](https://5metrics.dev/resource/oxmysql)",
+            "+[![](https://badges.5metrics.dev/oxmysql/servers.svg?style=for-the-badge)](https://5metrics.dev/resource/oxmysql)",
+            "+[![](https://badges.5metrics.dev/oxmysql/players.svg?style=for-the-badge)](https://5metrics.dev/resource/oxmysql)",
+            "+",
+            "+Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines and to see our Contributor License Agreement.\\",
+            "+Refer to [NOTICE.md](./NOTICE.md) for additional information and legal notices.",
+            "+",
+            "+</div>",
+            "+",
+            "-We have included a module for submitting error logs to [Fivemanage](https://fivemanage.com/?ref=overextended), a cloud management service tailored for game servers. Additional logging options and support for other services will be available in the future.",
+            "+We have included a module for submitting error logs to [Fivemanage](https://refer.fivemanage.com/overextended), a cloud management service tailored for game servers. Additional logging options and support for other services will be available in the future."
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/dist/build.js",
+          "status": "M",
+          "lines": [
+            "+var __toCommonJS = (mod) => __copyProps(__defProp({}, \"__esModule\", { value: true }), mod);",
+            "-  \"node_modules/lru.min/lib/index.js\"(exports2) {",
+            "+  \"node_modules/lru.min/lib/index.js\"(exports3) {",
+            "-    Object.defineProperty(exports2, \"__esModule\", { value: true });",
+            "-    exports2.createLRU = void 0;",
+            "+    Object.defineProperty(exports3, \"__esModule\", { value: true });",
+            "+    exports3.createLRU = void 0;",
+            "-    exports2.createLRU = createLRU;",
+            "+    exports3.createLRU = createLRU;",
+            "-  \"node_modules/named-placeholders/index.js\"(exports2, module2) {",
+            "+  \"node_modules/named-placeholders/index.js\"(exports3, module2) {",
+            "-  \"node_modules/sql-escaper/lib/index.js\"(exports2) {",
+            "+  \"node_modules/sql-escaper/lib/index.js\"(exports3) {",
+            "-    Object.defineProperty(exports2, \"__esModule\", { value: true });",
+            "-    exports2.raw = exports2.format = exports2.escape = exports2.arrayToList = exports2.bufferToString = exports2.objectToValues = exports2.escapeId = exports2.dateToString = void 0;",
+            "-    var node_buffer_1 = require(\"node:buffer\");",
+            "+    Object.defineProperty(exports3, \"__esModule\", { value: true });",
+            "+    exports3.raw = exports3.format = exports3.escape = exports3.arrayToList = exports3.bufferToString = exports3.objectToValues = exports3.escapeId = exports3.temporalToString = exports3.dateToString = void 0;",
+            "+    var buffer_1 = require(\"buffer\");",
+            "+    var CONTEXT_TRIGGER = new Uint8Array(128);",
+            "+    var SET_CLAUSE_TERMINATORS_BY_FIRST = {};",
+            "+    var SET_CLAUSE_TERMINATORS = [",
+            "+      \"where\",",
+            "+      \"order\",",
+            "+      \"group\",",
+            "+      \"having\",",
+            "+      \"limit\",",
+            "+      \"union\",",
+            "+      \"returning\",",
+            "+      \"into\",",
+            "+      \"for\",",
+            "+      \"lock\",",
+            "+      \"offset\",",
+            "+      \"window\",",
+            "+      \"procedure\",",
+            "+      \"on\"",
+            "+    ];",
+            "-    var CHARS_ESCAPE_MAP = {",
+            "-      \"\\0\": \"\\\\0\",",
+            "-      \"\\b\": \"\\\\b\",",
+            "-      \"\t\": \"\\\\t\",",
+            "-      \"\\n\": \"\\\\n\",",
+            "-      \"\\r\": \"\\\\r\",",
+            "-      \"\u001a\": \"\\\\Z\",",
+            "-      '\"': '\\\\\"',",
+            "-      \"'\": \"\\\\'\",",
+            "-      \"\\\\\": \"\\\\\\\\\"",
+            "-    };",
+            "+      exclamation: 33,",
+            "+      plus: 43,",
+            "+      comma: 44,",
+            "+      openParen: 40,",
+            "+      closeParen: 41,",
+            "+      semicolon: 59,",
+            "-    var isRecord = /* @__PURE__ */ __name((value) => typeof value === \"object\" && value !== null && !Array.isArray(value), \"isRecord\");",
+            "+    CONTEXT_TRIGGER[charCode.singleQuote] = 1;",
+            "+    CONTEXT_TRIGGER[charCode.backtick] = 1;",
+            "+    CONTEXT_TRIGGER[charCode.dash] = 1;",
+            "+    CONTEXT_TRIGGER[charCode.slash] = 1;",
+            "+    for (const word of SET_CLAUSE_TERMINATORS) {"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-version '2.14.1'",
+            "+version '2.14.3'"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/logger/fivemanage.js",
+          "status": "M",
+          "lines": [
+            "-// https://fivemanage.com/?ref=overextended",
+            "+// https://refer.fivemanage.com/overextended"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/web/build/index.html",
+          "status": "M",
+          "lines": [
+            "-<!DOCTYPE html>",
+            "+<!doctype html>",
+            "-    <script type=\"module\" crossorigin src=\"./assets/index-856dcf43.js\"></script>",
+            "+    <script type=\"module\" crossorigin src=\"./assets/index-ed335b58.js\"></script>"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-10T08:00:59Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"marriage\":{\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"channelId\":\"1467556343492640830\",\"webhookId\":\"1467556382038429901\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512305664\",\"webhookId\":\"1557386337580220497\"},\"me\":{\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"channelId\":\"1513950191936344245\",\"webhookId\":\"1513950212480307490\"},\"einreise\":{\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\",\"webhookId\":\"1552971088328392714\"},\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\",\"webhookId\":\"1512475306554953789\"},\"sozialstunden\":{\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"channelId\":\"1552971081491419187\",\"webhookId\":\"1552971083731181709\"},\"lager\":{\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\",\"webhookId\":\"1551161582942158879\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"channelId\":\"1552989823604756600\",\"webhookId\":\"1552989826213617715\"},\"freecam_photo\":{\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"channelId\":\"1551520126367572008\",\"webhookId\":\"1551520132319412284\"},\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\",\"webhookId\":\"1551161592467423353\"},\"esx_jobs\":{\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"channelId\":\"1557386361172918374\",\"webhookId\":\"1557386364578955274\"},\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\",\"webhookId\":\"1552971074814218312\"},\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\"},\"sperrzone\":{\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"channelId\":\"1552971110457286766\",\"webhookId\":\"1552971115209564220\"},\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\"},\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"channelId\":\"1557386329686413342\",\"webhookId\":\"1557386332483887194\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"1417917687723724872\",\"webhookId\":\"1552971931869777932\"},\"esx_useractions\":{\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"channelId\":\"1557386339866120252\",\"webhookId\":\"1557386342755991582\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"channelId\":\"1552971076718297200\",\"webhookId\":\"1552971079239077968\"},\"expose\":{\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\",\"channelId\":\"1551624348660531240\",\"webhookId\":\"1551624352477225113\"},\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"channelId\":\"1551161595436990575\",\"webhookId\":\"1551161597853049005\"},\"join\":{\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"channelId\":\"1448120760391565352\",\"webhookId\":\"1552971091771924552\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"1552971094267527169\",\"webhookId\":\"1552971096847028264\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"channelId\":\"1552971099317211136\",\"webhookId\":\"1552971101741654046\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"channelId\":\"1552971103910236172\",\"webhookId\":\"1552971107500433498\"},\"versicherung\":{\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"channelId\":\"1457180906816012401\",\"webhookId\":\"1457180941750632469\"},\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"channelId\":\"1551161550096699392\",\"webhookId\":\"1551161552537653269\"},\"esx_paycheck\":{\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"1557386352226598913\",\"webhookId\":\"1557386357381533816\"},\"hotdog\":{\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"channelId\":\"1474547082076622979\",\"webhookId\":\"1474547103081566412\"},\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"channelId\":\"1420103430562910370\",\"webhookId\":\"1557386326951592027\"},\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"channelId\":\"1551161575690211428\",\"webhookId\":\"1551161578009796630\"}}}",
+            "+{\"updatedAt\":\"2026-10-10T11:21:38Z\",\"webhooks\":{\"expose\":{\"channelId\":\"1551624348660531240\",\"webhookId\":\"1551624352477225113\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\"},\"bell\":{\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"sozialstunden\":{\"channelId\":\"1552971081491419187\",\"webhookId\":\"1552971083731181709\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"},\"ausbluten\":{\"channelId\":\"1552971076718297200\",\"webhookId\":\"1552971079239077968\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\"},\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"me\":{\"channelId\":\"1513950191936344245\",\"webhookId\":\"1513950212480307490\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"staff\":{\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"chopshop\":{\"channelId\":\"1552971071882399744\",\"webhookId\":\"1552971074814218312\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"esx_paycheck\":{\"channelId\":\"1557386352226598913\",\"webhookId\":\"1557386357381533816\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"txadmin\":{\"channelId\":\"1552989823604756600\",\"webhookId\":\"1552989826213617715\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\"},\"freecam_photo\":{\"channelId\":\"1551520126367572008\",\"webhookId\":\"1551520132319412284\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"esx_jobs\":{\"channelId\":\"1557386361172918374\",\"webhookId\":\"1557386364578955274\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\"},\"default\":{\"channelId\":\"1551161550096699392\",\"webhookId\":\"1551161552537653269\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\"},\"afk\":{\"channelId\":\"1512475286229356617\",\"webhookId\":\"1512475306554953789\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\"},\"esx\":{\"channelId\":\"1420103430562910370\",\"webhookId\":\"1557386326951592027\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\"esx_useractions\":{\"channelId\":\"1557386339866120252\",\"webhookId\":\"1557386342755991582\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\"},\"adminjail\":{\"channelId\":\"1551161575690211428\",\"webhookId\":\"1551161578009796630\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"},\"clothing_strip\":{\"channelId\":\"1551161585614061618\",\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"esx_chat\":{\"channelId\":\"1557386335512305664\",\"webhookId\":\"1557386337580220497\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"lager\":{\"channelId\":\"1551161580324921455\",\"webhookId\":\"1551161582942158879\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},\"sperrzone\":{\"channelId\":\"1552971110457286766\",\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"frak\":{\"channelId\":\"1552971094267527169\",\"webhookId\":\"1552971096847028264\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\"},\"basicneeds\":{\"channelId\":\"1417917687723724872\",\"webhookId\":\"1552971931869777932\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\"},\"support\":{\"channelId\":\"1552971099317211136\",\"webhookId\":\"1552971101741654046\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"willkommen\":{\"channelId\":\"1551161595436990575\",\"webhookId\":\"1551161597853049005\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\"},\"troll\":{\"channelId\":\"1552971103910236172\",\"webhookId\":\"1552971107500433498\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\"},\"esx_test\":{\"channelId\":\"1557386329686413342\",\"webhookId\":\"1557386332483887194\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"},\"marriage\":{\"channelId\":\"1467556343492640830\",\"webhookId\":\"1467556382038429901\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\"},\"einreise\":{\"channelId\":\"1552971085937381431\",\"webhookId\":\"1552971088328392714\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\"},\"hotdog\":{\"channelId\":\"1474547082076622979\",\"webhookId\":\"1474547103081566412\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\"},\"join\":{\"channelId\":\"1448120760391565352\",\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\"},\"versicherung\":{\"channelId\":\"1457180906816012401\",\"webhookId\":\"1457180941750632469\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\"},\"faction\":{\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"}},\"categoryId\":\"1551161549018759170\"}"
+          ]
+        },
+        {
+          "path": "filename.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "myprofile",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/oxmysql/web/build/assets/index-856dcf43.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
