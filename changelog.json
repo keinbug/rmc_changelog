@@ -13200,6 +13200,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-10T08:23:19+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81764
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/es_extended/server/modules/discord/panel.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/es_extended/server/modules/discord/panel.json",
+          "status": "M",
+          "lines": [
+            "-{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558310657898844204\"}",
+            "+{\"channelId\":\"1550507281396011150\",\"messageId\":\"1558358493306691652\"}"
+          ]
+        }
+      ]
     }
   ]
 }
