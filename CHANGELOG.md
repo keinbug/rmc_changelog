@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-11 02:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[rcore]/rcore_casino/server/transactions.txt`
+```diff
++[2026-10-11 01:25:07] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveMoney] Money: 56658 -> 6658 [Buying VIP in casino]
++[2026-10-11 01:26:00] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 4500 -> 0 [Paying for: Roulette Ticket in Roulette]
++[2026-10-11 01:27:09] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 50000 -> 0 [Paying for: Roulette Ticket in Roulette]
++[2026-10-11 01:29:56] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 50000 -> 0 [Paying for: Roulette Ticket in Roulette]
++[2026-10-11 01:31:00] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 50000 -> 0 [Paying for: Roulette Ticket in Roulette]
++[2026-10-11 01:32:05] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 50000 -> 0 [Paying for: Roulette Ticket in Roulette]
++[2026-10-11 01:32:21] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [AddChips] Chips: 0 -> 50000 [Win: Roulette Ticket in Roulette]
++[2026-10-11 01:33:21] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 10000 -> 0 [Paying for: Trade In Chips in Cashier]
++[2026-10-11 01:33:21] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [AddMoney] Money: 6658 -> 16658 [Casino Cashier Trade In]
++[2026-10-11 01:33:55] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveMoney] Money: 16658 -> 6658 [Buying chips in casino ( 10000 )]
+```
+
 ## 2026-10-11 01:24 Uhr
 **+3** neu · **~4** geändert · **-0** gelöscht
 `+ resources/[rcore]/rcore_casino/server/transactions.txt`
@@ -3122,12 +3138,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"channelId":"1550507281396011150","messageId":"1557953968288833579"}
 +{"channelId":"1550507281396011150","messageId":"1557994129999532136"}
-```
-
-## 2026-10-09 05:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1557933677806358601"}
-+{"channelId":"1550507281396011150","messageId":"1557953968288833579"}
 ```
