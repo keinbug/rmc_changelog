@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-11 21:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1791657760,
++    "lastBackup": 1791744310,
+-        {
+-            "backupFile": "banlist_20_29_06_10_2026.json",
+-            "backupTimestamp": 1791311395,
+-            "id": 11,
+-            "backupDate": "20_29_06_10_2026"
+-        },
+-        {
+-            "backupFile": "banlist_20_32_06_10_2026.json",
+```
+
 ## 2026-10-11 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -3112,12 +3128,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"channelId":"1550507281396011150","messageId":"1558039956495147038"}
 +{"channelId":"1550507281396011150","messageId":"1558066488404086906"}
-```
-
-## 2026-10-09 11:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1558026502875127910"}
-+{"channelId":"1550507281396011150","messageId":"1558039956495147038"}
 ```
