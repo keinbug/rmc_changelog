@@ -16881,6 +16881,77 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-12T22:24:15+02:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 2,
+        "deleted": 2,
+        "total": 81788
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+        "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_api/fxmanifest.lua",
+        "resources/[selfcode]/rmc_api/server/main.lua"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_api/admins.json.bak",
+        "resources/[selfcode]/rmc_api/okok_transactions.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'config/sakura_lager.lua',",
+            "+    'server/modules/sakura_lager.lua',",
+            "+    -- 'jobs_creator',      (Sakura-Lager: job_stash_<markerId> in ox_inventory)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+    -- Sakura No Kage (Lager job_stash_565, API-Key nötig)",
+            "+    { method = 'GET',    path = '/sakura/lager',                       handler = function(req, res) SakuraLagerModule.contents(req, res) end },",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/admins.json.bak",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/okok_transactions.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

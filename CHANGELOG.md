@@ -2,6 +2,37 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-12 22:24 Uhr
+**+2** neu · **~2** geändert · **-2** gelöscht
+`+ resources/[selfcode]/rmc_api/config/sakura_lager.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
+```diff
++    'config/sakura_lager.lua',
++    'server/modules/sakura_lager.lua',
++    -- 'jobs_creator',      (Sakura-Lager: job_stash_<markerId> in ox_inventory)
+```
+`~ resources/[selfcode]/rmc_api/server/main.lua`
+```diff
++    -- Sakura No Kage (Lager job_stash_565, API-Key nötig)
++    { method = 'GET',    path = '/sakura/lager',                       handler = function(req, res) SakuraLagerModule.contents(req, res) end },
++
+```
+`− resources/[selfcode]/rmc_api/admins.json.bak`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_api/okok_transactions.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-12 21:24 Uhr
 **+0** neu · **~22** geändert · **-64** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1904,25 +1935,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/lb-lieferlos/ui/dist/assets/index-gkEW31eK.js`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-09 20:24 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1558150186482671638"}
-+{"channelId":"1550507281396011150","messageId":"1558174842577223761"}
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "value": 10000,
-+            "date": "2026/10/09 - 19:27:18",
-+            "receiver_identifier": "bank",
-+            "reason": "Auszahlung vom Bankkonto",
-+            "sender_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
-+            "type": "withdraw",
-+            "sender_name": "Fabi Huber",
-+            "receiver_name": "Geldbörse"
-+        },
 ```
