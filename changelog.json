@@ -15712,6 +15712,1175 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-12T21:24:29+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 22,
+        "deleted": 64,
+        "total": 81788
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[esx_addons]/EasyAdmin/client/admin_client.lua",
+        "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+        "resources/[esx_addons]/EasyAdmin/docs/docs/permissions.md",
+        "resources/[esx_addons]/EasyAdmin/language/de.json",
+        "resources/[esx_addons]/EasyAdmin/language/en.json",
+        "resources/[esx_addons]/EasyAdmin/language/es.json",
+        "resources/[esx_addons]/EasyAdmin/language/fr.json",
+        "resources/[esx_addons]/EasyAdmin/language/it.json",
+        "resources/[esx_addons]/EasyAdmin/language/nl.json",
+        "resources/[esx_addons]/EasyAdmin/language/pl.json",
+        "resources/[esx_addons]/EasyAdmin/server/admin_server.lua",
+        "resources/[esx_addons]/EasyAdmin/shared/util_shared.lua",
+        "resources/[lb]/lb-phone/config/config.lua",
+        "resources/[manuell_start]/es_extended/client/functions.lua",
+        "resources/[manuell_start]/ox_inventory/locales/de.json",
+        "resources/[manuell_start]/ox_inventory/locales/en.json",
+        "resources/[manuell_start]/ox_inventory/modules/inventory/server.lua",
+        "resources/[manuell_start]/ox_inventory/modules/utils/client.lua",
+        "resources/[manuell_start]/ox_inventory/server.lua",
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "resources/[manuell_start]/ox_inventory/modules/inventory/illegal.lua",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/.fxap",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/audio/ab45_tavern_sounds_game.dat151.rel",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/doortuning.ymt",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/gta5.meta",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern.ytyp",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_air.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_2.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_3.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_4.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bar_barrel.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_barrel_table.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams_3.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer_barrel.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bench.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bin.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet_2.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_carpet.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chair.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chamb.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_coll.ybn",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_counter.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_dart.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_deer.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_desk.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01_ex.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door__il.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame_ex.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_gate.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fan.yft",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fire.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_frame_04.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_gate.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_library.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_04.yft",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy_3.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_manifest.ymf",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_map.ymap",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_mlo.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_nap.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_pipes.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant_2.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters_txd.ytd",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_stand.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_txd.ytd",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_door.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_light.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wine_stand.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/clip@ab45_tavern_fan.ycd",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hei_id2_21_c_strm_2.ymap",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hi@id2_21_c_0.ybn",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_0.ybn",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_buildb1.ydr",
+        "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_gluea2.ydr"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1791744310,",
+            "-            \"backupDate\": \"20_32_07_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_35_08_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_32_07_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791397949",
+            "+            \"backupDate\": \"20_35_08_10_2026\",",
+            "+            \"backupTimestamp\": 1791484533",
+            "-            \"backupTimestamp\": 1791398074,",
+            "+            \"backupFile\": \"banlist_20_37_08_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_34_07_10_2026.json\",",
+            "-            \"backupDate\": \"20_34_07_10_2026\"",
+            "+            \"backupDate\": \"20_37_08_10_2026\",",
+            "+            \"backupTimestamp\": 1791484658",
+            "-            \"backupDate\": \"20_35_08_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_38_09_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_35_08_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791484533",
+            "+            \"backupDate\": \"20_38_09_10_2026\",",
+            "+            \"backupTimestamp\": 1791571091",
+            "-            \"backupTimestamp\": 1791484658,",
+            "+            \"backupFile\": \"banlist_20_40_09_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_37_08_10_2026.json\",",
+            "-            \"backupDate\": \"20_37_08_10_2026\"",
+            "+            \"backupDate\": \"20_40_09_10_2026\",",
+            "+            \"backupTimestamp\": 1791571216",
+            "-            \"backupDate\": \"20_38_09_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_40_10_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_38_09_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791571091",
+            "+            \"backupDate\": \"20_40_10_10_2026\",",
+            "+            \"backupTimestamp\": 1791657635",
+            "-            \"backupDate\": \"20_40_09_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_42_10_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_40_09_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791571216",
+            "+            \"backupDate\": \"20_42_10_10_2026\",",
+            "+            \"backupTimestamp\": 1791657760",
+            "-            \"backupTimestamp\": 1791657635,",
+            "+            \"backupFile\": \"banlist_20_43_11_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_40_10_10_2026.json\",",
+            "-            \"backupDate\": \"20_40_10_10_2026\"",
+            "+            \"backupDate\": \"20_43_11_10_2026\",",
+            "+            \"backupTimestamp\": 1791744185",
+            "-            \"backupDate\": \"20_42_10_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_45_11_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_42_10_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791657760",
+            "+            \"backupDate\": \"20_45_11_10_2026\",",
+            "+            \"backupTimestamp\": 1791744310",
+            "-            \"backupTimestamp\": 1791744185,",
+            "+            \"backupFile\": \"banlist_20_45_12_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_43_11_10_2026.json\",",
+            "-            \"backupDate\": \"20_43_11_10_2026\"",
+            "+            \"backupDate\": \"20_45_12_10_2026\",",
+            "+            \"backupTimestamp\": 1791830725",
+            "-            \"backupTimestamp\": 1791744310,",
+            "+            \"backupFile\": \"banlist_20_47_12_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_20_45_11_10_2026.json\",",
+            "-            \"backupDate\": \"20_45_11_10_2026\"",
+            "+            \"backupDate\": \"20_47_12_10_2026\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/client/admin_client.lua",
+          "status": "M",
+          "lines": [
+            "+end)",
+            "+",
+            "+RegisterNetEvent(\"EasyAdmin:ReceiveAdminMessage\", function(adminName, message)",
+            "+\tPlaySoundFrontend(-1, \"Text_Arrive_Tone\", \"Phone_SoundSet_Default\", true)",
+            "+\tTriggerEvent(\"EasyAdmin:showNotification\", string.format(GetLocalisedText(\"adminplayermessage\"), adminName or \"\", message or \"\"))",
+            "+end)",
+            "+",
+            "+TrackedPlayerId = nil",
+            "+PlayerTrackBoxes = PlayerTrackBoxes or {}",
+            "+",
+            "+local trackBlip = nil",
+            "+local trackMode = nil",
+            "+local trackToken = 0",
+            "+local trackName = nil",
+            "+",
+            "+local function styleTrackBlip(blip, playerName)",
+            "+\tSetBlipSprite(blip, 1)",
+            "+\tSetBlipColour(blip, 3)",
+            "+\tSetBlipScale(blip, 0.95)",
+            "+\tSetBlipAsShortRange(blip, false)",
+            "+\tSetBlipDisplay(blip, 2)",
+            "+\tSetBlipFlashes(blip, false)",
+            "+\tSetBlipPriority(blip, 10)",
+            "+\tBeginTextCommandSetBlipName(\"STRING\")",
+            "+\tAddTextComponentSubstringPlayerName(playerName or \"Track\")",
+            "+\tEndTextCommandSetBlipName(blip)",
+            "+end",
+            "+",
+            "+local function removeTrackBlip()",
+            "+\tif trackBlip and DoesBlipExist(trackBlip) then",
+            "+\t\tRemoveBlip(trackBlip)",
+            "+\tend",
+            "+\ttrackBlip = nil",
+            "+\ttrackMode = nil",
+            "+end",
+            "+",
+            "+local function uncheckTrackBox(playerId)",
+            "+\tif playerId and PlayerTrackBoxes[playerId] then",
+            "+\t\tPlayerTrackBoxes[playerId].Checked = false",
+            "+\tend",
+            "+end",
+            "+",
+            "+local function attachTrackToPlayer(playerId, playerName)",
+            "+\tlocal target = GetPlayerFromServerId(playerId)",
+            "+\tif not target or target == -1 then",
+            "+\t\treturn false",
+            "+\tend",
+            "+\tlocal ped = GetPlayerPed(target)",
+            "+\tif not ped or ped == 0 or not DoesEntityExist(ped) then",
+            "+\t\treturn false",
+            "+\tend",
+            "+\tif trackMode ~= \"entity\" then",
+            "+\t\tremoveTrackBlip()",
+            "+\t\ttrackBlip = AddBlipForEntity(ped)",
+            "+\t\tstyleTrackBlip(trackBlip, playerName)",
+            "+\t\ttrackMode = \"entity\"",
+            "+\tend",
+            "+\treturn true",
+            "+end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+\t\t\t\t\tif permissions[\"player.track\"] or permissions[\"player.spectate\"] or permissions[\"player.teleport.single\"] then",
+            "+\t\t\t\t\t\tlocal thisItem = NativeUI.CreateCheckboxItem(GetLocalisedText(\"trackplayer\"), TrackedPlayerId == thePlayer.id, GetLocalisedText(\"trackplayerguide\"))",
+            "+\t\t\t\t\t\tthisPlayer:AddItem(thisItem)",
+            "+\t\t\t\t\t\tPlayerTrackBoxes[thePlayer.id] = thisItem",
+            "+\t\t\t\t\t\tthisItem.CheckboxEvent = function(sender, item, checked_)",
+            "+\t\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:TrackPlayer\", thePlayer.id, checked_)",
+            "+\t\t\t\t\t\tend",
+            "+\t\t\t\t\tend",
+            "+",
+            "+\t\t\t\t\tif permissions[\"player.revive\"] or permissions[\"player.spectate\"] or permissions[\"player.teleport.single\"] then",
+            "+\t\t\t\t\t\tlocal careOptions = {GetLocalisedText(\"reviveplayer\"), GetLocalisedText(\"healplayer\")}",
+            "+\t\t\t\t\t\tlocal thisItem = NativeUI.CreateListItem(GetLocalisedText(\"careplayer\"), careOptions, 1, GetLocalisedText(\"careplayerguide\"))",
+            "+\t\t\t\t\t\tthisPlayer:AddItem(thisItem)",
+            "+\t\t\t\t\t\tthisItem.OnListSelected = function(sender, item, index)",
+            "+\t\t\t\t\t\t\tif item == thisItem then",
+            "+\t\t\t\t\t\t\t\tlocal selected = item:IndexToItem(index)",
+            "+\t\t\t\t\t\t\t\tif selected == GetLocalisedText(\"reviveplayer\") then",
+            "+\t\t\t\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:CarePlayer\", thePlayer.id, \"revive\")",
+            "+\t\t\t\t\t\t\t\telseif selected == GetLocalisedText(\"healplayer\") then",
+            "+\t\t\t\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:CarePlayer\", thePlayer.id, \"heal\")",
+            "+\t\t\t\t\t\t\t\tend",
+            "+\t\t\t\t\t\t\tend",
+            "+\t\t\t\t\t\tend",
+            "+\t\t\t\t\tend",
+            "+\t\t\t\t\tif permissions[\"player.message\"] or permissions[\"player.spectate\"] or permissions[\"player.teleport.single\"] then",
+            "+\t\t\t\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"messageplayer\"), GetLocalisedText(\"messageplayerguide\"))",
+            "+\t\t\t\t\t\tthisPlayer:AddItem(thisItem)",
+            "+\t\t\t\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "+\t\t\t\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 128)",
+            "+\t\t\t\t\t\t\tif result and result ~= \"\" then",
+            "+\t\t\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:MessagePlayer\", thePlayer.id, result)",
+            "+\t\t\t\t\t\t\tend",
+            "+\t\t\t\t\t\tend",
+            "+\t\t\t\t\tend",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/docs/docs/permissions.md",
+          "status": "M",
+          "lines": [
+            "+| `easyadmin.player.message` | Sends a direct message to a player |",
+            "+| `easyadmin.player.track` | Shows a player on the admin map until turned off |",
+            "+| `easyadmin.player.revive` | Revives or heals a player |"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/de.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Nachricht senden\",",
+            "+    \"messageplayerguide\": \"Schickt dem Spieler eine Direktnachricht. Er hört einen Sound.\",",
+            "+    \"adminplayermessage\": \"Nachricht von %s: %s\",",
+            "+    \"messagesent\": \"Nachricht an %s gesendet.\",",
+            "+    \"adminmessagedplayer\": \"**%s** hat **%s** eine Nachricht gesendet: %s\",",
+            "+    \"trackplayer\": \"Spieler verfolgen\",",
+            "+    \"trackplayerguide\": \"Zeigt den Spieler dauerhaft auf der Karte, bis du die Verfolgung ausschaltest.\",",
+            "+    \"playertracked\": \"%s wird verfolgt.\",",
+            "+    \"playertrackstopped\": \"Verfolgung beendet.\",",
+            "+    \"careplayer\": \"Spieler versorgen\",",
+            "+    \"reviveplayer\": \"Wiederbeleben\",",
+            "+    \"healplayer\": \"Heilen\",",
+            "+    \"careplayerguide\": \"Belebt einen bewusstlosen Spieler wieder oder heilt einen verletzten.\",",
+            "+    \"playerrevived\": \"%s wurde wiederbelebt.\",",
+            "+    \"playerhealed\": \"%s wurde geheilt.\",",
+            "+    \"playerdowned\": \"%s ist bewusstlos. Nutze Wiederbeleben.\",",
+            "+    \"adminrevivedplayer\": \"**%s** hat **%s** wiederbelebt.\",",
+            "+    \"adminhealedplayer\": \"**%s** hat **%s** geheilt.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/en.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Send Message\",",
+            "+    \"messageplayerguide\": \"Sends the player a direct message. They hear a sound.\",",
+            "+    \"adminplayermessage\": \"Message from %s: %s\",",
+            "+    \"messagesent\": \"Message sent to %s.\",",
+            "+    \"adminmessagedplayer\": \"**%s** sent **%s** a message: %s\",",
+            "+    \"trackplayer\": \"Track Player\",",
+            "+    \"trackplayerguide\": \"Keeps the player on the map until you turn tracking off.\",",
+            "+    \"playertracked\": \"Tracking %s.\",",
+            "+    \"playertrackstopped\": \"Tracking stopped.\",",
+            "+    \"careplayer\": \"Treat Player\",",
+            "+    \"reviveplayer\": \"Revive\",",
+            "+    \"healplayer\": \"Heal\",",
+            "+    \"careplayerguide\": \"Revives an unconscious player or heals an injured one.\",",
+            "+    \"playerrevived\": \"%s has been revived.\",",
+            "+    \"playerhealed\": \"%s has been healed.\",",
+            "+    \"playerdowned\": \"%s is unconscious. Use revive.\",",
+            "+    \"adminrevivedplayer\": \"**%s** revived **%s**.\",",
+            "+    \"adminhealedplayer\": \"**%s** healed **%s**.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/es.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Enviar mensaje\",",
+            "+    \"messageplayerguide\": \"Envía un mensaje directo al jugador. Él escucha un sonido.\",",
+            "+    \"adminplayermessage\": \"Mensaje de %s: %s\",",
+            "+    \"messagesent\": \"Mensaje enviado a %s.\",",
+            "+    \"adminmessagedplayer\": \"**%s** envió un mensaje a **%s**: %s\",",
+            "+    \"trackplayer\": \"Seguir jugador\",",
+            "+    \"trackplayerguide\": \"Muestra al jugador en el mapa hasta que desactives el seguimiento.\",",
+            "+    \"playertracked\": \"Siguiendo a %s.\",",
+            "+    \"playertrackstopped\": \"Seguimiento detenido.\",",
+            "+    \"careplayer\": \"Atender jugador\",",
+            "+    \"reviveplayer\": \"Revivir\",",
+            "+    \"healplayer\": \"Curar\",",
+            "+    \"careplayerguide\": \"Revive a un jugador inconsciente o cura a uno herido.\",",
+            "+    \"playerrevived\": \"%s ha sido revivido.\",",
+            "+    \"playerhealed\": \"%s ha sido curado.\",",
+            "+    \"playerdowned\": \"%s está inconsciente. Usa revivir.\",",
+            "+    \"adminrevivedplayer\": \"**%s** revivió a **%s**.\",",
+            "+    \"adminhealedplayer\": \"**%s** curó a **%s**.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/fr.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Envoyer un message\",",
+            "+    \"messageplayerguide\": \"Envoie un message direct au joueur. Il entend un son.\",",
+            "+    \"adminplayermessage\": \"Message de %s : %s\",",
+            "+    \"messagesent\": \"Message envoyé à %s.\",",
+            "+    \"adminmessagedplayer\": \"**%s** a envoyé un message à **%s** : %s\",",
+            "+    \"trackplayer\": \"Suivre le joueur\",",
+            "+    \"trackplayerguide\": \"Affiche le joueur sur la carte jusqu'à ce que vous arrêtiez le suivi.\",",
+            "+    \"playertracked\": \"Suivi de %s.\",",
+            "+    \"playertrackstopped\": \"Suivi arrêté.\",",
+            "+    \"careplayer\": \"Soigner le joueur\",",
+            "+    \"reviveplayer\": \"Réanimer\",",
+            "+    \"healplayer\": \"Soigner\",",
+            "+    \"careplayerguide\": \"Réanime un joueur inconscient ou soigne un joueur blessé.\",",
+            "+    \"playerrevived\": \"%s a été réanimé.\",",
+            "+    \"playerhealed\": \"%s a été soigné.\",",
+            "+    \"playerdowned\": \"%s est inconscient. Utilisez réanimer.\",",
+            "+    \"adminrevivedplayer\": \"**%s** a réanimé **%s**.\",",
+            "+    \"adminhealedplayer\": \"**%s** a soigné **%s**.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/it.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Invia messaggio\",",
+            "+    \"messageplayerguide\": \"Invia un messaggio diretto al giocatore. Lui sente un suono.\",",
+            "+    \"adminplayermessage\": \"Messaggio da %s: %s\",",
+            "+    \"messagesent\": \"Messaggio inviato a %s.\",",
+            "+    \"adminmessagedplayer\": \"**%s** ha inviato un messaggio a **%s**: %s\",",
+            "+    \"trackplayer\": \"Segui giocatore\",",
+            "+    \"trackplayerguide\": \"Mostra il giocatore sulla mappa finché non disattivi l'inseguimento.\",",
+            "+    \"playertracked\": \"Stai seguendo %s.\",",
+            "+    \"playertrackstopped\": \"Inseguimento fermato.\",",
+            "+    \"careplayer\": \"Cura giocatore\",",
+            "+    \"reviveplayer\": \"Rianima\",",
+            "+    \"healplayer\": \"Cura\",",
+            "+    \"careplayerguide\": \"Rianima un giocatore incosciente o cura un ferito.\",",
+            "+    \"playerrevived\": \"%s è stato rianimato.\",",
+            "+    \"playerhealed\": \"%s è stato curato.\",",
+            "+    \"playerdowned\": \"%s è incosciente. Usa rianima.\",",
+            "+    \"adminrevivedplayer\": \"**%s** ha rianimato **%s**.\",",
+            "+    \"adminhealedplayer\": \"**%s** ha curato **%s**.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/nl.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Bericht sturen\",",
+            "+    \"messageplayerguide\": \"Stuurt de speler een direct bericht. Hij hoort een geluid.\",",
+            "+    \"adminplayermessage\": \"Bericht van %s: %s\",",
+            "+    \"messagesent\": \"Bericht naar %s gestuurd.\",",
+            "+    \"adminmessagedplayer\": \"**%s** stuurde **%s** een bericht: %s\",",
+            "+    \"trackplayer\": \"Speler volgen\",",
+            "+    \"trackplayerguide\": \"Toont de speler op de kaart tot je het volgen uitzet.\",",
+            "+    \"playertracked\": \"%s wordt gevolgd.\",",
+            "+    \"playertrackstopped\": \"Volgen gestopt.\",",
+            "+    \"careplayer\": \"Speler verzorgen\",",
+            "+    \"reviveplayer\": \"Reanimeren\",",
+            "+    \"healplayer\": \"Genezen\",",
+            "+    \"careplayerguide\": \"Reanimeert een bewusteloze speler of geneest een gewonde.\",",
+            "+    \"playerrevived\": \"%s is gereanimeerd.\",",
+            "+    \"playerhealed\": \"%s is genezen.\",",
+            "+    \"playerdowned\": \"%s is bewusteloos. Gebruik reanimeren.\",",
+            "+    \"adminrevivedplayer\": \"**%s** heeft **%s** gereanimeerd.\",",
+            "+    \"adminhealedplayer\": \"**%s** heeft **%s** genezen.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/pl.json",
+          "status": "M",
+          "lines": [
+            "+    \"messageplayer\": \"Wyślij wiadomość\",",
+            "+    \"messageplayerguide\": \"Wysyła graczowi bezpośrednią wiadomość. Słyszy dźwięk.\",",
+            "+    \"adminplayermessage\": \"Wiadomość od %s: %s\",",
+            "+    \"messagesent\": \"Wiadomość wysłana do %s.\",",
+            "+    \"adminmessagedplayer\": \"**%s** wysłał **%s** wiadomość: %s\",",
+            "+    \"trackplayer\": \"Śledź gracza\",",
+            "+    \"trackplayerguide\": \"Pokazuje gracza na mapie, aż wyłączysz śledzenie.\",",
+            "+    \"playertracked\": \"Śledzenie %s.\",",
+            "+    \"playertrackstopped\": \"Śledzenie zatrzymane.\",",
+            "+    \"careplayer\": \"Opatrz gracza\",",
+            "+    \"reviveplayer\": \"Ocuć\",",
+            "+    \"healplayer\": \"Ulecz\",",
+            "+    \"careplayerguide\": \"Ożywia nieprzytomnego gracza albo leczy rannego.\",",
+            "+    \"playerrevived\": \"%s został ocuccony.\",",
+            "+    \"playerhealed\": \"%s został uleczony.\",",
+            "+    \"playerdowned\": \"%s jest nieprzytomny. Użyj ocucenia.\",",
+            "+    \"adminrevivedplayer\": \"**%s** ocucił **%s**.\",",
+            "+    \"adminhealedplayer\": \"**%s** uleczył **%s**.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/server/admin_server.lua",
+          "status": "M",
+          "lines": [
+            "+\tlocal function hasUtilityPermission(src, perm)",
+            "+\t\treturn DoesPlayerHavePermission(src, perm) or DoesPlayerHavePermission(src, \"player.spectate\") or DoesPlayerHavePermission(src, \"player.teleport.single\")",
+            "+\tend",
+            "+",
+            "+\tlocal PendingCare = {}",
+            "+",
+            "+\tRegisterServerEvent(\"EasyAdmin:MessagePlayer\", function(playerId, message)",
+            "+\t\tif not playerId or not CachedPlayers[playerId] or CachedPlayers[playerId].dropped then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"invalidplayer\"))",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tif not hasUtilityPermission(source, \"player.message\") or not CheckAdminCooldown(source, \"message\") then",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tmessage = formatShortcuts(tostring(message or \"\"))",
+            "+\t\tif message:gsub(\"%s\", \"\") == \"\" then",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+\t\tif #message > 128 then",
+            "+\t\t\tmessage = string.sub(message, 1, 128)",
+            "+\t\tend",
+            "+",
+            "+\t\tSetAdminCooldown(source, \"message\")",
+            "+\t\tTriggerClientEvent(\"EasyAdmin:ReceiveAdminMessage\", playerId, getName(source, false, false), message)",
+            "+\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, string.format(GetLocalisedText(\"messagesent\"), getName(playerId, true, false)))",
+            "+\t\tSendWebhookMessage(moderationNotification, string.format(GetLocalisedText(\"adminmessagedplayer\"), getName(source, false, true), getName(playerId, true, true), message), \"message\", 16777214)",
+            "+\t\tPrintDebugMessage(\"Player \"..getName(source,true)..\" messaged \"..getName(playerId,true), 3)",
+            "+\tend)",
+            "+",
+            "+\tRegisterServerEvent(\"EasyAdmin:TrackPlayer\", function(playerId, toggle)",
+            "+\t\tif not hasUtilityPermission(source, \"player.track\") then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:StopPlayerTrack\", source, playerId, true)",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tif not toggle then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:StopPlayerTrack\", source, playerId, false)",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tif not playerId or not CachedPlayers[playerId] or CachedPlayers[playerId].dropped then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"invalidplayer\"))",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:StopPlayerTrack\", source, playerId, true)",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tif not CheckAdminCooldown(source, \"track\") then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:StopPlayerTrack\", source, playerId, true)",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tlocal tgtPed = GetPlayerPed(playerId)",
+            "+\t\tif not tgtPed or tgtPed == 0 then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"playernotfound\"))",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:StopPlayerTrack\", source, playerId, true)",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/shared/util_shared.lua",
+          "status": "M",
+          "lines": [
+            "+\t[\"player.message\"] = false,",
+            "+\t[\"player.track\"] = false,",
+            "+\t[\"player.revive\"] = false,"
+          ]
+        },
+        {
+          "path": "resources/[lb]/lb-phone/config/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.Logs.Enabled = false",
+            "+Config.Logs.Enabled = true"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/es_extended/client/functions.lua",
+          "status": "M",
+          "lines": [
+            "-function ESX.ShowNotification(Text, title)",
+            "-    exports['okokNotify']:Alert('RedMoon-City', Text, 8000, 'info')",
+            "+local esxNotifyTypes = {",
+            "+    inform = 'info',",
+            "+    info = 'info',",
+            "+    error = 'error',",
+            "+    success = 'success',",
+            "+    warning = 'warning',",
+            "+}",
+            "+",
+            "+function ESX.ShowNotification(text, notifyType, length, title)",
+            "+    exports['okokNotify']:Alert(title or 'RedMoon-City', text, length or 8000, esxNotifyTypes[notifyType] or 'info')"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/de.json",
+          "status": "M",
+          "lines": [
+            "-  \"illegal_stash_item\": \"Dieses Item ist illegal darf nicht in solches Lager!\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/en.json",
+          "status": "M",
+          "lines": [
+            "-  \"illegal_stash_item\": \"Dieses Item ist illegal darf nicht in solches Lager!\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/inventory/server.lua",
+          "status": "M",
+          "lines": [
+            "-local illegalItems = require 'modules.inventory.illegal'",
+            "-\t\tif not sameInventory and toInventory.type == 'stash' and toInventory.groups and illegalItems.contains(fromData.name) then",
+            "-\t\t\treturn false, 'illegal_stash_item'",
+            "-\t\tend",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/utils/client.lua",
+          "status": "M",
+          "lines": [
+            "+local ESX",
+            "+",
+            "+local notifyTypes = {",
+            "+    inform = 'info',",
+            "+    info = 'info',",
+            "+    error = 'error',",
+            "+    success = 'success',",
+            "+    warning = 'warning',",
+            "+}",
+            "+",
+            "+local function getESX()",
+            "+    if not ESX then",
+            "+        ESX = exports.es_extended:getSharedObject()",
+            "+    end",
+            "+",
+            "+    return ESX",
+            "+end",
+            "+",
+            "+--- ox_lib notify payloads (description/title/type) go through ESX.ShowNotification.",
+            "+function lib.notify(data)",
+            "+    if type(data) ~= 'table' then",
+            "+        return getESX().ShowNotification(tostring(data), 'info')",
+            "+    end",
+            "+",
+            "+    local message = data.description or data.text or data.title or ''",
+            "+",
+            "+    if data.title and (data.description or data.text) then",
+            "+        message = ('%s: %s'):format(data.title, data.description or data.text)",
+            "+    end",
+            "+",
+            "+    getESX().ShowNotification(message, notifyTypes[data.type or data.status] or 'info', data.duration)",
+            "+end",
+            "+",
+            "+-- Replace ox_inventory notify with ESX (backwards compatibility)",
+            "-    data.description = data.text",
+            "+    data.description = data.text or data.description"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/server.lua",
+          "status": "M",
+          "lines": [
+            "-                    return TriggerClientEvent('ox_lib:notify', source,",
+            "-                        { type = 'error', description = locale('no_durability', label) })",
+            "+                    return TriggerClientEvent('esx:showNotification', source, locale('no_durability', label), 'error')",
+            "-                        return TriggerClientEvent('ox_lib:notify', source,",
+            "-                            { type = 'error', description = locale('not_enough_durability', label) })",
+            "+                        return TriggerClientEvent('esx:showNotification', source, locale('not_enough_durability', label), 'error')",
+            "-                return TriggerClientEvent('ox_lib:notify', source,",
+            "-                    { type = 'error', description = locale('no_durability', label) })",
+            "+                return TriggerClientEvent('esx:showNotification', source, locale('no_durability', label), 'error')",
+            "-                return TriggerClientEvent('ox_lib:notify', source,",
+            "-                    { type = 'error', description = locale('not_enough_durability', label) })",
+            "+                return TriggerClientEvent('esx:showNotification', source, locale('not_enough_durability', label), 'error')",
+            "-                return TriggerClientEvent('ox_lib:notify', source,",
+            "-                    { type = 'error', description = locale('cannot_use', label) })",
+            "+                return TriggerClientEvent('esx:showNotification', source, locale('cannot_use', label), 'error')",
+            "-                    return TriggerClientEvent('ox_lib:notify', source,",
+            "-                        { type = 'error', description = locale('item_not_enough', item.name) })",
+            "+                    return TriggerClientEvent('esx:showNotification', source, locale('item_not_enough', item.name), 'error')"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\": [",
+            "+    \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\": [",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"sender_name\": \"Dr. Jasmin Rossi\",",
+            "-            \"date\": \"2026/10/05 - 14:26:51\"",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 3,",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"reason\": \"Savings account interest payment (Period 39)\",",
+            "+            \"date\": \"2026/10/09 - 10:01:07\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"sender_name\": \"Dr. Jasmin Rossi\",",
+            "-            \"date\": \"2026/10/05 - 14:24:39\"",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 3,",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "+            \"date\": \"2026/10/01 - 10:00:31\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"value\": 300,",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"sender_name\": \"Kate Mcleod\",",
+            "-            \"date\": \"2026/09/24 - 20:21:46\"",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 3,",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"reason\": \"Savings account interest payment (Period 37)\",",
+            "+            \"date\": \"2026/09/23 - 10:00:53\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"value\": 300,",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"sender_name\": \"Jasmin König\",",
+            "-            \"date\": \"2026/08/26 - 02:50:57\"",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"type\": \"interest_savings\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-12T18:23:04Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"afk\":{\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"support\":{\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"channelId\":\"1551624348660531240\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\"},\"me\":{\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"join\":{\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"}}}",
+            "+{\"updatedAt\":\"2026-10-12T18:24:49Z\",\"webhooks\":{\"esx_paycheck\":{\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"1557386352226598913\",\"webhookId\":\"1557386357381533816\"},\"hotdog\":{\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"channelId\":\"1474547082076622979\",\"webhookId\":\"1474547103081566412\"},\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\"},\"sozialstunden\":{\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"channelId\":\"1552971081491419187\",\"webhookId\":\"1552971083731181709\"},\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"channelId\":\"1551161575690211428\",\"webhookId\":\"1551161578009796630\"},\"me\":{\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"channelId\":\"1513950191936344245\",\"webhookId\":\"1513950212480307490\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512305664\",\"webhookId\":\"1557386337580220497\"},\"esx_useractions\":{\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"channelId\":\"1557386339866120252\",\"webhookId\":\"1557386342755991582\"},\"freecam_photo\":{\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"channelId\":\"1551520126367572008\",\"webhookId\":\"1551520132319412284\"},\"lager\":{\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\",\"webhookId\":\"1551161582942158879\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"channelId\":\"1552971076718297200\",\"webhookId\":\"1552971079239077968\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\",\"webhookId\":\"1552971074814218312\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\",\"webhookId\":\"1551161592467423353\"},\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\"},\"einreise\":{\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\",\"webhookId\":\"1552971088328392714\"},\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"channelId\":\"1420103430562910370\",\"webhookId\":\"1557386326951592027\"},\"versicherung\":{\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"channelId\":\"1457180906816012401\",\"webhookId\":\"1457180941750632469\"},\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"channelId\":\"1551161595436990575\",\"webhookId\":\"1551161597853049005\"},\"expose\":{\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\",\"channelId\":\"1551624348660531240\",\"webhookId\":\"1551624352477225113\"},\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"channelId\":\"1551161550096699392\",\"webhookId\":\"1551161552537653269\"},\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\"},\"marriage\":{\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"channelId\":\"1467556343492640830\",\"webhookId\":\"1467556382038429901\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"channelId\":\"1552971103910236172\",\"webhookId\":\"1552971107500433498\"},\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\"},\"join\":{\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"channelId\":\"1448120760391565352\",\"webhookId\":\"1552971091771924552\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"1552971094267527169\",\"webhookId\":\"1552971096847028264\"},\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"channelId\":\"1557386329686413342\",\"webhookId\":\"1557386332483887194\"},\"esx_jobs\":{\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"channelId\":\"1557386361172918374\",\"webhookId\":\"1557386364578955274\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"channelId\":\"1552971099317211136\",\"webhookId\":\"1552971101741654046\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"channelId\":\"1552989823604756600\",\"webhookId\":\"1552989826213617715\"},\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\",\"webhookId\":\"1512475306554953789\"},\"sperrzone\":{\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"channelId\":\"1552971110457286766\",\"webhookId\":\"1552971115209564220\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"1417917687723724872\",\"webhookId\":\"1552971931869777932\"}},\"categoryId\":\"1551161549018759170\"}"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/inventory/illegal.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/audio/ab45_tavern_sounds_game.dat151.rel",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/doortuning.ymt",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/gta5.meta",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_air.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_4.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bar_barrel.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_barrel_table.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams_3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer_barrel.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bench.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bin.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet_2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_carpet.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chair.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chamb.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_coll.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_counter.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_dart.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_deer.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_desk.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01_ex.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door__il.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame_ex.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_gate.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fan.yft",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fire.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_frame_04.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_gate.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_library.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_04.yft",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy_3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_manifest.ymf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_map.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_mlo.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_nap.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_pipes.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant_2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters_txd.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_stand.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_txd.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_door.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_light.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wine_stand.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/clip@ab45_tavern_fan.ycd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hei_id2_21_c_strm_2.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hi@id2_21_c_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_buildb1.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_gluea2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
