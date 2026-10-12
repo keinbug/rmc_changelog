@@ -15431,6 +15431,287 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-12T20:24:38+02:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 18,
+        "deleted": 0,
+        "total": 81852
+      },
+      "truncated": false,
+      "added": [
+        "resources/[manuell_start]/ox_inventory/modules/inventory/illegal.lua"
+      ],
+      "modified": [
+        "resources/[ak47]/ak47_hookahlounge/config.lua",
+        "resources/[esx_addons]/EasyAdmin/client/admin_client.lua",
+        "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+        "resources/[esx_addons]/EasyAdmin/docs/docs/permissions.md",
+        "resources/[esx_addons]/EasyAdmin/language/de.json",
+        "resources/[esx_addons]/EasyAdmin/language/en.json",
+        "resources/[esx_addons]/EasyAdmin/language/es.json",
+        "resources/[esx_addons]/EasyAdmin/language/fr.json",
+        "resources/[esx_addons]/EasyAdmin/language/it.json",
+        "resources/[esx_addons]/EasyAdmin/language/nl.json",
+        "resources/[esx_addons]/EasyAdmin/language/pl.json",
+        "resources/[esx_addons]/EasyAdmin/server/admin_server.lua",
+        "resources/[esx_addons]/EasyAdmin/shared/util_shared.lua",
+        "resources/[manuell_start]/ox_inventory/locales/de.json",
+        "resources/[manuell_start]/ox_inventory/locales/en.json",
+        "resources/[manuell_start]/ox_inventory/modules/inventory/server.lua",
+        "resources/[rcore]/rcore_casino/server/transactions.txt",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/inventory/illegal.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[ak47]/ak47_hookahlounge/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.BossActions = vector3(-443.88, -37.63, 39.92)    --Boss action menu location. esx_society required\r",
+            "+Config.BossActions = vector3(0, 0, 0)    --Boss action menu location. esx_society required\r"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/client/admin_client.lua",
+          "status": "M",
+          "lines": [
+            "+end)",
+            "+",
+            "+local playerPings = {}",
+            "+",
+            "+RegisterNetEvent(\"EasyAdmin:ShowPlayerPing\", function(playerId, playerName, x, y, z)",
+            "+\tx, y, z = (x or 0.0) + 0.0, (y or 0.0) + 0.0, (z or 0.0) + 0.0",
+            "+",
+            "+\tif playerPings[playerId] then",
+            "+\t\tfor _, blip in ipairs(playerPings[playerId]) do",
+            "+\t\t\tif DoesBlipExist(blip) then",
+            "+\t\t\t\tRemoveBlip(blip)",
+            "+\t\t\tend",
+            "+\t\tend",
+            "+\t\tplayerPings[playerId] = nil",
+            "+\tend",
+            "+",
+            "+\tlocal blips = {}",
+            "+\tlocal marker",
+            "+\tlocal target = GetPlayerFromServerId(playerId)",
+            "+\tif target and target ~= -1 then",
+            "+\t\tlocal ped = GetPlayerPed(target)",
+            "+\t\tif ped and ped ~= 0 and DoesEntityExist(ped) then",
+            "+\t\t\tmarker = AddBlipForEntity(ped)",
+            "+\t\tend",
+            "+\tend",
+            "+\tif not marker or marker == 0 then",
+            "+\t\tmarker = AddBlipForCoord(x, y, z)",
+            "+\tend",
+            "+",
+            "+\tSetBlipSprite(marker, 1)",
+            "+\tSetBlipColour(marker, 3)",
+            "+\tSetBlipScale(marker, 1.15)",
+            "+\tSetBlipAsShortRange(marker, false)",
+            "+\tSetBlipDisplay(marker, 2)",
+            "+\tSetBlipFlashes(marker, true)",
+            "+\tSetBlipFlashInterval(marker, 400)",
+            "+\tSetBlipPriority(marker, 10)",
+            "+\tBeginTextCommandSetBlipName(\"STRING\")",
+            "+\tAddTextComponentSubstringPlayerName(playerName or \"Ping\")",
+            "+\tEndTextCommandSetBlipName(marker)",
+            "+\tblips[#blips + 1] = marker",
+            "+",
+            "+\tlocal ring = AddBlipForCoord(x, y, z)",
+            "+\tSetBlipSprite(ring, 161)",
+            "+\tSetBlipColour(ring, 3)",
+            "+\tSetBlipScale(ring, 1.5)",
+            "+\tSetBlipAsShortRange(ring, false)",
+            "+\tSetBlipDisplay(ring, 2)",
+            "+\tSetBlipFlashes(ring, true)",
+            "+\tSetBlipFlashInterval(ring, 400)",
+            "+\tblips[#blips + 1] = ring",
+            "+",
+            "+\tplayerPings[playerId] = blips",
+            "+",
+            "+\tPlaySoundFrontend(-1, \"WAYPOINT_SET\", \"HUD_FRONTEND_DEFAULT_SOUNDSET\", true)",
+            "+\tTriggerEvent(\"EasyAdmin:showNotification\", string.format(GetLocalisedText(\"playerpinged\"), playerName or \"\"))",
+            "+",
+            "+\tCitizen.SetTimeout(10000, function()",
+            "+\t\tif playerPings[playerId] ~= blips then",
+            "+\t\t\treturn"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+\t\t\t\t\tif permissions[\"player.ping\"] or permissions[\"player.spectate\"] or permissions[\"player.teleport.single\"] then",
+            "+\t\t\t\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"pingplayer\"), GetLocalisedText(\"pingplayerguide\"))",
+            "+\t\t\t\t\t\tthisPlayer:AddItem(thisItem)",
+            "+\t\t\t\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "+\t\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:PingPlayer\", thePlayer.id)",
+            "+\t\t\t\t\t\tend",
+            "+\t\t\t\t\tend"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/docs/docs/permissions.md",
+          "status": "M",
+          "lines": [
+            "+| `easyadmin.player.ping` | Marks a player on the admin map for 10 seconds |"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/de.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Spieler pingen\",",
+            "+    \"pingplayerguide\": \"Markiert den Spieler blinkend auf der Karte. Der Ping verschwindet nach 10 Sekunden.\",",
+            "+    \"playerpinged\": \"%s wurde auf der Karte markiert.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/en.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Ping Player\",",
+            "+    \"pingplayerguide\": \"Marks the player on the map. The ping blinks for 10 seconds.\",",
+            "+    \"playerpinged\": \"%s has been marked on the map.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/es.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Pingear jugador\",",
+            "+    \"pingplayerguide\": \"Marca al jugador en el mapa. El ping parpadea durante 10 segundos.\",",
+            "+    \"playerpinged\": \"%s ha sido marcado en el mapa.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/fr.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Ping le joueur\",",
+            "+    \"pingplayerguide\": \"Marque le joueur sur la carte. Le ping clignote pendant 10 secondes.\",",
+            "+    \"playerpinged\": \"%s a été marqué sur la carte.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/it.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Pinga giocatore\",",
+            "+    \"pingplayerguide\": \"Segna il giocatore sulla mappa. Il ping lampeggia per 10 secondi.\",",
+            "+    \"playerpinged\": \"%s è stato segnato sulla mappa.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/nl.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Speler pingen\",",
+            "+    \"pingplayerguide\": \"Markeert de speler op de kaart. De ping knippert 10 seconden.\",",
+            "+    \"playerpinged\": \"%s is gemarkeerd op de kaart.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/pl.json",
+          "status": "M",
+          "lines": [
+            "+    \"pingplayer\": \"Pinguj gracza\",",
+            "+    \"pingplayerguide\": \"Oznacza gracza na mapie. Ping miga przez 10 sekund.\",",
+            "+    \"playerpinged\": \"%s został oznaczony na mapie.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/server/admin_server.lua",
+          "status": "M",
+          "lines": [
+            "+\tRegisterServerEvent(\"EasyAdmin:PingPlayer\", function(playerId)",
+            "+\t\tif not playerId or not CachedPlayers[playerId] or CachedPlayers[playerId].dropped then",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"invalidplayer\"))",
+            "+\t\t\treturn",
+            "+\t\tend",
+            "+",
+            "+\t\tlocal canPing = DoesPlayerHavePermission(source, \"player.ping\") or DoesPlayerHavePermission(source, \"player.spectate\") or DoesPlayerHavePermission(source, \"player.teleport.single\")",
+            "+\t\tif canPing and CheckAdminCooldown(source, \"ping\") then",
+            "+\t\t\tlocal tgtPed = GetPlayerPed(playerId)",
+            "+\t\t\tif not tgtPed or tgtPed == 0 then",
+            "+\t\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"playernotfound\"))",
+            "+\t\t\t\treturn",
+            "+\t\t\tend",
+            "+",
+            "+\t\t\tlocal tgtCoords = GetEntityCoords(tgtPed)",
+            "+\t\t\tif tgtCoords.x == 0.0 and tgtCoords.y == 0.0 then",
+            "+\t\t\t\tTriggerClientEvent(\"EasyAdmin:showNotification\", source, GetLocalisedText(\"playernotfound\"))",
+            "+\t\t\t\treturn",
+            "+\t\t\tend",
+            "+",
+            "+\t\t\tSetAdminCooldown(source, \"ping\")",
+            "+\t\t\tTriggerClientEvent(\"EasyAdmin:ShowPlayerPing\", source, playerId, getName(playerId, true, false), tgtCoords.x, tgtCoords.y, tgtCoords.z)",
+            "+\t\t\tPrintDebugMessage(\"Player \"..getName(source,true)..\" pinged \"..getName(playerId,true), 3)",
+            "+\t\tend",
+            "+\tend)",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/shared/util_shared.lua",
+          "status": "M",
+          "lines": [
+            "+\t[\"player.ping\"] = false,"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/de.json",
+          "status": "M",
+          "lines": [
+            "+  \"illegal_stash_item\": \"Dieses Item ist illegal darf nicht in solches Lager!\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/en.json",
+          "status": "M",
+          "lines": [
+            "+  \"illegal_stash_item\": \"Dieses Item ist illegal darf nicht in solches Lager!\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/inventory/server.lua",
+          "status": "M",
+          "lines": [
+            "+local illegalItems = require 'modules.inventory.illegal'",
+            "+\t\tif not sameInventory and toInventory.type == 'stash' and toInventory.groups and illegalItems.contains(fromData.name) then",
+            "+\t\t\treturn false, 'illegal_stash_item'",
+            "+\t\tend",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[rcore]/rcore_casino/server/transactions.txt",
+          "status": "M",
+          "lines": [
+            "+[2026-10-12 20:16:39] [Rosa Lee - char2:f6a7d1d68111745581e11c74b2f45c0a9822fca5] [AddMoney] Money: 85004 -> 92504 [Unknown]"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-10-12T15:11:09Z\",\"webhooks\":{\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\"},\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\"},\"esx_useractions\":{\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\"},\"marriage\":{\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\"},\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\"},\"versicherung\":{\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\"},\"einreise\":{\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\"},\"freecam_photo\":{\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\"},\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\"},\"hotdog\":{\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\"},\"esx_jobs\":{\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\"},\"expose\":{\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\",\"webhookId\":\"1551624352477225113\",\"channelId\":\"1551624348660531240\"},\"join\":{\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\"},\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\"},\"sozialstunden\":{\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\"},\"me\":{\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\"},\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\"},\"lager\":{\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\"},\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\"},\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\"},\"esx_paycheck\":{\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\"},\"sperrzone\":{\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\"},\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\"},\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\"}}}",
+            "+{\"updatedAt\":\"2026-10-12T18:23:04Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"afk\":{\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\"},\"bell\":{\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"support\":{\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\"},\"expose\":{\"webhookId\":\"1551624352477225113\",\"channelId\":\"1551624348660531240\",\"url\":\"https://discord.com/api/webhooks/1551624352477225113/***\"},\"faction\":{\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"troll\":{\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"txadmin\":{\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\"},\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"hotdog\":{\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\"},\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"frak\":{\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\"},\"willkommen\":{\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\"},\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\"},\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\"},\"me\":{\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"},\"esx_useractions\":{\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\"},\"esx_resources\":{\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"join\":{\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\"},\"versicherung\":{\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"}}}"
+          ]
+        }
+      ]
     }
   ]
 }
