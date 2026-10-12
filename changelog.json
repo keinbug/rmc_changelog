@@ -16952,6 +16952,98 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-12T23:24:01+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 81788
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+        "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+          "status": "M",
+          "lines": [
+            "-    BotApiKey = 'CHANGE_ME',  -- = LAGER_API_KEY in der .env des Bots",
+            "+    BotApiKey = 'H732Xx2VUyWwOV1LpU7j',  -- = LAGER_API_KEY in der .env des Bots"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua",
+          "status": "M",
+          "lines": [
+            "+local function trimName(value)",
+            "+    if value == nil then return nil end",
+            "+    local name = tostring(value):gsub('^%s+', ''):gsub('%s+$', '')",
+            "+    if name == '' then return nil end",
+            "+    return name",
+            "+end",
+            "+",
+            "+local function readVar(xPlayer, key)",
+            "+    if type(xPlayer.get) ~= 'function' then return nil end",
+            "+    local ok, value = pcall(function() return xPlayer.get(key) end)",
+            "+    if ok then return trimName(value) end",
+            "+    return nil",
+            "+end",
+            "+",
+            "+-- Charaktername (Vor- und Nachname), nicht der FiveM-/Steam-Name.",
+            "+local function ingameNameFromPlayer(xPlayer)",
+            "+    if not xPlayer then return nil end",
+            "+    local first = readVar(xPlayer, 'firstName') or readVar(xPlayer, 'firstname')",
+            "+    local last = readVar(xPlayer, 'lastName') or readVar(xPlayer, 'lastname')",
+            "+    return trimName(((first or '') .. ' ' .. (last or '')))",
+            "+end",
+            "+",
+            "+local function ingameNameFromDb(identifier)",
+            "+    if not identifier or identifier == '' then return nil end",
+            "+    local cols = Config.Columns or {}",
+            "+    local tables = Config.Tables or {}",
+            "+    local firstCol = cols.firstname or 'firstname'",
+            "+    local lastCol = cols.lastname or 'lastname'",
+            "+    local idCol = cols.identifier or 'identifier'",
+            "+    local users = tables.users or 'users'",
+            "+    if firstCol == '' or lastCol == '' or idCol == '' then return nil end",
+            "+    local ok, row = pcall(function()",
+            "+        return MySQL.single.await(",
+            "+            ('SELECT `%s` AS firstname, `%s` AS lastname FROM `%s` WHERE `%s` = ? LIMIT 1'):format(",
+            "+                firstCol, lastCol, users, idCol",
+            "+            ),",
+            "+            { identifier }",
+            "+        )",
+            "+    end)",
+            "+    if not ok or type(row) ~= 'table' then return nil end",
+            "+    return trimName(((row.firstname or '') .. ' ' .. (row.lastname or '')))",
+            "+end",
+            "+",
+            "+        ingameName = nil,",
+            "-        if type(xPlayer.getName) == 'function' then",
+            "-            local ok, name = pcall(function() return xPlayer.getName() end)",
+            "-            if ok and name then info.name = name end",
+            "-        end",
+            "+        info.ingameName = ingameNameFromPlayer(xPlayer)",
+            "-            playerName = p.name,",
+            "-        log(('Sakura-Lager %s: %s x%s (%s)'):format(action, itemName, data.count, p.name))",
+            "-        -- Hook nicht blockieren",
+            "-        SetTimeout(0, function() notifyBot(data) end)",
+            "+        -- Hook nicht blockieren; Ingame-Name ggf. aus der users-Tabelle nachladen",
+            "+        SetTimeout(0, function()",
+            "+            data.playerName = p.ingameName or ingameNameFromDb(p.identifier) or p.name",
+            "+            log(('Sakura-Lager %s: %s x%s (%s)'):format(action, itemName, data.count, data.playerName))",
+            "+            notifyBot(data)",
+            "+        end)"
+          ]
+        }
+      ]
     }
   ]
 }
