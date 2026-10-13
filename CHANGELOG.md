@@ -2,6 +2,310 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-13 04:24 Uhr
+**+0** neu · **~1** geändert · **-74** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"willkommen":{"channelId":"1551161595436990575","webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"esx_chat":{"channelId":"1557386335512305664","webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"afk":{"channelId":"1512475286229356617","webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"versicherung":{"channelId":"1457180906816012401","webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***"},"freecam_photo":{"channelId":"1551520126367572008","webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"hotdog":{"channelId":"1474547082076622979","webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"lager":{"channelId":"1551161580324921455","webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"default":{"channelId":"1551161550096699392","webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***"},"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"expose":{"channelId":"1551624348660531240","webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***"}},"updatedAt":"2026-10-13T01:05:24Z"}
++{"categoryId":"1551161549018759170","webhooks":{"frak":{"webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169"},"esx_resources":{"webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245"},"esx_jobs":{"webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374"},"txadmin":{"webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"1552989823604756600"},"esx_chat":{"webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664"},"faction":{"webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960"},"support":{"webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211136"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"esx_test":{"webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"1551161575690211428"},"marriage":{"webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"1467556343492640830"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766"},"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"bell":{"webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068"},"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"expose":{"webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***","channelId":"1551624348660531240"},"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"freecam_photo":{"webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***","channelId":"1551520126367572008"},"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"versicherung":{"webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***","channelId":"1457180906816012401"},"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872"}},"updatedAt":"2026-10-13T01:30:05Z"}
+```
+`− resources/[stream]/[cloth]/bodyivy/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/mp_f_freemode_01_mp_f_bodyivy_shop.meta`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/mp_m_freemode_01_mp_m_bodyivy_shop.meta`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy.ymt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^feet_000_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^feet_diff_000_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_000_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_001_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_002_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_003_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_004_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_005_u.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_006_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_007_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_008_u.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_009_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_000_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_001_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_002_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_003_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_b_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_c_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_d_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_e_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_f_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_004_g_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_a_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_b_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_c_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_d_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_e_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_f_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_005_g_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_006_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_007_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_008_a_uni.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^lowr_diff_009_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_000_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_001_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_002_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_003_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_004_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_005_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_006_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_007_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_008_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_009_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_000_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_001_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_002_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_003_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_004_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_005_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_006_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_007_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_008_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_f_freemode_01_mp_f_bodyivy/mp_f_freemode_01_mp_f_bodyivy^uppr_diff_009_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy.ymt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_000_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_001_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_002_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_003_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_diff_000_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_diff_000_b_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_diff_001_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_diff_002_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^lowr_diff_003_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_000_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_001_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_002_r.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_diff_000_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_diff_001_a_whi.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[cloth]/bodyivy/stream/mp_m_freemode_01_mp_m_bodyivy/mp_m_freemode_01_mp_m_bodyivy^uppr_diff_002_a_whi.ytd`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-13 03:24 Uhr
 **+74** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[stream]/[cloth]/bodyivy/fxmanifest.lua`
@@ -1905,89 +2209,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[manuell_start]/ox_doorlock/.claude/settings.local.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-10 00:24 Uhr
-**+2** neu · **~9** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_doors/audio/data/oxdoorlock_sounds.dat54.rel`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_doors/audio/dlc_oxdoorlock/oxdoorlock.awc`
-```diff
-+ Neue Datei
-```
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1558220457289977856"}
-+{"channelId":"1550507281396011150","messageId":"1558237349224128575"}
-```
-`~ resources/[selfcode]/rmc_doors/client/main.lua`
-```diff
--local function distSqTo(coords)
--    local p = GetEntityCoords(PlayerPedId())
--    local dx, dy, dz = p.x - coords.x, p.y - coords.y, p.z - coords.z
-+local function distSqBetween(a, b)
-+    local dx, dy, dz = a.x - b.x, a.y - b.y, a.z - b.z
-+local function distSqTo(coords)
-+    return distSqBetween(GetEntityCoords(PlayerPedId()), coords)
-+end
-+
-+local function doorDistSqFrom(origin, door)
-```
-`~ resources/[selfcode]/rmc_doors/config.lua`
-```diff
-+--- ox_target hängt Aufschließen/Abschließen an die Tür, sobald die Resource läuft.
-+--- INPUT_PICKUP (E) ist dann aus. INPUT_DETONATE (G) bleibt der Dietrich.
--Config.DefaultRate = 1.0
--
--Config.Sounds = {
--    lock = { name = 'DOOR_BUZZ', set = 'MP_PLAYER_APARTMENT' },
--    unlock = { name = 'DOOR_OPEN', set = 'GTAO_APT_DOOR_DOWNSTAIRS_GLASS_SOUNDS' },
--}
-+--- Door-System-Tempo wie ox_doorlock. Über 10 bleibt die Tür stehen.
-+Config.DefaultRate = 10.0
-```
-`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
-```diff
-+    'audio/data/oxdoorlock_sounds.dat54.rel',
-+    'audio/dlc_oxdoorlock/oxdoorlock.awc',
-+data_file 'AUDIO_WAVEPACK' 'audio/dlc_oxdoorlock'
-+data_file 'AUDIO_SOUNDDATA' 'audio/data/oxdoorlock_sounds.dat'
-+
-```
-`~ resources/[selfcode]/rmc_doors/html/app.js`
-```diff
--    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 1;
-+    document.getElementById('f-rate').value = door && door.doorRate != null ? door.doorRate : 10;
-```
-`~ resources/[selfcode]/rmc_doors/html/index.html`
-```diff
--                                <input id="f-rate" type="number" min="0.1" max="20" step="0.1" value="1" />
-+                                <input id="f-rate" type="number" min="0.2" max="10" step="0.1" value="10" />
-```
-`~ resources/[selfcode]/rmc_doors/locales/de.lua`
-```diff
-+    target_unlock = 'Aufschließen',
-+    target_lock = 'Abschließen',
-+    target_lockpick = 'Dietrich',
-```
-`~ resources/[selfcode]/rmc_doors/locales/en.lua`
-```diff
-+    target_unlock = 'Unlock',
-+    target_lock = 'Lock',
-+    target_lockpick = 'Lockpick',
-```
-`~ resources/[selfcode]/rmc_doors/server/main.lua`
-```diff
--        doorRate = math.min(20.0, math.max(0.1, doorRate)),
-+        doorRate = math.min(10.0, math.max(0.2, doorRate)),
--    local c = door.coords
--    local dx, dy, dz = coords.x - c.x, coords.y - c.y, coords.z - c.z
-+
--    return (dx * dx + dy * dy + dz * dz) <= (limit * limit)
-+    local limitSq = limit * limit
-+
-+    local function near(point)
-+        if type(point) ~= 'table' then return false end
 ```
