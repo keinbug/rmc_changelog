@@ -2,6 +2,112 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-13 23:24 Uhr
+**+10** neu · **~8** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_test/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/node/package-lock.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/node/package.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/node/server.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_test/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/client/frakgps.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/frakgps.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[jaksam_scripte]/farming_creator/current_config.json`
+```diff
+-{"server":{"acePermission":"farming_creator","areDiscordLogsActive":false,"mainDiscordWebhook":"","itemToBurnPlants":{"loseOnUse":false,"minQuantity":1,"name":"gold_lighter","isRequired":true},"specificWebhooks":[],"canAlwaysCarryItem":false,"canReceiveMultipleTimesTheSameItem":true},"shared":{"timeToBurnPlants":5,"locale":"de","allowToSaveFormulas":true,"allowAfkFoundrying":true},"client":{"menuPosition":"bottom-right","selectiveTargeting":{"seeds":true,"fields":true,"farms":true,"foundries":true,"workbenches":true},"targetingScript":"none","minimumDistanceBetweenPlants":2,"allowAfkFarming":true,"burnPlantsAnimations":[{"duration":5,"type":"scenario","scenarioName":"PROP_HUMAN_BUM_BIN"}],"helpNotification":"none"}}
++{"shared":{"locale":"de","allowToSaveFormulas":true,"allowAfkFoundrying":true,"timeToBurnPlants":5},"client":{"selectiveTargeting":{"fields":true,"foundries":true,"seeds":true,"farms":true,"workbenches":true},"helpNotification":"none","allowAfkFarming":true,"targetingScript":"none","menuPosition":"bottom-right","burnPlantsAnimations":[{"duration":5,"scenarioName":"PROP_HUMAN_BUM_BIN","type":"scenario"}],"minimumDistanceBetweenPlants":2},"server":{"canAlwaysCarryItem":false,"itemToBurnPlants":{"minQuantity":1,"name":"gold_lighter","isRequired":true,"loseOnUse":false},"acePermission":"farming_creator","canReceiveMultipleTimesTheSameItem":true,"mainDiscordWebhook":"https://discord.com/api/webhooks/1559672740804304927/***","areDiscordLogsActive":true,"specificWebhooks":{"fields":"https://discord.com/api/webhooks/1559672534369050624/***","foundries":"https://discord.com/api/webhooks/1559672546012561488/***","farms":"https://discord.com/api/webhooks/1559672537518968952/***","plants":"https://discord.com/api/webhooks/1559672530569142392/***","workbenches":"https://discord.com/api/webhooks/1559672542149738628/***"}}}
+```
+`~ resources/[jaksam_scripte]/jobs_creator/current_config.json`
+```diff
+-{"client":{"licenses":{"weapon":{"weapon":true},"driver":{"drive":true,"driver":true,"drive_bike":true,"drive_truck":true,"dmv":true}},"toggleDrag":{"enabled":true,"key":"g"},"carLockpickTime":10,"marketSellOnePerTime":true,"useJSFourIdCard":true,"whitelistedControlsWhileHandcuffed":[],"markerDistance":10,"freezeWhenSoftHandcuffed":false,"targetingScript":"none","textFont":0,"use3Dtext":false,"freezeWhenHardHandcuffed":true,"menuPosition":"left","enableAlarmWhenLockpicking":true,"actionsMenuKey":"f6","canUseActionsMenuWhileOffDuty":false,"textSize":1,"searchRequiresHandcuffState":true},"server":{"robbableAccounts":["money","black_money"],"enablePropertyOutfits":true,"handcuffsRemoveOnUse":true,"depositableInSafeAccounts":["money","black_money"],"parkAllOwnedVehiclesOnRestart":false,"cleanVehicleItemName":"schwamm","handcuffRequireItem":true,"areDiscordLogsActive":false,"healItemName":"bandage","blackMoney":{"metadataFieldId":"","object":{"name":"black_money","label":"Schwarzgeld","type":"account"},"worthType":"quantity"},"lockpickCarRequireItem":false,"repairVehicleItemName":"rep_kasten","cleanVehicleRequireItem":true,"healRemoveOnUse":false,"unemployedJob":"unemployed","lockpickRemoveOnUse":false,"handcuffsItemName":"kabelbinder","reviveItemName":"medikit","specificWebhooks":[],"healRequireItem":false,"cleanVehicleRemoveOnUse":true,"mainDiscordWebhook":"","canAlwaysCarryItem":false,"repairVehicleRequireItem":false,"unemployedGrade":0,"reviveRequireItem":false,"acePermission":"jobcreator","reviveRemoveOnuse":false,"repairVehicleRemoveOnUse":true,"lockpickItemName":"lockpick"},"shared":{"handcuffsEnableSelfRelease":false,"externalScriptsNames":{"qb-core":"qb-core","es_extended":"es_extended","qb-banking":"qb-banking","qb-inventory":"qb-inventory","esx_society":"esx_society","illenium-appearance":"illenium-appearance","qb-vehiclekeys":"qb-vehiclekeys","qb-weapons":"qb-weapons","billing_ui":"billing_ui","ox_target":"ox_target","ox_lib":"ox_lib","esx_textui":"esx_textui","ox_inventory":"ox_inventory","qb-target":"qb-target","esx_addonaccount":"esx_addonaccount","esx_skin":"esx_skin","qb-clothing":"qb-clothing"},"resetEmployeeWorkTimeEveryNDays":0,"allowAfkFarming":false,"modules":{"search_player":"ox_inventory","skillcheck":"ox_lib","stash":"ox_inventory","boss":"default","textui":"ox_lib","progressbar":"ox_lib","outfits":"default","banking":"default","notify":"ox_lib","logs":"jaksam","menu":"menu_default"},"locale":"de"}}
++{"shared":{"allowAfkFarming":false,"locale":"de","dutyToggleDistance":20,"externalScriptsNames":{"ox_inventory":"ox_inventory","qb-inventory":"qb-inventory","ox_lib":"ox_lib","esx_society":"esx_society","illenium-appearance":"illenium-appearance","esx_skin":"esx_skin","ox_target":"ox_target","esx_addonaccount":"esx_addonaccount","qb-clothing":"qb-clothing","es_extended":"es_extended","qb-banking":"qb-banking","qb-core":"qb-core","qb-target":"qb-target","billing_ui":"billing_ui","qb-weapons":"qb-weapons","esx_textui":"esx_textui","qb-vehiclekeys":"qb-vehiclekeys"},"offDutyKeepsJobActions":false,"dutyFromActionsMenu":false,"resetEmployeeWorkTimeEveryNDays":0,"handcuffsEnableSelfRelease":false,"dutyCommand":"","dutyToggleArea":"marker","multijob":{"command":"jobs","autoCapture":true,"maxJobs":3,"enabled":false,"switchGoesOnDuty":true,"sharedAccess":false,"allowLeaveJob":true},"modules":{"textui":"ox_lib","logs":"jaksam","search_player":"ox_inventory","boss":"default","progressbar":"ox_lib","banking":"default","notify":"ox_lib","skillcheck":"ox_lib","menu":"menu_default","stash":"ox_inventory","outfits":"default"}},"server":{"softHandcuffsItemName":"kabelbinder","cleanVehicleRequireItem":true,"healItemName":"bandage","hardHandcuffsItemName":"kabelbinder","parkAllOwnedVehiclesOnRestart":false,"robbableAccounts":["money","black_money"],"handcuffsRemoveOnUse":true,"depositableInSafeAccounts":["money","black_money"],"lockpickCarRequireItem":false,"lockpickRemoveOnUse":false,"blackMoney":{"object":{"type":"account","label":"Schwarzgeld","name":"black_money"},"metadataFieldId":"","worthType":"quantity"},"unemployedGrade":0,"reviveItemName":"medikit","reviveRemoveOnuse":false,"unemployedJob":"unemployed","enablePropertyOutfits":true,"acePermission":"jobcreator","cleanVehicleItemName":"schwamm","repairVehicleItemName":"rep_kasten","canAlwaysCarryItem":false,"areDiscordLogsActive":false,"healRemoveOnUse":false,"specificWebhooks":[],"mainDiscordWebhook":"","healRequireItem":false,"reviveRequireItem":false,"repairVehicleRequireItem":false,"repairVehicleRemoveOnUse":true,"cleanVehicleRemoveOnUse":true,"lockpickItemName":"lockpick","handcuffsItemName":"kabelbinder","handcuffRequireItem":true},"client":{"menuPosition":"left","licenses":{"weapon":{"weapon":true},"driver":{"dmv":true,"driver":true,"drive_truck":true,"drive_bike":true,"drive":true}},"freezeWhenSoftHandcuffed":false,"use3Dtext":false,"carLockpickTime":10,"marketSellOnePerTime":true,"textSize":1,"toggleDrag":{"enabled":true,"key":"g"},"markerDistance":10,"searchRequiresHandcuffState":true,"targetingScript":"none","whitelistedControlsWhileHandcuffed":[],"freezeWhenHardHandcuffed":true,"canUseActionsMenuWhileOffDuty":false,"enableAlarmWhenLockpicking":true,"textFont":0,"actionsMenuKey":"f6","useJSFourIdCard":true}}
+```
+`~ resources/[selfcode]/rmc_core/client/personalmenu.lua`
+```diff
+-local OpenMainMenu, OpenPersonalienMenu, OpenSettingsMenu, OpenVehicleMenu, OpenGpsMenu, OpenHydraulikMenu
++local OpenMainMenu, OpenPersonalienMenu, OpenSettingsMenu, OpenVehicleMenu, OpenGpsMenu, OpenHydraulikMenu, OpenFrakGpsMenu
+-    ShowMenu('main', 'Personalmenü', {
++    local elements = {
+-    }, function(value, menu)
++    }
++    if type(CanUseFrakGps) == 'function' and CanUseFrakGps() then
++        elements[#elements + 1] = { label = 'Fraktions-GPS', value = 'frakgps' }
++    end
++    ShowMenu('main', 'Personalmenü', elements, function(value, menu)
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++            { key = 'doors',          name = 'tueren',          topic = 'Türen auf, zu, erstellt und gelöscht', label = 'Türen' },
++-- ====== FRAKTIONS-GPS ======
++-- F5 → Fraktions-GPS. Nur Jobs aus Jobs sehen sich gegenseitig.
++-- Jeder schaltet sich selbst ein/aus. Aus = unsichtbar und keine Kollegen-Blips.
++Config.FrakGps = {
++    Enabled = true,
++    UpdateMs = 2500, -- Server-Takt, mindestens 1000
++    Jobs = {
++        police = {
++            label = 'LSPD',
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"afk":{"channelId":"1512475286229356617","webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"freecam_photo":{"channelId":"1551520126367572008","webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"esx_chat":{"channelId":"1557386335512305664","webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"hotdog":{"channelId":"1474547082076622979","webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"expose":{"channelId":"1551624348660531240","webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"lager":{"channelId":"1551161580324921455","webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"willkommen":{"channelId":"1551161595436990575","webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"versicherung":{"channelId":"1457180906816012401","webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"default":{"channelId":"1551161550096699392","webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***"}},"updatedAt":"2026-10-13T16:00:59Z"}
++{"webhooks":{"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"freecam_photo":{"channelId":"1551520126367572008","webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"hotdog":{"channelId":"1474547082076622979","webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"esx_chat":{"channelId":"1557386335512305664","webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"versicherung":{"channelId":"1457180906816012401","webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***"},"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"default":{"channelId":"1551161550096699392","webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"expose":{"channelId":"1551624348660531240","webhookId":"1551624352477225113","url":"https://discord.com/api/webhooks/1551624352477225113/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"afk":{"channelId":"1512475286229356617","webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"willkommen":{"channelId":"1551161595436990575","webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"lager":{"channelId":"1551161580324921455","webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***"}},"categoryId":"1551161549018759170","updatedAt":"2026-10-13T20:47:58Z"}
+```
+`~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
+```diff
++
++    doors          = '',
+```
+`~ resources/[selfcode]/rmc_doors/client/main.lua`
+```diff
++local addDoorZone, removeDoorZone
++
++    removeDoorZone(door)
++    addDoorZone(door)
+-local targetAdded = false
+-
+-local function canUseTarget(entity, expectedState)
+-    if RMC.uiOpen or RMC.placing or RMC.busy then return false end
+-
+-    local door = doorFromEntity(entity)
+```
+`~ resources/[selfcode]/rmc_doors/config.lua`
+```diff
++--- ox_target legt an jeder Tür eine Zone: Aufschließen und Abschließen.
+```
+
 ## 2026-10-13 22:24 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
@@ -2278,33 +2384,6 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 - Gelöscht
 ```
 `− resources/[manuell_start]/oxmysql/web/build/assets/index-856dcf43.js`
-```diff
-- Gelöscht
-```
-
-## 2026-10-10 12:23 Uhr
-**+0** neu · **~0** geändert · **-6** gelöscht
-`− resources/[selfcode]/lb-lieferlos/tests/client_mocks.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/lb-lieferlos/tests/client_test.py`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/lb-lieferlos/tests/mocks.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/lb-lieferlos/tests/ox_test.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/lb-lieferlos/tests/run.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/lb-lieferlos/tests/run.py`
 ```diff
 - Gelöscht
 ```
