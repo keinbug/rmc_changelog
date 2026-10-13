@@ -18771,6 +18771,98 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-13T22:24:26+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 81788
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+        "resources/[selfcode]/rmc_doors/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_doors/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'rmc_core',\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+local DOOR_REASONS = {\r",
+            "+    nearby = 'Vor Ort',\r",
+            "+    remote = 'Fernsteuerung',\r",
+            "+    lockpick = 'Dietrich',\r",
+            "+    autolock = 'Autolock',\r",
+            "+    script = 'Script',\r",
+            "+}\r",
+            "+\r",
+            "+local function doorWebhook()\r",
+            "+    if GetResourceState('rmc_core') ~= 'started' then return nil end\r",
+            "+    local ok, url = pcall(function()\r",
+            "+        return exports['rmc_core']:GetWebhook('doors')\r",
+            "+    end)\r",
+            "+    if not ok or type(url) ~= 'string' or url == '' then return nil end\r",
+            "+    return url\r",
+            "+end\r",
+            "+\r",
+            "+local function logDoor(src, title, message, level, fields)\r",
+            "+    local url = doorWebhook()\r",
+            "+    if not url then return end\r",
+            "+    pcall(function()\r",
+            "+        exports['rmc_core']:SendLogAdvanced({\r",
+            "+            source = src or 0,\r",
+            "+            title = title,\r",
+            "+            message = message,\r",
+            "+            webhook = url,\r",
+            "+            level = level or 'Info',\r",
+            "+            script = 'rmc_doors',\r",
+            "+            fields = fields,\r",
+            "+        })\r",
+            "+    end)\r",
+            "+end\r",
+            "+\r",
+            "+local function doorField(door)\r",
+            "+    return ('`%s` · #%s'):format(door.name, door.id)\r",
+            "+end\r",
+            "+\r",
+            "-            setDoorState(id, 1, 0, nil)\r",
+            "+            setDoorState(id, 1, 0, nil, 'autolock')\r",
+            "-function setDoorState(id, state, src, usedItem)\r",
+            "+function setDoorState(id, state, src, usedItem, reason)\r",
+            "+    local locked = state == 1\r",
+            "+    local fields = {\r",
+            "+        { name = 'Tür', value = doorField(door), inline = true },\r",
+            "+        { name = 'Art', value = DOOR_REASONS[reason] or DOOR_REASONS.script, inline = true },\r",
+            "+    }\r",
+            "+    if type(usedItem) == 'string' and usedItem ~= '' then\r",
+            "+        fields[#fields + 1] = { name = 'Item', value = '`' .. usedItem .. '`', inline = true }\r",
+            "+    end\r",
+            "+    logDoor(\r",
+            "+        src,\r",
+            "+        locked and 'Abgeschlossen' or 'Aufgeschlossen',\r",
+            "+        locked and 'Die Tür wurde abgeschlossen.' or 'Die Tür wurde aufgeschlossen.',\r",
+            "+        reason == 'lockpick' and 'Warning' or (locked and 'Info' or 'Success'),\r",
+            "+        fields\r",
+            "+    )\r",
+            "+\r",
+            "+        logDoor(src, 'Tür bearbeitet', 'Eine Tür wurde gespeichert.', 'Info', {\r",
+            "+            { name = 'Tür', value = doorField(door), inline = true },\r",
+            "+        })\r"
+          ]
+        }
+      ]
     }
   ]
 }

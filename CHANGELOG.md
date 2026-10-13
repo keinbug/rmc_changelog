@@ -2,6 +2,26 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-13 22:24 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
+```diff
++    'rmc_core',
+```
+`~ resources/[selfcode]/rmc_doors/server/main.lua`
+```diff
++local DOOR_REASONS = {
++    nearby = 'Vor Ort',
++    remote = 'Fernsteuerung',
++    lockpick = 'Dietrich',
++    autolock = 'Autolock',
++    script = 'Script',
++}
++
++local function doorWebhook()
++    if GetResourceState('rmc_core') ~= 'started' then return nil end
+```
+
 ## 2026-10-13 21:24 Uhr
 **+0** neu · **~7** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -2287,12 +2307,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/lb-lieferlos/tests/run.py`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-10 11:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/es_extended/server/modules/discord/panel.json`
-```diff
--{"channelId":"1550507281396011150","messageId":"1558388791130193972"}
-+{"channelId":"1550507281396011150","messageId":"1558405954020581438"}
 ```
