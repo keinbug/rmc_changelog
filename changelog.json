@@ -18508,6 +18508,34 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-13T19:24:00+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 81788
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[rcore]/rcore_casino/server/transactions.txt"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[rcore]/rcore_casino/server/transactions.txt",
+          "status": "M",
+          "lines": [
+            "+[2026-10-13 19:06:55] [Fabi Huber - char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1] [AddChips] Chips: 0 -> 15000 [Win: Chips in Lucky Wheel]",
+            "+[2026-10-13 19:07:55] [Fabi Huber - char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1] [AddChips] Chips: 15000 -> 16000 [Win: Daily Bonus in Cashier]",
+            "+[2026-10-13 19:08:01] [Fabi Huber - char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1] [RemoveChips] Chips: 16000 -> 0 [Paying for: Trade In Chips in Cashier]",
+            "+[2026-10-13 19:08:01] [Fabi Huber - char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1] [AddMoney] Money: 16482 -> 32482 [Casino Cashier Trade In]"
+          ]
+        }
+      ]
     }
   ]
 }
