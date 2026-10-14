@@ -19264,6 +19264,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-14T13:23:23+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80622
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[prsim]/prism_loadingscreen/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[prsim]/prism_loadingscreen/config.lua",
+          "status": "M",
+          "lines": [
+            "-            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/Jasmin_Rap_Remix_v2.mp3',\r",
+            "+            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_music.mp3',\r"
+          ]
+        }
+      ]
     }
   ]
 }
