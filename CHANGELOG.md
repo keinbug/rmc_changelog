@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-14 14:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[prsim]/prism_loadingscreen/config.lua`
+```diff
+-            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_neu.mp4',
++            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/laden.mp4',
+```
+
 ## 2026-10-14 13:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[prsim]/prism_loadingscreen/config.lua`
@@ -1879,21 +1887,5 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "reason": "Einzahlung auf Kartenkonto",
 +            "sender_identifier": "bank",
 +            "date": "2026/10/10 - 20:27:39"
-+        },
-```
-
-## 2026-10-10 20:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "receiver_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
-+            "value": 30000,
-+            "receiver_name": "Fabi Huber",
-+            "sender_name": "Geldbörse",
-+            "type": "deposit",
-+            "reason": "Einzahlung auf Kartenkonto",
-+            "sender_identifier": "bank",
-+            "date": "2026/10/10 - 19:24:31"
 +        },
 ```
