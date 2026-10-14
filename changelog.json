@@ -19659,6 +19659,236 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-14T21:24:21+02:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 7,
+        "deleted": 0,
+        "total": 80624
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_core/client/poster.lua",
+        "resources/[selfcode]/rmc_core/server/poster.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[okok]/okokBilling/config.lua",
+        "resources/[selfcode]/rmc_core/client/troll.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/webhook_links.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/poster.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/poster.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupDate\": \"20_38_09_10_2026\",",
+            "-            \"backupTimestamp\": 1791571091,",
+            "-            \"backupFile\": \"banlist_20_38_09_10_2026.json\"",
+            "+            \"backupDate\": \"20_40_10_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_40_10_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791657635",
+            "-            \"backupDate\": \"20_40_09_10_2026\",",
+            "-            \"backupTimestamp\": 1791571216,",
+            "-            \"backupFile\": \"banlist_20_40_09_10_2026.json\"",
+            "+            \"backupDate\": \"20_42_10_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_42_10_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791657760",
+            "-            \"backupDate\": \"20_40_10_10_2026\",",
+            "-            \"backupTimestamp\": 1791657635,",
+            "-            \"backupFile\": \"banlist_20_40_10_10_2026.json\"",
+            "+            \"backupDate\": \"20_43_11_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_43_11_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791744185",
+            "-            \"backupDate\": \"20_42_10_10_2026\",",
+            "-            \"backupTimestamp\": 1791657760,",
+            "-            \"backupFile\": \"banlist_20_42_10_10_2026.json\"",
+            "+            \"backupDate\": \"20_45_11_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_45_11_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791744310",
+            "-            \"backupDate\": \"20_43_11_10_2026\",",
+            "-            \"backupTimestamp\": 1791744185,",
+            "-            \"backupFile\": \"banlist_20_43_11_10_2026.json\"",
+            "+            \"backupDate\": \"20_45_12_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_45_12_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791830725",
+            "-            \"backupDate\": \"20_45_11_10_2026\",",
+            "-            \"backupTimestamp\": 1791744310,",
+            "-            \"backupFile\": \"banlist_20_45_11_10_2026.json\"",
+            "+            \"backupDate\": \"20_47_12_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_47_12_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791830851",
+            "-            \"backupDate\": \"20_45_12_10_2026\",",
+            "-            \"backupTimestamp\": 1791830725,",
+            "-            \"backupFile\": \"banlist_20_45_12_10_2026.json\"",
+            "+            \"backupDate\": \"20_49_13_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_49_13_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791917372",
+            "-            \"backupDate\": \"20_47_12_10_2026\",",
+            "-            \"backupTimestamp\": 1791830851,",
+            "-            \"backupFile\": \"banlist_20_47_12_10_2026.json\"",
+            "+            \"backupDate\": \"20_51_13_10_2026\",",
+            "+            \"backupFile\": \"banlist_20_51_13_10_2026.json\",",
+            "+            \"backupTimestamp\": 1791917497",
+            "-            \"backupDate\": \"20_49_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917372,",
+            "-            \"backupFile\": \"banlist_20_49_13_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792003995,",
+            "+            \"backupFile\": \"banlist_20_53_14_10_2026.json\",",
+            "+            \"backupDate\": \"20_53_14_10_2026\"",
+            "-            \"backupDate\": \"20_51_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917497,",
+            "-            \"backupFile\": \"banlist_20_51_13_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792004120,",
+            "+            \"backupFile\": \"banlist_20_55_14_10_2026.json\",",
+            "+            \"backupDate\": \"20_55_14_10_2026\""
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/14 - 20:47:33\",",
+            "+            \"sender_name\": \"Dr. Jack Fischer\",",
+            "+            \"value\": 500,",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"receiver_name\": \"cd_garage\"",
+            "+        },"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBilling/config.lua",
+          "status": "M",
+          "lines": [
+            "-    'pawn'\r",
+            "+    'pawn',\r",
+            "+    'hookahlounge'\r",
+            "-\t},\t\t\r",
+            "+\t},\r",
+            "+\t['hookahlounge'] = {\r",
+            "+\t\t{'Custom'},\r",
+            "+\t},\t\t\t\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/troll.lua",
+          "status": "M",
+          "lines": [
+            "-        SetEntityInvincible(ped, true)",
+            "-        SetPedCanRagdoll(ped, false)",
+            "+        SetEntityInvincible(ped, false)",
+            "+        SetEntityCanBeDamaged(ped, true)",
+            "+        SetPedCanRagdoll(ped, true)",
+            "+        SetPedCanRagdollFromPlayerImpact(ped, true)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "+            { key = 'poster',         name = 'poster',          topic = 'Fahndungsposter aufgehängt und entfernt', label = 'Poster' },",
+            "+-- ====== FAHNDUNGSPOSTER ======",
+            "+-- /poster – Police & Ambulance: Bild-URL per ox_lib, dann an eine Wand hängen.",
+            "+-- Jeder sieht das Plakat, aber nur innerhalb von ViewRadius Metern.",
+            "+-- Bleibt in der Datenbank, bis ein erlaubter Job es entfernt.",
+            "+Config.Poster = {",
+            "+    Enabled = true,",
+            "+    Command = 'poster',",
+            "+",
+            "+    AllowedJobs = {",
+            "+        police = {",
+            "+            label = 'LSPD',",
+            "+            minGrade = 0,",
+            "+        },",
+            "+        ambulance = {",
+            "+            label = 'LSMD',",
+            "+            minGrade = 0,",
+            "+        },",
+            "+    },",
+            "+",
+            "+    -- Sichtweite für alle Spieler (DUI wird nur in diesem Radius erzeugt)",
+            "+    ViewRadius = 20.0,",
+            "+    -- Etwas darüber wird das DUI erst freigegeben, damit es am Rand nicht flackert",
+            "+    ReleaseRadius = 22.0,",
+            "+    -- So nah muss man stehen, um ein Poster abzunehmen",
+            "+    RemoveDistance = 8.0,",
+            "+    -- So nah muss der Spieler an der Wand stehen",
+            "+    MaxPlaceDistance = 8.0,",
+            "+    -- Raycast-Länge beim Platzieren",
+            "+    RayDistance = 6.0,",
+            "+    MaxPosters = 40,",
+            "+",
+            "+    -- Hochformat, etwa ein Fahndungszettel (Meter)",
+            "+    Width = 0.42,",
+            "+    Height = 0.64,",
+            "+    -- Abstand zur Wand gegen Z-Fighting",
+            "+    SurfaceOffset = 0.02,",
+            "+    -- |normal.z| darüber = Boden oder Decke, wird abgelehnt",
+            "+    MaxNormalZ = 0.45,",
+            "+",
+            "+    DuiWidth = 512,",
+            "+    DuiHeight = 768,",
+            "+    UrlMaxLength = 512,",
+            "+    TitleMaxLength = 48,",
+            "+",
+            "+    -- Nur direkte Bild-Hosts. Das DUI ist ein Browser, deshalb keine freien URLs.",
+            "+    AllowedHosts = {",
+            "+        'cdn.discordapp.com',",
+            "+        'media.discordapp.net',",
+            "+        'i.imgur.com',",
+            "+        'r2.fivemanage.com',",
+            "+    },",
+            "+",
+            "+    Locale = {",
+            "+        NoPermission = 'Du bist nicht berechtigt, Poster aufzuhängen.',",
+            "+        MenuTitle = 'Poster',",
+            "+        MenuPlace = 'Poster aufhängen',",
+            "+        MenuPlaceDesc = 'Bild-URL einfügen und an eine Wand hängen',",
+            "+        MenuRemove = 'Poster entfernen',",
+            "+        MenuRemoveDesc = 'Poster in der Nähe abnehmen',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-10-14T16:53:04Z\",\"webhooks\":{\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\"},\"me\":{\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\"},\"hotdog\":{\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"webhookId\":\"1474547103081566412\",\"channelId\":\"1474547082076622979\"},\"doors\":{\"url\":\"https://discord.com/api/webhooks/1559665847771988080/***\",\"webhookId\":\"1559665847771988080\",\"channelId\":\"1559665845330907296\"},\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\"},\"esx_jobs\":{\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\"},\"sperrzone\":{\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\"},\"lager\":{\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\"},\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"webhookId\":\"1551161597853049005\",\"channelId\":\"1551161595436990575\"},\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\"},\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\"},\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\"},\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"webhookId\":\"1552971096847028264\",\"channelId\":\"1552971094267527169\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\"},\"marriage\":{\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\"},\"einreise\":{\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971085937381431\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"webhookId\":\"1552971101741654046\",\"channelId\":\"1552971099317211136\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\"},\"join\":{\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\"},\"versicherung\":{\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"webhookId\":\"1457180941750632469\",\"channelId\":\"1457180906816012401\"},\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\"},\"esx_paycheck\":{\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\"},\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\",\"channelId\":\"1551161570439208960\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"webhookId\":\"1552989826213617715\",\"channelId\":\"1552989823604756600\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\"},\"esx_useractions\":{\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"webhookId\":\"1557386342755991582\",\"channelId\":\"1557386339866120252\"},\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"webhookId\":\"1557386349395583076\",\"channelId\":\"1557386346782265425\"},\"sozialstunden\":{\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"webhookId\":\"1552971083731181709\",\"channelId\":\"1552971081491419187\"},\"freecam_photo\":{\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\"}}}",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"lager\":{\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"webhookId\":\"1551161582942158879\"},\"esx_jobs\":{\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"webhookId\":\"1557386364578955274\"},\"bell\":{\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"webhookId\":\"1471556835994767400\"},\"doors\":{\"channelId\":\"1559665845330907296\",\"url\":\"https://discord.com/api/webhooks/1559665847771988080/***\",\"webhookId\":\"1559665847771988080\"},\"default\":{\"channelId\":\"1551161550096699392\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"webhookId\":\"1551161552537653269\"},\"me\":{\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"webhookId\":\"1513950212480307490\"},\"esx_paycheck\":{\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"webhookId\":\"1557386357381533816\"},\"faction\":{\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\"},\"esx_chat\":{\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"webhookId\":\"1557386337580220497\"},\"join\":{\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"webhookId\":\"1552971091771924552\"},\"marriage\":{\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com/api/webhooks/1467556382038429901/***\",\"webhookId\":\"1467556382038429901\"},\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"webhookId\":\"1557386349395583076\"},\"versicherung\":{\"channelId\":\"1457180906816012401\",\"url\":\"https://discord.com/api/webhooks/1457180941750632469/***\",\"webhookId\":\"1457180941750632469\"},\"chopshop\":{\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\"},\"esx_useractions\":{\"channelId\":\"1557386339866120252\",\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"webhookId\":\"1557386342755991582\"},\"esx_test\":{\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"webhookId\":\"1557386332483887194\"},\"frak\":{\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"webhookId\":\"1552971096847028264\"},\"willkommen\":{\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"webhookId\":\"1551161597853049005\"},\"support\":{\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"webhookId\":\"1552971101741654046\"},\"troll\":{\"channelId\":\"1552971103910236172\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\"},\"txadmin\":{\"channelId\":\"1552989823604756600\",\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"webhookId\":\"1552989826213617715\"},\"einreise\":{\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"webhookId\":\"1552971088328392714\"},\"sperrzone\":{\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"webhookId\":\"1552971115209564220\"},\"ausbluten\":{\"channelId\":\"1552971076718297200\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\"},\"staff\":{\"channelId\":\"1552971120460828763\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"webhookId\":\"1552971123233394708\"},\"esx\":{\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\"},\"freecam_photo\":{\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"webhookId\":\"1551520132319412284\"},\"hotdog\":{\"channelId\":\"1474547082076622979\",\"url\":\"https://discord.com/api/webhooks/1474547103081566412/***\",\"webhookId\":\"1474547103081566412\"},\"clothing_strip\":{\"channelId\":\"1551161585614061618\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"webhookId\":\"1551161592467423353\"},\"adminjail\":{\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"webhookId\":\"1551161578009796630\"},\"poster\":{\"channelId\":\"1560007812342489120\",\"url\":\"https://discord.com/api/webhooks/1560007815156998144/***\",\"webhookId\":\"1560007815156998144\"},\"afk\":{\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"webhookId\":\"1512475306554953789\"},\"sozialstunden\":{\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"webhookId\":\"1552971083731181709\"},\"basicneeds\":{\"channelId\":\"1417917687723724872\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\"}},\"updatedAt\":\"2026-10-14T19:15:20Z\"}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/webhook_links.lua",
+          "status": "M",
+          "lines": [
+            "+    poster         = '',"
+          ]
+        }
+      ]
     }
   ]
 }
