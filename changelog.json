@@ -19575,6 +19575,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-14T20:24:18+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80622
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\": [",
+            "+    \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"value\": 3,",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 39)\",",
+            "-            \"date\": \"2026/10/09 - 10:01:07\",",
+            "-            \"sender_name\": \"Savings Interest\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/14 - 19:34:57\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Mellie Melone\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"reason\": \"Savings account interest payment (Period 39)\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"date\": \"2026/10/09 - 10:01:07\",",
+            "-            \"value\": 3,",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "-            \"date\": \"2026/10/01 - 10:00:31\",",
+            "-            \"sender_name\": \"Savings Interest\"",
+            "+            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"value\": 894,",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"date\": \"2026/10/01 - 10:00:31\",",
+            "-            \"value\": 3,",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 37)\",",
+            "-            \"date\": \"2026/09/23 - 10:00:53\",",
+            "-            \"sender_name\": \"Savings Interest\"",
+            "+            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"value\": 882,",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"value\": 3,",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 36)\",",
+            "-            \"date\": \"2026/09/15 - 10:00:45\",",
+            "-            \"sender_name\": \"Savings Interest\"",
+            "+            \"reason\": \"Auszahlung vom Sparkonto\",",
+            "+            \"type\": \"withdraw_savings\",",
+            "+            \"sender_name\": \"Mellie Melone\",",
+            "+            \"date\": \"2026/09/28 - 20:32:31\",",
+            "+            \"sender_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 534,",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"type\": \"interest_savings\","
+          ]
+        }
+      ]
     }
   ]
 }
