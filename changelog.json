@@ -19889,6 +19889,53 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-14T23:23:54+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 80624
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[cd]/cd_dispatch/configs/config.lua",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[cd]/cd_dispatch/configs/config.lua",
+          "status": "M",
+          "lines": [
+            "-    bundle_blips = false, --Do you want to bundle the blips together so they do not spam the pause menu legend?\r",
+            "+    bundle_blips = true, --Do you want to bundle the blips together so they do not spam the pause menu legend?\r",
+            "-            [1] = {coords = vector3(13.98, -1098.05, 29.8), distance = 20}, --Legion gunrange.\r",
+            "-            [2] = {coords = vector3(821.09, -2163.46, 78.67), distance = 20}, --Cypress Flats gunrange.\r",
+            "+            -- [1] = {coords = vector3(13.98, -1098.05, 29.8), distance = 20}, --Legion gunrange.\r",
+            "+            -- [2] = {coords = vector3(821.09, -2163.46, 78.67), distance = 20}, --Cypress Flats gunrange.\r"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/14 - 22:24:35\",",
+            "+            \"value\": 2000,",
+            "+            \"sender_name\": \"Salome Blackwood\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
