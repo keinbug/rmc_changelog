@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-14 18:24 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[prsim]/prism_loadingscreen/config.lua`
+```diff
+-            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/laden.mp4',
++            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/neu.mp4',
+```
+`~ resources/[rcore]/rcore_casino/server/transactions.txt`
+```diff
++[2026-10-14 18:12:20] [Dr. Amber Smith - char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5] [AddChips] Chips: 0 -> 15000 [Win: Chips in Lucky Wheel]
++[2026-10-14 18:12:47] [Dr. Amber Smith - char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5] [RemoveChips] Chips: 15000 -> 0 [Paying for: Trade In Chips in Cashier]
++[2026-10-14 18:12:47] [Dr. Amber Smith - char3:f6a7d1d68111745581e11c74b2f45c0a9822fca5] [AddMoney] Money: 0 -> 15000 [Casino Cashier Trade In]
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++
++    -- NPC-Prügel: ein vernetzter NPC schlägt das Ziel (für alle in der Nähe sichtbar)
++    NpcPruegel = {
++        DurationSec = 45,
++        Model = 'mp_m_freemode_01',
++        SpawnDistance = 2.5,
++    },
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"1551161575690211428","webhookId":"1551161578009796630"},"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431","webhookId":"1552971088328392714"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296","webhookId":"1559665847771988080"},"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913","webhookId":"1557386357381533816"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187","webhookId":"1552971083731181709"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766","webhookId":"1552971115209564220"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","webhookId":"1557386326951592027"},"versicherung":{"url":"https://discord.com/api/webhooks/1457180941750632469/***","channelId":"1457180906816012401","webhookId":"1457180941750632469"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"1467556343492640830","webhookId":"1467556382038429901"},"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172","webhookId":"1552971107500433498"},"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","channelId":"1551520126367572008","webhookId":"1551520132319412284"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200","webhookId":"1552971079239077968"},"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744","webhookId":"1552971074814218312"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"1552989823604756600","webhookId":"1552989826213617715"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211136","webhookId":"1552971101741654046"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960","webhookId":"1551161573194731652"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392","webhookId":"1551161552537653269"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"1551161592467423353"},"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"}},"updatedAt":"2026-10-14T14:50:33Z"}
++{"webhooks":{"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"},"esx_chat":{"webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664"},"versicherung":{"webhookId":"1457180941750632469","url":"https://discord.com/api/webhooks/1457180941750632469/***","channelId":"1457180906816012401"},"esx_resources":{"webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"1551161575690211428"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872"},"support":{"webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211136"},"esx_test":{"webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296"},"freecam_photo":{"webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***","channelId":"1551520126367572008"},"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"esx_jobs":{"webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374"},"frak":{"webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"faction":{"webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245"},"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"},"bell":{"webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"txadmin":{"webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"1552989823604756600"},"marriage":{"webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"1467556343492640830"}},"updatedAt":"2026-10-14T16:02:40Z","categoryId":"1551161549018759170"}
+```
+
 ## 2026-10-14 17:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1808,55 +1837,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +[2026-10-11 01:33:21] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveChips] Chips: 10000 -> 0 [Paying for: Trade In Chips in Cashier]
 +[2026-10-11 01:33:21] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [AddMoney] Money: 6658 -> 16658 [Casino Cashier Trade In]
 +[2026-10-11 01:33:55] [Timo Anderson - char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c] [RemoveMoney] Money: 16658 -> 6658 [Buying chips in casino ( 10000 )]
-```
-
-## 2026-10-11 01:24 Uhr
-**+3** neu · **~4** geändert · **-0** gelöscht
-`+ resources/[rcore]/rcore_casino/server/transactions.txt`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_api/okok_transactions.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_api/server/modules/banking.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[rcore]/rcore_casino/config_server.lua`
-```diff
--    Discord = false, -- whether to enable Discord notifications (check config_server.lua)
--    DiscordInterval = 60000 * 15, -- 15 mins
--    HookUrl = "https://discord.com/api/webhooks/???!",
--    LogTransactions = false, -- log all transactions to transactions.log file, also print in server console
-+    Discord = true, -- whether to enable Discord notifications (check config_server.lua)
-+    DiscordInterval = 10000, -- 10 sekunden
-+    HookUrl = "https://discord.com/api/webhooks/1558620241477767308/***",
-+    LogTransactions = true, -- log all transactions to transactions.log file, also print in server console
-```
-`~ resources/[selfcode]/rmc_api/config/api_key.lua`
-```diff
-+
-+-- ========================================
-+--  OKOKBANKING (transactions.json)
-+-- ========================================
-+-- Liest die Laufzeitdatei von okokBanking. LoadResourceFile geht in die
-+-- andere Resource; falls die Datei dort nicht sichtbar ist, wird der
-+-- lokale Symlink okok_transactions.json genutzt.
-+Config.Banking = {
-+    Resource = 'okokBanking',
-+    File = 'transactions.json',
-```
-`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
-```diff
-+    'server/modules/banking.lua',
-```
-`~ resources/[selfcode]/rmc_api/server/main.lua`
-```diff
-+    -- okokBanking (transactions.json)
-+    { method = 'GET', path = '/banking/accounts',                     handler = function(req, res) BankingModule.accounts(req, res) end },
-+    { method = 'GET', path = '/banking/transactions/:identifier',     handler = function(req, res, p) BankingModule.transactions(req, res, p[1]) end },
-+    { method = 'GET', path = '/banking/transactions',                 handler = function(req, res) BankingModule.transactions(req, res) end },
-+
 ```
