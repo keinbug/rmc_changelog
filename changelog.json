@@ -19187,6 +19187,42 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-14T02:24:03+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 81798
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[rcore]/rcore_casino/server/transactions.txt",
+        "resources/[rtx]/rtx_gym/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[rcore]/rcore_casino/server/transactions.txt",
+          "status": "M",
+          "lines": [
+            "+[2026-10-14 01:49:07] [Rosa Lee - char2:f6a7d1d68111745581e11c74b2f45c0a9822fca5] [AddMoney] Money: 92390 -> 132390 [Unknown]"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_gym/config.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tcoords = vector3(282.11, -275.97, 53.97),\r",
+            "-\t\tcoordsparticle = vector3(282.19, -276.0, 54.85),\r",
+            "+\t\tcoords = vector3(-2951.17, 4049.29, 4.50), --Fischer\r",
+            "+\t\tcoordsparticle = vector3(-2951.02, 4049.12, 5.96),\r"
+          ]
+        }
+      ]
     }
   ]
 }
