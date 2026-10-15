@@ -2,6 +2,117 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-15 14:23 Uhr
+**+2** neu · **~9** geändert · **-0** gelöscht
+`+ backups/rmc_doors-skill-20261015-140323.tar.gz`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_doors/server/lockpick_skill.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_doors/client/main.lua`
+```diff
+-    'name', 'state', 'doorRate', 'auto', 'autolock', 'holdOpen', 'hideUi', 'lockpick', 'hasPasscode',
++    'name', 'state', 'doorRate', 'auto', 'autolock', 'holdOpen', 'hideUi', 'lockpick', 'lockpickDifficulty', 'hasPasscode',
+-        text = text .. '    ' .. Locale('lockpick_hint')
++        local tier = Config.LockpickDifficulties and Config.LockpickDifficulties[door.lockpickDifficulty or Config.LockpickDefaultDifficulty or 'mittel']
++        text = text .. '    ' .. Locale('lockpick_hint') .. (tier and tier.label and (' (' .. tier.label .. ')') or '')
+-    local dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@'
+-    RequestAnimDict(dict)
++        -- Server prüft Tür, Abstand, Stufe, Skill, Cooldown und Item und legt Minigame + Dauer fest.
++        local res = lib.callback.await('rmc_doors:lockpickStart', false, id)
++        if type(res) ~= 'table' or not res.ok then
+```
+`~ resources/[selfcode]/rmc_doors/config.lua`
+```diff
++--- Fallback-Werte, falls eine Stufe kein eigenes Item/keine eigene Dauer hat.
++--- Hauptschalter für Item-Verschleiß: false = beim Aufbrechen geht nie ein Item kaputt.
++--- (Wie oft es kaputtgeht, steht pro Stufe in Config.LockpickDifficulties.)
++-- ============================================================================
++--  AUFBRECHEN: Schwierigkeitsstufen + Skill-System
++--  Pro Tür wird die Stufe im Tür-Creator (/doors) gewählt (Feld "Aufbruch-Schwierigkeit").
++--  Türen ohne eigene Stufe (alle bisherigen Türen) bekommen Config.LockpickDefaultDifficulty.
++-- ============================================================================
++Config.LockpickDefaultDifficulty = 'mittel'
++
+```
+`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
+```diff
+-version '1.1.0'
++version '1.2.0'
++    'server/lockpick_skill.lua',
+```
+`~ resources/[selfcode]/rmc_doors/html/app.js`
+```diff
++    document.getElementById('f-difficulty').value = (door && door.lockpickDifficulty) || 'mittel';
++        lockpickDifficulty: document.getElementById('f-difficulty').value,
+```
+`~ resources/[selfcode]/rmc_doors/html/index.html`
+```diff
++                        <label class="field">
++                            <span data-i18n="ui_difficulty">Aufbruch-Schwierigkeit</span>
++                            <select id="f-difficulty">
++                                <option value="leicht" data-i18n="difficulty_leicht">Leicht</option>
++                                <option value="mittel" data-i18n="difficulty_mittel" selected>Mittel</option>
++                                <option value="schwer" data-i18n="difficulty_schwer">Schwer</option>
++                            </select>
++                        </label>
+```
+`~ resources/[selfcode]/rmc_doors/html/style.css`
+```diff
++select,
++.field select,
++.field select {
++    cursor: pointer;
++}
++
++.field select option {
++    background: #09090b;
++    color: #fafafa;
++}
+```
+`~ resources/[selfcode]/rmc_doors/locales/de.lua`
+```diff
++    lockpick_busy = 'Du bist schon dabei, ein Schloss zu knacken.',
++    lockpick_skill = 'Dafür bist du noch nicht geschickt genug.',
++    lockpick_skill_detail = '%s-Schlösser brauchen Aufbruch-Level %d, du hast Level %d.',
++    lockpick_cooldown = 'Deine Hände zittern noch. Warte %d Sekunden.',
++    lockpick_need = 'Dir fehlt das passende Werkzeug: %s',
++    lockpick_broke = '%s ist kaputtgegangen.',
++    lockpick_fail_skill = 'Das Schloss hat nicht nachgegeben.',
++    skill_title = 'Aufbrechen',
++    skill_xp = '+%d Aufbruch-XP',
++    skill_levelup = 'Du bist jetzt Aufbruch-Level %d!',
+```
+`~ resources/[selfcode]/rmc_doors/locales/en.lua`
+```diff
++    lockpick_busy = 'You are already picking a lock.',
++    lockpick_skill = 'You are not skilled enough for that yet.',
++    lockpick_skill_detail = '%s locks need lockpicking level %d, you have level %d.',
++    lockpick_cooldown = 'Your hands are still shaking. Wait %d seconds.',
++    lockpick_need = 'You are missing the right tool: %s',
++    lockpick_broke = '%s broke.',
++    lockpick_fail_skill = 'The lock did not give way.',
++    skill_title = 'Lockpicking',
++    skill_xp = '+%d lockpicking XP',
++    skill_levelup = 'You are now lockpicking level %d!',
+```
+`~ resources/[selfcode]/rmc_doors/server/main.lua`
+```diff
++-- Aufbruch-Schwierigkeit einer Tür (leicht/mittel/schwer, Namen kommen aus Config.LockpickDifficulties).
++local function normalizeDifficulty(value)
++    local tiers = Config.LockpickDifficulties or {}
++    if type(value) == 'string' then
++        local key = value:lower()
++        if tiers[key] then return key end
++    end
++    local default = Config.LockpickDefaultDifficulty
++    if type(default) == 'string' and tiers[default] then return default end
++    return 'mittel'
+```
+
 ## 2026-10-15 12:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1418,498 +1529,6 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 - Gelöscht
 ```
 `− resources/[selfcode]/rmc_api/okok_transactions.json`
-```diff
-- Gelöscht
-```
-
-## 2026-10-12 21:24 Uhr
-**+0** neu · **~22** geändert · **-64** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1791744310,
--            "backupDate": "20_32_07_10_2026",
-+            "backupFile": "banlist_20_35_08_10_2026.json",
--            "backupFile": "banlist_20_32_07_10_2026.json",
--            "backupTimestamp": 1791397949
-+            "backupDate": "20_35_08_10_2026",
-+            "backupTimestamp": 1791484533
--            "backupTimestamp": 1791398074,
-+            "backupFile": "banlist_20_37_08_10_2026.json",
--            "backupFile": "banlist_20_34_07_10_2026.json",
-```
-`~ resources/[esx_addons]/EasyAdmin/client/admin_client.lua`
-```diff
-+end)
-+
-+RegisterNetEvent("EasyAdmin:ReceiveAdminMessage", function(adminName, message)
-+	PlaySoundFrontend(-1, "Text_Arrive_Tone", "Phone_SoundSet_Default", true)
-+	TriggerEvent("EasyAdmin:showNotification", string.format(GetLocalisedText("adminplayermessage"), adminName or "", message or ""))
-+end)
-+
-+TrackedPlayerId = nil
-+PlayerTrackBoxes = PlayerTrackBoxes or {}
-+
-```
-`~ resources/[esx_addons]/EasyAdmin/client/gui_c.lua`
-```diff
-+
-+					if permissions["player.track"] or permissions["player.spectate"] or permissions["player.teleport.single"] then
-+						local thisItem = NativeUI.CreateCheckboxItem(GetLocalisedText("trackplayer"), TrackedPlayerId == thePlayer.id, GetLocalisedText("trackplayerguide"))
-+						thisPlayer:AddItem(thisItem)
-+						PlayerTrackBoxes[thePlayer.id] = thisItem
-+						thisItem.CheckboxEvent = function(sender, item, checked_)
-+							TriggerServerEvent("EasyAdmin:TrackPlayer", thePlayer.id, checked_)
-+						end
-+					end
-+
-```
-`~ resources/[esx_addons]/EasyAdmin/docs/docs/permissions.md`
-```diff
-+| `easyadmin.player.message` | Sends a direct message to a player |
-+| `easyadmin.player.track` | Shows a player on the admin map until turned off |
-+| `easyadmin.player.revive` | Revives or heals a player |
-```
-`~ resources/[esx_addons]/EasyAdmin/language/de.json`
-```diff
-+    "messageplayer": "Nachricht senden",
-+    "messageplayerguide": "Schickt dem Spieler eine Direktnachricht. Er hört einen Sound.",
-+    "adminplayermessage": "Nachricht von %s: %s",
-+    "messagesent": "Nachricht an %s gesendet.",
-+    "adminmessagedplayer": "**%s** hat **%s** eine Nachricht gesendet: %s",
-+    "trackplayer": "Spieler verfolgen",
-+    "trackplayerguide": "Zeigt den Spieler dauerhaft auf der Karte, bis du die Verfolgung ausschaltest.",
-+    "playertracked": "%s wird verfolgt.",
-+    "playertrackstopped": "Verfolgung beendet.",
-+    "careplayer": "Spieler versorgen",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/en.json`
-```diff
-+    "messageplayer": "Send Message",
-+    "messageplayerguide": "Sends the player a direct message. They hear a sound.",
-+    "adminplayermessage": "Message from %s: %s",
-+    "messagesent": "Message sent to %s.",
-+    "adminmessagedplayer": "**%s** sent **%s** a message: %s",
-+    "trackplayer": "Track Player",
-+    "trackplayerguide": "Keeps the player on the map until you turn tracking off.",
-+    "playertracked": "Tracking %s.",
-+    "playertrackstopped": "Tracking stopped.",
-+    "careplayer": "Treat Player",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/es.json`
-```diff
-+    "messageplayer": "Enviar mensaje",
-+    "messageplayerguide": "Envía un mensaje directo al jugador. Él escucha un sonido.",
-+    "adminplayermessage": "Mensaje de %s: %s",
-+    "messagesent": "Mensaje enviado a %s.",
-+    "adminmessagedplayer": "**%s** envió un mensaje a **%s**: %s",
-+    "trackplayer": "Seguir jugador",
-+    "trackplayerguide": "Muestra al jugador en el mapa hasta que desactives el seguimiento.",
-+    "playertracked": "Siguiendo a %s.",
-+    "playertrackstopped": "Seguimiento detenido.",
-+    "careplayer": "Atender jugador",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/fr.json`
-```diff
-+    "messageplayer": "Envoyer un message",
-+    "messageplayerguide": "Envoie un message direct au joueur. Il entend un son.",
-+    "adminplayermessage": "Message de %s : %s",
-+    "messagesent": "Message envoyé à %s.",
-+    "adminmessagedplayer": "**%s** a envoyé un message à **%s** : %s",
-+    "trackplayer": "Suivre le joueur",
-+    "trackplayerguide": "Affiche le joueur sur la carte jusqu'à ce que vous arrêtiez le suivi.",
-+    "playertracked": "Suivi de %s.",
-+    "playertrackstopped": "Suivi arrêté.",
-+    "careplayer": "Soigner le joueur",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/it.json`
-```diff
-+    "messageplayer": "Invia messaggio",
-+    "messageplayerguide": "Invia un messaggio diretto al giocatore. Lui sente un suono.",
-+    "adminplayermessage": "Messaggio da %s: %s",
-+    "messagesent": "Messaggio inviato a %s.",
-+    "adminmessagedplayer": "**%s** ha inviato un messaggio a **%s**: %s",
-+    "trackplayer": "Segui giocatore",
-+    "trackplayerguide": "Mostra il giocatore sulla mappa finché non disattivi l'inseguimento.",
-+    "playertracked": "Stai seguendo %s.",
-+    "playertrackstopped": "Inseguimento fermato.",
-+    "careplayer": "Cura giocatore",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/nl.json`
-```diff
-+    "messageplayer": "Bericht sturen",
-+    "messageplayerguide": "Stuurt de speler een direct bericht. Hij hoort een geluid.",
-+    "adminplayermessage": "Bericht van %s: %s",
-+    "messagesent": "Bericht naar %s gestuurd.",
-+    "adminmessagedplayer": "**%s** stuurde **%s** een bericht: %s",
-+    "trackplayer": "Speler volgen",
-+    "trackplayerguide": "Toont de speler op de kaart tot je het volgen uitzet.",
-+    "playertracked": "%s wordt gevolgd.",
-+    "playertrackstopped": "Volgen gestopt.",
-+    "careplayer": "Speler verzorgen",
-```
-`~ resources/[esx_addons]/EasyAdmin/language/pl.json`
-```diff
-+    "messageplayer": "Wyślij wiadomość",
-+    "messageplayerguide": "Wysyła graczowi bezpośrednią wiadomość. Słyszy dźwięk.",
-+    "adminplayermessage": "Wiadomość od %s: %s",
-+    "messagesent": "Wiadomość wysłana do %s.",
-+    "adminmessagedplayer": "**%s** wysłał **%s** wiadomość: %s",
-+    "trackplayer": "Śledź gracza",
-+    "trackplayerguide": "Pokazuje gracza na mapie, aż wyłączysz śledzenie.",
-+    "playertracked": "Śledzenie %s.",
-+    "playertrackstopped": "Śledzenie zatrzymane.",
-+    "careplayer": "Opatrz gracza",
-```
-`~ resources/[esx_addons]/EasyAdmin/server/admin_server.lua`
-```diff
-+	local function hasUtilityPermission(src, perm)
-+		return DoesPlayerHavePermission(src, perm) or DoesPlayerHavePermission(src, "player.spectate") or DoesPlayerHavePermission(src, "player.teleport.single")
-+	end
-+
-+	local PendingCare = {}
-+
-+	RegisterServerEvent("EasyAdmin:MessagePlayer", function(playerId, message)
-+		if not playerId or not CachedPlayers[playerId] or CachedPlayers[playerId].dropped then
-+			TriggerClientEvent("EasyAdmin:showNotification", source, GetLocalisedText("invalidplayer"))
-+			return
-```
-`~ resources/[esx_addons]/EasyAdmin/shared/util_shared.lua`
-```diff
-+	["player.message"] = false,
-+	["player.track"] = false,
-+	["player.revive"] = false,
-```
-`~ resources/[lb]/lb-phone/config/config.lua`
-```diff
--Config.Logs.Enabled = false
-+Config.Logs.Enabled = true
-```
-`~ resources/[manuell_start]/es_extended/client/functions.lua`
-```diff
--function ESX.ShowNotification(Text, title)
--    exports['okokNotify']:Alert('RedMoon-City', Text, 8000, 'info')
-+local esxNotifyTypes = {
-+    inform = 'info',
-+    info = 'info',
-+    error = 'error',
-+    success = 'success',
-+    warning = 'warning',
-+}
-+
-```
-`~ resources/[manuell_start]/ox_inventory/locales/de.json`
-```diff
--  "illegal_stash_item": "Dieses Item ist illegal darf nicht in solches Lager!",
-```
-`~ resources/[manuell_start]/ox_inventory/locales/en.json`
-```diff
--  "illegal_stash_item": "Dieses Item ist illegal darf nicht in solches Lager!",
-```
-`~ resources/[manuell_start]/ox_inventory/modules/inventory/server.lua`
-```diff
--local illegalItems = require 'modules.inventory.illegal'
--		if not sameInventory and toInventory.type == 'stash' and toInventory.groups and illegalItems.contains(fromData.name) then
--			return false, 'illegal_stash_item'
--		end
--
-```
-`~ resources/[manuell_start]/ox_inventory/modules/utils/client.lua`
-```diff
-+local ESX
-+
-+local notifyTypes = {
-+    inform = 'info',
-+    info = 'info',
-+    error = 'error',
-+    success = 'success',
-+    warning = 'warning',
-+}
-+
-```
-`~ resources/[manuell_start]/ox_inventory/server.lua`
-```diff
--                    return TriggerClientEvent('ox_lib:notify', source,
--                        { type = 'error', description = locale('no_durability', label) })
-+                    return TriggerClientEvent('esx:showNotification', source, locale('no_durability', label), 'error')
--                        return TriggerClientEvent('ox_lib:notify', source,
--                            { type = 'error', description = locale('not_enough_durability', label) })
-+                        return TriggerClientEvent('esx:showNotification', source, locale('not_enough_durability', label), 'error')
--                return TriggerClientEvent('ox_lib:notify', source,
--                    { type = 'error', description = locale('no_durability', label) })
-+                return TriggerClientEvent('esx:showNotification', source, locale('no_durability', label), 'error')
--                return TriggerClientEvent('ox_lib:notify', source,
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
-+    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
--            "receiver_identifier": "cd_garage",
--            "value": 500,
--            "receiver_name": "cd_garage",
--            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
--            "type": "withdraw",
--            "reason": "Fahrzeugrückgabegebühr",
--            "sender_name": "Dr. Jasmin Rossi",
--            "date": "2026/10/05 - 14:26:51"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-12T18:23:04Z","categoryId":"1551161549018759170","webhooks":{"afk":{"webhookId":"1512475306554953789","channelId":"1512475286229356617","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"bell":{"webhookId":"1471556835994767400","channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"adminjail":{"webhookId":"1551161578009796630","channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"staff":{"webhookId":"1552971123233394708","channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"support":{"webhookId":"1552971101741654046","channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"expose":{"webhookId":"1551624352477225113","channelId":"1551624348660531240","url":"https://discord.com/api/webhooks/1551624352477225113/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"webhookId":"1552971107500433498","channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"esx":{"webhookId":"1557386326951592027","channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"txadmin":{"webhookId":"1552989826213617715","channelId":"1552989823604756600","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"sperrzone":{"webhookId":"1552971115209564220","channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"hotdog":{"webhookId":"1474547103081566412","channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"frak":{"webhookId":"1552971096847028264","channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"willkommen":{"webhookId":"1551161597853049005","channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"default":{"webhookId":"1551161552537653269","channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"clothing_strip":{"webhookId":"1551161592467423353","channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"ausbluten":{"webhookId":"1552971079239077968","channelId":"1552971076718297200","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"basicneeds":{"webhookId":"1552971931869777932","channelId":"1417917687723724872","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"me":{"webhookId":"1513950212480307490","channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"sozialstunden":{"webhookId":"1552971083731181709","channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"esx_useractions":{"webhookId":"1557386342755991582","channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"esx_resources":{"webhookId":"1557386349395583076","channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"webhookId":"1552971091771924552","channelId":"1448120760391565352","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"versicherung":{"webhookId":"1457180941750632469","channelId":"1457180906816012401","url":"https://discord.com/api/webhooks/1457180941750632469/***"},"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***"}}}
-+{"updatedAt":"2026-10-12T18:24:49Z","webhooks":{"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913","webhookId":"1557386357381533816"},"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960","webhookId":"1551161573194731652"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187","webhookId":"1552971083731181709"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"1551161575690211428","webhookId":"1551161578009796630"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","channelId":"1551520126367572008","webhookId":"1551520132319412284"},"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200","webhookId":"1552971079239077968"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744","webhookId":"1552971074814218312"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"1551161592467423353"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431","webhookId":"1552971088328392714"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","webhookId":"1557386326951592027"},"versicherung":{"url":"https://discord.com/api/webhooks/1457180941750632469/***","channelId":"1457180906816012401","webhookId":"1457180941750632469"},"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"expose":{"url":"https://discord.com/api/webhooks/1551624352477225113/***","channelId":"1551624348660531240","webhookId":"1551624352477225113"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392","webhookId":"1551161552537653269"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"1467556343492640830","webhookId":"1467556382038429901"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172","webhookId":"1552971107500433498"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211136","webhookId":"1552971101741654046"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"1552989823604756600","webhookId":"1552989826213617715"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766","webhookId":"1552971115209564220"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"}},"categoryId":"1551161549018759170"}
-```
-`− resources/[manuell_start]/ox_inventory/modules/inventory/illegal.lua`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/.fxap`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/audio/ab45_tavern_sounds_game.dat151.rel`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/doortuning.ymt`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/fxmanifest.lua`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/gta5.meta`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern.ytyp`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_air.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_2.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_3.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_ao_4.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bar_barrel.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_barrel_table.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beams_3.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_beer_barrel.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bench.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_bin.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_cabinet_2.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_carpet.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chair.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_chamb.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_coll.ybn`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_counter.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_dart.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_deer.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_desk.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_01_ex.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door__il.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_frame_ex.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_door_gate.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fan.yft`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_fire.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_frame_04.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_gate.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_library.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_04.yft`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_light_proxy_3.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_manifest.ymf`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_map.ymap`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_mlo.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_nap.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_pipes.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_plant_2.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_posters_txd.ytd`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_stand.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_txd.ytd`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_door.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wall_light.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/ab45_tavern_wine_stand.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/clip@ab45_tavern_fan.ycd`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hei_id2_21_c_strm_2.ymap`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/hi@id2_21_c_0.ybn`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_0.ybn`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_buildb1.ydr`
-```diff
-- Gelöscht
-```
-`− resources/[stream]/[mlo]/[fabsi]/AB45-MirrorParkTavern/stream/id2_21_c_gluea2.ydr`
 ```diff
 - Gelöscht
 ```
