@@ -21328,6 +21328,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-16T21:23:08+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80627
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupDate\": \"20_43_11_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_43_11_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791744185,",
+            "-            \"id\": 11",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"20_45_11_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_45_11_10_2026.json\",",
+            "-            \"backupTimestamp\": 1791744310,",
+            "-            \"id\": 11",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"20_45_12_10_2026\",",
+            "-            \"backupTimestamp\": 1791830725,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_45_12_10_2026\",",
+            "+            \"backupTimestamp\": 1791830725",
+            "-            \"backupDate\": \"20_47_12_10_2026\",",
+            "-            \"backupTimestamp\": 1791830851,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_47_12_10_2026\",",
+            "+            \"backupTimestamp\": 1791830851",
+            "-            \"backupDate\": \"20_49_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917372,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_49_13_10_2026\",",
+            "+            \"backupTimestamp\": 1791917372",
+            "-            \"backupDate\": \"20_51_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917497,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_51_13_10_2026\",",
+            "+            \"backupTimestamp\": 1791917497",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1792003995,",
+            "-            \"backupDate\": \"20_53_14_10_2026\"",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_53_14_10_2026\",",
+            "+            \"backupTimestamp\": 1792003995",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1792004120,",
+            "-            \"backupDate\": \"20_55_14_10_2026\"",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_55_14_10_2026\",",
+            "+            \"backupTimestamp\": 1792004120",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1792090560,",
+            "-            \"backupDate\": \"20_56_15_10_2026\"",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_56_15_10_2026\",",
+            "+            \"backupTimestamp\": 1792090560",
+            "-            \"backupDate\": \"20_58_15_10_2026\",",
+            "-            \"backupTimestamp\": 1792090685,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"20_58_15_10_2026\",",
+            "+            \"backupTimestamp\": 1792090685"
+          ]
+        }
+      ]
     }
   ]
 }
