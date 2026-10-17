@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-17 21:24 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-        {
+-            "backupFile": "banlist_20_45_12_10_2026.json",
+-            "id": 11,
+-            "backupDate": "20_45_12_10_2026",
+-            "backupTimestamp": 1791830725
+-        },
+-        {
+-            "backupFile": "banlist_20_47_12_10_2026.json",
+-            "id": 11,
+-            "backupDate": "20_47_12_10_2026",
+```
+
 ## 2026-10-17 18:24 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -843,24 +859,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ resources/[selfcode]/rmc_doors/config.lua`
 ```diff
 +--- ox_target legt an jeder Tür eine Zone: Aufschließen und Abschließen.
-```
-
-## 2026-10-13 22:24 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
-```diff
-+    'rmc_core',
-```
-`~ resources/[selfcode]/rmc_doors/server/main.lua`
-```diff
-+local DOOR_REASONS = {
-+    nearby = 'Vor Ort',
-+    remote = 'Fernsteuerung',
-+    lockpick = 'Dietrich',
-+    autolock = 'Autolock',
-+    script = 'Script',
-+}
-+
-+local function doorWebhook()
-+    if GetResourceState('rmc_core') ~= 'started' then return nil end
 ```
