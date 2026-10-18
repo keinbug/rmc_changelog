@@ -21998,6 +21998,107 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-18T21:23:59+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 80226
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupFile\": \"banlist_20_49_13_10_2026.json\",",
+            "-            \"backupDate\": \"20_49_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917372",
+            "+            \"backupFile\": \"banlist_20_53_14_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792003995,",
+            "+            \"backupDate\": \"20_53_14_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_51_13_10_2026.json\",",
+            "-            \"backupDate\": \"20_51_13_10_2026\",",
+            "-            \"backupTimestamp\": 1791917497",
+            "+            \"backupFile\": \"banlist_20_55_14_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792004120,",
+            "+            \"backupDate\": \"20_55_14_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_53_14_10_2026.json\",",
+            "-            \"backupDate\": \"20_53_14_10_2026\",",
+            "-            \"backupTimestamp\": 1792003995",
+            "+            \"backupFile\": \"banlist_20_56_15_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792090560,",
+            "+            \"backupDate\": \"20_56_15_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_55_14_10_2026.json\",",
+            "-            \"backupDate\": \"20_55_14_10_2026\",",
+            "-            \"backupTimestamp\": 1792004120",
+            "+            \"backupFile\": \"banlist_20_58_15_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792090685,",
+            "+            \"backupDate\": \"20_58_15_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_56_15_10_2026.json\",",
+            "-            \"backupDate\": \"20_56_15_10_2026\",",
+            "-            \"backupTimestamp\": 1792090560",
+            "+            \"backupFile\": \"banlist_20_58_16_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792177113,",
+            "+            \"backupDate\": \"20_58_16_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_58_15_10_2026.json\",",
+            "-            \"backupDate\": \"20_58_15_10_2026\",",
+            "-            \"backupTimestamp\": 1792090685",
+            "+            \"backupFile\": \"banlist_21_00_16_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792177238,",
+            "+            \"backupDate\": \"21_00_16_10_2026\"",
+            "-            \"backupFile\": \"banlist_20_58_16_10_2026.json\",",
+            "-            \"backupDate\": \"20_58_16_10_2026\",",
+            "-            \"backupTimestamp\": 1792177113",
+            "+            \"backupFile\": \"banlist_21_02_17_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792263757,",
+            "+            \"backupDate\": \"21_02_17_10_2026\"",
+            "-            \"backupFile\": \"banlist_21_00_16_10_2026.json\",",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"21_00_16_10_2026\",",
+            "-            \"backupTimestamp\": 1792177238",
+            "+            \"backupDate\": \"21_04_17_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_04_17_10_2026.json\",",
+            "+            \"backupTimestamp\": 1792263882,",
+            "+            \"id\": 11",
+            "-            \"backupFile\": \"banlist_21_02_17_10_2026.json\",",
+            "-            \"backupDate\": \"21_02_17_10_2026\",",
+            "-            \"backupTimestamp\": 1792263757",
+            "+            \"backupFile\": \"banlist_21_06_18_10_2026.json\",",
+            "+            \"backupDate\": \"21_06_18_10_2026\",",
+            "+            \"backupTimestamp\": 1792350407",
+            "-            \"backupFile\": \"banlist_21_04_17_10_2026.json\",",
+            "-            \"backupDate\": \"21_04_17_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1792263882"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_identifier\": \"char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Jasmin Rossi\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"date\": \"2026/10/18 - 21:08:22\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
