@@ -21720,6 +21720,57 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-18T19:24:07+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 0,
+        "total": 80226
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[manuell_start]/ox_inventory/data/shops.lua",
+        "resources/[selfcode]/rmc_doors/client/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tlabel = \"Raw chicken\",",
+            "-\t\tweight = 1,",
+            "+\t\tlabel = \"Rohes Hähnchen\",",
+            "+\t\tweight = 500,",
+            "+\t[\"cooked_chicken\"] = {",
+            "+\t\tlabel = \"Gebratenes Hähnchen\",",
+            "+\t\tweight = 500,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},\t",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/shops.lua",
+          "status": "M",
+          "lines": [
+            "+\t\t\t{ name = 'raw_chicken', price = 9 },\t\t\t"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_doors/client/main.lua",
+          "status": "M",
+          "lines": [
+            "+        options[3].anyItem = true\r"
+          ]
+        }
+      ]
     }
   ]
 }

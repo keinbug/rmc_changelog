@@ -2,6 +2,30 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-18 19:24 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
+-		label = "Raw chicken",
+-		weight = 1,
++		label = "Rohes Hähnchen",
++		weight = 500,
++	["cooked_chicken"] = {
++		label = "Gebratenes Hähnchen",
++		weight = 500,
++		stack = true,
++		close = true,
++	},	
+```
+`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
+```diff
++			{ name = 'raw_chicken', price = 9 },			
+```
+`~ resources/[selfcode]/rmc_doors/client/main.lua`
+```diff
++        options[3].anyItem = true
+```
+
 ## 2026-10-18 16:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[rip]/RiP-MoneywashV2/config.lua`
@@ -741,12 +765,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_neu.mp4',
 +            file        = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/laden.mp4',
-```
-
-## 2026-10-14 13:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[prsim]/prism_loadingscreen/config.lua`
-```diff
--            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/Jasmin_Rap_Remix_v2.mp3',
-+            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_music.mp3',
 ```
