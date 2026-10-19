@@ -22203,6 +22203,1352 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-19T14:23:16+02:00",
+      "initial": false,
+      "counts": {
+        "added": 164,
+        "modified": 0,
+        "deleted": 2,
+        "total": 80388
+      },
+      "truncated": false,
+      "added": [
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/.fxap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/client.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/config.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_distantlights.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lodlights.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_07.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_08.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_09.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_11.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_13.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_15.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_g.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_tenticles.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_0.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement_lod.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_campfirezone.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_ext_torch.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park1_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park2_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ycd/anim@tstudio_legion_halloween_5.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_p.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_n.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_s.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_tstudio.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_yn.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_3.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_halloween_placement_lod.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_n_halloween_placement.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_s_halloween_placement.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/_manifest_peak_halloween.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/overrides/tstudio_legiontowers_asset_walllight01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps_lod.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_uv.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_3.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_cauldren_anim.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_dirtpile_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghost_cat.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghostface.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_00.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_06.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ground_ooze.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_handdoor.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_board.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_tstudio.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_yn.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze_c.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pillar_ooze.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_purple_wings.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_red_wings.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_skel_hand.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_00.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_an.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_bans_frame.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_dan_gho_frame.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_fa_frame.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_cloth_ghost.yft",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_skeleton.yft",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_bridge_placement.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_placement.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps_lods.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytd/tstudio_peak_halloween_txd.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_props_a.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_lods.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_props.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_uv_anims.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/_manifest_tsudio_legion_halloween.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/vanilla/prop_wall_light_02a.yft",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_2.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_3.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_4.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/nightmare_anim.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/zombies_animations.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_anim_billboard_c.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00s.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_bats.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_3.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_cauldren_anim.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_dirtpile_01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_flail_tent_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ghostface.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_00.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_06.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_10.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_12.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_14.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_handdoor.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_light_o.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ouija_board.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_purple_wings.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_red_wings.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_scarecrow01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_skel_hand.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_spider_00.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudios_legion_halloween_spirits_uv.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_cloth_ghost_2.yft",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_flail_tent.yft",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_billboard_txd.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_txd.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_billboards_lod.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_a.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_b.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/ymap_loader.lua"
+      ],
+      "modified": [],
+      "deleted": [
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/stream/ap1_04_8.ybn"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/.fxap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_distantlights.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lodlights.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_07.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_08.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_09.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_11.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_13.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_15.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_g.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_tenticles.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_0.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement_lod.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_campfirezone.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_ext_torch.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park1_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park2_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ycd/anim@tstudio_legion_halloween_5.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_p.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_n.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_s.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_tstudio.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_yn.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_3.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_halloween_placement_lod.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_n_halloween_placement.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_s_halloween_placement.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/_manifest_peak_halloween.ymf",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/overrides/tstudio_legiontowers_asset_walllight01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps_lod.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_uv.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_3.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_cauldren_anim.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_dirtpile_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghost_cat.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghostface.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_00.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_06.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ground_ooze.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_handdoor.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_board.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_tstudio.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_yn.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze_c.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pillar_ooze.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_purple_wings.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_red_wings.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_skel_hand.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_00.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_an.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_bans_frame.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_dan_gho_frame.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_fa_frame.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_cloth_ghost.yft",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_skeleton.yft",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_bridge_placement.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_placement.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps_lods.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytd/tstudio_peak_halloween_txd.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_props_a.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_lods.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_props.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_uv_anims.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/_manifest_tsudio_legion_halloween.ymf",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/vanilla/prop_wall_light_02a.yft",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_2.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_3.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_4.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/nightmare_anim.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/zombies_animations.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_anim_billboard_c.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00s.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_bats.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_3.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_cauldren_anim.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_dirtpile_01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_flail_tent_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ghostface.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_00.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_06.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_10.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_12.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_14.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_handdoor.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_light_o.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ouija_board.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_purple_wings.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_red_wings.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_scarecrow01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_skel_hand.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_spider_00.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudios_legion_halloween_spirits_uv.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_cloth_ghost_2.yft",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_flail_tent.yft",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_billboard_txd.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_txd.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_billboards_lod.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_a.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_b.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/ymap_loader.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/stream/ap1_04_8.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

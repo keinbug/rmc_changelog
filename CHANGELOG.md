@@ -2,6 +2,673 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-19 14:23 Uhr
+**+164** neu · **~0** geändert · **-2** gelöscht
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/.fxap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_distantlights.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lodlights.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_07.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_08.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_09.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_11.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_13.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_15.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_g.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_tenticles.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_0.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement_lod.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_campfirezone.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_ext_torch.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park1_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park2_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ycd/anim@tstudio_legion_halloween_5.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_p.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_n.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_s.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_tstudio.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_yn.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_halloween_placement_lod.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_n_halloween_placement.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_s_halloween_placement.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/_manifest_peak_halloween.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/overrides/tstudio_legiontowers_asset_walllight01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps_lod.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_uv.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_cauldren_anim.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_dirtpile_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghost_cat.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghostface.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_00.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ground_ooze.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_handdoor.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_board.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_tstudio.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_yn.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze_c.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pillar_ooze.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_purple_wings.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_red_wings.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_skel_hand.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_00.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_an.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_bans_frame.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_dan_gho_frame.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_fa_frame.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_cloth_ghost.yft`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_skeleton.yft`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_bridge_placement.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_placement.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps_lods.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytd/tstudio_peak_halloween_txd.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_props_a.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_lods.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_props.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_uv_anims.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/_manifest_tsudio_legion_halloween.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/vanilla/prop_wall_light_02a.yft`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_2.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_3.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_4.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/nightmare_anim.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/zombies_animations.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_anim_billboard_c.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00s.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_bats.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_cauldren_anim.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_dirtpile_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_flail_tent_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ghostface.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_00.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_10.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_12.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_14.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_handdoor.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_light_o.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ouija_board.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_purple_wings.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_red_wings.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_scarecrow01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_skel_hand.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_spider_00.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudios_legion_halloween_spirits_uv.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_cloth_ghost_2.yft`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_flail_tent.yft`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_billboard_txd.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_txd.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_billboards_lod.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_a.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_b.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/ymap_loader.lua`
+```diff
++ Neue Datei
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_opium_lsis/stream/ap1_04_8.ybn`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-19 10:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -771,20 +1438,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
 ```diff
 +    poster         = '',
-```
-
-## 2026-10-14 20:24 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
-+    "char1:95e98569cca18ee079f5fe27ab54152ede42f277": [
--            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
--            "type": "interest_savings",
--            "sender_identifier": "bank",
--            "value": 3,
--            "receiver_name": "Savings Account",
--            "reason": "Savings account interest payment (Period 39)",
--            "date": "2026/10/09 - 10:01:07",
--            "sender_name": "Savings Interest"
 ```
