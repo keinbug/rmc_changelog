@@ -23549,6 +23549,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-19T15:23:42+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80388
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-19T08:01:30Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"14675563434",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"ausbluten\":{\"webhookId\":\"1552971079239077968\",\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"channelId\":\"1552971076718297200\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"url\":\"https://discord.com/api/webhooks/155738636457895527"
+          ]
+        }
+      ]
     }
   ]
 }
