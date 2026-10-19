@@ -22151,6 +22151,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-19T03:23:39+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80226
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tstack = false,",
+            "+\t\tstack = true,"
+          ]
+        }
+      ]
     }
   ]
 }
