@@ -23575,6 +23575,147 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-19T17:23:43+02:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 1,
+        "deleted": 0,
+        "total": 80395
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_tablet/client.lua",
+        "resources/[selfcode]/rmc_tablet/config.lua",
+        "resources/[selfcode]/rmc_tablet/fxmanifest.lua",
+        "resources/[selfcode]/rmc_tablet/html/app.js",
+        "resources/[selfcode]/rmc_tablet/html/index.html",
+        "resources/[selfcode]/rmc_tablet/html/style.css",
+        "resources/[selfcode]/rmc_tablet/server.lua"
+      ],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_tablet/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/html/app.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/html/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/html/style.css",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\": [",
+            "+    \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\",",
+            "-            \"sender_name\": \"Dr. Vincent Fischer\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/06 - 21:19:34\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "-            \"date\": \"2026/10/18 - 18:10:21\"",
+            "-        }",
+            "-    ],",
+            "-    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/09/13 - 23:00:28\"",
+            "+        },",
+            "-            \"type\": \"loan_payment\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "-            \"sender_name\": \"\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "-            \"value\": 21200,",
+            "-            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "-            \"date\": \"2026/06/05 - 22:49:32\"",
+            "+            \"value\": 105000,",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/08/19 - 20:33:45\"",
+            "-            \"type\": \"loan\",",
+            "-            \"receiver_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"sender_name\": \"Bank (Kredit)\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 550000,",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/08/09 - 19:23:31\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_name\": \"Misaki Lee\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"receiver_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 1000,",
+            "-            \"receiver_name\": \"Vincent Fischer\",",
+            "+            \"type\": \"deposit\","
+          ]
+        }
+      ]
     }
   ]
 }
