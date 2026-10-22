@@ -44516,6 +44516,101 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-22T21:23:17+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 2,
+        "total": 78058
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_02_17_10_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_04_17_10_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupDate\": \"21_02_17_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_02_17_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792263757",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"21_04_17_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_04_17_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792263882",
+            "-        },",
+            "-        {",
+            "+            \"backupTimestamp\": 1792350407,",
+            "-            \"backupFile\": \"banlist_21_06_18_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792350407",
+            "+            \"backupFile\": \"banlist_21_06_18_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792350532,",
+            "-            \"backupFile\": \"banlist_21_08_18_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792350532",
+            "+            \"backupFile\": \"banlist_21_08_18_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792437006,",
+            "-            \"backupFile\": \"banlist_21_10_19_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792437006",
+            "+            \"backupFile\": \"banlist_21_10_19_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792437131,",
+            "-            \"backupFile\": \"banlist_21_12_19_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792437131",
+            "+            \"backupFile\": \"banlist_21_12_19_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792523567,",
+            "-            \"backupTimestamp\": 1792523567,",
+            "+            \"backupTimestamp\": 1792523692,",
+            "-            \"backupTimestamp\": 1792523692,",
+            "+            \"backupDate\": \"21_16_21_10_2026\",",
+            "-            \"backupFile\": \"banlist_21_16_21_10_2026.json\",",
+            "-            \"backupDate\": \"21_16_21_10_2026\"",
+            "+            \"backupFile\": \"banlist_21_16_21_10_2026.json\"",
+            "+            \"backupTimestamp\": 1792610334,",
+            "-            \"backupFile\": \"banlist_21_18_21_10_2026.json\",",
+            "-            \"backupTimestamp\": 1792610334",
+            "+            \"backupFile\": \"banlist_21_18_21_10_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1792696848,",
+            "+            \"backupDate\": \"21_20_22_10_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_20_22_10_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1792696973,",
+            "+            \"backupDate\": \"21_22_22_10_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_22_22_10_2026.json\"",
+            "-    \"lastBackup\": 1792610334",
+            "+    \"lastBackup\": 1792696973"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_02_17_10_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_04_17_10_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
