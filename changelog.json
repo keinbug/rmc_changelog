@@ -42068,6 +42068,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-22T13:22:59+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78018
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+        {",
+            "+            \"type\": \"loan_payment\",",
+            "+            \"date\": \"2026/06/05 - 22:49:32\",",
+            "+            \"sender_name\": \"\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "+            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 21200",
+            "+        },",
+            "+        {",
+            "+            \"type\": \"loan\",",
+            "+            \"date\": \"2026/06/05 - 22:49:28\",",
+            "+            \"sender_name\": \"Bank (Kredit)\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"reason\": \"Kreditauszahlung: Executive Loan\",",
+            "+            \"receiver_name\": \"Vincent Fischer\",",
+            "+            \"receiver_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"value\": 20000",
+            "+        },",
+            "+        {",
+            "+            \"date\": \"2026/06/05 - 22:38:47\",",
+            "+            \"sender_name\": \"Vincent Fischer\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"value\": 200,",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Bank (PIN-Änderung)\"",
+            "+        },",
+            "+        {",
+            "+            \"date\": \"2026/06/05 - 22:36:17\",",
+            "+            \"sender_name\": \"Vincent Fischer\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"value\": 200,",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Bank (PIN-Änderung)\"",
+            "+        },",
+            "+        {",
+            "+            \"type\": \"card_purchase\",",
+            "+            \"date\": \"2026/06/05 - 22:27:18\",",
+            "+            \"sender_name\": \"Vincent Fischer\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"reason\": \"Kartenkauf: Standard Card\",",
+            "+            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 100",
+            "+        },",
+            "+        {",
+            "+            \"type\": \"bill_payment\",",
+            "+            \"date\": \"2026/06/05 - 22:20:41\",",
+            "+            \"sender_name\": \"Vincent Fischer\",",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"reason\": \"Bezahlte Rechnung: Busfahrt (4 Haltestellen)\",",
+            "+            \"receiver_name\": \"Krankenhaus\",",
+            "+            \"receiver_identifier\": \"society_ambulance\",",
+            "+            \"value\": 63",
+            "+        },",
+            "+        {",
+            "+            \"type\": \"loan_payment\",",
+            "+            \"date\": \"2026/06/05 - 22:20:25\","
+          ]
+        }
+      ]
     }
   ]
 }
