@@ -2,6 +2,1182 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-22 18:23 Uhr
+**+167** neu · **~1** geändert · **-125** gelöscht
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/.fxap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/_manifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_col.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/prop_ch_025c_g_door_01b.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_cabinets.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_ceil.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_dirt.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_door.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_frames.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_tool.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/stables.ymt`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/_manifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/apa_ch2_03c_interior_v_ranch_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_int_56.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_ranch.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_2.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/hi@ch2_03c_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/mlo_gravestone_col.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ycd/gs_fire_ycd.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydd/ch2_03c_slod1_children.ydd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_emissive_a.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_fountain_water_ripples.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_gate_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_glue_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch004.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch006.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranchgrnd_water_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removed_doors.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removedwins.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrnd01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrndov1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_ivy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_bar_equ.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_constr.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_dt.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_fireplace.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_gardnght.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_lampy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_pool_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_roof_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_slidedoors.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_terr_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_text.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_detail.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_floor.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_lights.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_shower_screen.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter2_norm.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_ceiling.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_cloth.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_door.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_norm.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_shelf.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fire_uv.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fireplace_glass.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_frame.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_norm.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_plant.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs_glass.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_carpet.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_library.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_lights.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_norm.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_piano.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_art.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_cabinets.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_chairs.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_detail.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_stool.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_table.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_r.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_books.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_cabinet.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_ceiling.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_chill.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_fireplace.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_frames.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light_night.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_shelf.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_wall.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_ceiling.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_deco.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_desk.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_fireplace.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_gallery.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_library.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_table.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_windows.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_room.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_window.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_chand.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_dvere.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_glass.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_sunlight.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_windows.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door4.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door5.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door6.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_bath.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_art.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_cloth.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_chill.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_a.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_b.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_light.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_station.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_e.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_w.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_constr.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_glass.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf_detail.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/mlo_gravestone_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/yukonvodaranch.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_critical_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_long_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_2.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_occl_07.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_bar.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_construction_stm.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_garden_east.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_stm.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_medium024.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_small003.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_medium024.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_small003.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/yukon_ymap.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_high.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_txd.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/ranchsaferoom.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/cityhills_02_metadata_012_strm.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/gravestone_dt.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/mlo_gravestone.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/yukon_ytyp.ytyp`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T08:01:26Z","webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","c
++{"webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"15511615500966993
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/_manifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/bushes_txt.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_12.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_bchrks_5.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_land01b.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_pier_endmain01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_pier_stilts.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_11_slod1b_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_occl_00.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_occl_01.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_occl_02.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/ch1_occl_03.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/changer_ch1_malpier29.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/changer_ch1_malpier29.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_11.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_11_critical_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_11_long_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_11_strm_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_12_critical_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_12_long_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hei_ch1_12_strm_2.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/hi@ch1_11_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/maiq_yakuza.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_back_exterior.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_back_exterior_dec.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_block.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_bushes06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_dirt_a.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_dirt_b.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_dirt_c.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_dirt_d.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_ext_door_l.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_ext_door_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_exteriorlight.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_faketowerinterior.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_main.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_main02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_main03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal07.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal09.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal10.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal11.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_metal12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_place.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_place.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_place.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_place.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_sakuraflower.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/n_yak_sakuratree.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_yakuza.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_yakuza.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_yakuza.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_yakuza.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_yakuza_props.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_bigframe.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_bombscreen.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_bosschair.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_floorlamp_a.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_glassdoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_gongo.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_katana01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_katana02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_katana03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_katana04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_metalframe.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_mirror01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_mirror02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_mirror03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_mirror04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r01details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r01details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r02details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r02details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r03details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r03details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r04details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r04details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r05details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r05details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r05details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r06details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r06details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r06details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r07details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r07details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r07details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r08details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r08details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r09details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r09details02.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r09details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r09details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r09details04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r10details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r10details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r10details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r11details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r11details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r11details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r12details01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r12details02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_r12details03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_redlight.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_shell.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_shell02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_sidedoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_sidedoor_ext_l.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_sidedoor_ext_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_smallframe.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/v_ykz_wingchun.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/yakuza_doors.ytyp`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-22 13:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -10631,12 +11807,4 @@ _… Liste gekürzt, siehe changelog.json_
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-10-18T08:01:03Z","webhooks":{"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"ausbluten":{"channelId":"1552971076718297200","url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968"},"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"basicneeds":{"channelId":"1417917687723724872","url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932"},"join":{"channelId":"1448120760391565352","url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552"},"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901"},"troll":{"channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"esx_chat":{"channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497"},"bell":{"channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400"},"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"txadmin":{"channelId":"1552989823604756600","url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"clothing_strip":{"channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353"},"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"hotdog":{"channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***","webhookId":"1474547103081566412"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"afk":{"channelId":"1512475286229356617","url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"sperrzone":{"channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220"}}}
 +{"updatedAt":"2026-10-18T12:50:29Z","webhooks":{"afk":{"channelId":"1512475286229356617","url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789"},"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"sperrzone":{"channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"txadmin":{"channelId":"1552989823604756600","url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715"},"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"troll":{"channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498"},"hotdog":{"channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***","webhookId":"1474547103081566412"},"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901"},"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"clothing_strip":{"channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353"},"join":{"channelId":"1448120760391565352","url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"ausbluten":{"channelId":"1552971076718297200","url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"bell":{"channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400"},"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"basicneeds":{"channelId":"1417917687723724872","url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932"},"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"esx_chat":{"channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"}},"categoryId":"1551161549018759170"}
-```
-
-## 2026-10-18 10:24 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-17T22:00:49Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"freecam_photo":{"channelId":"1551520126367572008","webhookId":"1551520132319412284","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"hotdog":{"channelId":"1474547082076622979","webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***"},"esx_chat":{"channelId":"1557386335512305664","webhookId":"1557386337580220497","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"willkommen":{"channelId":"1551161595436990575","webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"versicherung":{"channelId":"1535733166138990602","webhookId":"1535733186921898004","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***"},"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"default":{"channelId":"1551161550096699392","webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"lager":{"channelId":"1551161580324921455","webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"afk":{"channelId":"1512475286229356617","webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/1551161578009796630/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"}}}
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-18T08:01:03Z","webhooks":{"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"ausbluten":{"channelId":"1552971076718297200","url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968"},"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"basicneeds":{"channelId":"1417917687723724872","url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932"},"join":{"channelId":"1448120760391565352","url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552"},"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901"},"troll":{"channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"esx_chat":{"channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497"},"bell":{"channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400"},"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"txadmin":{"channelId":"1552989823604756600","url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"clothing_strip":{"channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353"},"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"hotdog":{"channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***","webhookId":"1474547103081566412"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"afk":{"channelId":"1512475286229356617","url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"sperrzone":{"channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220"}}}
 ```
