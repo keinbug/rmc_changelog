@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-23 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"15573863269515920
++{"webhooks":{"marriage":{"channelId":"1467556343492640830","url":"https://discord.com/api/webhooks/1467556382038429901/***","webhookId":"1467556382038429901"},"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887
+```
+
 ## 2026-10-23 06:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -11724,33 +11732,4 @@ _… Liste gekürzt, siehe changelog.json_
 ```diff
 -{"webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
 +{"webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"
-```
-
-## 2026-10-18 21:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupFile": "banlist_20_49_13_10_2026.json",
--            "backupDate": "20_49_13_10_2026",
--            "backupTimestamp": 1791917372
-+            "backupFile": "banlist_20_53_14_10_2026.json",
-+            "backupTimestamp": 1792003995,
-+            "backupDate": "20_53_14_10_2026"
--            "backupFile": "banlist_20_51_13_10_2026.json",
--            "backupDate": "20_51_13_10_2026",
--            "backupTimestamp": 1791917497
-+            "backupFile": "banlist_20_55_14_10_2026.json",
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "type": "withdraw",
-+            "sender_identifier": "char4:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
-+            "sender_name": "Jasmin Rossi",
-+            "receiver_identifier": "cd_garage",
-+            "receiver_name": "cd_garage",
-+            "value": 500,
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "date": "2026/10/18 - 21:08:22"
-+        },
 ```
