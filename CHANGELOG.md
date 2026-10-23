@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-23 22:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "backupTimestamp": 1792350407,
+-            "backupDate": "21_06_18_10_2026",
+-            "id": 11,
+-            "backupFile": "banlist_21_06_18_10_2026.json"
+-        },
+-        {
+-            "backupTimestamp": 1792350532,
+-            "backupDate": "21_08_18_10_2026",
+-            "id": 11,
+-            "backupFile": "banlist_21_08_18_10_2026.json"
+```
+`~ resources/[selfcode]/rmc_tablet/config.lua`
+```diff
+-    enabled = true,
++    enabled = false,
+```
+
 ## 2026-10-23 20:23 Uhr
 **+0** neu · **~3** geändert · **-3** gelöscht
 `~ resources/[selfcode]/rmc_api/config/api_key.lua`
@@ -11763,12 +11784,4 @@ _… Liste gekürzt, siehe changelog.json_
 ```diff
 -{"webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005","channelId":"1551161595436990575"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080","channelId":"15596658453309072
 +{"updatedAt":"2026-10-19T08:01:30Z","categoryId":"1551161549018759170","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"14675563434
-```
-
-## 2026-10-19 03:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
--		stack = false,
-+		stack = true,
 ```

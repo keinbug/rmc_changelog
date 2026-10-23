@@ -44872,6 +44872,81 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-23T22:23:22+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78057
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/rmc_tablet/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupTimestamp\": 1792350407,",
+            "-            \"backupDate\": \"21_06_18_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_06_18_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1792350532,",
+            "-            \"backupDate\": \"21_08_18_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_08_18_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1792437006,",
+            "+            \"backupTimestamp\": 1792437006,",
+            "-            \"backupTimestamp\": 1792437131,",
+            "+            \"backupTimestamp\": 1792437131,",
+            "-            \"backupTimestamp\": 1792523567,",
+            "+            \"backupTimestamp\": 1792523567,",
+            "-            \"backupTimestamp\": 1792523692,",
+            "+            \"backupTimestamp\": 1792523692,",
+            "-            \"backupTimestamp\": 1792610209,",
+            "+            \"backupTimestamp\": 1792610209,",
+            "-            \"backupTimestamp\": 1792610334,",
+            "+            \"backupTimestamp\": 1792610334,",
+            "-            \"backupTimestamp\": 1792696848,",
+            "+            \"backupTimestamp\": 1792696848,",
+            "-            \"backupTimestamp\": 1792696973,",
+            "+            \"backupTimestamp\": 1792696973,",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1792783401,",
+            "+            \"backupFile\": \"banlist_21_23_23_10_2026.json\",",
+            "+            \"backupDate\": \"21_23_23_10_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1792783526,",
+            "+            \"backupDate\": \"21_25_23_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_25_23_10_2026.json\"",
+            "-    \"lastBackup\": 1792696973",
+            "+    \"lastBackup\": 1792783526"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/config.lua",
+          "status": "M",
+          "lines": [
+            "-    enabled = true,",
+            "+    enabled = false,"
+          ]
+        }
+      ]
     }
   ]
 }
