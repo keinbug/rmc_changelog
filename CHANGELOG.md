@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-23 06:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T22:00:51Z","webhooks":{"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/
++{"webhooks":{"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"15573863269515920
+```
+
 ## 2026-10-23 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -11745,64 +11753,4 @@ _… Liste gekürzt, siehe changelog.json_
 +            "reason": "Fahrzeugrückgabegebühr",
 +            "date": "2026/10/18 - 21:08:22"
 +        },
-```
-
-## 2026-10-18 20:24 Uhr
-**+0** neu · **~5** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--        {
--            "date": "2026/09/16 - 20:15:27",
--            "receiver_identifier": "cd_garage",
--            "receiver_name": "cd_garage",
--            "value": 500,
--            "reason": "Fahrzeugrückgabegebühr",
--            "type": "withdraw",
--            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
--            "sender_name": "Jayden Anderson"
-```
-`~ resources/[selfcode]/rmc_doors/client/main.lua`
-```diff
-+local function playerDispatchInfo()
-+    local ped = PlayerPedId()
-+    local coords = GetEntityCoords(ped)
-+    local sex = 'Jemand'
-+    if IsPedModel(ped, `mp_m_freemode_01`) then
-+        sex = 'Ein Mann'
-+    elseif IsPedModel(ped, `mp_f_freemode_01`) then
-+        sex = 'Eine Frau'
-+    end
-+
-```
-`~ resources/[selfcode]/rmc_doors/config.lua`
-```diff
-+---   alarm           Polizei-Alarm ist immer 100 %, sobald ein Aufbruch startet
--        label = 'Leicht', minLevel = 0,
-+        label = 'Leicht',
--        alarm = { success = 10, fail = 25 },
-+        alarm = { success = 100, fail = 100 },
--        label = 'Mittel', minLevel = 2,
-+        label = 'Mittel',
--        alarm = { success = 20, fail = 40 },
-+        alarm = { success = 100, fail = 100 },
--        label = 'Schwer', minLevel = 5,
-```
-`~ resources/[selfcode]/rmc_doors/fxmanifest.lua`
-```diff
--author 'rmc'
-+author 'KeinBug'
-```
-`~ resources/[selfcode]/rmc_doors/server/lockpick_skill.lua`
-```diff
--local CHECK_MIN_MS = 450       -- ein Skillcheck-Abschnitt dauert mindestens so lange (Plausibilität)
--local function libNotify(src, description, kind, title)
-+local function libNotify(src, description, _, title)
--    TriggerClientEvent('ox_lib:notify', src, {
--        title = title,
--        description = description,
--        type = kind or 'inform',
--        position = 'top',
--    })
-+    local text = description or ''
 ```
