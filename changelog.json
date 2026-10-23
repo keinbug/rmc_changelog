@@ -44748,6 +44748,130 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-23T20:23:26+02:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 3,
+        "total": 78057
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_api/config/api_key.lua",
+        "resources/[selfcode]/rmc_api/fxmanifest.lua",
+        "resources/[selfcode]/rmc_api/server/main.lua"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_api/client/coinshop.lua",
+        "resources/[selfcode]/rmc_api/server/modules/coinshop.lua",
+        "resources/[selfcode]/rmc_api/server/modules/economy.lua"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_api/config/api_key.lua",
+          "status": "M",
+          "lines": [
+            "-Config.PlaytimeCoins = {",
+            "-    Enabled = true,",
+            "-    IntervalMs = 30 * 60 * 1000,  -- 30 Minuten zwischen zwei Collects",
+            "-    CheckEveryMs = 60 * 1000,     -- Online-Spieler alle 60s prüfen",
+            "-    MinAmount = 1,                -- mindestens 1 Coin",
+            "-    MaxAmount = 1,",
+            "-    BotWebhookUrl = 'http://88.99.28.143:3000/api/webhook',",
+            "-    BotWebhookSecret = 'fa88f376407d8ced79b85cf6c27635cf280c82673e',",
+            "-    Debug = false,",
+            "-}",
+            "-",
+            "-Config.CoinShop = {",
+            "-    Enabled = true,",
+            "-    Ped = {",
+            "-        Model = 'u_m_m_bankman',",
+            "-        -- Legion Square, vor der Fleeca (x, y, z, heading)",
+            "-        Coords = { x = -429.38, y = 1109.62, z = 327.68, w = 348.07 },",
+            "-   ",
+            "-        Scenario = 'WORLD_HUMAN_CLIPBOARD',",
+            "-    },",
+            "-    Blip = {",
+            "-        Enabled = true,",
+            "-        Sprite = 500,",
+            "-        Color = 5,",
+            "-        Scale = 0.85,",
+            "-        Label = 'Coin-Einlösung',",
+            "-    },",
+            "-    TargetLabel = 'Coins einlösen',",
+            "-    TargetIcon = 'fa-solid fa-coins',",
+            "-    TargetDistance = 2.5,",
+            "-    CashPerCoin = 100,       -- 1 Discord-Coin → $100 Bargeld",
+            "-    CashAccount = 'money',   -- 'money' (Bar) oder 'bank'",
+            "-    AllowCustomCash = true,  -- Spieler darf beliebige Coin-Anzahl tauschen",
+            "-    MaxCoinsPerRedeem = 500,",
+            "-    BotWebhookUrl = 'http://88.99.28.143:3000/api/webhook',",
+            "-    BotWebhookSecret = 'fa88f376407d8ced79b85cf6c27635cf280c82673e',",
+            "-    Items = {",
+            "-        { id = 'cash_5k',   label = '$5.000 Bargeld',      description = 'Sofort bar',           coins = 50,  money = 5000,  account = 'money' },",
+            "-        { id = 'cash_25k',  label = '$25.000 Bargeld',     description = 'Sofort bar',           coins = 220, money = 25000, account = 'money' },",
+            "-        { id = 'bandage5',  label = 'Verband (5x)',        description = 'Erste Hilfe',          coins = 8,   item = 'bandage', count = 5 },",
+            "-        { id = 'lockpick3', label = 'Dietrich (3x)',       description = 'Für den Notfall',      coins = 20,  item = 'lockpick', count = 3 },",
+            "-        { id = 'radio',     label = 'Funkgerät',           description = '1x radio',             coins = 25,  item = 'radio',    count = 1 },",
+            "-        { id = 'phone',     label = 'Handy',               description = '1x phone',             coins = 40,  item = 'phone',    count = 1 },",
+            "-    },",
+            "-    Debug = false,",
+            "-}",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-    'server/modules/economy.lua',",
+            "-    'server/modules/coinshop.lua',",
+            "+-- Client-Side für Admin-Aktionen (Skin, Heal, Freeze) + Phone",
+            "-    'client/coinshop.lua',",
+            "-    -- 'ox_lib',            (für Hotel-Confirm, Kündigung und Coin-Shop)",
+            "-    -- 'ox_target',         (für Coin-Shop NPC)",
+            "+    -- 'ox_lib',            (für Hotel-Confirm und Kündigung)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "M",
+          "lines": [
+            "-    -- Playtime-Coins (automatisch, nur online)",
+            "-    { method = 'GET',  path = '/economy/playtime',                    handler = function(req, res) EconomyModule.status(req, res) end },",
+            "-    { method = 'GET',  path = '/economy/playtime/:id',                handler = function(req, res, p) EconomyModule.playerStatus(req, res, p[1]) end },",
+            "-    { method = 'POST', path = '/economy/playtime/tick',               handler = function(req, res) EconomyModule.tickHttp(req, res) end },",
+            "-    { method = 'POST', path = '/economy/playtime/collect',            handler = function(req, res) EconomyModule.collect(req, res) end },",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/client/coinshop.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/coinshop.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/economy.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

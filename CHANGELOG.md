@@ -2,6 +2,53 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-23 20:23 Uhr
+**+0** neu · **~3** geändert · **-3** gelöscht
+`~ resources/[selfcode]/rmc_api/config/api_key.lua`
+```diff
+-Config.PlaytimeCoins = {
+-    Enabled = true,
+-    IntervalMs = 30 * 60 * 1000,  -- 30 Minuten zwischen zwei Collects
+-    CheckEveryMs = 60 * 1000,     -- Online-Spieler alle 60s prüfen
+-    MinAmount = 1,                -- mindestens 1 Coin
+-    MaxAmount = 1,
+-    BotWebhookUrl = 'http://88.99.28.143:3000/api/webhook',
+-    BotWebhookSecret = 'fa88f376407d8ced79b85cf6c27635cf280c82673e',
+-    Debug = false,
+-}
+```
+`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
+```diff
+-    'server/modules/economy.lua',
+-    'server/modules/coinshop.lua',
++-- Client-Side für Admin-Aktionen (Skin, Heal, Freeze) + Phone
+-    'client/coinshop.lua',
+-    -- 'ox_lib',            (für Hotel-Confirm, Kündigung und Coin-Shop)
+-    -- 'ox_target',         (für Coin-Shop NPC)
++    -- 'ox_lib',            (für Hotel-Confirm und Kündigung)
+```
+`~ resources/[selfcode]/rmc_api/server/main.lua`
+```diff
+-    -- Playtime-Coins (automatisch, nur online)
+-    { method = 'GET',  path = '/economy/playtime',                    handler = function(req, res) EconomyModule.status(req, res) end },
+-    { method = 'GET',  path = '/economy/playtime/:id',                handler = function(req, res, p) EconomyModule.playerStatus(req, res, p[1]) end },
+-    { method = 'POST', path = '/economy/playtime/tick',               handler = function(req, res) EconomyModule.tickHttp(req, res) end },
+-    { method = 'POST', path = '/economy/playtime/collect',            handler = function(req, res) EconomyModule.collect(req, res) end },
+-
+```
+`− resources/[selfcode]/rmc_api/client/coinshop.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_api/server/modules/coinshop.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_api/server/modules/economy.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-23 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -11724,12 +11771,4 @@ _… Liste gekürzt, siehe changelog.json_
 ```diff
 -		stack = false,
 +		stack = true,
-```
-
-## 2026-10-19 02:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"
-+{"webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005","channelId":"1551161595436990575"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080","channelId":"15596658453309072
 ```
