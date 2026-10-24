@@ -45051,6 +45051,139 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-24T21:23:15+02:00",
+      "initial": false,
+      "counts": {
+        "added": 6,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78063
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_halloween/client.lua",
+        "resources/[selfcode]/rmc_halloween/config.lua",
+        "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+        "resources/[selfcode]/rmc_halloween/html/index.html",
+        "resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3",
+        "resources/[selfcode]/rmc_halloween/server.lua"
+      ],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_halloween/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+    \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-            \"type\": \"loan_payment\",",
+            "-            \"date\": \"2026/06/05 - 22:49:32\",",
+            "-            \"sender_name\": \"\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "-            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"value\": 21200",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"date\": \"2026/10/19 - 16:25:37\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Misaki Lee\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\"",
+            "-            \"type\": \"loan\",",
+            "-            \"date\": \"2026/06/05 - 22:49:28\",",
+            "-            \"sender_name\": \"Bank (Kredit)\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Kreditauszahlung: Executive Loan\",",
+            "-            \"receiver_name\": \"Vincent Fischer\",",
+            "-            \"receiver_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"value\": 20000",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"date\": \"2026/10/12 - 20:47:09\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Misaki Lee\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\"",
+            "-            \"date\": \"2026/06/05 - 22:38:47\",",
+            "-            \"sender_name\": \"Vincent Fischer\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"value\": 200,",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"receiver_name\": \"Bank (PIN-Änderung)\"",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"date\": \"2026/10/09 - 22:00:20\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Misaki Lee\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\"",
+            "-            \"date\": \"2026/06/05 - 22:36:17\",",
+            "-            \"sender_name\": \"Vincent Fischer\",",
+            "-            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"value\": 200,",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"receiver_name\": \"Bank (PIN-Änderung)\"",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"date\": \"2026/09/25 - 22:03:34\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"sender_name\": \"Dr. Misaki Lee\",",
+            "+            \"receiver_identifier\": \"cd_garage\","
+          ]
+        }
+      ]
     }
   ]
 }
