@@ -2,6 +2,111 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-24 22:23 Uhr
+**+7** neu · **~8** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_halloween/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_halloween/scares.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
++    "lastBackup": 1792870168,
+-            "backupDate": "21_10_19_10_2026",
+-            "backupTimestamp": 1792437006,
+-            "id": 11,
+-            "backupFile": "banlist_21_10_19_10_2026.json"
+-        },
+-        {
+-            "backupDate": "21_12_19_10_2026",
+-            "backupTimestamp": 1792437131,
+-            "id": 11,
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "reason": "Überweisung an Sparkonto",
++            "date": "2026/10/24 - 22:21:53",
++            "receiver_name": "Salome Blackwood",
++            "value": 259062,
++            "sender_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277",
++            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277",
++            "sender_name": "Salome Blackwood",
++            "type": "transfer_to_savings"
++        },
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898
++{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766"},"poster":{"webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***","channelId":"15600078123424891
+```
+`~ resources/[selfcode]/rmc_halloween/client.lua`
+```diff
++    TriggerEvent('rmc_halloween:digStarted')
+```
+`~ resources/[selfcode]/rmc_halloween/config.lua`
+```diff
+-    volume   = 0.6,   -- 0.0 - 1.0
++    volume   = 0.4,   -- 0.0 - 1.0
+-Config.EventDuration = 30   -- Minuten bis das Event automatisch endet (0 = nie)
++Config.EventDuration = 30   -- Minuten Fallback: Event endet spaetestens dann (0 = nie)
++
++-- Genau so viele goldene Kuerbisse pro Event. Sind alle gefunden -> Event endet automatisch
++Config.GoldenPumpkins = 2
++Config.EndDelay       = 15  -- Sekunden nach dem letzten goldenen Kuerbis bis zum Ende
+-    model         = 'g_m_m_zombie_05',
++    model         = 'u_m_y_zombie_01',
+```
+`~ resources/[selfcode]/rmc_halloween/fxmanifest.lua`
+```diff
+-client_script 'client.lua'
++client_scripts { 'client.lua', 'scares.lua' }
+```
+`~ resources/[selfcode]/rmc_halloween/html/index.html`
+```diff
++  else if (d.action === 'sfx') {
++    const s = new Audio(d.src);
++    s.volume = Math.max(0, Math.min(1, d.volume ?? 0.5));
++    s.play().catch(()=>{});
++  }
+```
+`~ resources/[selfcode]/rmc_halloween/server.lua`
+```diff
+-local Event = { active = false, zone = nil, flashUntil = 0, pumpkins = {}, nextId = 0, zombies = {}, stats = {}, cooldowns = {}, endAt = 0 }
++local ghostLoop
++local Event = { goldenFound = {}, ghosts = {}, active = false, zone = nil, flashUntil = 0, pumpkins = {}, nextId = 0, zombies = {}, stats = {}, cooldowns = {}, endAt = 0 }
+-local function spawnPumpkin()
++local function spawnPumpkin(golden)
+-    local golden = math.random(100) <= Config.Pumpkins.golden.chance
++    golden = golden == true
++-- ===== Geister =====
++local function spawnGhost()
++    local p = randomPointInZone()
+```
+
 ## 2026-10-24 21:23 Uhr
 **+6** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_halloween/client.lua`
@@ -1550,20 +1655,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/155116
 +{"categoryId":"1551161549018759170","webhooks":{"troll":{"channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498"},"sperrzone":{"channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/*
-```
-
-## 2026-10-19 21:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "id": 11,
--            "backupFile": "banlist_20_53_14_10_2026.json",
--            "backupTimestamp": 1792003995,
--            "backupDate": "20_53_14_10_2026"
--        },
--        {
--            "id": 11,
--            "backupFile": "banlist_20_55_14_10_2026.json",
--            "backupTimestamp": 1792004120,
--            "backupDate": "20_55_14_10_2026"
 ```

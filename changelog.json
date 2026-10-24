@@ -45184,6 +45184,335 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-24T22:23:34+02:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 8,
+        "deleted": 0,
+        "total": 78070
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_halloween/README.md",
+        "resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3",
+        "resources/[selfcode]/rmc_halloween/scares.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_halloween/client.lua",
+        "resources/[selfcode]/rmc_halloween/config.lua",
+        "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+        "resources/[selfcode]/rmc_halloween/html/index.html",
+        "resources/[selfcode]/rmc_halloween/server.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_halloween/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/scares.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "+    \"lastBackup\": 1792870168,",
+            "-            \"backupDate\": \"21_10_19_10_2026\",",
+            "-            \"backupTimestamp\": 1792437006,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_10_19_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"21_12_19_10_2026\",",
+            "-            \"backupTimestamp\": 1792437131,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_12_19_10_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"21_12_20_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_12_20_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_12_20_10_2026.json\"",
+            "+            \"backupDate\": \"21_12_20_10_2026\"",
+            "-            \"backupDate\": \"21_14_20_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_14_20_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_14_20_10_2026.json\"",
+            "+            \"backupDate\": \"21_14_20_10_2026\"",
+            "-            \"backupDate\": \"21_16_21_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_16_21_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_16_21_10_2026.json\"",
+            "+            \"backupDate\": \"21_16_21_10_2026\"",
+            "-            \"backupDate\": \"21_18_21_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_18_21_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_18_21_10_2026.json\"",
+            "+            \"backupDate\": \"21_18_21_10_2026\"",
+            "-            \"backupDate\": \"21_20_22_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_20_22_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_20_22_10_2026.json\"",
+            "+            \"backupDate\": \"21_20_22_10_2026\"",
+            "-            \"backupDate\": \"21_22_22_10_2026\",",
+            "+            \"backupFile\": \"banlist_21_22_22_10_2026.json\",",
+            "-            \"backupFile\": \"banlist_21_22_22_10_2026.json\"",
+            "+            \"backupDate\": \"21_22_22_10_2026\"",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1792783401,",
+            "+            \"backupTimestamp\": 1792783401,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_25_23_10_2026.json\",",
+            "-            \"backupDate\": \"21_25_23_10_2026\",",
+            "-            \"backupFile\": \"banlist_21_25_23_10_2026.json\"",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_25_23_10_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_21_27_24_10_2026.json\",",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1792870043,",
+            "+            \"backupDate\": \"21_27_24_10_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_21_29_24_10_2026.json\",",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1792870168,",
+            "+            \"backupDate\": \"21_29_24_10_2026\"",
+            "-    ],"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Überweisung an Sparkonto\",",
+            "+            \"date\": \"2026/10/24 - 22:21:53\",",
+            "+            \"receiver_name\": \"Salome Blackwood\",",
+            "+            \"value\": 259062,",
+            "+            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_name\": \"Salome Blackwood\",",
+            "+            \"type\": \"transfer_to_savings\"",
+            "+        },",
+            "+        {",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"date\": \"2026/10/24 - 22:21:14\",",
+            "+            \"receiver_name\": \"Salome Blackwood\",",
+            "+            \"value\": 10000,",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"type\": \"deposit\"",
+            "+        },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\"},\"versicherung\":{\"webhookId\":\"1535733186921898004\",\"channelId\":\"1535733166138990602\",\"url\":\"https://discord.com/api/webhooks/1535733186921898",
+            "+{\"webhooks\":{\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\",\"channelId\":\"1552971110457286766\"},\"poster\":{\"webhookId\":\"1560007815156998144\",\"url\":\"https://discord.com/api/webhooks/1560007815156998144/***\",\"channelId\":\"15600078123424891"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/client.lua",
+          "status": "M",
+          "lines": [
+            "+    TriggerEvent('rmc_halloween:digStarted')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/config.lua",
+          "status": "M",
+          "lines": [
+            "-    volume   = 0.6,   -- 0.0 - 1.0",
+            "+    volume   = 0.4,   -- 0.0 - 1.0",
+            "-Config.EventDuration = 30   -- Minuten bis das Event automatisch endet (0 = nie)",
+            "+Config.EventDuration = 30   -- Minuten Fallback: Event endet spaetestens dann (0 = nie)",
+            "+",
+            "+-- Genau so viele goldene Kuerbisse pro Event. Sind alle gefunden -> Event endet automatisch",
+            "+Config.GoldenPumpkins = 2",
+            "+Config.EndDelay       = 15  -- Sekunden nach dem letzten goldenen Kuerbis bis zum Ende",
+            "-    model         = 'g_m_m_zombie_05',",
+            "+    model         = 'u_m_y_zombie_01',",
+            "-    golden       = { chance = 5,  reward = { min = 2500, max = 5000 } }, -- % Chance Goldener Kuerbis",
+            "+    golden       = { reward = { min = 2500, max = 5000 } },",
+            "+",
+            "+-- Sounds (jeder einzeln: type = 'file' aus html/sounds/ oder 'url')",
+            "+Config.Sounds = {",
+            "+    whisper   = { type = 'file', file = 'whisper.mp3',   url = '', volume = 0.7 },",
+            "+    moan      = { type = 'file', file = 'moan.mp3',      url = '', volume = 0.8 },",
+            "+    scream    = { type = 'file', file = 'scream.mp3',    url = '', volume = 0.9 },",
+            "+    heartbeat = { type = 'file', file = 'heartbeat.mp3', url = '', volume = 0.8 },",
+            "+    distant   = { type = 'file', file = 'distant.mp3',   url = '', volume = 0.35 },",
+            "+}",
+            "+",
+            "+-- Geister (serverseitig, fuer alle sichtbar)",
+            "+Config.Ghosts = {",
+            "+    enabled      = true,",
+            "+    count        = 3,",
+            "+    model        = 'u_f_y_corpse_02',",
+            "+    alpha        = 150,",
+            "+    ptfxAsset    = 'scr_srr_hal',",
+            "+    ptfxName     = 'scr_srr_hal_ghost_haze',",
+            "+    animDict     = 'ANIM@SCRIPTED@FREEMODE@IG2_GHOST@',",
+            "+    animClip     = 'float_1',",
+            "+    followRange  = 40.0,      -- driftet zu Spielern in diesem Umkreis",
+            "+    soundRange   = 45.0,      -- bis hier hoert man sie (Lautstaerke nach Distanz)",
+            "+    soundEvery   = { 8, 20 }, -- Sekunden zwischen Geister-Sounds",
+            "+    sounds       = { 'whisper', 'moan', 'scream' },",
+            "+    vanishEvery  = { 40, 90 },-- Sekunden: verschwindet und taucht woanders auf",
+            "+    vanishTime   = 4,",
+            "+}",
+            "+",
+            "+-- Schreckmomente (nur in der Zone, alles lokal pro Spieler)",
+            "+Config.Scares = {",
+            "+    jumpscare = { enabled = true, chance = 15, cooldown = 120 }, -- Geist springt vor die Kamera",
+            "+    lights    = { enabled = true, chance = 20, cooldown = 90 },  -- Lichter flackern",
+            "+    heartbeat = { enabled = true, distance = 15.0 },             -- Herzschlag wenn Zombie nah",
+            "+    distant   = { enabled = true, chance = 25, cooldown = 45 },  -- Schreie in der Ferne",
+            "+    digWhisper= { enabled = true, chance = 60 },                 -- Fluestern beim Graben",
+            "+    checkEvery = 10,                                             -- Sekunden pro Wuerfelwurf",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-client_script 'client.lua'",
+            "+client_scripts { 'client.lua', 'scares.lua' }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/index.html",
+          "status": "M",
+          "lines": [
+            "+  else if (d.action === 'sfx') {",
+            "+    const s = new Audio(d.src);",
+            "+    s.volume = Math.max(0, Math.min(1, d.volume ?? 0.5));",
+            "+    s.play().catch(()=>{});",
+            "+  }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/server.lua",
+          "status": "M",
+          "lines": [
+            "-local Event = { active = false, zone = nil, flashUntil = 0, pumpkins = {}, nextId = 0, zombies = {}, stats = {}, cooldowns = {}, endAt = 0 }",
+            "+local ghostLoop",
+            "+local Event = { goldenFound = {}, ghosts = {}, active = false, zone = nil, flashUntil = 0, pumpkins = {}, nextId = 0, zombies = {}, stats = {}, cooldowns = {}, endAt = 0 }",
+            "-local function spawnPumpkin()",
+            "+local function spawnPumpkin(golden)",
+            "-    local golden = math.random(100) <= Config.Pumpkins.golden.chance",
+            "+    golden = golden == true",
+            "+-- ===== Geister =====",
+            "+local function spawnGhost()",
+            "+    local p = randomPointInZone()",
+            "+    local ped = CreatePed(4, joaat(Config.Ghosts.model), p.x, p.y, p.z, math.random(0, 359) + 0.0, true, true)",
+            "+    local t = GetGameTimer()",
+            "+    while not DoesEntityExist(ped) and GetGameTimer() - t < 3000 do Wait(50) end",
+            "+    if not DoesEntityExist(ped) then return end",
+            "+    Entity(ped).state:set('rmcGhost', true, true)",
+            "+    Entity(ped).state:set('rmcVanish', false, true)",
+            "+    return ped",
+            "+end",
+            "+",
+            "+ghostLoop = function()",
+            "+    if not Config.Ghosts.enabled then return end",
+            "+    CreateThread(function()",
+            "+        local nextVanish = {}",
+            "+        while Event.active do",
+            "+            for i = 1, Config.Ghosts.count do",
+            "+                local ped = Event.ghosts[i]",
+            "+                if not ped or not DoesEntityExist(ped) then",
+            "+                    Event.ghosts[i] = spawnGhost()",
+            "+                    nextVanish[i] = os.time() + math.random(Config.Ghosts.vanishEvery[1], Config.Ghosts.vanishEvery[2])",
+            "+                elseif os.time() >= (nextVanish[i] or 0) then",
+            "+                    nextVanish[i] = os.time() + math.random(Config.Ghosts.vanishEvery[1], Config.Ghosts.vanishEvery[2])",
+            "+                    Entity(ped).state:set('rmcVanish', true, true)",
+            "+                    SetTimeout(Config.Ghosts.vanishTime * 1000, function()",
+            "+                        if not DoesEntityExist(ped) or not Event.active then return end",
+            "+                        local p = randomPointInZone()",
+            "+                        SetEntityCoords(ped, p.x, p.y, p.z, false, false, false, false)",
+            "+                        Wait(500)",
+            "+                        Entity(ped).state:set('rmcVanish', false, true)",
+            "+                    end)",
+            "+                end",
+            "+            end",
+            "+            Wait(3000)",
+            "+        end",
+            "+    end)",
+            "+end",
+            "+",
+            "-    Event.zombies, Event.pumpkins = {}, {}",
+            "+    for _, ped in ipairs(Event.ghosts) do if DoesEntityExist(ped) then DeleteEntity(ped) end end",
+            "+    Event.zombies, Event.pumpkins, Event.ghosts = {}, {}, {}",
+            "-    TriggerClientEvent('ws_announce', -1, Config.EndAnnounceTitle, msg, 8000)",
+            "+    if #Event.goldenFound > 0 then",
+            "+        msg = msg .. ' | Goldene Kürbisse: ' .. table.concat(Event.goldenFound, ', ')",
+            "+    end",
+            "+    TriggerClientEvent('ws_announce', -1, Config.EndAnnounceTitle, msg, 10000)",
+            "+    Event.goldenFound, Event.ghosts, Event.ending = {}, {}, false",
+            "-        for _ = 1, Config.Pumpkins.count do spawnPumpkin() end",
+            "+        -- genau Config.GoldenPumpkins goldene zwischen die normalen mischen",
+            "+        local total = math.max(Config.Pumpkins.count, Config.GoldenPumpkins)",
+            "+        local goldIdx, picked = {}, 0",
+            "+        while picked < Config.GoldenPumpkins do"
+          ]
+        }
+      ]
     }
   ]
 }
