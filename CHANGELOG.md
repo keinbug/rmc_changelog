@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-24 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com
++{"webhooks":{"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898
+```
+
 ## 2026-10-24 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -11082,47 +11090,3 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 - Gelöscht
 ```
 _… Liste gekürzt, siehe changelog.json_
-
-## 2026-10-19 17:23 Uhr
-**+7** neu · **~1** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_tablet/client.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/html/app.js`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/html/index.html`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/html/style.css`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_tablet/server.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba": [
-+    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--            "type": "withdraw",
--            "receiver_identifier": "cd_garage",
--            "sender_identifier": "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba",
--            "sender_name": "Dr. Vincent Fischer",
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "sender_name": "Timo Anderson",
-+            "receiver_identifier": "cd_garage",
-+            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-```
