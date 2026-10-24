@@ -2,6 +2,53 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 00:22 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/client/death_owner_notify.lua`
+```diff
+-    Zeigt die Benachrichtigung für Owner an, wenn ein Spieler stirbt.
+-    Hört clientseitig auf baseevents (nicht serverseitig – "not safe for net" vermeiden).
++    Live-Toast bei Tod + /th Historie (Täter → Opfer).
++local function resolveKillerServerId(entity)
++    if not entity or entity == 0 or not DoesEntityExist(entity) then return nil end
++    if not IsEntityAPed(entity) or not IsPedAPlayer(entity) then return nil end
++    for _, playerIdx in ipairs(GetActivePlayers()) do
++        if GetPlayerPed(playerIdx) == entity then
++            local sid = GetPlayerServerId(playerIdx)
++            if sid and sid > 0 then return sid end
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++-- /th zeigt die letzten Tode klar als Täter → Opfer.
+-    NotifySubject = "Spieler verstorben",
++    NotifySubject = "Kill / Tod",
++    -- %s = Täter-Name, Täter-ID, Opfer-Name, Opfer-ID, Grund
++    NotifyMessageKilled = "%s (ID %s) hat %s (ID %s) getötet · %s",
++    -- %s = Opfer-Name, Opfer-ID, Grund (kein Spieler-Täter)
++    NotifyMessageDied = "%s (ID %s) ist gestorben · %s",
++    -- Fallback falls alte Keys noch referenziert werden
++    -- /th – letzte Tode als Menü (Täter → Opfer)
++    HistoryCommand = "th",
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/15511615978530490
++{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://disc
+```
+`~ resources/[selfcode]/rmc_core/server/death_owner_notify.lua`
+```diff
+-    Wenn ein Spieler stirbt, erhalten alle mit der Rolle "Owner" eine Benachrichtigung
+-    mit dem Namen des Verstorbenen und der Todesursache.
++    Wenn ein Spieler stirbt, erhalten Staff eine klare Benachrichtigung (Täter → Opfer).
++    /th zeigt die letzten Tode als Historie.
++local function getHistoryGroups()
++    local g = C.HistoryGroups
++    if type(g) == "table" then
++        return g
++    end
++    return getNotifyGroups()
+```
+
 ## 2026-10-24 23:23 Uhr
 **+2** neu · **~5** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/mechanic_shop.lua`
@@ -1691,12 +1738,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-20T08:01:07Z","webhooks":{"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630
 +{"categoryId":"1551161549018759170","updatedAt":"2026-10-20T16:01:21Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/**
-```
-
-## 2026-10-20 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"troll":{"channelId":"1552971103910236172","url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498"},"sperrzone":{"channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/*
-+{"updatedAt":"2026-10-20T08:01:07Z","webhooks":{"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630
 ```
