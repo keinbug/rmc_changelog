@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-24 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-10-24T01:01:16Z","webhooks":{"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***"
++{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com
+```
+
 ## 2026-10-24 03:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -11117,12 +11125,4 @@ _… Liste gekürzt, siehe changelog.json_
 +            "sender_name": "Timo Anderson",
 +            "receiver_identifier": "cd_garage",
 +            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-```
-
-## 2026-10-19 15:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-19T08:01:30Z","categoryId":"1551161549018759170","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"14675563434
-+{"categoryId":"1551161549018759170","webhooks":{"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"esx_jobs":{"webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/155738636457895527
 ```
