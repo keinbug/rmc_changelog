@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-25T13:45:11Z","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","channelId":"156000781234248
++{"updatedAt":"2026-10-25T17:00:55Z","categoryId":"1551161549018759170","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200","webhookId":"1552971079239077968"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/**
+```
+
 ## 2026-10-25 15:22 Uhr
 **+0** neu · **~4** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/client/nitro.lua`
@@ -2536,17 +2544,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_00_16_10_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-21 20:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[prsim]/prism_loadingscreen/config.lua`
-```diff
--            audioLink   = '{DACE3D73-2E1F-40D8-BC3D-B37D13397001}.png',
-+            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading.mp3',
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-21T17:11:25Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"support":{"channelId":"1552971099317211136","url":"https://discord.
-+{"updatedAt":"2026-10-21T17:30:47Z","categoryId":"1551161549018759170","webhooks":{"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.c
 ```
