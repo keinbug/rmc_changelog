@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-25T01:45:01Z","categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"willkommen":{"url":"https://discord.com/api/webhooks/155116159
++{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T09:00:45Z","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"15
+```
+
 ## 2026-10-25 03:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -2478,12 +2486,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/
 +{"categoryId":"1551161549018759170","updatedAt":"2026-10-21T16:00:56Z","webhooks":{"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"troll":{"channelId":"1552971103910236172","url":"https://discord.
-```
-
-## 2026-10-21 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-20T22:01:29Z","webhooks":{"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/
-+{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/
 ```
