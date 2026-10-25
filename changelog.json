@@ -45870,6 +45870,1519 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-25T02:23:17+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 187,
+        "total": 77885
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [],
+      "deleted": [
+        "resources/[oresmon]/rm_hackerv/.fxap",
+        "resources/[oresmon]/rm_hackerv/client/client.lua",
+        "resources/[oresmon]/rm_hackerv/client/custom_hack.lua",
+        "resources/[oresmon]/rm_hackerv/client/dispatch.lua",
+        "resources/[oresmon]/rm_hackerv/client/functions.lua",
+        "resources/[oresmon]/rm_hackerv/client/hacks.lua",
+        "resources/[oresmon]/rm_hackerv/fxmanifest.lua",
+        "resources/[oresmon]/rm_hackerv/html/ui.html",
+        "resources/[oresmon]/rm_hackerv/server/data.json",
+        "resources/[oresmon]/rm_hackerv/server/server.lua",
+        "resources/[oresmon]/rm_hackerv/shared/cfg.lua",
+        "resources/[oresmon]/rm_hackerv/shared/language.lua",
+        "resources/[oresmon]/rm_hackerv/shared/utils.lua",
+        "resources/[oresmon]/rm_hackerv/stream/hacker_v.ytd",
+        "resources/[oresmon]/rm_hackerv/stream/prop_ig_phone1.ytd",
+        "resources/[oresmon]/rm_hackerv/stream/prop_police_phone.ydr",
+        "resources/[oresmon]/rm_stream/.fxap",
+        "resources/[oresmon]/rm_stream/client.lua",
+        "resources/[oresmon]/rm_stream/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/.fxap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/_manifest.ymf",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg.ytyp",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_col.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_milo_.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_shell.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/prop_ch_025c_g_door_01b.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends2.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_cabinets.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_ceil.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_dirt.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_door.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_frames.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light2.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_tool.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/stables.ymt",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/_manifest.ymf",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/apa_ch2_03c_interior_v_ranch_milo_.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_int_56.ytyp",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_ranch.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_0.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_2.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/hi@ch2_03c_0.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/mlo_gravestone_col.ybn",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ycd/gs_fire_ycd.ycd",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydd/ch2_03c_slod1_children.ydd",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_emissive_a.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_fountain_water_ripples.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_gate_01.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_glue_02.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_01.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_03.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_04.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch004.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch006.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranchgrnd_water_01.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removed_doors.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removedwins.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrnd01.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrndov1.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_01.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_ivy.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_bar_equ.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_constr.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_dt.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_fireplace.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_gardnght.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_lampy.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_pool_l.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_roof_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_slidedoors.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_terr_l.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_text.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_detail.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_floor.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_lights.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_shower_screen.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter2_norm.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_ceiling.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_cloth.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_door.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_norm.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_shelf.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fire_uv.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fireplace_glass.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_frame.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_norm.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_plant.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs_glass.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_carpet.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_library.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_lights.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_norm.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_piano.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_art.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_cabinets.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_chairs.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_detail.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_l.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_stool.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_table.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_l.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_r.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_books.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_cabinet.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_ceiling.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_chill.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_fireplace.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_frames.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light_night.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_shelf.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_wall.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_ceiling.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_deco.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_desk.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_fireplace.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_gallery.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_library.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_table.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_windows.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_room.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_window.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_chand.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_dvere.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_glass.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_sunlight.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_windows.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door2.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door3.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door4.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door5.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door6.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_bath.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe2.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe3.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest1.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest2.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_art.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_cloth.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_chill.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_a.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_b.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_light.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_station.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_e.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_w.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_constr.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_glass.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf_detail.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/mlo_gravestone_shell.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/yukonvodaranch.ydr",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_critical_0.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_long_0.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_0.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_1.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_2.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_occl_07.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_bar.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_construction_stm.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_garden_east.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_stm.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/mlo_gravestone_milo_.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_medium024.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_small003.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_medium024.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_small003.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/yukon_ymap.ymap",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_high.ytd",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_txd.ytd",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/ranchsaferoom.ytd",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/cityhills_02_metadata_012_strm.ytyp",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/gravestone_dt.ytyp",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/mlo_gravestone.ytyp",
+        "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/yukon_ytyp.ytyp"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[oresmon]/rm_hackerv/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/client/client.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/client/custom_hack.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/client/dispatch.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/client/functions.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/client/hacks.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/html/ui.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/server/data.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/server/server.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/shared/cfg.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/shared/language.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/shared/utils.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/stream/hacker_v.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/stream/prop_ig_phone1.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_hackerv/stream/prop_police_phone.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_stream/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_stream/client.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/rm_stream/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/_manifest.ymf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_col.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_milo_.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/mlo_ranch_grg_shell.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/prop_ch_025c_g_door_01b.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_blends2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_cabinets.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_ceil.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_dirt.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_door.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_frames.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_light2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/garage/ranch_gr_tool.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/stables.ymt",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/_manifest.ymf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/apa_ch2_03c_interior_v_ranch_milo_.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_int_56.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/vanila/v_ranch.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/ch2_03c_2.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/hi@ch2_03c_0.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ybn/mlo_gravestone_col.ybn",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ycd/gs_fire_ycd.ycd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydd/ch2_03c_slod1_children.ydd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_emissive_a.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_fountain_water_ripples.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_gate_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_glue_02.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_03.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_hedge_fur_04.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch004.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranch006.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_ranchgrnd_water_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removed_doors.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_removedwins.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrnd01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_rnchgrndov1.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/ch2_03c_wall_ivy.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_bar_equ.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_constr.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_dt.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_fireplace.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_gardnght.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_lampy.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_pool_l.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_roof_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_slidedoors.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_terr_l.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gravestone_text.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_detail.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_floor.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_lights.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_shower_screen.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_bath_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter2_norm.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_ceiling.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_cloth.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_door.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_norm.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_shelf.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_enter_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fire_uv.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_fireplace_glass.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_frame.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_norm.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_plant.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hall_stairs_glass.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_carpet.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_library.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_lights.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_norm.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_piano.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_hallway_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_art.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_cabinets.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_chairs.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_detail.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_l.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_stool.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_table.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_l.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_kitchen_window_r.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_books.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_cabinet.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_ceiling.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_chill.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_fireplace.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_frames.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_light_night.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_shelf.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_wall.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_living_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_ceiling.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_deco.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_desk.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_fireplace.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_gallery.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_library.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_table.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_office_windows.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_room.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_panic_window.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_chand.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_dvere.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_glass.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_sunlight.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_podkrovi_windows.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door4.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door5.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_prop_gs_door6.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_bath.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_doorframe3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest1.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_guest2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_art.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_up_main_cloth.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_chill.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_a.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_gate_b.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_light.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_station.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_e.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_waiting_window_w.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_constr.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_glass.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/gs_wine_shelf_detail.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/mlo_gravestone_shell.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ydr/yukonvodaranch.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_critical_0.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_long_0.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_0.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_1.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_03c_strm_2.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/apa_ch2_occl_07.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_bar.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_construction_stm.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_garden_east.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/gravestone_stm.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/mlo_gravestone_milo_.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_medium024.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_distlodlights_small003.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_medium024.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/vw_lodlights_small003.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ymap/yukon_ymap.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_high.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/gravestone_txd.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytd/ranchsaferoom.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/cityhills_02_metadata_012_strm.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/gravestone_dt.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/mlo_gravestone.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/yukon_ytyp.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
