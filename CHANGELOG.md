@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 02:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[oresmon]/rm_hackerv/server/data.json`
+```diff
+-[{"cooldowns":{"unlock":1790288626,"location_vehicle":0,"crash":1790288778,"trafficLights":1790270949,"control":1790288882,"location_player":0,"tv":0,"parkmeter":1790278782,"steal_cash":1790291249,"botnet":0,"atm":1790275271,"fake_dispatch":1790172475},"botnet":1500000,"identifier":"char3:5d9a7aa1b
++[{"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","cooldowns":{"parkmeter":1790278782,"crash":1790288778,"location_player":0,"tv":0,"atm":1790275271,"fake_dispatch":1790172475,"unlock":1790288626,"botnet":0,"steal_cash":1790291249,"location_vehicle":0,"trafficLights":1790270949,"contr
+```
+
 ## 2026-10-25 00:22 Uhr
 **+0** neu · **~4** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/client/death_owner_notify.lua`
@@ -1730,12 +1738,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "backupTimestamp": 1792090685,
 -            "id": 11,
 -            "backupFile": "banlist_20_58_15_10_2026.json",
-```
-
-## 2026-10-20 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-20T08:01:07Z","webhooks":{"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-20T16:01:21Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/**
 ```
