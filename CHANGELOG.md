@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 21:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1792870168,
++    "lastBackup": 1792956769,
+-            "backupFile": "banlist_21_12_20_10_2026.json",
+-            "backupTimestamp": 1792523567,
+-            "id": 11,
+-            "backupDate": "21_12_20_10_2026"
+-        },
+-        {
+-            "backupFile": "banlist_21_14_20_10_2026.json",
+-            "backupTimestamp": 1792523692,
+```
+
 ## 2026-10-25 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2520,28 +2536,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_21_10_2026.json`
 ```diff
 + Neue Datei
-```
-
-## 2026-10-21 21:23 Uhr
-**+0** neu · **~1** geändert · **-2** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupTimestamp": 1792177113,
-+            "backupDate": "21_02_17_10_2026",
--            "backupDate": "20_58_16_10_2026",
--            "backupFile": "banlist_20_58_16_10_2026.json"
-+            "backupFile": "banlist_21_02_17_10_2026.json",
-+            "backupTimestamp": 1792263757
--            "backupTimestamp": 1792177238,
-+            "backupDate": "21_04_17_10_2026",
--            "backupDate": "21_00_16_10_2026",
--            "backupFile": "banlist_21_00_16_10_2026.json"
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_58_16_10_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_00_16_10_2026.json`
-```diff
-- Gelöscht
 ```
