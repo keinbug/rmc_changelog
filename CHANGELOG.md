@@ -2,6 +2,53 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 15:22 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/client/nitro.lua`
+```diff
+-      * Effekte nur für Fahrzeuge in der Nähe (RenderDistance / MaxVehicles), idle = Wait(500)
++      * Effekte nur für Fahrzeuge in der Nähe (RenderDistance / MaxVehicles), idle = kein Thread (nur State-Bag-Event)
++local ESX = exports['es_extended']:getSharedObject()
++local function notify(msg, typ) ESX.ShowNotification(msg, typ or 'info') end
++local tracked = {}  -- [veh] = { data, flames, sound, started, pts }
+-        lib.notify({ title = 'Nitro', description = T.NoVehicle, type = 'error' })
++        notify(T.NoVehicle, 'error')
+-        lib.notify({ title = 'Nitro', description = T.Blocked, type = 'error' })
++        notify(T.Blocked, 'error')
+-        lib.notify({ title = 'Nitro', description = T.Empty, type = 'error' })
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
+-    RefillNeedsDriver = true,
++    -- Einbau an der Motorhaube (nicht im Fahrzeug)
++    Install = {
++        HoodDistance = 1.6,            -- max. Abstand zum Motorhaube-Bone
++        SearchRadius = 6.0,            -- Fahrzeug-Suche um den Spieler
++        Duration     = 8000,           -- ms Einbau-Dauer
++        AnimDict     = 'mini@repair',
++        AnimName     = 'fixing_a_player',
++    },
++        TrailFade      = 500,          -- ms Ausblenden der Rücklicht-Spur nach dem Boost
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T13:14:19Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777
++{"updatedAt":"2026-10-25T13:45:11Z","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","channelId":"156000781234248
+```
+`~ resources/[selfcode]/rmc_core/server/nitro.lua`
+```diff
+-    TriggerClientEvent('ox_lib:notify', src, { title = 'Nitro', description = msg, type = typ or 'inform' })
++    local xPlayer = ESX.GetPlayerFromId(src)
++    if xPlayer then xPlayer.showNotification(msg, (typ == nil or typ == 'inform') and 'info' or typ) end
+-for item, amount in pairs(Cfg.RefillItems or {}) do
++-- Einbau per Item: nur zu Fuß an der Motorhaube (Client macht Animation, Server prüft + bucht ab)
++local installing = {}  -- [src] = item
++
++for item in pairs(Cfg.RefillItems or {}) do
+-        local veh = Cfg.RefillNeedsDriver and getDriverVehicle(src) or GetVehiclePedIsIn(ped, false)
+-        if not veh or veh == 0 then return notify(src, T.NoVehicle, 'error') end
+```
+
 ## 2026-10-25 14:23 Uhr
 **+3** neu · **~3** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/nitro.lua`
@@ -2502,19 +2549,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-21T17:11:25Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"support":{"channelId":"1552971099317211136","url":"https://discord.
 +{"updatedAt":"2026-10-21T17:30:47Z","categoryId":"1551161549018759170","webhooks":{"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.c
-```
-
-## 2026-10-21 19:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[prsim]/prism_loadingscreen/config.lua`
-```diff
--            musicName   = 'Sport Club Tech House',
-+            musicName   = 'Loadingscreen Music',
--            audioLink   = 'https://r2.fivemanage.com/ymBPeuX2kmrmsF2FN3ojP/loading_music.mp3',
-+            audioLink   = '{DACE3D73-2E1F-40D8-BC3D-B37D13397001}.png',
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-21T16:00:56Z","webhooks":{"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"troll":{"channelId":"1552971103910236172","url":"https://discord.
-+{"updatedAt":"2026-10-21T17:11:25Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"support":{"channelId":"1552971099317211136","url":"https://discord.
 ```
