@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 03:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
+-        {
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "date": "2026/10/19 - 16:25:37",
+-            "receiver_name": "cd_garage",
+-            "value": 500,
+-            "sender_name": "Misaki Lee",
+-            "receiver_identifier": "cd_garage",
+-            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
+-            "type": "withdraw"
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://disc
++{"updatedAt":"2026-10-25T01:45:01Z","categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"willkommen":{"url":"https://discord.com/api/webhooks/155116159
+```
+
 ## 2026-10-25 02:23 Uhr
 **+0** neu · **~0** geändert · **-187** gelöscht
 `− resources/[oresmon]/rm_hackerv/.fxap`
@@ -2465,12 +2486,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-20T22:01:29Z","webhooks":{"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/
 +{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/
-```
-
-## 2026-10-21 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-20T16:01:21Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/**
-+{"updatedAt":"2026-10-20T22:01:29Z","webhooks":{"me":{"channelId":"1513950191936344245","webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"esx_test":{"channelId":"1557386329686413342","webhookId":"1557386332483887194","url":"https://discord.com/api/
 ```

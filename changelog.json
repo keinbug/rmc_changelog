@@ -47383,6 +47383,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-25T03:22:54+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77885
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-        {",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"date\": \"2026/10/19 - 16:25:37\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Misaki Lee\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"type\": \"withdraw\"",
+            "-        },",
+            "-        {",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"date\": \"2026/10/12 - 20:47:09\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Misaki Lee\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"type\": \"withdraw\"",
+            "-        },",
+            "-        {",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"date\": \"2026/10/09 - 22:00:20\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Misaki Lee\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"type\": \"withdraw\"",
+            "-        },",
+            "-        {",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"date\": \"2026/09/25 - 22:03:34\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Dr. Misaki Lee\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"type\": \"withdraw\"",
+            "-        },",
+            "-        {",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"date\": \"2026/09/22 - 22:45:28\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_name\": \"Dr. Misaki Lee\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"type\": \"withdraw\"",
+            "-        },",
+            "+    \"char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\": [",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"date\": \"2026/09/18 - 19:33:55\",",
+            "-            \"receiver_name\": \"Hinata Kanzaki\",",
+            "-            \"value\": 65000,",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"receiver_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"type\": \"interest_savings\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"faction\":{\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"esx_useractions\":{\"channelId\":\"1557386339866120252\",\"webhookId\":\"1557386342755991582\",\"url\":\"https://disc",
+            "+{\"updatedAt\":\"2026-10-25T01:45:01Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_useractions\":{\"url\":\"https://discord.com/api/webhooks/1557386342755991582/***\",\"channelId\":\"1557386339866120252\",\"webhookId\":\"1557386342755991582\"},\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/155116159"
+          ]
+        }
+      ]
     }
   ]
 }
