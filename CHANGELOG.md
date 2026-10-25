@@ -2,6 +2,45 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-25 14:23 Uhr
+**+3** neu · **~3** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_core/client/nitro.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/html/nitro/nitro.ogg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/nitro.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++
++-- ============================================
++-- NITRO SYSTEM (client/nitro.lua + server/nitro.lua)
++-- erstellt von Sebbi | KeinBug
++-- Tank pro Fahrzeug (State Bag), Auffüllen per Item, Farben per /nitro
++-- ============================================
++Config.Nitro = {
++    Enabled        = true,
++    Debug          = false,
++
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T09:00:45Z","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"15
++{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T13:14:19Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777
+```
+`~ resources/[selfcode]/rmc_core/fxmanifest.lua`
+```diff
+-    'data/sits.json',
++    'data/sits.json',
++    'html/nitro/nitro.ogg',
+```
+
 ## 2026-10-25 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2478,12 +2517,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-10-21T16:00:56Z","webhooks":{"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"troll":{"channelId":"1552971103910236172","url":"https://discord.
 +{"updatedAt":"2026-10-21T17:11:25Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"support":{"channelId":"1552971099317211136","url":"https://discord.
-```
-
-## 2026-10-21 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"ausbluten":{"channelId":"1552971076718297200","webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-21T16:00:56Z","webhooks":{"versicherung":{"channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***","webhookId":"1535733186921898004"},"troll":{"channelId":"1552971103910236172","url":"https://discord.
 ```

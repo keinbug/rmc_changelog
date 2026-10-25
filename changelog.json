@@ -47502,6 +47502,134 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-25T14:23:15+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77888
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_core/client/nitro.lua",
+        "resources/[selfcode]/rmc_core/html/nitro/nitro.ogg",
+        "resources/[selfcode]/rmc_core/server/nitro.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/nitro.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/html/nitro/nitro.ogg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/nitro.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- ============================================",
+            "+-- NITRO SYSTEM (client/nitro.lua + server/nitro.lua)",
+            "+-- erstellt von Sebbi | KeinBug",
+            "+-- Tank pro Fahrzeug (State Bag), Auffüllen per Item, Farben per /nitro",
+            "+-- ============================================",
+            "+Config.Nitro = {",
+            "+    Enabled        = true,",
+            "+    Debug          = false,",
+            "+",
+            "+    -- Steuerung (Spieler kann es unter Einstellungen > Tastenbelegung > FiveM ändern)",
+            "+    Key            = 'LSHIFT',",
+            "+    Command        = 'nitro',          -- öffnet das Einstellungsmenü",
+            "+    AltCommand     = 'nitrosettings',",
+            "+",
+            "+    -- Tank (0-100)",
+            "+    StartTank      = 0,                -- Füllstand bei neuen Fahrzeugen (0 = erst Item nutzen)",
+            "+    DrainPerSecond = 12.5,             -- 100 / 12.5 = 8 Sekunden voller Boost",
+            "+    Cooldown       = 3,                -- Sekunden Pause nach dem Loslassen / leer",
+            "+    MinSpeedKmh    = 10,               -- erst ab dieser Geschwindigkeit nutzbar",
+            "+    PowerMult      = 2.2,              -- SetVehicleCheatPowerIncrease (1.0 = normal)",
+            "+    BlockedClasses = { [8]=true, [13]=true, [14]=true, [15]=true, [16]=true, [21]=true }, -- Motorrad, Fahrrad, Boot, Heli, Flugzeug, Zug",
+            "+",
+            "+    -- Auffüllen",
+            "+    RefillItems = {",
+            "+        nitro_bottle = 100,            -- Item = wie viel Prozent es auffüllt",
+            "+    },",
+            "+    RefillNeedsDriver = true,",
+            "+",
+            "+    -- Optik",
+            "+    Ptfx = {",
+            "+        FlameAsset     = 'veh_xs_vehicle_mods',",
+            "+        FlameName      = 'veh_nitrous',",
+            "+        FlameScale     = 1.25,",
+            "+        MaxFlames      = 2,            -- max. Partikel pro Fahrzeug (Auspuff)",
+            "+        TrailAsset     = 'core',",
+            "+        TrailName      = 'veh_light_red_trail',",
+            "+        TrailScale     = 1.0,",
+            "+        GroundGlow     = true,",
+            "+        GlowRange      = 6.0,",
+            "+        GlowIntensity  = 6.0,",
+            "+    },",
+            "+    RenderDistance = 90.0,             -- Effekte nur bei Fahrzeugen in dieser Nähe",
+            "+    MaxVehicles    = 6,                -- max. gleichzeitig gerenderte Nitro-Fahrzeuge",
+            "+",
+            "+    -- Sound (xsound, 3D mit Distanz-Abfall)",
+            "+    Sound = {",
+            "+        Enabled  = true,",
+            "+        Url      = 'nui://rmc_core/html/nitro/nitro.ogg', -- eigene MP3/OGG-URL geht auch",
+            "+        Volume   = 0.45,               -- Standard, Spieler kann es im Menü ändern",
+            "+        Distance = 35.0,",
+            "+    },",
+            "+",
+            "+    -- Standard-Einstellungen (Spieler speichert seine eigenen per KVP)",
+            "+    Defaults = {",
+            "+        flame  = '#9b30ff',            -- lila wie auf dem Bild",
+            "+        trail  = '#ff1a1a',",
+            "+        trails = true,",
+            "+        volume = 45,",
+            "+        hearOthers = true,"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-10-25T09:00:45Z\",\"webhooks\":{\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"esx_paycheck\":{\"channelId\":\"1557386352226598913\",\"webhookId\":\"15",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-10-25T13:14:19Z\",\"webhooks\":{\"esx_jobs\":{\"url\":\"https://discord.com/api/webhooks/1557386364578955274/***\",\"channelId\":\"1557386361172918374\",\"webhookId\":\"1557386364578955274\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-    'data/sits.json',\r",
+            "+    'data/sits.json',",
+            "+    'html/nitro/nitro.ogg',\r"
+          ]
+        }
+      ]
     }
   ]
 }
