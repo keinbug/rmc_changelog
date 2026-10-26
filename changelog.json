@@ -48160,6 +48160,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-27T00:23:11+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77888
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"me\":{\"webhookId\":\"1513950212480307490\",\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\"},\"adminjail\":{\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api",
+            "+{\"webhooks\":{\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/155738635738153"
+          ]
+        }
+      ]
     }
   ]
 }
