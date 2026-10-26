@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-26 21:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1792956769,
++    "lastBackup": 1793043395,
+-            "backupTimestamp": 1792610209,
+-            "backupFile": "banlist_21_16_21_10_2026.json",
+-            "backupDate": "21_16_21_10_2026",
+-            "id": 11
+-        },
+-        {
+-            "backupTimestamp": 1792610334,
+-            "backupFile": "banlist_21_18_21_10_2026.json",
+```
+
 ## 2026-10-26 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2525,12 +2541,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "receiver_name": "Bank (Kreditablösung)",
 +            "receiver_identifier": "bank",
 +            "value": 21200
-```
-
-## 2026-10-22 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-22T04:04:20Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T08:01:26Z","webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","c
 ```
