@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-26 23:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
++    "char4:95e98569cca18ee079f5fe27ab54152ede42f277": [
+-            "type": "interest_savings",
+-            "reason": "Savings account interest payment (Period 27)",
+-            "value": 3,
+-            "receiver_identifier": "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
++            "date": "2026/10/25 - 02:44:47",
++            "reason": "Savings account interest payment (Period 41)",
+-            "date": "2026/07/05 - 09:20:38"
+-        },
+```
+
 ## 2026-10-26 21:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -2525,20 +2541,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tj]/hydrus_yakuza_map/stream/yakuza_doors.ytyp`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-22 13:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+    "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
-+        {
-+            "type": "loan_payment",
-+            "date": "2026/06/05 - 22:49:32",
-+            "sender_name": "",
-+            "sender_identifier": "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
-+            "reason": "Kreditablösung: Executive Loan",
-+            "receiver_name": "Bank (Kreditablösung)",
-+            "receiver_identifier": "bank",
-+            "value": 21200
 ```
