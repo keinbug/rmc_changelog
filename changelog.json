@@ -49520,6 +49520,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-27T18:23:08+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\": [",
+            "-        {",
+            "-            \"sender_name\": \"Dr. Vincent Fischer\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/10/18 - 18:10:21\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"value\": 500",
+            "-        }",
+            "-    ],",
+            "-    \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\": [",
+            "-        {",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Savings account interest payment (Period 41)\",",
+            "-            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"date\": \"2026/10/25 - 02:44:47\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"value\": 417",
+            "-        },",
+            "+    \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "-            \"sender_name\": \"Fabi Huber\",",
+            "-            \"receiver_name\": \"Bank (Kartenerneuerung)\",",
+            "-            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"date\": \"2026/10/18 - 20:10:49\",",
+            "+            \"value\": 21200,",
+            "+            \"receiver_name\": \"Bank (Kreditablösung)\",",
+            "-            \"value\": 100",
+            "-        },",
+            "-        {",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Savings account interest payment (Period 40)\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"date\": \"2026/10/17 - 10:01:03\",",
+            "-            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"value\": 407",
+            "-        },",
+            "-        {",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"receiver_name\": \"Fabi Huber\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Einzahlung auf Kartenkonto\",",
+            "-            \"type\": \"deposit\",",
+            "-            \"date\": \"2026/10/10 - 20:27:39\",",
+            "-            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"value\": 50000",
+            "+            \"sender_identifier\": \"char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"sender_name\": \"\",",
+            "+            \"reason\": \"Kreditablösung: Executive Loan\",",
+            "+            \"type\": \"loan_payment\",",
+            "+            \"date\": \"2026/06/05 - 22:49:32\"",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"receiver_name\": \"Fabi Huber\",",
+            "+            \"value\": 20000,",
+            "+            \"receiver_name\": \"Vincent Fischer\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-27T09:00:34Z\",\"webhooks\":{\"faction\":{\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\"},\"support\":{\"channelId\":\"1552971099317211136\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/*",
+            "+{\"updatedAt\":\"2026-10-27T17:00:46Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"join\":{\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"webhookId\":\"1552971091771924552\",\"channelId\":\"1448120760391565352\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\","
+          ]
+        }
+      ]
     }
   ]
 }
