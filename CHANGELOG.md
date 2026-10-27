@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-27 22:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "value": 300,
++            "receiver_name": "Bank (Kartenkauf)",
++            "date": "2026/10/27 - 22:01:14",
++            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
++            "sender_name": "Bonnie Parker",
++            "reason": "Kartenkauf: Gold Card",
++            "type": "card_purchase",
++            "receiver_identifier": "bank"
++        },
+```
+
 ## 2026-10-27 21:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1896,25 +1912,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"
 +{"categoryId":"1551161549018759170","updatedAt":"2026-10-23T22:08:37Z","webhooks":{"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715","channelId":"1552989823604756600"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/**
-```
-
-## 2026-10-23 22:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupTimestamp": 1792350407,
--            "backupDate": "21_06_18_10_2026",
--            "id": 11,
--            "backupFile": "banlist_21_06_18_10_2026.json"
--        },
--        {
--            "backupTimestamp": 1792350532,
--            "backupDate": "21_08_18_10_2026",
--            "id": 11,
--            "backupFile": "banlist_21_08_18_10_2026.json"
-```
-`~ resources/[selfcode]/rmc_tablet/config.lua`
-```diff
--    enabled = true,
-+    enabled = false,
 ```
