@@ -49613,6 +49613,50 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-27T19:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"value\": 1000,",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"date\": \"2026/10/27 - 19:11:10\",",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Cole Maddox\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"bank\"",
+            "+        },",
+            "+        {",
+            "+            \"value\": 750,",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"date\": \"2026/10/27 - 19:08:46\",",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Cole Maddox\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"bank\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
