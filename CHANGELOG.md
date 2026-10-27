@@ -2,6 +2,579 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-27 01:23 Uhr
+**+138** neu · **~2** geändert · **-0** gelöscht
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/.fxap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/_johanni_tp_manifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_lobby_col.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_top_col.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_wrldcol.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ycd/clip@johanni_tp.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_barstool01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_beach_lounger.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_candle.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_chair01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_dj.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_doorframe01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_barstool01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_beach_lounger.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm_light.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signframe.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signtp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_sofa01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_torch.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ladder.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_light01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_lobby_column.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_palm_light.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_seatdivider.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_sofa02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_speaker.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_stool01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_tv.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_ext_buildi_logo.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_glass.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_lightproxy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_neons.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_det.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_lod.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det07_neons.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det08.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_lightproxy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_water.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det05_neons.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_lightproxy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_mirror01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det04_neons.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det05_spheres.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_lightproxy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det07.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det08.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det09.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det10.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det11.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_lightproxy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_custom_occl.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_ext.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_lod_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lod_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_milo_.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_map.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_props.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_lod_tex.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_tex.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_assets.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_lobby_mlo.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo_lod.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_rooftop.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006_decals.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_dt1_emissive_dt1_16d.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_long_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_strm_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_occl_04.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_long_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_strm_6.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hi@dt1_16_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/ma@dt1_16_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_18_19_24_25_26_children.ydd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_6_21_emissive_proxy_children.ydd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_slod3_children.ydd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_props_combo0505_slod_children.ydd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_3.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_8.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_cablemesh115623_thvy.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_r1_28.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_lod.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_occl_05.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_critical_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_long_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_5.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_6.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hi@dt1_rd1_9.ybn`
+```diff
++ Neue Datei
+```
+`~ resources/[cs]/cs-hall/config.lua`
+```diff
++["tropical-heighst"] = {
++    ['enabled'] = true,
++    ['autoAdjustTime'] = true,
++    ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
++    ['maxVolumePercent'] = 200,
++    ['smokeFxMultiplier'] = 3,
++    ['smokeTimeoutMs'] = 5000,
++    ['sparklerFxMultiplier'] = 1.0,
++    ['sparklerTimeoutMs'] = 300,
++    ['delayBetweenSmokeChainMs'] = 1500,
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/155738635738153
++{"webhooks":{"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"
+```
+
 ## 2026-10-27 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1349,28 +1922,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_22_10_2026.json`
 ```diff
 + Neue Datei
-```
-
-## 2026-10-22 21:23 Uhr
-**+0** neu · **~1** geändert · **-2** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupDate": "21_02_17_10_2026",
--            "id": 11,
--            "backupFile": "banlist_21_02_17_10_2026.json",
--            "backupTimestamp": 1792263757
--        },
--        {
--            "backupDate": "21_04_17_10_2026",
--            "id": 11,
--            "backupFile": "banlist_21_04_17_10_2026.json",
--            "backupTimestamp": 1792263882
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_02_17_10_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_04_17_10_2026.json`
-```diff
-- Gelöscht
 ```

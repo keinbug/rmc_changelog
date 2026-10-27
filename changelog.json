@@ -48186,6 +48186,1204 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-27T01:23:22+01:00",
+      "initial": false,
+      "counts": {
+        "added": 138,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/.fxap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/_johanni_tp_manifest.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_lobby_col.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_top_col.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_wrldcol.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ycd/clip@johanni_tp.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_barstool01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_beach_lounger.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_candle.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_chair01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_dj.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02_l.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_doorframe01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_barstool01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_beach_lounger.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm_light.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signframe.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signtp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_sofa01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_torch.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ladder.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_light01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_lobby_column.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_palm_light.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_seatdivider.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_sofa02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_speaker.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_stool01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_tv.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_ext_buildi_logo.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_glass.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_lightproxy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_neons.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_det.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_lod.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det06.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det07_neons.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det08.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_lightproxy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_water.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det05_neons.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_lightproxy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_mirror01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det04_neons.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det05_spheres.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det06.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_lightproxy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det04.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det05.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det06.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det07.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det08.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det09.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det10.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det11.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_lightproxy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_custom_occl.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_ext.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_lod_milo_.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_milo_.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lod_milo_.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_milo_.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_map.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_props.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_lod_tex.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_tex.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_assets.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_lobby_mlo.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo_lod.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_rooftop.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006_decals.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_dt1_emissive_dt1_16d.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_long_0.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_strm_0.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_occl_04.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_long_1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_strm_6.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hi@dt1_16_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/ma@dt1_16_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_18_19_24_25_26_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_6_21_emissive_proxy_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_slod3_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_props_combo0505_slod_children.ydd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_3.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_8.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_cablemesh115623_thvy.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_r1_28.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_lod.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_occl_05.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_critical_1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_long_1.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_5.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_6.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hi@dt1_rd1_9.ybn"
+      ],
+      "modified": [
+        "resources/[cs]/cs-hall/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/.fxap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/_johanni_tp_manifest.ymf",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_lobby_col.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_top_col.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_wrldcol.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ycd/clip@johanni_tp.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_barstool01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_beach_lounger.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_candle.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_chair01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_dj.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02_l.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_doorframe01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_barstool01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_beach_lounger.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm_light.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signframe.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signtp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_sofa01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_torch.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ladder.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_light01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_lobby_column.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_palm_light.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_seatdivider.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_sofa02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_speaker.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_stool01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_tv.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_ext_buildi_logo.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_glass.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_lightproxy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_neons.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_det.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_lod.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det06.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det07_neons.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det08.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_lightproxy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_water.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det05_neons.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_lightproxy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_mirror01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det04_neons.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det05_spheres.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det06.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_lightproxy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det04.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det05.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det06.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det07.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det08.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det09.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det10.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det11.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_lightproxy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_custom_occl.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_ext.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_lod_milo_.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_milo_.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lod_milo_.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_milo_.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_map.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_props.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_lod_tex.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_tex.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_assets.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_lobby_mlo.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo_lod.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_rooftop.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_0.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006_decals.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_dt1_emissive_dt1_16d.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_long_0.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_strm_0.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_occl_04.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_long_1.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_strm_6.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hi@dt1_16_0.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/ma@dt1_16_0.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_18_19_24_25_26_children.ydd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_6_21_emissive_proxy_children.ydd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_slod3_children.ydd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_props_combo0505_slod_children.ydd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_3.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_8.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_cablemesh115623_thvy.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_r1_28.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_lod.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_occl_05.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_critical_1.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_long_1.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_5.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_6.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hi@dt1_rd1_9.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[cs]/cs-hall/config.lua",
+          "status": "M",
+          "lines": [
+            "+[\"tropical-heighst\"] = {\r",
+            "+    ['enabled'] = true,\r",
+            "+    ['autoAdjustTime'] = true,\r",
+            "+    ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',\r",
+            "+    ['maxVolumePercent'] = 200,\r",
+            "+    ['smokeFxMultiplier'] = 3,\r",
+            "+    ['smokeTimeoutMs'] = 5000,\r",
+            "+    ['sparklerFxMultiplier'] = 1.0,\r",
+            "+    ['sparklerTimeoutMs'] = 300,\r",
+            "+    ['delayBetweenSmokeChainMs'] = 1500,\r",
+            "+    ['delayToTriggerBassEffectsAfterPlayingMs'] = 1,\r",
+            "+    ['featureDelayWithControllerInterfaceClosedMs'] = 500,\r",
+            "+\r",
+            "+    [\"bass\"] = nil,\r",
+            "+\r",
+            "+    [\"area\"] = {\r",
+            "+        [\"range\"] = 128.0,\r",
+            "+        [\"center\"] = vector3(302.98, -916.17, 52.8),\r",
+            "+        [\"height\"] = nil,\r",
+            "+\r",
+            "+        [\"polygons\"] = {\r",
+            "+            [\"applyLowPassFilterOutside\"] = true,\r",
+            "+            [\"invertLowPassApplication\"] = false,\r",
+            "+            [\"hideReplacersOutside\"] = true,\r",
+            "+\r",
+            "+            [\"entries\"] = {\r",
+            "+                {\r",
+            "+                    [\"height\"] = {\r",
+            "+                        [\"min\"] = 24.0,\r",
+            "+                        [\"max\"] = 58.0\r",
+            "+                    },\r",
+            "+\r",
+            "+                    [\"points\"] = {\r",
+            "+                        vector2(287.71246337891, -922.4599609375),\r",
+            "+                        vector2(287.85693359375, -922.51000976562),\r",
+            "+                        vector2(289.63479614258, -918.06030273438),\r",
+            "+                        vector2(291.29397583008, -911.14733886719),\r",
+            "+                        vector2(293.5966796875, -905.73217773438),\r",
+            "+                        vector2(298.1513671875, -907.17681884766),\r",
+            "+                        vector2(308.71691894531, -911.33203125),\r",
+            "+                        vector2(318.23587036133, -911.02136230469),\r",
+            "+                        vector2(318.89749145508, -919.35662841797),\r",
+            "+                        vector2(318.82489013672, -934.81066894531),\r",
+            "+                        vector2(318.19296264648, -939.48724365234),\r",
+            "+                        vector2(300.32507324219, -939.68450927734),\r",
+            "+                        vector2(289.28411865234, -939.53961181641),\r",
+            "+                        vector2(283.11129760742, -933.67663574219)\r",
+            "+                    }\r",
+            "+                }\r",
+            "+            }\r",
+            "+        }\r",
+            "+    },\r",
+            "+\r",
+            "+    [\"disableEmitters\"] = nil,\r",
+            "+\r",
+            "+    [\"replacers\"] = {\r",
+            "+        [\"ch_chint02_04_screens_columns\"] = \"script_rt_tvscreen\",\r",
+            "+        [\"xm_prop_x17_tv_scrn_17\"] = \"script_rt_prop_x17_tv_scrn_17\"\r",
+            "+    },\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"sperrzone\":{\"webhookId\":\"1552971115209564220\",\"channelId\":\"1552971110457286766\",\"url\":\"https://discord.com/api/webhooks/1552971115209564220/***\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/155738635738153",
+            "+{\"webhooks\":{\"lager\":{\"webhookId\":\"1551161582942158879\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\"},\"default\":{\"webhookId\":\"1551161552537653269\",\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"channelId\":\"1551161550096699392\""
+          ]
+        }
+      ]
     }
   ]
 }
