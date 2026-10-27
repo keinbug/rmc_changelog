@@ -49384,6 +49384,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-27T02:22:57+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "+    \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\": [",
+            "+        {",
+            "+            \"sender_name\": \"Dr. Vincent Fischer\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"sender_identifier\": \"char4:dcdd8750773c33c2ce3ff658853fe0c909367dba\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/18 - 18:10:21\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"value\": 500",
+            "+        }",
+            "+    ],",
+            "+    \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\": [",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "-            \"date\": \"2026/10/25 - 02:44:47\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "+            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"date\": \"2026/10/25 - 02:44:47\",",
+            "-            \"value\": 2733,",
+            "-            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"value\": 417",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"date\": \"2026/10/17 - 10:01:03\",",
+            "-            \"reason\": \"Savings account interest payment (Period 40)\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"value\": 2667,",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"sender_name\": \"Fabi Huber\",",
+            "+            \"receiver_name\": \"Bank (Kartenerneuerung)\",",
+            "+            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"date\": \"2026/10/18 - 20:10:49\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 100",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"date\": \"2026/10/09 - 10:01:07\",",
+            "-            \"reason\": \"Savings account interest payment (Period 39)\",",
+            "-            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"value\": 2602,",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"reason\": \"Savings account interest payment (Period 40)\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"date\": \"2026/10/17 - 10:01:03\",",
+            "+            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"value\": 407",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"receiver_name\": \"Fabi Huber\",",
+            "-            \"date\": \"2026/10/01 - 10:00:31\",",
+            "-            \"reason\": \"Savings account interest payment (Period 38)\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"value\": 2541,",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"reason\": \"Einzahlung auf Kartenkonto\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"date\": \"2026/10/10 - 20:27:39\","
+          ]
+        }
+      ]
     }
   ]
 }

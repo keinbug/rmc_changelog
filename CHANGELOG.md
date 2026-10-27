@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-27 02:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char4:95e98569cca18ee079f5fe27ab54152ede42f277": [
++    "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba": [
++        {
++            "sender_name": "Dr. Vincent Fischer",
++            "receiver_name": "cd_garage",
++            "sender_identifier": "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba",
++            "reason": "Fahrzeugrückgabegebühr",
++            "type": "withdraw",
++            "date": "2026/10/18 - 18:10:21",
++            "receiver_identifier": "cd_garage",
+```
+
 ## 2026-10-27 01:23 Uhr
 **+138** neu · **~2** geändert · **-0** gelöscht
 `+ resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/.fxap`
@@ -1911,15 +1927,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"15511615500966993
 +{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T22:00:51Z","webhooks":{"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/
-```
-
-## 2026-10-22 22:23 Uhr
-**+2** neu · **~0** geändert · **-0** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_20_22_10_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_22_10_2026.json`
-```diff
-+ Neue Datei
 ```
