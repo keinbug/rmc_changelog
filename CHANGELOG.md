@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-27 06:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"
++{"webhooks":{"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***
+```
+
 ## 2026-10-27 02:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1919,12 +1927,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T22:00:51Z","webhooks":{"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/
 +{"webhooks":{"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"15573863269515920
-```
-
-## 2026-10-23 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"15511615500966993
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-22T22:00:51Z","webhooks":{"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/
 ```
