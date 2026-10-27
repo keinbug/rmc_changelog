@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-27 21:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1793043395,
+-            "backupFile": "banlist_21_20_22_10_2026.json",
+-            "backupDate": "21_20_22_10_2026",
+-            "backupTimestamp": 1792696848
++            "backupFile": "banlist_21_23_23_10_2026.json",
++            "backupTimestamp": 1792783401,
++            "backupDate": "21_23_23_10_2026"
+-            "backupFile": "banlist_21_22_22_10_2026.json",
+-            "backupDate": "21_22_22_10_2026",
+-            "backupTimestamp": 1792696973
+```
+
 ## 2026-10-27 19:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1901,51 +1917,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -    enabled = true,
 +    enabled = false,
-```
-
-## 2026-10-23 20:23 Uhr
-**+0** neu · **~3** geändert · **-3** gelöscht
-`~ resources/[selfcode]/rmc_api/config/api_key.lua`
-```diff
--Config.PlaytimeCoins = {
--    Enabled = true,
--    IntervalMs = 30 * 60 * 1000,  -- 30 Minuten zwischen zwei Collects
--    CheckEveryMs = 60 * 1000,     -- Online-Spieler alle 60s prüfen
--    MinAmount = 1,                -- mindestens 1 Coin
--    MaxAmount = 1,
--    BotWebhookUrl = 'http://88.99.28.143:3000/api/webhook',
--    BotWebhookSecret = 'fa88f376407d8ced79b85cf6c27635cf280c82673e',
--    Debug = false,
--}
-```
-`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
-```diff
--    'server/modules/economy.lua',
--    'server/modules/coinshop.lua',
-+-- Client-Side für Admin-Aktionen (Skin, Heal, Freeze) + Phone
--    'client/coinshop.lua',
--    -- 'ox_lib',            (für Hotel-Confirm, Kündigung und Coin-Shop)
--    -- 'ox_target',         (für Coin-Shop NPC)
-+    -- 'ox_lib',            (für Hotel-Confirm und Kündigung)
-```
-`~ resources/[selfcode]/rmc_api/server/main.lua`
-```diff
--    -- Playtime-Coins (automatisch, nur online)
--    { method = 'GET',  path = '/economy/playtime',                    handler = function(req, res) EconomyModule.status(req, res) end },
--    { method = 'GET',  path = '/economy/playtime/:id',                handler = function(req, res, p) EconomyModule.playerStatus(req, res, p[1]) end },
--    { method = 'POST', path = '/economy/playtime/tick',               handler = function(req, res) EconomyModule.tickHttp(req, res) end },
--    { method = 'POST', path = '/economy/playtime/collect',            handler = function(req, res) EconomyModule.collect(req, res) end },
--
-```
-`− resources/[selfcode]/rmc_api/client/coinshop.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/coinshop.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/economy.lua`
-```diff
-- Gelöscht
 ```
