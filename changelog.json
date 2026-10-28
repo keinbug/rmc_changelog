@@ -49895,6 +49895,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-28T02:23:06+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"sender_name\": \"Bonnie Parker\",",
+            "+            \"date\": \"2026/10/28 - 01:26:09\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 5000,",
+            "+            \"type\": \"withdraw\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
