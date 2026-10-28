@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-28 17:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-28T09:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274","channelId":"1557386361172918374"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***
++{"categoryId":"1551161549018759170","updatedAt":"2026-10-28T15:51:19Z","webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***"
+```
+
 ## 2026-10-28 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1888,44 +1896,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +-- ===== Geister =====
 +local function spawnGhost()
 +    local p = randomPointInZone()
-```
-
-## 2026-10-24 21:23 Uhr
-**+6** neu · **~1** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_halloween/client.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_halloween/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_halloween/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_halloween/html/index.html`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_halloween/server.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
-+    "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--            "type": "loan_payment",
--            "date": "2026/06/05 - 22:49:32",
--            "sender_name": "",
--            "sender_identifier": "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
--            "reason": "Kreditablösung: Executive Loan",
--            "receiver_name": "Bank (Kreditablösung)",
--            "receiver_identifier": "bank",
--            "value": 21200
 ```
