@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-29 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172","webhookId":"1552971107500433498"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"
++{"webhooks":{"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"
+```
+
 ## 2026-10-28 21:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1729,51 +1737,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -[{"cooldowns":{"unlock":1790288626,"location_vehicle":0,"crash":1790288778,"trafficLights":1790270949,"control":1790288882,"location_player":0,"tv":0,"parkmeter":1790278782,"steal_cash":1790291249,"botnet":0,"atm":1790275271,"fake_dispatch":1790172475},"botnet":1500000,"identifier":"char3:5d9a7aa1b
 +[{"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","cooldowns":{"parkmeter":1790278782,"crash":1790288778,"location_player":0,"tv":0,"atm":1790275271,"fake_dispatch":1790172475,"unlock":1790288626,"botnet":0,"steal_cash":1790291249,"location_vehicle":0,"trafficLights":1790270949,"contr
-```
-
-## 2026-10-25 00:22 Uhr
-**+0** neu · **~4** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/client/death_owner_notify.lua`
-```diff
--    Zeigt die Benachrichtigung für Owner an, wenn ein Spieler stirbt.
--    Hört clientseitig auf baseevents (nicht serverseitig – "not safe for net" vermeiden).
-+    Live-Toast bei Tod + /th Historie (Täter → Opfer).
-+local function resolveKillerServerId(entity)
-+    if not entity or entity == 0 or not DoesEntityExist(entity) then return nil end
-+    if not IsEntityAPed(entity) or not IsPedAPlayer(entity) then return nil end
-+    for _, playerIdx in ipairs(GetActivePlayers()) do
-+        if GetPlayerPed(playerIdx) == entity then
-+            local sid = GetPlayerServerId(playerIdx)
-+            if sid and sid > 0 then return sid end
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+-- /th zeigt die letzten Tode klar als Täter → Opfer.
--    NotifySubject = "Spieler verstorben",
-+    NotifySubject = "Kill / Tod",
-+    -- %s = Täter-Name, Täter-ID, Opfer-Name, Opfer-ID, Grund
-+    NotifyMessageKilled = "%s (ID %s) hat %s (ID %s) getötet · %s",
-+    -- %s = Opfer-Name, Opfer-ID, Grund (kein Spieler-Täter)
-+    NotifyMessageDied = "%s (ID %s) ist gestorben · %s",
-+    -- Fallback falls alte Keys noch referenziert werden
-+    -- /th – letzte Tode als Menü (Täter → Opfer)
-+    HistoryCommand = "th",
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/15511615978530490
-+{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://disc
-```
-`~ resources/[selfcode]/rmc_core/server/death_owner_notify.lua`
-```diff
--    Wenn ein Spieler stirbt, erhalten alle mit der Rolle "Owner" eine Benachrichtigung
--    mit dem Namen des Verstorbenen und der Todesursache.
-+    Wenn ein Spieler stirbt, erhalten Staff eine klare Benachrichtigung (Täter → Opfer).
-+    /th zeigt die letzten Tode als Historie.
-+local function getHistoryGroups()
-+    local g = C.HistoryGroups
-+    if type(g) == "table" then
-+        return g
-+    end
-+    return getNotifyGroups()
 ```
