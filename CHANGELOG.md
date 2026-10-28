@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-28 21:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
++            "backupFile": "banlist_21_27_24_10_2026.json",
++            "backupDate": "21_27_24_10_2026",
+-            "backupFile": "banlist_21_23_23_10_2026.json",
+-            "backupTimestamp": 1792783401,
+-            "backupDate": "21_23_23_10_2026"
++            "backupTimestamp": 1792870043
++            "backupFile": "banlist_21_29_24_10_2026.json",
++            "backupDate": "21_29_24_10_2026",
+-            "backupFile": "banlist_21_25_23_10_2026.json",
+-            "backupTimestamp": 1792783526,
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-        {
+-            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
+-            "sender_name": "Jayden Anderson",
+-            "date": "2026/09/16 - 20:15:27",
+-            "type": "withdraw",
+-            "receiver_name": "cd_garage",
+-            "value": 500,
+-            "receiver_identifier": "cd_garage",
+-            "reason": "Fahrzeugrückgabegebühr"
+```
+
 ## 2026-10-28 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1747,56 +1776,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +        return g
 +    end
 +    return getNotifyGroups()
-```
-
-## 2026-10-24 23:23 Uhr
-**+2** neu · **~5** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_core/client/mechanic_shop.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_core/server/mechanic_shop.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "reason": "Einzahlung auf Bankkonto",
-+            "date": "2026/10/24 - 23:06:30",
-+            "receiver_name": "Tatsuya Lee",
-+            "value": 5782,
-+            "sender_identifier": "bank",
-+            "receiver_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "sender_name": "Geldbörse",
-+            "type": "deposit"
-+        },
-```
-`~ resources/[oresmon]/rm_hackerv/server/data.json`
-```diff
--[{"botnet":1500000,"cooldowns":{"botnet":0,"tv":0,"location_vehicle":0,"fake_dispatch":1790172475,"location_player":0,"control":1790288882,"parkmeter":1790278782,"unlock":1790288626,"steal_cash":1790291249,"trafficLights":1790270949,"atm":1790275271,"crash":1790288778},"identifier":"char3:5d9a7aa1b
-+[{"cooldowns":{"unlock":1790288626,"location_vehicle":0,"crash":1790288778,"trafficLights":1790270949,"control":1790288882,"location_player":0,"tv":0,"parkmeter":1790278782,"steal_cash":1790291249,"botnet":0,"atm":1790275271,"fake_dispatch":1790172475},"botnet":1500000,"identifier":"char3:5d9a7aa1b
-```
-`~ resources/[oresmon]/rm_hackerv/shared/cfg.lua`
-```diff
--    ['phoneJobs'] = {'sakura'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)
-+    ['phoneJobs'] = {'rosa_nera'}, -- Jobs for allow use hacker phone (un-comment if you want works with jobs)
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+
-+
-+-- ====== MECHANIC NPC-VERKAUF (rep_kasten) ======
-+-- Wie Pawn: NPC steht nur, je nach ActiveWhen, abhängig davon ob Mechaniker online sind.
-+-- Geld vom Käufer geht aufs Gesellschaftskonto (esx_addonaccount).
-+Config.MechanicShop = {
-+    Job        = 'mechanic',
-+    Society    = 'society_mechanic',
-+    PayAccount = 'bank',            -- 'bank' oder 'money' (Bargeld) – wird beim Käufer abgezogen
-+    -- 'no_job_online' = NPC nur wenn KEIN Mechaniker online ist (genau wie Pawn)
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","url":"https://discord.com/api/webhooks/1552971115209564220/***","channelId":"1552971110457286766"},"poster":{"webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***","channelId":"15600078123424891
-+{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274"},"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/15511615978530490
 ```
