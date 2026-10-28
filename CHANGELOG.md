@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-28 01:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
++    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-            "value": 21200,
+-            "receiver_name": "Bank (Kreditablösung)",
++            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
++            "sender_name": "Jayden Anderson",
++            "date": "2026/09/16 - 20:15:27",
++            "type": "withdraw",
++            "receiver_name": "cd_garage",
++            "value": 500,
+```
+
 ## 2026-10-28 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1904,12 +1920,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-10-24T01:01:16Z","webhooks":{"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***"
 +{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"einreise":{"channelId":"1552971085937381431","webhookId":"1552971088328392714","url":"https://discord.com
-```
-
-## 2026-10-24 03:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-23T22:08:37Z","webhooks":{"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"1552989826213617715","channelId":"1552989823604756600"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/**
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-24T01:01:16Z","webhooks":{"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***"
 ```
