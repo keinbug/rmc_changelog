@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-29 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"
++{"categoryId":"1551161549018759170","updatedAt":"2026-10-29T09:00:48Z","webhooks":{"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"afk":{"channelId":"1512475286229356617","url":"https://discord.com/api
+```
+
 ## 2026-10-29 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1729,12 +1737,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tj]/ykn_gravestone_garage/stream/ytyp/yukon_ytyp.ytyp`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-25 02:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[oresmon]/rm_hackerv/server/data.json`
-```diff
--[{"cooldowns":{"unlock":1790288626,"location_vehicle":0,"crash":1790288778,"trafficLights":1790270949,"control":1790288882,"location_player":0,"tv":0,"parkmeter":1790278782,"steal_cash":1790291249,"botnet":0,"atm":1790275271,"fake_dispatch":1790172475},"botnet":1500000,"identifier":"char3:5d9a7aa1b
-+[{"identifier":"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c","cooldowns":{"parkmeter":1790278782,"crash":1790288778,"location_player":0,"tv":0,"atm":1790275271,"fake_dispatch":1790172475,"unlock":1790288626,"botnet":0,"steal_cash":1790291249,"location_vehicle":0,"trafficLights":1790270949,"contr
 ```
