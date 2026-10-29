@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-29 21:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "backupFile": "banlist_21_27_24_10_2026.json",
+-            "backupDate": "21_27_24_10_2026",
+-            "backupTimestamp": 1792870043
+-        },
+-        {
+-            "backupFile": "banlist_21_29_24_10_2026.json",
+-            "backupDate": "21_29_24_10_2026",
+-            "id": 11,
+-            "backupTimestamp": 1792870168
+-        },
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-        {
+-            "receiver_name": "cd_garage",
+-            "receiver_identifier": "cd_garage",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "sender_name": "Jayden Anderson",
+-            "date": "2026/09/16 - 20:15:27",
+-            "value": 500,
+-            "type": "withdraw",
+-            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9"
+```
+
 ## 2026-10-29 18:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -986,12 +1015,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -    'data/sits.json',
 +    'data/sits.json',
 +    'html/nitro/nitro.ogg',
-```
-
-## 2026-10-25 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-25T01:45:01Z","categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"willkommen":{"url":"https://discord.com/api/webhooks/155116159
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T09:00:45Z","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"15
 ```
