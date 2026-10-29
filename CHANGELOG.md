@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-29 18:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-            "value": 500,
+-            "date": "2026/10/06 - 21:19:34",
++            "receiver_identifier": "cd_garage",
++            "sender_name": "Jayden Anderson",
++            "date": "2026/09/16 - 20:15:27",
++            "value": 500,
++            "type": "withdraw",
++            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9"
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
++{"webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"155297109931721
+```
+
 ## 2026-10-29 13:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -973,25 +994,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-25T01:45:01Z","categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"willkommen":{"url":"https://discord.com/api/webhooks/155116159
 +{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T09:00:45Z","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"15
-```
-
-## 2026-10-25 03:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--        {
--            "reason": "Fahrzeugrückgabegebühr",
--            "date": "2026/10/19 - 16:25:37",
--            "receiver_name": "cd_garage",
--            "value": 500,
--            "sender_name": "Misaki Lee",
--            "receiver_identifier": "cd_garage",
--            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
--            "type": "withdraw"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://disc
-+{"updatedAt":"2026-10-25T01:45:01Z","categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252","webhookId":"1557386342755991582"},"willkommen":{"url":"https://discord.com/api/webhooks/155116159
 ```

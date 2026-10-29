@@ -50236,6 +50236,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-29T18:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "+    \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "-            \"value\": 500,",
+            "-            \"date\": \"2026/10/06 - 21:19:34\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"date\": \"2026/09/16 - 20:15:27\",",
+            "+            \"value\": 500,",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"date\": \"2026/09/15 - 23:01:29\",",
+            "+            \"value\": 2500,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\"",
+            "-            \"value\": 500,",
+            "-            \"date\": \"2026/09/13 - 23:00:28\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"date\": \"2026/09/13 - 23:31:22\",",
+            "+            \"value\": 500,",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"date\": \"2026/09/13 - 21:13:23\",",
+            "+            \"value\": 500,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\"",
+            "-            \"value\": 105000,",
+            "-            \"date\": \"2026/08/19 - 20:33:45\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"reason\": \"Return Vehicle Fee\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"date\": \"2026/09/13 - 20:44:10\",",
+            "+            \"value\": 2500,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\"",
+            "-            \"value\": 550000,",
+            "-            \"date\": \"2026/08/09 - 19:23:31\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"receiver_identifier\": \"cd_garage\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"webhookId\":\"1551161578009796630\",\"channelId\":\"1551161575690211428\"},\"esx_paycheck\":{\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"webhookId\":\"1557386357",
+            "+{\"webhooks\":{\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"webhookId\":\"1552971101741654046\",\"channelId\":\"155297109931721"
+          ]
+        }
+      ]
     }
   ]
 }
