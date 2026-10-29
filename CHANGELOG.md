@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-29 23:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-            "sender_name": "Timo Anderson",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "value": 500,
+-            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "sender_name": "Timo Anderson",
++            "reason": "Fahrzeugrückgabegebühr",
++            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "value": 500,
+-            "sender_name": "Timo Anderson",
+-            "reason": "Fahrzeugrückgabegebühr",
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"155297109931721
++{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.co
+```
+
 ## 2026-10-29 21:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -976,43 +997,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +for item in pairs(Cfg.RefillItems or {}) do
 -        local veh = Cfg.RefillNeedsDriver and getDriverVehicle(src) or GetVehiclePedIsIn(ped, false)
 -        if not veh or veh == 0 then return notify(src, T.NoVehicle, 'error') end
-```
-
-## 2026-10-25 14:23 Uhr
-**+3** neu · **~3** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_core/client/nitro.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_core/html/nitro/nitro.ogg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_core/server/nitro.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+
-+-- ============================================
-+-- NITRO SYSTEM (client/nitro.lua + server/nitro.lua)
-+-- erstellt von Sebbi | KeinBug
-+-- Tank pro Fahrzeug (State Bag), Auffüllen per Item, Farben per /nitro
-+-- ============================================
-+Config.Nitro = {
-+    Enabled        = true,
-+    Debug          = false,
-+
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T09:00:45Z","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"esx_paycheck":{"channelId":"1557386352226598913","webhookId":"15
-+{"categoryId":"1551161549018759170","updatedAt":"2026-10-25T13:14:19Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777
-```
-`~ resources/[selfcode]/rmc_core/fxmanifest.lua`
-```diff
--    'data/sits.json',
-+    'data/sits.json',
-+    'html/nitro/nitro.ogg',
 ```

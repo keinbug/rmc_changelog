@@ -50460,6 +50460,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-29T23:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"value\": 500,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 500,",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"value\": 500,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 500,",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"value\": 105000,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 105000,",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"value\": 550000,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 550000,",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"value\": 1000,",
+            "-            \"sender_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 1000,",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"value\": 20000,",
+            "-            \"sender_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 20000,",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"value\": 29490,",
+            "-            \"sender_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 29490,",
+            "-            \"sender_name\": \"Misaki Lee\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"value\": 300,",
+            "-            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"webhookId\":\"1552971101741654046\",\"channelId\":\"155297109931721",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"chopshop\":{\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\"},\"esx_test\":{\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\",\"url\":\"https://discord.co"
+          ]
+        }
+      ]
     }
   ]
 }
