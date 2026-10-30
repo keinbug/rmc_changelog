@@ -50613,6 +50613,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-30T18:23:08+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "+    \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\": [",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Bonnie Parker\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/28 - 01:26:09\",",
+            "+            \"value\": 5000,",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Bonnie Parker\",",
+            "+            \"reason\": \"Kartenkauf: Gold Card\",",
+            "+            \"type\": \"card_purchase\",",
+            "+            \"date\": \"2026/10/27 - 22:01:14\",",
+            "+            \"value\": 300,",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"receiver_name\": \"Bank (Kartenkauf)\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Bonnie Parker\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/27 - 22:01:07\",",
+            "+            \"value\": 3000,",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Lana Cooper\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"date\": \"2026/10/27 - 18:10:57\",",
+            "+            \"value\": 1500,",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Lana Cooper\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"date\": \"2026/10/27 - 18:08:44\",",
+            "+            \"value\": 1000,",
+            "+            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },",
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Lana Cooper\",",
+            "+            \"reason\": \"Kartenkauf: Gold Card\",",
+            "+            \"type\": \"card_purchase\",",
+            "+            \"date\": \"2026/10/27 - 18:08:14\",",
+            "+            \"value\": 300,"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-30T09:01:24Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"webhookId\":\"1557386349395583076\"},\"join\":{\"channelId\":\"1448120760391565352\",\"url\":\"https://discord.",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"staff\":{\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"sperrzone\":{\"channelId\":\"1552971110457286766\",\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/"
+          ]
+        }
+      ]
     }
   ]
 }

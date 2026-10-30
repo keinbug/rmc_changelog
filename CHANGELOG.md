@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-30 18:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
+-            "receiver_identifier": "cd_garage",
+-            "receiver_name": "cd_garage",
+-            "sender_name": "Timo Anderson",
++            "receiver_identifier": "bank",
++            "sender_name": "Bonnie Parker",
++            "reason": "Auszahlung vom Bankkonto",
++            "type": "withdraw",
++            "date": "2026/10/28 - 01:26:09",
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-30T09:01:24Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"join":{"channelId":"1448120760391565352","url":"https://discord.
++{"categoryId":"1551161549018759170","webhooks":{"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/
+```
+
 ## 2026-10-30 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -950,20 +971,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-25T17:00:55Z","categoryId":"1551161549018759170","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200","webhookId":"1552971079239077968"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/**
 +{"updatedAt":"2026-10-25T23:01:05Z","webhooks":{"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144","channelId":"1560007812342489120"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"155298982621361771
-```
-
-## 2026-10-25 21:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1792870168,
-+    "lastBackup": 1792956769,
--            "backupFile": "banlist_21_12_20_10_2026.json",
--            "backupTimestamp": 1792523567,
--            "id": 11,
--            "backupDate": "21_12_20_10_2026"
--        },
--        {
--            "backupFile": "banlist_21_14_20_10_2026.json",
--            "backupTimestamp": 1792523692,
 ```
