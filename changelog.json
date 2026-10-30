@@ -50553,6 +50553,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-30T01:22:57+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_name\": \"Akio Kuroda\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 10000,",
+            "+            \"date\": \"2026/10/30 - 00:24:57\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
