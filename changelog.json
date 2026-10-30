@@ -50732,6 +50732,72 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-30T21:23:06+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_30_25_10_2026.json\",",
+            "-            \"backupDate\": \"20_30_25_10_2026\",",
+            "-            \"backupTimestamp\": 1792956644",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_32_25_10_2026.json\",",
+            "-            \"backupDate\": \"20_32_25_10_2026\",",
+            "-            \"backupTimestamp\": 1792956769",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_47_30_10_2026.json\",",
+            "+            \"backupTimestamp\": 1793389622,",
+            "+            \"backupDate\": \"20_47_30_10_2026\",",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_49_30_10_2026.json\",",
+            "+            \"backupDate\": \"20_49_30_10_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1793389747",
+            "-    \"lastBackup\": 1793303121",
+            "+    \"lastBackup\": 1793389747"
+          ]
+        }
+      ]
     }
   ]
 }

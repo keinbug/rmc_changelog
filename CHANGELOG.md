@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-30 21:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "id": 11,
+-            "backupFile": "banlist_20_30_25_10_2026.json",
+-            "backupDate": "20_30_25_10_2026",
+-            "backupTimestamp": 1792956644
+-        },
+-        {
+-            "id": 11,
+-            "backupFile": "banlist_20_32_25_10_2026.json",
+-            "backupDate": "20_32_25_10_2026",
+-            "backupTimestamp": 1792956769
+```
+
 ## 2026-10-30 20:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/sits.json`
@@ -963,12 +979,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"default":{"webhookId":"1551161552537653269","channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/**
 +{"categoryId":"1551161549018759170","webhooks":{"me":{"webhookId":"1513950212480307490","channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"adminjail":{"webhookId":"1551161578009796630","channelId":"1551161575690211428","url":"https://discord.com/api
-```
-
-## 2026-10-26 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-25T23:01:05Z","webhooks":{"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144","channelId":"1560007812342489120"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"155298982621361771
-+{"webhooks":{"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"default":{"webhookId":"1551161552537653269","channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/**
 ```
