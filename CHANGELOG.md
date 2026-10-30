@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-30 20:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/sits.json`
+```diff
+-[{"id":"sit_1791572244_8861","label":"Sit Chair 4","anim":"base","dict":"timetable@ron@ig_3_couch","y":-420.7482,"x":1225.8873,"h":255.6565,"z":68.0417},{"id":"sit_1791572300_6917","label":"Sit Chair 2","anim":"ig_5_p3_base","dict":"timetable@ron@ig_5_p3","y":-419.3795,"x":1226.4694,"h":271.1957,"z
++[{"x":1225.8873,"id":"sit_1791572244_8861","z":68.0417,"label":"Sit Chair 4","dict":"timetable@ron@ig_3_couch","anim":"base","h":255.6565,"y":-420.7482},{"x":1226.4694,"id":"sit_1791572300_6917","z":68.0817,"label":"Sit Chair 2","dict":"timetable@ron@ig_5_p3","anim":"ig_5_p3_base","h":271.1957,"y":
+```
+
 ## 2026-10-30 18:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -963,12 +971,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-25T23:01:05Z","webhooks":{"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144","channelId":"1560007812342489120"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"155298982621361771
 +{"webhooks":{"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"default":{"webhookId":"1551161552537653269","channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/**
-```
-
-## 2026-10-26 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-25T17:00:55Z","categoryId":"1551161549018759170","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200","webhookId":"1552971079239077968"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/**
-+{"updatedAt":"2026-10-25T23:01:05Z","webhooks":{"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144","channelId":"1560007812342489120"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","webhookId":"155298982621361771
 ```

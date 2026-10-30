@@ -50706,6 +50706,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-30T20:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78026
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/sits.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/sits.json",
+          "status": "M",
+          "lines": [
+            "-[{\"id\":\"sit_1791572244_8861\",\"label\":\"Sit Chair 4\",\"anim\":\"base\",\"dict\":\"timetable@ron@ig_3_couch\",\"y\":-420.7482,\"x\":1225.8873,\"h\":255.6565,\"z\":68.0417},{\"id\":\"sit_1791572300_6917\",\"label\":\"Sit Chair 2\",\"anim\":\"ig_5_p3_base\",\"dict\":\"timetable@ron@ig_5_p3\",\"y\":-419.3795,\"x\":1226.4694,\"h\":271.1957,\"z",
+            "+[{\"x\":1225.8873,\"id\":\"sit_1791572244_8861\",\"z\":68.0417,\"label\":\"Sit Chair 4\",\"dict\":\"timetable@ron@ig_3_couch\",\"anim\":\"base\",\"h\":255.6565,\"y\":-420.7482},{\"x\":1226.4694,\"id\":\"sit_1791572300_6917\",\"z\":68.0817,\"label\":\"Sit Chair 2\",\"dict\":\"timetable@ron@ig_5_p3\",\"anim\":\"ig_5_p3_base\",\"h\":271.1957,\"y\":"
+          ]
+        }
+      ]
     }
   ]
 }
