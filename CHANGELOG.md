@@ -2,6 +2,25 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-30 22:23 Uhr
+**+4** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_test_trash/Lang.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_test_trash/client/client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_test_trash/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+
 ## 2026-10-30 21:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -971,12 +990,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -        {
 -            "backupTimestamp": 1792610334,
 -            "backupFile": "banlist_21_18_21_10_2026.json",
-```
-
-## 2026-10-26 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"default":{"webhookId":"1551161552537653269","channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/**
-+{"categoryId":"1551161549018759170","webhooks":{"me":{"webhookId":"1513950212480307490","channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"adminjail":{"webhookId":"1551161578009796630","channelId":"1551161575690211428","url":"https://discord.com/api
 ```

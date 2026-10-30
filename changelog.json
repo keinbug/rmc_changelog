@@ -50798,6 +50798,55 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-30T22:23:09+01:00",
+      "initial": false,
+      "counts": {
+        "added": 4,
+        "modified": 0,
+        "deleted": 0,
+        "total": 78030
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_test_trash/Lang.lua",
+        "resources/[selfcode]/rmc_test_trash/client/client.lua",
+        "resources/[selfcode]/rmc_test_trash/config.lua",
+        "resources/[selfcode]/rmc_test_trash/fxmanifest.lua"
+      ],
+      "modified": [],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/Lang.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/client/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        }
+      ]
     }
   ]
 }
