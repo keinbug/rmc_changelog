@@ -50847,6 +50847,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T00:22:41+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78030
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"staff\":{\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\"},\"sperrzone\":{\"channelId\":\"1552971110457286766\",\"webhookId\":\"1552971115209564220\",\"url\":\"https://discord.com/",
+            "+{\"updatedAt\":\"2026-10-30T23:00:48Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"freecam_photo\":{\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\",\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/15529719318"
+          ]
+        }
+      ]
     }
   ]
 }

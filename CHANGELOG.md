@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/
++{"updatedAt":"2026-10-30T23:00:48Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/15529719318
+```
+
 ## 2026-10-30 22:23 Uhr
 **+4** neu · **~0** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_test_trash/Lang.lua`
@@ -974,20 +982,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "reason": "Savings account interest payment (Period 41)",
 -            "date": "2026/07/05 - 09:20:38"
 -        },
-```
-
-## 2026-10-26 21:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1792956769,
-+    "lastBackup": 1793043395,
--            "backupTimestamp": 1792610209,
--            "backupFile": "banlist_21_16_21_10_2026.json",
--            "backupDate": "21_16_21_10_2026",
--            "id": 11
--        },
--        {
--            "backupTimestamp": 1792610334,
--            "backupFile": "banlist_21_18_21_10_2026.json",
 ```
