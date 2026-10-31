@@ -52109,6 +52109,157 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T22:23:22+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 5,
+        "deleted": 0,
+        "total": 78126
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_minijobs/client/admin.lua",
+        "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+        "resources/[selfcode]/rmc_minijobs/client/main.lua",
+        "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+        "resources/[selfcode]/rmc_minijobs/server/admin.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/admin.lua",
+          "status": "M",
+          "lines": [
+            "+        position = 'middle-left',\r",
+            "+        { type = 'checkbox', label = 'Fahrzeug erforderlich', default = job.vehicle and job.vehicle.required or false },\r",
+            "+        { type = 'checkbox', label = 'Teamplay erlauben', default = job.allowTeamplay or false },\r",
+            "-        requiredJob = input[13],\r",
+            "+        requiredJob = input[15],\r",
+            "+        allowTeamplay = input[7],\r",
+            "-        vehicle = { model = input[4], platePrefix = tostring(input[5] or 'JOB'):sub(1, 6) },\r",
+            "-        payment = { min = input[6], max = input[7], perPoint = input[8], bonus = input[9] },\r",
+            "+        vehicle = { model = input[4], platePrefix = tostring(input[5] or 'JOB'):sub(1, 6), required = input[6] },\r",
+            "+        payment = { min = input[8], max = input[9], perPoint = input[10], bonus = input[11] },\r",
+            "-            pointsPerJob = { tonumber(input[10]) or placed or 3, tonumber(input[11]) or placed or 6 },\r",
+            "-            duration = tonumber(input[12]) or 5000,\r",
+            "+            pointsPerJob = { tonumber(input[12]) or placed or 3, tonumber(input[13]) or placed or 6 },\r",
+            "+            duration = tonumber(input[14]) or 5000,\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+          "status": "M",
+          "lines": [
+            "+RegisterNetEvent('minijob:client:teamInvite', function(inviterId, inviterName, jobId, jobLabel)\r",
+            "+    local alert = lib.alertDialog({\r",
+            "+        header = 'Team-Einladung',\r",
+            "+        content = ('%s möchte dich einladen für den Job: %s'):format(inviterName, jobLabel),\r",
+            "+        centered = true,\r",
+            "+        cancel = true,\r",
+            "+    })\r",
+            "+    if alert == 'confirm' then\r",
+            "+        lib.callback.await('minijob:server:acceptInvite', false, inviterId, jobId)\r",
+            "+    end\r",
+            "+end)\r",
+            "+\r",
+            "+RegisterNetEvent('minijob:client:teamJoined', function(teamId, memberId)\r",
+            "+    TR.State.team.id = teamId\r",
+            "+    TR.State.team.members[memberId] = true\r",
+            "+    TR.Notify('Du bist dem Team beigetreten!', 'success')\r",
+            "+end)\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/main.lua",
+          "status": "M",
+          "lines": [
+            "+    team = { id = nil, members = {} },\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+          "status": "M",
+          "lines": [
+            "+CreateThread(function()\r",
+            "+    while true do\r",
+            "+        local asg = TR.State.assignment\r",
+            "+        if not asg then\r",
+            "+            Wait(700)\r",
+            "+        else\r",
+            "+            local job = Utils.FindMinijob(asg.jobId)\r",
+            "+            if job and job.vehicle and job.vehicle.required then\r",
+            "+                local playerPed = PlayerPedId()\r",
+            "+                if IsPedInAnyVehicle(playerPed, false) then\r",
+            "+                    local vehicle = GetVehiclePedIsIn(playerPed, false)\r",
+            "+                    if vehicle and vehicle ~= 0 then\r",
+            "+                        local plate = GetVehicleNumberPlateText(vehicle)\r",
+            "+                        local jobPlate = (job.vehicle.platePrefix or 'JOB'):upper()\r",
+            "+                        if not string.find(plate:upper(), jobPlate, 1, true) then\r",
+            "+                            TR.Notify('Du musst das Dienstfahrzeug benutzen!', 'error')\r",
+            "+                            TaskLeaveVehicle(playerPed, vehicle, 16)\r",
+            "+                            Wait(1000)\r",
+            "+                        end\r",
+            "+                    end\r",
+            "+                end\r",
+            "+            end\r",
+            "+            Wait(700)\r",
+            "+        end\r",
+            "+    end\r",
+            "+end)\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/server/admin.lua",
+          "status": "M",
+          "lines": [
+            "+        allowTeamplay = false,\r",
+            "+            required = false,\r",
+            "+    if patch.allowTeamplay ~= nil then job.allowTeamplay = patch.allowTeamplay == true end\r",
+            "+\r",
+            "+local teams = {}\r",
+            "+\r",
+            "+lib.callback.register('minijob:server:invitePlayer', function(source, targetId, jobId)\r",
+            "+    local job = Utils.FindMinijob(jobId)\r",
+            "+    if not job or not job.allowTeamplay then\r",
+            "+        return { ok = false, message = 'Teamplay ist für diesen Job nicht aktiviert.' }\r",
+            "+    end\r",
+            "+\r",
+            "+    local inviter = GetPlayerName(source)\r",
+            "+    TriggerClientEvent('minijob:client:teamInvite', targetId, source, inviter, jobId, job.label)\r",
+            "+    return { ok = true }\r",
+            "+end)\r",
+            "+\r",
+            "+lib.callback.register('minijob:server:acceptInvite', function(source, inviterId, jobId)\r",
+            "+    local job = Utils.FindMinijob(jobId)\r",
+            "+    if not job then return { ok = false, message = 'Job nicht gefunden.' } end\r",
+            "+\r",
+            "+    local teamId = ('team_%s'):format(jobId)\r",
+            "+    if not teams[teamId] then\r",
+            "+        teams[teamId] = { jobId = jobId, members = {} }\r",
+            "+    end\r",
+            "+\r",
+            "+    teams[teamId].members[source] = true\r",
+            "+    teams[teamId].members[inviterId] = true\r",
+            "+\r",
+            "+    TriggerClientEvent('minijob:client:teamJoined', source, teamId, inviterId)\r",
+            "+    TriggerClientEvent('minijob:client:teamJoined', inviterId, teamId, source)\r",
+            "+\r",
+            "+    return { ok = true }\r",
+            "+end)\r",
+            "+\r",
+            "+lib.callback.register('minijob:server:getTeam', function(source, teamId)\r",
+            "+    if not teams[teamId] then return nil end\r",
+            "+    return teams[teamId]\r",
+            "+end)\r"
+          ]
+        }
+      ]
     }
   ]
 }
