@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 19:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-31T17:19:30Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"poster":{"channelId":"1560007812342489120","url":"https://discor
++{"updatedAt":"2026-10-31T17:45:17Z","categoryId":"1551161549018759170","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"lager":{"channelId":"1551161580324921455","url":"https://discord
+```
+`~ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/config.lua`
+```diff
+-        {
+-            Id = 1,
+-            Pos = vector3(-679.40985107422, -2444.626464843, 13.257986068726),
+-            GetOutPos = vector4(-684.7432, -2440.2537, 14.2635, 155.3924),
+-        },
+-        {
+-            Id = 2,
+-            Pos = vector3(-676.12170410156, -2446.5249023438, 13.257986068726),
+-            GetOutPos = vector4(-684.7432, -2440.2537, 14.2635, 155.3924),
+-        }
+```
+
 ## 2026-10-31 18:23 Uhr
 **+93** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/.fxap`
@@ -816,12 +837,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***
 +{"updatedAt":"2026-10-27T09:00:34Z","webhooks":{"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/*
-```
-
-## 2026-10-27 06:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"
-+{"webhooks":{"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***
 ```
