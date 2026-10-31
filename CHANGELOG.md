@@ -2,6 +2,670 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 00:23 Uhr
+**+0** neu · **~1** geändert · **-164** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353","channelId":"1551161585614061618"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"15529710
++{"categoryId":"1551161549018759170","webhooks":{"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"146755634349264
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/client.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_deer02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_asset_lamp05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_distantlights.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lodlights.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/overrides/tstudio_legionsquare_lp.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_em_water_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_07.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_09.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_11.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_13.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_grave_15.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_g.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_light_tenticles.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_0.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ydr/tstudio_legion_halloween_spirits_1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/legion/ymap/tstudio_legion_halloween_placement_lod.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_campfirezone.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_ext_torch.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_asset_lamp03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park1_lp.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/overrides/tstudio_lsextension_park2_lp.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ycd/anim@tstudio_legion_halloween_5.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_p.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_n.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_light_tenticles_s.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_tstudio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_ouija_yn.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_legion_halloween_spirits_3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ydr/tstudio_lsextension_halloween_water_2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_halloween_placement_lod.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_n_halloween_placement.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/lsextension/ymap/tstudio_lsextension_s_halloween_placement.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/_manifest_peak_halloween.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/overrides/tstudio_legiontowers_asset_walllight01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_sps_lod.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ycd/anim@tstudio_peak_halloween_uv.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_banner_webs_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_candy_bucket_3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_cauldren_anim.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_dirtpile_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghost_cat.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ghostface.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_00.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_grave_06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ground_ooze.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_handdoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_board.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_tstudio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_ouija_yn.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_palm_ooze_c.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pillar_ooze.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_pumpkin05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_purple_wings.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_red_wings.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_skel_hand.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_00.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_spider_an.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_bans_frame.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_banshee_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_dan_gho_frame.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_ghost_dance_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_fa_frame.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ydr/tstudio_peak_halloween_sps_wall_face_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_cloth_ghost.yft`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/yft/tstudio_peak_halloween_skeleton.yft`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_bridge_placement.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_placement.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ymap/tstudio_peak_halloween_sps_lods.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytd/tstudio_peak_halloween_txd.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_props_a.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_lods.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_sps_props.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/peak/ytyp/tstudio_peak_halloween_uv_anims.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/_manifest_tsudio_legion_halloween.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/vanilla/prop_wall_light_02a.yft`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_2.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_3.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/anim@tstudio_legion_halloween_4.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/nightmare_anim.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ycd/zombies_animations.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_anim_billboard_c.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_00s.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_arbour_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_banner_webs_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_bats.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_1.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_candy_bucket_3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_cauldren_anim.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_dirtpile_01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_flail_tent_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ghostface.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_00.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_10.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_grave_14.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_handdoor.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_light_o.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_ouija_board.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_pumpkin05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_purple_wings.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_red_wings.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_scarecrow01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_skel_hand.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudio_legion_halloween_spider_00.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ydr/tstudios_legion_halloween_spirits_uv.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_cloth_ghost_2.yft`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/yft/tstudio_legion_halloween_flail_tent.yft`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_billboard_txd.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytd/tstudio_legion_halloween_txd.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_billboards_lod.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_a.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/stream/shared/ytyp/tstudio_legion_halloween_props_b.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/ymap_loader.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-10-31 22:23 Uhr
 **+0** neu · **~5** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
@@ -911,20 +1575,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "type": "card_purchase",
 +            "receiver_identifier": "bank"
 +        },
-```
-
-## 2026-10-27 21:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1793043395,
--            "backupFile": "banlist_21_20_22_10_2026.json",
--            "backupDate": "21_20_22_10_2026",
--            "backupTimestamp": 1792696848
-+            "backupFile": "banlist_21_23_23_10_2026.json",
-+            "backupTimestamp": 1792783401,
-+            "backupDate": "21_23_23_10_2026"
--            "backupFile": "banlist_21_22_22_10_2026.json",
--            "backupDate": "21_22_22_10_2026",
--            "backupTimestamp": 1792696973
 ```
