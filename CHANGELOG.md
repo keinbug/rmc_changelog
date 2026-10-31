@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-30T23:00:48Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/15529719318
++{"categoryId":"1551161549018759170","webhooks":{"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***"
+```
+
 ## 2026-10-31 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -966,20 +974,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"me":{"webhookId":"1513950212480307490","channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"adminjail":{"webhookId":"1551161578009796630","channelId":"1551161575690211428","url":"https://discord.com/api
 +{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/155738635738153
-```
-
-## 2026-10-26 23:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
-+    "char4:95e98569cca18ee079f5fe27ab54152ede42f277": [
--            "type": "interest_savings",
--            "reason": "Savings account interest payment (Period 27)",
--            "value": 3,
--            "receiver_identifier": "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
-+            "date": "2026/10/25 - 02:44:47",
-+            "reason": "Savings account interest payment (Period 41)",
--            "date": "2026/07/05 - 09:20:38"
--        },
 ```
