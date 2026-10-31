@@ -51078,6 +51078,777 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T18:23:10+01:00",
+      "initial": false,
+      "counts": {
+        "added": 93,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78123
+      },
+      "truncated": false,
+      "added": [
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/.fxap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/client.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/teleport.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/config.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/dist/index.html",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/_manifest.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/_manifest.ymf",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_ext_col.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_int.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ycd/clip@tstudio_tuner_int.ycd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_bike.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_carlift.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp03.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_colum01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_l.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_r.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_doorframe01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ext_ramp01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_mechbench.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon3.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neoncarwall.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_podest.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_postlift.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_table01.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_chest_01a.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01a.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01b.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01c.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01d.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01e.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel3.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheelrack.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_decals.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_gframes.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_ramps.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_walls.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r00_shell.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_banners.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_beaming.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_cabin.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_container.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_decalset1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_det1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_roofwindows.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_vents1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r02_det1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r03_det1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_de1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_decalset1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_neonset1.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_lp.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_mirror.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext_props.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_milo.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_asset_txt.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_int_txt.ytd",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_asset.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_ext.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_int.ytyp",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_7.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_8.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_ap1_01b_glue_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_fizzy_hd_ent_02.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_gm_grnd017f.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f2.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1vv.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_occl_01.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_ap1_01b_graffiti.ydr",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_barriers_case6.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_dixon.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_forsale.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_madonna.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_solomun.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_taleofus.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_mpbattleipl_strm_0.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_a_strm_12.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_b_strm_0.ymap",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hi@ap1_01_b_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ma@ap1_01_b_0.ybn",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/tr_dlc_int_02_tr.ytyp"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/.fxap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/teleport.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/dist/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/_manifest.ymf",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/_manifest.ymf",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_ext_col.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_int.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ycd/clip@tstudio_tuner_int.ycd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_bike.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_carlift.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp03.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_colum01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_l.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_r.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_doorframe01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ext_ramp01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_mechbench.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon3.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neoncarwall.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_podest.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_postlift.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_table01.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_chest_01a.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01a.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01b.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01c.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01d.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01e.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel3.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheelrack.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_decals.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_gframes.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_ramps.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_walls.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r00_shell.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_banners.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_beaming.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_cabin.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_container.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_decalset1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_det1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_roofwindows.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_vents1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r02_det1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r03_det1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_de1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_decalset1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_neonset1.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_lp.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_mirror.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext_props.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_milo.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_asset_txt.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_int_txt.ytd",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_asset.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_ext.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_int.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_7.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_8.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_ap1_01b_glue_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_fizzy_hd_ent_02.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_gm_grnd017f.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f2.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1vv.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_occl_01.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_ap1_01b_graffiti.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_barriers_case6.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_dixon.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_forsale.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_madonna.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_solomun.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_taleofus.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_mpbattleipl_strm_0.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_a_strm_12.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_b_strm_0.ymap",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hi@ap1_01_b_0.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ma@ap1_01_b_0.ybn",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/tr_dlc_int_02_tr.ytyp",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"me\":{\"channelId\":\"1513950191936344245\",\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"webhookId\":\"1513950212480307490\"},\"adminjail\":{\"channelId\":\"1551161575690211428\",\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\"",
+            "+{\"updatedAt\":\"2026-10-31T17:19:30Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"webhookId\":\"1557386349395583076\"},\"poster\":{\"channelId\":\"1560007812342489120\",\"url\":\"https://discor"
+          ]
+        }
+      ]
     }
   ]
 }

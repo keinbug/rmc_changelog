@@ -2,6 +2,386 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 18:23 Uhr
+**+93** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/.fxap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/client/teleport.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/dist/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/_manifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/_manifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_ext_col.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ybn/tstudio_tuner_int.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ycd/clip@tstudio_tuner_int.ycd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_bike.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_carlift.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ceilinglamp03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_colum01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_door_r.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_doorframe01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_ext_ramp01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_gdoor2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_mechbench.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neon3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_neoncarwall.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_podest.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_postlift.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_table01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_chest_01a.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01a.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01b.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01c.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01d.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_tool_draw_01e.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheel3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_asset_wheelrack.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_decals.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_gframes.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_ramps.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_ext_walls.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r00_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_banners.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_beaming.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_cabin.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_container.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_decalset1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_det1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_roofwindows.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r01_vents1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r02_det1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r03_det1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_de1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_decalset1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r04_neonset1.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_lp.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ydr/tstudio_tuner_r05_carelevator_mirror.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_ext_props.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ymap/tstudio_tuner_milo.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_asset_txt.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytd/tstudio_tuner_int_txt.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_asset.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_ext.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/custom/ytyp/tstudio_tuner_int.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_7.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_8.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_ap1_01b_glue_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_fizzy_hd_ent_02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_gm_grnd017f.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1f2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_01_b_sidebit1vv.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ap1_occl_01.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_ap1_01b_graffiti.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_barriers_case6.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_dixon.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_forsale.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_madonna.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_solomun.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_case6_taleofus.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ba_mpbattleipl_strm_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_a_strm_12.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hei_ap1_01_b_strm_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/hi@ap1_01_b_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/ma@ap1_01_b_0.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tstudio]/tstudio_redstuner/stream/vanilla/tr_dlc_int_02_tr.ytyp`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***"
++{"updatedAt":"2026-10-31T17:19:30Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"poster":{"channelId":"1560007812342489120","url":"https://discor
+```
+
 ## 2026-10-31 14:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/config.lua`
@@ -444,20 +824,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"
 +{"webhooks":{"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***
-```
-
-## 2026-10-27 02:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:95e98569cca18ee079f5fe27ab54152ede42f277": [
-+    "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba": [
-+        {
-+            "sender_name": "Dr. Vincent Fischer",
-+            "receiver_name": "cd_garage",
-+            "sender_identifier": "char4:dcdd8750773c33c2ce3ff658853fe0c909367dba",
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "type": "withdraw",
-+            "date": "2026/10/18 - 18:10:21",
-+            "receiver_identifier": "cd_garage",
 ```
