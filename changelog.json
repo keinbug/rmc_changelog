@@ -50899,6 +50899,153 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T12:23:28+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 5,
+        "deleted": 0,
+        "total": 78030
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_minijobs/client/admin.lua",
+        "resources/[selfcode]/rmc_minijobs/client/main.lua",
+        "resources/[selfcode]/rmc_minijobs/client/placement.lua",
+        "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+        "resources/[selfcode]/rmc_minijobs/shared/types.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/admin.lua",
+          "status": "M",
+          "lines": [
+            "-                        TR.PutObjectOnGround(obj, coords.z)\r",
+            "+                        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z\r",
+            "+                        TR.PutObjectOnGround(obj, gz)\r",
+            "-        { type = 'input', label = 'Name', default = 'Downtown Müll', required = true },\r",
+            "+    local jobType = input[1]\r",
+            "+    local spec = JobTypes.Get(jobType)\r",
+            "+    local autoName = ('Minijob - %s'):format(spec and spec.label or jobType)\r",
+            "+\r",
+            "-        label = input[1],\r",
+            "-        type = input[2],\r",
+            "-        description = input[3],\r",
+            "+        label = autoName,\r",
+            "+        type = jobType,\r",
+            "+        description = input[2],\r",
+            "-        applyResult(lib.callback.await('minijob:server:setJobPoint', false, jobId, 'ped', ped))\r",
+            "-                        applyResult(lib.callback.await('minijob:server:setJobPoint', false, jobId, 'ped', placed))\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/main.lua",
+          "status": "M",
+          "lines": [
+            "+    PlaceObjectOnGroundProperly(entity)\r",
+            "+    local finalCoords = GetEntityCoords(entity)\r",
+            "+    SetEntityCoordsNoOffset(entity, finalCoords.x, finalCoords.y, finalCoords.z, false, false, false)\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/placement.lua",
+          "status": "M",
+          "lines": [
+            "-        local obj = CreateObjectNoOffset(model, coords.x, coords.y, coords.z, false, false, false)\r",
+            "+        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z\r",
+            "+        local lift = TR.ModelBottomOffset(model)\r",
+            "+        local obj = CreateObjectNoOffset(model, coords.x, coords.y, gz + lift, false, false, false)\r",
+            "+\r",
+            "+            local coords = GetEntityCoords(ghost)\r",
+            "+            local arrowZ = coords.z + 2.5\r",
+            "+            DrawMarker(42, coords.x, coords.y, arrowZ, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.5, 0.5, 255, 165, 0, 200, false, false, 2, false, nil, nil, false)\r",
+            "-        else\r",
+            "-            DrawMarker(1, hit.x, hit.y, gz - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.7, 0.28, 40, 140, 255, 160, false, false, 2, false, nil, nil, false)\r",
+            "-                Wait(0)\r",
+            "+                Wait(50)\r",
+            "-                    z = opts.kind == 'prop' and coords.z or saveZ,\r",
+            "+                    z = coords.z,\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+          "status": "M",
+          "lines": [
+            "+local plantMarkers = {}\r",
+            "+    plantMarkers = {}\r",
+            "-    if asg.ready then\r",
+            "-        local job = Utils.FindMinijob(asg.jobId)\r",
+            "-        if job and job.company and Utils.HasCoords(job.company.coords) then\r",
+            "-            addPointBlip({ coords = job.company.coords, label = 'Zentrale' }, spec, true)\r",
+            "-        end\r",
+            "-    end\r",
+            "-    exports.ox_target:addLocalEntity(entity, {\r",
+            "-        {\r",
+            "-            name = 'mj_pt_' .. point.id,\r",
+            "-            icon = ('fa-solid fa-%s'):format(spec.icon or 'hand'),\r",
+            "-            label = label,\r",
+            "-            distance = 2.2,\r",
+            "-            canInteract = function()\r",
+            "-                local asg = TR.State.assignment\r",
+            "-                if not asg then return false end\r",
+            "-                if spec.carryFromPoint or asg.carryFromPoint then\r",
+            "-                    return not asg.carrying\r",
+            "-                end\r",
+            "-                if (asg.needCarry or spec.needCarry) and not asg.carrying then return false end\r",
+            "-                return true\r",
+            "-            end,\r",
+            "-            onSelect = function()\r",
+            "-                CreateThread(function()\r",
+            "-                    Wait(80)\r",
+            "-                    TR.InteractPoint(point.id)\r",
+            "-                end)\r",
+            "-            end,\r",
+            "-        },\r",
+            "-    })\r",
+            "+\r",
+            "+    if spec.twoStep and step >= 1 then\r",
+            "+        local coords = point.coords\r",
+            "+        local zoneLabel = spec.targetSecond or spec.target or 'Weiter'\r",
+            "+        local zoneId = exports.ox_target:addSphereZone({\r",
+            "+            coords = vec3(coords.x, coords.y, coords.z),\r",
+            "+            radius = 1.8,\r",
+            "+            debug = Config.Debug,\r",
+            "+            options = {\r",
+            "+                {\r",
+            "+                    name = 'mj_pt_zone_' .. point.id,\r",
+            "+                    icon = ('fa-solid fa-%s'):format(spec.icon or 'hand'),\r",
+            "+                    label = zoneLabel,\r",
+            "+                    canInteract = function()\r",
+            "+                        local asg = TR.State.assignment\r",
+            "+                        if not asg then return false end\r",
+            "+                        if spec.carryFromPoint or asg.carryFromPoint then\r",
+            "+                            return not asg.carrying\r",
+            "+                        end\r",
+            "+                        if (asg.needCarry or spec.needCarry) and not asg.carrying then return false end\r",
+            "+                        return true\r",
+            "+                    end,\r",
+            "+                    onSelect = function()\r",
+            "+                        CreateThread(function()\r",
+            "+                            Wait(80)\r",
+            "+                            TR.InteractPoint(point.id)\r",
+            "+                        end)\r",
+            "+                    end,\r",
+            "+                },\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/shared/types.lua",
+          "status": "M",
+          "lines": [
+            "-            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 0.0) },\r",
+            "+            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.05, 0.0, -0.05), rot = vec3(0.0, 0.0, 90.0) },\r"
+          ]
+        }
+      ]
     }
   ]
 }

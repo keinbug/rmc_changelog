@@ -2,6 +2,59 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 12:23 Uhr
+**+0** neu · **~5** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
+```diff
+-                        TR.PutObjectOnGround(obj, coords.z)
++                        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z
++                        TR.PutObjectOnGround(obj, gz)
+-        { type = 'input', label = 'Name', default = 'Downtown Müll', required = true },
++    local jobType = input[1]
++    local spec = JobTypes.Get(jobType)
++    local autoName = ('Minijob - %s'):format(spec and spec.label or jobType)
++
+-        label = input[1],
+-        type = input[2],
+```
+`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
+```diff
++    PlaceObjectOnGroundProperly(entity)
++    local finalCoords = GetEntityCoords(entity)
++    SetEntityCoordsNoOffset(entity, finalCoords.x, finalCoords.y, finalCoords.z, false, false, false)
+```
+`~ resources/[selfcode]/rmc_minijobs/client/placement.lua`
+```diff
+-        local obj = CreateObjectNoOffset(model, coords.x, coords.y, coords.z, false, false, false)
++        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z
++        local lift = TR.ModelBottomOffset(model)
++        local obj = CreateObjectNoOffset(model, coords.x, coords.y, gz + lift, false, false, false)
++
++            local coords = GetEntityCoords(ghost)
++            local arrowZ = coords.z + 2.5
++            DrawMarker(42, coords.x, coords.y, arrowZ, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.5, 0.5, 255, 165, 0, 200, false, false, 2, false, nil, nil, false)
+-        else
+-            DrawMarker(1, hit.x, hit.y, gz - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.7, 0.28, 40, 140, 255, 160, false, false, 2, false, nil, nil, false)
+```
+`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
+```diff
++local plantMarkers = {}
++    plantMarkers = {}
+-    if asg.ready then
+-        local job = Utils.FindMinijob(asg.jobId)
+-        if job and job.company and Utils.HasCoords(job.company.coords) then
+-            addPointBlip({ coords = job.company.coords, label = 'Zentrale' }, spec, true)
+-        end
+-    end
+-    exports.ox_target:addLocalEntity(entity, {
+-        {
+```
+`~ resources/[selfcode]/rmc_minijobs/shared/types.lua`
+```diff
+-            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 0.0) },
++            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.05, 0.0, -0.05), rot = vec3(0.0, 0.0, 90.0) },
+```
+
 ## 2026-10-31 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -966,12 +1019,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/155738635738153
 +{"webhooks":{"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455"},"default":{"webhookId":"1551161552537653269","url":"https://discord.com/api/webhooks/1551161552537653269/***","channelId":"1551161550096699392"
-```
-
-## 2026-10-27 00:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"me":{"webhookId":"1513950212480307490","channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***"},"adminjail":{"webhookId":"1551161578009796630","channelId":"1551161575690211428","url":"https://discord.com/api
-+{"webhooks":{"sperrzone":{"webhookId":"1552971115209564220","channelId":"1552971110457286766","url":"https://discord.com/api/webhooks/1552971115209564220/***"},"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/155738635738153
 ```
