@@ -51046,6 +51046,38 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T14:23:31+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 78030
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "-        -- Nur diese ESX-Jobs dürfen den Reparaturkasten nutzen",
+            "-        AllowedJobs = {",
+            "-            police = true,",
+            "-            ambulance = true,",
+            "-            mechanic = true,",
+            "-        },",
+            "+        -- Keine Job-Beschränkung - jeder darf den Reparaturkasten nutzen",
+            "+        AllowedJobs = false,"
+          ]
+        }
+      ]
     }
   ]
 }
