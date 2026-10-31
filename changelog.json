@@ -52021,6 +52021,94 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T21:23:26+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 1,
+        "total": 78126
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "resources/[manuell_start]/ox_inventory/web/images/metallbarren.png"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "+    \"lastBackup\": 1793476361,",
+            "-        {",
+            "-            \"backupFile\": \"banlist_20_34_26_10_2026.json\",",
+            "-            \"backupDate\": \"20_34_26_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1793043270",
+            "-        },",
+            "-        {",
+            "-            \"backupFile\": \"banlist_20_36_26_10_2026.json\",",
+            "-            \"backupDate\": \"20_36_26_10_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1793043395",
+            "-        },",
+            "-            \"backupTimestamp\": 1793389622,",
+            "-            \"id\": 11",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1793389622",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_50_31_10_2026.json\",",
+            "+            \"backupDate\": \"20_50_31_10_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1793476236",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_20_52_31_10_2026.json\",",
+            "+            \"backupDate\": \"20_52_31_10_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1793476361",
+            "-    ],",
+            "-    \"lastBackup\": 1793389747",
+            "+    ]"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t[\"metallbarren\"] = {",
+            "-\t\tlabel = \"Metallbarren\",",
+            "-\t\tweight = 2500,",
+            "-\t\tstack = true,",
+            "-\t\tclose = true,",
+            "-\t},\t",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\"},\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\"}",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"webhookId\":\"1551161592467423353\",\"channelId\":\"1551161585614061618\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"15529710"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/metallbarren.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
