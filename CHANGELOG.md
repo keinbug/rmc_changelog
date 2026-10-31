@@ -2,6 +2,47 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-10-31 20:23 Uhr
+**+4** neu · **~3** geändert · **-0** gelöscht
+`+ resources/[manuell_start]/ox_inventory/web/images/mechanikteile.png`
+```diff
++ Neue Datei
+```
+`+ resources/[manuell_start]/ox_inventory/web/images/metallteile.png`
+```diff
++ Neue Datei
+```
+`+ resources/[manuell_start]/ox_inventory/web/images/verbundmaterial.png`
+```diff
++ Neue Datei
+```
+`+ resources/[manuell_start]/ox_inventory/web/images/waffenplane.png`
+```diff
++ Neue Datei
+```
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
+-	["waffengehause"] = {
+-		label = "Waffengehäuse",
+-		weight = 300,
++	--- NEUE WAFFENBAUTEILE---
++
++	["metallteile"] = {
++		label = "Metallteile",
++		weight = 500,
+-	["waffenlauf"] = {
+-		label = "Waffenlauf",
+```
+`~ resources/[manuell_start]/ox_inventory/web/images/metallbarren.png`
+```diff
+(Binärdatei / kein Text-Diff)
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-10-31T17:45:17Z","categoryId":"1551161549018759170","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"lager":{"channelId":"1551161580324921455","url":"https://discord
++{"webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789","channelId":"1512475286229356617"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194","channelId":"1557386329686413342"}
+```
+
 ## 2026-10-31 19:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -829,12 +870,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-27T09:00:34Z","webhooks":{"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/*
 +{"updatedAt":"2026-10-27T17:00:46Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552","channelId":"1448120760391565352"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***",
-```
-
-## 2026-10-27 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***
-+{"updatedAt":"2026-10-27T09:00:34Z","webhooks":{"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"support":{"channelId":"1552971099317211136","url":"https://discord.com/api/webhooks/1552971101741654046/*
 ```

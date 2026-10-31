@@ -51902,6 +51902,125 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-10-31T20:23:17+01:00",
+      "initial": false,
+      "counts": {
+        "added": 4,
+        "modified": 3,
+        "deleted": 0,
+        "total": 78127
+      },
+      "truncated": false,
+      "added": [
+        "resources/[manuell_start]/ox_inventory/web/images/mechanikteile.png",
+        "resources/[manuell_start]/ox_inventory/web/images/metallteile.png",
+        "resources/[manuell_start]/ox_inventory/web/images/verbundmaterial.png",
+        "resources/[manuell_start]/ox_inventory/web/images/waffenplane.png"
+      ],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[manuell_start]/ox_inventory/web/images/metallbarren.png",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/mechanikteile.png",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/metallteile.png",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/verbundmaterial.png",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/waffenplane.png",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t[\"waffengehause\"] = {",
+            "-\t\tlabel = \"Waffengehäuse\",",
+            "-\t\tweight = 300,",
+            "+\t--- NEUE WAFFENBAUTEILE---",
+            "+",
+            "+\t[\"metallteile\"] = {",
+            "+\t\tlabel = \"Metallteile\",",
+            "+\t\tweight = 500,",
+            "-\t[\"waffenlauf\"] = {",
+            "-\t\tlabel = \"Waffenlauf\",",
+            "-\t\tweight = 300,",
+            "+\t[\"metallbarren\"] = {",
+            "+\t\tlabel = \"Metallbarren\",",
+            "+\t\tweight = 2500,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},\t",
+            "+",
+            "+\t[\"mechanikteile\"] = {",
+            "+\t\tlabel = \"Mechanikteile\",",
+            "+\t\tweight = 1000,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},",
+            "+",
+            "+\t[\"verbundmaterial\"] = {",
+            "+\t\tlabel = \"Verbundmaterial\",",
+            "+\t\tweight = 1000,",
+            "+\t[\"waffenplane\"] = {",
+            "+\t\tlabel = \"Waffenpläne\",",
+            "+\t\tweight = 150,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},\t",
+            "+",
+            "+    --------------------------",
+            "+",
+            "+",
+            "-\t[\"kidswaffenschein\"] = {",
+            "-\t\tlabel = \"Kidswaffenschein\",",
+            "-\t\tweight = 0,",
+            "-\t\tstack = true,",
+            "-\t\tclose = true,",
+            "-\t},",
+            "-"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/metallbarren.png",
+          "status": "M",
+          "lines": [
+            "(Binärdatei / kein Text-Diff)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-10-31T17:45:17Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"sozialstunden\":{\"channelId\":\"1552971081491419187\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"webhookId\":\"1552971083731181709\"},\"lager\":{\"channelId\":\"1551161580324921455\",\"url\":\"https://discord",
+            "+{\"webhooks\":{\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\"},\"esx_test\":{\"url\":\"https://discord.com/api/webhooks/1557386332483887194/***\",\"webhookId\":\"1557386332483887194\",\"channelId\":\"1557386329686413342\"}"
+          ]
+        }
+      ]
     }
   ]
 }
