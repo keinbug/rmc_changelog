@@ -2,6 +2,49 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 23:23 Uhr
+**+0** neu · **~5** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-01T17:00:56Z","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
++{"categoryId":"1551161549018759170","webhooks":{"bell":{"webhookId":"1471556835994767400","channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/ap
+```
+`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
+```diff
++local pendingInvite = nil
++
++CreateThread(function()
++    Wait(1000)
++    print('[Minijob] Team-Event-Handler registriert')
++end)
++
+-    local alert = lib.alertDialog({
+-        header = 'Team-Einladung',
+-        content = ('%s möchte dich einladen für den Job: %s'):format(inviterName, jobLabel),
+```
+`~ resources/[selfcode]/rmc_minijobs/client/jobs.lua`
+```diff
++            print('[Minijob] Gefundener Spieler: ' .. name .. ' (ID: ' .. id .. ')')
+-    local result = lib.callback.await('minijob:server:invitePlayer', false, tonumber(input[1]), jobId)
++    print('[Minijob] Eingabe erhalten: ' .. tostring(input[1]) .. ' (Typ: ' .. type(input[1]) .. ')')
++    local targetId = tonumber(input[1])
++    print('[Minijob] Konvertierte ID: ' .. targetId)
++    local result = lib.callback.await('minijob:server:invitePlayer', false, targetId, jobId)
+```
+`~ resources/[selfcode]/rmc_minijobs/fxmanifest.lua`
+```diff
++    'client/interactions.lua',
+```
+`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
+```diff
++    print('[Minijob Server] Einladung empfangen - Source: ' .. source .. ', Target: ' .. targetId .. ' (Typ: ' .. type(targetId) .. '), Job: ' .. jobId)
++
++    targetId = tonumber(targetId)
++    print('[Minijob Server] Konvertierte Target: ' .. targetId)
++
++    print('[Minijob Server] Sende Einladung von ' .. source .. ' (' .. inviter .. ') an ' .. targetId .. ' für Job ' .. jobId)
+```
+
 ## 2026-11-01 21:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1601,12 +1644,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "value": 500,
 -            "receiver_identifier": "cd_garage",
 -            "reason": "Fahrzeugrückgabegebühr"
-```
-
-## 2026-10-28 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-10-28T15:51:19Z","webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***"
-+{"webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172","webhookId":"1552971107500433498"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"
 ```

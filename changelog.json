@@ -53962,6 +53962,133 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-01T23:23:25+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 5,
+        "deleted": 0,
+        "total": 77962
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+        "resources/[selfcode]/rmc_minijobs/client/jobs.lua",
+        "resources/[selfcode]/rmc_minijobs/fxmanifest.lua",
+        "resources/[selfcode]/rmc_minijobs/server/admin.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-01T17:00:56Z\",\"webhooks\":{\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"bell\":{\"webhookId\":\"1471556835994767400\",\"channelId\":\"1471556817061544068\",\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386361172918374\",\"url\":\"https://discord.com/ap"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+          "status": "M",
+          "lines": [
+            "+local pendingInvite = nil\r",
+            "+\r",
+            "+CreateThread(function()\r",
+            "+    Wait(1000)\r",
+            "+    print('[Minijob] Team-Event-Handler registriert')\r",
+            "+end)\r",
+            "+\r",
+            "-    local alert = lib.alertDialog({\r",
+            "-        header = 'Team-Einladung',\r",
+            "-        content = ('%s möchte dich einladen für den Job: %s'):format(inviterName, jobLabel),\r",
+            "-        centered = true,\r",
+            "-        cancel = true,\r",
+            "-    })\r",
+            "-    if alert == 'confirm' then\r",
+            "-        lib.callback.await('minijob:server:acceptInvite', false, inviterId, jobId)\r",
+            "+    print('[Minijob] ===== EINLADUNG EMPFANGEN =====')\r",
+            "+    print('[Minijob] Von: ' .. inviterName .. ' (' .. inviterId .. ')')\r",
+            "+    print('[Minijob] Job: ' .. jobLabel .. ' (' .. jobId .. ')')\r",
+            "+\r",
+            "+    local message = ('Team-Einladung von %s für %s - Drücke [E] zum Annehmen'):format(inviterName, jobLabel)\r",
+            "+    print('[Minijob] Sende Notification: ' .. message)\r",
+            "+\r",
+            "+    if ESX and ESX.ShowNotification then\r",
+            "+        ESX.ShowNotification(message, 'info')\r",
+            "+        print('[Minijob] ESX Notification gesendet')\r",
+            "+    else\r",
+            "+        TriggerEvent('esx:showNotification', message, 'info')\r",
+            "+        print('[Minijob] ESX Event gesendet')\r",
+            "+    end\r",
+            "+\r",
+            "+    if TR.Notify then\r",
+            "+        TR.Notify(message, 'inform')\r",
+            "+        print('[Minijob] TR.Notify gesendet')\r",
+            "+\r",
+            "+    pendingInvite = { inviterId = inviterId, jobId = jobId, inviterName = inviterName }\r",
+            "+    print('[Minijob] Einladung gespeichert, warte auf Tastendruck')\r",
+            "+end)\r",
+            "+\r",
+            "+CreateThread(function()\r",
+            "+    while true do\r",
+            "+        Wait(0)\r",
+            "+        if pendingInvite then\r",
+            "+            if IsControlJustPressed(0, 38) then\r",
+            "+                print('[Minijob] Einladung per E-Taste angenommen')\r",
+            "+                lib.callback.await('minijob:server:acceptInvite', false, pendingInvite.inviterId, pendingInvite.jobId)\r",
+            "+                if ESX and ESX.ShowNotification then\r",
+            "+                    ESX.ShowNotification('Einladung angenommen!', 'success')\r",
+            "+                else\r",
+            "+                    TriggerEvent('esx:showNotification', 'Einladung angenommen!', 'success')\r",
+            "+                end\r",
+            "+                pendingInvite = nil\r",
+            "+            elseif IsControlJustPressed(0, 194) then\r",
+            "+                print('[Minijob] Einladung abgelehnt')\r",
+            "+                if ESX and ESX.ShowNotification then\r",
+            "+                    ESX.ShowNotification('Einladung abgelehnt', 'info')\r",
+            "+                else\r",
+            "+                    TriggerEvent('esx:showNotification', 'Einladung abgelehnt', 'info')\r",
+            "+                end\r",
+            "+                pendingInvite = nil\r",
+            "+            end\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/jobs.lua",
+          "status": "M",
+          "lines": [
+            "+            print('[Minijob] Gefundener Spieler: ' .. name .. ' (ID: ' .. id .. ')')\r",
+            "-    local result = lib.callback.await('minijob:server:invitePlayer', false, tonumber(input[1]), jobId)\r",
+            "+    print('[Minijob] Eingabe erhalten: ' .. tostring(input[1]) .. ' (Typ: ' .. type(input[1]) .. ')')\r",
+            "+    local targetId = tonumber(input[1])\r",
+            "+    print('[Minijob] Konvertierte ID: ' .. targetId)\r",
+            "+    local result = lib.callback.await('minijob:server:invitePlayer', false, targetId, jobId)\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'client/interactions.lua',\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/server/admin.lua",
+          "status": "M",
+          "lines": [
+            "+    print('[Minijob Server] Einladung empfangen - Source: ' .. source .. ', Target: ' .. targetId .. ' (Typ: ' .. type(targetId) .. '), Job: ' .. jobId)\r",
+            "+\r",
+            "+    targetId = tonumber(targetId)\r",
+            "+    print('[Minijob Server] Konvertierte Target: ' .. targetId)\r",
+            "+\r",
+            "+    print('[Minijob Server] Sende Einladung von ' .. source .. ' (' .. inviter .. ') an ' .. targetId .. ' für Job ' .. jobId)\r"
+          ]
+        }
+      ]
     }
   ]
 }
