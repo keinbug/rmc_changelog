@@ -53683,6 +53683,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-01T02:23:08+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77962
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[manuell_start]/ox_inventory/data/shops.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tstack = false,",
+            "+\t\tstack = true,"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/shops.lua",
+          "status": "M",
+          "lines": [
+            "-            { name = 'liquid', price = 9 },"
+          ]
+        }
+      ]
     }
   ]
 }

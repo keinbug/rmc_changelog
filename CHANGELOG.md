@@ -2,6 +2,18 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 02:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
+-		stack = false,
++		stack = true,
+```
+`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
+```diff
+-            { name = 'liquid', price = 9 },
+```
+
 ## 2026-11-01 01:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokTuning/config.lua`
@@ -1567,12 +1579,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "type": "withdraw",
 +            "receiver_name": "cd_garage",
 +            "value": 500,
-```
-
-## 2026-10-28 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-27T17:00:46Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552","channelId":"1448120760391565352"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***",
-+{"updatedAt":"2026-10-27T23:00:55Z","webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653
 ```
