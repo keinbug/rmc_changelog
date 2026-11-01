@@ -53743,6 +53743,117 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-01T14:22:47+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 4,
+        "deleted": 0,
+        "total": 77962
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+        "resources/[selfcode]/rmc_minijobs/client/jobs.lua",
+        "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+        "resources/[selfcode]/rmc_minijobs/server/admin.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/interactions.lua",
+          "status": "M",
+          "lines": [
+            "+RegisterNetEvent('minijob:client:syncAssignment', function(assignment)\r",
+            "+    if assignment then\r",
+            "+        TR.State.assignment = assignment\r",
+            "+        if TR.OnAssignmentUpdate then TR.OnAssignmentUpdate() end\r",
+            "+    end\r",
+            "+end)\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/jobs.lua",
+          "status": "M",
+          "lines": [
+            "+    local job = Utils.FindMinijob(jobId)\r",
+            "+\r",
+            "+    if job and job.allowTeamplay then\r",
+            "+        exports.ox_target:addLocalEntity(ped, {\r",
+            "+            {\r",
+            "+                name = 'mj_invite_' .. jobId,\r",
+            "+                icon = 'fa-solid fa-users',\r",
+            "+                label = 'Team einladen',\r",
+            "+                distance = 2.2,\r",
+            "+                onSelect = function()\r",
+            "+                    TR.OpenInviteMenu(jobId)\r",
+            "+                end,\r",
+            "+            },\r",
+            "+        })\r",
+            "+    end\r",
+            "+function TR.OpenInviteMenu(jobId)\r",
+            "+    local players = {}\r",
+            "+    for _, id in ipairs(GetActivePlayers()) do\r",
+            "+        if id ~= PlayerId() then\r",
+            "+            local name = GetPlayerName(id)\r",
+            "+            players[#players + 1] = { value = id, label = ('%s (ID: %s)'):format(name, id) }\r",
+            "+        end\r",
+            "+    end\r",
+            "+\r",
+            "+    if #players == 0 then\r",
+            "+        TR.Notify('Keine Spieler in der Nähe!', 'error')\r",
+            "+        return\r",
+            "+    end\r",
+            "+\r",
+            "+    local input = lib.inputDialog('Team-Mitglied einladen', {\r",
+            "+        { type = 'select', label = 'Spieler auswählen', options = players, required = true },\r",
+            "+    })\r",
+            "+\r",
+            "+    if not input then return end\r",
+            "+\r",
+            "+    local result = lib.callback.await('minijob:server:invitePlayer', false, tonumber(input[1]), jobId)\r",
+            "+    if result and result.ok then\r",
+            "+        TR.Notify('Einladung gesendet!', 'success')\r",
+            "+    else\r",
+            "+        TR.Notify(result and result.message or 'Fehler beim Einladen', 'error')\r",
+            "+    end\r",
+            "+end\r",
+            "+\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/client/runner.lua",
+          "status": "M",
+          "lines": [
+            "+\r",
+            "+    if TR.State.team and TR.State.team.id then\r",
+            "+        lib.callback.await('minijob:server:syncAssignment', false, result.assignment)\r",
+            "+    end\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_minijobs/server/admin.lua",
+          "status": "M",
+          "lines": [
+            "+\r",
+            "+lib.callback.register('minijob:server:syncAssignment', function(source, assignment)\r",
+            "+    local teamId = TR.State.team and TR.State.team.id\r",
+            "+    if not teamId or not teams[teamId] then return end\r",
+            "+\r",
+            "+    for memberId in pairs(teams[teamId].members) do\r",
+            "+        if memberId ~= source then\r",
+            "+            TriggerClientEvent('minijob:client:syncAssignment', memberId, assignment)\r",
+            "+        end\r",
+            "+    end\r",
+            "+    return { ok = true }\r",
+            "+end)\r"
+          ]
+        }
+      ]
     }
   ]
 }

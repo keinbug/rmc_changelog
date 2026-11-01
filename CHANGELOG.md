@@ -2,6 +2,52 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 14:22 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
+```diff
++RegisterNetEvent('minijob:client:syncAssignment', function(assignment)
++    if assignment then
++        TR.State.assignment = assignment
++        if TR.OnAssignmentUpdate then TR.OnAssignmentUpdate() end
++    end
++end)
++
+```
+`~ resources/[selfcode]/rmc_minijobs/client/jobs.lua`
+```diff
++    local job = Utils.FindMinijob(jobId)
++
++    if job and job.allowTeamplay then
++        exports.ox_target:addLocalEntity(ped, {
++            {
++                name = 'mj_invite_' .. jobId,
++                icon = 'fa-solid fa-users',
++                label = 'Team einladen',
++                distance = 2.2,
++                onSelect = function()
+```
+`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
+```diff
++
++    if TR.State.team and TR.State.team.id then
++        lib.callback.await('minijob:server:syncAssignment', false, result.assignment)
++    end
+```
+`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
+```diff
++
++lib.callback.register('minijob:server:syncAssignment', function(source, assignment)
++    local teamId = TR.State.team and TR.State.team.id
++    if not teamId or not teams[teamId] then return end
++
++    for memberId in pairs(teams[teamId].members) do
++        if memberId ~= source then
++            TriggerClientEvent('minijob:client:syncAssignment', memberId, assignment)
++        end
++    end
+```
+
 ## 2026-11-01 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1555,20 +1601,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-27T23:00:55Z","webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653
 +{"updatedAt":"2026-10-28T09:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274","channelId":"1557386361172918374"},"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***
-```
-
-## 2026-10-28 02:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
-+            "sender_name": "Bonnie Parker",
-+            "date": "2026/10/28 - 01:26:09",
-+            "receiver_name": "Geldbörse",
-+            "receiver_identifier": "bank",
-+            "value": 5000,
-+            "type": "withdraw",
-+            "reason": "Auszahlung vom Bankkonto"
-+        },
 ```
