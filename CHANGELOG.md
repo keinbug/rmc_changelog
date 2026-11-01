@@ -2,6 +2,87 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-02 00:23 Uhr
+**+0** neu · **~6** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_minijobs/client/deliver.lua`
+```diff
+-TR = TR or {}
+-
+-local carryProp = 0
+-local carryGen = 0
+-local pointEntities = {}
+-local takingPizza = false
+-local handingPizza = false
+-
+-local function carrySpec()
+-    local asg = TR.State.assignment
+```
+`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
+```diff
+-TR = TR or {}
+-TR.ZoneMeta = TR.ZoneMeta or {}
+-
+-local pendingInvite = nil
+-
+-CreateThread(function()
+-    Wait(1000)
+-    print('[Minijob] Team-Event-Handler registriert')
+-end)
+-
+```
+`~ resources/[selfcode]/rmc_minijobs/client/jobs.lua`
+```diff
+-TR = TR or {}
+-
+-local function applyResult(result)
+-    if not result then return false end
+-    if result.config then TR.ApplyLiveConfig(result.config) end
+-    if result.assignment then
+-        TR.State.assignment = result.assignment
+-        if TR.OnAssignmentUpdate then TR.OnAssignmentUpdate() end
+-    end
+-    if result.dutyJobId ~= nil then TR.State.dutyJobId = result.dutyJobId end
+```
+`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
+```diff
+-TR = TR or {}
+-
+-local asgEntities = {}
+-local worldTargets = {}
+-local asgZones = {}
+-local asgBlips = {}
+-local spawnedPointIds = {}
+-local snappedNear = {}
+-local plantMarkers = {}
+-local STREAM_IN = 80.0
+```
+`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
+```diff
+-TR = TR or {}
+-
+-local RANK_LOOKUP = {
+-    owner = true, inhaber = true, superadmin = true, admin = true, god = true,
+-    management = true, leitung = true, projektleiter = true, projektleitung = true,
+-}
+-
+-local function normalizeRank(value)
+-    if value == nil then return '' end
+-    if type(value) == 'table' then value = value.name or value[1] end
+```
+`~ resources/[selfcode]/rmc_minijobs/server/jobs.lua`
+```diff
+-TR = TR or {}
+-TR.Duty = {}
+-TR.Assignments = {}
+-TR.SourceMap = {}
+-TR.DutyVehicle = {}
+-TR.Cooldowns = {}
+-TR.ActionStamp = {}
+-TR.PaperStock = {}
+-
+-local function nowMs()
+```
+
 ## 2026-11-01 23:23 Uhr
 **+0** neu · **~5** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1615,33 +1696,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172","webhookId":"1552971107500433498"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"
 +{"webhooks":{"ausbluten":{"webhookId":"1552971079239077968","url":"https://discord.com/api/webhooks/1552971079239077968/***","channelId":"1552971076718297200"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"
-```
-
-## 2026-10-28 21:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
-+            "backupFile": "banlist_21_27_24_10_2026.json",
-+            "backupDate": "21_27_24_10_2026",
--            "backupFile": "banlist_21_23_23_10_2026.json",
--            "backupTimestamp": 1792783401,
--            "backupDate": "21_23_23_10_2026"
-+            "backupTimestamp": 1792870043
-+            "backupFile": "banlist_21_29_24_10_2026.json",
-+            "backupDate": "21_29_24_10_2026",
--            "backupFile": "banlist_21_25_23_10_2026.json",
--            "backupTimestamp": 1792783526,
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--        {
--            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
--            "sender_name": "Jayden Anderson",
--            "date": "2026/09/16 - 20:15:27",
--            "type": "withdraw",
--            "receiver_name": "cd_garage",
--            "value": 500,
--            "receiver_identifier": "cd_garage",
--            "reason": "Fahrzeugrückgabegebühr"
 ```
