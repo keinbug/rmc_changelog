@@ -53599,6 +53599,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-01T01:23:11+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77962
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokTuning/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokTuning/config.lua",
+          "status": "M",
+          "lines": [
+            "-            name        = \"Kanzaki Tuning\", --1\r",
+            "+            name        = \"Benny Tuning\", --1\r",
+            "-            name        = \"Kanzaki Tuning\",--2\r",
+            "+            name        = \"Benny Tuning\",--2\r",
+            "-            name        = \"Kanzaki Tuning\",--- 3\r",
+            "+            name        = \"Benny Tuning\",--- 3\r",
+            "-            name        = \"Kanzaki Tuning\",--Heli/LKW\r",
+            "+            name        = \"Benny Tuning\",--Heli/LKW\r",
+            "-      },       \r",
+            "+      },\r",
+            "+      \r",
+            "+      {\r",
+            "+            name        = \"KUROKAI\",\r",
+            "+            jobs        = { \"kurokai\" },\r",
+            "+            coords      = vector3(-691.70, -2437.56, 13.28),\r",
+            "+            size        = vector3(5, 5, 5),\r",
+            "+            rotation    = 70,\r",
+            "+            type        = \"job\",\r",
+            "+            debug       = false,\r",
+            "+            blipIcon    = 72,\r",
+            "+            blipColor   = 3,\r",
+            "+            blipDisplay = 4,\r",
+            "+            blipScale   = 0.7,\r",
+            "+            blipEnabled = false,\r",
+            "+            premium     = 0, -- 0 premium price for job zones\r",
+            "+            isFree      = false,\r",
+            "+            hideMods = {\r",
+            "+                  --[\"modEngine\"] = true,\r",
+            "+                  --[\"modLivery\"] = true\r",
+            "+            }\r",
+            "+      }, \r",
+            "+      \r",
+            "+      {\r",
+            "+            name        = \"KUROKAI\",\r",
+            "+            jobs        = { \"kurokai\" },\r",
+            "+            coords      = vector3(-688.50, -2431.47, 13.28),\r",
+            "+            size        = vector3(5, 5, 5),\r",
+            "+            rotation    = 70,\r",
+            "+            type        = \"job\",\r",
+            "+            debug       = false,\r",
+            "+            blipIcon    = 72,\r",
+            "+            blipColor   = 3,\r",
+            "+            blipDisplay = 4,\r",
+            "+            blipScale   = 0.7,\r",
+            "+            blipEnabled = false,\r",
+            "+            premium     = 0, -- 0 premium price for job zones\r",
+            "+            isFree      = false,\r",
+            "+            hideMods = {\r",
+            "+                  --[\"modEngine\"] = true,\r",
+            "+                  --[\"modLivery\"] = true\r",
+            "+            }\r",
+            "+      },      \r",
+            "+    \r",
+            "+      {\r",
+            "+            name        = \"KUROKAI\",\r",
+            "+            jobs        = { \"kurokai\" },\r",
+            "+            coords      = vector3(-685.14, -2425.54, 13.28),\r",
+            "+            size        = vector3(5, 5, 5),\r",
+            "+            rotation    = 70,\r",
+            "+            type        = \"job\",\r"
+          ]
+        }
+      ]
     }
   ]
 }

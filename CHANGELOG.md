@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 01:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokTuning/config.lua`
+```diff
+-            name        = "Kanzaki Tuning", --1
++            name        = "Benny Tuning", --1
+-            name        = "Kanzaki Tuning",--2
++            name        = "Benny Tuning",--2
+-            name        = "Kanzaki Tuning",--- 3
++            name        = "Benny Tuning",--- 3
+-            name        = "Kanzaki Tuning",--Heli/LKW
++            name        = "Benny Tuning",--Heli/LKW
+-      },       
++      },
+```
+
 ## 2026-11-01 00:23 Uhr
 **+0** neu · **~1** geändert · **-164** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1559,20 +1575,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-27T17:00:46Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","webhookId":"1552971091771924552","channelId":"1448120760391565352"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***",
 +{"updatedAt":"2026-10-27T23:00:55Z","webhooks":{"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653
-```
-
-## 2026-10-27 22:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "value": 300,
-+            "receiver_name": "Bank (Kartenkauf)",
-+            "date": "2026/10/27 - 22:01:14",
-+            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
-+            "sender_name": "Bonnie Parker",
-+            "reason": "Kartenkauf: Gold Card",
-+            "type": "card_purchase",
-+            "receiver_identifier": "bank"
-+        },
 ```
