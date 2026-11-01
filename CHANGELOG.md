@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-01 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"146755634349264
++{"webhooks":{"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816","channelId":"1557386352226598913"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439
+```
+
 ## 2026-11-01 02:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[manuell_start]/ox_inventory/data/items.lua`
@@ -1563,20 +1571,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "type": "withdraw",
 +            "reason": "Auszahlung vom Bankkonto"
 +        },
-```
-
-## 2026-10-28 01:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
-+    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--            "value": 21200,
--            "receiver_name": "Bank (Kreditablösung)",
-+            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
-+            "sender_name": "Jayden Anderson",
-+            "date": "2026/09/16 - 20:15:27",
-+            "type": "withdraw",
-+            "receiver_name": "cd_garage",
-+            "value": 500,
 ```
