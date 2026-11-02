@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 00:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-02T17:01:30Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"147155683599476740
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-02T23:00:39Z","webhooks":{"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"join":{"webhookId":"1552971091771924552","channelId":"144812076039156
+```
+
 ## 2026-11-02 21:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1696,25 +1704,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "value": 500,
 -            "type": "withdraw",
 -            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9"
-```
-
-## 2026-10-29 18:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
-+    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--            "value": 500,
--            "date": "2026/10/06 - 21:19:34",
-+            "receiver_identifier": "cd_garage",
-+            "sender_name": "Jayden Anderson",
-+            "date": "2026/09/16 - 20:15:27",
-+            "value": 500,
-+            "type": "withdraw",
-+            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
-+{"webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"155297109931721
 ```
