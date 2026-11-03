@@ -56327,6 +56327,46 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-03T23:23:02+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77859
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokTuning/config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokTuning/config.lua",
+          "status": "M",
+          "lines": [
+            "-            name        = \"KUROKAI\",\r",
+            "-            jobs        = { \"kurokai\" },\r",
+            "+            name        = \"Midnight Elite\",\r",
+            "+            jobs        = { \"midnight_elite\" },\r",
+            "-            name        = \"KUROKAI\",\r",
+            "-            jobs        = { \"kurokai\" },\r",
+            "+            name        = \"Midnight Elite\",\r",
+            "+            jobs        = { \"midnight_elite\" },\r",
+            "-            name        = \"KUROKAI\",\r",
+            "-            jobs        = { \"kurokai\" },\r",
+            "+            name        = \"Midnight Elite\",\r",
+            "+            jobs        = { \"midnight_elite\" },\r",
+            "-            name        = \"KUROKAI\",\r",
+            "-            jobs        = { \"kurokai\" },\r",
+            "+            name        = \"Midnight Elite\",\r",
+            "+            jobs        = { \"midnight_elite\" },\r"
+          ]
+        }
+      ]
     }
   ]
 }
