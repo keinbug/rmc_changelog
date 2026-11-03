@@ -2,6 +2,51 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 20:23 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[jaksam_scripte]/vehicles_keys/current_config.json`
+```diff
+-{"client":{"lockDrivingVehiclesNPC":false,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"canTargetDrivingNPC
++{"client":{"lockDrivingVehiclesNPC":true,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"allowAutoOpenDriverD
+```
+`~ resources/[selfcode]/rmc_autopilot_taxi/client/taxi.lua`
+```diff
++    SetVehicleNeedsToBeHotwired(veh, false)
++    Entity(veh).state:set('canAlwaysStart', true, true) -- Bypass für vehicles_keys
++            -- Schlüssel-Scripts (z.B. "NPC-Fahrzeuge abschließen") dürfen das Taxi nicht verriegeln
++            if GetVehicleDoorLockStatus(Taxi.vehicle) > 1 then
++                SetVehicleDoorsLocked(Taxi.vehicle, 1)
++                SetVehicleDoorsLockedForAllPlayers(Taxi.vehicle, false)
++            end
++
+```
+`~ resources/[selfcode]/rmc_autopilot_taxi/config.lua`
+```diff
++-- ==============================
++--  Fahrzeugschlüssel-Bypass (jaksam vehicles_keys)
++-- ==============================
++-- Verhindert, dass "Geschlossene Türen von fahrenden NPC-Fahrzeugen" / Hotwiring
++-- das Taxi blockiert: der Fahrgast bekommt temporäre Schlüssel für das Kennzeichen.
++Config.VehicleKeys = {
++    enabled  = true,
++    resource = 'vehicles_keys', -- Ressourcenname des Schlüssel-Scripts
++}
++
+```
+`~ resources/[selfcode]/rmc_autopilot_taxi/server/main.lua`
+```diff
++-- ==============================
++--  Fahrzeugschlüssel (jaksam vehicles_keys)
++-- ==============================
++
++local function keysAvailable()
++    return Config.VehicleKeys and Config.VehicleKeys.enabled
++        and GetResourceState(Config.VehicleKeys.resource) == 'started'
++end
++
++local function giveKeys(src, plate)
+```
+
 ## 2026-11-03 19:23 Uhr
 **+14** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_autopilot_taxi/README.md`
@@ -2104,20 +2149,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
 ```diff
 + Neue Datei
-```
-
-## 2026-10-30 21:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "id": 11,
--            "backupFile": "banlist_20_30_25_10_2026.json",
--            "backupDate": "20_30_25_10_2026",
--            "backupTimestamp": 1792956644
--        },
--        {
--            "id": 11,
--            "backupFile": "banlist_20_32_25_10_2026.json",
--            "backupDate": "20_32_25_10_2026",
--            "backupTimestamp": 1792956769
 ```

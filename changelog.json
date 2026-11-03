@@ -55871,6 +55871,109 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-03T20:23:08+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 4,
+        "deleted": 0,
+        "total": 77875
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[jaksam_scripte]/vehicles_keys/current_config.json",
+        "resources/[selfcode]/rmc_autopilot_taxi/client/taxi.lua",
+        "resources/[selfcode]/rmc_autopilot_taxi/config.lua",
+        "resources/[selfcode]/rmc_autopilot_taxi/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[jaksam_scripte]/vehicles_keys/current_config.json",
+          "status": "M",
+          "lines": [
+            "-{\"client\":{\"lockDrivingVehiclesNPC\":false,\"alarmBlip\":{\"color\":1,\"sprite\":161,\"duration\":15,\"scale\":1},\"completelyDisableWindowDestroy\":false,\"isHotwireRequired\":true,\"use3Dtext\":true,\"vehicleLockAnim\":{\"name\":\"fob_click\",\"duration\":800,\"dict\":\"anim@mp_player_intmenu@key_fob@\"},\"canTargetDrivingNPC",
+            "+{\"client\":{\"lockDrivingVehiclesNPC\":true,\"alarmBlip\":{\"color\":1,\"sprite\":161,\"duration\":15,\"scale\":1},\"completelyDisableWindowDestroy\":false,\"isHotwireRequired\":true,\"use3Dtext\":true,\"vehicleLockAnim\":{\"name\":\"fob_click\",\"duration\":800,\"dict\":\"anim@mp_player_intmenu@key_fob@\"},\"allowAutoOpenDriverD"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_autopilot_taxi/client/taxi.lua",
+          "status": "M",
+          "lines": [
+            "+    SetVehicleNeedsToBeHotwired(veh, false)",
+            "+    Entity(veh).state:set('canAlwaysStart', true, true) -- Bypass für vehicles_keys",
+            "+            -- Schlüssel-Scripts (z.B. \"NPC-Fahrzeuge abschließen\") dürfen das Taxi nicht verriegeln",
+            "+            if GetVehicleDoorLockStatus(Taxi.vehicle) > 1 then",
+            "+                SetVehicleDoorsLocked(Taxi.vehicle, 1)",
+            "+                SetVehicleDoorsLockedForAllPlayers(Taxi.vehicle, false)",
+            "+            end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_autopilot_taxi/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- ==============================",
+            "+--  Fahrzeugschlüssel-Bypass (jaksam vehicles_keys)",
+            "+-- ==============================",
+            "+-- Verhindert, dass \"Geschlossene Türen von fahrenden NPC-Fahrzeugen\" / Hotwiring",
+            "+-- das Taxi blockiert: der Fahrgast bekommt temporäre Schlüssel für das Kennzeichen.",
+            "+Config.VehicleKeys = {",
+            "+    enabled  = true,",
+            "+    resource = 'vehicles_keys', -- Ressourcenname des Schlüssel-Scripts",
+            "+}",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_autopilot_taxi/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+-- ==============================",
+            "+--  Fahrzeugschlüssel (jaksam vehicles_keys)",
+            "+-- ==============================",
+            "+",
+            "+local function keysAvailable()",
+            "+    return Config.VehicleKeys and Config.VehicleKeys.enabled",
+            "+        and GetResourceState(Config.VehicleKeys.resource) == 'started'",
+            "+end",
+            "+",
+            "+local function giveKeys(src, plate)",
+            "+    if not keysAvailable() or not plate then return end",
+            "+    pcall(function()",
+            "+        exports[Config.VehicleKeys.resource]:giveVehicleKeysToPlayerId(src, plate, 'temporary')",
+            "+    end)",
+            "+end",
+            "+",
+            "+local function removeKeys(src, ride)",
+            "+    if not keysAvailable() or not ride or not ride.keysGiven then return end",
+            "+    ride.keysGiven = nil",
+            "+    pcall(function()",
+            "+        exports[Config.VehicleKeys.resource]:removeKeysFromPlayerId(src, ride.plate)",
+            "+    end)",
+            "+end",
+            "+",
+            "-    local ride = rides[source]",
+            "+    local src = source",
+            "+    local ride = rides[src]",
+            "+",
+            "+    -- Schlüssel-Script soll das Taxi nicht wie ein fremdes NPC-Auto behandeln",
+            "+    local veh = ride.netId and NetworkGetEntityFromNetworkId(ride.netId)",
+            "+    if veh and veh ~= 0 and DoesEntityExist(veh) then",
+            "+        Entity(veh).state:set('canAlwaysStart', true, true)",
+            "+    end",
+            "+    giveKeys(src, ride.plate)",
+            "+    ride.keysGiven = true",
+            "+    removeKeys(src, ride)",
+            "+    removeKeys(src, ride)",
+            "+    removeKeys(src, ride)"
+          ]
+        }
+      ]
     }
   ]
 }
