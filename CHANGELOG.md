@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 03:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_name": "cd_garage",
++            "sender_name": "Coco Black",
++            "type": "withdraw",
++            "date": "2026/11/03 - 03:14:08",
++            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "reason": "Fahrzeugrückgabegebühr",
++            "value": 2500,
++            "receiver_identifier": "cd_garage"
++        },
+```
+
 ## 2026-11-03 02:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1670,25 +1686,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "value": 10000,
 +            "date": "2026/10/30 - 00:24:57"
 +        },
-```
-
-## 2026-10-29 23:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--            "sender_name": "Timo Anderson",
--            "reason": "Fahrzeugrückgabegebühr",
--            "value": 500,
--            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "sender_name": "Timo Anderson",
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "value": 500,
--            "sender_name": "Timo Anderson",
--            "reason": "Fahrzeugrückgabegebühr",
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"155297109931721
-+{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.co
 ```
