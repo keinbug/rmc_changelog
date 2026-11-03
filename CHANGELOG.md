@@ -2,6 +2,413 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 04:23 Uhr
+**+0** neu · **~0** geändert · **-101** gelöscht
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/1.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/2.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/3.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/README.txt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/apa_ch2_10_6.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/server.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/sp_manifest.ymt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/MajestyMansionManifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_baselegno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_bbq.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_l.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonnaesterna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cornici.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coso.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cucina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_ymap.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_gazebo.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_lavandino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_libri.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_luce.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolabagno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolavetro.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mobile12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_muroesterno.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piantagenerale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portaentrata_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portagenerale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_props.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_mobile.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_tavolino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room07.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_armadio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_porta.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room09.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10_murales.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room11.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room13.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_armadio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_letto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_scaffale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_tavolino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15_divanetto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_rotonda.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_sassi.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_serranda.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_setsedie.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_shell.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradaesterna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina4.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tappeto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tavololampada.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_terrenoesterno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_texture.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ymap.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ytyp.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_4.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_6.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_critical_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_2.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ba_curtain2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/bh1_36_gatefrm_iref.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_grass_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_land_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire074.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire075.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire109.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire110.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch_chint02_mirror_frame.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/vinewood_hills.ymt`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-03 03:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1670,20 +2077,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.co
 +{"updatedAt":"2026-10-30T09:01:24Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"join":{"channelId":"1448120760391565352","url":"https://discord.
-```
-
-## 2026-10-30 01:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "receiver_identifier": "bank",
-+            "receiver_name": "Geldbörse",
-+            "sender_name": "Akio Kuroda",
-+            "type": "withdraw",
-+            "reason": "Auszahlung vom Bankkonto",
-+            "sender_identifier": "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "value": 10000,
-+            "date": "2026/10/30 - 00:24:57"
-+        },
 ```
