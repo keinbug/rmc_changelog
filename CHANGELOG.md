@@ -2,6 +2,70 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 19:23 Uhr
+**+14** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_autopilot_taxi/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/client/app.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/client/taxi.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/app.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/assets/car.png`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/assets/icon.svg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/assets/marker-car.svg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/assets/marker-dest.svg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/assets/marker-pickup.svg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_autopilot_taxi/ui/style.css`
+```diff
++ Neue Datei
+```
+`~ resources/[jaksam_scripte]/vehicles_keys/current_config.json`
+```diff
+-{"server":{"vehicleAlarmsItems":{"3":"vehicle_alarm_3","2":"vehicle_alarm_2","1":"vehicle_alarm_1","4":"vehicle_alarm_4"},"acePermission":"vehicles_keys","probabilityPoliceAlertNpcStolenVehicles":35,"jobsThatCanInstallAlarms":false,"vehicleTransferContractItemName":"vehicle_transfer_contract"},"sha
++{"client":{"lockDrivingVehiclesNPC":false,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"canTargetDrivingNPC
+```
+
 ## 2026-11-03 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2056,12 +2120,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "backupFile": "banlist_20_32_25_10_2026.json",
 -            "backupDate": "20_32_25_10_2026",
 -            "backupTimestamp": 1792956769
-```
-
-## 2026-10-30 20:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/sits.json`
-```diff
--[{"id":"sit_1791572244_8861","label":"Sit Chair 4","anim":"base","dict":"timetable@ron@ig_3_couch","y":-420.7482,"x":1225.8873,"h":255.6565,"z":68.0417},{"id":"sit_1791572300_6917","label":"Sit Chair 2","anim":"ig_5_p3_base","dict":"timetable@ron@ig_5_p3","y":-419.3795,"x":1226.4694,"h":271.1957,"z
-+[{"x":1225.8873,"id":"sit_1791572244_8861","z":68.0417,"label":"Sit Chair 4","dict":"timetable@ron@ig_3_couch","anim":"base","h":255.6565,"y":-420.7482},{"x":1226.4694,"id":"sit_1791572300_6917","z":68.0817,"label":"Sit Chair 2","dict":"timetable@ron@ig_5_p3","anim":"ig_5_p3_base","h":271.1957,"y":
 ```
