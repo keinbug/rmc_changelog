@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 02:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
+-        {
+-            "date": "2026/11/02 - 10:01:02",
+-            "value": 9183,
+-            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277",
+-            "type": "interest_savings",
+-            "sender_name": "Savings Interest",
+-            "reason": "Savings account interest payment (Period 42)",
+-            "receiver_name": "Savings Account",
+-            "sender_identifier": "bank"
+```
+
 ## 2026-11-03 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1675,33 +1691,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","webhookId":"1552971101741654046","channelId":"155297109931721
 +{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***"},"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.co
-```
-
-## 2026-10-29 21:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupFile": "banlist_21_27_24_10_2026.json",
--            "backupDate": "21_27_24_10_2026",
--            "backupTimestamp": 1792870043
--        },
--        {
--            "backupFile": "banlist_21_29_24_10_2026.json",
--            "backupDate": "21_29_24_10_2026",
--            "id": 11,
--            "backupTimestamp": 1792870168
--        },
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--        {
--            "receiver_name": "cd_garage",
--            "receiver_identifier": "cd_garage",
--            "reason": "Fahrzeugrückgabegebühr",
--            "sender_name": "Jayden Anderson",
--            "date": "2026/09/16 - 20:15:27",
--            "value": 500,
--            "type": "withdraw",
--            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9"
 ```
