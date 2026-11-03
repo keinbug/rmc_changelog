@@ -2,6 +2,146 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 21:23 Uhr
+**+1** neu · **~6** geändert · **-17** gelöscht
+`+ resources/[selfcode]/rmc_tablet/.claude/settings.local.json`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1793649503,
++    "lastBackup": 1793736129,
+-        {
+-            "backupTimestamp": 1793302996,
+-            "backupDate": "20_43_29_10_2026",
+-            "backupFile": "banlist_20_43_29_10_2026.json",
+-            "id": 11
+-        },
+-        {
+-            "backupTimestamp": 1793303121,
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497","channelId":"155738633551230
++{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512
+```
+`~ resources/[selfcode]/rmc_tablet/client.lua`
+```diff
++RegisterNetEvent('rmc_tablet:denied', function()
++    busy = false
++    requestId = requestId + 1
++end)
++
++-- Eigener Befehl mit + davor: taucht nicht im Chat-Vorschlag auf, nur für die Taste.
++RegisterCommand('+rmc_tablet', function()
++    if open then
++        closeTablet()
++    else
+```
+`~ resources/[selfcode]/rmc_tablet/config.lua`
+```diff
++-- Standardtaste zum Öffnen. Spieler können sie unter Einstellungen > Tastenbelegung > FiveM ändern.
++Config.Key = 'F6'
++
++-- Nur diese Jobs dürfen das Tablet öffnen (ESX-Jobname, nicht das Label).
++-- Optional mit Mindest-Rang: ['police'] = 2  -> erst ab Grade 2. true = alle Ränge.
++Config.Jobs = {
++    ['police'] = true,
++    ['ambulance'] = true,
++}
++
+```
+`~ resources/[selfcode]/rmc_tablet/html/app.js`
+```diff
+-  if (event.key === "Escape") postClose();
++  if (event.key === "Escape" || event.key === "F6") {
++    event.preventDefault();
++    postClose();
++  }
+```
+`~ resources/[selfcode]/rmc_tablet/server.lua`
+```diff
++local ESX = nil
++
++local function getESX()
++    if ESX then return ESX end
++    if GetResourceState('es_extended') ~= 'started' then return nil end
++    local ok, obj = pcall(function()
++        return exports['es_extended']:getSharedObject()
++    end)
++    if ok and type(obj) == 'table' then ESX = obj end
++    return ESX
+```
+`− resources/[selfcode]/rmc_halloween/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/client.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/scares.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_halloween/server.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_test_trash/Lang.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_test_trash/client/client.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_test_trash/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-03 20:23 Uhr
 **+0** neu · **~4** geändert · **-0** gelöscht
 `~ resources/[jaksam_scripte]/vehicles_keys/current_config.json`
@@ -2130,23 +2270,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/
 +{"updatedAt":"2026-10-30T23:00:48Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/15529719318
-```
-
-## 2026-10-30 22:23 Uhr
-**+4** neu · **~0** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_test_trash/Lang.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_test_trash/client/client.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_test_trash/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
-```diff
-+ Neue Datei
 ```

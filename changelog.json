@@ -55974,6 +55974,326 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-03T21:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 6,
+        "deleted": 17,
+        "total": 77859
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_tablet/.claude/settings.local.json"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_tablet/client.lua",
+        "resources/[selfcode]/rmc_tablet/config.lua",
+        "resources/[selfcode]/rmc_tablet/html/app.js",
+        "resources/[selfcode]/rmc_tablet/server.lua"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_halloween/README.md",
+        "resources/[selfcode]/rmc_halloween/client.lua",
+        "resources/[selfcode]/rmc_halloween/config.lua",
+        "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+        "resources/[selfcode]/rmc_halloween/html/index.html",
+        "resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3",
+        "resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3",
+        "resources/[selfcode]/rmc_halloween/scares.lua",
+        "resources/[selfcode]/rmc_halloween/server.lua",
+        "resources/[selfcode]/rmc_test_trash/Lang.lua",
+        "resources/[selfcode]/rmc_test_trash/client/client.lua",
+        "resources/[selfcode]/rmc_test_trash/config.lua",
+        "resources/[selfcode]/rmc_test_trash/fxmanifest.lua"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_tablet/.claude/settings.local.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1793649503,",
+            "+    \"lastBackup\": 1793736129,",
+            "-        {",
+            "-            \"backupTimestamp\": 1793302996,",
+            "-            \"backupDate\": \"20_43_29_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_43_29_10_2026.json\",",
+            "-            \"id\": 11",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1793303121,",
+            "-            \"backupDate\": \"20_45_29_10_2026\",",
+            "-            \"backupFile\": \"banlist_20_45_29_10_2026.json\",",
+            "-            \"id\": 11",
+            "-        },",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_55_01_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_20_55_01_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_20_56_02_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_20_56_02_11_2026.json\",",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_00_03_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_00_03_11_2026.json\",",
+            "+            \"backupTimestamp\": 1793736004",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_02_03_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_02_03_11_2026.json\",",
+            "+            \"backupTimestamp\": 1793736129"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"webhookId\":\"1557386337580220497\",\"channelId\":\"155738633551230",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"willkommen\":{\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"channelId\":\"1551161595436990575\",\"webhookId\":\"1551161597853049005\"},\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/client.lua",
+          "status": "M",
+          "lines": [
+            "+RegisterNetEvent('rmc_tablet:denied', function()",
+            "+    busy = false",
+            "+    requestId = requestId + 1",
+            "+end)",
+            "+",
+            "+-- Eigener Befehl mit + davor: taucht nicht im Chat-Vorschlag auf, nur für die Taste.",
+            "+RegisterCommand('+rmc_tablet', function()",
+            "+    if open then",
+            "+        closeTablet()",
+            "+    else",
+            "+        requestTablet()",
+            "+    end",
+            "+end, false)",
+            "+RegisterCommand('-rmc_tablet', function() end, false)",
+            "+",
+            "+",
+            "+-- RegisterKeyMapping('+rmc_tablet', 'Diensttablet öffnen', 'keyboard', Config.Key or 'F6')",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- Standardtaste zum Öffnen. Spieler können sie unter Einstellungen > Tastenbelegung > FiveM ändern.",
+            "+Config.Key = 'F6'",
+            "+",
+            "+-- Nur diese Jobs dürfen das Tablet öffnen (ESX-Jobname, nicht das Label).",
+            "+-- Optional mit Mindest-Rang: ['police'] = 2  -> erst ab Grade 2. true = alle Ränge.",
+            "+Config.Jobs = {",
+            "+    ['police'] = true,",
+            "+    ['ambulance'] = true,",
+            "+}",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/html/app.js",
+          "status": "M",
+          "lines": [
+            "-  if (event.key === \"Escape\") postClose();",
+            "+  if (event.key === \"Escape\" || event.key === \"F6\") {",
+            "+    event.preventDefault();",
+            "+    postClose();",
+            "+  }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_tablet/server.lua",
+          "status": "M",
+          "lines": [
+            "+local ESX = nil",
+            "+",
+            "+local function getESX()",
+            "+    if ESX then return ESX end",
+            "+    if GetResourceState('es_extended') ~= 'started' then return nil end",
+            "+    local ok, obj = pcall(function()",
+            "+        return exports['es_extended']:getSharedObject()",
+            "+    end)",
+            "+    if ok and type(obj) == 'table' then ESX = obj end",
+            "+    return ESX",
+            "+end",
+            "+",
+            "+local function jobAllowed(src)",
+            "+    local jobs = Config.Jobs",
+            "+    if type(jobs) ~= 'table' or next(jobs) == nil then return true end",
+            "+",
+            "+    local esx = getESX()",
+            "+    if not esx then return false end",
+            "+    local xPlayer = esx.GetPlayerFromId(src)",
+            "+    if not xPlayer then return false end",
+            "+",
+            "+    local job = xPlayer.getJob and xPlayer.getJob() or xPlayer.job",
+            "+    if type(job) ~= 'table' or type(job.name) ~= 'string' then return false end",
+            "+",
+            "+    local rule = jobs[job.name]",
+            "+    if rule == true then return true end",
+            "+    if type(rule) == 'number' then",
+            "+        return (tonumber(job.grade) or 0) >= rule",
+            "+    end",
+            "+    return false",
+            "+end",
+            "+",
+            "+    if not jobAllowed(src) then",
+            "+        -- Kein UI, keine Meldung: Client nur still zurücksetzen.",
+            "+        TriggerClientEvent('rmc_tablet:denied', src)",
+            "+        return",
+            "+    end",
+            "+",
+            "-    local ok, ESX = pcall(function()",
+            "-        return exports['es_extended']:getSharedObject()",
+            "-    end)",
+            "-    if not ok or type(ESX) ~= 'table' or type(ESX.RegisterUsableItem) ~= 'function' then return end",
+            "+    local esx = getESX()",
+            "+    if not esx or type(esx.RegisterUsableItem) ~= 'function' then return end",
+            "-    ESX.RegisterUsableItem(Config.Item or 'tablet', function(playerId)",
+            "+    esx.RegisterUsableItem(Config.Item or 'tablet', function(playerId)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/client.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/scares.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_halloween/server.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/Lang.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/client/client.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_test_trash/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
