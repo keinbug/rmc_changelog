@@ -2,6 +2,67 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-04 00:23 Uhr
+**+0** neu · **~6** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/ox_inventory/client.lua`
+```diff
++-- Wegwerfen: Item als Prop in die Hand nehmen und physikalisch wegwerfen
++local discardDefaultProp = `prop_paper_bag_small`
++local discardThrowDict, discardThrowClip = 'anim@heists@narcotics@trash', 'throw_b'
++local discardHolding = false
++
++local function getCamDirection()
++	local rot = GetGameplayCamRot(2)
++	local x, z = math.rad(rot.x), math.rad(rot.z)
++	local num = math.abs(math.cos(x))
++
+```
+`~ resources/[manuell_start]/ox_inventory/locales/de.json`
+```diff
++  "ui_discard": "Wegwerfen",
+-  "component_slot_occupied" : "Der %s Slot dieser Waffe ist bereits belegt",
++  "component_slot_occupied": "Der %s Slot dieser Waffe ist bereits belegt",
+-  "storage": "Kofferraum"
++  "storage": "Kofferraum",
++  "discard_throw": "Wegwerfen",
++  "discard_cancel": "Abbrechen",
++  "discard_pickup": "Aufheben",
++  "discard_picked_up": "aufgehoben"
+```
+`~ resources/[manuell_start]/ox_inventory/locales/en.json`
+```diff
++  "ui_discard": "Discard",
+-  "storage": "Storage"
++  "storage": "Storage",
++  "discard_throw": "Throw away",
++  "discard_cancel": "Cancel",
++  "discard_pickup": "Pick up",
++  "discard_picked_up": "picked up"
+```
+`~ resources/[manuell_start]/ox_inventory/modules/inventory/server.lua`
+```diff
++---Weggeworfene Items, die per ox_target wieder aufgehoben werden koennen.
++---@type table<integer, { name: string, count: number, metadata: table, owner: number, netId: number?, placing: boolean? }>
++local ThrownItems = {}
++local thrownId = 0
++local THROWN_LIFETIME = 10 * 60000 -- nach 10 Minuten verschwindet das Prop samt Item
++
++local function removeThrown(id)
++	local thrown = ThrownItems[id]
++	if not thrown then return end
++
+```
+`~ resources/[manuell_start]/ox_inventory/web/build/assets/index.js`
+```diff
+-`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
++`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512
++{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"
+```
+
 ## 2026-11-03 23:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokTuning/config.lua`
@@ -2228,57 +2289,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -        },
 +        -- Keine Job-Beschränkung - jeder darf den Reparaturkasten nutzen
 +        AllowedJobs = false,
-```
-
-## 2026-10-31 12:23 Uhr
-**+0** neu · **~5** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
-```diff
--                        TR.PutObjectOnGround(obj, coords.z)
-+                        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z
-+                        TR.PutObjectOnGround(obj, gz)
--        { type = 'input', label = 'Name', default = 'Downtown Müll', required = true },
-+    local jobType = input[1]
-+    local spec = JobTypes.Get(jobType)
-+    local autoName = ('Minijob - %s'):format(spec and spec.label or jobType)
-+
--        label = input[1],
--        type = input[2],
-```
-`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
-```diff
-+    PlaceObjectOnGroundProperly(entity)
-+    local finalCoords = GetEntityCoords(entity)
-+    SetEntityCoordsNoOffset(entity, finalCoords.x, finalCoords.y, finalCoords.z, false, false, false)
-```
-`~ resources/[selfcode]/rmc_minijobs/client/placement.lua`
-```diff
--        local obj = CreateObjectNoOffset(model, coords.x, coords.y, coords.z, false, false, false)
-+        local gz = TR.FindGroundZ(coords.x, coords.y, coords.z, 200) or coords.z
-+        local lift = TR.ModelBottomOffset(model)
-+        local obj = CreateObjectNoOffset(model, coords.x, coords.y, gz + lift, false, false, false)
-+
-+            local coords = GetEntityCoords(ghost)
-+            local arrowZ = coords.z + 2.5
-+            DrawMarker(42, coords.x, coords.y, arrowZ, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.5, 0.5, 255, 165, 0, 200, false, false, 2, false, nil, nil, false)
--        else
--            DrawMarker(1, hit.x, hit.y, gz - 0.95, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.7, 0.28, 40, 140, 255, 160, false, false, 2, false, nil, nil, false)
-```
-`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
-```diff
-+local plantMarkers = {}
-+    plantMarkers = {}
--    if asg.ready then
--        local job = Utils.FindMinijob(asg.jobId)
--        if job and job.company and Utils.HasCoords(job.company.coords) then
--            addPointBlip({ coords = job.company.coords, label = 'Zentrale' }, spec, true)
--        end
--    end
--    exports.ox_target:addLocalEntity(entity, {
--        {
-```
-`~ resources/[selfcode]/rmc_minijobs/shared/types.lua`
-```diff
--            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 0.0) },
-+            prop = { model = `prop_wateringcan`, bone = 28422, pos = vec3(0.05, 0.0, -0.05), rot = vec3(0.0, 0.0, 90.0) },
 ```
