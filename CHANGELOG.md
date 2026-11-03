@@ -2,6 +2,17 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-03 22:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ server.cfg`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+`~ server.cfg.bkp`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+
 ## 2026-11-03 21:23 Uhr
 **+1** neu · **~6** geändert · **-17** gelöscht
 `+ resources/[selfcode]/rmc_tablet/.claude/settings.local.json`
@@ -2262,12 +2273,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-10-30T23:00:48Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/15529719318
 +{"categoryId":"1551161549018759170","webhooks":{"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***"
-```
-
-## 2026-10-31 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***"},"sperrzone":{"channelId":"1552971110457286766","webhookId":"1552971115209564220","url":"https://discord.com/
-+{"updatedAt":"2026-10-30T23:00:48Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284","channelId":"1551520126367572008"},"basicneeds":{"url":"https://discord.com/api/webhooks/15529719318
 ```
