@@ -58022,6 +58022,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-04T23:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"value\": 50000,",
+            "+            \"date\": \"2026/11/04 - 22:40:46\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"receiver_name\": \"Mellie Anderson\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }

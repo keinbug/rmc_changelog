@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-04 23:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_identifier": "char1:95e98569cca18ee079f5fe27ab54152ede42f277",
++            "value": 50000,
++            "date": "2026/11/04 - 22:40:46",
++            "sender_name": "Geldbörse",
++            "reason": "Einzahlung auf Bankkonto",
++            "sender_identifier": "bank",
++            "type": "deposit",
++            "receiver_name": "Mellie Anderson"
++        },
+```
+
 ## 2026-11-04 21:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -2396,63 +2412,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tstudio]/tstudio_zaddon_halloween/ymap_loader.lua`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-31 22:23 Uhr
-**+0** neu · **~5** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
-```diff
-+        position = 'middle-left',
-+        { type = 'checkbox', label = 'Fahrzeug erforderlich', default = job.vehicle and job.vehicle.required or false },
-+        { type = 'checkbox', label = 'Teamplay erlauben', default = job.allowTeamplay or false },
--        requiredJob = input[13],
-+        requiredJob = input[15],
-+        allowTeamplay = input[7],
--        vehicle = { model = input[4], platePrefix = tostring(input[5] or 'JOB'):sub(1, 6) },
--        payment = { min = input[6], max = input[7], perPoint = input[8], bonus = input[9] },
-+        vehicle = { model = input[4], platePrefix = tostring(input[5] or 'JOB'):sub(1, 6), required = input[6] },
-+        payment = { min = input[8], max = input[9], perPoint = input[10], bonus = input[11] },
-```
-`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
-```diff
-+RegisterNetEvent('minijob:client:teamInvite', function(inviterId, inviterName, jobId, jobLabel)
-+    local alert = lib.alertDialog({
-+        header = 'Team-Einladung',
-+        content = ('%s möchte dich einladen für den Job: %s'):format(inviterName, jobLabel),
-+        centered = true,
-+        cancel = true,
-+    })
-+    if alert == 'confirm' then
-+        lib.callback.await('minijob:server:acceptInvite', false, inviterId, jobId)
-+    end
-```
-`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
-```diff
-+    team = { id = nil, members = {} },
-```
-`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
-```diff
-+CreateThread(function()
-+    while true do
-+        local asg = TR.State.assignment
-+        if not asg then
-+            Wait(700)
-+        else
-+            local job = Utils.FindMinijob(asg.jobId)
-+            if job and job.vehicle and job.vehicle.required then
-+                local playerPed = PlayerPedId()
-+                if IsPedInAnyVehicle(playerPed, false) then
-```
-`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
-```diff
-+        allowTeamplay = false,
-+            required = false,
-+    if patch.allowTeamplay ~= nil then job.allowTeamplay = patch.allowTeamplay == true end
-+
-+local teams = {}
-+
-+lib.callback.register('minijob:server:invitePlayer', function(source, targetId, jobId)
-+    local job = Utils.FindMinijob(jobId)
-+    if not job or not job.allowTeamplay then
-+        return { ok = false, message = 'Teamplay ist für diesen Job nicht aktiviert.' }
 ```
