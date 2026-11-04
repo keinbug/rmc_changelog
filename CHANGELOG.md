@@ -2,6 +2,566 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-04 19:23 Uhr
+**+0** neu · **~1** geändert · **-138** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T17:00:47Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.c
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T17:27:32Z","webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"15511615780
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/_johanni_tp_manifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_lobby_col.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_top_col.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ybn/johanni_skybar_wrldcol.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ycd/clip@johanni_tp.ycd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_barstool01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_beach_lounger.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_candle.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_chair01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_desk02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_dj.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door02_l.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_door03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_doorframe01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_barstool01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_beach_lounger.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_palm_light.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signframe.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_signtp.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_sofa01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_table02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ext_torch.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_ladder.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_light01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_lobby_column.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_palm_light.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_seatdivider.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_sofa02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_speaker.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_stool01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_table03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_asset_tv.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_ext_buildi_logo.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_glass.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_l_shell_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_lightproxy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_neons.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_det.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_lobby_shell_lod.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det07_neons.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_det08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_lightproxy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_palm04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r1_water.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_det05_neons.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_lightproxy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r2_mirror01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det04_neons.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det05_spheres.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_det06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_r3_lightproxy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det07.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det09.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det10.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_det11.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ydr/johanni_skybar_rooftop_lightproxy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_custom_occl.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_ext.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_lod_milo_.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lobby_milo_.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_lod_milo_.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_milo_.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_map.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ymap/johanni_skybar_rooftop_props.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_lod_tex.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytd/johanni_skybar_mlo_tex.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_assets.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_lobby_mlo.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_mlo_lod.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/custom/ytyp/johanni_skybar_rooftop.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_build006_decals.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/dt1_16_dt1_emissive_dt1_16d.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_long_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_16_strm_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_occl_04.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_long_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hei_dt1_rd1_strm_6.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/hi@dt1_16_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_tropical_heights/stream/vanilla/ma@dt1_16_0.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_18_19_24_25_26_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_6_21_emissive_proxy_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_lod_slod3_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_props_combo0505_slod_children.ydd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_3.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_8.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_cablemesh115623_thvy.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/dt1_rd1_r1_28.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_lod.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_occl_05.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_critical_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_long_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_5.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hei_dt1_rd1_strm_6.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hi@dt1_rd1_9.ybn`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-04 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1901,45 +2461,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[manuell_start]/ox_inventory/web/images/metallbarren.png`
 ```diff
 - Gelöscht
-```
-
-## 2026-10-31 20:23 Uhr
-**+4** neu · **~3** geändert · **-0** gelöscht
-`+ resources/[manuell_start]/ox_inventory/web/images/mechanikteile.png`
-```diff
-+ Neue Datei
-```
-`+ resources/[manuell_start]/ox_inventory/web/images/metallteile.png`
-```diff
-+ Neue Datei
-```
-`+ resources/[manuell_start]/ox_inventory/web/images/verbundmaterial.png`
-```diff
-+ Neue Datei
-```
-`+ resources/[manuell_start]/ox_inventory/web/images/waffenplane.png`
-```diff
-+ Neue Datei
-```
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
--	["waffengehause"] = {
--		label = "Waffengehäuse",
--		weight = 300,
-+	--- NEUE WAFFENBAUTEILE---
-+
-+	["metallteile"] = {
-+		label = "Metallteile",
-+		weight = 500,
--	["waffenlauf"] = {
--		label = "Waffenlauf",
-```
-`~ resources/[manuell_start]/ox_inventory/web/images/metallbarren.png`
-```diff
-(Binärdatei / kein Text-Diff)
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-10-31T17:45:17Z","categoryId":"1551161549018759170","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","url":"https://discord.com/api/webhooks/1552971083731181709/***","webhookId":"1552971083731181709"},"lager":{"channelId":"1551161580324921455","url":"https://discord
-+{"webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789","channelId":"1512475286229356617"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194","channelId":"1557386329686413342"}
 ```
