@@ -2,6 +2,58 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-04 01:22 Uhr
+**+0** neu · **~5** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/ox_inventory/client.lua`
+```diff
++-- Platzieren: Vorschau-Prop frei positionieren und genau dort abstellen
++local PLACE_MAX_DISTANCE = 4.0
++
++RegisterNUICallback('placeItem', function(data, cb)
++	cb(1)
++
++	if usingItem or discardHolding then return end
++
++	local item = PlayerData.inventory[data.slot]
++	if not item then return end
+```
+`~ resources/[manuell_start]/ox_inventory/locales/de.json`
+```diff
+-  "discard_picked_up": "aufgehoben"
++  "discard_picked_up": "aufgehoben",
++  "ui_place": "Platzieren",
++  "place_confirm": "Platzieren",
++  "place_cancel": "Abbrechen",
++  "place_rotate": "Drehen",
++  "place_height": "Höhe",
++  "place_fine": "Feinjustierung",
++  "place_ground": "Am Boden ausrichten",
++  "place_too_far": "Zu weit entfernt"
+```
+`~ resources/[manuell_start]/ox_inventory/locales/en.json`
+```diff
+-  "discard_picked_up": "picked up"
++  "discard_picked_up": "picked up",
++  "ui_place": "Place",
++  "place_confirm": "Place",
++  "place_cancel": "Cancel",
++  "place_rotate": "Rotate",
++  "place_height": "Height",
++  "place_fine": "Fine adjust",
++  "place_ground": "Snap to ground",
++  "place_too_far": "Too far away"
+```
+`~ resources/[manuell_start]/ox_inventory/web/build/assets/index.js`
+```diff
+-`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
++`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"
++{"webhooks":{"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"
+```
+
 ## 2026-11-04 00:23 Uhr
 **+0** neu · **~6** geändert · **-0** gelöscht
 `~ resources/[manuell_start]/ox_inventory/client.lua`
@@ -2275,18 +2327,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"adminjail":{"channelId":"1551161575690211428","url":"https://discord.com/api/webhooks/1551161578009796630/***"
 +{"updatedAt":"2026-10-31T17:19:30Z","categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","url":"https://discord.com/api/webhooks/1557386349395583076/***","webhookId":"1557386349395583076"},"poster":{"channelId":"1560007812342489120","url":"https://discor
-```
-
-## 2026-10-31 14:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
--        -- Nur diese ESX-Jobs dürfen den Reparaturkasten nutzen
--        AllowedJobs = {
--            police = true,
--            ambulance = true,
--            mechanic = true,
--        },
-+        -- Keine Job-Beschränkung - jeder darf den Reparaturkasten nutzen
-+        AllowedJobs = false,
 ```

@@ -56566,6 +56566,142 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-04T01:22:31+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 5,
+        "deleted": 0,
+        "total": 77859
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/client.lua",
+        "resources/[manuell_start]/ox_inventory/locales/de.json",
+        "resources/[manuell_start]/ox_inventory/locales/en.json",
+        "resources/[manuell_start]/ox_inventory/web/build/assets/index.js",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/client.lua",
+          "status": "M",
+          "lines": [
+            "+-- Platzieren: Vorschau-Prop frei positionieren und genau dort abstellen",
+            "+local PLACE_MAX_DISTANCE = 4.0",
+            "+",
+            "+RegisterNUICallback('placeItem', function(data, cb)",
+            "+\tcb(1)",
+            "+",
+            "+\tif usingItem or discardHolding then return end",
+            "+",
+            "+\tlocal item = PlayerData.inventory[data.slot]",
+            "+\tif not item then return end",
+            "+",
+            "+\tlocal count = tonumber(data.count) or 0",
+            "+\tif count <= 0 or count > item.count then count = item.count end",
+            "+",
+            "+\tclient.closeInventory()",
+            "+",
+            "+\tif currentWeapon and currentWeapon.slot == item.slot then",
+            "+\t\tcurrentWeapon = Weapon.Disarm(currentWeapon, true)",
+            "+\tend",
+            "+",
+            "+\tdiscardHolding = true",
+            "+\tLocalPlayer.state:set('invBusy', true, false)",
+            "+",
+            "+\tlocal model = getDiscardModel(item)",
+            "+",
+            "+\tif not pcall(lib.requestModel, model) then",
+            "+\t\tmodel = discardDefaultProp",
+            "+\t\tlib.requestModel(model)",
+            "+\tend",
+            "+",
+            "+\tlocal start = GetEntityCoords(playerPed)",
+            "+\tlocal ghost = CreateObject(model, start.x, start.y, start.z, false, false, false)",
+            "+\tlocal minDim = GetModelDimensions(model)",
+            "+",
+            "+\tSetEntityCollision(ghost, false, false)",
+            "+\tFreezeEntityPosition(ghost, true)",
+            "+\tSetEntityAlpha(ghost, 170, false)",
+            "+\tSetEntityDrawOutline(ghost, true)",
+            "+\tSetEntityDrawOutlineShader(1)",
+            "+",
+            "+\tlocal heading = GetEntityHeading(playerPed)",
+            "+\tlocal height = 0.0",
+            "+\tlocal pos, valid = start, false",
+            "+\tlocal confirmed = false",
+            "+",
+            "+\tlib.showTextUI(table.concat({",
+            "+\t\t('[E] %s'):format(locale('place_confirm')),",
+            "+\t\t('[X] %s'):format(locale('place_cancel')),",
+            "+\t\t('[Mausrad / ← →] %s'):format(locale('place_rotate')),",
+            "+\t\t('[↑ ↓] %s'):format(locale('place_height')),",
+            "+\t\t('[Shift] %s'):format(locale('place_fine')),",
+            "+\t}, '  \\n'), { position = 'left-center' })",
+            "+",
+            "+\twhile true do",
+            "+\t\tDisableControlAction(0, 24, true)  -- Angriff",
+            "+\t\tDisableControlAction(0, 25, true)  -- Zielen",
+            "+\t\tDisableControlAction(0, 37, true)  -- Waffenrad",
+            "+\t\tDisableControlAction(0, 14, true)  -- Mausrad hoch (Waffe wechseln)",
+            "+\t\tDisableControlAction(0, 15, true)  -- Mausrad runter",
+            "+\t\tDisableControlAction(0, 16, true)"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/de.json",
+          "status": "M",
+          "lines": [
+            "-  \"discard_picked_up\": \"aufgehoben\"",
+            "+  \"discard_picked_up\": \"aufgehoben\",",
+            "+  \"ui_place\": \"Platzieren\",",
+            "+  \"place_confirm\": \"Platzieren\",",
+            "+  \"place_cancel\": \"Abbrechen\",",
+            "+  \"place_rotate\": \"Drehen\",",
+            "+  \"place_height\": \"Höhe\",",
+            "+  \"place_fine\": \"Feinjustierung\",",
+            "+  \"place_ground\": \"Am Boden ausrichten\",",
+            "+  \"place_too_far\": \"Zu weit entfernt\""
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/en.json",
+          "status": "M",
+          "lines": [
+            "-  \"discard_picked_up\": \"picked up\"",
+            "+  \"discard_picked_up\": \"picked up\",",
+            "+  \"ui_place\": \"Place\",",
+            "+  \"place_confirm\": \"Place\",",
+            "+  \"place_cancel\": \"Cancel\",",
+            "+  \"place_rotate\": \"Rotate\",",
+            "+  \"place_height\": \"Height\",",
+            "+  \"place_fine\": \"Fine adjust\",",
+            "+  \"place_ground\": \"Snap to ground\",",
+            "+  \"place_too_far\": \"Too far away\""
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/build/assets/index.js",
+          "status": "M",
+          "lines": [
+            "-`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof",
+            "+`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\"},\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"webhookId\":\"1552971123233394708\",\"channelId\":\"1552971120460828763\"",
+            "+{\"webhooks\":{\"join\":{\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.com/api/webhooks/1552971091771924552/***\",\"channelId\":\"1448120760391565352\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\"},\""
+          ]
+        }
+      ]
     }
   ]
 }
