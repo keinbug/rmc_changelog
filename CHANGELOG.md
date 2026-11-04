@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-04 21:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1793736129,
++    "lastBackup": 1793822739,
+-            "backupTimestamp": 1793389622,
+-            "backupDate": "20_47_30_10_2026",
+-            "backupFile": "banlist_20_47_30_10_2026.json",
+-            "id": 11
+-        },
+-        {
+-            "backupTimestamp": 1793389747,
+-            "backupDate": "20_49_30_10_2026",
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
++    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++        {
++            "receiver_name": "cd_garage",
++            "date": "2026/11/03 - 03:14:08",
++            "receiver_identifier": "cd_garage",
++            "sender_name": "Coco Black",
++            "value": 2500,
++            "type": "withdraw",
++            "reason": "Fahrzeugrückgabegebühr",
+```
+
 ## 2026-11-04 19:23 Uhr
 **+0** neu · **~1** geändert · **-138** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2426,39 +2455,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    local job = Utils.FindMinijob(jobId)
 +    if not job or not job.allowTeamplay then
 +        return { ok = false, message = 'Teamplay ist für diesen Job nicht aktiviert.' }
-```
-
-## 2026-10-31 21:23 Uhr
-**+0** neu · **~3** geändert · **-1** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
-+    "lastBackup": 1793476361,
--        {
--            "backupFile": "banlist_20_34_26_10_2026.json",
--            "backupDate": "20_34_26_10_2026",
--            "id": 11,
--            "backupTimestamp": 1793043270
--        },
--        {
--            "backupFile": "banlist_20_36_26_10_2026.json",
--            "backupDate": "20_36_26_10_2026",
-```
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
--	["metallbarren"] = {
--		label = "Metallbarren",
--		weight = 2500,
--		stack = true,
--		close = true,
--	},	
--
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","webhookId":"1512475306554953789","channelId":"1512475286229356617"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194","channelId":"1557386329686413342"}
-+{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","webhookId":"1551161592467423353","channelId":"1551161585614061618"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"15529710
-```
-`− resources/[manuell_start]/ox_inventory/web/images/metallbarren.png`
-```diff
-- Gelöscht
 ```
