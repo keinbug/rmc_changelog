@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-05 21:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1793822739,
+-        {
+-            "backupDate": "20_50_31_10_2026",
+-            "backupTimestamp": 1793476236,
+-            "backupFile": "banlist_20_50_31_10_2026.json",
+-            "id": 11
+-        },
+-        {
+-            "backupDate": "20_52_31_10_2026",
+-            "backupTimestamp": 1793476361,
+```
+
 ## 2026-11-05 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1736,12 +1752,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            TriggerClientEvent('minijob:client:syncAssignment', memberId, assignment)
 +        end
 +    end
-```
-
-## 2026-11-01 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"146755634349264
-+{"webhooks":{"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816","channelId":"1557386352226598913"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439
 ```
