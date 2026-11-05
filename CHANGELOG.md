@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-05 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"ho
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T09:01:13Z","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","c
+```
+
 ## 2026-11-05 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1740,20 +1748,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ resources/[manuell_start]/ox_inventory/data/shops.lua`
 ```diff
 -            { name = 'liquid', price = 9 },
-```
-
-## 2026-11-01 01:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokTuning/config.lua`
-```diff
--            name        = "Kanzaki Tuning", --1
-+            name        = "Benny Tuning", --1
--            name        = "Kanzaki Tuning",--2
-+            name        = "Benny Tuning",--2
--            name        = "Kanzaki Tuning",--- 3
-+            name        = "Benny Tuning",--- 3
--            name        = "Kanzaki Tuning",--Heli/LKW
-+            name        = "Benny Tuning",--Heli/LKW
--      },       
-+      },
 ```
