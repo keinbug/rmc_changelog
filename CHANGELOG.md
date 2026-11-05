@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-05 18:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T09:01:13Z","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","c
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T17:01:25Z","webhooks":{"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"troll":{"channelId":"1552971103910236172","webhookId":"15529711075004
+```
+
 ## 2026-11-05 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1736,16 +1744,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/***","channelId":"1557386329686413342","webhookId":"1557386332483887194"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***","channelId":"146755634349264
 +{"webhooks":{"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816","channelId":"1557386352226598913"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439
-```
-
-## 2026-11-01 02:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
--		stack = false,
-+		stack = true,
-```
-`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
-```diff
--            { name = 'liquid', price = 9 },
 ```
