@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-06 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T17:01:25Z","webhooks":{"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"troll":{"channelId":"1552971103910236172","webhookId":"15529711075004
++{"updatedAt":"2026-11-05T23:00:34Z","categoryId":"1551161549018759170","webhooks":{"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://disc
+```
+
 ## 2026-11-05 21:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1706,50 +1714,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"esx_paycheck":{"url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357381533816","channelId":"1557386352226598913"},"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652","channelId":"1551161570439
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-01T17:00:56Z","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
-```
-
-## 2026-11-01 14:22 Uhr
-**+0** neu · **~4** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
-```diff
-+RegisterNetEvent('minijob:client:syncAssignment', function(assignment)
-+    if assignment then
-+        TR.State.assignment = assignment
-+        if TR.OnAssignmentUpdate then TR.OnAssignmentUpdate() end
-+    end
-+end)
-+
-```
-`~ resources/[selfcode]/rmc_minijobs/client/jobs.lua`
-```diff
-+    local job = Utils.FindMinijob(jobId)
-+
-+    if job and job.allowTeamplay then
-+        exports.ox_target:addLocalEntity(ped, {
-+            {
-+                name = 'mj_invite_' .. jobId,
-+                icon = 'fa-solid fa-users',
-+                label = 'Team einladen',
-+                distance = 2.2,
-+                onSelect = function()
-```
-`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
-```diff
-+
-+    if TR.State.team and TR.State.team.id then
-+        lib.callback.await('minijob:server:syncAssignment', false, result.assignment)
-+    end
-```
-`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
-```diff
-+
-+lib.callback.register('minijob:server:syncAssignment', function(source, assignment)
-+    local teamId = TR.State.team and TR.State.team.id
-+    if not teamId or not teams[teamId] then return end
-+
-+    for memberId in pairs(teams[teamId].members) do
-+        if memberId ~= source then
-+            TriggerClientEvent('minijob:client:syncAssignment', memberId, assignment)
-+        end
-+    end
 ```
