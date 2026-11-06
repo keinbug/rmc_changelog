@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-06 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-06T09:00:50Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887
++{"webhooks":{"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/*
+```
+
 ## 2026-11-06 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1698,20 +1706,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    print('[Minijob Server] Konvertierte Target: ' .. targetId)
 +
 +    print('[Minijob Server] Sende Einladung von ' .. source .. ' (' .. inviter .. ') an ' .. targetId .. ' für Job ' .. jobId)
-```
-
-## 2026-11-01 21:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1793476361,
--        {
--            "backupFile": "banlist_20_36_27_10_2026.json",
--            "backupDate": "20_36_27_10_2026",
--            "id": 11,
--            "backupTimestamp": 1793129808
--        },
--        {
--            "backupFile": "banlist_20_38_27_10_2026.json",
--            "backupDate": "20_38_27_10_2026",
 ```
