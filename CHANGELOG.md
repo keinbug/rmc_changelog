@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-07 00:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/*
++{"updatedAt":"2026-11-06T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971
+```
+
 ## 2026-11-06 21:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1598,85 +1606,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"bell":{"webhookId":"1471556835994767400","channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/ap
 +{"updatedAt":"2026-11-02T09:01:18Z","webhooks":{"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/
-```
-
-## 2026-11-02 00:23 Uhr
-**+0** neu · **~6** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_minijobs/client/deliver.lua`
-```diff
--TR = TR or {}
--
--local carryProp = 0
--local carryGen = 0
--local pointEntities = {}
--local takingPizza = false
--local handingPizza = false
--
--local function carrySpec()
--    local asg = TR.State.assignment
-```
-`~ resources/[selfcode]/rmc_minijobs/client/interactions.lua`
-```diff
--TR = TR or {}
--TR.ZoneMeta = TR.ZoneMeta or {}
--
--local pendingInvite = nil
--
--CreateThread(function()
--    Wait(1000)
--    print('[Minijob] Team-Event-Handler registriert')
--end)
--
-```
-`~ resources/[selfcode]/rmc_minijobs/client/jobs.lua`
-```diff
--TR = TR or {}
--
--local function applyResult(result)
--    if not result then return false end
--    if result.config then TR.ApplyLiveConfig(result.config) end
--    if result.assignment then
--        TR.State.assignment = result.assignment
--        if TR.OnAssignmentUpdate then TR.OnAssignmentUpdate() end
--    end
--    if result.dutyJobId ~= nil then TR.State.dutyJobId = result.dutyJobId end
-```
-`~ resources/[selfcode]/rmc_minijobs/client/runner.lua`
-```diff
--TR = TR or {}
--
--local asgEntities = {}
--local worldTargets = {}
--local asgZones = {}
--local asgBlips = {}
--local spawnedPointIds = {}
--local snappedNear = {}
--local plantMarkers = {}
--local STREAM_IN = 80.0
-```
-`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
-```diff
--TR = TR or {}
--
--local RANK_LOOKUP = {
--    owner = true, inhaber = true, superadmin = true, admin = true, god = true,
--    management = true, leitung = true, projektleiter = true, projektleitung = true,
--}
--
--local function normalizeRank(value)
--    if value == nil then return '' end
--    if type(value) == 'table' then value = value.name or value[1] end
-```
-`~ resources/[selfcode]/rmc_minijobs/server/jobs.lua`
-```diff
--TR = TR or {}
--TR.Duty = {}
--TR.Assignments = {}
--TR.SourceMap = {}
--TR.DutyVehicle = {}
--TR.Cooldowns = {}
--TR.ActionStamp = {}
--TR.PaperStock = {}
--
--local function nowMs()
 ```
