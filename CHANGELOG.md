@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-07 03:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++    "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
+-            "receiver_name": "cd_garage",
+-            "date": "2026/11/03 - 03:14:08",
+-            "receiver_identifier": "cd_garage",
+-            "sender_name": "Coco Black",
+-            "value": 2500,
++            "sender_name": "Akio Kuroda",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-06T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971
++{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
+```
+
 ## 2026-11-07 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1585,25 +1606,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-02T09:01:18Z","webhooks":{"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/
 +{"updatedAt":"2026-11-02T17:01:30Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"147155683599476740
-```
-
-## 2026-11-02 10:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
-+    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
--            "receiver_identifier": "bank",
--            "sender_name": "Bonnie Parker",
--            "reason": "Auszahlung vom Bankkonto",
--            "type": "withdraw",
--            "date": "2026/10/28 - 01:26:09",
--            "value": 5000,
--            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
--            "receiver_name": "Geldbörse"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"bell":{"webhookId":"1471556835994767400","channelId":"1471556817061544068","url":"https://discord.com/api/webhooks/1471556835994767400/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/ap
-+{"updatedAt":"2026-11-02T09:01:18Z","webhooks":{"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/
 ```

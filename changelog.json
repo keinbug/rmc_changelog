@@ -58374,6 +58374,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-07T03:23:05+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "+    \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"date\": \"2026/11/03 - 03:14:08\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_name\": \"Coco Black\",",
+            "-            \"value\": 2500,",
+            "+            \"sender_name\": \"Akio Kuroda\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"value\": 10000,",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"date\": \"2026/10/30 - 00:24:57\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"date\": \"2026/11/03 - 01:44:14\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"sender_name\": \"Coco Akimoto\",",
+            "-            \"value\": 21920,",
+            "-            \"type\": \"withdraw\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"type\": \"deposit\",",
+            "+            \"value\": 16000,",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Akio Kuroda\",",
+            "+            \"receiver_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/10/29 - 23:22:18\",",
+            "+            \"reason\": \"Einzahlung auf Kartenkonto\"",
+            "+            \"sender_name\": \"Akio Kuroda\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 10000,",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "-            \"date\": \"2026/11/03 - 01:44:06\",",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"sender_name\": \"Coco Akimoto\",",
+            "-            \"value\": 300,",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\"",
+            "+            \"date\": \"2026/10/29 - 23:17:22\",",
+            "+            \"reason\": \"Auszahlung vom Kartenkonto\"",
+            "-            \"receiver_name\": \"Tatsuya Lee\",",
+            "-            \"date\": \"2026/10/24 - 23:06:30\",",
+            "-            \"receiver_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"value\": 5782,",
+            "-            \"type\": \"deposit\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"sender_name\": \"Akio Kuroda\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 10000,",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"receiver_identifier\": \"bank\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-06T23:01:09Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\"},\"einreise\":{\"webhookId\":\"1552971088328392714\",\"channelId\":\"1552971",
+            "+{\"updatedAt\":\"2026-11-07T01:30:04Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"staff\":{\"url\":\"https://discord.com/api/webhooks/1552971123233394708/***\",\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\","
+          ]
+        }
+      ]
     }
   ]
 }
