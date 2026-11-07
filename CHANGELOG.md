@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-07 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
++{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
+```
+
 ## 2026-11-07 03:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1598,12 +1606,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "backupFile": "banlist_20_41_28_10_2026.json",
 -            "backupDate": "20_41_28_10_2026",
 -            "backupTimestamp": 1793216495,
-```
-
-## 2026-11-02 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-02T09:01:18Z","webhooks":{"default":{"channelId":"1551161550096699392","url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269"},"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/
-+{"updatedAt":"2026-11-02T17:01:30Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"147155683599476740
 ```
