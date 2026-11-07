@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-07 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
++{"updatedAt":"2026-11-07T17:00:39Z","categoryId":"1551161549018759170","webhooks":{"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/
+```
+
 ## 2026-11-07 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1590,20 +1598,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-02T17:01:30Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"147155683599476740
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-02T23:00:39Z","webhooks":{"esx_test":{"webhookId":"1557386332483887194","channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***"},"join":{"webhookId":"1552971091771924552","channelId":"144812076039156
-```
-
-## 2026-11-02 21:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
-+    "lastBackup": 1793649503,
--            "backupFile": "banlist_20_39_28_10_2026.json",
--            "backupDate": "20_39_28_10_2026",
--            "backupTimestamp": 1793216370,
--            "id": 11
--        },
--        {
--            "backupFile": "banlist_20_41_28_10_2026.json",
--            "backupDate": "20_41_28_10_2026",
--            "backupTimestamp": 1793216495,
 ```
