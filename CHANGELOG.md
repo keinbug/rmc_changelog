@@ -2,6 +2,26 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-07 22:23 Uhr
+**+1** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_07_11_2026.json`
+```diff
++ Neue Datei
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "reason": "Auszahlung vom Kartenkonto",
++            "date": "2026/11/07 - 21:42:40",
++            "receiver_identifier": "bank",
++            "value": 2000,
++            "sender_name": "Rafael Sanchez",
++            "receiver_name": "Geldbörse",
++            "sender_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
++            "type": "withdraw"
++        },
+```
+
 ## 2026-11-07 21:23 Uhr
 **+0** neu · **~3** geändert · **-1** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1612,20 +1632,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "value": 2500,
 +            "receiver_identifier": "cd_garage"
 +        },
-```
-
-## 2026-11-03 02:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
--        {
--            "date": "2026/11/02 - 10:01:02",
--            "value": 9183,
--            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277",
--            "type": "interest_savings",
--            "sender_name": "Savings Interest",
--            "reason": "Savings account interest payment (Period 42)",
--            "receiver_name": "Savings Account",
--            "sender_identifier": "bank"
 ```

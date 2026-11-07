@@ -58686,6 +58686,49 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-07T22:23:11+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_07_11_2026.json"
+      ],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_07_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Auszahlung vom Kartenkonto\",",
+            "+            \"date\": \"2026/11/07 - 21:42:40\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"value\": 2000,",
+            "+            \"sender_name\": \"Rafael Sanchez\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"sender_identifier\": \"char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"type\": \"withdraw\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
