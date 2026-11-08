@@ -2,6 +2,128 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-08 20:18 Uhr
+**+0** neu · **~11** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_boom/Config.lua`
+```diff
+-Config.itemName = 'boombox' --You need to had this item created in your config or database
+-Config.KeyAccessUi = 38
+-Config.KeyDeleteSpeaker = 194
+-Config.KeyToMove = 311
+-Config.KeyToPlaceSpeaker = 191
+-Config.KeyToChangeAnim = 311
+-Config.KeyToCarry = 47 -- G
+-Config.KeyToLink = 74 -- H
++Config.itemName = 'boombox' -- Legacy / Fallback (= große Box). Items müssen in DB/Inventory existieren!
++Config.KeyAccessUi = 38        -- E
+```
+`~ resources/[selfcode]/rmc_boom/client/client.lua`
+```diff
++local movingKind = 'small'
++local placingMovingId = -1
++local trunkVeh = 0
++local hasLargeItem = false
++local nextItemCheck = 0
++local nearSpeakerPromptAt = 0
++
++local function boxCfg(kind)
++    return Config.Box(kind)
++end
+```
+`~ resources/[selfcode]/rmc_boom/server/server.lua`
+```diff
+-local function HasItem(src)
++local function BoxCfg(kind)
++    return Config.Box(kind)
++end
++
++local function KindOf(s)
++    return (s and s.kind) or 'large'
++end
++
++local function ItemOf(kind)
+```
+`~ resources/[selfcode]/rmc_boom/server/server_edit.lua`
+```diff
+-function DeleteItem(src)
++function DeleteItem(src, item)
++    item = item or Config.itemName
+-        Player.Functions.RemoveItem(Config.itemName, 1)
++        Player.Functions.RemoveItem(item, 1)
+-            xPlayer.removeInventoryItem(Config.itemName, 1)
++            xPlayer.removeInventoryItem(item, 1)
+-function AddItem(src)
++function AddItem(src, item)
++    item = item or Config.itemName
+```
+`~ resources/[selfcode]/rmc_boom/web/build/index.html`
+```diff
+-    <script type="module" crossorigin src="./assets/index.e7500d19.js"></script>
++    <script type="module" crossorigin src="./assets/index.e2c8a980.js"></script>
+```
+`~ resources/[selfcode]/rmc_boom/web/src/components/App.tsx`
+```diff
++    maxDist?: number;
++    const [maxDistReproActive, setMaxDistReproActive] = useState(40);
+-        setImage('https://i.ytimg.com/vi/' + data.url + '/mqdefault.jpg');
++        if (data.url) setImage('https://i.ytimg.com/vi/' + data.url + '/mqdefault.jpg');
++        setMaxDistReproActive(data.maxDist ?? 40);
+-            <Navbar author={author} name={name} image={image} volumeReproActive={volumeReproActive} setVolumeReproActive={changeVolumeActive} tempChangeVolume={tempChangeVolume} distReproActive={distReproActive} setDistReproActive={setDistReproActive} changeDist={changeDist} reproActive={reproActiv
++            <Navbar author={author} name={name} image={image} volumeReproActive={volumeReproActive} setVolumeReproActive={changeVolumeActive} tempChangeVolume={tempChangeVolume} distReproActive={distReproActive} setDistReproActive={setDistReproActive} changeDist={changeDist} maxDist={maxDistReproAc
+```
+`~ resources/[selfcode]/rmc_boom/web/src/components/Navbar/Navbar.tsx`
+```diff
++    maxDist: number;
+-export default function Navbar({author, name, image, volumeReproActive, setVolumeReproActive, tempChangeVolume, distReproActive, setDistReproActive, changeDist, reproActive, maxDuration, repros, paused, pausedTime}:Props) {
++export default function Navbar({author, name, image, volumeReproActive, setVolumeReproActive, tempChangeVolume, distReproActive, setDistReproActive, changeDist, maxDist, reproActive, maxDuration, repros, paused, pausedTime}:Props) {
+-                            <Slider color="gray" size="xs" showLabelOnHover={false} min={2} max={40} className="volumeSLider" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />
++                            <Slider color="gray" size="xs" showLabelOnHover={false} min={2} max={maxDist} className="volumeSLider" value={distReproActive} onChangeEnd={(event)=>{changeDist(event)}} onChange={(event)=>{setDistReproActive(event)}} />
+```
+`~ resources/[selfcode]/rmc_core/client/bell.lua`
+```diff
+-    if lib and lib.notify then
+-        lib.notify({
+-            id = 'rmc_bell_staff_' .. tostring(data.bellId or 0),
+-            title = data.title or 'Empfang',
+-            description = data.message or '',
+-            type = 'inform',
+-            duration = 8000,
+-            position = 'top-right',
+-            icon = data.kind == 'message' and 'envelope' or 'bell',
+-            iconColor = '#f0c040',
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++
++    -- Antwort per SMS (lb-phone) auf hinterlassene Nachrichten
++    Reply = {
++        Enabled = true,
++        PhoneResource = 'lb-phone',
++        MaxLength = 500,
++        -- Absender pro ESX-Job (Key = job.name). Sender = Name, der im Handy als Absender steht.
++        -- Logo = Bild-URL, die als Anhang mitgeschickt wird (nil = kein Logo).
++        -- Nicht eingetragene Jobs: Absender = ESX-Job-Label, kein Logo.
++        Jobs = {
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-08T17:01:14Z","webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/155297110750043
++{"categoryId":"1551161549018759170","webhooks":{"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.c
+```
+`~ resources/[selfcode]/rmc_core/server/bell.lua`
+```diff
++local replyCfg = C.Reply or {}
++local phoneRes = replyCfg.PhoneResource or 'lb-phone'
++local maxReplyLength = tonumber(replyCfg.MaxLength) or 500
++
++local function getPhoneNumberBySource(src)
++    if GetResourceState(phoneRes) ~= 'started' then return nil end
++    local ok, number = pcall(function()
++        return exports[phoneRes]:GetEquippedPhoneNumber(src)
++    end)
++    if ok and type(number) == 'string' and number ~= '' then return number end
+```
+
 ## 2026-11-08 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1230,12 +1352,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"server":{"vehicleAlarmsItems":{"3":"vehicle_alarm_3","2":"vehicle_alarm_2","1":"vehicle_alarm_1","4":"vehicle_alarm_4"},"acePermission":"vehicles_keys","probabilityPoliceAlertNpcStolenVehicles":35,"jobsThatCanInstallAlarms":false,"vehicleTransferContractItemName":"vehicle_transfer_contract"},"sha
 +{"client":{"lockDrivingVehiclesNPC":false,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"canTargetDrivingNPC
-```
-
-## 2026-11-03 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-03T09:00:55Z","categoryId":"1551161549018759170","webhooks":{"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"freecam_photo":{"url":"https://discord.com/api/webhooks/15515201323194122
-+{"webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497","channelId":"155738633551230
 ```
