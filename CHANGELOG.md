@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-08 01:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "reason": "Einzahlung auf Bankkonto",
++            "date": "2026/11/08 - 00:49:52",
++            "receiver_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "value": 115000,
++            "sender_name": "Geldbörse",
++            "receiver_name": "Coco Rossi",
++            "sender_identifier": "bank",
++            "type": "deposit"
++        },
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431","webhookId":"1552971088328392714"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"15511615756902
++{"updatedAt":"2026-11-08T00:13:43Z","categoryId":"1551161549018759170","webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/**
+```
+
 ## 2026-11-07 22:23 Uhr
 **+1** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_07_11_2026.json`
@@ -1616,20 +1637,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/vinewood_hills.ymt`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-03 03:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "receiver_name": "cd_garage",
-+            "sender_name": "Coco Black",
-+            "type": "withdraw",
-+            "date": "2026/11/03 - 03:14:08",
-+            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "value": 2500,
-+            "receiver_identifier": "cd_garage"
-+        },
 ```

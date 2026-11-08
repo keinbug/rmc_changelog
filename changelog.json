@@ -58729,6 +58729,59 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-08T01:22:25+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"date\": \"2026/11/08 - 00:49:52\",",
+            "+            \"receiver_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"value\": 115000,",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"receiver_name\": \"Coco Rossi\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"deposit\"",
+            "+        },",
+            "+        {",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"date\": \"2026/11/08 - 00:49:54\",",
+            "+            \"receiver_identifier\": \"char2:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"value\": 110000,",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"receiver_name\": \"Jasmin Rossi\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"deposit\"",
+            "+        },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"einreise\":{\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\",\"webhookId\":\"1552971088328392714\"},\"adminjail\":{\"url\":\"https://discord.com/api/webhooks/1551161578009796630/***\",\"channelId\":\"15511615756902",
+            "+{\"updatedAt\":\"2026-11-08T00:13:43Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/**"
+          ]
+        }
+      ]
     }
   ]
 }
