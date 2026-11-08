@@ -2,6 +2,158 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-08 23:23 Uhr
+**+0** neu · **~3** geändert · **-34** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-08T20:12:21Z","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://dis
++{"categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://disco
+```
+`~ server.cfg`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+`~ server.cfg.bkp`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+`− resources/[selfcode]/rmc_housing/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/client/camera.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/client/clothing.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/client/creator.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/client/interior.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/server/admin.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/server/billing.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/server/db.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/server/outfits.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/shared/interiors.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/app.js`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/highend.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/medium.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/modern.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/mono.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/moody.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/regal.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/rmc_housing/web/style.css`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-08 22:23 Uhr
 **+36** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json`
@@ -1391,144 +1543,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ server.cfg.bkp`
 ```diff
 (Secrets — Inhalt unterdrückt)
-```
-
-## 2026-11-03 21:23 Uhr
-**+1** neu · **~6** geändert · **-17** gelöscht
-`+ resources/[selfcode]/rmc_tablet/.claude/settings.local.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1793649503,
-+    "lastBackup": 1793736129,
--        {
--            "backupTimestamp": 1793302996,
--            "backupDate": "20_43_29_10_2026",
--            "backupFile": "banlist_20_43_29_10_2026.json",
--            "id": 11
--        },
--        {
--            "backupTimestamp": 1793303121,
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","webhookId":"1557386337580220497","channelId":"155738633551230
-+{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512
-```
-`~ resources/[selfcode]/rmc_tablet/client.lua`
-```diff
-+RegisterNetEvent('rmc_tablet:denied', function()
-+    busy = false
-+    requestId = requestId + 1
-+end)
-+
-+-- Eigener Befehl mit + davor: taucht nicht im Chat-Vorschlag auf, nur für die Taste.
-+RegisterCommand('+rmc_tablet', function()
-+    if open then
-+        closeTablet()
-+    else
-```
-`~ resources/[selfcode]/rmc_tablet/config.lua`
-```diff
-+-- Standardtaste zum Öffnen. Spieler können sie unter Einstellungen > Tastenbelegung > FiveM ändern.
-+Config.Key = 'F6'
-+
-+-- Nur diese Jobs dürfen das Tablet öffnen (ESX-Jobname, nicht das Label).
-+-- Optional mit Mindest-Rang: ['police'] = 2  -> erst ab Grade 2. true = alle Ränge.
-+Config.Jobs = {
-+    ['police'] = true,
-+    ['ambulance'] = true,
-+}
-+
-```
-`~ resources/[selfcode]/rmc_tablet/html/app.js`
-```diff
--  if (event.key === "Escape") postClose();
-+  if (event.key === "Escape" || event.key === "F6") {
-+    event.preventDefault();
-+    postClose();
-+  }
-```
-`~ resources/[selfcode]/rmc_tablet/server.lua`
-```diff
-+local ESX = nil
-+
-+local function getESX()
-+    if ESX then return ESX end
-+    if GetResourceState('es_extended') ~= 'started' then return nil end
-+    local ok, obj = pcall(function()
-+        return exports['es_extended']:getSharedObject()
-+    end)
-+    if ok and type(obj) == 'table' then ESX = obj end
-+    return ESX
-```
-`− resources/[selfcode]/rmc_halloween/README.md`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/client.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/config.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/fxmanifest.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/index.html`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/distant.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/halloween.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/heartbeat.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/moan.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/scream.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/html/sounds/whisper.mp3`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/scares.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_halloween/server.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_test_trash/Lang.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_test_trash/client/client.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_test_trash/config.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
-```diff
-- Gelöscht
 ```

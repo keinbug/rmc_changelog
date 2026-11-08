@@ -60041,6 +60041,321 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-08T23:23:14+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 34,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "server.cfg",
+        "server.cfg.bkp"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_housing/README.md",
+        "resources/[selfcode]/rmc_housing/client/camera.lua",
+        "resources/[selfcode]/rmc_housing/client/clothing.lua",
+        "resources/[selfcode]/rmc_housing/client/creator.lua",
+        "resources/[selfcode]/rmc_housing/client/interior.lua",
+        "resources/[selfcode]/rmc_housing/client/main.lua",
+        "resources/[selfcode]/rmc_housing/config.lua",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+        "resources/[selfcode]/rmc_housing/server/admin.lua",
+        "resources/[selfcode]/rmc_housing/server/billing.lua",
+        "resources/[selfcode]/rmc_housing/server/db.lua",
+        "resources/[selfcode]/rmc_housing/server/main.lua",
+        "resources/[selfcode]/rmc_housing/server/outfits.lua",
+        "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+        "resources/[selfcode]/rmc_housing/web/app.js",
+        "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+        "resources/[selfcode]/rmc_housing/web/index.html",
+        "resources/[selfcode]/rmc_housing/web/style.css"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-08T20:12:21Z\",\"webhooks\":{\"sozialstunden\":{\"channelId\":\"1552971081491419187\",\"webhookId\":\"1552971083731181709\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\"},\"basicneeds\":{\"channelId\":\"1417917687723724872\",\"webhookId\":\"1552971931869777932\",\"url\":\"https://dis",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://disco"
+          ]
+        },
+        {
+          "path": "server.cfg",
+          "status": "M",
+          "lines": [
+            "(Secrets — Inhalt unterdrückt)"
+          ]
+        },
+        {
+          "path": "server.cfg.bkp",
+          "status": "M",
+          "lines": [
+            "(Secrets — Inhalt unterdrückt)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/camera.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/clothing.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/creator.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/interior.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/admin.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/billing.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/db.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/outfits.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/app.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/style.css",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
