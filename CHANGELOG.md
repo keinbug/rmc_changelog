@@ -2,6 +2,166 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-08 22:23 Uhr
+**+36** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/camera.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/clothing.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/creator.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/interior.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/admin.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/billing.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/db.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/outfits.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/shared/interiors.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/app.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/highend.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/medium.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/modern.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/mono.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/moody.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/regal.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/style.css`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_kleiderladen/client/main.lua`
+```diff
++--------------------------------------------------------------------------------
++-- Exports (z. B. für keystone_housing: Umkleide in der Wohnung)
++--   exports['rmc_kleiderladen']:OpenShop()   -> öffnet den Laden an der aktuellen Position
++--   exports['rmc_kleiderladen']:CloseShop()
++--   exports['rmc_kleiderladen']:IsOpen()
++--------------------------------------------------------------------------------
++exports("OpenShop", function()
++    if isVisible then return false end
++    showClothingshop()
++    return true
+```
+
 ## 2026-11-08 21:23 Uhr
 **+0** neu · **~11** geändert · **-2** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1371,49 +1531,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/rmc_test_trash/fxmanifest.lua`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-03 20:23 Uhr
-**+0** neu · **~4** geändert · **-0** gelöscht
-`~ resources/[jaksam_scripte]/vehicles_keys/current_config.json`
-```diff
--{"client":{"lockDrivingVehiclesNPC":false,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"canTargetDrivingNPC
-+{"client":{"lockDrivingVehiclesNPC":true,"alarmBlip":{"color":1,"sprite":161,"duration":15,"scale":1},"completelyDisableWindowDestroy":false,"isHotwireRequired":true,"use3Dtext":true,"vehicleLockAnim":{"name":"fob_click","duration":800,"dict":"anim@mp_player_intmenu@key_fob@"},"allowAutoOpenDriverD
-```
-`~ resources/[selfcode]/rmc_autopilot_taxi/client/taxi.lua`
-```diff
-+    SetVehicleNeedsToBeHotwired(veh, false)
-+    Entity(veh).state:set('canAlwaysStart', true, true) -- Bypass für vehicles_keys
-+            -- Schlüssel-Scripts (z.B. "NPC-Fahrzeuge abschließen") dürfen das Taxi nicht verriegeln
-+            if GetVehicleDoorLockStatus(Taxi.vehicle) > 1 then
-+                SetVehicleDoorsLocked(Taxi.vehicle, 1)
-+                SetVehicleDoorsLockedForAllPlayers(Taxi.vehicle, false)
-+            end
-+
-```
-`~ resources/[selfcode]/rmc_autopilot_taxi/config.lua`
-```diff
-+-- ==============================
-+--  Fahrzeugschlüssel-Bypass (jaksam vehicles_keys)
-+-- ==============================
-+-- Verhindert, dass "Geschlossene Türen von fahrenden NPC-Fahrzeugen" / Hotwiring
-+-- das Taxi blockiert: der Fahrgast bekommt temporäre Schlüssel für das Kennzeichen.
-+Config.VehicleKeys = {
-+    enabled  = true,
-+    resource = 'vehicles_keys', -- Ressourcenname des Schlüssel-Scripts
-+}
-+
-```
-`~ resources/[selfcode]/rmc_autopilot_taxi/server/main.lua`
-```diff
-+-- ==============================
-+--  Fahrzeugschlüssel (jaksam vehicles_keys)
-+-- ==============================
-+
-+local function keysAvailable()
-+    return Config.VehicleKeys and Config.VehicleKeys.enabled
-+        and GetResourceState(Config.VehicleKeys.resource) == 'started'
-+end
-+
-+local function giveKeys(src, plate)
 ```

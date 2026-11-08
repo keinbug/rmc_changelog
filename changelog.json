@@ -59706,6 +59706,341 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-08T22:23:20+01:00",
+      "initial": false,
+      "counts": {
+        "added": 36,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77755
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json",
+        "resources/[selfcode]/rmc_housing/README.md",
+        "resources/[selfcode]/rmc_housing/client/camera.lua",
+        "resources/[selfcode]/rmc_housing/client/clothing.lua",
+        "resources/[selfcode]/rmc_housing/client/creator.lua",
+        "resources/[selfcode]/rmc_housing/client/interior.lua",
+        "resources/[selfcode]/rmc_housing/client/main.lua",
+        "resources/[selfcode]/rmc_housing/config.lua",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+        "resources/[selfcode]/rmc_housing/server/admin.lua",
+        "resources/[selfcode]/rmc_housing/server/billing.lua",
+        "resources/[selfcode]/rmc_housing/server/db.lua",
+        "resources/[selfcode]/rmc_housing/server/main.lua",
+        "resources/[selfcode]/rmc_housing/server/outfits.lua",
+        "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+        "resources/[selfcode]/rmc_housing/web/app.js",
+        "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+        "resources/[selfcode]/rmc_housing/web/index.html",
+        "resources/[selfcode]/rmc_housing/web/style.css"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_kleiderladen/client/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/camera.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/clothing.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/creator.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/interior.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/admin.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/billing.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/db.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/outfits.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/app.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/style.css",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_kleiderladen/client/main.lua",
+          "status": "M",
+          "lines": [
+            "+--------------------------------------------------------------------------------",
+            "+-- Exports (z. B. für keystone_housing: Umkleide in der Wohnung)",
+            "+--   exports['rmc_kleiderladen']:OpenShop()   -> öffnet den Laden an der aktuellen Position",
+            "+--   exports['rmc_kleiderladen']:CloseShop()",
+            "+--   exports['rmc_kleiderladen']:IsOpen()",
+            "+--------------------------------------------------------------------------------",
+            "+exports(\"OpenShop\", function()",
+            "+    if isVisible then return false end",
+            "+    showClothingshop()",
+            "+    return true",
+            "+end)",
+            "+",
+            "+exports(\"CloseShop\", function()",
+            "+    if not isVisible then return false end",
+            "+    closeClothingshop()",
+            "+    return true",
+            "+end)",
+            "+",
+            "+exports(\"IsOpen\", function()",
+            "+    return isVisible",
+            "+end)",
+            "+"
+          ]
+        }
+      ]
     }
   ]
 }
