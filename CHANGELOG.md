@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-10 00:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++            "reason": "Fahrzeugrückgabegebühr",
++            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "date": "2026/11/09 - 23:24:21",
++            "receiver_name": "cd_garage",
++            "sender_name": "Coco Rossi",
++            "type": "withdraw",
++            "receiver_identifier": "cd_garage",
++            "value": 500
++        },
++        {
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T17:00:52Z","webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.c
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T23:01:03Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://di
+```
+
 ## 2026-11-09 22:23 Uhr
 **+2** neu · **~0** geändert · **-0** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_20_09_11_2026.json`
@@ -1493,20 +1514,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T17:27:32Z","webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"adminjail":{"channelId":"1551161575690211428","webhookId":"15511615780
 +{"webhooks":{"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"ho
-```
-
-## 2026-11-04 23:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "receiver_identifier": "char1:95e98569cca18ee079f5fe27ab54152ede42f277",
-+            "value": 50000,
-+            "date": "2026/11/04 - 22:40:46",
-+            "sender_name": "Geldbörse",
-+            "reason": "Einzahlung auf Bankkonto",
-+            "sender_identifier": "bank",
-+            "type": "deposit",
-+            "receiver_name": "Mellie Anderson"
-+        },
 ```

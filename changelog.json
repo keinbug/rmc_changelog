@@ -62011,6 +62011,49 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-10T00:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77860
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/11/09 - 23:24:21\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"sender_name\": \"Coco Rossi\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"value\": 500",
+            "+        },",
+            "+        {"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-09T17:00:52Z\",\"webhooks\":{\"frak\":{\"channelId\":\"1552971094267527169\",\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"webhookId\":\"1552971096847028264\"},\"esx_paycheck\":{\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.c",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-09T23:01:03Z\",\"webhooks\":{\"sozialstunden\":{\"webhookId\":\"1552971083731181709\",\"url\":\"https://discord.com/api/webhooks/1552971083731181709/***\",\"channelId\":\"1552971081491419187\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"url\":\"https://di"
+          ]
+        }
+      ]
     }
   ]
 }
