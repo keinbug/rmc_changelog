@@ -60382,6 +60382,70 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-09T10:22:27+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/webhook.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-09T00:46:20Z\",\"webhooks\":{\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\",\"webhookId\":\"1512475306554953789\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\"",
+            "+{\"webhooks\":{\"poster\":{\"webhookId\":\"1560007815156998144\",\"channelId\":\"1560007812342489120\",\"url\":\"https://discord.com/api/webhooks/1560007815156998144/***\"},\"esx\":{\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\"},\""
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/webhook.lua",
+          "status": "M",
+          "lines": [
+            "-",
+            "-local function firstWebhookUrl()",
+            "-    local keys = { \"willkommen\", \"me\", \"afk\", \"bell\", \"hotdog\" }",
+            "-    for i = 1, #keys do",
+            "-        local url = GetWebhookLinkRaw and GetWebhookLinkRaw(keys[i]) or nil",
+            "-        if url and url ~= \"\" then return url end",
+            "-    end",
+            "-    return nil",
+            "-end",
+            "-",
+            "-CreateThread(function()",
+            "-    Wait(3000)",
+            "-    local url = firstWebhookUrl()",
+            "-    if not url then return end",
+            "-    local src = 0",
+            "-    local players = GetPlayers()",
+            "-    if type(players) == \"table\" and players[1] then",
+            "-        src = tonumber(players[1]) or 0",
+            "-    end",
+            "-    SendLogAdvanced({",
+            "-        source = src,",
+            "-        title = \"Test\",",
+            "-        message = \"So sehen die Logs nach dem Neustart aus.\",",
+            "-        webhook = url,",
+            "-        level = \"Info\",",
+            "-        fields = {",
+            "-            { name = \"Fahrzeug\", value = \"`outlaw` · Kennzeichen `TEST01`\" },",
+            "-            { name = \"Items\", value = \"20x burger, 20x cola, 1x phone\" },",
+            "-        },",
+            "-    })",
+            "-end)"
+          ]
+        }
+      ]
     }
   ]
 }
