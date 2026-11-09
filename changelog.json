@@ -61426,6 +61426,338 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-09T20:23:20+01:00",
+      "initial": false,
+      "counts": {
+        "added": 36,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77860
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_housing/README.md",
+        "resources/[selfcode]/rmc_housing/client/appliances.lua",
+        "resources/[selfcode]/rmc_housing/client/camera.lua",
+        "resources/[selfcode]/rmc_housing/client/clothing.lua",
+        "resources/[selfcode]/rmc_housing/client/creator.lua",
+        "resources/[selfcode]/rmc_housing/client/interior.lua",
+        "resources/[selfcode]/rmc_housing/client/main.lua",
+        "resources/[selfcode]/rmc_housing/config.lua",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+        "resources/[selfcode]/rmc_housing/server/admin.lua",
+        "resources/[selfcode]/rmc_housing/server/appliances.lua",
+        "resources/[selfcode]/rmc_housing/server/billing.lua",
+        "resources/[selfcode]/rmc_housing/server/db.lua",
+        "resources/[selfcode]/rmc_housing/server/main.lua",
+        "resources/[selfcode]/rmc_housing/server/outfits.lua",
+        "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+        "resources/[selfcode]/rmc_housing/web/app.js",
+        "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+        "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+        "resources/[selfcode]/rmc_housing/web/index.html",
+        "resources/[selfcode]/rmc_housing/web/style.css"
+      ],
+      "modified": [
+        "resources/[jaksam_scripte]/robberies_creator/current_config.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_housing/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/appliances.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/camera.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/clothing.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/creator.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/interior.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/admin.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/appliances.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/billing.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/db.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/outfits.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/shared/interiors.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/app.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/aqua.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/highend.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/lowend.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/medium.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/modern.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/mono.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/moody.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_ice.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_rich.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/office_warm.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/penthouse.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/regal.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/seductive.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/sharp.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt1.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/stilt2.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/img/vibrant.jpg",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/style.css",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[jaksam_scripte]/robberies_creator/current_config.json",
+          "status": "M",
+          "lines": [
+            "-{\"client\":{\"targetingScript\":\"none\",\"clNpcMugging\":{\"cooldownOnMugging\":15,\"canMakeFollow\":false},\"gasMaskClothId\":38,\"npcMuggingKeys\":{\"keyToMug\":47,\"keyToFollow\":74,\"keyToGoAway\":20}},\"server\":{\"drill\":{\"loseOnUse\":true,\"name\":\"drill\",\"requiredForCargoRobbery\":true},\"cargoRobbery\":{\"probabilityPo",
+            "+{\"shared\":{\"modules\":{\"textui\":\"ox_lib\",\"dispatch\":\"codesign\",\"progressbar\":\"ox_lib\",\"logs\":\"jaksam\"},\"isNpcMuggingEnabled\":true,\"secondsToMug\":45,\"locale\":\"de\"},\"server\":{\"specificWebhooks\":[],\"maxMinutesDifferenceForCargoRobberies\":10,\"drill\":{\"requiredForCargoRobbery\":true,\"loseOnUse\":true,\"name"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"date\": \"2026/11/09 - 19:51:57\",",
+            "+            \"sender_name\": \"Mellie Anderson\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"value\": 2000,",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }

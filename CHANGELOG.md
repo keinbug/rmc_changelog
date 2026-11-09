@@ -2,6 +2,171 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-09 20:23 Uhr
+**+36** neu · **~2** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_housing/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/appliances.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/camera.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/clothing.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/creator.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/interior.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/admin.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/appliances.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/billing.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/db.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/outfits.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/shared/interiors.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/app.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/highend.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/medium.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/modern.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/mono.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/moody.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/regal.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/web/style.css`
+```diff
++ Neue Datei
+```
+`~ resources/[jaksam_scripte]/robberies_creator/current_config.json`
+```diff
+-{"client":{"targetingScript":"none","clNpcMugging":{"cooldownOnMugging":15,"canMakeFollow":false},"gasMaskClothId":38,"npcMuggingKeys":{"keyToMug":47,"keyToFollow":74,"keyToGoAway":20}},"server":{"drill":{"loseOnUse":true,"name":"drill","requiredForCargoRobbery":true},"cargoRobbery":{"probabilityPo
++{"shared":{"modules":{"textui":"ox_lib","dispatch":"codesign","progressbar":"ox_lib","logs":"jaksam"},"isNpcMuggingEnabled":true,"secondsToMug":45,"locale":"de"},"server":{"specificWebhooks":[],"maxMinutesDifferenceForCargoRobberies":10,"drill":{"requiredForCargoRobbery":true,"loseOnUse":true,"name
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "reason": "Auszahlung vom Bankkonto",
++            "sender_identifier": "char1:95e98569cca18ee079f5fe27ab54152ede42f277",
++            "date": "2026/11/09 - 19:51:57",
++            "sender_name": "Mellie Anderson",
++            "type": "withdraw",
++            "value": 2000,
++            "receiver_identifier": "bank",
++            "receiver_name": "Geldbörse"
++        },
+```
+
 ## 2026-11-09 19:23 Uhr
 **+0** neu · **~3** geändert · **-0** gelöscht
 `~ resources/[manuell_start]/ox_inventory/data/items.lua`
@@ -1872,12 +2037,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_th_ls_mrpd/stream/hi@dt1_rd1_9.ybn`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-04 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T09:01:30Z","webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400","channelId":"1471556817061544068"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/*
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T17:00:47Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.c
 ```
