@@ -2,6 +2,17 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-09 22:23 Uhr
+**+2** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_20_09_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_09_11_2026.json`
+```diff
++ Neue Datei
+```
+
 ## 2026-11-09 21:23 Uhr
 **+0** neu · **~3** geändert · **-2** gelöscht
 `~ resources/[brutal]/brutal_ambulancejob/config.lua`
@@ -1498,33 +1509,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "type": "deposit",
 +            "receiver_name": "Mellie Anderson"
 +        },
-```
-
-## 2026-11-04 21:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1793736129,
-+    "lastBackup": 1793822739,
--            "backupTimestamp": 1793389622,
--            "backupDate": "20_47_30_10_2026",
--            "backupFile": "banlist_20_47_30_10_2026.json",
--            "id": 11
--        },
--        {
--            "backupTimestamp": 1793389747,
--            "backupDate": "20_49_30_10_2026",
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
-+    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
-+        {
-+            "receiver_name": "cd_garage",
-+            "date": "2026/11/03 - 03:14:08",
-+            "receiver_identifier": "cd_garage",
-+            "sender_name": "Coco Black",
-+            "value": 2500,
-+            "type": "withdraw",
-+            "reason": "Fahrzeugrückgabegebühr",
 ```
