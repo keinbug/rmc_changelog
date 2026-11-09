@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-09 02:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://disco
++{"updatedAt":"2026-11-09T00:46:20Z","webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"
+```
+
 ## 2026-11-08 23:23 Uhr
 **+0** neu · **~3** geändert · **-34** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1532,15 +1540,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            jobs        = { "midnight_elite" },
 -            name        = "KUROKAI",
 -            jobs        = { "kurokai" },
-```
-
-## 2026-11-03 22:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ server.cfg`
-```diff
-(Secrets — Inhalt unterdrückt)
-```
-`~ server.cfg.bkp`
-```diff
-(Secrets — Inhalt unterdrückt)
 ```

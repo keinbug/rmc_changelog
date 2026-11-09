@@ -60356,6 +60356,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-09T02:22:24+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77721
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"freecam_photo\":{\"webhookId\":\"1551520132319412284\",\"channelId\":\"1551520126367572008\",\"url\":\"https://discord.com/api/webhooks/1551520132319412284/***\"},\"marriage\":{\"webhookId\":\"1467556382038429901\",\"channelId\":\"1467556343492640830\",\"url\":\"https://disco",
+            "+{\"updatedAt\":\"2026-11-09T00:46:20Z\",\"webhooks\":{\"afk\":{\"url\":\"https://discord.com/api/webhooks/1512475306554953789/***\",\"channelId\":\"1512475286229356617\",\"webhookId\":\"1512475306554953789\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"channelId\":\"1552971071882399744\""
+          ]
+        }
+      ]
     }
   ]
 }
