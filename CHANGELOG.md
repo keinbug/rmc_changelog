@@ -2,6 +2,421 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-09 14:23 Uhr
+**+103** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[manuell_start]/ox_inventory/web/images/kaffeebohnen.png`
+```diff
++ Neue Datei
+```
+`+ resources/[manuell_start]/ox_inventory/web/images/tk_pizza.png`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/.fxap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/1.png`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/2.png`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/3.png`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/README.txt`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/apa_ch2_10_6.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/server.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/sp_manifest.ymt`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/MajestyMansionManifest.ymf`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_baselegno.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_bbq.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_l.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_r.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coll.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonna.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonnaesterna.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cornici.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coso.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cucina.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_coll.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_ymap.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_gazebo.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_lavandino.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_libri.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_luce.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolabagno.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolavetro.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mobile12.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_muroesterno.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piantagenerale.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua_coll.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portaentrata_r.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portagenerale.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_props.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room01.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room02.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room03.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_mobile.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_tavolino.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room05.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room06.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room07.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_armadio.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_porta.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room09.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10_murales.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room11.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room12.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room13.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_armadio.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_letto.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_scaffale.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_tavolino.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15_divanetto.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_rotonda.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_sassi.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_serranda.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_setsedie.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_shell.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradaesterna.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina3.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina4.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tappeto.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tavololampada.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_terrenoesterno.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_texture.ytd`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ymap.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ytyp.ytyp`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_4.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_6.ybn`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_critical_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_1.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_2.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ba_curtain2.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/bh1_36_gatefrm_iref.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_grass_0.ymap`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_land_04.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire074.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire075.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire109.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire110.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch_chint02_mirror_frame.ydr`
+```diff
++ Neue Datei
+```
+`+ resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/vinewood_hills.ymt`
+```diff
++ Neue Datei
+```
+
 ## 2026-11-09 10:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1484,65 +1899,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"
 +{"webhooks":{"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"
-```
-
-## 2026-11-04 00:23 Uhr
-**+0** neu · **~6** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/ox_inventory/client.lua`
-```diff
-+-- Wegwerfen: Item als Prop in die Hand nehmen und physikalisch wegwerfen
-+local discardDefaultProp = `prop_paper_bag_small`
-+local discardThrowDict, discardThrowClip = 'anim@heists@narcotics@trash', 'throw_b'
-+local discardHolding = false
-+
-+local function getCamDirection()
-+	local rot = GetGameplayCamRot(2)
-+	local x, z = math.rad(rot.x), math.rad(rot.z)
-+	local num = math.abs(math.cos(x))
-+
-```
-`~ resources/[manuell_start]/ox_inventory/locales/de.json`
-```diff
-+  "ui_discard": "Wegwerfen",
--  "component_slot_occupied" : "Der %s Slot dieser Waffe ist bereits belegt",
-+  "component_slot_occupied": "Der %s Slot dieser Waffe ist bereits belegt",
--  "storage": "Kofferraum"
-+  "storage": "Kofferraum",
-+  "discard_throw": "Wegwerfen",
-+  "discard_cancel": "Abbrechen",
-+  "discard_pickup": "Aufheben",
-+  "discard_picked_up": "aufgehoben"
-```
-`~ resources/[manuell_start]/ox_inventory/locales/en.json`
-```diff
-+  "ui_discard": "Discard",
--  "storage": "Storage"
-+  "storage": "Storage",
-+  "discard_throw": "Throw away",
-+  "discard_cancel": "Cancel",
-+  "discard_pickup": "Pick up",
-+  "discard_picked_up": "picked up"
-```
-`~ resources/[manuell_start]/ox_inventory/modules/inventory/server.lua`
-```diff
-+---Weggeworfene Items, die per ox_target wieder aufgehoben werden koennen.
-+---@type table<integer, { name: string, count: number, metadata: table, owner: number, netId: number?, placing: boolean? }>
-+local ThrownItems = {}
-+local thrownId = 0
-+local THROWN_LIFETIME = 10 * 60000 -- nach 10 Minuten verschwindet das Prop samt Item
-+
-+local function removeThrown(id)
-+	local thrown = ThrownItems[id]
-+	if not thrown then return end
-+
-```
-`~ resources/[manuell_start]/ox_inventory/web/build/assets/index.js`
-```diff
--`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
-+`+d),de&&C_([O,k,A],e=>{d=M_(d,e,` `)}),b&&ve?b.createHTML(d):d},t.setConfig=function(){Ke(arguments.length>0&&arguments[0]!==void 0?arguments[0]:{}),me=!0},t.clearConfig=function(){Ue=null,me=!1},t.isValidAttribute=function(e,t,n){return Ue||Ke({}),it(He(e),He(t),n)},t.addHook=function(e,t){typeof
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512
-+{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708","channelId":"1552971120460828763"
 ```
