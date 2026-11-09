@@ -2,6 +2,39 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-09 19:23 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
++	["tk_pizza"] = {
++		label = "Tiefkühl Pizza",
++		weight = 10,
++		stack = true,
++		close = true,
++	},
++
++	["kaffeebohnen"] = {
++		label = "Kaffeebohne",
++		weight = 1000,
+```
+`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
+```diff
++			{ name = 'tk_pizza', price = 11 },
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
+-            "value": 3,
++            "type": "interest_savings",
+-            "receiver_name": "Savings Account",
+-            "type": "interest_savings"
++            "value": 3,
++            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
++            "receiver_name": "Savings Account"
+-            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
+-            "value": 3,
+```
+
 ## 2026-11-09 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1847,12 +1880,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T09:01:30Z","webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400","channelId":"1471556817061544068"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/*
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T17:00:47Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"afk":{"webhookId":"1512475306554953789","url":"https://discord.c
-```
-
-## 2026-11-04 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"join":{"webhookId":"1552971091771924552","url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-04T09:01:30Z","webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","webhookId":"1471556835994767400","channelId":"1471556817061544068"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/*
 ```

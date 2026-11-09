@@ -61313,6 +61313,119 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-09T19:23:27+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77824
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[manuell_start]/ox_inventory/data/shops.lua",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "+\t[\"tk_pizza\"] = {",
+            "+\t\tlabel = \"Tiefkühl Pizza\",",
+            "+\t\tweight = 10,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},",
+            "+",
+            "+\t[\"kaffeebohnen\"] = {",
+            "+\t\tlabel = \"Kaffeebohne\",",
+            "+\t\tweight = 1000,",
+            "+\t\tstack = true,",
+            "+\t\tclose = true,",
+            "+\t},",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/shops.lua",
+          "status": "M",
+          "lines": [
+            "+\t\t\t{ name = 'tk_pizza', price = 11 },"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"type\": \"interest_savings\"",
+            "+            \"value\": 3,",
+            "+            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_identifier\": \"char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38\",",
+            "-            \"value\": 3,",
+            "+            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\","
+          ]
+        }
+      ]
     }
   ]
 }
