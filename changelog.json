@@ -63790,6 +63790,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-10T20:23:33+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77658
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "-        {",
+            "-            \"value\": 500,",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/09/16 - 20:15:27\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\"",
+            "-        },",
+            "+    \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_name\": \"Coco Black\",",
+            "+            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/11/03 - 03:14:08\",",
+            "-            \"date\": \"2026/09/15 - 23:01:29\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\"",
+            "-        },",
+            "-        {",
+            "-            \"value\": 500,",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/09/13 - 23:31:22\",",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\"",
+            "+            \"receiver_name\": \"cd_garage\"",
+            "-            \"value\": 500,",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"value\": 21920,",
+            "+            \"sender_name\": \"Coco Akimoto\",",
+            "+            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/11/03 - 01:44:14\",",
+            "-            \"date\": \"2026/09/13 - 21:13:23\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "-            \"value\": 2500,",
+            "-            \"reason\": \"Return Vehicle Fee\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/09/13 - 20:44:10\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\"",
+            "+            \"value\": 300,",
+            "+            \"sender_name\": \"Coco Akimoto\",",
+            "+            \"sender_identifier\": \"char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/11/03 - 01:44:06\",",
+            "+            \"type\": \"card_purchase\",",
+            "+            \"reason\": \"Kartenkauf: Gold Card\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Bank (Kartenkauf)\""
+          ]
+        }
+      ]
     }
   ]
 }

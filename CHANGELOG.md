@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-10 20:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
+-        {
+-            "value": 500,
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "type": "withdraw",
+-            "date": "2026/09/16 - 20:15:27",
+-            "receiver_identifier": "cd_garage",
+-            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
+-            "receiver_name": "cd_garage",
+-            "sender_name": "Jayden Anderson"
+```
+
 ## 2026-11-10 18:23 Uhr
 **+0** neu · **~1** geändert · **-202** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2327,12 +2343,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -        {
 -            "backupDate": "20_52_31_10_2026",
 -            "backupTimestamp": 1793476361,
-```
-
-## 2026-11-05 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T09:01:13Z","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","c
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T17:01:25Z","webhooks":{"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"troll":{"channelId":"1552971103910236172","webhookId":"15529711075004
 ```
