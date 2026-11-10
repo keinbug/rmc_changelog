@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-10 22:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
++    "lastBackup": 1794342324,
+-            "backupFile": "banlist_21_06_05_11_2026.json",
+-            "backupTimestamp": 1793909199,
+-            "backupDate": "21_06_05_11_2026",
+-            "id": 11
+-        },
+-        {
+-            "backupFile": "banlist_21_08_05_11_2026.json",
+-            "backupTimestamp": 1793909324,
+-            "backupDate": "21_08_05_11_2026",
+```
+
 ## 2026-11-10 21:23 Uhr
 **+2** neu · **~4** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/frakmenu.lua`
@@ -2369,12 +2385,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-05T23:00:34Z","categoryId":"1551161549018759170","webhooks":{"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://disc
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-06T09:00:50Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887
-```
-
-## 2026-11-06 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T17:01:25Z","webhooks":{"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"troll":{"channelId":"1552971103910236172","webhookId":"15529711075004
-+{"updatedAt":"2026-11-05T23:00:34Z","categoryId":"1551161549018759170","webhooks":{"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602"},"sperrzone":{"webhookId":"1552971115209564220","url":"https://disc
 ```
