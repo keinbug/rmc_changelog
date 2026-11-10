@@ -2,6 +2,822 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-10 18:23 Uhr
+**+0** neu · **~1** geändert · **-202** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"}
++{"categoryId":"1551161549018759170","webhooks":{"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211
+```
+`− resources/[osp]/osp_ambulance/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/ESX ITEMS DATABASE.sql`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/README.txt`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/carvariations.meta`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/client_open.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/dead.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/ecg.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/fractures.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/incoming.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/job.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/laststand.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/stationary.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/stretcher.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/client/wheelchair.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/fractures.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/general.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/locations.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/medications.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/shop.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/vehicles.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/weapons.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/webhook.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/config/wounds.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/handling.meta`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/ecg.js`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/fracture1.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/fracture2.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/guide.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_left_t.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/arm_right_t.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/background.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/head_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_left_t.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/leg_right_t.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/neck.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/spine.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_b.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_f.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_fracture.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_h.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_l.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_m.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/img/torso_s.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/incoming.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/incoming.js`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/inject.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/jquery.min.js`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/rapidheartbeat.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/slowheartbeat.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/stationary.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/stationary.js`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/test.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/ui.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/visualEffects.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/xray.html`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/html/xray.wav`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/armcast.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/armsplint.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/bandage.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/blood250ml.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/blood500ml.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/bodybag.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/castsaw.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/crutch.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/ecg.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/elastic_bandage.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/epinephrine.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/field_dressing.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/ifak.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/legcast.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/legsplint.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/morphine.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/neckbrace.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/neckcast.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/packing_bandage.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/pager.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/painkillers.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/propofol.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/quick_clot.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/revivekit.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/saline250ml.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/saline500ml.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/sewing_kit.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/stretcher.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/tourniquet.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/inventoryImages/wheelchair.png`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/al.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/ar.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/cs.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/da.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/de.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/el.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/en.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/es.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/et.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/fi.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/fr.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/he.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/hr.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/hu.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/id.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/it.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/lt.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/nl.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/no.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/pl.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/pt-br.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/pt.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/ro.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/ru.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/sk.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/sl.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/sv.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/th.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/tr.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/zh-cn.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/lang/zh-tw.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/server/server.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/server/server_open.lua`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc.xml`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel.xml`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/combicarrier2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/ems_props.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernocot.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernotexture.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lifepak15.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredfernocot.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredstrykergurney.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/prop_ld_bomb.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingfernocot.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingstrykergurney.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykergurney.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykertexture.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.yft`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair_hi.yft`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg1.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg2.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg3.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming1.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming2.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary1.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary2.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary3.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary4.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary5.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary6.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/stream/generic_texture_renderer_xray1.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[osp]/osp_ambulance/vehicles.meta`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/stream/hei_dt1_rd1.ymap`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-10 10:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1519,12 +2335,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T09:01:13Z","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","c
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T17:01:25Z","webhooks":{"marriage":{"channelId":"1467556343492640830","webhookId":"1467556382038429901","url":"https://discord.com/api/webhooks/1467556382038429901/***"},"troll":{"channelId":"1552971103910236172","webhookId":"15529711075004
-```
-
-## 2026-11-05 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"staff":{"channelId":"1552971120460828763","url":"https://discord.com/api/webhooks/1552971123233394708/***","webhookId":"1552971123233394708"},"me":{"channelId":"1513950191936344245","url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490"},"ho
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-05T09:01:13Z","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","c
 ```

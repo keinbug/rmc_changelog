@@ -62147,6 +62147,1649 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-10T18:23:24+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 202,
+        "total": 77658
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "resources/[osp]/osp_ambulance/.fxap",
+        "resources/[osp]/osp_ambulance/ESX ITEMS DATABASE.sql",
+        "resources/[osp]/osp_ambulance/README.txt",
+        "resources/[osp]/osp_ambulance/carvariations.meta",
+        "resources/[osp]/osp_ambulance/client/client_open.lua",
+        "resources/[osp]/osp_ambulance/client/dead.lua",
+        "resources/[osp]/osp_ambulance/client/ecg.lua",
+        "resources/[osp]/osp_ambulance/client/fractures.lua",
+        "resources/[osp]/osp_ambulance/client/incoming.lua",
+        "resources/[osp]/osp_ambulance/client/job.lua",
+        "resources/[osp]/osp_ambulance/client/laststand.lua",
+        "resources/[osp]/osp_ambulance/client/main.lua",
+        "resources/[osp]/osp_ambulance/client/stationary.lua",
+        "resources/[osp]/osp_ambulance/client/stretcher.lua",
+        "resources/[osp]/osp_ambulance/client/wheelchair.lua",
+        "resources/[osp]/osp_ambulance/config/fractures.lua",
+        "resources/[osp]/osp_ambulance/config/general.lua",
+        "resources/[osp]/osp_ambulance/config/locations.lua",
+        "resources/[osp]/osp_ambulance/config/medications.lua",
+        "resources/[osp]/osp_ambulance/config/shop.lua",
+        "resources/[osp]/osp_ambulance/config/vehicles.lua",
+        "resources/[osp]/osp_ambulance/config/weapons.lua",
+        "resources/[osp]/osp_ambulance/config/webhook.lua",
+        "resources/[osp]/osp_ambulance/config/wounds.lua",
+        "resources/[osp]/osp_ambulance/fxmanifest.lua",
+        "resources/[osp]/osp_ambulance/handling.meta",
+        "resources/[osp]/osp_ambulance/html/ecg.js",
+        "resources/[osp]/osp_ambulance/html/fracture1.wav",
+        "resources/[osp]/osp_ambulance/html/fracture2.wav",
+        "resources/[osp]/osp_ambulance/html/guide.html",
+        "resources/[osp]/osp_ambulance/html/img/arm.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_b.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_f.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_h.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_l.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_m.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_s.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_left_t.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_b.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_f.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_h.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_l.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_m.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_s.png",
+        "resources/[osp]/osp_ambulance/html/img/arm_right_t.png",
+        "resources/[osp]/osp_ambulance/html/img/background.png",
+        "resources/[osp]/osp_ambulance/html/img/head.png",
+        "resources/[osp]/osp_ambulance/html/img/head_b.png",
+        "resources/[osp]/osp_ambulance/html/img/head_f.png",
+        "resources/[osp]/osp_ambulance/html/img/head_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/head_h.png",
+        "resources/[osp]/osp_ambulance/html/img/head_l.png",
+        "resources/[osp]/osp_ambulance/html/img/head_m.png",
+        "resources/[osp]/osp_ambulance/html/img/head_s.png",
+        "resources/[osp]/osp_ambulance/html/img/leg.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_b.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_f.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_h.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_l.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_m.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_s.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_left_t.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_b.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_f.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_h.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_l.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_m.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_s.png",
+        "resources/[osp]/osp_ambulance/html/img/leg_right_t.png",
+        "resources/[osp]/osp_ambulance/html/img/neck.png",
+        "resources/[osp]/osp_ambulance/html/img/spine.png",
+        "resources/[osp]/osp_ambulance/html/img/torso.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_b.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_f.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_fracture.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_h.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_l.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_m.png",
+        "resources/[osp]/osp_ambulance/html/img/torso_s.png",
+        "resources/[osp]/osp_ambulance/html/incoming.html",
+        "resources/[osp]/osp_ambulance/html/incoming.js",
+        "resources/[osp]/osp_ambulance/html/index.html",
+        "resources/[osp]/osp_ambulance/html/inject.wav",
+        "resources/[osp]/osp_ambulance/html/jquery.min.js",
+        "resources/[osp]/osp_ambulance/html/rapidheartbeat.wav",
+        "resources/[osp]/osp_ambulance/html/slowheartbeat.wav",
+        "resources/[osp]/osp_ambulance/html/stationary.html",
+        "resources/[osp]/osp_ambulance/html/stationary.js",
+        "resources/[osp]/osp_ambulance/html/test.html",
+        "resources/[osp]/osp_ambulance/html/ui.html",
+        "resources/[osp]/osp_ambulance/html/visualEffects.html",
+        "resources/[osp]/osp_ambulance/html/xray.html",
+        "resources/[osp]/osp_ambulance/html/xray.wav",
+        "resources/[osp]/osp_ambulance/inventoryImages/armcast.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/armsplint.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/bandage.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/blood250ml.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/blood500ml.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/bodybag.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/castsaw.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/crutch.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/ecg.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/elastic_bandage.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/epinephrine.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/field_dressing.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/ifak.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/legcast.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/legsplint.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/morphine.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/neckbrace.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/neckcast.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/packing_bandage.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/pager.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/painkillers.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/propofol.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/quick_clot.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/revivekit.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/saline250ml.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/saline500ml.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/sewing_kit.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/stretcher.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/tourniquet.png",
+        "resources/[osp]/osp_ambulance/inventoryImages/wheelchair.png",
+        "resources/[osp]/osp_ambulance/lang/al.lua",
+        "resources/[osp]/osp_ambulance/lang/ar.lua",
+        "resources/[osp]/osp_ambulance/lang/cs.lua",
+        "resources/[osp]/osp_ambulance/lang/da.lua",
+        "resources/[osp]/osp_ambulance/lang/de.lua",
+        "resources/[osp]/osp_ambulance/lang/el.lua",
+        "resources/[osp]/osp_ambulance/lang/en.lua",
+        "resources/[osp]/osp_ambulance/lang/es.lua",
+        "resources/[osp]/osp_ambulance/lang/et.lua",
+        "resources/[osp]/osp_ambulance/lang/fi.lua",
+        "resources/[osp]/osp_ambulance/lang/fr.lua",
+        "resources/[osp]/osp_ambulance/lang/he.lua",
+        "resources/[osp]/osp_ambulance/lang/hr.lua",
+        "resources/[osp]/osp_ambulance/lang/hu.lua",
+        "resources/[osp]/osp_ambulance/lang/id.lua",
+        "resources/[osp]/osp_ambulance/lang/it.lua",
+        "resources/[osp]/osp_ambulance/lang/lt.lua",
+        "resources/[osp]/osp_ambulance/lang/nl.lua",
+        "resources/[osp]/osp_ambulance/lang/no.lua",
+        "resources/[osp]/osp_ambulance/lang/pl.lua",
+        "resources/[osp]/osp_ambulance/lang/pt-br.lua",
+        "resources/[osp]/osp_ambulance/lang/pt.lua",
+        "resources/[osp]/osp_ambulance/lang/ro.lua",
+        "resources/[osp]/osp_ambulance/lang/ru.lua",
+        "resources/[osp]/osp_ambulance/lang/sk.lua",
+        "resources/[osp]/osp_ambulance/lang/sl.lua",
+        "resources/[osp]/osp_ambulance/lang/sv.lua",
+        "resources/[osp]/osp_ambulance/lang/th.lua",
+        "resources/[osp]/osp_ambulance/lang/tr.lua",
+        "resources/[osp]/osp_ambulance/lang/zh-cn.lua",
+        "resources/[osp]/osp_ambulance/lang/zh-tw.lua",
+        "resources/[osp]/osp_ambulance/server/server.lua",
+        "resources/[osp]/osp_ambulance/server/server_open.lua",
+        "resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc",
+        "resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc.xml",
+        "resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel",
+        "resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel.xml",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/combicarrier2.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/ems_props.ytyp",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernocot.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernotexture.ytd",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lifepak15.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredfernocot.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredstrykergurney.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas2.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas3.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/prop_ld_bomb.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingfernocot.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingstrykergurney.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykergurney.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykertexture.ytd",
+        "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.yft",
+        "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.ytd",
+        "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair_hi.yft",
+        "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ydr",
+        "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ytyp",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg1.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg2.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg3.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming1.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming2.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary1.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary2.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary3.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary4.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary5.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary6.gfx",
+        "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_xray1.gfx",
+        "resources/[osp]/osp_ambulance/vehicles.meta",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/fxmanifest.lua",
+        "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/stream/hei_dt1_rd1.ymap"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\"},\"chopshop\":{\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\",\"channelId\":\"1552971071882399744\"}",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_chat\":{\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\",\"channelId\":\"1557386335512305664\",\"webhookId\":\"1557386337580220497\"},\"support\":{\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\",\"channelId\":\"1552971099317211"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/ESX ITEMS DATABASE.sql",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/README.txt",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/carvariations.meta",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/client_open.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/dead.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/ecg.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/fractures.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/incoming.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/job.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/laststand.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/stationary.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/stretcher.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/client/wheelchair.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/fractures.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/general.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/locations.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/medications.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/shop.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/vehicles.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/weapons.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/webhook.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/config/wounds.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/handling.meta",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/ecg.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/fracture1.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/fracture2.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/guide.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_left_t.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/arm_right_t.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/background.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/head_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_left_t.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/leg_right_t.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/neck.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/spine.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_b.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_f.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_fracture.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_h.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_l.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_m.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/img/torso_s.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/incoming.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/incoming.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/inject.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/jquery.min.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/rapidheartbeat.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/slowheartbeat.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/stationary.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/stationary.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/test.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/ui.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/visualEffects.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/xray.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/html/xray.wav",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/armcast.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/armsplint.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/bandage.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/blood250ml.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/blood500ml.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/bodybag.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/castsaw.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/crutch.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/ecg.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/elastic_bandage.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/epinephrine.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/field_dressing.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/ifak.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/legcast.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/legsplint.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/morphine.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/neckbrace.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/neckcast.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/packing_bandage.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/pager.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/painkillers.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/propofol.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/quick_clot.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/revivekit.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/saline250ml.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/saline500ml.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/sewing_kit.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/stretcher.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/tourniquet.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/inventoryImages/wheelchair.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/al.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/ar.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/cs.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/da.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/de.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/el.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/en.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/es.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/et.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/fi.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/fr.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/he.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/hr.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/hu.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/id.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/it.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/lt.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/nl.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/no.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/pl.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/pt-br.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/pt.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/ro.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/ru.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/sk.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/sl.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/sv.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/th.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/tr.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/zh-cn.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/lang/zh-tw.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/server/server.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/server/server_open.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/sound/audiodirectory/ambulance_sounds.awc.xml",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/sound/data/ambulance_sounds.dat54.rel.xml",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/combicarrier2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/ems_props.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernocot.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/fernotexture.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lifepak15.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredfernocot.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/loweredstrykergurney.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas2.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/lucas3.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/prop_ld_bomb.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingfernocot.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/sittingstrykergurney.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykergurney.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[emsprops]/strykertexture.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.yft",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair.ytd",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/iak_wheelchair_hi.yft",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ydr",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/[props]/[wheelchair]/v_med_crutch01.ytyp",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg1.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg2.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_ekg3.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming1.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_incoming2.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary1.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary2.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary3.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary4.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary5.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_stationary6.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/stream/generic_texture_renderer_xray1.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[osp]/osp_ambulance/vehicles.meta",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/stream/hei_dt1_rd1.ymap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
