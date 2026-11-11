@@ -2,6 +2,74 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-11 20:23 Uhr
+**+0** neu · **~5** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
+-        {
+-            "value": 2500,
+-            "sender_name": "Coco Black",
+-            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
+-            "date": "2026/11/03 - 03:14:08",
+-            "type": "withdraw",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "receiver_identifier": "cd_garage",
+-            "receiver_name": "cd_garage"
+```
+`~ resources/[selfcode]/rmc_aduty/config/sv_config.lua`
+```diff
+-sv_config = {}
+-
+-sv_config.general = {
+-    language = "de",
+-    events = {
+-        ["esx:playerLoaded"] = "esx:playerLoaded",
+-        ["esx:setJob"] = "esx:setJob"
+-    }
+-}
+-
+```
+`~ resources/[selfcode]/rmc_aduty/server/server.lua`
+```diff
++local apiIdentCache = {}      -- [source] = letzter bekannter char-Identifier (für Log beim Disconnect)
++local screenshotToken = 0
++
++-- ============================================================
++-- Log-API (v1-api.rmc-rp.de)
++-- ============================================================
++
++--- Sendet einen Log an die Log-API. Läuft nur serverseitig.
++--- @param src number
++--- @param xPlayer table|nil
+```
+`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
+```diff
++    ghostGeneration = 0,
++    TR.Editor.ghostGeneration = (TR.Editor.ghostGeneration or 0) + 1
++-- Läuft im Hintergrund, damit das Menü sofort aufgeht.
++    local generation = TR.Editor.ghostGeneration
++    local points = job.points or {}
+-    for i = 1, #(job.points or {}) do
+-        local point = job.points[i]
+-        local coords = point.coords
+-        if coords then
+-            if spec.spawnPed then
+```
+`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
+```diff
++local companyGeneration = 0
++
++-- Blips sofort, Peds im Hintergrund: blockiert Menüs/Callbacks nicht mehr.
++    companyGeneration = companyGeneration + 1
++    local generation = companyGeneration
++
++    local pending = {}
+-                local ped = TR.SpawnStandingPed(modelName, pedCoords, pedCoords.w or 0.0)
+-                if ped ~= 0 then
+-                    TR.State.world.peds[#TR.State.world.peds + 1] = ped
+```
+
 ## 2026-11-11 19:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
@@ -2377,25 +2445,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
 +{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
-```
-
-## 2026-11-07 03:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
-+    "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--            "receiver_name": "cd_garage",
--            "date": "2026/11/03 - 03:14:08",
--            "receiver_identifier": "cd_garage",
--            "sender_name": "Coco Black",
--            "value": 2500,
-+            "sender_name": "Akio Kuroda",
--            "reason": "Fahrzeugrückgabegebühr",
--            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-06T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971
-+{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
 ```
