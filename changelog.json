@@ -65159,6 +65159,121 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T00:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77664
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_core/server/discord_config.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/fxmanifest.lua",
+        "resources/[selfcode]/rmc_core/server/join.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/server/discord_config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"troll\":{\"webhookId\":\"1552971107500433498\",\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"channelId\":\"1552971103910236172\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"support\":{\"channelId\":\"1552971099317211136\",\"webhookId\":\"1552971101741654046\",\"url\":\"https://discord.com/api/webhooks/1552971101741654046/***\"},\"staff\":{\"channelId\":\"1552971120460828763\",\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/ap"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-author 'Kein_Bug'\r",
+            "-description 'RMC Core'\r",
+            "+author 'KeinBug'\r",
+            "+description 'RMC-Core'\r",
+            "-    'data/sits.json',",
+            "+    'data/sits.json',\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/join.lua",
+          "status": "M",
+          "lines": [
+            "+-- ===== Discord-Rollen-Check (Konfiguration: server/discord_config.lua) =====\r",
+            "+local function trim(s)\r",
+            "+    return (tostring(s or ''):gsub('^%s+', ''):gsub('%s+$', ''))\r",
+            "+end\r",
+            "+\r",
+            "+local function roleCheckToken()\r",
+            "+    local t = trim(DiscordConfig and DiscordConfig.Token)\r",
+            "+    if t ~= '' then return t end\r",
+            "+    t = trim(GetConvar('rmc_discord_bot_token', ''))\r",
+            "+    return t ~= '' and t or nil\r",
+            "+end\r",
+            "+\r",
+            "+local function roleCheckGuildId()\r",
+            "+    local g = trim(DiscordConfig and DiscordConfig.GuildId)\r",
+            "+    if g ~= '' then return g end\r",
+            "+    g = trim(GetConvar('rmc_discord_guild_id', ''))\r",
+            "+    if g ~= '' then return g end\r",
+            "+    return Config.Discord and Config.Discord.Setup and trim(Config.Discord.Setup.GuildId) or nil\r",
+            "+end\r",
+            "+\r",
+            "+-- Rückgabe: 'ok' | 'missing' (nicht auf Server / Rolle fehlt) | 'error'\r",
+            "+local function checkDiscordRoles(discordId)\r",
+            "+    local rc = DiscordConfig and DiscordConfig.RoleCheck\r",
+            "+    local token, guildId = roleCheckToken(), roleCheckGuildId()\r",
+            "+    if not token or not guildId or guildId == '' then\r",
+            "+        print('^1[rmc_core] Rollen-Check: Token oder GuildId fehlt (server/discord_config.lua).^7')\r",
+            "+        return 'error'\r",
+            "+    end\r",
+            "+\r",
+            "+    local p = promise.new()\r",
+            "+    PerformHttpRequest(('https://discord.com/api/v10/guilds/%s/members/%s'):format(guildId, discordId), function(code, body)\r",
+            "+        p:resolve({ code = tonumber(code) or 0, body = body })\r",
+            "+    end, 'GET', '', { ['Authorization'] = 'Bot ' .. token, ['User-Agent'] = 'rmc_core/1.0 (RoleCheck)' })\r",
+            "+    local res = Citizen.Await(p)\r",
+            "+\r",
+            "+    if res.code == 404 then return 'missing' end -- nicht auf dem Discord\r",
+            "+    if res.code ~= 200 or not res.body then\r",
+            "+        print(('^1[rmc_core] Rollen-Check: Discord-API Fehler HTTP %s^7'):format(res.code))\r",
+            "+        return 'error'\r",
+            "+    end\r",
+            "+\r",
+            "+    local ok, member = pcall(json.decode, res.body)\r",
+            "+    if not ok or type(member) ~= 'table' or type(member.roles) ~= 'table' then return 'error' end\r",
+            "+\r",
+            "+    local has = {}\r",
+            "+    for _, r in ipairs(member.roles) do has[tostring(r)] = true end\r",
+            "+    for _, required in ipairs(rc.RequiredRoles or {}) do\r",
+            "+        if has[tostring(required)] then return 'ok' end\r",
+            "+    end\r",
+            "+    return 'missing'\r",
+            "+end\r",
+            "+\r",
+            "+local function buildRoleMissingCard()\r",
+            "+    local rc = DiscordConfig.RoleCheck\r",
+            "+    local actions = {\r",
+            "+        { type = 'Action.Submit', title = '🔄 Erneut prüfen', style = 'positive', data = { action = 'recheck' } },\r",
+            "+    }\r",
+            "+    if rc.InviteUrl and rc.InviteUrl ~= '' then\r",
+            "+        actions[#actions + 1] = { type = 'Action.OpenUrl', title = '💬 Discord beitreten', url = rc.InviteUrl }\r",
+            "+    end\r"
+          ]
+        }
+      ]
     }
   ]
 }

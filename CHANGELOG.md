@@ -2,6 +2,40 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 00:23 Uhr
+**+1** neu · **~3** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_core/server/discord_config.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***",
++{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/ap
+```
+`~ resources/[selfcode]/rmc_core/fxmanifest.lua`
+```diff
+-author 'Kein_Bug'
+-description 'RMC Core'
++author 'KeinBug'
++description 'RMC-Core'
+-    'data/sits.json',
++    'data/sits.json',
+```
+`~ resources/[selfcode]/rmc_core/server/join.lua`
+```diff
++-- ===== Discord-Rollen-Check (Konfiguration: server/discord_config.lua) =====
++local function trim(s)
++    return (tostring(s or ''):gsub('^%s+', ''):gsub('%s+$', ''))
++end
++
++local function roleCheckToken()
++    local t = trim(DiscordConfig and DiscordConfig.Token)
++    if t ~= '' then return t end
++    t = trim(GetConvar('rmc_discord_bot_token', ''))
++    return t ~= '' and t or nil
+```
+
 ## 2026-11-11 22:23 Uhr
 **+1** neu · **~7** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/troll_rc.lua`
@@ -2533,42 +2567,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "sender_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
 +            "type": "withdraw"
 +        },
-```
-
-## 2026-11-07 21:23 Uhr
-**+0** neu · **~3** geändert · **-1** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupTimestamp": 1793649378,
--            "id": 11,
--            "backupDate": "20_56_02_11_2026",
--            "backupFile": "banlist_20_56_02_11_2026.json"
--        },
--        {
--            "backupTimestamp": 1793649503,
--            "id": 11,
--            "backupDate": "20_58_02_11_2026",
--            "backupFile": "banlist_20_58_02_11_2026.json"
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--        {
--            "sender_name": "Akio Kuroda",
--            "type": "withdraw",
--            "value": 10000,
--            "sender_identifier": "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
--            "receiver_name": "Geldbörse",
--            "receiver_identifier": "bank",
--            "date": "2026/10/30 - 00:24:57",
--            "reason": "Auszahlung vom Bankkonto"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-07T17:00:39Z","categoryId":"1551161549018759170","webhooks":{"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/
-+{"categoryId":"1551161549018759170","webhooks":{"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431","webhookId":"1552971088328392714"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"15511615756902
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_20_58_02_11_2026.json`
-```diff
-- Gelöscht
 ```
