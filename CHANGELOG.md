@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-11 19:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
+```diff
+-TR = TR or {}
+-TR.Editor = {
+-    session = false,
+-    preview = false,
+-    jobId = nil,
+-    ghosts = {},
+-    zones = {},
+-    worldTargets = {},
+-}
+-
+```
+`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
+```diff
+-ESX = exports['es_extended']:getSharedObject()
+-TR = TR or {}
+-
+-TR.State = {
+-    ready = false,
+-    dutyJobId = nil,
+-    assignment = nil,
+-    stats = nil,
+-    jobVehicle = 0,
+-    hatchOpen = false,
+```
+
 ## 2026-11-11 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2369,12 +2398,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-06T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971
 +{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
-```
-
-## 2026-11-07 00:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386361172918374","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/*
-+{"updatedAt":"2026-11-06T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***"},"einreise":{"webhookId":"1552971088328392714","channelId":"1552971
 ```
