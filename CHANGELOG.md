@@ -2,6 +2,61 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-11 21:23 Uhr
+**+2** neu · **~4** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_core/client/pullout.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/pullout.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "date": "2026/11/11 - 20:48:28",
++            "receiver_identifier": "cd_garage",
++            "value": 500,
++            "sender_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
++            "reason": "Sicherstellungsgebühr",
++            "type": "withdraw",
++            "sender_name": "Fabi Huber",
++            "receiver_name": "cd_garage"
++        },
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++    -- Anzeigedauer der ws_announce-Meldungen (ms)
++    AnnounceDuration = 5000, -- /offen /geschlossen /pause /ende
++    JobAdDuration    = 5000, -- /jobad
++
++-- ====== TOTE PERSONEN AUS FAHRZEUG ZIEHEN =====
++-- Jeder Spieler kann per ox_target (Fahrzeug anvisieren) tote Personen aus dem Auto ziehen.
++-- Ablauf: hinlaufen → Tür auf → rausheben → vor das Fahrzeug schleifen → ablegen.
++Config.PullOut = {
++    Enabled = true,
++
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-11T17:01:19Z","categoryId":"1551161549018759170","webhooks":{"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***",
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-11T19:56:51Z","webhooks":{"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714","channelId":"1552971085937381431"},"esx_chat":{"url":"https://discord.com/api/webhooks/155738633758022049
+```
+`~ resources/[selfcode]/rmc_core/server/faction_notification.lua`
+```diff
+-local function normalizeText(value)
+-    if not value then return '' end
+-    local s = tostring(value):lower()
+-    s = s:gsub('%s+', '')
+-    return s
+-end
+-
+-local function resolveFactionJobConfig(jobName, jobLabel)
+-    local allowed = Config.FactionStatus and Config.FactionStatus.AllowedJobs or nil
+-    if not allowed then return nil end
+```
+
 ## 2026-11-11 20:23 Uhr
 **+0** neu · **~5** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -2437,12 +2492,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
 +{"updatedAt":"2026-11-07T17:00:39Z","categoryId":"1551161549018759170","webhooks":{"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/
-```
-
-## 2026-11-07 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-07T01:30:04Z","categoryId":"1551161549018759170","webhooks":{"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763","webhookId":"1552971123233394708"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***",
-+{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
 ```
