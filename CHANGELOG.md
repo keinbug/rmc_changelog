@@ -2,6 +2,93 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-11 22:23 Uhr
+**+1** neu · **~7** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_core/client/troll_rc.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[cs]/cs-hall/config.lua`
+```diff
+-["tropical-heighst"] = {
+-    ['enabled'] = true,
+-    ['autoAdjustTime'] = true,
+-    ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
+-    ['maxVolumePercent'] = 200,
+-    ['smokeFxMultiplier'] = 3,
+-    ['smokeTimeoutMs'] = 5000,
+-    ['sparklerFxMultiplier'] = 1.0,
+-    ['sparklerTimeoutMs'] = 300,
+-    ['delayBetweenSmokeChainMs'] = 1500,
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1794342324,
++    "lastBackup": 1794428965,
+-            "backupTimestamp": 1793995824,
+-            "backupFile": "banlist_21_10_06_11_2026.json",
+-            "backupDate": "21_10_06_11_2026"
++            "backupTimestamp": 1794082451,
++            "backupDate": "21_14_07_11_2026",
++            "backupFile": "banlist_21_14_07_11_2026.json"
+-            "backupTimestamp": 1793995949,
+-            "backupFile": "banlist_21_12_06_11_2026.json",
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "date": "2026/11/11 - 21:39:30",
++            "receiver_identifier": "bank",
++            "value": 500,
++            "sender_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
++            "reason": "Auszahlung vom Kartenkonto",
++            "type": "withdraw",
++            "receiver_name": "Geldbörse",
++            "sender_name": "Rafael Sanchez"
++        },
+```
+`~ resources/[selfcode]/rmc_core/client/troll.lua`
+```diff
++            {
++                title = 'Fahrzeug fernsteuern',
++                description = 'Spieler wählen und sein Auto selbst fahren (WASD, Boost, Sprung …)',
++                icon = 'gamepad',
++                disabled = C.RemoteControl and C.RemoteControl.Enabled == false,
++                onSelect = function() TriggerEvent('rmc_core:troll:rc:openMenu') end,
++            },
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++
++    -- Fahrzeug fernsteuern: Admin fährt das Auto des Ziels (Ziel bleibt am Steuer, kann nicht aussteigen)
++    RemoteControl = {
++        Enabled = true,
++        CamDistance = 7.0,      -- Abstand Verfolgerkamera (Mausrad ändert live)
++        CamHeight = 2.2,        -- Kamerahöhe über dem Fahrzeug
++        BoostSpeed = 15.0,      -- SHIFT: + m/s Vorwärtsgeschwindigkeit
++        JumpVelocity = 7.0,     -- R: Sprung nach oben (m/s)
++        InputTimeoutMs = 1500,  -- keine Eingaben mehr vom Admin → Fahrzeug bremst
++    },
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-11T19:56:51Z","webhooks":{"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","webhookId":"1552971088328392714","channelId":"1552971085937381431"},"esx_chat":{"url":"https://discord.com/api/webhooks/155738633758022049
++{"categoryId":"1551161549018759170","webhooks":{"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/1552971107500433498/***","channelId":"1552971103910236172"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***",
+```
+`~ resources/[selfcode]/rmc_core/server/troll.lua`
+```diff
++
++-- ============================================================
++-- Fahrzeug fernsteuern: Admin steuert das Fahrzeug des Ziels
++-- Eingaben Admin → Server → Ziel-Client (der als Fahrer das Fahrzeug besitzt)
++-- ============================================================
++local RCfg = C.RemoteControl or {}
++if RCfg.Enabled ~= false then
++    local RC = {}         -- [adminSrc] = { target = id, vehNet = id }
++    local RCByTarget = {} -- [targetSrc] = adminSrc
++    local RC_ACTIONS = { boost = true, jump = true, engine = true, lock = true }
+```
+
 ## 2026-11-11 21:23 Uhr
 **+2** neu · **~4** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/client/pullout.lua`
@@ -2484,12 +2571,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_20_58_02_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-07 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-07T09:01:27Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","channelId":"1557386361172918374","webhookId":"1557386364578955274"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"155297107188239
-+{"updatedAt":"2026-11-07T17:00:39Z","categoryId":"1551161549018759170","webhooks":{"sperrzone":{"url":"https://discord.com/api/webhooks/1552971115209564220/***","webhookId":"1552971115209564220","channelId":"1552971110457286766"},"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/
 ```
