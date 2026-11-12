@@ -66009,6 +66009,322 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T22:23:13+01:00",
+      "initial": false,
+      "counts": {
+        "added": 4,
+        "modified": 9,
+        "deleted": 0,
+        "total": 77682
+      },
+      "truncated": false,
+      "added": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua.bak_flint",
+        "resources/[selfcode]/api_new/server/core.lua",
+        "resources/[selfcode]/api_new/server/housing.lua",
+        "resources/[selfcode]/rmc_housing/server/api.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/settings.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/adminjail.lua",
+        "resources/[selfcode]/rmc_core/server/sozialstunden.lua",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua.bak_flint",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/core.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/housing.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/api.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1794428965,",
+            "+    \"lastBackup\": 1794515602,",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1794082451,",
+            "-            \"backupDate\": \"21_14_07_11_2026\",",
+            "-            \"backupFile\": \"banlist_21_14_07_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "-            \"backupTimestamp\": 1794082576,",
+            "-            \"backupDate\": \"21_16_07_11_2026\",",
+            "-            \"backupFile\": \"banlist_21_16_07_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "+            \"backupTimestamp\": 1794342199,",
+            "-            \"backupTimestamp\": 1794342199,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1794515477,",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_31_12_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_31_12_11_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1794515602,",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_33_12_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_33_12_11_2026.json\""
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "-\t\tserver = {",
+            "-\t\t\texport = 'rcore_camping.flint',",
+            "-\t\t},"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\": [",
+            "-        {",
+            "-            \"date\": \"2026/11/11 - 20:48:28\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"value\": 500,",
+            "-            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"reason\": \"Sicherstellungsgebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"sender_name\": \"Fabi Huber\",",
+            "-            \"receiver_name\": \"cd_garage\"",
+            "-        },",
+            "+    \"char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\": [",
+            "-            \"date\": \"2026/11/11 - 20:46:41\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"value\": 10000,",
+            "-            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"sender_name\": \"Fabi Huber\"",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_identifier\": \"char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"reason\": \"Savings account interest payment (Period 27)\",",
+            "+            \"value\": 3,",
+            "+            \"date\": \"2026/07/05 - 09:20:38\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"date\": \"2026/11/11 - 20:46:33\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"value\": 300,",
+            "-            \"sender_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"sender_name\": \"Fabi Huber\"",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"receiver_identifier\": \"char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"reason\": \"Savings account interest payment (Period 26)\",",
+            "+            \"value\": 3,",
+            "+            \"date\": \"2026/06/27 - 10:00:32\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_name\": \"Fabi Huber\",",
+            "-            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "-            \"value\": 160000,",
+            "-            \"reason\": \"Einzahlung auf Kartenkonto\",",
+            "-            \"date\": \"2026/11/10 - 20:50:57\",",
+            "-            \"type\": \"deposit\",",
+            "-            \"sender_name\": \"Geldbörse\"",
+            "+            \"receiver_identifier\": \"char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"sender_name\": \"Savings Interest\",",
+            "+            \"reason\": \"Savings account interest payment (Period 25)\",",
+            "+            \"value\": 3,",
+            "+            \"date\": \"2026/06/19 - 10:00:25\",",
+            "+            \"receiver_name\": \"Savings Account\"",
+            "-            \"receiver_name\": \"Fabi Huber\",",
+            "-            \"receiver_identifier\": \"char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/housing.lua',",
+            "+    'server/core.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- rmc_housing-Endpunkte (/housing/...)",
+            "+Settings.Housing = {",
+            "+    Enabled   = true,",
+            "+    Resource  = 'rmc_housing',",
+            "+    AdminName = 'API',         -- steht im Housing-Discord-Log, wenn im Body kein \"admin\" steht",
+            "+}",
+            "+",
+            "+-- rmc_core-Endpunkte (/core/...): Adminjail, Sozialstunden, Uncuff",
+            "+Settings.Core = {",
+            "+    Enabled        = true,",
+            "+    Resource       = 'rmc_core',",
+            "+    PoliceResource = 'p_policejob',  -- für /core/uncuff (Export forceUncuff)",
+            "+    AdminName      = 'API',",
+            "+    MaxJailMinutes = 1440,           -- Obergrenze für /core/adminjail",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-12T17:01:00Z\",\"webhooks\":{\"versicherung\":{\"webhookId\":\"1535733186921898004\",\"channelId\":\"1535733166138990602\",\"url\":\"https://discord.com/api/webhooks/1535733186921898004/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386",
+            "+{\"webhooks\":{\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"14179176"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/adminjail.lua",
+          "status": "M",
+          "lines": [
+            "+-- ---------- Exports für api_new (nur serverseitig) ----------",
+            "+local function jailOut(entry, extra)",
+            "+    local out = {",
+            "+        reason = entry.reason,",
+            "+        adminName = entry.adminName,",
+            "+        dogModel = entry.dogModel,",
+            "+        treatsCollected = entry.treatsCollected or 0,",
+            "+        timeReduced = entry.timeReduced or 0,",
+            "+    }",
+            "+    for k, v in pairs(extra or {}) do out[k] = v end",
+            "+    return out",
+            "+end",
+            "+",
+            "+-- Infos zu einem online gejailten Spieler (nil = nicht gejailt)",
+            "+exports(\"GetAdminJailInfo\", function(targetId)",
+            "+    targetId = tonumber(targetId)",
+            "+    local j = targetId and ActiveJails[targetId]",
+            "+    if not j then return nil end",
+            "+    return jailOut(j, {",
+            "+        serverId = targetId, online = true, startAt = j.startAt, endAt = j.endAt,",
+            "+        durationSec = j.durationSec, remainingSec = remainingSecForJail(j),",
+            "+    })",
+            "+end)",
+            "+",
+            "+-- Alle Gejailten: online (aktiv) + offline (Restzeit läuft beim Reconnect weiter)",
+            "+exports(\"ListAdminJails\", function()",
+            "+    local out = {}",
+            "+    for src, j in pairs(ActiveJails) do",
+            "+        out[#out + 1] = jailOut(j, {",
+            "+            serverId = src, name = getPlayerNameSafe(src), identifier = getPrimaryIdentifier(src), online = true,",
+            "+            endAt = j.endAt, durationSec = j.durationSec, remainingSec = remainingSecForJail(j),",
+            "+        })",
+            "+    end",
+            "+    for identifier, p in pairs(PendingByIdentifier) do",
+            "+        out[#out + 1] = jailOut(p, { identifier = identifier, online = false, remainingSec = p.remainingSec or 0 })",
+            "+    end",
+            "+    return out",
+            "+end)",
+            "+",
+            "+-- Offline-Jail aufheben (Spieler hat sich während des Jails ausgeloggt)",
+            "+exports(\"UnAdminJailIdentifier\", function(identifier)",
+            "+    if not identifier or not PendingByIdentifier[identifier] then return false end",
+            "+    PendingByIdentifier[identifier] = nil",
+            "+    sendJailLog(\"unjail\", {",
+            "+        targetId = 0, targetName = identifier, adminId = 0, adminName = \"API\",",
+            "+        reason = \"manual (offline)\", remainingSec = 0,",
+            "+    })",
+            "+    return true",
+            "+end)",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/sozialstunden.lua",
+          "status": "M",
+          "lines": [
+            "+-- ---------- Exports für api_new (nur serverseitig) ----------",
+            "+exports(\"SendToSozialstunden\", SendToSozialstunden)",
+            "+",
+            "+exports(\"GetSozialstunden\", function(targetId)",
+            "+    local rec = active[tonumber(targetId)]",
+            "+    if not rec then return nil end",
+            "+    return { serverId = tonumber(targetId), remaining = rec.remaining, reason = rec.reason }",
+            "+end)",
+            "+",
+            "+exports(\"ListSozialstunden\", function()",
+            "+    local out = {}",
+            "+    for src, rec in pairs(active) do",
+            "+        out[#out + 1] = { serverId = src, name = GetPlayerName(src), remaining = rec.remaining, reason = rec.reason }",
+            "+    end",
+            "+    return out",
+            "+end)",
+            "+",
+            "+exports(\"ReleaseSozialstunden\", function(targetId, adminName)",
+            "+    targetId = tonumber(targetId)",
+            "+    if not targetId or not active[targetId] then return false end",
+            "+    releaseService(targetId)",
+            "+    log(0, targetId, 'Sozialstunden beendet', ('Spieler %s wurde per API freigelassen (%s).'):format(targetId, tostring(adminName or 'API')), 'Success', {",
+            "+        { name = 'Ziel', value = '`' .. tostring(targetId) .. '`', inline = true },",
+            "+    })",
+            "+    return true",
+            "+end)",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/api.lua',"
+          ]
+        }
+      ]
     }
   ]
 }

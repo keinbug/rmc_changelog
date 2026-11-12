@@ -2,6 +2,110 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 22:23 Uhr
+**+4** neu · **~9** geändert · **-0** gelöscht
+`+ resources/[manuell_start]/ox_inventory/data/items.lua.bak_flint`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/core.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/housing.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/api.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1794428965,
++    "lastBackup": 1794515602,
+-            "id": 11,
+-            "backupTimestamp": 1794082451,
+-            "backupDate": "21_14_07_11_2026",
+-            "backupFile": "banlist_21_14_07_11_2026.json"
+-        },
+-        {
+-            "id": 11,
+-            "backupTimestamp": 1794082576,
+```
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
+-		server = {
+-			export = 'rcore_camping.flint',
+-		},
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
+-        {
+-            "date": "2026/11/11 - 20:48:28",
+-            "receiver_identifier": "cd_garage",
+-            "value": 500,
+-            "sender_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
+-            "reason": "Sicherstellungsgebühr",
+-            "type": "withdraw",
+-            "sender_name": "Fabi Huber",
+-            "receiver_name": "cd_garage"
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/housing.lua',
++    'server/core.lua',
+```
+`~ resources/[selfcode]/api_new/settings.lua`
+```diff
++
++-- rmc_housing-Endpunkte (/housing/...)
++Settings.Housing = {
++    Enabled   = true,
++    Resource  = 'rmc_housing',
++    AdminName = 'API',         -- steht im Housing-Discord-Log, wenn im Body kein "admin" steht
++}
++
++-- rmc_core-Endpunkte (/core/...): Adminjail, Sozialstunden, Uncuff
++Settings.Core = {
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-12T17:01:00Z","webhooks":{"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
++{"webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"14179176
+```
+`~ resources/[selfcode]/rmc_core/server/adminjail.lua`
+```diff
++-- ---------- Exports für api_new (nur serverseitig) ----------
++local function jailOut(entry, extra)
++    local out = {
++        reason = entry.reason,
++        adminName = entry.adminName,
++        dogModel = entry.dogModel,
++        treatsCollected = entry.treatsCollected or 0,
++        timeReduced = entry.timeReduced or 0,
++    }
++    for k, v in pairs(extra or {}) do out[k] = v end
+```
+`~ resources/[selfcode]/rmc_core/server/sozialstunden.lua`
+```diff
++-- ---------- Exports für api_new (nur serverseitig) ----------
++exports("SendToSozialstunden", SendToSozialstunden)
++
++exports("GetSozialstunden", function(targetId)
++    local rec = active[tonumber(targetId)]
++    if not rec then return nil end
++    return { serverId = tonumber(targetId), remaining = rec.remaining, reason = rec.reason }
++end)
++
++exports("ListSozialstunden", function()
+```
+`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
++    'server/api.lua',
+```
+
 ## 2026-11-12 21:23 Uhr
 **+9** neu · **~0** geändert · **-0** gelöscht
 `+ resources/[selfcode]/api_new/api_new`
@@ -2534,132 +2638,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    if isVisible then return false end
 +    showClothingshop()
 +    return true
-```
-
-## 2026-11-08 21:23 Uhr
-**+0** neu · **~11** geändert · **-2** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
-+            "backupTimestamp": 1793822614,
-+            "backupDate": "21_03_04_11_2026",
--            "backupDate": "21_00_03_11_2026",
--            "backupFile": "banlist_21_00_03_11_2026.json",
--            "backupTimestamp": 1793736004
-+            "backupFile": "banlist_21_03_04_11_2026.json"
-+            "backupTimestamp": 1793822739,
-+            "backupDate": "21_05_04_11_2026",
--            "backupDate": "21_02_03_11_2026",
--            "backupFile": "banlist_21_02_03_11_2026.json",
-```
-`~ resources/[selfcode]/rmc_boom/Config.lua`
-```diff
--Config.itemName = 'boombox' -- Legacy / Fallback (= große Box). Items müssen in DB/Inventory existieren!
-+Config.itemName = 'boombox' -- EIN Item für beide Varianten: benutzen = kleine Box in der Hand, ox_target am Kofferraum = große Box zum Ziehen
-+Config.UseOxTarget = true -- true = Kofferraum-Interaktion über ox_target, false = eigener E-Prompt am Kofferraum
-+
-+-- Box-Varianten (beide nutzen dasselbe Item)
-+--  small = Item benutzen -> kleine Boombox in der Hand (spielt auch beim Tragen), kleiner Radius
-+--  large = per ox_target am Kofferraum rausholen -> wie auf Rollen hinterherziehen, größerer Radius, verbindbar
--        item = 'boombox_small',
-+        item = 'boombox',
--        fromTrunk = true, -- true = Item kann nur am Kofferraum eines Fahrzeugs rausgeholt werden
-```
-`~ resources/[selfcode]/rmc_boom/client/client.lua`
-```diff
--            local atTrunk = isDrag and trunkVeh ~= 0
-+            local atTrunk = isDrag and not Config.UseOxTarget and trunkVeh ~= 0
--        if boxCfg('large').fromTrunk and not placing and not isInUI then
-+        if boxCfg('large').fromTrunk and not Config.UseOxTarget and not placing and not isInUI then
-+-- ox_target ---------------------------------------------------------------
-+local targetNames = { 'rmc_boom:takeLarge', 'rmc_boom:stowLarge' }
-+
-+local function canUseTrunk(entity)
-+    if Config.TrunkBlacklistClasses and Config.TrunkBlacklistClasses[GetVehicleClass(entity)] then return false end
-+    if IsPedInAnyVehicle(PlayerPedId(), false) then return false end
-```
-`~ resources/[selfcode]/rmc_boom/server/server_edit.lua`
-```diff
--    for kind, cfg in pairs(Config.Boxes) do
--        registerUsable(cfg.item, kind)
-+    -- Item benutzen = immer die kleine Box in die Hand
-+    registerUsable(Config.Boxes.small.item, 'small')
-+    -- falls die große Box ein eigenes Item hat und nicht aus dem Kofferraum kommt
-+    local large = Config.Boxes.large
-+    if large.item ~= Config.Boxes.small.item and not large.fromTrunk then
-+        registerUsable(large.item, 'large')
--        UseBoxItem(source, 'large')
--    end)
-```
-`~ resources/[selfcode]/rmc_core/client/troll.lua`
-```diff
-+-- ============================================================
-+-- Fake-SMS (lb-phone)
-+-- ============================================================
-+local FS = C.FakeSms or {}
-+local ESXc = nil
-+pcall(function() ESXc = exports['es_extended']:getSharedObject() end)
-+
-+local function fsNotify(msg, typ, title)
-+    if ESXc and ESXc.ShowNotification then
-+        ESXc.ShowNotification(msg, typ or 'info', 8000, title or 'Fake-SMS')
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+
-+    -- Fake-SMS (lb-phone): Admin schickt SMS mit frei wählbarem Absender-Namen.
-+    -- Es wird eine temporäre Nummer vergeben; solange sie aktiv ist, bekommt der Admin
-+    -- jede Antwort des Ziels als Notify (und kann im Menü weiterschreiben).
-+    FakeSms = {
-+        Enabled = true,
-+        PhoneResource = 'lb-phone',
-+        -- Vorwahl der Fake-Nummern (darf bei lb-phone NICHT als echte Vorwahl vergeben sein)
-+        Prefix = '555',
-+        NumberLength = 7,          -- Ziffern nach der Vorwahl (lb-phone Standard: 7)
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***"},"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.c
-+{"updatedAt":"2026-11-08T20:12:21Z","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://dis
-```
-`~ resources/[selfcode]/rmc_core/server/bell.lua`
-```diff
--    local attachments = nil
-+    -- Logo als Profilbild: Absender beim Empfänger als Kontakt mit Bild anlegen
-+    -- (kein Bild-Anhang in der SMS). Eigenes Bild des Empfängers wird nicht überschrieben.
--        attachments = { jobCfg.Logo }
-+        pcall(function()
-+            MySQL.query.await([[
-+                INSERT INTO phone_phone_contacts (contact_phone_number, firstname, lastname, profile_image, phone_number)
-+                VALUES (?, ?, '', ?, ?)
-+                ON DUPLICATE KEY UPDATE profile_image = IF(profile_image IS NULL OR profile_image = '', VALUES(profile_image), profile_image)
-+            ]], { sender, sender, jobCfg.Logo, number })
-```
-`~ resources/[selfcode]/rmc_core/server/troll.lua`
-```diff
-+
-+-- ============================================================
-+-- Fake-SMS (lb-phone) mit temporärer Nummer
-+-- ============================================================
-+local FS = C.FakeSms or {}
-+if FS.Enabled ~= false then
-+    local phoneRes = FS.PhoneResource or 'lb-phone'
-+    local prefix = tostring(FS.Prefix or '555')
-+    local numLen = tonumber(FS.NumberLength) or 7
-+    local defaultMin = tonumber(FS.DefaultDurationMin) or 15
-```
-`~ server.cfg`
-```diff
-(Secrets — Inhalt unterdrückt)
-```
-`~ server.cfg.bkp`
-```diff
-(Secrets — Inhalt unterdrückt)
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_00_03_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_02_03_11_2026.json`
-```diff
-- Gelöscht
 ```
