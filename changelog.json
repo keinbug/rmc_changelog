@@ -66325,6 +66325,108 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T23:23:09+01:00",
+      "initial": false,
+      "counts": {
+        "added": 5,
+        "modified": 4,
+        "deleted": 0,
+        "total": 77687
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/client/location.lua",
+        "resources/[selfcode]/api_new/client/vehicle.lua",
+        "resources/[selfcode]/api_new/server/location.lua",
+        "resources/[selfcode]/api_new/server/vehicle.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/settings.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/client/location.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/client/vehicle.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/location.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/vehicle.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/location.lua',",
+            "+    'server/vehicle.lua',",
+            "+    'client/location.lua',",
+            "+    'client/vehicle.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- Standort-Endpunkte (/location/..., /locations)",
+            "+Settings.Location = {",
+            "+    Enabled         = true,",
+            "+    PostalResource  = 'rmc_core',              -- woher die PLZ-Liste kommt",
+            "+    PostalFile      = 'data/new-postals.json',",
+            "+    ClientTimeoutMs = 3000,                    -- so lange auf Straße/Gebiet vom Client warten",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"clothing_strip\":{\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\"},\"basicneeds\":{\"webhookId\":\"1552971931869777932\",\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"channelId\":\"14179176",
+            "+{\"webhooks\":{\"esx\":{\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\"},\"doors\":{\"channelId\":\"1559665845330907296\",\"url\":\"https://discord.com/api/webhooks/1559665847771988080/***\",\"webhookId\":\"1559665847771988080\"},\"c"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-description 'IPL-Housing für ESX: Mieten, Schlüssel, Interior-Stile, ox_inventory-Lager mit Stufen, Umkleide, Miete + Strom'",
+            "+description 'IPL-Housing'"
+          ]
+        }
+      ]
     }
   ]
 }

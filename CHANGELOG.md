@@ -2,6 +2,57 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 23:23 Uhr
+**+5** neu · **~4** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/client/location.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/client/vehicle.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/location.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/vehicle.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/location.lua',
++    'server/vehicle.lua',
++    'client/location.lua',
++    'client/vehicle.lua',
+```
+`~ resources/[selfcode]/api_new/settings.lua`
+```diff
++
++-- Standort-Endpunkte (/location/..., /locations)
++Settings.Location = {
++    Enabled         = true,
++    PostalResource  = 'rmc_core',              -- woher die PLZ-Liste kommt
++    PostalFile      = 'data/new-postals.json',
++    ClientTimeoutMs = 3000,                    -- so lange auf Straße/Gebiet vom Client warten
++}
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"14179176
++{"webhooks":{"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"c
+```
+`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
+-description 'IPL-Housing für ESX: Mieten, Schlüssel, Interior-Stile, ox_inventory-Lager mit Stufen, Umkleide, Miete + Strom'
++description 'IPL-Housing'
+```
+
 ## 2026-11-12 22:23 Uhr
 **+4** neu · **~9** geändert · **-0** gelöscht
 `+ resources/[manuell_start]/ox_inventory/data/items.lua.bak_flint`
@@ -2478,164 +2529,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/rmc_housing/web/style.css`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-08 22:23 Uhr
-**+36** neu · **~1** geändert · **-0** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/README.md`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/camera.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/clothing.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/interior.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/billing.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/db.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/outfits.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/shared/interiors.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/highend.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/medium.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/modern.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/mono.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/moody.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/regal.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/index.html`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/style.css`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_kleiderladen/client/main.lua`
-```diff
-+--------------------------------------------------------------------------------
-+-- Exports (z. B. für keystone_housing: Umkleide in der Wohnung)
-+--   exports['rmc_kleiderladen']:OpenShop()   -> öffnet den Laden an der aktuellen Position
-+--   exports['rmc_kleiderladen']:CloseShop()
-+--   exports['rmc_kleiderladen']:IsOpen()
-+--------------------------------------------------------------------------------
-+exports("OpenShop", function()
-+    if isVisible then return false end
-+    showClothingshop()
-+    return true
 ```
