@@ -66427,6 +66427,258 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-13T00:23:17+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 8,
+        "deleted": 0,
+        "total": 77690
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/client/voice.lua",
+        "resources/[selfcode]/api_new/server/garage.lua",
+        "resources/[selfcode]/api_new/server/voice.lua"
+      ],
+      "modified": [
+        "resources/[cd]/cd_garage/server/features/impound.lua",
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/client/vehicle.lua",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/server/location.lua",
+        "resources/[selfcode]/api_new/server/vehicle.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/client/voice.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/garage.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/voice.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[cd]/cd_garage/server/features/impound.lua",
+          "status": "M",
+          "lines": [
+            "-end)",
+            "+end)",
+            "+",
+            "+-- ============================================================",
+            "+--  api_new (Admin-Panel): Fahrzeug ohne Gebühr aus dem Abschlepphof holen.",
+            "+--  Nötig, weil cd_garage abgeschleppte Fahrzeuge zusätzlich im Speicher (ImpoundData) hält.",
+            "+--  Bei einem cd_garage-Update diesen Block wieder ans Dateiende setzen.",
+            "+-- ============================================================",
+            "+exports('ApiUnimpound', function(plate, spawnVehicle)",
+            "+    local okRun, err = pcall(removeVehicleFromImpound, 0, plate, spawnVehicle == true)",
+            "+    if not okRun then print('^3[cd_garage] ApiUnimpound: ' .. tostring(err) .. '^7') end",
+            "+    return true",
+            "+end)"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+            \"sender_name\": \"Coco Milano\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500,",
+            "+            \"date\": \"2026/11/12 - 23:56:36\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\"",
+            "+        },",
+            "+        {",
+            "+            \"sender_identifier\": \"char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "M",
+          "lines": [
+            "+",
+            "+---",
+            "+",
+            "+## SaltyChat (Funk & Voice)",
+            "+",
+            "+Läuft über die Server-Exports von `saltychat`. Funkkanäle liest der Client aus (ohne Antwort: `clientData: false`).",
+            "+",
+            "+### Voice-Status eines Spielers (Reichweite, lebendig, Funkkanäle, Lautsprecher)",
+            "+```bash",
+            "+curl \"$API/voice/player/4\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+",
+            "+### Wer ist in Funkkanal 1?",
+            "+```bash",
+            "+curl \"$API/voice/radio/1\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+",
+            "+### Funkkanal setzen / aus dem Funk werfen / Kanal leeren",
+            "+```bash",
+            "+curl -X POST \"$API/voice/radio/4\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"channel\":\"1\",\"primary\":true}'",
+            "+curl -X POST \"$API/voice/radioleave/4\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{}'",
+            "+curl -X POST \"$API/voice/radiokick/1\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"admin\":\"Sebbi\"}'",
+            "+```",
+            "+",
+            "+### Sprachreichweite (Meter) / Voice sperren (wie tot) / Funk-Lautsprecher",
+            "+```bash",
+            "+curl -X POST \"$API/voice/range/4\"   -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"range\":8}'",
+            "+curl -X POST \"$API/voice/alive/4\"   -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"alive\":false}'",
+            "+curl -X POST \"$API/voice/speaker/4\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"on\":true}'",
+            "+```",
+            "+Die Reichweite setzt der Spieler mit seiner Taste (Z) wieder selbst um.",
+            "+",
+            "+### Telefonat zwischen Spielern starten / beenden",
+            "+```bash",
+            "+curl -X POST \"$API/voice/call\"   -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"call\":\"support-1\",\"targets\":[4,7]}'",
+            "+curl -X POST \"$API/voice/hangup\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"call\":\"support-1\",\"targets\":[4,7]}'",
+            "+```",
+            "+",
+            "+---",
+            "+",
+            "+## Garage (cd_garage)",
+            "+",
+            "+Spielerfahrzeuge aus `owned_vehicles` (cd_garage: `in_garage` 0 = unterwegs, 1 = Garage, 2 = Abschlepphof). `:plate` = Kennzeichen.",
+            "+",
+            "+```bash",
+            "+curl \"$API/garage/locations\" -H \"X-API-Key: $KEY\"                       # Garagen inkl. PLZ",
+            "+curl \"$API/garage/vehicle/SP71F0Z2\" -H \"X-API-Key: $KEY\"                # Status, Garage, Position wenn draußen",
+            "+curl \"$API/garage/models?hashes=408825843\" -H \"X-API-Key: $KEY\"         # Modellnamen (Cache, sonst über einen Client)",
+            "+",
+            "+curl -X POST \"$API/garage/store/SP71F0Z2\"     -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"garage\":\"CA3N-XYDB-51XR\"}'",
+            "+curl -X POST \"$API/garage/unimpound/SP71F0Z2\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{}'",
+            "+curl -X POST \"$API/garage/spawn/SP71F0Z2\"     -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"to\":4,\"warp\":true}'",
+            "+curl -X POST \"$API/garage/plate/SP71F0Z2\"     -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"plate\":\"RMC 001\",\"style\":1}'",
+            "+curl -X POST \"$API/garage/repair/SP71F0Z2\"    -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{}'",
+            "+curl -X POST \"$API/garage/keys/SP71F0Z2\"      -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"to\":4}'",
+            "+curl -X POST \"$API/garage/transfer/SP71F0Z2\"  -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{\"owner\":\"char1:...\"}'",
+            "+curl -X POST \"$API/garage/delete/SP71F0Z2\"    -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" -d '{}'",
+            "+```",
+            "+",
+            "+- `style` = GTA-Schild 0–5 (0 Standard, 1 Schwarz/Gelb, 2 Blau/Gelb, 3 Klassik, 4 Exempt, 5 North Yankton)."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/client/vehicle.lua",
+          "status": "M",
+          "lines": [
+            "-local actions = {}",
+            "+-- Global, damit andere Module (client/voice.lua) eigene Aktionen ergänzen können",
+            "+ApiActions = ApiActions or {}",
+            "+local actions = ApiActions",
+            "+-- ============================================================",
+            "+--  Garage (server/garage.lua)",
+            "+-- ============================================================",
+            "+",
+            "+local ESXObj",
+            "+local function esx()",
+            "+    if not ESXObj then",
+            "+        local okEsx, obj = pcall(function() return exports['es_extended']:getSharedObject() end)",
+            "+        ESXObj = okEsx and obj or nil",
+            "+    end",
+            "+    return ESXObj",
+            "+end",
+            "+",
+            "+local function entityFromNet(netId)",
+            "+    netId = tonumber(netId)",
+            "+    if not netId or not NetworkDoesNetworkIdExist(netId) then return nil end",
+            "+    local veh = NetworkGetEntityFromNetworkId(netId)",
+            "+    if veh and veh ~= 0 and DoesEntityExist(veh) then return veh end",
+            "+end",
+            "+",
+            "+-- Gespeichertes Fahrzeug (Props aus owned_vehicles) beim Spieler spawnen",
+            "+function actions.spawnowned(args)",
+            "+    local props = type(args.props) == 'table' and args.props or {}",
+            "+    local model = tonumber(props.model) or props.model",
+            "+    if not model or not IsModelInCdimage(model) or not IsModelAVehicle(model) then return false, 'Fahrzeugmodell ist auf dem Server nicht vorhanden' end",
+            "+    RequestModel(model)",
+            "+    local untilT = GetGameTimer() + 10000",
+            "+    while not HasModelLoaded(model) and GetGameTimer() < untilT do Wait(0) end",
+            "+    if not HasModelLoaded(model) then return false, 'Modell konnte nicht geladen werden' end",
+            "+",
+            "+    local ped = PlayerPedId()",
+            "+    local c = args.warp and GetEntityCoords(ped) or GetOffsetFromEntityInWorldCoords(ped, 0.0, 5.0, 0.0)",
+            "+    local veh = CreateVehicle(model, c.x, c.y, c.z + 0.5, GetEntityHeading(ped), true, false)",
+            "+    untilT = GetGameTimer() + 3000",
+            "+    while not DoesEntityExist(veh) and GetGameTimer() < untilT do Wait(0) end",
+            "+    SetModelAsNoLongerNeeded(model)",
+            "+    if not DoesEntityExist(veh) then return false, 'Fahrzeug konnte nicht erstellt werden' end",
+            "+",
+            "+    SetEntityAsMissionEntity(veh, true, true)",
+            "+    SetVehicleHasBeenOwnedByPlayer(veh, true)",
+            "+    SetVehicleOnGroundProperly(veh)",
+            "+    local E = esx()",
+            "+    if E and E.Game and E.Game.SetVehicleProperties then pcall(E.Game.SetVehicleProperties, veh, props) end",
+            "+    SetVehicleNumberPlateText(veh, args.plate or props.plate or '')",
+            "+    if props.fuelLevel then",
+            "+        SetVehicleFuelLevel(veh, props.fuelLevel + 0.0)",
+            "+        pcall(function() Entity(veh).state:set('fuel', props.fuelLevel + 0.0, true) end)",
+            "+    end",
+            "+    if args.warp then",
+            "+        if IsPedInAnyVehicle(ped, false) then ClearPedTasksImmediately(ped) end",
+            "+        TaskWarpPedIntoVehicle(ped, veh, -1)",
+            "+    end",
+            "+    notify('Ein Admin hat dir ein Fahrzeug ausgeparkt.')",
+            "+    return true, nil, { netId = NetworkGetNetworkIdFromEntity(veh) }",
+            "+end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/voice.lua',",
+            "+    'server/garage.lua',",
+            "+    'client/voice.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/location.lua",
+          "status": "M",
+          "lines": [
+            "+Api.nearestPostal = function(x, y) return nearestPostal(x, y) end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/vehicle.lua",
+          "status": "M",
+          "lines": [
+            "+-- Für andere Module (server/voice.lua)",
+            "+Api.clientAction = clientAction",
+            "+Api.staffLog = discord",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"esx\":{\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\"},\"doors\":{\"channelId\":\"1559665845330907296\",\"url\":\"https://discord.com/api/webhooks/1559665847771988080/***\",\"webhookId\":\"1559665847771988080\"},\"c",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"join\":{\"channelId\":\"1448120760391565352\",\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.c"
+          ]
+        }
+      ]
     }
   ]
 }

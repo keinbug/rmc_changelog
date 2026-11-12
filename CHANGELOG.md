@@ -2,6 +2,96 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 00:23 Uhr
+**+3** neu · **~8** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/client/voice.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/garage.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/voice.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[cd]/cd_garage/server/features/impound.lua`
+```diff
+-end)
++end)
++
++-- ============================================================
++--  api_new (Admin-Panel): Fahrzeug ohne Gebühr aus dem Abschlepphof holen.
++--  Nötig, weil cd_garage abgeschleppte Fahrzeuge zusätzlich im Speicher (ImpoundData) hält.
++--  Bei einem cd_garage-Update diesen Block wieder ans Dateiende setzen.
++-- ============================================================
++exports('ApiUnimpound', function(plate, spawnVehicle)
++    local okRun, err = pcall(removeVehicleFromImpound, 0, plate, spawnVehicle == true)
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++            "sender_name": "Coco Milano",
++            "type": "withdraw",
++            "receiver_identifier": "cd_garage",
++            "receiver_name": "cd_garage",
++            "value": 500,
++            "date": "2026/11/12 - 23:56:36",
++            "reason": "Fahrzeugrückgabegebühr"
++        },
++        {
++            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
+```
+`~ resources/[selfcode]/api_new/README.md`
+```diff
++
++---
++
++## SaltyChat (Funk & Voice)
++
++Läuft über die Server-Exports von `saltychat`. Funkkanäle liest der Client aus (ohne Antwort: `clientData: false`).
++
++### Voice-Status eines Spielers (Reichweite, lebendig, Funkkanäle, Lautsprecher)
++```bash
++curl "$API/voice/player/4" -H "X-API-Key: $KEY"
+```
+`~ resources/[selfcode]/api_new/client/vehicle.lua`
+```diff
+-local actions = {}
++-- Global, damit andere Module (client/voice.lua) eigene Aktionen ergänzen können
++ApiActions = ApiActions or {}
++local actions = ApiActions
++-- ============================================================
++--  Garage (server/garage.lua)
++-- ============================================================
++
++local ESXObj
++local function esx()
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/voice.lua',
++    'server/garage.lua',
++    'client/voice.lua',
+```
+`~ resources/[selfcode]/api_new/server/location.lua`
+```diff
++Api.nearestPostal = function(x, y) return nearestPostal(x, y) end
++
+```
+`~ resources/[selfcode]/api_new/server/vehicle.lua`
+```diff
++-- Für andere Module (server/voice.lua)
++Api.clientAction = clientAction
++Api.staffLog = discord
++
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"c
++{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.c
+```
+
 ## 2026-11-12 23:23 Uhr
 **+5** neu · **~4** geändert · **-0** gelöscht
 `+ resources/[selfcode]/api_new/README.md`
@@ -2377,156 +2467,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://disco
 +{"updatedAt":"2026-11-09T00:46:20Z","webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"
-```
-
-## 2026-11-08 23:23 Uhr
-**+0** neu · **~3** geändert · **-34** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-08T20:12:21Z","webhooks":{"sozialstunden":{"channelId":"1552971081491419187","webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***"},"basicneeds":{"channelId":"1417917687723724872","webhookId":"1552971931869777932","url":"https://dis
-+{"categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://disco
-```
-`~ server.cfg`
-```diff
-(Secrets — Inhalt unterdrückt)
-```
-`~ server.cfg.bkp`
-```diff
-(Secrets — Inhalt unterdrückt)
-```
-`− resources/[selfcode]/rmc_housing/README.md`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/client/camera.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/client/clothing.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/client/interior.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/config.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/server/billing.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/server/db.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/server/outfits.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/shared/interiors.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/app.js`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/highend.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/medium.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/modern.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/mono.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/moody.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/regal.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/index.html`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_housing/web/style.css`
-```diff
-- Gelöscht
 ```
