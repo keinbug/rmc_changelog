@@ -65274,6 +65274,134 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T01:23:14+01:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 5,
+        "deleted": 0,
+        "total": 77666
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_housing/web/sounds/kaffee.mp3",
+        "resources/[selfcode]/rmc_housing/web/sounds/ofen.mp3"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_housing/client/appliances.lua",
+        "resources/[selfcode]/rmc_housing/config.lua",
+        "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+        "resources/[selfcode]/rmc_housing/server/appliances.lua",
+        "resources/[selfcode]/rmc_housing/web/app.js"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/sounds/kaffee.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/sounds/ofen.mp3",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/appliances.lua",
+          "status": "M",
+          "lines": [
+            "-local function progress(label, seconds)",
+            "-    return lib.progressBar({",
+            "+local function progress(label, seconds, sound)",
+            "+    if sound then SendNUIMessage({ action = 'sound', file = sound, duration = seconds, volume = 0.5 }) end",
+            "+    local ok = lib.progressBar({",
+            "+    if sound then SendNUIMessage({ action = 'sound', stop = true }) end",
+            "+    return ok",
+            "-    if r.item then return ('Automat auffüllen (%s)'):format(r.item) end",
+            "+    if r.item then return ('Automat auffüllen (%dx %s)'):format(r.amount or 1, r.label or r.item) end",
+            "-    if progress(('%s in den Ofen schieben …'):format(pick.label or pick.item), 2.5) then use(a, 'ovenIn', pick.item) end",
+            "+    local t = A.types.oven",
+            "+    if progress(('%s in den Ofen schieben …'):format(pick.label or pick.item), t.inSeconds or 9, t.sound) then use(a, 'ovenIn', pick.item) end",
+            "-            onSelect = function() if progress('Kaffee läuft durch …', t.seconds or 4) then use(a, 'draw') end end }",
+            "+            onSelect = function() if progress('Kaffee läuft durch …', t.seconds or 26, t.sound) then use(a, 'draw') end end }",
+            "-            onSelect = function() if progress('Automat auffüllen …', 3) then use(a, 'refill') end end }",
+            "+            onSelect = function()",
+            "+                local r = t.refill or {}",
+            "+                if r.item and (exports.ox_inventory:Search('count', r.item) or 0) < (r.amount or 1) then",
+            "+                    return notify(('Du brauchst %dx %s zum Auffüllen.'):format(r.amount or 1, r.label or r.item), 'error')",
+            "+                end",
+            "+                if progress('Kaffeebohnen nachfüllen …', 3) then use(a, 'refill') end",
+            "+            end }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/config.lua",
+          "status": "M",
+          "lines": [
+            "+            inSeconds = 9,           -- Animation beim Reinschieben (Sound web/sounds/ofen.mp3)",
+            "+            sound = 'ofen.mp3',",
+            "-            seconds = 4,         -- Dauer pro Kaffee",
+            "-            -- Auffüllen: mit Item (z. B. 'coffee_beans') ODER, wenn item = nil, gegen Geld",
+            "-            refill = { item = nil, price = 150, account = 'bank' },",
+            "+            seconds = 26,        -- Dauer pro Kaffee (Animation + Sound web/sounds/kaffee.mp3)",
+            "+            sound = 'kaffee.mp3',",
+            "+            -- Auffüllen nur mit Kaffeebohnen (1 Item = volle Füllung)",
+            "+            refill = { item = 'kaffeebohnen', label = 'Kaffeebohnen', amount = 1 },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'web/sounds/*.mp3',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/appliances.lua",
+          "status": "M",
+          "lines": [
+            "-    if r.item then",
+            "-        if (exports.ox_inventory:Search(src, 'count', r.item) or 0) < 1 then",
+            "-            return false, ('Du brauchst %s zum Auffüllen.'):format(r.item)",
+            "-        end",
+            "-        if not exports.ox_inventory:RemoveItem(src, r.item, 1) then return false, 'Auffüllen fehlgeschlagen.' end",
+            "-    elseif (r.price or 0) > 0 then",
+            "-        if not Housing.charge(src, r.price, r.account == 'money' and 'money' or 'bank', 'Kaffeeautomat auffüllen') then",
+            "-            return false, ('Nicht genug Geld (%s $).'):format(ESX.Math.GroupDigits(r.price))",
+            "-        end",
+            "+    local item, amount = r.item or 'kaffeebohnen', r.amount or 1",
+            "+    local label = r.label or item",
+            "+    if (exports.ox_inventory:Search(src, 'count', item) or 0) < amount then",
+            "+        return false, ('Du brauchst %dx %s zum Auffüllen.'):format(amount, label)",
+            "+    if not exports.ox_inventory:RemoveItem(src, item, amount) then return false, 'Auffüllen fehlgeschlagen.' end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/app.js",
+          "status": "M",
+          "lines": [
+            "+  if (m.action === 'sound') return playSound(m);",
+            "+/* Geräte-Sounds (Kaffee / Ofen) */",
+            "+let currentSound = null;",
+            "+function playSound(m) {",
+            "+  if (currentSound) { currentSound.pause(); currentSound = null; }",
+            "+  if (m.stop || !m.file) return;",
+            "+  const a = new Audio(`sounds/${m.file}`);",
+            "+  a.volume = typeof m.volume === 'number' ? m.volume : 0.5;",
+            "+  a.play().catch(() => {});",
+            "+  currentSound = a;",
+            "+  if (m.duration) setTimeout(() => { if (currentSound === a) { a.pause(); currentSound = null; } }, m.duration * 1000);",
+            "+}",
+            "+"
+          ]
+        }
+      ]
     }
   ]
 }
