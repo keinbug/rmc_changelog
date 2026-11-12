@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/ap
++{"webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"}
+```
+
 ## 2026-11-12 01:23 Uhr
 **+2** neu · **~5** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_housing/web/sounds/kaffee.mp3`
@@ -2592,25 +2600,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-08T00:13:43Z","categoryId":"1551161549018759170","webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/**
 +{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988
-```
-
-## 2026-11-08 01:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "reason": "Einzahlung auf Bankkonto",
-+            "date": "2026/11/08 - 00:49:52",
-+            "receiver_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "value": 115000,
-+            "sender_name": "Geldbörse",
-+            "receiver_name": "Coco Rossi",
-+            "sender_identifier": "bank",
-+            "type": "deposit"
-+        },
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"einreise":{"url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431","webhookId":"1552971088328392714"},"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","channelId":"15511615756902
-+{"updatedAt":"2026-11-08T00:13:43Z","categoryId":"1551161549018759170","webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/**
 ```
