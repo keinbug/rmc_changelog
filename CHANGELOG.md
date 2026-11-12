@@ -2,6 +2,159 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 14:22 Uhr
+**+3** neu · **~12** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_core/server/joinleave.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_housing/server/log.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_minijobs/server/log.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++            { key = 'joinleave',      name = 'join-leave',      topic = 'Spieler betritt / verlässt den Server', label = 'Join/Leave' },
++            { key = 'housing',        name = 'housing',         topic = 'Mietverträge, Zahlungen, Schlüssel, Räumungen, Polizei, Admin', label = 'Housing' },
++            { key = 'minijobs',       name = 'minijobs',        topic = 'Minijobs: Dienst, Aufträge, Auszahlungen, Teams, Admin', label = 'Minijobs' },
++-- ====== JOIN / LEAVE LOG ======
++-- Loggt jeden Server-Beitritt und -Austritt in den Discord-Channel #join-leave
++-- (wird vom Discord Auto-Setup in der Log-Kategorie angelegt, Key 'joinleave').
++Config.JoinLeaveLog = {
++    Enabled = true,
++    LogJoin = true,
++    LogLeave = true,
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"}
++{"updatedAt":"2026-11-12T13:18:01Z","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"14715568170615
+```
+`~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
+```diff
++
++    -- rmc_housing (leer = Auto-Setup legt #housing + Webhook an)
++    housing        = '',
++
++    -- rmc_minijobs (leer = Auto-Setup legt #minijobs + Webhook an)
++    minijobs       = '',
++
++    -- Join/Leave-Log (leer = Auto-Setup legt #join-leave + Webhook an)
++    joinleave      = '',
+```
+`~ resources/[selfcode]/rmc_housing/config.lua`
+```diff
++---------------------------------------------------------------------
++-- Discord-Logs (über rmc_core: exports GetWebhook + SendLogAdvanced)
++-- Channel + Webhook legt rmc_core per Auto-Setup an (Key 'housing').
++---------------------------------------------------------------------
++Config.Discord = {
++    enabled = true,
++    webhookKey = 'housing',   -- Key in rmc_core (webhook_links.lua / Config.Discord.Setup.Channels)
++    username = nil,           -- nil = Bot-Name aus rmc_core
++}
++
+```
+`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
+```diff
++    'server/log.lua',
+```
+`~ resources/[selfcode]/rmc_housing/server/admin.lua`
+```diff
++    Housing.log(src, 'Objekt angelegt', ('%s „%s“ wurde angelegt.'):format(row.type, label), 'Success', {
++        { name = 'Objekt', value = Housing.logProperty(id) },
++        { name = 'Interior', value = Interiors[row.interior].label or row.interior },
++        { name = 'Adresse', value = row.address ~= '' and row.address or '—' },
++        { name = 'Miete / Kaution', value = ('%s / %s'):format(Housing.logMoney(row.rent), Housing.logMoney(row.deposit)) },
++    })
++    local l = Leases[pid]
++    Housing.log(src, 'Admin-Räumung', ('%s wurde per Admin geräumt.'):format(Properties[pid].label), 'Critical', {
++        { name = 'Objekt', value = Housing.logProperty(pid) },
++        { name = 'Mieter', value = ('%s\n`%s`'):format(l.owner_name or '?', l.owner) },
+```
+`~ resources/[selfcode]/rmc_housing/server/billing.lua`
+```diff
++        Housing.log(src, 'Rechnung bezahlt', ('%s für %s bezahlt.'):format(Housing.logMoney(paid), Properties[pid].label), 'Success', {
++            { name = 'Objekt', value = Housing.logProperty(pid) },
++            { name = 'Rechnung', value = kind == 'all' and 'alle offenen' or (KINDS[kind] and KINDS[kind].label or kind) },
++            { name = 'Zahlart', value = method == 'money' and 'bar' or 'Bank' },
++        })
++        Housing.log(0, 'Strom abgestellt', ('Strom in %s wegen offener Rechnung abgestellt.'):format(p.label), 'Warning', {
++            { name = 'Objekt', value = Housing.logProperty(pid) },
++            { name = 'Mieter', value = l.owner_name or l.owner },
++            { name = 'Offen', value = Housing.logMoney(l.power_debt) },
++        })
+```
+`~ resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
++    Housing.log(src, 'Mietvertrag unterschrieben', ('%s hat %s gemietet.'):format(l.owner_name, p.label), 'Success', {
++        { name = 'Objekt', value = Housing.logProperty(pid) },
++        { name = 'Lager-Stufe', value = t.label or tostring(tierIdx) },
++        { name = 'Bezahlt', value = ('%s (Miete %s · Strom %s · Kaution %s) per %s'):format(Housing.logMoney(total), Housing.logMoney(rent),
++            Housing.logMoney(power), Housing.logMoney(p.deposit), method == 'money' and 'bar' or 'Bank') },
++    })
++        Housing.log(src, 'Polizei-Durchsuchung', ('%s (%s) durchsucht %s.'):format(x.getName(), x.job.label or x.job.name, p.label), 'Warning', {
++            { name = 'Objekt', value = Housing.logProperty(pid) },
++            { name = 'Mieter', value = l.owner_name or l.owner },
++        })
+```
+`~ resources/[selfcode]/rmc_minijobs/config.lua`
+```diff
+-Config = Config or {}
+-
+-Config.Admin = {
+-    command = 'mjadmin',
+-    groups = {
+-        'owner', 'inhaber', 'superadmin', 'admin', 'god',
+-        'management', 'leitung', 'projektleiter', 'projektleitung',
+-    },
+-    ace = 'minijob.admin',
+-}
+```
+`~ resources/[selfcode]/rmc_minijobs/fxmanifest.lua`
+```diff
+-fx_version 'cerulean'
+-game 'gta5'
+-lua54 'yes'
+-
+-name 'rmc_minijobs'
+-author 'RMC'
+-description 'Minijob Creator - Müllabfuhr, Lieferung, Rasen, Pflanzen, Kehren, Reinigung, Zeitung'
+-version '2.0.0'
+-
+-shared_scripts {
+```
+`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
+```diff
++    TR.Log(source, 'Minijob erstellt', ('Minijob „%s“ wurde erstellt.'):format(job.label), 'Success', {
++        { name = 'Minijob', value = TR.LogJob(job) },
++    })
++    local changed = {}
++    for k, v in pairs(patch) do
++        if type(v) == 'table' then
++            local sub = {}
++            for ik, iv in pairs(v) do
++                sub[#sub + 1] = type(iv) == 'table' and ik or ('%s=%s'):format(ik, tostring(iv))
++            end
+```
+`~ resources/[selfcode]/rmc_minijobs/server/jobs.lua`
+```diff
++    TR.DutySince = TR.DutySince or {}
++    TR.DutySince[xPlayer.identifier] = os.time()
++    TR.Log(source, 'Dienst begonnen', ('%s hat den Dienst bei %s begonnen.'):format(TR.LogName(source), job.label or job.id), 'Info', {
++        { name = 'Minijob', value = TR.LogJob(job) },
++    })
++    local openAsg = TR.Assignments[identifier]
++    local since = TR.DutySince and TR.DutySince[identifier]
++    local fields = { { name = 'Minijob', value = TR.LogJob(job or jobId) } }
++    if since then fields[#fields + 1] = { name = 'Dienstzeit', value = TR.LogDuration(os.time() - since) } end
++    if openAsg then
+```
+
 ## 2026-11-12 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2592,12 +2745,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988
 +{"updatedAt":"2026-11-08T17:01:14Z","webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/155297110750043
-```
-
-## 2026-11-08 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-08T00:13:43Z","categoryId":"1551161549018759170","webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/**
-+{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988
 ```
