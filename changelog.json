@@ -65894,6 +65894,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T18:23:03+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77669
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-12T13:18:01Z\",\"webhooks\":{\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\"},\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"14715568170615",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-12T17:01:00Z\",\"webhooks\":{\"versicherung\":{\"webhookId\":\"1535733186921898004\",\"channelId\":\"1535733166138990602\",\"url\":\"https://discord.com/api/webhooks/1535733186921898004/***\"},\"esx_jobs\":{\"webhookId\":\"1557386364578955274\",\"channelId\":\"1557386"
+          ]
+        }
+      ]
     }
   ]
 }

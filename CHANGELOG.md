@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-12 18:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-12T13:18:01Z","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"14715568170615
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-12T17:01:00Z","webhooks":{"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
+```
+
 ## 2026-11-12 14:22 Uhr
 **+3** neu · **~12** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_core/server/joinleave.lua`
@@ -2737,12 +2745,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +        return exports[phoneRes]:GetEquippedPhoneNumber(src)
 +    end)
 +    if ok and type(number) == 'string' and number ~= '' then return number end
-```
-
-## 2026-11-08 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988
-+{"updatedAt":"2026-11-08T17:01:14Z","webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"troll":{"webhookId":"1552971107500433498","url":"https://discord.com/api/webhooks/155297110750043
 ```
