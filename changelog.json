@@ -65920,6 +65920,95 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-12T21:23:15+01:00",
+      "initial": false,
+      "counts": {
+        "added": 9,
+        "modified": 0,
+        "deleted": 0,
+        "total": 77678
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/api_new",
+        "resources/[selfcode]/api_new/client/main.lua",
+        "resources/[selfcode]/api_new/config.lua",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/server/easyadmin.lua",
+        "resources/[selfcode]/api_new/server/http.js",
+        "resources/[selfcode]/api_new/server/main.lua",
+        "resources/[selfcode]/api_new/server/package-lock.json",
+        "resources/[selfcode]/api_new/settings.lua"
+      ],
+      "modified": [],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/api_new",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/easyadmin.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/http.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/package-lock.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        }
+      ]
     }
   ]
 }
