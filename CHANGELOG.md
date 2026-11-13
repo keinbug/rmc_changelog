@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-14 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"15511615924674
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-13T23:01:00Z","webhooks":{"hotdog":{"webhookId":"1474547103081566412","channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"esx":{"webhookId":"1557386326951592027","channelId":"142010343056291037
+```
+
 ## 2026-11-13 22:23 Uhr
 **+2** neu · **~1** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_35_13_11_2026.json`
@@ -1908,15 +1916,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T17:00:52Z","webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.c
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T23:01:03Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://di
-```
-
-## 2026-11-09 22:23 Uhr
-**+2** neu · **~0** geändert · **-0** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_20_09_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_09_11_2026.json`
-```diff
-+ Neue Datei
 ```
