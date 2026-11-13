@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 19:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/banlist.json`
+```diff
+-[]
++[
++    {
++        "banid": 1,
++        "reason": "Test ( Spielername: Unknown - table: 3c6ef372fe94f824 ), \nGebannt von: Sebbi",
++        "expireString": "20/11/2026 \t19:17:00",
++        "identifiers": [
++            "license:dcdd8750773c33c2ce3ff658853fe0c909367dba"
++        ],
++        "banner": "Sebbi",
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
++    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
+-            "sender_identifier": "bank",
+-            "receiver_identifier": "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
+-            "sender_name": "Savings Interest",
+-            "reason": "Savings account interest payment (Period 27)",
++            "sender_identifier": "bank",
++            "reason": "Savings account interest payment (Period 43)",
+-            "date": "2026/07/05 - 09:20:38",
+-            "receiver_name": "Savings Account"
+```
+
 ## 2026-11-13 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2044,37 +2073,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "receiver_identifier": "bank",
 +            "receiver_name": "Geldbörse"
 +        },
-```
-
-## 2026-11-09 19:23 Uhr
-**+0** neu · **~3** geändert · **-0** gelöscht
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
-+	["tk_pizza"] = {
-+		label = "Tiefkühl Pizza",
-+		weight = 10,
-+		stack = true,
-+		close = true,
-+	},
-+
-+	["kaffeebohnen"] = {
-+		label = "Kaffeebohne",
-+		weight = 1000,
-```
-`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
-```diff
-+			{ name = 'tk_pizza', price = 11 },
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
--            "value": 3,
-+            "type": "interest_savings",
--            "receiver_name": "Savings Account",
--            "type": "interest_savings"
-+            "value": 3,
-+            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
-+            "receiver_name": "Savings Account"
--            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
--            "value": 3,
 ```
