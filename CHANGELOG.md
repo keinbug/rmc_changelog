@@ -2,6 +2,35 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 20:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "type": "withdraw",
++            "sender_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
++            "reason": "Fahrzeugrückgabegebühr",
++            "value": 2500,
++            "date": "2026/11/13 - 20:06:54",
++            "receiver_name": "cd_garage",
++            "receiver_identifier": "cd_garage",
++            "sender_name": "Rafael Sanchez"
++        },
+```
+`~ resources/[selfcode]/api_new/server/easyadmin.lua`
+```diff
+-    POST   /easyadmin/ban                    { identifiers=[...], reason, duration }  Offline bannen
++    POST   /easyadmin/ban                    { identifiers=[...], reason, duration, name? }  Offline bannen (name -> statt "Unknown")
++    -- Offline-Bans: EasyAdmin kennt den Namen nicht und speichert "Unknown".
++    -- Name aus dem Request ({ name = "..." }, z.B. vom Panel) übernehmen und im Ban speichern.
++    local name = type(body.name) == 'string' and body.name:gsub('%s+', ' '):match('^%s*(.-)%s*$'):sub(1, 64) or ''
++    if name ~= '' and (ban.name == nil or ban.name == '' or ban.name == 'Unknown') then
++        ban.name = name
++        -- Server-seitig getriggert -> source = Konsole -> Rechteprüfung in EasyAdmin greift nicht
++        TriggerEvent('EasyAdmin:editBan', ban)
++    end
+```
+
 ## 2026-11-13 19:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/banlist.json`
@@ -1908,169 +1937,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_05_04_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-09 20:23 Uhr
-**+36** neu · **~2** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_housing/README.md`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/appliances.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/camera.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/clothing.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/interior.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/appliances.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/billing.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/db.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/outfits.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/shared/interiors.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/aqua.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/highend.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/lowend.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/medium.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/modern.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/mono.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/moody.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_ice.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_rich.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/office_warm.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/penthouse.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/regal.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/seductive.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/sharp.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/stilt1.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/stilt2.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/img/vibrant.jpg`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/index.html`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/style.css`
-```diff
-+ Neue Datei
-```
-`~ resources/[jaksam_scripte]/robberies_creator/current_config.json`
-```diff
--{"client":{"targetingScript":"none","clNpcMugging":{"cooldownOnMugging":15,"canMakeFollow":false},"gasMaskClothId":38,"npcMuggingKeys":{"keyToMug":47,"keyToFollow":74,"keyToGoAway":20}},"server":{"drill":{"loseOnUse":true,"name":"drill","requiredForCargoRobbery":true},"cargoRobbery":{"probabilityPo
-+{"shared":{"modules":{"textui":"ox_lib","dispatch":"codesign","progressbar":"ox_lib","logs":"jaksam"},"isNpcMuggingEnabled":true,"secondsToMug":45,"locale":"de"},"server":{"specificWebhooks":[],"maxMinutesDifferenceForCargoRobberies":10,"drill":{"requiredForCargoRobbery":true,"loseOnUse":true,"name
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "reason": "Auszahlung vom Bankkonto",
-+            "sender_identifier": "char1:95e98569cca18ee079f5fe27ab54152ede42f277",
-+            "date": "2026/11/09 - 19:51:57",
-+            "sender_name": "Mellie Anderson",
-+            "type": "withdraw",
-+            "value": 2000,
-+            "receiver_identifier": "bank",
-+            "receiver_name": "Geldbörse"
-+        },
 ```
