@@ -66850,6 +66850,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-13T18:22:32+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77691
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-13T09:00:41Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"lager\":{\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\",\"channelId\":\"1551161580324921455\",\"webhookId\":\"1551161582942158879\"},\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583",
+            "+{\"webhooks\":{\"bell\":{\"url\":\"https://discord.com/api/webhooks/1471556835994767400/***\",\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585614061618\",\"webhookId\":\"15511615924674"
+          ]
+        }
+      ]
     }
   ]
 }

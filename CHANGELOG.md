@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-13T09:00:41Z","categoryId":"1551161549018759170","webhooks":{"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583
++{"webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"15511615924674
+```
+
 ## 2026-11-13 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2069,12 +2077,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "receiver_name": "Savings Account"
 -            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
 -            "value": 3,
-```
-
-## 2026-11-09 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"poster":{"webhookId":"1560007815156998144","channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"esx":{"webhookId":"1557386326951592027","channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***"},"
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T17:00:52Z","webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.c
 ```
