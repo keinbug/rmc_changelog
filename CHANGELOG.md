@@ -2,6 +2,38 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 22:23 Uhr
+**+2** neu · **~1** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_35_13_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_37_13_11_2026.json`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1794515602,
++    "lastBackup": 1794602238,
+-            "backupTimestamp": 1794169013,
+-            "backupDate": "21_16_08_11_2026",
+-            "backupFile": "banlist_21_16_08_11_2026.json"
++            "backupTimestamp": 1794255639,
++            "backupFile": "banlist_21_20_09_11_2026.json",
++            "backupDate": "21_20_09_11_2026"
+-            "backupTimestamp": 1794169138,
+-            "backupDate": "21_18_08_11_2026",
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_16_08_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-13 20:23 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1887,54 +1919,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_09_11_2026.json`
 ```diff
 + Neue Datei
-```
-
-## 2026-11-09 21:23 Uhr
-**+0** neu · **~3** geändert · **-2** gelöscht
-`~ resources/[brutal]/brutal_ambulancejob/config.lua`
-```diff
--
--Hi, thank you for buying our script, We are very grateful!
--
--For help join our Discord server:     https://discord.gg/85u2u5c8q9
--More informations about the script:   https://docs.brutalscripts.com
--
--Config = {
--    Core = 'ESX',  -- 'ESX' / 'QBCORE' | Other core setting on the 'core' folder.
--    Inventory = 'ox_inventory', -- 'ox_inventory' / 'qb_inventory' / 'quasar_inventory' / 'chezza_inventory' / 'codem_inventory' / 'core_inventory' / 'origen_inventory' / 'ps-inventory' / 'tgiann-inventory' // Custom can be add in the cl_utils.lua!!!
--    Billing = 'okokBilling', -- 'brutal_billing' / 'okokBilling' / 'esx_billing' / 'jaksam_billing' / 'codem_billing' / 'quasar_billing' | false = immediate deduction from the player's bank account
-```
-`~ resources/[brutal]/brutal_ambulancejob/sv_utils.lua`
-```diff
--        TriggerClientEvent('brutal_ambulancejob:client:DefaultNotify', text)
-+        TriggerClientEvent('brutal_ambulancejob:client:DefaultNotify', source, text)
--end
-+end
-+
-+-- ============================================================
-+-- Admin-Revive Benachrichtigung
-+-- Die Befehls-Logik liegt in der verschluesselten server/commands.lua.
-+-- Daher wird hier (sv_utils.lua laedt VOR server/*.lua) der Revive-Command
-+-- beim Registrieren umschlossen: Alle Revive-Events, die waehrend der
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupTimestamp": 1793822614,
--            "backupDate": "21_03_04_11_2026",
--            "id": 11,
--            "backupFile": "banlist_21_03_04_11_2026.json"
--        },
--        {
--            "backupTimestamp": 1793822739,
--            "backupDate": "21_05_04_11_2026",
--            "id": 11,
--            "backupFile": "banlist_21_05_04_11_2026.json"
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_03_04_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_05_04_11_2026.json`
-```diff
-- Gelöscht
 ```
