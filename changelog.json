@@ -66679,6 +66679,125 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-13T01:23:18+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77691
+      },
+      "truncated": false,
+      "added": [
+        "resources/.claude/settings.local.json"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/webhook.lua",
+        "resources/[selfcode]/rmc_core/server/webhook_links.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/.claude/settings.local.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_resources\":{\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\",\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\"},\"join\":{\"channelId\":\"1448120760391565352\",\"webhookId\":\"1552971091771924552\",\"url\":\"https://discord.c",
+            "+{\"webhooks\":{\"willkommen\":{\"channelId\":\"1551161595436990575\",\"url\":\"https://discord.com/api/webhooks/1551161597853049005/***\",\"webhookId\":\"1551161597853049005\"},\"esx_paycheck\":{\"channelId\":\"1557386352226598913\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"webhookId\":\"1557386357"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/webhook.lua",
+          "status": "M",
+          "lines": [
+            "+-- ============================================",
+            "+-- LOG-API (v1-api.rmc-rp.de) – wie bei rmc_aduty",
+            "+-- Jeder Log geht zusätzlich (zum Discord-Webhook) an die Log-API,",
+            "+-- inkl. Typ (type) und Aktion (action).",
+            "+-- Diese Datei ist server_script -> Key gelangt nicht zum Client.",
+            "+-- Überschreibbar per server.cfg: set rmc_logapi_url / set rmc_logapi_key",
+            "+-- ============================================",
+            "+local LogApi = {",
+            "+    enabled = GetConvar(\"rmc_logapi_enabled\", \"true\") == \"true\",",
+            "+    url     = GetConvar(\"rmc_logapi_url\", \"https://v1-api.rmc-rp.de\"),",
+            "+    key     = GetConvar(\"rmc_logapi_key\", \"qfjpRqZP1dZC7m3hAfKS8idO98qV4NnjQddJ90nfC_WUfnWbs4vnWCQzq3fVc3wd\"),",
+            "+    debug   = GetConvar(\"rmc_logapi_debug\", \"false\") == \"true\",",
+            "+}",
+            "+",
+            "+local identCache = {} -- [source] = letzter bekannter char-Identifier (falls ESX den Spieler schon entfernt hat)",
+            "+",
+            "+AddEventHandler(\"esx:playerLoaded\", function(playerId, xPlayer)",
+            "+    if xPlayer and xPlayer.identifier then identCache[tonumber(playerId)] = xPlayer.identifier end",
+            "+end)",
+            "+",
+            "+AddEventHandler(\"playerDropped\", function()",
+            "+    local src = tonumber(source)",
+            "+    -- kurz behalten, damit Disconnect-Logs (join/leave, afk) noch einen Identifier haben",
+            "+    SetTimeout(30000, function() identCache[src] = nil end)",
+            "+end)",
+            "+",
+            "+-- \"AFK aktiviert\" -> \"afk_aktiviert\" (nur a-z, 0-9, _ ; max. 64 Zeichen)",
+            "+local function slugify(str)",
+            "+    if type(str) ~= \"string\" then return nil end",
+            "+    for from, to in pairs({ [\"ä\"] = \"ae\", [\"Ä\"] = \"ae\", [\"ö\"] = \"oe\", [\"Ö\"] = \"oe\",",
+            "+                            [\"ü\"] = \"ue\", [\"Ü\"] = \"ue\", [\"ß\"] = \"ss\" }) do",
+            "+        str = str:gsub(from, to)",
+            "+    end",
+            "+    str = str:lower()",
+            "+        :gsub(\"[^%w]+\", \"_\"):gsub(\"^_+\", \"\"):gsub(\"_+$\", \"\")",
+            "+    if str == \"\" then return nil end",
+            "+    return str:sub(1, 64)",
+            "+end",
+            "+",
+            "+local function GetCharIdentifier(source)",
+            "+    source = tonumber(source)",
+            "+    if not source or source == 0 then return nil end",
+            "+    if ESX then",
+            "+        local xPlayer = ESX.GetPlayerFromId(source)",
+            "+        if xPlayer and xPlayer.identifier then",
+            "+            identCache[source] = xPlayer.identifier",
+            "+            return xPlayer.identifier",
+            "+        end",
+            "+    end",
+            "+    return identCache[source]",
+            "+end",
+            "+",
+            "+-- Typ-Reihenfolge: data.type > data.script > Webhook-Key (GetWebhookLink) > aufrufende Resource",
+            "+local function ResolveLogType(opts, webhookUrl)",
+            "+    local t = slugify(opts.type) or slugify(opts.script)",
+            "+    if t then return t end",
+            "+    if GetWebhookKeyByUrl then",
+            "+        t = slugify(GetWebhookKeyByUrl(webhookUrl))",
+            "+        if t then return t end",
+            "+    end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/webhook_links.lua",
+          "status": "M",
+          "lines": [
+            "+-- Umgekehrte Suche: Webhook-URL -> Key (z.B. 'afk'). Wird von webhook.lua",
+            "+-- genutzt, um den Log-Typ für die Log-API zu bestimmen. 'default' zählt nicht.",
+            "+function GetWebhookKeyByUrl(url)",
+            "+    if type(url) ~= 'string' or url == '' then return nil end",
+            "+    for key, link in pairs(Links) do",
+            "+        if key ~= 'default' and link == url then return key end",
+            "+    end",
+            "+    return nil",
+            "+end",
+            "+"
+          ]
+        }
+      ]
     }
   ]
 }

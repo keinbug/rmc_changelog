@@ -2,6 +2,44 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-13 01:23 Uhr
+**+1** neu · **~3** geändert · **-0** gelöscht
+`+ resources/.claude/settings.local.json`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.c
++{"webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
+```
+`~ resources/[selfcode]/rmc_core/server/webhook.lua`
+```diff
++-- ============================================
++-- LOG-API (v1-api.rmc-rp.de) – wie bei rmc_aduty
++-- Jeder Log geht zusätzlich (zum Discord-Webhook) an die Log-API,
++-- inkl. Typ (type) und Aktion (action).
++-- Diese Datei ist server_script -> Key gelangt nicht zum Client.
++-- Überschreibbar per server.cfg: set rmc_logapi_url / set rmc_logapi_key
++-- ============================================
++local LogApi = {
++    enabled = GetConvar("rmc_logapi_enabled", "true") == "true",
++    url     = GetConvar("rmc_logapi_url", "https://v1-api.rmc-rp.de"),
+```
+`~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
+```diff
++-- Umgekehrte Suche: Webhook-URL -> Key (z.B. 'afk'). Wird von webhook.lua
++-- genutzt, um den Log-Typ für die Log-API zu bestimmen. 'default' zählt nicht.
++function GetWebhookKeyByUrl(url)
++    if type(url) ~= 'string' or url == '' then return nil end
++    for key, link in pairs(Links) do
++        if key ~= 'default' and link == url then return key end
++    end
++    return nil
++end
++
+```
+
 ## 2026-11-13 00:23 Uhr
 **+3** neu · **~8** geändert · **-0** gelöscht
 `+ resources/[selfcode]/api_new/client/voice.lua`
@@ -2459,12 +2497,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -    return nil
 -end
 -
-```
-
-## 2026-11-09 02:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"webhookId":"1551520132319412284","channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***"},"marriage":{"webhookId":"1467556382038429901","channelId":"1467556343492640830","url":"https://disco
-+{"updatedAt":"2026-11-09T00:46:20Z","webhooks":{"afk":{"url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617","webhookId":"1512475306554953789"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"
 ```
