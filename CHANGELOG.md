@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-14 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-13T23:01:00Z","webhooks":{"hotdog":{"webhookId":"1474547103081566412","channelId":"1474547082076622979","url":"https://discord.com/api/webhooks/1474547103081566412/***"},"esx":{"webhookId":"1557386326951592027","channelId":"142010343056291037
++{"updatedAt":"2026-11-14T09:01:16Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"minijobs":{"channelId":"1570426349213188196","url":"https://disc
+```
+
 ## 2026-11-14 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1895,25 +1903,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T23:01:03Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://di
 +{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"}
-```
-
-## 2026-11-10 00:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "date": "2026/11/09 - 23:24:21",
-+            "receiver_name": "cd_garage",
-+            "sender_name": "Coco Rossi",
-+            "type": "withdraw",
-+            "receiver_identifier": "cd_garage",
-+            "value": 500
-+        },
-+        {
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T17:00:52Z","webhooks":{"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.c
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T23:01:03Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://di
 ```
