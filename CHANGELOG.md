@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-15 00:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-14T17:01:28Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://disc
++{"updatedAt":"2026-11-14T23:00:39Z","webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/155116157800979663
+```
+
 ## 2026-11-14 22:23 Uhr
 **+2** neu · **~1** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_37_14_11_2026.json`
@@ -1090,20 +1098,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    return active[tonumber(src) or -1] ~= nil
 +end
 +
-```
-
-## 2026-11-10 20:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
--        {
--            "value": 500,
--            "reason": "Fahrzeugrückgabegebühr",
--            "type": "withdraw",
--            "date": "2026/09/16 - 20:15:27",
--            "receiver_identifier": "cd_garage",
--            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
--            "receiver_name": "cd_garage",
--            "sender_name": "Jayden Anderson"
 ```
