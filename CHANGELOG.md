@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-14 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-14T09:01:16Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"minijobs":{"channelId":"1570426349213188196","url":"https://disc
++{"updatedAt":"2026-11-14T17:01:28Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://disc
+```
+
 ## 2026-11-14 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1882,25 +1890,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[stream]/[mlo]/[tstudio]/tstudio_zpatch_mrpark_jj/stream/hei_dt1_rd1.ymap`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-10 10:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
--        {
--            "reason": "Savings account interest payment (Period 42)",
--            "date": "2026/11/02 - 10:01:02",
--            "type": "interest_savings",
--            "sender_name": "Savings Interest",
--            "sender_identifier": "bank",
--            "value": 3,
--            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
--            "receiver_name": "Savings Account"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-09T23:01:03Z","webhooks":{"sozialstunden":{"webhookId":"1552971083731181709","url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"1552971081491419187"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://di
-+{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"chopshop":{"url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312","channelId":"1552971071882399744"}
 ```
