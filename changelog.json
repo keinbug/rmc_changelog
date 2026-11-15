@@ -67435,6 +67435,196 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-15T22:22:35+01:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 4,
+        "deleted": 2,
+        "total": 77696
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json",
+        "resources/[selfcode]/api_new/admins.json",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin",
+        "resources/[selfcode]/api_new/server/main.lua.bak-keylog",
+        "resources/[selfcode]/api_new/server/txadmin.lua",
+        "resources/[selfcode]/api_new/settings.lua.bak-txadmin"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/server/main.lua",
+        "resources/[selfcode]/api_new/settings.lua"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_23_10_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_25_10_11_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/admins.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/main.lua.bak-keylog",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/txadmin.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua.bak-txadmin",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupFile\": \"banlist_21_23_10_11_2026.json\",",
+            "-            \"backupTimestamp\": 1794342199,",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"21_23_10_11_2026\"",
+            "-        },",
+            "-        {",
+            "-            \"backupFile\": \"banlist_21_25_10_11_2026.json\",",
+            "-            \"backupTimestamp\": 1794342324,",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"21_25_10_11_2026\"",
+            "-        },",
+            "-        {",
+            "-            \"backupFile\": \"banlist_21_27_11_11_2026.json\",",
+            "-            \"backupDate\": \"21_27_11_11_2026\"",
+            "+            \"backupDate\": \"21_27_11_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_27_11_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_29_11_11_2026.json\",",
+            "-            \"backupDate\": \"21_29_11_11_2026\"",
+            "+            \"backupDate\": \"21_29_11_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_29_11_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_31_12_11_2026.json\",",
+            "-            \"backupDate\": \"21_31_12_11_2026\"",
+            "+            \"backupDate\": \"21_31_12_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_31_12_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_33_12_11_2026.json\",",
+            "-            \"backupDate\": \"21_33_12_11_2026\"",
+            "+            \"backupDate\": \"21_33_12_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_33_12_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_35_13_11_2026.json\",",
+            "-            \"backupDate\": \"21_35_13_11_2026\"",
+            "+            \"backupDate\": \"21_35_13_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_35_13_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_37_13_11_2026.json\",",
+            "+            \"id\": 11,",
+            "-            \"id\": 11",
+            "+            \"backupFile\": \"banlist_21_37_13_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_37_14_11_2026.json\",",
+            "-            \"backupDate\": \"21_37_14_11_2026\"",
+            "+            \"backupDate\": \"21_37_14_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_37_14_11_2026.json\"",
+            "-            \"backupFile\": \"banlist_21_40_14_11_2026.json\",",
+            "+            \"id\": 11,",
+            "-            \"id\": 11",
+            "+            \"backupFile\": \"banlist_21_40_14_11_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1794775302,",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_41_15_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_41_15_11_2026.json\"",
+            "+        },",
+            "+        {",
+            "+            \"backupDate\": \"21_43_15_11_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_43_15_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794775427",
+            "-    \"lastBackup\": 1794688800",
+            "+    \"lastBackup\": 1794775427"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/txadmin.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/main.lua",
+          "status": "M",
+          "lines": [
+            "-        print(('[api_new] Ungültiger API-Key von %s'):format(ip))",
+            "+        -- Aufrufe ganz ohne Key (z. B. Status-Monitor des Panels) nicht loggen, nur falsche Keys",
+            "+        if key ~= '' then print(('[api_new] Ungültiger API-Key von %s'):format(ip)) end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- txAdmin-Endpunkte (/txadmin/...): Accounts anzeigen und über das Panel verwalten",
+            "+Settings.TxAdmin = {",
+            "+    Enabled    = true,",
+            "+    Url        = \"http://127.0.0.1:40120\",                 -- Web-Port von txAdmin",
+            "+    Username   = \"RMC-Panel\",                              -- eigener txAdmin-Account für das Panel",
+            "+    Password   = \"xqh6AXQLWNJMxBNyHBw3\",                                       -- dessen Passwort (leer = nur lesen)",
+            "+    AdminsFile = \"/home/FiveM/server/txData/admins.json\",",
+            "+}"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_23_10_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_25_10_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

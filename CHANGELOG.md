@@ -2,6 +2,80 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-15 22:22 Uhr
+**+7** neu · **~4** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/admins.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/main.lua.bak-keylog`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/txadmin.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/settings.lua.bak-txadmin`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "backupFile": "banlist_21_23_10_11_2026.json",
+-            "backupTimestamp": 1794342199,
+-            "id": 11,
+-            "backupDate": "21_23_10_11_2026"
+-        },
+-        {
+-            "backupFile": "banlist_21_25_10_11_2026.json",
+-            "backupTimestamp": 1794342324,
+-            "id": 11,
+-            "backupDate": "21_25_10_11_2026"
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/txadmin.lua',
+```
+`~ resources/[selfcode]/api_new/server/main.lua`
+```diff
+-        print(('[api_new] Ungültiger API-Key von %s'):format(ip))
++        -- Aufrufe ganz ohne Key (z. B. Status-Monitor des Panels) nicht loggen, nur falsche Keys
++        if key ~= '' then print(('[api_new] Ungültiger API-Key von %s'):format(ip)) end
+```
+`~ resources/[selfcode]/api_new/settings.lua`
+```diff
++
++-- txAdmin-Endpunkte (/txadmin/...): Accounts anzeigen und über das Panel verwalten
++Settings.TxAdmin = {
++    Enabled    = true,
++    Url        = "http://127.0.0.1:40120",                 -- Web-Port von txAdmin
++    Username   = "RMC-Panel",                              -- eigener txAdmin-Account für das Panel
++    Password   = "xqh6AXQLWNJMxBNyHBw3",                                       -- dessen Passwort (leer = nur lesen)
++    AdminsFile = "/home/FiveM/server/txData/admins.json",
++}
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_23_10_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_25_10_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-15 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1040,12 +1114,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"
 +{"webhooks":{"versicherung":{"url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602","webhookId":"1535733186921898004"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924
-```
-
-## 2026-11-11 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***
-+{"webhooks":{"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"
 ```
