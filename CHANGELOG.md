@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-16 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-15T17:01:09Z","categoryId":"1551161549018759170","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490","channelId":"1513950191936344245"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***"
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-15T23:01:13Z","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/**
+```
+
 ## 2026-11-15 22:22 Uhr
 **+7** neu · **~4** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json`
@@ -1106,12 +1114,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"versicherung":{"url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602","webhookId":"1535733186921898004"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924
 +{"updatedAt":"2026-11-11T17:01:19Z","categoryId":"1551161549018759170","webhooks":{"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***",
-```
-
-## 2026-11-11 14:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/***","webhookId":"1552971096847028264"},"
-+{"webhooks":{"versicherung":{"url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602","webhookId":"1535733186921898004"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924
 ```
