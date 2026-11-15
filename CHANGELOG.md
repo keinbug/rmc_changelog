@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-15 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-14T23:00:39Z","webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/155116157800979663
++{"webhooks":{"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194"},"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879
+```
+
 ## 2026-11-15 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1048,54 +1056,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "backupFile": "banlist_21_08_05_11_2026.json",
 -            "backupTimestamp": 1793909324,
 -            "backupDate": "21_08_05_11_2026",
-```
-
-## 2026-11-10 21:23 Uhr
-**+2** neu · **~4** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_core/client/frakmenu.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_core/server/frakmenu.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "sender_name": "Geldbörse",
-+            "reason": "Einzahlung auf Kartenkonto",
-+            "sender_identifier": "bank",
-+            "date": "2026/11/10 - 20:50:57",
-+            "type": "deposit",
-+            "receiver_name": "Fabi Huber",
-+            "receiver_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
-+            "value": 160000
-+        },
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+        midnight_elite = {
-+            label = 'Midnight Elite',
-+            blipColor = 27,      -- Lila
-+            sprite = 1,
-+            vehicleSprite = 225,
-+        },
-+-- ====== FRAKTIONS-MENÜ (/fraktion) ======
-+-- GPS ein/aus, Mitglieder online mit Rang + Telefonnummer (kopierbar),
-+-- Wegpunkt zu Kollegen (nur wenn beide GPS an haben).
-+-- Erlaubte Jobs = Config.FrakGps.Jobs (Label kommt auch von dort).
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_chat":{"url":"https://discord.com/api/webhooks/1557386337580220497/***","channelId":"1557386335512305664","webhookId":"1557386337580220497"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/***","channelId":"1552971099317211
-+{"webhooks":{"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"chopshop":{"channelId":"1552971071882399744","webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***
-```
-`~ resources/[selfcode]/rmc_core/server/frakgps.lua`
-```diff
-+-- Für /fraktion (server/frakmenu.lua): ist das GPS dieses Spielers gerade an?
-+function IsFrakGpsActive(src)
-+    return active[tonumber(src) or -1] ~= nil
-+end
-+
 ```
