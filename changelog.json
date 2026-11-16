@@ -67795,6 +67795,72 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-16T20:23:13+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77703
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/api_new/admins.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/admins.json",
+          "status": "M",
+          "lines": [
+            "-  {",
+            "-    \"$schema\": 1,",
+            "-    \"name\": \"RMC-DripQueen\",",
+            "-    \"master\": false,",
+            "-    \"password_hash\": \"$2a$11$ed6JLnynRbrQkCAurUMsBueKIuTUydvELa3PnXiywgYIJC2wIFRb.\",",
+            "-    \"providers\": {",
+            "-      \"citizenfx\": {",
+            "-        \"id\": \"HotDripQueen\",",
+            "-        \"identifier\": \"fivem:8599143\",",
+            "-        \"data\": {}",
+            "-      },",
+            "-      \"discord\": {",
+            "-        \"id\": \"729016177287888927\",",
+            "-        \"identifier\": \"discord:729016177287888927\",",
+            "-        \"data\": {}",
+            "-      }",
+            "-    },",
+            "-    \"permissions\": [",
+            "-      \"all_permissions\"",
+            "-    ]",
+            "-  },",
+            "+  },",
+            "+  {",
+            "+    \"$schema\": 1,",
+            "+    \"name\": \"RMC-DripQueen\",",
+            "+    \"master\": false,",
+            "+    \"password_hash\": \"$2a$11$78aVyFEGQ6CoBiArffZFHuyt6XqNh3wnN7HA5WJP0JW.8gNCQ4KhC\",",
+            "+    \"providers\": {",
+            "+      \"citizenfx\": {",
+            "+        \"id\": \"HotDripQueen\",",
+            "+        \"identifier\": \"fivem:8599143\",",
+            "+        \"data\": {}",
+            "+      },",
+            "+      \"discord\": {",
+            "+        \"id\": \"729016177287888927\",",
+            "+        \"identifier\": \"discord:729016177287888927\",",
+            "+        \"data\": {}",
+            "+      }",
+            "+    },",
+            "+    \"permissions\": [",
+            "+      \"all_permissions\"",
+            "+    ]"
+          ]
+        }
+      ]
     }
   ]
 }
