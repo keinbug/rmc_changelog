@@ -2,6 +2,50 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-16 19:23 Uhr
+**+7** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/client/screen.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-screen`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/refunds.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/screen.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/ui/screen.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/ui/screen.js`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/refunds.lua',
++    'server/screen.lua',
++    'client/screen.lua',
++}
++
++-- Live-Bildschirm: unsichtbare Seite, die das Spielbild nur bei Bedarf per WebRTC überträgt
++ui_page 'ui/screen.html'
++
++files {
++    'ui/screen.html',
+```
+
 ## 2026-11-16 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1025,72 +1069,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -local function resolveFactionJobConfig(jobName, jobLabel)
 -    local allowed = Config.FactionStatus and Config.FactionStatus.AllowedJobs or nil
 -    if not allowed then return nil end
-```
-
-## 2026-11-11 20:23 Uhr
-**+0** neu · **~5** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--        {
--            "value": 2500,
--            "sender_name": "Coco Black",
--            "sender_identifier": "char4:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
--            "date": "2026/11/03 - 03:14:08",
--            "type": "withdraw",
--            "reason": "Fahrzeugrückgabegebühr",
--            "receiver_identifier": "cd_garage",
--            "receiver_name": "cd_garage"
-```
-`~ resources/[selfcode]/rmc_aduty/config/sv_config.lua`
-```diff
--sv_config = {}
--
--sv_config.general = {
--    language = "de",
--    events = {
--        ["esx:playerLoaded"] = "esx:playerLoaded",
--        ["esx:setJob"] = "esx:setJob"
--    }
--}
--
-```
-`~ resources/[selfcode]/rmc_aduty/server/server.lua`
-```diff
-+local apiIdentCache = {}      -- [source] = letzter bekannter char-Identifier (für Log beim Disconnect)
-+local screenshotToken = 0
-+
-+-- ============================================================
-+-- Log-API (v1-api.rmc-rp.de)
-+-- ============================================================
-+
-+--- Sendet einen Log an die Log-API. Läuft nur serverseitig.
-+--- @param src number
-+--- @param xPlayer table|nil
-```
-`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
-```diff
-+    ghostGeneration = 0,
-+    TR.Editor.ghostGeneration = (TR.Editor.ghostGeneration or 0) + 1
-+-- Läuft im Hintergrund, damit das Menü sofort aufgeht.
-+    local generation = TR.Editor.ghostGeneration
-+    local points = job.points or {}
--    for i = 1, #(job.points or {}) do
--        local point = job.points[i]
--        local coords = point.coords
--        if coords then
--            if spec.spawnPed then
-```
-`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
-```diff
-+local companyGeneration = 0
-+
-+-- Blips sofort, Peds im Hintergrund: blockiert Menüs/Callbacks nicht mehr.
-+    companyGeneration = companyGeneration + 1
-+    local generation = companyGeneration
-+
-+    local pending = {}
--                local ped = TR.SpawnStandingPed(modelName, pedCoords, pedCoords.w or 0.0)
--                if ped ~= 0 then
--                    TR.State.world.peds[#TR.State.world.peds + 1] = ped
 ```

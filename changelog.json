@@ -67703,6 +67703,98 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-16T19:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77703
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/client/screen.lua",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-screen",
+        "resources/[selfcode]/api_new/server/refunds.lua",
+        "resources/[selfcode]/api_new/server/screen.lua",
+        "resources/[selfcode]/api_new/ui/screen.html",
+        "resources/[selfcode]/api_new/ui/screen.js"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/client/screen.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-screen",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/refunds.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/screen.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/ui/screen.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/ui/screen.js",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/refunds.lua',",
+            "+    'server/screen.lua',",
+            "+    'client/screen.lua',",
+            "+}",
+            "+",
+            "+-- Live-Bildschirm: unsichtbare Seite, die das Spielbild nur bei Bedarf per WebRTC überträgt",
+            "+ui_page 'ui/screen.html'",
+            "+",
+            "+files {",
+            "+    'ui/screen.html',",
+            "+    'ui/screen.js',"
+          ]
+        }
+      ]
     }
   ]
 }
