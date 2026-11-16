@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-16 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-16T09:01:29Z","webhooks":{"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.
++{"updatedAt":"2026-11-16T17:00:42Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"minijobs":{"webhookId":"1570426351809335326","url":"https://discord
+```
+
 ## 2026-11-16 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1085,33 +1093,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -                local ped = TR.SpawnStandingPed(modelName, pedCoords, pedCoords.w or 0.0)
 -                if ped ~= 0 then
 -                    TR.State.world.peds[#TR.State.world.peds + 1] = ped
-```
-
-## 2026-11-11 19:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_minijobs/client/admin.lua`
-```diff
--TR = TR or {}
--TR.Editor = {
--    session = false,
--    preview = false,
--    jobId = nil,
--    ghosts = {},
--    zones = {},
--    worldTargets = {},
--}
--
-```
-`~ resources/[selfcode]/rmc_minijobs/client/main.lua`
-```diff
--ESX = exports['es_extended']:getSharedObject()
--TR = TR or {}
--
--TR.State = {
--    ready = false,
--    dutyJobId = nil,
--    assignment = nil,
--    stats = nil,
--    jobVehicle = 0,
--    hatchOpen = false,
 ```
