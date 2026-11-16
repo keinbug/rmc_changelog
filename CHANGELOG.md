@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-16 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-15T23:01:13Z","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/**
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-16T09:01:29Z","webhooks":{"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.
+```
+
 ## 2026-11-16 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1106,12 +1114,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -    stats = nil,
 -    jobVehicle = 0,
 -    hatchOpen = false,
-```
-
-## 2026-11-11 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"versicherung":{"url":"https://discord.com/api/webhooks/1535733186921898004/***","channelId":"1535733166138990602","webhookId":"1535733186921898004"},"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924
-+{"updatedAt":"2026-11-11T17:01:19Z","categoryId":"1551161549018759170","webhooks":{"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","webhookId":"1552971096847028264"},"staff":{"url":"https://discord.com/api/webhooks/1552971123233394708/***",
 ```
