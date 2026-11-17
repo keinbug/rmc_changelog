@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/we
++{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"minijobs":{"url":"https://discord.com/api/webhooks/1570426351809335326/***","webhookId":"1570426351809335326","channelId":"1570426349213188196"}
+```
+
 ## 2026-11-17 16:23 Uhr
 **+0** neu · **~7** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_housing/README.md`
@@ -919,108 +927,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -description 'IPL-Housing für ESX: Mieten, Schlüssel, Interior-Stile, ox_inventory-Lager mit Stufen, Umkleide, Miete + Strom'
 +description 'IPL-Housing'
-```
-
-## 2026-11-12 22:23 Uhr
-**+4** neu · **~9** geändert · **-0** gelöscht
-`+ resources/[manuell_start]/ox_inventory/data/items.lua.bak_flint`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/core.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/housing.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/api.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1794428965,
-+    "lastBackup": 1794515602,
--            "id": 11,
--            "backupTimestamp": 1794082451,
--            "backupDate": "21_14_07_11_2026",
--            "backupFile": "banlist_21_14_07_11_2026.json"
--        },
--        {
--            "id": 11,
--            "backupTimestamp": 1794082576,
-```
-`~ resources/[manuell_start]/ox_inventory/data/items.lua`
-```diff
--		server = {
--			export = 'rcore_camping.flint',
--		},
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
--        {
--            "date": "2026/11/11 - 20:48:28",
--            "receiver_identifier": "cd_garage",
--            "value": 500,
--            "sender_identifier": "char1:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
--            "reason": "Sicherstellungsgebühr",
--            "type": "withdraw",
--            "sender_name": "Fabi Huber",
--            "receiver_name": "cd_garage"
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/housing.lua',
-+    'server/core.lua',
-```
-`~ resources/[selfcode]/api_new/settings.lua`
-```diff
-+
-+-- rmc_housing-Endpunkte (/housing/...)
-+Settings.Housing = {
-+    Enabled   = true,
-+    Resource  = 'rmc_housing',
-+    AdminName = 'API',         -- steht im Housing-Discord-Log, wenn im Body kein "admin" steht
-+}
-+
-+-- rmc_core-Endpunkte (/core/...): Adminjail, Sozialstunden, Uncuff
-+Settings.Core = {
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-12T17:01:00Z","webhooks":{"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
-+{"webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"14179176
-```
-`~ resources/[selfcode]/rmc_core/server/adminjail.lua`
-```diff
-+-- ---------- Exports für api_new (nur serverseitig) ----------
-+local function jailOut(entry, extra)
-+    local out = {
-+        reason = entry.reason,
-+        adminName = entry.adminName,
-+        dogModel = entry.dogModel,
-+        treatsCollected = entry.treatsCollected or 0,
-+        timeReduced = entry.timeReduced or 0,
-+    }
-+    for k, v in pairs(extra or {}) do out[k] = v end
-```
-`~ resources/[selfcode]/rmc_core/server/sozialstunden.lua`
-```diff
-+-- ---------- Exports für api_new (nur serverseitig) ----------
-+exports("SendToSozialstunden", SendToSozialstunden)
-+
-+exports("GetSozialstunden", function(targetId)
-+    local rec = active[tonumber(targetId)]
-+    if not rec then return nil end
-+    return { serverId = tonumber(targetId), remaining = rec.remaining, reason = rec.reason }
-+end)
-+
-+exports("ListSozialstunden", function()
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'server/api.lua',
 ```
