@@ -2,6 +2,75 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 16:23 Uhr
+**+0** neu · **~7** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_housing/README.md`
+```diff
+-| `/housingadmin` | Liste aller Objekte: Teleport, Mieter räumen, Löschen, Abrechnung sofort ausführen |
++| `/housingadmin` | Liste aller Objekte: Betreten (Admin, mit vollen Mieter-Rechten solange man drin ist), Garage betreten, Teleport, Mieter räumen, Löschen, Abrechnung sofort ausführen |
+```
+`~ resources/[selfcode]/rmc_housing/client/creator.lua`
+```diff
++                    { title = 'Betreten (Admin)', icon = 'door-open',
++                      description = p.tenant and 'Ohne Schlüssel rein · Lager, Umkleide, Tablet, Geräte und Punkte wie der Mieter nutzen' or 'Leeres Objekt ansehen',
++                      onSelect = function() EnterProperty(p.id, 'admin') end },
++                    if (p.garageSize or 0) > 0 then
++                        sub[#sub + 1] = { title = 'Garage betreten (Admin)', icon = 'warehouse', description = ('%d Stellplätze · eingeparkte Fahrzeuge ansehen'):format(p.garageSize),
++                            onSelect = function() Garage.enter(p, true) end }
++                    end
+```
+`~ resources/[selfcode]/rmc_housing/client/garage.lua`
+```diff
+-function Garage.enter(p)
++function Garage.enter(p, admin)
+-    local ok, data = lib.callback.await('rmc_housing:garage:enter', false, p.id)
++    local ok, data = lib.callback.await('rmc_housing:garage:enter', false, p.id, admin == true)
+```
+`~ resources/[selfcode]/rmc_housing/config.lua`
+```diff
++
++---------------------------------------------------------------------
++-- Anzeige (ox_lib): Position von Hinweis-Texten und Benachrichtigungen
++---------------------------------------------------------------------
++Config.UI = {
++    textPosition   = 'left-center',  -- [E]-Hinweise: 'left-center' | 'right-center' | 'top-center' | 'bottom-center'
++    notifyPosition = 'center-left',  -- Benachrichtigungen: 'top-left' | 'center-left' | 'bottom-left' | 'top' | 'bottom' | 'top-right' | 'center-right' | 'bottom-right'
++}
++
++-- Gilt für alle Aufrufe in dieser Resource; eine im Aufruf gesetzte Position hat Vorrang.
+```
+`~ resources/[selfcode]/rmc_housing/server/admin.lua`
+```diff
+-            entrance = p.entrance, garage = p.garage, points = p.points, interior = p.interior, appliances = p.appliances,
++            entrance = p.entrance, garage = p.garage, garageSize = l and l.garage or 0, points = p.points, interior = p.interior, appliances = p.appliances,
+```
+`~ resources/[selfcode]/rmc_housing/server/garage.lua`
+```diff
+-local function access(src, pid)
++local function access(src, pid, admin)
+-    if not (r == 'owner' or (k and truthy(k.perm_enter))) then return false, 'Du hast keinen Zugang zu dieser Garage.' end
+-    if l.status == 'lockout' then return false, 'Die Garage ist wegen offener Miete gesperrt.' end
++    if not admin then
++        if not (r == 'owner' or (k and truthy(k.perm_enter))) then return false, 'Du hast keinen Zugang zu dieser Garage.' end
++        if l.status == 'lockout' then return false, 'Die Garage ist wegen offener Miete gesperrt.' end
++    end
+-lib.callback.register('rmc_housing:garage:enter', function(src, pid)
++lib.callback.register('rmc_housing:garage:enter', function(src, pid, admin)
+```
+`~ resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
++AdminInside = {}  -- [src] = propertyId (per /housingadmin betreten: volle Mieter-Rechte, solange drinnen)
+-    TriggerClientEvent('ox_lib:notify', src, { title = 'Housing', description = msg, type = typ or 'inform', duration = 6000 })
++    TriggerClientEvent('ox_lib:notify', src, { title = 'Housing', description = msg, type = typ or 'inform', duration = 6000, position = Config.UI.notifyPosition })
+-function Housing.role(src, pid)
++-- raw = true: echte Rolle ohne Admin-Zugang (für Blips / Punkte draußen)
++-- 3. Rückgabewert true = Rechte kommen nur vom Admin-Zugang
++function Housing.role(src, pid, raw)
++    if not raw and AdminInside[src] == pid and Inside[src] == pid then return 'owner', nil, true end
++    -- Admin in einem vermieteten Objekt: verhält sich wie der Hauptmieter
++    local admin = mode == 'admin'
+```
+
 ## 2026-11-17 14:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[devcore]/devcore_needs/configs/items.lua`
@@ -954,43 +1023,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
 ```diff
 +    'server/api.lua',
-```
-
-## 2026-11-12 21:23 Uhr
-**+9** neu · **~0** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/api_new`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/client/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/easyadmin.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/http.js`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/package-lock.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/settings.lua`
-```diff
-+ Neue Datei
 ```
