@@ -69242,6 +69242,67 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-17T23:23:06+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77707
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/server/character.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/server/character.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "M",
+          "lines": [
+            "+## Charaktere",
+            "+",
+            "+Liest aus der Tabelle `users`, funktioniert also auch offline. `:target` = Server-ID oder Discord-ID (online), Charakter-Identifier (`char1:abc…`), Lizenz (`license:abc…`) oder eine Discord-ID – die wird auch offline über die Spalte `users.discord_id` gefunden.",
+            "+",
+            "+### Alle Charaktere eines Spielkontos",
+            "+```bash",
+            "+curl \"$API/characters/4\" -H \"X-API-Key: $KEY\"",
+            "+curl \"$API/characters/123456789012345678\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+",
+            "+### Ein Charakter mit allen Infos",
+            "+Person, Job, Geld, Telefon, Inventar, Waffen, Fahrzeuge, Lizenzen und letzte Position. Ist er eingeloggt, kommen Geld, Job und Inventar live.",
+            "+```bash",
+            "+curl \"$API/character/char1:abc123\" -H \"X-API-Key: $KEY\"",
+            "+curl \"$API/character/4\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+Bei Server-ID, Discord-ID oder Lizenz kommt der eingeloggte Charakter, sonst der zuletzt gespielte.",
+            "+",
+            "+---",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/character.lua',"
+          ]
+        }
+      ]
     }
   ]
 }

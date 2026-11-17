@@ -2,6 +2,30 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 23:23 Uhr
+**+1** neu · **~2** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/server/character.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/api_new/README.md`
+```diff
++## Charaktere
++
++Liest aus der Tabelle `users`, funktioniert also auch offline. `:target` = Server-ID oder Discord-ID (online), Charakter-Identifier (`char1:abc…`), Lizenz (`license:abc…`) oder eine Discord-ID – die wird auch offline über die Spalte `users.discord_id` gefunden.
++
++### Alle Charaktere eines Spielkontos
++```bash
++curl "$API/characters/4" -H "X-API-Key: $KEY"
++curl "$API/characters/123456789012345678" -H "X-API-Key: $KEY"
++```
++
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/character.lua',
+```
+
 ## 2026-11-17 22:22 Uhr
 **+2** neu · **~1** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_48_17_11_2026.json`
@@ -818,94 +842,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    return nil
 +end
 +
-```
-
-## 2026-11-13 00:23 Uhr
-**+3** neu · **~8** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/client/voice.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/garage.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/voice.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[cd]/cd_garage/server/features/impound.lua`
-```diff
--end)
-+end)
-+
-+-- ============================================================
-+--  api_new (Admin-Panel): Fahrzeug ohne Gebühr aus dem Abschlepphof holen.
-+--  Nötig, weil cd_garage abgeschleppte Fahrzeuge zusätzlich im Speicher (ImpoundData) hält.
-+--  Bei einem cd_garage-Update diesen Block wieder ans Dateiende setzen.
-+-- ============================================================
-+exports('ApiUnimpound', function(plate, spawnVehicle)
-+    local okRun, err = pcall(removeVehicleFromImpound, 0, plate, spawnVehicle == true)
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+            "sender_name": "Coco Milano",
-+            "type": "withdraw",
-+            "receiver_identifier": "cd_garage",
-+            "receiver_name": "cd_garage",
-+            "value": 500,
-+            "date": "2026/11/12 - 23:56:36",
-+            "reason": "Fahrzeugrückgabegebühr"
-+        },
-+        {
-+            "sender_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-```
-`~ resources/[selfcode]/api_new/README.md`
-```diff
-+
-+---
-+
-+## SaltyChat (Funk & Voice)
-+
-+Läuft über die Server-Exports von `saltychat`. Funkkanäle liest der Client aus (ohne Antwort: `clientData: false`).
-+
-+### Voice-Status eines Spielers (Reichweite, lebendig, Funkkanäle, Lautsprecher)
-+```bash
-+curl "$API/voice/player/4" -H "X-API-Key: $KEY"
-```
-`~ resources/[selfcode]/api_new/client/vehicle.lua`
-```diff
--local actions = {}
-+-- Global, damit andere Module (client/voice.lua) eigene Aktionen ergänzen können
-+ApiActions = ApiActions or {}
-+local actions = ApiActions
-+-- ============================================================
-+--  Garage (server/garage.lua)
-+-- ============================================================
-+
-+local ESXObj
-+local function esx()
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/voice.lua',
-+    'server/garage.lua',
-+    'client/voice.lua',
-```
-`~ resources/[selfcode]/api_new/server/location.lua`
-```diff
-+Api.nearestPostal = function(x, y) return nearestPostal(x, y) end
-+
-```
-`~ resources/[selfcode]/api_new/server/vehicle.lua`
-```diff
-+-- Für andere Module (server/voice.lua)
-+Api.clientAction = clientAction
-+Api.staffLog = discord
-+
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"c
-+{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.c
 ```
