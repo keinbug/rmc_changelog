@@ -68695,6 +68695,207 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-17T12:22:33+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 7,
+        "deleted": 0,
+        "total": 77706
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_housing/README.md",
+        "resources/[selfcode]/rmc_housing/client/appliances.lua",
+        "resources/[selfcode]/rmc_housing/client/creator.lua",
+        "resources/[selfcode]/rmc_housing/client/main.lua",
+        "resources/[selfcode]/rmc_housing/config.lua",
+        "resources/[selfcode]/rmc_housing/server/appliances.lua",
+        "resources/[selfcode]/rmc_housing/web/app.js"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_housing/README.md",
+          "status": "M",
+          "lines": [
+            "-## Geräte: Ofen & Kaffeeautomat (ox_target)",
+            "+## Geräte: Ofen, Kaffeeautomat & Dusche (ox_target)",
+            "-- Ohne Strom gehen beide Geräte nicht (`needPower`). Vom Mieter aufgestellte Geräte kann er per `ox_target` → *Gerät abbauen* wieder entfernen.",
+            "+- **Dusche:** *Gerät aufstellen* → *Dusche* → *Bestehendes Objekt auswählen* → auf den **Boden der Dusche** zielen und „Diese Stelle“ mit `E` bestätigen.",
+            "+  Danach `ox_target` → *Duschen*: Die Figur läuft hin, zieht sich aus (nur `esx_skin`), duscht 20 Sek. und ist danach sauber (Blut/Dreck weg) und nass.",
+            "+  Jeder in der Wohnung kann duschen und sieht das Wasser. Immer nur eine Person gleichzeitig. Einstellungen: `Config.Appliances.types.shower`.",
+            "+- Ohne Strom gehen Ofen und Kaffeeautomat nicht (`needPower`). Vom Mieter aufgestellte Geräte kann er per `ox_target` → *Gerät abbauen* wieder entfernen."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/appliances.lua",
+          "status": "M",
+          "lines": [
+            "+-- Geräte im Interior: Ofen, Kaffeeautomat & Dusche",
+            "-local KINDS = { 'oven', 'coffee' }",
+            "-local ICON = { oven = 'fire-burner', coffee = 'mug-hot' }",
+            "+local KINDS = { 'oven', 'coffee', 'shower' }",
+            "+local ICON = { oven = 'fire-burner', coffee = 'mug-hot', shower = 'shower' }",
+            "+local KIND_DESC = { oven = 'z. B. TK-Pizza backen', shower = 'Dusche im Bad anvisieren, dort wird geduscht' }",
+            "-                description = k == 'coffee' and ('%d Kaffee pro Füllung'):format(t.servings) or 'z. B. TK-Pizza backen' }",
+            "+                description = k == 'coffee' and ('%d Kaffee pro Füllung'):format(t.servings) or KIND_DESC[k] }",
+            "-            description = 'z. B. den Herd, der schon in der Küche steht, anvisieren' }",
+            "+            description = kind == 'shower' and 'Die Dusche im Bad anvisieren · „Diese Stelle“ = hier wird geduscht'",
+            "+                or 'z. B. den Herd, der schon in der Küche steht, anvisieren' }",
+            "+---------------------------------------------------------------------",
+            "+-- Dusche",
+            "+---------------------------------------------------------------------",
+            "+local Showering = false",
+            "+local ShowerFx = {}   -- [applianceId] = true, solange dort Wasser läuft",
+            "+",
+            "+local function isMale() return GetEntityModel(cache.ped) ~= `mp_f_freemode_01` end",
+            "+",
+            "+-- Wasser über dem Kopf des Duschenden (für alle in der Wohnung sichtbar)",
+            "+RegisterNetEvent('rmc_housing:shower', function(pid, id, who, on, seconds)",
+            "+    if not Current or Current.pid ~= pid then return end",
+            "+    if not on then ShowerFx[id] = nil return end",
+            "+    local t = A.types.shower",
+            "+    local fx = t and t.particle",
+            "+    if not fx or ShowerFx[id] then return end",
+            "+    local a",
+            "+    for _, e in ipairs(Spawned) do if e.data.id == id then a = e.data end end",
+            "+    if not a then return end",
+            "+    ShowerFx[id] = true",
+            "+    CreateThread(function()",
+            "+        lib.requestNamedPtfxAsset(fx.dict, 5000)",
+            "+        local stopAt = GetGameTimer() + (seconds or 20) * 1000",
+            "+        while ShowerFx[id] and Current and Current.pid == pid and GetGameTimer() < stopAt do",
+            "+            local player = GetPlayerFromServerId(who)",
+            "+            local ped = player ~= -1 and GetPlayerPed(player) or 0",
+            "+            local c = ped ~= 0 and GetEntityCoords(ped) or vec3(a.x, a.y, a.z)",
+            "+            if #(c - vec3(a.x, a.y, a.z)) < 3.0 then",
+            "+                UseParticleFxAssetNextCall(fx.dict)",
+            "+                StartParticleFxNonLoopedAtCoord(fx.name, c.x, c.y, c.z + (fx.height or 1.1), 0.0, 0.0, 0.0, fx.scale or 1.0, false, false, false)",
+            "+            end",
+            "+            Wait(fx.interval or 350)",
+            "+        end",
+            "+        ShowerFx[id] = nil",
+            "+        RemoveNamedPtfxAsset(fx.dict)",
+            "+    end)",
+            "+end)",
+            "+",
+            "+local function takeShower(a)",
+            "+    if Showering then return end",
+            "+    local t = A.types.shower",
+            "+    local ok, msg = lib.callback.await('rmc_housing:appliance:use', false, a.id, 'shower')",
+            "+    if not ok then return notify(msg, 'error') end",
+            "+    Showering = true",
+            "+    local ped = cache.ped",
+            "+",
+            "+    local done, err = pcall(function()",
+            "+        -- an die Dusch-Stelle laufen",
+            "+        if t.walkTo ~= false then",
+            "+            local c = GetEntityCoords(ped)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/creator.lua",
+          "status": "M",
+          "lines": [
+            "-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen oder Kaffeeautomat'):format(#Draft.appliances, Config.Appliances.max), onSelect = function()",
+            "+        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen, Kaffeeautomat oder Dusche'):format(#Draft.appliances, Config.Appliances.max), onSelect = function()",
+            "-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen oder Kaffeeautomat'):format(#Edit.appliances, Config.Appliances.max), onSelect = function()",
+            "+        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen, Kaffeeautomat oder Dusche'):format(#Edit.appliances, Config.Appliances.max), onSelect = function()"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/main.lua",
+          "status": "M",
+          "lines": [
+            "-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = 'Ofen oder Kaffeeautomat · Objekt wählen und platzieren', onSelect = function()",
+            "+        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = 'Ofen, Kaffeeautomat oder Dusche · Objekt wählen und platzieren', onSelect = function()",
+            "-        opts[#opts + 1] = { title = 'Punkte einrichten', icon = 'location-dot', description = 'Lager, Umkleide, Tür, Tablet und Geräte selbst platzieren', onSelect = pointsMenu }",
+            "+        opts[#opts + 1] = { title = 'Punkte einrichten', icon = 'location-dot', description = 'Lager, Umkleide, Tür, Tablet, Geräte und Dusche selbst platzieren', onSelect = pointsMenu }"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- Geräte im Interior (ox_target): Ofen, Kaffeeautomat & Dusche",
+            "+        -- Dusche: am einfachsten \"Bestehendes Objekt auswählen\" → die Dusche im Bad anvisieren (\"Diese Stelle\").",
+            "+        -- Dort stellt sich der Spieler hin und duscht. Alle in der Wohnung sehen das Wasser.",
+            "+        shower = {",
+            "+            label = 'Dusche',",
+            "+            models = {       -- zum neu Aufstellen (ungültige Modelle werden ausgeblendet)",
+            "+                { model = 'prop_shower_rack_01', label = 'Duschablage' },",
+            "+                { model = 'prop_towel_rail_02',  label = 'Handtuchhalter' },",
+            "+            },",
+            "+            needPower = false,   -- Wasser läuft auch ohne Strom",
+            "+            seconds = 20,        -- Dauer einer Dusche (abbrechbar)",
+            "+            walkTo = true,       -- Spieler läuft erst an die Dusch-Stelle",
+            "+            wetSeconds = 60,     -- so lange bleibt die Figur danach nass",
+            "+            undress = true,      -- zum Duschen ausziehen (nur mit Config.Clothing.provider = 'esx_skin'), danach wieder anziehen",
+            "+            clothes = {          -- skinchanger-Werte fürs Duschen · bei eigenen Kleidungspaketen anpassen",
+            "+                male   = { tshirt_1 = 15, tshirt_2 = 0, torso_1 = 15, torso_2 = 0, arms = 15, pants_1 = 61, pants_2 = 1, shoes_1 = 34, shoes_2 = 0,",
+            "+                           mask_1 = 0, helmet_1 = -1, glasses_1 = 0, bproof_1 = 0, bags_1 = 0, chain_1 = 0, decals_1 = 0 },",
+            "+                female = { tshirt_1 = 15, tshirt_2 = 0, torso_1 = 15, torso_2 = 0, arms = 15, pants_1 = 15, pants_2 = 0, shoes_1 = 35, shoes_2 = 0,",
+            "+                           mask_1 = 0, helmet_1 = -1, glasses_1 = 5, bproof_1 = 0, bags_1 = 0, chain_1 = 0, decals_1 = 0 },",
+            "+            },",
+            "+            anim = {",
+            "+                male   = { dict = 'mp_safehouseshower@male@',   clip = 'male_shower_idle_b' },",
+            "+                female = { dict = 'mp_safehouseshower@female@', clip = 'shower_idle_a' },",
+            "+            },",
+            "+            particle = { dict = 'core', name = 'ent_sht_water', scale = 1.0, height = 1.1, interval = 350 }, -- Wasser über dem Kopf",
+            "+            -- Wird am Client aufgerufen, wenn fertig geduscht wurde (z. B. Stress senken, Hygiene-Status setzen)",
+            "+            onDone = function() end,",
+            "+        },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/appliances.lua",
+          "status": "M",
+          "lines": [
+            "+-- Geräte im Interior: Ofen, Kaffeeautomat & Dusche (Bedienung über ox_target)",
+            "+local Showers = {} -- ['pid:id'] = { src, untilAt } (wer gerade duscht)",
+            "-    Housing.activity(l.id, a.kind == 'oven' and 'cooking-pot' or 'coffee', ('%s aufgestellt'):format(typeOf(a.kind).label))",
+            "+    Housing.activity(l.id, ({ oven = 'cooking-pot', coffee = 'coffee', shower = 'shower-head' })[a.kind] or 'plug', ('%s aufgestellt'):format(typeOf(a.kind).label))",
+            "+            Showers[ovenKey(pid, id)] = nil",
+            "-local ALLOWED = { coffee = { draw = true, refill = true }, oven = { ovenIn = true, ovenOut = true } }",
+            "+-- Dusche: immer nur einer gleichzeitig. Alle in der Wohnung bekommen das Wasser angezeigt.",
+            "+Use.shower = function(src, pid, a)",
+            "+    local t = typeOf('shower')",
+            "+    local key = ovenKey(pid, a.id)",
+            "+    local s = Showers[key]",
+            "+    if s and s.src ~= src and s.untilAt > os.time() and Inside[s.src] == pid then return false, 'Die Dusche ist gerade besetzt.' end",
+            "+    local seconds = t.seconds or 20",
+            "+    Showers[key] = { src = src, untilAt = os.time() + seconds + 4 }",
+            "+    Housing.forInside(pid, function(p) TriggerClientEvent('rmc_housing:shower', p, pid, a.id, src, true, seconds + 4) end)",
+            "+    return true",
+            "+end",
+            "+",
+            "+Use.showerStop = function(src, pid, a)",
+            "+    local key = ovenKey(pid, a.id)",
+            "+    local s = Showers[key]",
+            "+    if not s or s.src ~= src then return true end",
+            "+    Showers[key] = nil",
+            "+    Housing.forInside(pid, function(p) TriggerClientEvent('rmc_housing:shower', p, pid, a.id, src, false) end)",
+            "+    return true",
+            "+end",
+            "+",
+            "+local ALLOWED = { coffee = { draw = true, refill = true }, oven = { ovenIn = true, ovenOut = true }, shower = { shower = true, showerStop = true } }",
+            "-    if A.needPower and not l.power_on then return false, 'Ohne Strom geht das Gerät nicht.' end",
+            "+    if A.needPower and typeOf(a.kind).needPower ~= false and not l.power_on then return false, 'Ohne Strom geht das Gerät nicht.' end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/web/app.js",
+          "status": "M",
+          "lines": [
+            "-    { ok: true, t: D.appliances.length ? `${D.appliances.length} Gerät(e) aufgestellt (Ofen / Kaffeeautomat)` : 'Keine Geräte · optional, in der Vorschau mit [E] → „Gerät aufstellen“', step: 2 },",
+            "+    { ok: true, t: D.appliances.length ? `${D.appliances.length} Gerät(e) aufgestellt (Ofen / Kaffeeautomat / Dusche)` : 'Keine Geräte · optional, in der Vorschau mit [E] → „Gerät aufstellen“', step: 2 },"
+          ]
+        }
+      ]
     }
   ]
 }

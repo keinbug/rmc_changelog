@@ -2,6 +2,77 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 12:22 Uhr
+**+0** neu · **~7** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_housing/README.md`
+```diff
+-## Geräte: Ofen & Kaffeeautomat (ox_target)
++## Geräte: Ofen, Kaffeeautomat & Dusche (ox_target)
+-- Ohne Strom gehen beide Geräte nicht (`needPower`). Vom Mieter aufgestellte Geräte kann er per `ox_target` → *Gerät abbauen* wieder entfernen.
++- **Dusche:** *Gerät aufstellen* → *Dusche* → *Bestehendes Objekt auswählen* → auf den **Boden der Dusche** zielen und „Diese Stelle“ mit `E` bestätigen.
++  Danach `ox_target` → *Duschen*: Die Figur läuft hin, zieht sich aus (nur `esx_skin`), duscht 20 Sek. und ist danach sauber (Blut/Dreck weg) und nass.
++  Jeder in der Wohnung kann duschen und sieht das Wasser. Immer nur eine Person gleichzeitig. Einstellungen: `Config.Appliances.types.shower`.
++- Ohne Strom gehen Ofen und Kaffeeautomat nicht (`needPower`). Vom Mieter aufgestellte Geräte kann er per `ox_target` → *Gerät abbauen* wieder entfernen.
+```
+`~ resources/[selfcode]/rmc_housing/client/appliances.lua`
+```diff
++-- Geräte im Interior: Ofen, Kaffeeautomat & Dusche
+-local KINDS = { 'oven', 'coffee' }
+-local ICON = { oven = 'fire-burner', coffee = 'mug-hot' }
++local KINDS = { 'oven', 'coffee', 'shower' }
++local ICON = { oven = 'fire-burner', coffee = 'mug-hot', shower = 'shower' }
++local KIND_DESC = { oven = 'z. B. TK-Pizza backen', shower = 'Dusche im Bad anvisieren, dort wird geduscht' }
+-                description = k == 'coffee' and ('%d Kaffee pro Füllung'):format(t.servings) or 'z. B. TK-Pizza backen' }
++                description = k == 'coffee' and ('%d Kaffee pro Füllung'):format(t.servings) or KIND_DESC[k] }
+-            description = 'z. B. den Herd, der schon in der Küche steht, anvisieren' }
++            description = kind == 'shower' and 'Die Dusche im Bad anvisieren · „Diese Stelle“ = hier wird geduscht'
+```
+`~ resources/[selfcode]/rmc_housing/client/creator.lua`
+```diff
+-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen oder Kaffeeautomat'):format(#Draft.appliances, Config.Appliances.max), onSelect = function()
++        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen, Kaffeeautomat oder Dusche'):format(#Draft.appliances, Config.Appliances.max), onSelect = function()
+-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen oder Kaffeeautomat'):format(#Edit.appliances, Config.Appliances.max), onSelect = function()
++        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = ('%d / %d · Ofen, Kaffeeautomat oder Dusche'):format(#Edit.appliances, Config.Appliances.max), onSelect = function()
+```
+`~ resources/[selfcode]/rmc_housing/client/main.lua`
+```diff
+-        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = 'Ofen oder Kaffeeautomat · Objekt wählen und platzieren', onSelect = function()
++        opts[#opts + 1] = { title = 'Gerät aufstellen', icon = 'mug-hot', description = 'Ofen, Kaffeeautomat oder Dusche · Objekt wählen und platzieren', onSelect = function()
+-        opts[#opts + 1] = { title = 'Punkte einrichten', icon = 'location-dot', description = 'Lager, Umkleide, Tür, Tablet und Geräte selbst platzieren', onSelect = pointsMenu }
++        opts[#opts + 1] = { title = 'Punkte einrichten', icon = 'location-dot', description = 'Lager, Umkleide, Tür, Tablet, Geräte und Dusche selbst platzieren', onSelect = pointsMenu }
+```
+`~ resources/[selfcode]/rmc_housing/config.lua`
+```diff
++-- Geräte im Interior (ox_target): Ofen, Kaffeeautomat & Dusche
++        -- Dusche: am einfachsten "Bestehendes Objekt auswählen" → die Dusche im Bad anvisieren ("Diese Stelle").
++        -- Dort stellt sich der Spieler hin und duscht. Alle in der Wohnung sehen das Wasser.
++        shower = {
++            label = 'Dusche',
++            models = {       -- zum neu Aufstellen (ungültige Modelle werden ausgeblendet)
++                { model = 'prop_shower_rack_01', label = 'Duschablage' },
++                { model = 'prop_towel_rail_02',  label = 'Handtuchhalter' },
++            },
++            needPower = false,   -- Wasser läuft auch ohne Strom
+```
+`~ resources/[selfcode]/rmc_housing/server/appliances.lua`
+```diff
++-- Geräte im Interior: Ofen, Kaffeeautomat & Dusche (Bedienung über ox_target)
++local Showers = {} -- ['pid:id'] = { src, untilAt } (wer gerade duscht)
+-    Housing.activity(l.id, a.kind == 'oven' and 'cooking-pot' or 'coffee', ('%s aufgestellt'):format(typeOf(a.kind).label))
++    Housing.activity(l.id, ({ oven = 'cooking-pot', coffee = 'coffee', shower = 'shower-head' })[a.kind] or 'plug', ('%s aufgestellt'):format(typeOf(a.kind).label))
++            Showers[ovenKey(pid, id)] = nil
+-local ALLOWED = { coffee = { draw = true, refill = true }, oven = { ovenIn = true, ovenOut = true } }
++-- Dusche: immer nur einer gleichzeitig. Alle in der Wohnung bekommen das Wasser angezeigt.
++Use.shower = function(src, pid, a)
++    local t = typeOf('shower')
++    local key = ovenKey(pid, a.id)
+```
+`~ resources/[selfcode]/rmc_housing/web/app.js`
+```diff
+-    { ok: true, t: D.appliances.length ? `${D.appliances.length} Gerät(e) aufgestellt (Ofen / Kaffeeautomat)` : 'Keine Geräte · optional, in der Vorschau mit [E] → „Gerät aufstellen“', step: 2 },
++    { ok: true, t: D.appliances.length ? `${D.appliances.length} Gerät(e) aufgestellt (Ofen / Kaffeeautomat / Dusche)` : 'Keine Geräte · optional, in der Vorschau mit [E] → „Gerät aufstellen“', step: 2 },
+```
+
 ## 2026-11-17 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -914,157 +985,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-12T13:18:01Z","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"14715568170615
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-12T17:01:00Z","webhooks":{"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
-```
-
-## 2026-11-12 14:22 Uhr
-**+3** neu · **~12** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_core/server/joinleave.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/log.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_minijobs/server/log.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+            { key = 'joinleave',      name = 'join-leave',      topic = 'Spieler betritt / verlässt den Server', label = 'Join/Leave' },
-+            { key = 'housing',        name = 'housing',         topic = 'Mietverträge, Zahlungen, Schlüssel, Räumungen, Polizei, Admin', label = 'Housing' },
-+            { key = 'minijobs',       name = 'minijobs',        topic = 'Minijobs: Dienst, Aufträge, Auszahlungen, Teams, Admin', label = 'Minijobs' },
-+-- ====== JOIN / LEAVE LOG ======
-+-- Loggt jeden Server-Beitritt und -Austritt in den Discord-Channel #join-leave
-+-- (wird vom Discord Auto-Setup in der Log-Kategorie angelegt, Key 'joinleave').
-+Config.JoinLeaveLog = {
-+    Enabled = true,
-+    LogJoin = true,
-+    LogLeave = true,
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"}
-+{"updatedAt":"2026-11-12T13:18:01Z","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"14715568170615
-```
-`~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
-```diff
-+
-+    -- rmc_housing (leer = Auto-Setup legt #housing + Webhook an)
-+    housing        = '',
-+
-+    -- rmc_minijobs (leer = Auto-Setup legt #minijobs + Webhook an)
-+    minijobs       = '',
-+
-+    -- Join/Leave-Log (leer = Auto-Setup legt #join-leave + Webhook an)
-+    joinleave      = '',
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+---------------------------------------------------------------------
-+-- Discord-Logs (über rmc_core: exports GetWebhook + SendLogAdvanced)
-+-- Channel + Webhook legt rmc_core per Auto-Setup an (Key 'housing').
-+---------------------------------------------------------------------
-+Config.Discord = {
-+    enabled = true,
-+    webhookKey = 'housing',   -- Key in rmc_core (webhook_links.lua / Config.Discord.Setup.Channels)
-+    username = nil,           -- nil = Bot-Name aus rmc_core
-+}
-+
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'server/log.lua',
-```
-`~ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+    Housing.log(src, 'Objekt angelegt', ('%s „%s“ wurde angelegt.'):format(row.type, label), 'Success', {
-+        { name = 'Objekt', value = Housing.logProperty(id) },
-+        { name = 'Interior', value = Interiors[row.interior].label or row.interior },
-+        { name = 'Adresse', value = row.address ~= '' and row.address or '—' },
-+        { name = 'Miete / Kaution', value = ('%s / %s'):format(Housing.logMoney(row.rent), Housing.logMoney(row.deposit)) },
-+    })
-+    local l = Leases[pid]
-+    Housing.log(src, 'Admin-Räumung', ('%s wurde per Admin geräumt.'):format(Properties[pid].label), 'Critical', {
-+        { name = 'Objekt', value = Housing.logProperty(pid) },
-+        { name = 'Mieter', value = ('%s\n`%s`'):format(l.owner_name or '?', l.owner) },
-```
-`~ resources/[selfcode]/rmc_housing/server/billing.lua`
-```diff
-+        Housing.log(src, 'Rechnung bezahlt', ('%s für %s bezahlt.'):format(Housing.logMoney(paid), Properties[pid].label), 'Success', {
-+            { name = 'Objekt', value = Housing.logProperty(pid) },
-+            { name = 'Rechnung', value = kind == 'all' and 'alle offenen' or (KINDS[kind] and KINDS[kind].label or kind) },
-+            { name = 'Zahlart', value = method == 'money' and 'bar' or 'Bank' },
-+        })
-+        Housing.log(0, 'Strom abgestellt', ('Strom in %s wegen offener Rechnung abgestellt.'):format(p.label), 'Warning', {
-+            { name = 'Objekt', value = Housing.logProperty(pid) },
-+            { name = 'Mieter', value = l.owner_name or l.owner },
-+            { name = 'Offen', value = Housing.logMoney(l.power_debt) },
-+        })
-```
-`~ resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
-+    Housing.log(src, 'Mietvertrag unterschrieben', ('%s hat %s gemietet.'):format(l.owner_name, p.label), 'Success', {
-+        { name = 'Objekt', value = Housing.logProperty(pid) },
-+        { name = 'Lager-Stufe', value = t.label or tostring(tierIdx) },
-+        { name = 'Bezahlt', value = ('%s (Miete %s · Strom %s · Kaution %s) per %s'):format(Housing.logMoney(total), Housing.logMoney(rent),
-+            Housing.logMoney(power), Housing.logMoney(p.deposit), method == 'money' and 'bar' or 'Bank') },
-+    })
-+        Housing.log(src, 'Polizei-Durchsuchung', ('%s (%s) durchsucht %s.'):format(x.getName(), x.job.label or x.job.name, p.label), 'Warning', {
-+            { name = 'Objekt', value = Housing.logProperty(pid) },
-+            { name = 'Mieter', value = l.owner_name or l.owner },
-+        })
-```
-`~ resources/[selfcode]/rmc_minijobs/config.lua`
-```diff
--Config = Config or {}
--
--Config.Admin = {
--    command = 'mjadmin',
--    groups = {
--        'owner', 'inhaber', 'superadmin', 'admin', 'god',
--        'management', 'leitung', 'projektleiter', 'projektleitung',
--    },
--    ace = 'minijob.admin',
--}
-```
-`~ resources/[selfcode]/rmc_minijobs/fxmanifest.lua`
-```diff
--fx_version 'cerulean'
--game 'gta5'
--lua54 'yes'
--
--name 'rmc_minijobs'
--author 'RMC'
--description 'Minijob Creator - Müllabfuhr, Lieferung, Rasen, Pflanzen, Kehren, Reinigung, Zeitung'
--version '2.0.0'
--
--shared_scripts {
-```
-`~ resources/[selfcode]/rmc_minijobs/server/admin.lua`
-```diff
-+    TR.Log(source, 'Minijob erstellt', ('Minijob „%s“ wurde erstellt.'):format(job.label), 'Success', {
-+        { name = 'Minijob', value = TR.LogJob(job) },
-+    })
-+    local changed = {}
-+    for k, v in pairs(patch) do
-+        if type(v) == 'table' then
-+            local sub = {}
-+            for ik, iv in pairs(v) do
-+                sub[#sub + 1] = type(iv) == 'table' and ik or ('%s=%s'):format(ik, tostring(iv))
-+            end
-```
-`~ resources/[selfcode]/rmc_minijobs/server/jobs.lua`
-```diff
-+    TR.DutySince = TR.DutySince or {}
-+    TR.DutySince[xPlayer.identifier] = os.time()
-+    TR.Log(source, 'Dienst begonnen', ('%s hat den Dienst bei %s begonnen.'):format(TR.LogName(source), job.label or job.id), 'Info', {
-+        { name = 'Minijob', value = TR.LogJob(job) },
-+    })
-+    local openAsg = TR.Assignments[identifier]
-+    local since = TR.DutySince and TR.DutySince[identifier]
-+    local fields = { { name = 'Minijob', value = TR.LogJob(job or jobId) } }
-+    if since then fields[#fields + 1] = { name = 'Dienstzeit', value = TR.LogDuration(os.time() - since) } end
-+    if openAsg then
 ```
