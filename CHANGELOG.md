@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 14:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[devcore]/devcore_needs/configs/items.lua`
+```diff
++            Stress = nil, -- How much stress do you want to remove after using the item if you don't want to use the stress system leave nil
++            Alcohol = nil -- Set the amount of alcohol the item should add after each drink.
++        },
++    },
++
++    ["cooked_chicken"] = {-- item name
++        Size = 220, -- Item size
++        Type = 'FOOD', -- Item type 'DRINK' , 'FOOD' , 'GLASS'
++        Prop = { -- Prop spawn data for idle & usage.
++            Main = {
+```
+
 ## 2026-11-17 12:22 Uhr
 **+0** neu · **~7** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_housing/README.md`
@@ -977,12 +993,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `+ resources/[selfcode]/api_new/settings.lua`
 ```diff
 + Neue Datei
-```
-
-## 2026-11-12 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-12T13:18:01Z","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"14715568170615
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-12T17:01:00Z","webhooks":{"versicherung":{"webhookId":"1535733186921898004","channelId":"1535733166138990602","url":"https://discord.com/api/webhooks/1535733186921898004/***"},"esx_jobs":{"webhookId":"1557386364578955274","channelId":"1557386
 ```

@@ -68896,6 +68896,63 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-17T14:23:09+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77706
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[devcore]/devcore_needs/configs/items.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[devcore]/devcore_needs/configs/items.lua",
+          "status": "M",
+          "lines": [
+            "+            Stress = nil, -- How much stress do you want to remove after using the item if you don't want to use the stress system leave nil\r",
+            "+            Alcohol = nil -- Set the amount of alcohol the item should add after each drink.\r",
+            "+        },\r",
+            "+    },\r",
+            "+\r",
+            "+    [\"cooked_chicken\"] = {-- item name\r",
+            "+        Size = 220, -- Item size\r",
+            "+        Type = 'FOOD', -- Item type 'DRINK' , 'FOOD' , 'GLASS'\r",
+            "+        Prop = { -- Prop spawn data for idle & usage.\r",
+            "+            Main = {\r",
+            "+                Model = 'prop_cs_steak',\r",
+            "+                BoneID = 18905,\r",
+            "+                Offset = vector3(0.13, 0.05, 0.02),\r",
+            "+                Rot = vector3(-180.0, 0.0, 0.0),\r",
+            "+            },\r",
+            "+            --[[Second = { --https://forum.cfx.re/t/free-animation-eat-with-fork/5068991\r",
+            "+                Model = 'alcaprop_fork',\r",
+            "+                BoneID = 57005,\r",
+            "+                Offset = vector3(0.14, 0.02, 0.01),\r",
+            "+                Rot = vector3(-118.0, 192.0, 24.0),\r",
+            "+            }]]\r",
+            "+        },\r",
+            "+        Anim = {\r",
+            "+            Hold = nil,\r",
+            "+            Use = {\r",
+            "+                dict = \"mp_player_inteat@burger\",\r",
+            "+                anim = \"mp_player_int_eat_burger_fp\",\r",
+            "+                params = {nil, nil, 1200, 49}\r",
+            "+            }\r",
+            "+        },\r",
+            "+        Consume = {\r",
+            "+            Bite = {min = 15, max = 25}, -- Set how many ml or g are removed from the item after each drink / bite into food\r",
+            "+            Status = 50000, -- set how much food or drink you want to add \r"
+          ]
+        }
+      ]
     }
   ]
 }
