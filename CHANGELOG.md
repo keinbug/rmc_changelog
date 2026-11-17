@@ -2,6 +2,38 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 22:22 Uhr
+**+2** neu · **~1** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_48_17_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_50_17_11_2026.json`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "backupTimestamp": 1794515477,
+-            "backupFile": "banlist_21_31_12_11_2026.json",
+-            "backupDate": "21_31_12_11_2026",
+-            "id": 11
+-        },
+-        {
+-            "backupTimestamp": 1794515602,
+-            "backupFile": "banlist_21_33_12_11_2026.json",
+-            "backupDate": "21_33_12_11_2026",
+-            "id": 11
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_31_12_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_33_12_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-17 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -876,55 +908,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"c
 +{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.c
-```
-
-## 2026-11-12 23:23 Uhr
-**+5** neu · **~4** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/README.md`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/client/location.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/client/vehicle.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/location.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/vehicle.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/location.lua',
-+    'server/vehicle.lua',
-+    'client/location.lua',
-+    'client/vehicle.lua',
-```
-`~ resources/[selfcode]/api_new/settings.lua`
-```diff
-+
-+-- Standort-Endpunkte (/location/..., /locations)
-+Settings.Location = {
-+    Enabled         = true,
-+    PostalResource  = 'rmc_core',              -- woher die PLZ-Liste kommt
-+    PostalFile      = 'data/new-postals.json',
-+    ClientTimeoutMs = 3000,                    -- so lange auf Straße/Gebiet vom Client warten
-+}
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618"},"basicneeds":{"webhookId":"1552971931869777932","url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"14179176
-+{"webhooks":{"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027"},"doors":{"channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***","webhookId":"1559665847771988080"},"c
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
--description 'IPL-Housing für ESX: Mieten, Schlüssel, Interior-Stile, ox_inventory-Lager mit Stufen, Umkleide, Miete + Strom'
-+description 'IPL-Housing'
 ```
