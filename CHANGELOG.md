@@ -2,6 +2,90 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 00:23 Uhr
+**+3** neu · **~9** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/multichar.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_api/server/modules/multichar.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/ks-multicharacter/fxmanifest.lua`
+```diff
++    'ks-libs-configs/ks-sql-slots.lua', -- muss VOR ks-server.lua geladen werden
+```
+`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.js`
+```diff
+-ksConfig.DiscordSlotTxt = 'Du musst eine Rolle auf Discord haben, um ihn freizuschalten.';
++ksConfig.DiscordSlotTxt = 'Dieser Slot muss vom Team für dich freigeschaltet werden.';
+```
+`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.lua`
+```diff
+-ksConfig = {}
+-
+-ksConfig.QBcore = 'qb-core'
+-ksConfig.ESX = 'es_extended'
+-ksConfig.Framework = ksGetFramework(ksConfig.QBcore, ksConfig.ESX)
+-
+-ksConfig.EmptySlots = 1 -- Default slots for all players
+-
+-ksConfig.EnableDiscord = true
+-
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/multichar.lua',
+```
+`~ resources/[selfcode]/api_new/server/refunds.lua`
+```diff
++    GET    /refunds/account/:license alle offenen Rückerstattungen eines Spielkontos (alle Charaktere)
++-- Alle offenen Rückerstattungen eines Spielkontos: Lizenz ohne Charakter-Slot, findet char1:…, char2:… usw.
++Api.addRoute('GET', '/refunds/account/:license', function(res, params)
++    local license = (tostring(params[1] or ''):gsub('^license:', ''))
++    if #license < 20 or #license > 64 or not license:match('^%w+$') then return fail(res, 400, 'Ungültige Lizenz') end
++
++    local rows = dbQuery(('SELECT * FROM `%s` WHERE identifier = ? OR identifier LIKE ? ORDER BY id DESC LIMIT 50'):format(TABLE),
++        { license, 'char%:' .. license }) or {}
++    local E = esx()
++    local list = {}
+```
+`~ resources/[selfcode]/rmc_api/config/api_key.lua`
+```diff
++-- ========================================
++--  MULTICHAR-SLOTS (ks-multicharacter)
++-- ========================================
++-- Beide Werte müssen zu ksConfig.SqlSlots in ks-multicharacter/ks-libs-configs/ks-config.lua passen.
++Config.Multichar = {
++    Table = 'rmc_multichar_slots',
++    MaxExtraSlots = 3,
++}
++
+```
+`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
+```diff
++    'server/modules/multichar.lua',
+```
+`~ resources/[selfcode]/rmc_api/server/main.lua`
+```diff
++    -- Multichar-Slots (ks-multicharacter, SQL statt Discord-Rollen)
++    { method = 'GET',  path = '/multichar/list',                      handler = function(req, res) MulticharModule.list(req, res) end },
++    { method = 'GET',  path = '/multichar/status/:id',                handler = function(req, res, p) MulticharModule.status(req, res, p[1]) end },
++    { method = 'POST', path = '/multichar/grant',                     handler = function(req, res) MulticharModule.grant(req, res) end },
++    { method = 'POST', path = '/multichar/revoke',                    handler = function(req, res) MulticharModule.revoke(req, res) end },
++
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"minijobs":{"url":"https://discord.com/api/webhooks/1570426351809335326/***","webhookId":"1570426351809335326","channelId":"1570426349213188196"}
++{"updatedAt":"2026-11-17T23:19:35Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714
+```
+
 ## 2026-11-17 23:23 Uhr
 **+1** neu · **~2** geändert · **-0** gelöscht
 `+ resources/[selfcode]/api_new/server/character.lua`
@@ -804,42 +888,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
 +{"updatedAt":"2026-11-13T05:36:28Z","categoryId":"1551161549018759170","webhooks":{"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296","webhookId":"1559665847771988080"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/**
-```
-
-## 2026-11-13 01:23 Uhr
-**+1** neu · **~3** geändert · **-0** gelöscht
-`+ resources/.claude/settings.local.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"channelId":"1557386346782265425","webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***"},"join":{"channelId":"1448120760391565352","webhookId":"1552971091771924552","url":"https://discord.c
-+{"webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
-```
-`~ resources/[selfcode]/rmc_core/server/webhook.lua`
-```diff
-+-- ============================================
-+-- LOG-API (v1-api.rmc-rp.de) – wie bei rmc_aduty
-+-- Jeder Log geht zusätzlich (zum Discord-Webhook) an die Log-API,
-+-- inkl. Typ (type) und Aktion (action).
-+-- Diese Datei ist server_script -> Key gelangt nicht zum Client.
-+-- Überschreibbar per server.cfg: set rmc_logapi_url / set rmc_logapi_key
-+-- ============================================
-+local LogApi = {
-+    enabled = GetConvar("rmc_logapi_enabled", "true") == "true",
-+    url     = GetConvar("rmc_logapi_url", "https://v1-api.rmc-rp.de"),
-```
-`~ resources/[selfcode]/rmc_core/server/webhook_links.lua`
-```diff
-+-- Umgekehrte Suche: Webhook-URL -> Key (z.B. 'afk'). Wird von webhook.lua
-+-- genutzt, um den Log-Typ für die Log-API zu bestimmen. 'default' zählt nicht.
-+function GetWebhookKeyByUrl(url)
-+    if type(url) ~= 'string' or url == '' then return nil end
-+    for key, link in pairs(Links) do
-+        if key ~= 'default' and link == url then return key end
-+    end
-+    return nil
-+end
-+
 ```

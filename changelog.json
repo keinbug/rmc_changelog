@@ -69303,6 +69303,219 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-18T00:23:10+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 9,
+        "deleted": 0,
+        "total": 77710
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua",
+        "resources/[selfcode]/api_new/server/multichar.lua",
+        "resources/[selfcode]/rmc_api/server/modules/multichar.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/ks-multicharacter/fxmanifest.lua",
+        "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.js",
+        "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.lua",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/server/refunds.lua",
+        "resources/[selfcode]/rmc_api/config/api_key.lua",
+        "resources/[selfcode]/rmc_api/fxmanifest.lua",
+        "resources/[selfcode]/rmc_api/server/main.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/multichar.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/multichar.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/ks-multicharacter/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'ks-libs-configs/ks-sql-slots.lua', -- muss VOR ks-server.lua geladen werden\r"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.js",
+          "status": "M",
+          "lines": [
+            "-ksConfig.DiscordSlotTxt = 'Du musst eine Rolle auf Discord haben, um ihn freizuschalten.';\r",
+            "+ksConfig.DiscordSlotTxt = 'Dieser Slot muss vom Team für dich freigeschaltet werden.';\r"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.lua",
+          "status": "M",
+          "lines": [
+            "-ksConfig = {}\r",
+            "-\r",
+            "-ksConfig.QBcore = 'qb-core'\r",
+            "-ksConfig.ESX = 'es_extended'\r",
+            "-ksConfig.Framework = ksGetFramework(ksConfig.QBcore, ksConfig.ESX)\r",
+            "-\r",
+            "-ksConfig.EmptySlots = 1 -- Default slots for all players\r",
+            "-\r",
+            "-ksConfig.EnableDiscord = true\r",
+            "-\r",
+            "-ksConfig.DiscordServerID = \"1366443085860573206\"\r",
+            "-ksConfig.DiscordRoles = {\r",
+            "-    [\"1546262319397478490\"] = 1,\r",
+            "-    [\"1546262386975969370\"] = 1,\r",
+            "-    [\"1546262506711027764\"] = 1\r",
+            "-}\r",
+            "-\r",
+            "-ksConfig.EnableDeleteButton = true\r",
+            "-ksConfig.EnableDeleteByDiscordRoles = true\r",
+            "-ksConfig.DiscordDeleteRoles = {\r",
+            "-    [\"1366443086388924522\"] = true \r",
+            "-}\r",
+            "-\r",
+            "-ksConfig.EnableInterior = true\r",
+            "-ksConfig.EnableLogoutCmd = true\r",
+            "-ksConfig.ApartmentsStarting = false -- Only for QBcore\r",
+            "-ksConfig.PrefixESX = 'char' -- Only for ESX\r",
+            "-ksConfig.UsersTableName = 'users' -- Only for ESX\r",
+            "-ksConfig.ksDeleteChaaracterTables = {users = 'identifier'} -- Only for ESX\r",
+            "-ksConfig.ksInt = vector3(-787.0749, 315.8198, 217.6386)\r",
+            "-ksConfig.ksDefaultModels = {\"mp_m_freemode_01\",\"mp_f_freemode_01\"}\r",
+            "-ksConfig.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86)\r",
+            "-ksConfig.ksChAnimDic = \"anim@amb@nightclub@dancers@podium_dancers@\"\r",
+            "-ksConfig.ksChAnim = \"hi_dance_facedj_17_v2_male^5\"\r",
+            "-\r",
+            "-ksConfig.Identifier = 'license'\r",
+            "-\r",
+            "-if (ksConfig.Framework == 'ESX') then\r",
+            "-    ksConfig.ksCoords = vector4(-778.614, 338, 203.82, 88.29)\r",
+            "-    ksConfig.ksHiddenCoords = vector4(-778.614, 335, 203.82, 88.29)\r",
+            "-    ksConfig.ksCreateCoords = vector4(-778.614, 338.5, 203.82, 88.29)\r",
+            "-    ksConfig.ksCamCoords = vector4(-780.5, 338.5, 203.8, 270)\r",
+            "-else\r",
+            "-    ksConfig.ksCoords = vector4(-789.94, 336.6, 216.84, 270.84)\r",
+            "-    ksConfig.ksHiddenCoords = vector4(-789.94, 340.5, 216.84, 270.84)\r",
+            "-    ksConfig.ksCreateCoords = vector4(-789.94, 336.6, 216.84, 270.84)\r",
+            "-    ksConfig.ksCamCoords = vector4(-788, 336.53, 216.8, 89.54)\r",
+            "-end\r",
+            "-\r",
+            "-ksConfig.EsxDefaultSkins = {\r",
+            "-    [\"m\"] = {\r",
+            "-        mom = 43,\r",
+            "-        dad = 29,\r",
+            "-        face_md_weight = 61,\r",
+            "-        skin_md_weight = 27,\r",
+            "-        nose_1 = -5,\r",
+            "-        nose_2 = 6,\r",
+            "-        nose_3 = 5,\r",
+            "-        nose_4 = 8,\r",
+            "-        nose_5 = 10,\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/multichar.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/refunds.lua",
+          "status": "M",
+          "lines": [
+            "+    GET    /refunds/account/:license alle offenen Rückerstattungen eines Spielkontos (alle Charaktere)",
+            "+-- Alle offenen Rückerstattungen eines Spielkontos: Lizenz ohne Charakter-Slot, findet char1:…, char2:… usw.",
+            "+Api.addRoute('GET', '/refunds/account/:license', function(res, params)",
+            "+    local license = (tostring(params[1] or ''):gsub('^license:', ''))",
+            "+    if #license < 20 or #license > 64 or not license:match('^%w+$') then return fail(res, 400, 'Ungültige Lizenz') end",
+            "+",
+            "+    local rows = dbQuery(('SELECT * FROM `%s` WHERE identifier = ? OR identifier LIKE ? ORDER BY id DESC LIMIT 50'):format(TABLE),",
+            "+        { license, 'char%:' .. license }) or {}",
+            "+    local E = esx()",
+            "+    local list = {}",
+            "+    for _, row in ipairs(rows) do",
+            "+        local items = {}",
+            "+        for _, it in ipairs(itemList(decode(row.items) or {})) do items[#items + 1] = brief(it) end",
+            "+        local xPlayer = E and E.GetPlayerFromIdentifier(row.identifier) or nil",
+            "+        list[#list + 1] = {",
+            "+            code = row.refund_id,",
+            "+            identifier = row.identifier,",
+            "+            items = items,",
+            "+            online = xPlayer ~= nil,",
+            "+            serverId = xPlayer and xPlayer.source or nil,",
+            "+            createdAt = row.created_at or row.created or row.date or row.timestamp,",
+            "+        }",
+            "+    end",
+            "+    ok(res, list)",
+            "+end)",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/config/api_key.lua",
+          "status": "M",
+          "lines": [
+            "+-- ========================================",
+            "+--  MULTICHAR-SLOTS (ks-multicharacter)",
+            "+-- ========================================",
+            "+-- Beide Werte müssen zu ksConfig.SqlSlots in ks-multicharacter/ks-libs-configs/ks-config.lua passen.",
+            "+Config.Multichar = {",
+            "+    Table = 'rmc_multichar_slots',",
+            "+    MaxExtraSlots = 3,",
+            "+}",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/modules/multichar.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+    -- Multichar-Slots (ks-multicharacter, SQL statt Discord-Rollen)",
+            "+    { method = 'GET',  path = '/multichar/list',                      handler = function(req, res) MulticharModule.list(req, res) end },",
+            "+    { method = 'GET',  path = '/multichar/status/:id',                handler = function(req, res, p) MulticharModule.status(req, res, p[1]) end },",
+            "+    { method = 'POST', path = '/multichar/grant',                     handler = function(req, res) MulticharModule.grant(req, res) end },",
+            "+    { method = 'POST', path = '/multichar/revoke',                    handler = function(req, res) MulticharModule.revoke(req, res) end },",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"esx\":{\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"webhookId\":\"1557386326951592027\",\"channelId\":\"1420103430562910370\"},\"minijobs\":{\"url\":\"https://discord.com/api/webhooks/1570426351809335326/***\",\"webhookId\":\"1570426351809335326\",\"channelId\":\"1570426349213188196\"}",
+            "+{\"updatedAt\":\"2026-11-17T23:19:35Z\",\"webhooks\":{\"chopshop\":{\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\"},\"einreise\":{\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714"
+          ]
+        }
+      ]
     }
   ]
 }
