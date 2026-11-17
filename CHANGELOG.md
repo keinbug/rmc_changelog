@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-17 01:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_housing/client/garage.lua`
+```diff
+-    Wait(0)
+-    SetVehicleOnGroundProperly(veh)
+-    FreezeEntityPosition(veh, true)
++    -- Erst einfrieren, wenn das Fahrzeug wirklich auf dem Boden steht (sonst schwebt es auf Spawn-Höhe).
++    -- Läuft pro Fahrzeug im Hintergrund, damit das Betreten nicht hängt.
++    CreateThread(function()
++        RequestCollisionAtCoord(pos.x, pos.y, pos.z)
++        ActivatePhysics(veh)
++        local t = GetGameTimer()
++        local grounded = false
+```
+
 ## 2026-11-17 00:23 Uhr
 **+3** neu · **~13** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_housing/.claude/settings.local.json`
@@ -1051,70 +1067,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"support":{"channelId":"1552971099317211136","webhookId":"1552971101741654046","url":"https://discord.com/api/webhooks/1552971101741654046/***"},"staff":{"channelId":"1552971120460828763","webhookId":"1552971123233394708","url":"https://discord.com/ap
 +{"webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"frak":{"channelId":"1552971094267527169","webhookId":"1552971096847028264","url":"https://discord.com/api/webhooks/1552971096847028264/***"}
-```
-
-## 2026-11-12 01:23 Uhr
-**+2** neu · **~5** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_housing/web/sounds/kaffee.mp3`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/web/sounds/ofen.mp3`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_housing/client/appliances.lua`
-```diff
--local function progress(label, seconds)
--    return lib.progressBar({
-+local function progress(label, seconds, sound)
-+    if sound then SendNUIMessage({ action = 'sound', file = sound, duration = seconds, volume = 0.5 }) end
-+    local ok = lib.progressBar({
-+    if sound then SendNUIMessage({ action = 'sound', stop = true }) end
-+    return ok
--    if r.item then return ('Automat auffüllen (%s)'):format(r.item) end
-+    if r.item then return ('Automat auffüllen (%dx %s)'):format(r.amount or 1, r.label or r.item) end
--    if progress(('%s in den Ofen schieben …'):format(pick.label or pick.item), 2.5) then use(a, 'ovenIn', pick.item) end
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+            inSeconds = 9,           -- Animation beim Reinschieben (Sound web/sounds/ofen.mp3)
-+            sound = 'ofen.mp3',
--            seconds = 4,         -- Dauer pro Kaffee
--            -- Auffüllen: mit Item (z. B. 'coffee_beans') ODER, wenn item = nil, gegen Geld
--            refill = { item = nil, price = 150, account = 'bank' },
-+            seconds = 26,        -- Dauer pro Kaffee (Animation + Sound web/sounds/kaffee.mp3)
-+            sound = 'kaffee.mp3',
-+            -- Auffüllen nur mit Kaffeebohnen (1 Item = volle Füllung)
-+            refill = { item = 'kaffeebohnen', label = 'Kaffeebohnen', amount = 1 },
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'web/sounds/*.mp3',
-```
-`~ resources/[selfcode]/rmc_housing/server/appliances.lua`
-```diff
--    if r.item then
--        if (exports.ox_inventory:Search(src, 'count', r.item) or 0) < 1 then
--            return false, ('Du brauchst %s zum Auffüllen.'):format(r.item)
--        end
--        if not exports.ox_inventory:RemoveItem(src, r.item, 1) then return false, 'Auffüllen fehlgeschlagen.' end
--    elseif (r.price or 0) > 0 then
--        if not Housing.charge(src, r.price, r.account == 'money' and 'money' or 'bank', 'Kaffeeautomat auffüllen') then
--            return false, ('Nicht genug Geld (%s $).'):format(ESX.Math.GroupDigits(r.price))
--        end
-+    local item, amount = r.item or 'kaffeebohnen', r.amount or 1
-```
-`~ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
-+  if (m.action === 'sound') return playSound(m);
-+/* Geräte-Sounds (Kaffee / Ofen) */
-+let currentSound = null;
-+function playSound(m) {
-+  if (currentSound) { currentSound.pause(); currentSound = null; }
-+  if (m.stop || !m.file) return;
-+  const a = new Audio(`sounds/${m.file}`);
-+  a.volume = typeof m.volume === 'number' ? m.volume : 0.5;
-+  a.play().catch(() => {});
-+  currentSound = a;
 ```

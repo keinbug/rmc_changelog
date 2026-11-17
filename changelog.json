@@ -68622,6 +68622,53 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-17T01:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77706
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_housing/client/garage.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/garage.lua",
+          "status": "M",
+          "lines": [
+            "-    Wait(0)",
+            "-    SetVehicleOnGroundProperly(veh)",
+            "-    FreezeEntityPosition(veh, true)",
+            "+    -- Erst einfrieren, wenn das Fahrzeug wirklich auf dem Boden steht (sonst schwebt es auf Spawn-Höhe).",
+            "+    -- Läuft pro Fahrzeug im Hintergrund, damit das Betreten nicht hängt.",
+            "+    CreateThread(function()",
+            "+        RequestCollisionAtCoord(pos.x, pos.y, pos.z)",
+            "+        ActivatePhysics(veh)",
+            "+        local t = GetGameTimer()",
+            "+        local grounded = false",
+            "+        while DoesEntityExist(veh) and GetGameTimer() - t < 3000 do",
+            "+            if HasCollisionLoadedAroundEntity(veh) and SetVehicleOnGroundProperly(veh) then grounded = true break end",
+            "+            Wait(50)",
+            "+        end",
+            "+        if not DoesEntityExist(veh) then return end",
+            "+        -- Federung setzen lassen bzw. (falls OnGroundProperly nie griff) einfach herunterfallen lassen",
+            "+        local s = GetGameTimer()",
+            "+        Wait(grounded and 400 or 200)",
+            "+        while DoesEntityExist(veh) and GetGameTimer() - s < 2500 and (IsEntityInAir(veh) or #GetEntityVelocity(veh) > 0.05) do Wait(50) end",
+            "+        if not DoesEntityExist(veh) then return end",
+            "+        SetEntityHeading(veh, pos.w)",
+            "+        FreezeEntityPosition(veh, true)",
+            "+    end)"
+          ]
+        }
+      ]
     }
   ]
 }
