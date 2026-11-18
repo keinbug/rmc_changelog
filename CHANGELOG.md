@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 20:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "type": "deposit",
++            "receiver_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
++            "reason": "Einzahlung auf Bankkonto",
++            "date": "2026/11/18 - 19:28:35",
++            "sender_identifier": "bank",
++            "value": 100000,
++            "receiver_name": "Jasmin Winchester",
++            "sender_name": "Geldbörse"
++        },
+```
+
 ## 2026-11-18 19:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -880,33 +896,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +        -- Server-seitig getriggert -> source = Konsole -> Rechteprüfung in EasyAdmin greift nicht
 +        TriggerEvent('EasyAdmin:editBan', ban)
 +    end
-```
-
-## 2026-11-13 19:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[esx_addons]/EasyAdmin/banlist.json`
-```diff
--[]
-+[
-+    {
-+        "banid": 1,
-+        "reason": "Test ( Spielername: Unknown - table: 3c6ef372fe94f824 ), \nGebannt von: Sebbi",
-+        "expireString": "20/11/2026 \t19:17:00",
-+        "identifiers": [
-+            "license:dcdd8750773c33c2ce3ff658853fe0c909367dba"
-+        ],
-+        "banner": "Sebbi",
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
-+    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
--            "sender_identifier": "bank",
--            "receiver_identifier": "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
--            "sender_name": "Savings Interest",
--            "reason": "Savings account interest payment (Period 27)",
-+            "sender_identifier": "bank",
-+            "reason": "Savings account interest payment (Period 43)",
--            "date": "2026/07/05 - 09:20:38",
--            "receiver_name": "Savings Account"
 ```

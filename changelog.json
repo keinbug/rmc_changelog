@@ -69719,6 +69719,40 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-18T20:23:03+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77710
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"type\": \"deposit\",",
+            "+            \"receiver_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "+            \"date\": \"2026/11/18 - 19:28:35\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"value\": 100000,",
+            "+            \"receiver_name\": \"Jasmin Winchester\",",
+            "+            \"sender_name\": \"Geldbörse\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }
