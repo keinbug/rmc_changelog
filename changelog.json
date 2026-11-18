@@ -69753,6 +69753,88 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-18T22:22:55+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77710
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-        {",
+            "-            \"backupDate\": \"21_35_13_11_2026\",",
+            "-            \"backupTimestamp\": 1794602113,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_35_13_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"21_37_13_11_2026\",",
+            "-            \"backupTimestamp\": 1794602238,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_37_13_11_2026.json\"",
+            "-        },",
+            "-            \"backupTimestamp\": 1794688675,",
+            "-            \"backupFile\": \"banlist_21_37_14_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_37_14_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794688675",
+            "-            \"backupTimestamp\": 1794688800,",
+            "-            \"backupFile\": \"banlist_21_40_14_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_40_14_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794688800",
+            "-            \"backupTimestamp\": 1794775302,",
+            "-            \"backupFile\": \"banlist_21_41_15_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_41_15_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794775302",
+            "-            \"backupTimestamp\": 1794775427,",
+            "-            \"backupFile\": \"banlist_21_43_15_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_43_15_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794775427",
+            "-            \"backupTimestamp\": 1794861929,",
+            "-            \"backupFile\": \"banlist_21_45_16_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_45_16_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794861929",
+            "-            \"backupTimestamp\": 1794862054,",
+            "-            \"backupFile\": \"banlist_21_47_16_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_47_16_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794862054",
+            "-            \"backupTimestamp\": 1794948490,",
+            "-            \"backupFile\": \"banlist_21_48_17_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_48_17_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794948490",
+            "-            \"backupTimestamp\": 1794948615,",
+            "-            \"backupFile\": \"banlist_21_50_17_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_50_17_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794948615",
+            "+        },",
+            "+        {",
+            "+            \"backupFile\": \"banlist_21_51_18_11_2026.json\",",
+            "+            \"id\": 11,",
+            "+            \"backupDate\": \"21_51_18_11_2026\",",
+            "+            \"backupTimestamp\": 1795035117",
+            "+        },",
+            "+        {",
+            "+            \"backupDate\": \"21_54_18_11_2026\",",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_54_18_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795035242",
+            "-    \"lastBackup\": 1794948615",
+            "+    \"lastBackup\": 1795035242"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 22:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-        {
+-            "backupDate": "21_35_13_11_2026",
+-            "backupTimestamp": 1794602113,
+-            "id": 11,
+-            "backupFile": "banlist_21_35_13_11_2026.json"
+-        },
+-        {
+-            "backupDate": "21_37_13_11_2026",
+-            "backupTimestamp": 1794602238,
+-            "id": 11,
+```
+
 ## 2026-11-18 20:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -867,33 +883,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_18_08_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-13 20:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "type": "withdraw",
-+            "sender_identifier": "char1:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
-+            "reason": "Fahrzeugrückgabegebühr",
-+            "value": 2500,
-+            "date": "2026/11/13 - 20:06:54",
-+            "receiver_name": "cd_garage",
-+            "receiver_identifier": "cd_garage",
-+            "sender_name": "Rafael Sanchez"
-+        },
-```
-`~ resources/[selfcode]/api_new/server/easyadmin.lua`
-```diff
--    POST   /easyadmin/ban                    { identifiers=[...], reason, duration }  Offline bannen
-+    POST   /easyadmin/ban                    { identifiers=[...], reason, duration, name? }  Offline bannen (name -> statt "Unknown")
-+    -- Offline-Bans: EasyAdmin kennt den Namen nicht und speichert "Unknown".
-+    -- Name aus dem Request ({ name = "..." }, z.B. vom Panel) übernehmen und im Ban speichern.
-+    local name = type(body.name) == 'string' and body.name:gsub('%s+', ' '):match('^%s*(.-)%s*$'):sub(1, 64) or ''
-+    if name ~= '' and (ban.name == nil or ban.name == '' or ban.name == 'Unknown') then
-+        ban.name = name
-+        -- Server-seitig getriggert -> source = Konsole -> Rechteprüfung in EasyAdmin greift nicht
-+        TriggerEvent('EasyAdmin:editBan', ban)
-+    end
 ```
