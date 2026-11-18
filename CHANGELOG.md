@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 18:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
++{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***",
+```
+
 ## 2026-11-18 10:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -893,12 +901,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-13T09:00:41Z","categoryId":"1551161549018759170","webhooks":{"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583
 +{"webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"15511615924674
-```
-
-## 2026-11-13 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-13T05:36:28Z","categoryId":"1551161549018759170","webhooks":{"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296","webhookId":"1559665847771988080"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/**
-+{"updatedAt":"2026-11-13T09:00:41Z","categoryId":"1551161549018759170","webhooks":{"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583
 ```
