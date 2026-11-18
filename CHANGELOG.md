@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 19:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
++    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
+-            "type": "withdraw",
+-            "receiver_identifier": "cd_garage",
+-            "sender_name": "Timo Anderson",
+-            "value": 500,
+-            "receiver_name": "cd_garage",
+-            "date": "2026/10/06 - 21:19:34"
+```
+
 ## 2026-11-18 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -893,12 +909,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "reason": "Savings account interest payment (Period 43)",
 -            "date": "2026/07/05 - 09:20:38",
 -            "receiver_name": "Savings Account"
-```
-
-## 2026-11-13 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-13T09:00:41Z","categoryId":"1551161549018759170","webhooks":{"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583
-+{"webhooks":{"bell":{"url":"https://discord.com/api/webhooks/1471556835994767400/***","channelId":"1471556817061544068","webhookId":"1471556835994767400"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585614061618","webhookId":"15511615924674
 ```
