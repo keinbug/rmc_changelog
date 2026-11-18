@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-18 10:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
++    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
+-            "sender_name": "Savings Interest",
+-            "sender_identifier": "bank",
+-            "reason": "Savings account interest payment (Period 43)",
+-            "date": "2026/11/10 - 10:00:58",
+-            "value": 9392,
+-            "type": "interest_savings",
+-            "receiver_name": "Savings Account",
+-            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277"
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-17T23:19:35Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714
++{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
+```
+
 ## 2026-11-18 00:23 Uhr
 **+3** neu · **~9** geändert · **-0** gelöscht
 `+ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua`
@@ -880,12 +901,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-13T05:36:28Z","categoryId":"1551161549018759170","webhooks":{"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296","webhookId":"1559665847771988080"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/**
 +{"updatedAt":"2026-11-13T09:00:41Z","categoryId":"1551161549018759170","webhooks":{"lager":{"url":"https://discord.com/api/webhooks/1551161582942158879/***","channelId":"1551161580324921455","webhookId":"1551161582942158879"},"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583
-```
-
-## 2026-11-13 07:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"esx_paycheck":{"channelId":"1557386352226598913","url":"https://discord.com/api/webhooks/1557386357381533816/***","webhookId":"1557386357
-+{"updatedAt":"2026-11-13T05:36:28Z","categoryId":"1551161549018759170","webhooks":{"doors":{"url":"https://discord.com/api/webhooks/1559665847771988080/***","channelId":"1559665845330907296","webhookId":"1559665847771988080"},"support":{"url":"https://discord.com/api/webhooks/1552971101741654046/**
 ```

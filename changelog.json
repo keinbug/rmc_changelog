@@ -69516,6 +69516,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-18T10:22:30+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77710
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "+    \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\": [",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"reason\": \"Savings account interest payment (Period 43)\",",
+            "-            \"date\": \"2026/11/10 - 10:00:58\",",
+            "-            \"value\": 9392,",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"value\": 500,",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"date\": \"2026/10/06 - 21:19:34\"",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 42)\",",
+            "-            \"date\": \"2026/11/02 - 10:01:02\",",
+            "-            \"value\": 9183,",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"value\": 500,",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"date\": \"2026/09/13 - 23:00:28\"",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"reason\": \"Savings account interest payment (Period 41)\",",
+            "-            \"date\": \"2026/10/25 - 02:44:47\",",
+            "-            \"value\": 2641,",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"value\": 105000,",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"date\": \"2026/08/19 - 20:33:45\"",
+            "-            \"sender_name\": \"Salome Blackwood\",",
+            "-            \"receiver_name\": \"Salome Blackwood\",",
+            "-            \"reason\": \"Überweisung an Sparkonto\",",
+            "-            \"date\": \"2026/10/24 - 22:21:53\",",
+            "-            \"value\": 259062,",
+            "-            \"sender_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"type\": \"transfer_to_savings\",",
+            "-            \"receiver_identifier\": \"char3:95e98569cca18ee079f5fe27ab54152ede42f277\"",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-17T23:19:35Z\",\"webhooks\":{\"chopshop\":{\"channelId\":\"1552971071882399744\",\"url\":\"https://discord.com/api/webhooks/1552971074814218312/***\",\"webhookId\":\"1552971074814218312\"},\"einreise\":{\"channelId\":\"1552971085937381431\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714",
+            "+{\"updatedAt\":\"2026-11-18T09:00:42Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"poster\":{\"channelId\":\"1560007812342489120\",\"url\":\"https://discord.com/api/webhooks/1560007815156998144/***\",\"webhookId\":\"1560007815156998144\"},\"marriage\":{\"channelId\":\"1467556343492640830\",\"url\":\"https://discord.com"
+          ]
+        }
+      ]
     }
   ]
 }
