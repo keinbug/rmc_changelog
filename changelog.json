@@ -70064,6 +70064,49 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-19T21:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77715
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/sits.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "+            \"sender_identifier\": \"char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"date\": \"2026/11/19 - 20:46:03\",",
+            "+            \"value\": 100000,",
+            "+            \"type\": \"withdraw\",",
+            "+            \"sender_name\": \"Timo Anderson\",",
+            "+            \"receiver_name\": \"Geldbörse\"",
+            "+        },"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/sits.json",
+          "status": "M",
+          "lines": [
+            "-[{\"x\":1225.8873,\"y\":-420.7482,\"z\":68.0417,\"label\":\"Sit Chair 4\",\"h\":255.6565,\"id\":\"sit_1791572244_8861\",\"dict\":\"timetable@ron@ig_3_couch\",\"anim\":\"base\"},{\"x\":1226.4694,\"y\":-419.3795,\"z\":68.0817,\"label\":\"Sit Chair 2\",\"h\":271.1957,\"id\":\"sit_1791572300_6917\",\"dict\":\"timetable@ron@ig_5_p3\",\"anim\":\"ig_5",
+            "+[{\"x\":1225.8873,\"y\":-420.7482,\"z\":68.0417,\"label\":\"Sit Chair 4\",\"h\":255.6565,\"id\":\"sit_1791572244_8861\",\"dict\":\"timetable@ron@ig_3_couch\",\"anim\":\"base\"},{\"x\":1226.4694,\"y\":-419.3795,\"z\":68.0817,\"label\":\"Sit Chair 2\",\"h\":271.1957,\"id\":\"sit_1791572300_6917\",\"dict\":\"timetable@ron@ig_5_p3\",\"anim\":\"ig_5"
+          ]
+        }
+      ]
     }
   ]
 }

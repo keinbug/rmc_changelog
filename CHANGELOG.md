@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-19 21:23 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_identifier": "bank",
++            "reason": "Auszahlung vom Bankkonto",
++            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "date": "2026/11/19 - 20:46:03",
++            "value": 100000,
++            "type": "withdraw",
++            "sender_name": "Timo Anderson",
++            "receiver_name": "Geldbörse"
++        },
+```
+`~ resources/[selfcode]/rmc_core/data/sits.json`
+```diff
+-[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
++[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
+```
+
 ## 2026-11-19 20:23 Uhr
 **+5** neu · **~1** geändert · **-0** gelöscht
 `+ resources/[selfcode]/rmc_skate/client.lua`
@@ -855,12 +876,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-14T23:00:39Z","webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/155116157800979663
 +{"webhooks":{"esx_test":{"channelId":"1557386329686413342","url":"https://discord.com/api/webhooks/1557386332483887194/***","webhookId":"1557386332483887194"},"lager":{"channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***","webhookId":"1551161582942158879
-```
-
-## 2026-11-15 00:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-14T17:01:28Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://disc
-+{"updatedAt":"2026-11-14T23:00:39Z","webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/155116157800979663
 ```
