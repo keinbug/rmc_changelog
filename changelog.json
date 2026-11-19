@@ -69997,6 +69997,73 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-19T20:23:14+01:00",
+      "initial": false,
+      "counts": {
+        "added": 5,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77715
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/rmc_skate/client.lua",
+        "resources/[selfcode]/rmc_skate/config.lua",
+        "resources/[selfcode]/rmc_skate/fxmanifest.lua",
+        "resources/[selfcode]/rmc_skate/server.lua",
+        "resources/[selfcode]/rmc_skate/stream/p_defilied_ragdoll_01_s.ydr"
+      ],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/sits.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_skate/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_skate/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_skate/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_skate/server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_skate/stream/p_defilied_ragdoll_01_s.ydr",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/sits.json",
+          "status": "M",
+          "lines": [
+            "-[{\"x\":1225.8873,\"id\":\"sit_1791572244_8861\",\"z\":68.0417,\"label\":\"Sit Chair 4\",\"dict\":\"timetable@ron@ig_3_couch\",\"anim\":\"base\",\"h\":255.6565,\"y\":-420.7482},{\"x\":1226.4694,\"id\":\"sit_1791572300_6917\",\"z\":68.0817,\"label\":\"Sit Chair 2\",\"dict\":\"timetable@ron@ig_5_p3\",\"anim\":\"ig_5_p3_base\",\"h\":271.1957,\"y\":",
+            "+[{\"x\":1225.8873,\"y\":-420.7482,\"z\":68.0417,\"label\":\"Sit Chair 4\",\"h\":255.6565,\"id\":\"sit_1791572244_8861\",\"dict\":\"timetable@ron@ig_3_couch\",\"anim\":\"base\"},{\"x\":1226.4694,\"y\":-419.3795,\"z\":68.0817,\"label\":\"Sit Chair 2\",\"h\":271.1957,\"id\":\"sit_1791572300_6917\",\"dict\":\"timetable@ron@ig_5_p3\",\"anim\":\"ig_5"
+          ]
+        }
+      ]
     }
   ]
 }

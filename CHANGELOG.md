@@ -2,6 +2,34 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-19 20:23 Uhr
+**+5** neu · **~1** geändert · **-0** gelöscht
+`+ resources/[selfcode]/rmc_skate/client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_skate/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_skate/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_skate/server.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_skate/stream/p_defilied_ragdoll_01_s.ydr`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/sits.json`
+```diff
+-[{"x":1225.8873,"id":"sit_1791572244_8861","z":68.0417,"label":"Sit Chair 4","dict":"timetable@ron@ig_3_couch","anim":"base","h":255.6565,"y":-420.7482},{"x":1226.4694,"id":"sit_1791572300_6917","z":68.0817,"label":"Sit Chair 2","dict":"timetable@ron@ig_5_p3","anim":"ig_5_p3_base","h":271.1957,"y":
++[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
+```
+
 ## 2026-11-19 19:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -835,36 +863,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-14T17:01:28Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://disc
 +{"updatedAt":"2026-11-14T23:00:39Z","webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"adminjail":{"webhookId":"1551161578009796630","url":"https://discord.com/api/webhooks/155116157800979663
-```
-
-## 2026-11-14 22:23 Uhr
-**+2** neu · **~1** geändert · **-2** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_37_14_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_40_14_11_2026.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1794602238,
--            "id": 11,
--            "backupTimestamp": 1794255639,
--            "backupFile": "banlist_21_20_09_11_2026.json",
--            "backupDate": "21_20_09_11_2026"
--        },
--        {
--            "id": 11,
--            "backupTimestamp": 1794255764,
--            "backupFile": "banlist_21_22_09_11_2026.json",
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_20_09_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_09_11_2026.json`
-```diff
-- Gelöscht
 ```
