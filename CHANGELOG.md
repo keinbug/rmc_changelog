@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-19 19:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
++    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
+-            "type": "deposit",
+-            "receiver_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
+-            "reason": "Einzahlung auf Bankkonto",
+-            "date": "2026/11/18 - 19:28:35",
+-            "sender_identifier": "bank",
+-            "value": 100000,
+-            "receiver_name": "Jasmin Winchester",
+-            "sender_name": "Geldbörse"
+```
+
 ## 2026-11-19 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -851,12 +867,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_22_09_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-14 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-14T09:01:16Z","categoryId":"1551161549018759170","webhooks":{"freecam_photo":{"channelId":"1551520126367572008","url":"https://discord.com/api/webhooks/1551520132319412284/***","webhookId":"1551520132319412284"},"minijobs":{"channelId":"1570426349213188196","url":"https://disc
-+{"updatedAt":"2026-11-14T17:01:28Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://disc
 ```
