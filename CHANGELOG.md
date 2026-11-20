@@ -2,6 +2,51 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-20 19:23 Uhr
+**+3** neu · **~3** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/rolesync.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/settings.lua.bak-rolesync`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/banlist.json`
+```diff
+-        "banid": 1,
+-        "reason": "Test ( Spielername: Unknown - table: 3c6ef372fe94f824 ), \nGebannt von: Sebbi",
+-        "expireString": "20/11/2026 \t19:17:00",
+-        "identifiers": [
+-            "license:dcdd8750773c33c2ce3ff658853fe0c909367dba"
+-        ],
+-        "banner": "Sebbi",
+-        "expire": 1795198620,
+-        "name": "Unknown"
+-    },
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/rolesync.lua',
+```
+`~ resources/[selfcode]/api_new/settings.lua`
+```diff
++
++-- Role Sync (server/rolesync.lua): Discord-Rolle -> Ingame-Gruppe beim Join
++-- Token und Guild kommen aus rmc_core (server/discord_config.lua bzw. Convar rmc_discord_bot_token).
++Settings.RoleSync = {
++    Enabled = true,
++    Roles = { -- Reihenfolge = Priorität (die erste passende Rolle gewinnt)
++        { id = '1573394820427157634', label = 'Owner',   group = 'owner' },
++        { id = '1573394990757978212', label = 'Admin',   group = 'admin' },
++        { id = '1573395118583709877', label = 'Mod',     group = 'mod' },
++        { id = '1573395173361197136', label = 'Support', group = 'support' },
+```
+
 ## 2026-11-20 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -870,12 +915,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-16T09:01:29Z","webhooks":{"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.
 +{"updatedAt":"2026-11-16T17:00:42Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"minijobs":{"webhookId":"1570426351809335326","url":"https://discord
-```
-
-## 2026-11-16 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-15T23:01:13Z","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/**
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-16T09:01:29Z","webhooks":{"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.
 ```

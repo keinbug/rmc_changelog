@@ -70486,6 +70486,106 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-20T19:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77719
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync",
+        "resources/[selfcode]/api_new/server/rolesync.lua",
+        "resources/[selfcode]/api_new/settings.lua.bak-rolesync"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/banlist.json",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/api_new/settings.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/rolesync.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua.bak-rolesync",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/banlist.json",
+          "status": "M",
+          "lines": [
+            "-        \"banid\": 1,",
+            "-        \"reason\": \"Test ( Spielername: Unknown - table: 3c6ef372fe94f824 ), \\nGebannt von: Sebbi\",",
+            "-        \"expireString\": \"20/11/2026 \\t19:17:00\",",
+            "-        \"identifiers\": [",
+            "-            \"license:dcdd8750773c33c2ce3ff658853fe0c909367dba\"",
+            "-        ],",
+            "-        \"banner\": \"Sebbi\",",
+            "-        \"expire\": 1795198620,",
+            "-        \"name\": \"Unknown\"",
+            "-    },",
+            "-    {",
+            "-        \"banid\": 2,",
+            "-        \"reason\": \"AFFE ( Spielername: Unknown - table: 5aa66d2c7ddf7436 ), \\nGebannt von: Sebbi\",",
+            "-        \"expire\": 1795198938,",
+            "+        \"reason\": \"AFFE ( Spielername: Unknown - table: 5aa66d2c7ddf7436 ), \\nGebannt von: Sebbi\",",
+            "-        ]",
+            "+        ],",
+            "+        \"expire\": 1795198938,",
+            "+        \"banid\": 2"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/rolesync.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua",
+          "status": "M",
+          "lines": [
+            "+",
+            "+-- Role Sync (server/rolesync.lua): Discord-Rolle -> Ingame-Gruppe beim Join",
+            "+-- Token und Guild kommen aus rmc_core (server/discord_config.lua bzw. Convar rmc_discord_bot_token).",
+            "+Settings.RoleSync = {",
+            "+    Enabled = true,",
+            "+    Roles = { -- Reihenfolge = Priorität (die erste passende Rolle gewinnt)",
+            "+        { id = '1573394820427157634', label = 'Owner',   group = 'owner' },",
+            "+        { id = '1573394990757978212', label = 'Admin',   group = 'admin' },",
+            "+        { id = '1573395118583709877', label = 'Mod',     group = 'mod' },",
+            "+        { id = '1573395173361197136', label = 'Support', group = 'support' },",
+            "+    },",
+            "+    DefaultGroup       = 'user',",
+            "+    RevokeWhenMissing  = true,  -- Team-Gruppe ingame entfernen, wenn die Discord-Rolle fehlt",
+            "+    CheckSeconds       = 4,     -- so lange steht die Card \"Rollen werden geprüft\"",
+            "+    ResultSeconds      = 3,     -- so lange steht die Card \"Du hast die Rolle X bekommen\"",
+            "+    NotifyDelaySeconds = 15,    -- ESX-Notify so viele Sekunden nach dem Laden des Charakters",
+            "+}"
+          ]
+        }
+      ]
     }
   ]
 }
