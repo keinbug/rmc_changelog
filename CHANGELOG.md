@@ -2,6 +2,571 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-20 21:23 Uhr
+**+20** neu · **~7** geändert · **-102** gelöscht
+`+ resources/[selfcode]/lb-tvcast/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/client/screen.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/dui/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/locales.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/server/settings.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/app.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/assets/icon.svg`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/blank.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/dev.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/index.html`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/locales.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/lb-tvcast/ui/style.css`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/.claude/settings.local.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/client/jammer.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/html/photo/jammer.js`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/jammer.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
++	["jammer"] = {
++		label = "Störsender",
++		weight = 2500,
++		stack = false,
++		close = true,
++		consume = 0,
++		description = "Mobiler Funk-Störsender. Benutzen, um ihn aufzustellen – stört den Funk im Umkreis.",
++		client = {
++			export = "rmc_core.useJammer",
++			image = "jammer.png",
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "receiver_identifier": "char1:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "reason": "Einzahlung auf Bankkonto",
++            "sender_name": "Geldbörse",
++            "sender_identifier": "bank",
++            "date": "2026/11/20 - 20:35:50",
++            "receiver_name": "Coco Milano",
++            "type": "deposit",
++            "value": 145000
++        },
+```
+`~ resources/[selfcode]/rmc_aduty/config/cl_config.lua`
+```diff
+-    -- Pulsierendes Leuchten an den Punkten des Aduty-Outfits (fuer alle Spieler sichtbar).
+-    ["GLOW"] = {
+-        ["Enabled"] = true,
+-        ["Color"] = { r = 0, g = 230, b = 255 }, -- Tuerkis, passend zu den Punkten
+-        ["Distance"] = 40.0,   -- bis zu dieser Entfernung wird der Effekt gezeichnet
+-        ["Range"] = 0.9,       -- Reichweite jedes Lichtpunkts in Metern
+-        ["Intensity"] = 6.0,   -- Helligkeit
+-        ["PulseSpeed"] = 2.5,  -- hoeher = schnelleres Pulsieren
+-        ["PulseDepth"] = 0.6   -- 0 = dauerhaft an, 1 = pulsiert bis ganz dunkel
+-    },
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++-- ====== Funk-Störsender (Jammer) ======
++-- Item benutzen -> Störsender aufstellen. Wer in der Zone steht, hört Funk nur noch
++-- verrauscht / abgehackt (im Kern gar nicht mehr). Funkt jemand AUS der Zone heraus,
++-- hören ihn die anderen ebenfalls gestört. Nutzt SaltyChat (SetRadioVolume + IsSending).
++Config.Jammer = {
++    Enabled = true,
++    Resource = 'saltychat',
++    Item = 'jammer',
++    Prop = 'ch_prop_ch_mobile_jammer_01x',
++
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://disco
++{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"15529898236
+```
+`~ resources/[selfcode]/rmc_core/fxmanifest.lua`
+```diff
+-fx_version 'cerulean'
+-game 'gta5'
+-lua54 'yes'
+-
+-
+-author 'KeinBug'
+-description 'RMC-Core'
+-name 'rmc_core'
+-version '1.0.0'
+-
+```
+`~ resources/[selfcode]/rmc_core/html/photo/index.html`
+```diff
++    <script src="jammer.js"></script>
+```
+`− resources/[selfcode]/rmc_aduty/client/glow.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/1.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/2.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/3.png`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/README.txt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/FixCollision/apa_ch2_10_6.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/server.lua`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/sp_manifest.ymt`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/MajestyMansionManifest.ymf`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_baselegno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_bbq.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_l.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cancello_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_colonnaesterna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cornici.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_coso.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_cucina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_esterno_ymap.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_gazebo.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_lavandino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_libri.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_luce.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolabagno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mensolavetro.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_mobile12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_muroesterno.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piantagenerale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_piscina_acqua_coll.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portaentrata_r.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_portagenerale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_props.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room01.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room02.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room03.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_mobile.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room04_tavolino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room05.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room06.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room07.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_armadio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room08_porta.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room09.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room10_murales.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room11.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room12.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room13.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_armadio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_letto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_scaffale.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room14_tavolino.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_room15_divanetto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_rotonda.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_sassi.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_serranda.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_setsedie.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_shell.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_socket2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_specchio2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradaesterna.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina3.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_stradina4.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tappeto.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_tavololampada.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_terrenoesterno.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_texture.ytd`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ymap.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ab45_villa_ytyp.ytyp`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_4.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_6.ybn`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_critical_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_long_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_1.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/apa_ch2_10_strm_2.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ba_curtain2.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/bh1_36_gatefrm_iref.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_grass_0.ymap`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_10_land_04.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire074.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire075.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire109.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch2_rdprops_ch2_rd_wire110.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/ch_chint02_mirror_frame.ydr`
+```diff
+- Gelöscht
+```
+`− resources/[stream]/[mlo]/[tj]/AB45-MajestyMansion/stream/vinewood_hills.ymt`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-20 20:23 Uhr
 **+4** neu · **~16** geändert · **-0** gelöscht
 `+ cfg/rechte.cfg.bak-rolesync`
@@ -1019,48 +1584,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -        "id": "HotDripQueen",
 -        "identifier": "fivem:8599143",
 -        "data": {}
-```
-
-## 2026-11-16 19:23 Uhr
-**+7** neu · **~1** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/client/screen.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-screen`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/refunds.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/screen.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/ui/screen.html`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/ui/screen.js`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/refunds.lua',
-+    'server/screen.lua',
-+    'client/screen.lua',
-+}
-+
-+-- Live-Bildschirm: unsichtbare Seite, die das Spielbild nur bei Bedarf per WebRTC überträgt
-+ui_page 'ui/screen.html'
-+
-+files {
-+    'ui/screen.html',
 ```
