@@ -72273,6 +72273,443 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-20T22:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 6,
+        "deleted": 25,
+        "total": 77618
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_57_20_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_59_20_11_2026.json"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/lb-tvcast/client/main.lua",
+        "resources/[selfcode]/lb-tvcast/client/screen.lua",
+        "resources/[selfcode]/lb-tvcast/config.lua",
+        "resources/[selfcode]/lb-tvcast/locales.lua",
+        "resources/[selfcode]/lb-tvcast/server/main.lua"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json",
+        "resources/[rtx]/rtx_tv/.fxap",
+        "resources/[rtx]/rtx_tv/Readme.txt",
+        "resources/[rtx]/rtx_tv/client/main.lua",
+        "resources/[rtx]/rtx_tv/config.lua",
+        "resources/[rtx]/rtx_tv/fxmanifest.lua",
+        "resources/[rtx]/rtx_tv/html/BebasNeueBold.ttf",
+        "resources/[rtx]/rtx_tv/html/img/close.png",
+        "resources/[rtx]/rtx_tv/html/scripts.js",
+        "resources/[rtx]/rtx_tv/html/styles.css",
+        "resources/[rtx]/rtx_tv/html/tv/img/background.png",
+        "resources/[rtx]/rtx_tv/html/tv/index.html",
+        "resources/[rtx]/rtx_tv/html/tv/style.css",
+        "resources/[rtx]/rtx_tv/html/ui.html",
+        "resources/[rtx]/rtx_tv/html/video.css",
+        "resources/[rtx]/rtx_tv/html/video.html",
+        "resources/[rtx]/rtx_tv/html/video.js",
+        "resources/[rtx]/rtx_tv/language/main.lua",
+        "resources/[rtx]/rtx_tv/server/main.lua",
+        "resources/[rtx]/rtx_tv/server/other.lua",
+        "resources/[rtx]/rtx_tv/sql_ESX.sql",
+        "resources/[rtx]/rtx_tv/sql_QBCORE.sql",
+        "resources/[rtx]/rtx_tv/stream/rtxtv.gfx",
+        "resources/[rtx]/rtx_tv/utils/mock_data.js"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_57_20_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_59_20_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1795121802,",
+            "+    \"lastBackup\": 1795208376,",
+            "-            \"backupDate\": \"21_41_15_11_2026\",",
+            "-            \"backupTimestamp\": 1794775302,",
+            "-            \"backupFile\": \"banlist_21_41_15_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"21_43_15_11_2026\",",
+            "-            \"backupTimestamp\": 1794775427,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_43_15_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_54_19_11_2026.json\",",
+            "-            \"backupDate\": \"21_54_19_11_2026\",",
+            "-            \"backupTimestamp\": 1795121677",
+            "+            \"backupDate\": \"21_54_19_11_2026\",",
+            "+            \"backupTimestamp\": 1795121677,",
+            "+            \"backupFile\": \"banlist_21_54_19_11_2026.json\"",
+            "+            \"id\": 11,",
+            "-            \"id\": 11,",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_57_20_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795208251,",
+            "+            \"backupDate\": \"21_57_20_11_2026\"",
+            "+        },",
+            "+        {",
+            "+            \"id\": 11,",
+            "+            \"backupFile\": \"banlist_21_59_20_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795208376,",
+            "+            \"backupDate\": \"21_59_20_11_2026\""
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/client/main.lua",
+          "status": "M",
+          "lines": [
+            "-local function drawScreen(q, txn)",
+            "-    local a, b, c, d = q[1], q[2], q[3], q[4]",
+            "-    -- Vorder- und Rückseite, damit die Zeichenrichtung keine Rolle spielt",
+            "-    DrawSpritePoly(a.x, a.y, a.z, b.x, b.y, b.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0)",
+            "-    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, d.x, d.y, d.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0)",
+            "-    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, b.x, b.y, b.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0)",
+            "-    DrawSpritePoly(a.x, a.y, a.z, d.x, d.y, d.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0)",
+            "+-- points: obere Kante links->rechts, dann untere Kante links->rechts (siehe client/screen.lua)",
+            "+local function drawScreen(points, txn)",
+            "+    local count = #points / 2",
+            "+    local strips = count - 1",
+            "+    for i = 1, strips do",
+            "+        local a, b = points[i], points[i + 1]                   -- oben links / oben rechts",
+            "+        local d, c = points[count + i], points[count + i + 1]   -- unten links / unten rechts",
+            "+        local u0, u1 = (i - 1) / strips, i / strips",
+            "+        -- Vorder- und Rückseite, damit die Zeichenrichtung keine Rolle spielt",
+            "+        DrawSpritePoly(a.x, a.y, a.z, b.x, b.y, b.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, u0, 0.0, 1.0, u1, 0.0, 1.0, u1, 1.0, 1.0)",
+            "+        DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, d.x, d.y, d.z, 255, 255, 255, 255, TXD, txn, u0, 0.0, 1.0, u1, 1.0, 1.0, u0, 1.0, 1.0)",
+            "+        DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, b.x, b.y, b.z, 255, 255, 255, 255, TXD, txn, u0, 0.0, 1.0, u1, 1.0, 1.0, u1, 0.0, 1.0)",
+            "+        DrawSpritePoly(a.x, a.y, a.z, d.x, d.y, d.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, u0, 0.0, 1.0, u0, 1.0, 1.0, u1, 1.0, 1.0)",
+            "+    end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/client/screen.lua",
+          "status": "M",
+          "lines": [
+            "+--",
+            "+-- Eine Bildfläche ist eine Liste von Punkten in Weltkoordinaten:",
+            "+-- erst die obere Kante von links nach rechts, dann die untere Kante von links nach rechts.",
+            "+-- 4 Punkte = flaches Bild, mehr Punkte = Bild folgt einer gewölbten Leinwand.",
+            "+local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht",
+            "+local SURFACE_GAP = 0.012 -- Abstand des Bildes zur Oberfläche (gegen Flackern)",
+            "+local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen",
+            "+",
+            "-local function quadFrom(center, normal, up, width, height)",
+            "-    local right = normalize(crossProduct(-normal, up)) -- rechts aus Sicht des Zuschauers",
+            "-    local hw, hh = right * (width / 2), up * (height / 2)",
+            "-    return { center - hw + hh, center + hw + hh, center + hw - hh, center - hw - hh }",
+            "+local function dotProduct(a, b)",
+            "+    return a.x * b.x + a.y * b.y + a.z * b.z",
+            "+--- Tastet die Oberfläche bei `point` ab. Gibt zurück, wie weit sie entlang `normal`",
+            "+--- vor (+) oder hinter (-) dem Punkt liegt, oder nil wenn dort nichts ist.",
+            "+local function probe(point, normal, entity)",
+            "+    local hit, coords, _, hitEntity = raycast(point + normal * PROBE, point - normal * PROBE, 17)",
+            "+    if not hit then return nil end",
+            "+    if entity and hitEntity ~= entity then return nil end",
+            "+    return dotProduct(coords - point, normal)",
+            "+end",
+            "+",
+            "+--- Rechts/Oben in der Bildebene (rechts aus Sicht des Zuschauers)",
+            "+local function basis(normal, upHint)",
+            "+    local up = upHint - normal * dotProduct(upHint, normal)",
+            "+    if #up < 0.2 then return nil end",
+            "+    up = normalize(up)",
+            "+    return normalize(crossProduct(-normal, up)), up",
+            "+end",
+            "+",
+            "+--- Richtet Mittelpunkt und Blickrichtung an der echten Oberfläche aus.",
+            "+--- Die gemeldete Normale eines Treffers ist oft ungenau, deshalb wird die Ebene",
+            "+--- aus mehreren Abtastpunkten selbst berechnet.",
+            "+local function refine(center, normal, upHint, entity)",
+            "+    local right, up = basis(normal, upHint)",
+            "+    if not right then return center, normal, false end",
+            "+",
+            "+    local s = 0.15",
+            "+    local dc = probe(center, normal, entity)",
+            "+    local dl = probe(center - right * s, normal, entity)",
+            "+    local dr = probe(center + right * s, normal, entity)",
+            "+    local du = probe(center + up * s, normal, entity)",
+            "+    local dd = probe(center - up * s, normal, entity)",
+            "+",
+            "+    local newNormal = normal",
+            "+    if dl and dr and du and dd then",
+            "+        local pl = center - right * s + normal * dl",
+            "+        local pr = center + right * s + normal * dr",
+            "+        local pu = center + up * s + normal * du",
+            "+        local pd = center - up * s + normal * dd",
+            "+        local n = normalize(crossProduct(pr - pl, pu - pd))",
+            "+        if dotProduct(n, normal) < 0 then n = -n end",
+            "+        if dotProduct(n, normal) > 0.5 then newNormal = n end",
+            "+    end",
+            "+",
+            "+    if dc then center = center + normal * dc end",
+            "+    return center, newNormal, dc ~= nil",
+            "+end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.ScreenInset = 0.06         -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird",
+            "-Config.WallScreen  = {            -- Bildbreite (Meter), wenn auf eine Wand / Map-Fernseher gezielt wird",
+            "+Config.OnlyProps   = true         -- true = beim Zielen nur Props (Objekte), keine Wände / kein Boden / keine Map-Teile",
+            "+Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird",
+            "+Config.WallScreen  = {            -- nur bei OnlyProps = false: Bildbreite (Meter) auf einer Wand / einem Map-Fernseher",
+            "-    max = 4.0,",
+            "+    max = 6.0,"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/locales.lua",
+          "status": "M",
+          "lines": [
+            "+        aim_none_props = 'Ziele auf einen Fernseher oder eine Leinwand~n~~INPUT_FRONTEND_RRIGHT~ Abbrechen',",
+            "+        aim_none_props = 'Aim at a TV or a screen prop~n~~INPUT_FRONTEND_RRIGHT~ Cancel',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+-- Bildfläche: obere Kante links->rechts, dann untere Kante links->rechts (4 bis 40 Punkte)",
+            "-    if type(c) ~= 'table' or #c ~= 4 then return false end",
+            "-    for i = 1, 4 do",
+            "+    if type(c) ~= 'table' then return false end",
+            "+    local n = #c",
+            "+    if n < 4 or n > 40 or n % 2 ~= 0 then return false end",
+            "+    for i = 1, n do",
+            "-    local width, height = #(c[2] - c[1]), #(c[4] - c[1])",
+            "-    return width >= 0.2 and width <= 8.0 and height >= 0.1 and height <= 5.0",
+            "+    local count = n // 2",
+            "+    local width = 0.0",
+            "+    for i = 1, count - 1 do",
+            "+        width = width + #(c[i + 1] - c[i])",
+            "+    end",
+            "+    local height = #(c[count + 1] - c[1])",
+            "+    return width >= 0.2 and width <= 10.0 and height >= 0.1 and height <= 6.0",
+            "+end",
+            "+",
+            "+local function centerOf(c)",
+            "+    local sum = vector3(0.0, 0.0, 0.0)",
+            "+    for i = 1, #c do sum = sum + c[i] end",
+            "+    return sum / #c",
+            "-    local center = (c[1] + c[2] + c[3] + c[4]) / 4",
+            "+    local center = centerOf(c)",
+            "-        corners = { c[1], c[2], c[3], c[4] },",
+            "+        corners = c,"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/.fxap",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/Readme.txt",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/BebasNeueBold.ttf",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/img/close.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/scripts.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/styles.css",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/tv/img/background.png",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/tv/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/tv/style.css",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/ui.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/video.css",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/video.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/html/video.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/language/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/server/other.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/sql_ESX.sql",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/sql_QBCORE.sql",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/stream/rtxtv.gfx",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[rtx]/rtx_tv/utils/mock_data.js",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

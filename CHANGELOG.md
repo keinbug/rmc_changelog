@@ -2,6 +2,184 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-20 22:23 Uhr
+**+2** neu · **~6** geändert · **-25** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_57_20_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_59_20_11_2026.json`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1795121802,
++    "lastBackup": 1795208376,
+-            "backupDate": "21_41_15_11_2026",
+-            "backupTimestamp": 1794775302,
+-            "backupFile": "banlist_21_41_15_11_2026.json"
+-        },
+-        {
+-            "backupDate": "21_43_15_11_2026",
+-            "backupTimestamp": 1794775427,
+-            "id": 11,
+```
+`~ resources/[selfcode]/lb-tvcast/client/main.lua`
+```diff
+-local function drawScreen(q, txn)
+-    local a, b, c, d = q[1], q[2], q[3], q[4]
+-    -- Vorder- und Rückseite, damit die Zeichenrichtung keine Rolle spielt
+-    DrawSpritePoly(a.x, a.y, a.z, b.x, b.y, b.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0)
+-    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, d.x, d.y, d.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0)
+-    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, b.x, b.y, b.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0)
+-    DrawSpritePoly(a.x, a.y, a.z, d.x, d.y, d.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0)
++-- points: obere Kante links->rechts, dann untere Kante links->rechts (siehe client/screen.lua)
++local function drawScreen(points, txn)
++    local count = #points / 2
+```
+`~ resources/[selfcode]/lb-tvcast/client/screen.lua`
+```diff
++--
++-- Eine Bildfläche ist eine Liste von Punkten in Weltkoordinaten:
++-- erst die obere Kante von links nach rechts, dann die untere Kante von links nach rechts.
++-- 4 Punkte = flaches Bild, mehr Punkte = Bild folgt einer gewölbten Leinwand.
++local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht
++local SURFACE_GAP = 0.012 -- Abstand des Bildes zur Oberfläche (gegen Flackern)
++local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen
++
+-local function quadFrom(center, normal, up, width, height)
+-    local right = normalize(crossProduct(-normal, up)) -- rechts aus Sicht des Zuschauers
+```
+`~ resources/[selfcode]/lb-tvcast/config.lua`
+```diff
+-Config.ScreenInset = 0.06         -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
+-Config.WallScreen  = {            -- Bildbreite (Meter), wenn auf eine Wand / Map-Fernseher gezielt wird
++Config.OnlyProps   = true         -- true = beim Zielen nur Props (Objekte), keine Wände / kein Boden / keine Map-Teile
++Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
++Config.WallScreen  = {            -- nur bei OnlyProps = false: Bildbreite (Meter) auf einer Wand / einem Map-Fernseher
+-    max = 4.0,
++    max = 6.0,
+```
+`~ resources/[selfcode]/lb-tvcast/locales.lua`
+```diff
++        aim_none_props = 'Ziele auf einen Fernseher oder eine Leinwand~n~~INPUT_FRONTEND_RRIGHT~ Abbrechen',
++        aim_none_props = 'Aim at a TV or a screen prop~n~~INPUT_FRONTEND_RRIGHT~ Cancel',
+```
+`~ resources/[selfcode]/lb-tvcast/server/main.lua`
+```diff
++-- Bildfläche: obere Kante links->rechts, dann untere Kante links->rechts (4 bis 40 Punkte)
+-    if type(c) ~= 'table' or #c ~= 4 then return false end
+-    for i = 1, 4 do
++    if type(c) ~= 'table' then return false end
++    local n = #c
++    if n < 4 or n > 40 or n % 2 ~= 0 then return false end
++    for i = 1, n do
+-    local width, height = #(c[2] - c[1]), #(c[4] - c[1])
+-    return width >= 0.2 and width <= 8.0 and height >= 0.1 and height <= 5.0
++    local count = n // 2
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/.fxap`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/Readme.txt`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/BebasNeueBold.ttf`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/img/close.png`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/scripts.js`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/styles.css`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/tv/img/background.png`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/tv/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/tv/style.css`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/ui.html`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/video.css`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/video.html`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/html/video.js`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/language/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/server/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/server/other.lua`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/sql_ESX.sql`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/sql_QBCORE.sql`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/stream/rtxtv.gfx`
+```diff
+- Gelöscht
+```
+`− resources/[rtx]/rtx_tv/utils/mock_data.js`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-20 21:23 Uhr
 **+20** neu · **~7** geändert · **-102** gelöscht
 `+ resources/[selfcode]/lb-tvcast/README.md`
@@ -1568,20 +1746,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_29_11_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-16 20:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/api_new/admins.json`
-```diff
--  {
--    "$schema": 1,
--    "name": "RMC-DripQueen",
--    "master": false,
--    "password_hash": "$2a$11$ed6JLnynRbrQkCAurUMsBueKIuTUydvELa3PnXiywgYIJC2wIFRb.",
--    "providers": {
--      "citizenfx": {
--        "id": "HotDripQueen",
--        "identifier": "fivem:8599143",
--        "data": {}
 ```
