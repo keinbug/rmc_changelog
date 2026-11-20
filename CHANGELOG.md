@@ -2,6 +2,162 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-20 20:23 Uhr
+**+4** neu · **~16** geändert · **-0** gelöscht
+`+ cfg/rechte.cfg.bak-rolesync`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_aduty/client/glow.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_aduty/client/teleport.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/join.lua.bak-rolesync`
+```diff
++ Neue Datei
+```
+`~ cfg/rechte.cfg`
+```diff
++#### API Sync Roles: darf Gruppen-Zuordnungen setzen
++add_ace resource.api_new command.add_principal allow
++add_ace resource.api_new command.remove_principal allow
++
++
++
+-set ea_logIdentifier "discord,license"
++set ea_logIdentifier "discord,license"
++# api_new Role Sync: darf Gruppen-Zuordnungen setzen
++add_ace resource.api_new command.add_principal allow
+```
+`~ resources/[esx_addons]/EasyAdmin/banlist.json`
+```diff
+-[
+-    {
+-        "name": "Unknown",
+-        "expireString": "20/11/2026 \t19:22:18",
+-        "reason": "AFFE ( Spielername: Unknown - table: 5aa66d2c7ddf7436 ), \nGebannt von: Sebbi",
+-        "banner": "Sebbi",
+-        "identifiers": [
+-            "license:dcdd8750773c33c2ce3ff658853fe0c909367dba"
+-        ],
+-        "expire": 1795198938,
+```
+`~ resources/[esx_addons]/ks-multicharacter/fxmanifest.lua`
+```diff
+-    'ks-libs-configs/ks-sql-slots.lua', -- muss VOR ks-server.lua geladen werden
+```
+`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.lua`
+```diff
+-    Enabled = true,                 -- false = altes Verhalten (Discord-Rollen)
++    Enabled = false,                -- false = altes Verhalten (Discord-Rollen per Bot-Token), true = Slots aus SQL
+```
+`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-open-server.lua`
+```diff
+-ksConfig.DiscordBotToken = "***TOKEN***"
++ksConfig.DiscordBotToken = "***TOKEN***"
+```
+`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua`
+```diff
++
++
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1": [
++    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
+-            "sender_identifier": "char2:726b2e82f8613191a738a5158a2b2cd5c7dbeea1",
+-            "date": "2026/11/19 - 19:00:53",
+-            "value": 2500,
+-            "sender_name": "Michael Auer",
++            "value": 500,
++            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
++            "type": "withdraw",
++            "receiver_name": "cd_garage",
+```
+`~ resources/[selfcode]/api_new/server/rolesync.lua`
+```diff
+-      1. Join: Card "Discord-Rollen werden geprüft..." (CheckSeconds), danach bei einer Team-Rolle
+-         die Card "Du hast die Rolle X bekommen" (ResultSeconds). Der Role Sync blockiert nie den Join.
++      1. Join: rmc_core (server/join.lua) zeigt über die Exports RoleSyncBegin/RoleSyncResult die Card
++         "Discord-Rollen werden geprüft..." (CheckSeconds) und danach bei einer Team-Rolle
++         "Du hast die Rolle X bekommen" (ResultSeconds).
+-local function connectingDiscord(src)
+-    for _ = 1, 12 do
+-        for _, id in ipairs(GetPlayerIdentifiers(src) or {}) do
+-            if id:sub(1, 8) == 'discord:' then return id:sub(9) end
+-        end
+```
+`~ resources/[selfcode]/rmc_aduty/client/client.lua`
+```diff
++        local smooth = cfg["Smooth"] == true
++        local boostMultiplier = speedCfg["BoostMultiplier"] or 3.0
++        -- 14-17 Waffenwechsel, 99/100 Fahrzeugwaffen, 81/82 Radio
++        local scrollControls = { 14, 15, 16, 17, 99, 100, 81, 82 }
+-            -- Jeder Shift-Druck schaltet eine Stufe weiter; nach der letzten
+-            -- Geschwindigkeit beginnt die Liste wieder von vorne.
+-            if justPressed(21) then
+-                speedLevel = speedLevel % #speedLevels + 1
++            -- Mausrad gehoert im Noclip nur der Geschwindigkeit: Waffen- und
++            -- Radiowechsel werden solange blockiert.
+```
+`~ resources/[selfcode]/rmc_aduty/config/cl_config.lua`
+```diff
+-cl_config = {}
+-
+-cl_config.general = {
+-    language = "de",
+-    screenshot = {
+-        enable = true,
+-        resource = "screenshot-basic"
+-    }
+-}
+-
+```
+`~ resources/[selfcode]/rmc_aduty/config/sv_config.lua`
+```diff
++        teleport_waypoint = 10181046,
++        -- Leer = Teleport-Logs gehen an "actions" (bzw. kein Discord-Log).
++        teleport = "",
++            ["teleport_waypoint"] = "%s hat sich zum Wegpunkt teleportiert",
++            ["teleport_waypoint"] = "%s teleported to the waypoint",
+```
+`~ resources/[selfcode]/rmc_aduty/server/server.lua`
+```diff
++    teleport_waypoint = "teleport",
++    teleport_waypoint = { title = "Teleport", emoji = "ghost", colorKey = "teleport_waypoint" },
++        if not apiType then apiType, apiAction = action:match("^(teleport)_(waypoint)$") end
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T17:01:07Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274","channelId":"1557386361172918374"},"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/
++{"categoryId":"1551161549018759170","webhooks":{"clothing_strip":{"webhookId":"1551161592467423353","channelId":"1551161585614061618","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"faction":{"webhookId":"1551161573194731652","channelId":"1551161570439208960","url":"https://disco
+```
+`~ resources/[selfcode]/rmc_core/server/join.lua`
+```diff
+-local DISCORD_EPOCH_MS = 1420070400000
+-
+-
+-local ID_PREFIX = {
+-    steam   = 'steam:',
+-    discord = 'discord:',
+-    xbl     = 'xbl:',
+-    live    = 'live:',
+-    license = 'license:',
+-    license2= 'license2:',
+```
+`~ server.cfg`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+`~ server.cfg.bkp`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+
 ## 2026-11-20 19:23 Uhr
 **+3** neu · **~3** geändert · **-0** gelöscht
 `+ resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync`
@@ -907,12 +1063,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +
 +files {
 +    'ui/screen.html',
-```
-
-## 2026-11-16 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-16T09:01:29Z","webhooks":{"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/webhooks/1552971123233394708/***","channelId":"1552971120460828763"},"versicherung":{"webhookId":"1535733186921898004","url":"https://discord.
-+{"updatedAt":"2026-11-16T17:00:42Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"minijobs":{"webhookId":"1570426351809335326","url":"https://discord
 ```
