@@ -2,6 +2,34 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-21 00:22 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[selfcode]/lb-tvcast/client/screen.lua`
+```diff
++-- Geometrie: Fernseher finden, Form der Bildfläche erkennen, Zielmodus.
++--
++-- Die Form wird über die Kollision des Objekts ertastet: vom Startpunkt aus wird in alle
++-- vier Richtungen so weit gegangen, bis die Fläche endet (Kante, Stufe oder anderes Objekt).
+-local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht
++local PROBE = 1.2         -- so weit vor/hinter der vermuteten Fläche wird nach der Oberfläche gesucht
+-local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen
++local COLUMNS = 10        -- Unterteilung bei gewölbten Flächen
++local EDGE_STEP = 0.05    -- Schrittweite beim Abtasten der Kanten
++local EDGE_TOLERANCE = 0.02 -- ab dieser Stufe gilt die Fläche als zu Ende
+```
+`~ resources/[selfcode]/lb-tvcast/config.lua`
+```diff
+-Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
++Config.ScreenFit   = 'contain'    -- 'contain' = Bild bleibt 16:9 und wird in die erkannte Fläche eingepasst
++                                  -- 'stretch' = Bild füllt die erkannte Fläche komplett (kann verzerren)
++Config.ScreenInset = 0.06       -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"15529898236
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
+```
+
 ## 2026-11-20 23:23 Uhr
 **+0** neu · **~8** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_housing/README.md`
@@ -1637,180 +1665,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +        ActivatePhysics(veh)
 +        local t = GetGameTimer()
 +        local grounded = false
-```
-
-## 2026-11-17 00:23 Uhr
-**+3** neu · **~13** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_housing/.claude/settings.local.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/client/garage.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_housing/server/garage.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[cd]/cd_garage/server/features/property_garages.lua`
-```diff
--RegisterServerEvent('cd_garage:PropertyGarage:Create', function(newGarageData)
--    CreatePropertyGarage(source, newGarageData)
--end)
--
--function CreatePropertyGarage(src, newGarageData)
--    if not TypeCheck(newGarageData, 'table', '6545', 'data nil or not a table in cd_garage:PropertyGarage:Create') then
--        return
--    end
--
--    local garageId = GenerateUniqueId(12)
-```
-`~ resources/[cd]/cd_garage/server/features/vehicle_functions.lua`
-```diff
--local VehicleSpawnLocks = {}
--function CanVehicleSpawnFromThisGarage(plate, shellCoords, persistantSpawn, garageRaideSpawn)
--    if persistantSpawn then
--        return {
--            result = true
--        }
--    end
--
--    local fakeData = FakePlateTable and FakePlateTable[plate]
--    if fakeData and fakeData.originalplate then
-```
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38": [
-+    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
--            "type": "interest_savings",
-+            "sender_name": "Savings Interest",
--            "value": 3,
-+            "value": 9392,
-+            "type": "interest_savings",
--            "receiver_identifier": "char2:51a4fca1e0d1af9e02314c787e76ada4e063cd38",
--            "sender_name": "Savings Interest"
-+            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277"
-```
-`~ resources/[selfcode]/rmc_housing/README.md`
-```diff
-+## Hausgarage (2 / 6 / 10 Stellplätze)
-+
-+Eigenes Garagen-System, **ohne cd_garage**. Die Fahrzeuge stehen sichtbar im GTA-Online-Garagen-Interior.
-+
-+1. **Admin:** `/housingadmin` → Objekt → „Garage setzen“ (Einfahrt draußen, optional Ausparkpunkt). Ohne Punkt gibt es keine Garage.
-+2. **Mieter:** Tablet → Reiter **Garage** → Garage einmalig kaufen (Preise in `Config.Garage.tiers`, Upgrade = Differenz).
-+3. **Einparken:** mit dem eigenen Fahrzeug zum Garagen-Punkt, `[E]`. Voll = kein weiteres Fahrzeug (2er-Garage → max. 2).
-+4. **Ausparken:** zu Fuß `[E]` am Garagen-Punkt → Garage betreten → ans Fahrzeug stellen, `[E]`. Das Auto erscheint draußen am Ausparkpunkt.
-+
-+| Garage | Interior | Stellplätze |
-```
-`~ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-+    garage   = { label = 'Garage',     icon = 'warehouse', color = { 96, 200, 214 } },
-+    spawn    = { label = 'Ausparken',  icon = 'car',       color = { 92, 201, 148 } },
-+-- Garage setzen: hinfahren/hinlaufen, in Ausparkrichtung ausrichten, [E]
-+local function editGarage(p)
-+    if Edit or Preview or Current then return Notify('Verlasse zuerst das aktuelle Interior.', 'error') end
-+    if p.garage then Teleport(p.garage) elseif #(GetEntityCoords(cache.ped) - vec3(p.entrance.x, p.entrance.y, p.entrance.z)) > 60.0 then Teleport(p.entrance) end
-+    Notify('Stell dich (oder dein Auto) dahin, wo das Fahrzeug ausparken soll. Die Blickrichtung ist die Ausparkrichtung.', 'inform')
-+    local pos = PlacePoint('garage', { entrance = p.entrance, garage = p.garage, spawn = p.garage and p.garage.spawn })
-+    if not pos then return Notify('Abgebrochen.', 'inform') end
-+    local ok, msg = lib.callback.await('rmc_housing:admin:setGarage', false, p.id, pos)
-```
-`~ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
--    if busy or Current then return end
-+    if busy or Current or Garage.current then return end
-+-- Hausgarage (client/garage.lua): zu Fuß betreten, als Fahrer einparken. Ohne gekaufte Garage → Tablet.
-+local function garagePress(p, inVeh)
-+    if (p.garageSize or 0) == 0 then
-+        if p.role == 'owner' then
-+            notify('Du hast noch keine Garage. Kaufe sie am Tablet.', 'inform')
-+            return OpenManage(p.id, 'garage')
-+        end
-+        return notify('Für dieses Objekt wurde noch keine Garage gekauft.', 'inform')
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+---------------------------------------------------------------------
-+-- Hausgarage (eigenes System, ohne cd_garage)
-+-- 1. Admin setzt den Garagen-Punkt draußen: /housingadmin → Objekt → "Garage setzen"
-+--    (+ optional Ausparkpunkt). Ohne Punkt kann keine Garage gekauft werden.
-+-- 2. Der Hauptmieter kauft die Garage am Tablet (Reiter "Garage"): 2, 6 oder 10 Stellplätze.
-+-- 3. Am Garagen-Punkt: im Fahrzeug [E] = einparken, zu Fuß [E] = Garage betreten.
-+--    Drinnen stehen die eingeparkten Fahrzeuge auf ihren Plätzen, [E] am Fahrzeug = ausparken.
-+-- Nutzen dürfen: Hauptmieter + Schlüsselinhaber mit Zutritt. Ausparken darf nur der Fahrzeughalter.
-+-- Stellplätze prüfen/verschieben (Admin): /housinggarage 2|6|10
-+---------------------------------------------------------------------
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'server/garage.lua',
-+    'client/garage.lua',
-```
-`~ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
--            entrance = p.entrance, points = p.points, interior = p.interior, appliances = p.appliances,
-+            entrance = p.entrance, garage = p.garage, points = p.points, interior = p.interior, appliances = p.appliances,
-+-- Garage setzen (pos) oder entfernen (pos = nil)
-+lib.callback.register('rmc_housing:admin:setGarage', function(src, pid, pos)
-+    if not Housing.isAdmin(src) then return false, 'Keine Berechtigung.' end
-+    local p = Properties[tonumber(pid)]
-+    if not p then return false, 'Objekt nicht gefunden.' end
-+    local v = pos and vec(pos) or nil
-+    if pos and not v then return false, 'Ungültige Position.' end
-+    -- Ausparkpunkt behalten, wenn er noch in der Nähe liegt
-```
-`~ resources/[selfcode]/rmc_housing/server/db.lua`
-```diff
--local SCHEMA_VERSION = 3
-+local SCHEMA_VERSION = 4
-+    `garage` TINYINT NOT NULL DEFAULT 0,
-+
-+-- Hausgarage: welches Fahrzeug steht auf welchem Stellplatz (Fahrzeugdaten bleiben in owned_vehicles)
-+[[CREATE TABLE IF NOT EXISTS `rmc_housing_vehicles` (
-+    `plate` VARCHAR(12) NOT NULL,
-+    `lease_id` INT NOT NULL,
-+    `property_id` INT NOT NULL,
-+    `slot` TINYINT NOT NULL,
-```
-`~ resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
--        points = ? WHERE id = ?]], {
-+        points = ?, garage = ? WHERE id = ?]], {
--        l.power_cancelled and 1 or 0, json.encode(l.points or {}), l.id,
-+        l.power_cancelled and 1 or 0, json.encode(l.points or {}), l.garage or 0, l.id,
-+    l.garage = tonumber(l.garage) or 0
-+        garage = Housing.garagePayload and Housing.garagePayload(src, pid) or nil,
--        local r = x and Housing.role(src, pid)
-+        local r, k = nil, nil
-+        if x then r, k = Housing.role(src, pid) end
-+            garage = (Config.Garage.enabled and (r == 'owner' or (k and truthy(k.perm_enter)))) and p.garage or nil,
-```
-`~ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
-+  { id: 'garage', icon: 'car', label: 'Garage', show: d => !!(d.garage && d.garage.available && (d.role === 'owner' || d.garage.size > 0)) },
-+  S.garSel = null;
--  const views = { uebersicht: vOverview, schluessel: vKeys, interior: vInterior, lager: vStorage, umkleide: vWardrobe, zahlungen: vBills };
-+  const views = { uebersicht: vOverview, schluessel: vKeys, interior: vInterior, lager: vStorage, garage: vGarage, umkleide: vWardrobe, zahlungen: vBills };
-+  if (id === 'garage' && d.garage && d.garage.size) return `<span class="ct">${d.garage.vehicles.length}/${d.garage.size}</span>`;
-+/* ---------- Garage ---------- */
-+function vGarage(d) {
-+  const G = d.garage, owner = d.role === 'owner';
-+  const next = G.tiers.find(t => t.upgrade);
-+  const sel = G.tiers.find(t => t.slots === S.garSel) || next || G.tiers[G.tiers.length - 1];
-```
-`~ resources/[selfcode]/rmc_housing/web/style.css`
-```diff
-+.tiers.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
-+.tier .lot{height:74px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:5px}
-+.tier .lot svg{width:20px;height:20px;color:var(--muted)}
-+.tier[aria-checked="true"] .lot svg{color:var(--brass)}
-+.bays{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
-+.bay{position:relative;display:grid;gap:3px;justify-items:start;padding:14px;border-radius:12px;border:1px dashed var(--line);background:var(--raise);color:var(--muted)}
-+.bay svg{width:22px;height:22px;margin-bottom:4px}
-+.bay b{font-size:13.5px;color:var(--fg-2)}
-+.bay .no{position:absolute;top:10px;right:12px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
-+.bay.full{border-style:solid;border-color:rgba(216,179,115,.4);background:var(--brass-soft)}
 ```

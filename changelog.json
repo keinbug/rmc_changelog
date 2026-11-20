@@ -72951,6 +72951,110 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T00:22:28+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77618
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/lb-tvcast/client/screen.lua",
+        "resources/[selfcode]/lb-tvcast/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/lb-tvcast/client/screen.lua",
+          "status": "M",
+          "lines": [
+            "+-- Geometrie: Fernseher finden, Form der Bildfläche erkennen, Zielmodus.",
+            "+--",
+            "+-- Die Form wird über die Kollision des Objekts ertastet: vom Startpunkt aus wird in alle",
+            "+-- vier Richtungen so weit gegangen, bis die Fläche endet (Kante, Stufe oder anderes Objekt).",
+            "-local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht",
+            "+local PROBE = 1.2         -- so weit vor/hinter der vermuteten Fläche wird nach der Oberfläche gesucht",
+            "-local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen",
+            "+local COLUMNS = 10        -- Unterteilung bei gewölbten Flächen",
+            "+local EDGE_STEP = 0.05    -- Schrittweite beim Abtasten der Kanten",
+            "+local EDGE_TOLERANCE = 0.02 -- ab dieser Stufe gilt die Fläche als zu Ende",
+            "+local WORLD_UP = vector3(0.0, 0.0, 1.0)",
+            "-    local s = 0.15",
+            "+    local s = 0.12",
+            "+--- Eine gleichmäßige Wölbung oder Neigung wird mitgegangen, eine Stufe beendet die Fläche.",
+            "-    local step, dist, prev = 0.04, 0.0, 0.0",
+            "+    local dist, prev, delta = 0.0, 0.0, 0.0",
+            "+",
+            "+    local function surfaceAt(at, expected)",
+            "+        local d = probe(center + dir * at, normal, entity)",
+            "+        if d and math.abs(d - expected) <= EDGE_TOLERANCE then return d end",
+            "+    end",
+            "+",
+            "-        local d = probe(center + dir * (dist + step), normal, entity)",
+            "-        if not d or math.abs(d - prev) > 0.12 then break end",
+            "-        prev, dist = d, dist + step",
+            "+        local d = surfaceAt(dist + EDGE_STEP, prev + delta)",
+            "+        if not d then break end",
+            "+        delta, prev, dist = d - prev, d, dist + EDGE_STEP",
+            "-    return dist",
+            "+",
+            "+    -- Kante auf wenige Millimeter eingrenzen",
+            "+    local lo, hi = dist, dist + EDGE_STEP",
+            "+    for _ = 1, 4 do",
+            "+        local mid = (lo + hi) / 2",
+            "+        if surfaceAt(mid, prev + delta * ((mid - dist) / EDGE_STEP)) then lo = mid else hi = mid end",
+            "+    end",
+            "+    return lo",
+            "+end",
+            "+",
+            "+--- Erkennt die zusammenhängende Fläche um `point`: Mittelpunkt, Ausrichtung, Breite, Höhe.",
+            "+local function detect(entity, point, normalGuess)",
+            "+    local center, normal, onSurface = refine(point, normalGuess, WORLD_UP, entity)",
+            "+    if not onSurface or math.abs(normal.z) > 0.7 then return nil end",
+            "+",
+            "+    local width, height",
+            "+    for _ = 1, 2 do",
+            "+        local right, up = basis(normal, WORLD_UP)",
+            "+        if not right then return nil end",
+            "+",
+            "+        local l = scan(center, normal, -right, entity, 6.0)",
+            "+        local r = scan(center, normal, right, entity, 6.0)",
+            "+        local u = scan(center, normal, up, entity, 4.0)",
+            "+        local d = scan(center, normal, -up, entity, 4.0)",
+            "+        width, height = l + r, u + d",
+            "+        if width < 0.2 or height < 0.12 then return nil end",
+            "+",
+            "+        -- auf die Mitte der gefundenen Fläche setzen und dort neu ausrichten;",
+            "+        -- der zweite Durchgang misst dann durch die Mitte statt durch den Zielpunkt",
+            "+        center = center + right * ((r - l) / 2) + up * ((u - d) / 2)",
+            "+        local ok"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/lb-tvcast/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird",
+            "+Config.ScreenFit   = 'contain'    -- 'contain' = Bild bleibt 16:9 und wird in die erkannte Fläche eingepasst",
+            "+                                  -- 'stretch' = Bild füllt die erkannte Fläche komplett (kann verzerren)",
+            "+Config.ScreenInset = 0.06       -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_resources\":{\"url\":\"https://discord.com/api/webhooks/1557386349395583076/***\",\"channelId\":\"1557386346782265425\",\"webhookId\":\"1557386349395583076\"},\"txadmin\":{\"url\":\"https://discord.com/api/webhooks/1552989826213617715/***\",\"channelId\":\"15529898236",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-20T23:00:42Z\",\"webhooks\":{\"faction\":{\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\"},\"troll\":{\"channelId\":\"1552971103910236172\",\"webhookId\":\"155297110750043"
+          ]
+        }
+      ]
     }
   ]
 }
