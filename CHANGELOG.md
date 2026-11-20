@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-20 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"minijobs":{"channelId":"1570426349213188196","url":"https://discord.com/api/webhooks/157042635180
++{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/a
+```
+
 ## 2026-11-20 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -870,78 +878,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-15T17:01:09Z","categoryId":"1551161549018759170","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","webhookId":"1513950212480307490","channelId":"1513950191936344245"},"marriage":{"url":"https://discord.com/api/webhooks/1467556382038429901/***"
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-15T23:01:13Z","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"esx_test":{"url":"https://discord.com/api/webhooks/1557386332483887194/**
-```
-
-## 2026-11-15 22:22 Uhr
-**+7** neu · **~4** geändert · **-2** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/admins.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/main.lua.bak-keylog`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/txadmin.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/settings.lua.bak-txadmin`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupFile": "banlist_21_23_10_11_2026.json",
--            "backupTimestamp": 1794342199,
--            "id": 11,
--            "backupDate": "21_23_10_11_2026"
--        },
--        {
--            "backupFile": "banlist_21_25_10_11_2026.json",
--            "backupTimestamp": 1794342324,
--            "id": 11,
--            "backupDate": "21_25_10_11_2026"
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/txadmin.lua',
-```
-`~ resources/[selfcode]/api_new/server/main.lua`
-```diff
--        print(('[api_new] Ungültiger API-Key von %s'):format(ip))
-+        -- Aufrufe ganz ohne Key (z. B. Status-Monitor des Panels) nicht loggen, nur falsche Keys
-+        if key ~= '' then print(('[api_new] Ungültiger API-Key von %s'):format(ip)) end
-```
-`~ resources/[selfcode]/api_new/settings.lua`
-```diff
-+
-+-- txAdmin-Endpunkte (/txadmin/...): Accounts anzeigen und über das Panel verwalten
-+Settings.TxAdmin = {
-+    Enabled    = true,
-+    Url        = "http://127.0.0.1:40120",                 -- Web-Port von txAdmin
-+    Username   = "RMC-Panel",                              -- eigener txAdmin-Account für das Panel
-+    Password   = "xqh6AXQLWNJMxBNyHBw3",                                       -- dessen Passwort (leer = nur lesen)
-+    AdminsFile = "/home/FiveM/server/txData/admins.json",
-+}
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_23_10_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_25_10_11_2026.json`
-```diff
-- Gelöscht
 ```
