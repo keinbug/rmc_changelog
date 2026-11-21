@@ -74215,6 +74215,295 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T19:23:11+01:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 3,
+        "deleted": 25,
+        "total": 77598
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader",
+        "resources/[selfcode]/api_new/server/lifeinvader.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "resources/[selfcode]/rmc_api/client/admin_actions.lua",
+        "resources/[selfcode]/rmc_api/client/phone.lua",
+        "resources/[selfcode]/rmc_api/config/api_key.lua",
+        "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+        "resources/[selfcode]/rmc_api/fxmanifest.lua",
+        "resources/[selfcode]/rmc_api/server/main.lua",
+        "resources/[selfcode]/rmc_api/server/modules/admin.lua",
+        "resources/[selfcode]/rmc_api/server/modules/banking.lua",
+        "resources/[selfcode]/rmc_api/server/modules/billing.lua",
+        "resources/[selfcode]/rmc_api/server/modules/boss.lua",
+        "resources/[selfcode]/rmc_api/server/modules/einreise.lua",
+        "resources/[selfcode]/rmc_api/server/modules/hotel.lua",
+        "resources/[selfcode]/rmc_api/server/modules/inventory.lua",
+        "resources/[selfcode]/rmc_api/server/modules/items.lua",
+        "resources/[selfcode]/rmc_api/server/modules/medical.lua",
+        "resources/[selfcode]/rmc_api/server/modules/multichar.lua",
+        "resources/[selfcode]/rmc_api/server/modules/phone.lua",
+        "resources/[selfcode]/rmc_api/server/modules/players.lua",
+        "resources/[selfcode]/rmc_api/server/modules/refunds.lua",
+        "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua",
+        "resources/[selfcode]/rmc_api/server/modules/server_info.lua",
+        "resources/[selfcode]/rmc_api/server/modules/txadmin.lua",
+        "resources/[selfcode]/rmc_api/server/modules/txadmin_profile.lua",
+        "resources/[selfcode]/rmc_api/server/utils/auth.lua",
+        "resources/[selfcode]/rmc_api/server/utils/response.lua"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/lifeinvader.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "M",
+          "lines": [
+            "+",
+            "+---",
+            "+",
+            "+## Lifeinvader (rmc_lifeinvader)",
+            "+",
+            "+Liest die Werbungen aus der Tabelle `lifeinvader_ads`. Der Discord-Bot holt darüber neue Werbungen ab und postet sie.",
+            "+",
+            "+### Neueste Werbungen / nur neue seit einer ID",
+            "+```bash",
+            "+curl \"$API/lifeinvader/ads?limit=20\" -H \"X-API-Key: $KEY\"",
+            "+curl \"$API/lifeinvader/ads?after=152\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+Antwort: `{ latest, count, ads: [{ id, name, phone, message, price, anonym, timestamp }] }`, älteste zuerst.",
+            "+",
+            "+- Anonyme Werbung: `anonym: true`, `name: \"Anonym\"`, `phone: null`. Wer sie geschaltet hat, wird nicht ausgegeben.",
+            "+- Mit Nummer: `anonym: false`, `name` = Charaktername, `phone` = Telefonnummer (`null`, wenn keine bekannt ist).",
+            "+",
+            "+### Eine Werbung",
+            "+```bash",
+            "+curl \"$API/lifeinvader/ads/152\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+",
+            "+### Team-Log mit Absender (auch bei anonymen Werbungen)",
+            "+```bash",
+            "+curl \"$API/lifeinvader/logs?limit=50&offset=0\" -H \"X-API-Key: $KEY\"",
+            "+curl \"$API/lifeinvader/logs?search=123456789012345678\" -H \"X-API-Key: $KEY\"   # Discord-ID",
+            "+curl \"$API/lifeinvader/logs?search=license:abc123\" -H \"X-API-Key: $KEY\"       # Lizenz (auch Teil, ab 8 Zeichen)",
+            "+curl \"$API/lifeinvader/logs?search=Autohaus\" -H \"X-API-Key: $KEY\"             # Text, Name, Nummer",
+            "+```",
+            "+Antwort: `{ total, count, logs: [...] }`, neueste zuerst. Zusätzlich je Eintrag `identifier`, `license`, `discord`, `charName`. Nur für Panel und Team, nicht öffentlich anzeigen."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/lifeinvader.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585",
+            "+{\"updatedAt\":\"2026-11-21T17:39:10Z\",\"webhooks\":{\"clothing_strip\":{\"channelId\":\"1551161585614061618\",\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"bell\":{\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\",\"url\":\"https://discord."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/client/admin_actions.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/client/phone.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/config/api_key.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/config/sakura_lager.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/admin.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/banking.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/billing.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/boss.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/einreise.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/hotel.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/inventory.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/items.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/medical.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/multichar.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/phone.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/players.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/refunds.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/server_info.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/txadmin.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/modules/txadmin_profile.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/utils/auth.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_api/server/utils/response.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
