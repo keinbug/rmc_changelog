@@ -73146,6 +73146,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T15:22:29+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77612
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/server/discord_config.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/server/discord_config.lua",
+          "status": "M",
+          "lines": [
+            "-    Token = '***TOKEN***',",
+            "+    Token = '***TOKEN***',"
+          ]
+        }
+      ]
     }
   ]
 }
