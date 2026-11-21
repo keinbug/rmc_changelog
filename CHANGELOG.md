@@ -2,6 +2,127 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-21 23:23 Uhr
+**+6** neu · **~8** geändert · **-0** gelöscht
+`+ backups/okokNotify-orig-2026-11-21/config.lua`
+```diff
++ Neue Datei
+```
+`+ backups/okokNotify-orig-2026-11-21/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ backups/okokNotify-orig-2026-11-21/web/scripts.js`
+```diff
++ Neue Datei
+```
+`+ backups/okokNotify-orig-2026-11-21/web/sound.mp3`
+```diff
++ Neue Datei
+```
+`+ backups/okokNotify-orig-2026-11-21/web/styles.css`
+```diff
++ Neue Datei
+```
+`+ backups/okokNotify-orig-2026-11-21/web/ui.html`
+```diff
++ Neue Datei
+```
+`~ resources/[okok]/okokNotify/web/scripts.js`
+```diff
+-let Config
+-
+-const containerElement = document.getElementById('container')
+-let containerElementTopOffset = 0
+-
+-let notifications = []
+-
+-function addNotification(title, message, time, type, playSound) {
+-	containerElementTopOffset = container.getBoundingClientRect().top
+-
+```
+`~ resources/[okok]/okokNotify/web/styles.css`
+```diff
+-html {
+-	font-size: calc(16 / 19.2 * 1vw);
+-}
+-
+-@media (min-aspect-ratio: 16 / 9) {
+-	html {
+-		font-size: calc(16 / 10.8 * 1vh);
+-	}
+-}
+-
+```
+`~ resources/[okok]/okokNotify/web/ui.html`
+```diff
+-<!DOCTYPE html>
+-<html>
+-	<head>
+-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+-		<link rel="stylesheet" href="styles.css">
+-	</head>
+-	<body>
+-		<div id="container"></div>
+-		
+-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+```
+`~ resources/[selfcode]/rmc_core/client/afk.lua`
+```diff
+-        if Config.ClientNotify then
+-            Config.ClientNotify('AFK', 'Du bist jetzt AFK. Nutze /afk um wieder da zu sein.', 3000, 'info', true)
+-        end
++        ESX.ShowNotification('Du bist jetzt AFK. Nutze /afk um wieder da zu sein.', 'info', 3000, 'AFK')
+-        if Config.ClientNotify then
+-            Config.ClientNotify('AFK', 'Du bist wieder da.', 3000, 'success', true)
+-        end
++        ESX.ShowNotification('Du bist wieder da.', 'success', 3000, 'AFK')
+```
+`~ resources/[selfcode]/rmc_core/client/hotdog.lua`
+```diff
+-    rmc_core – Hotdog Stand (ehemals rmc_hotdog)
+-    Platzierbarer Imbiss-Stand mit Bestellungen.
+-]]
+-
+-ESX = exports["es_extended"]:getSharedObject()
+-
+-if not Config.Hotdog or not Config.Hotdog.Enabled then return end
+-
+-local cfg = Config.Hotdog
+-local ESX = nil
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++-- /hotdog – Platzierbarer Imbiss-Stand mit Speisekarte, Warteschlange,
++-- NPC-Kunden, Ruf/Statistik und Zahlung bar oder auf Rechnung (okokBilling)
+-    MaxStands = 2,
++    MaxStands = 2,              -- gleichzeitig auf dem ganzen Server
++    MinStandDistance = 6.0,     -- Mindestabstand zwischen zwei Ständen
++    -- Platzieren
++    MaxPlaceDistance = 12.0,    -- Server lehnt weiter entfernte Positionen ab
++    ConfirmPlaceKey = 191,      -- Enter
++    CancelPlaceKey = 177,       -- Rücktaste / ESC / Rechtsklick
+-    ConfirmPlaceKey = 191,
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T20:02:45Z","webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/w
++{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/*
+```
+`~ resources/[selfcode]/rmc_core/server/hotdog.lua`
+```diff
+-    rmc_core – Hotdog Stand (ehemals rmc_hotdog)
+-    Platzierbarer Imbiss-Stand mit Bestellungen.
+-]]
+-
+-if not Config.Hotdog or not Config.Hotdog.Enabled then return end
+-
+-local cfg = Config.Hotdog
+-local ESX = nil
+-local Stands = {}
+-local StandIdCounter = 0
+```
+
 ## 2026-11-21 22:23 Uhr
 **+3** neu · **~4** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json`
@@ -2193,25 +2314,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
 +{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***",
-```
-
-## 2026-11-18 10:22 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char3:95e98569cca18ee079f5fe27ab54152ede42f277": [
-+    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
--            "sender_name": "Savings Interest",
--            "sender_identifier": "bank",
--            "reason": "Savings account interest payment (Period 43)",
--            "date": "2026/11/10 - 10:00:58",
--            "value": 9392,
--            "type": "interest_savings",
--            "receiver_name": "Savings Account",
--            "receiver_identifier": "char3:95e98569cca18ee079f5fe27ab54152ede42f277"
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-17T23:19:35Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714
-+{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
 ```
