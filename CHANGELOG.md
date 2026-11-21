@@ -2,6 +2,79 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-22 00:22 Uhr
+**+0** neu · **~6** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/client/hotdog.lua`
+```diff
+-local Npcs = {}            -- [npcId] = { ped, standId, label, arrived }
++local Npcs = {}            -- [npcId] = { ped, standId, label }  (nur beim Besitzer, er steuert die Figur)
++local Bubbles = {}         -- [npcId] = { netId, label }         (bei allen Spielern: Sprechblase)
++-- Vernetzte Figur löschen (holt sich vorher die Kontrolle, falls sie gewandert ist)
++local function deletePed(ped)
++    if not DoesEntityExist(ped) then return end
++    if not NetworkHasControlOfEntity(ped) then
++        NetworkRequestControlOfEntity(ped)
++        local deadline = GetGameTimer() + 1000
++        while not NetworkHasControlOfEntity(ped) and GetGameTimer() < deadline do Wait(50) end
+```
+`~ resources/[selfcode]/rmc_core/client/troll.lua`
+```diff
++-- Höhe des Figuren-Mittelpunkts über den Füßen (Standard-Ped: ca. 1,0 m).
++-- Schweben verkleinerte Spieler noch leicht, in der Config Troll.ScaleGroundOffset erhöhen.
++local GROUND_OFFSET = tonumber(C.ScaleGroundOffset) or 1.0
++--- [ped] = zuletzt gesetzte (verschobene) Position, damit nie doppelt verschoben wird.
++local LastScaledPos = {}
++
++    LastScaledPos[ped or 0] = nil
++
++    -- Die Figur wird um ihren Mittelpunkt (Hüfte, ca. 1 m über den Füßen) skaliert.
++    -- Ohne Ausgleich schweben verkleinerte Spieler und vergrößerte stecken im Boden.
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++    -- Spaß-Effekte im Untermenü „Spaß-Effekte“ (Dauer in Sekunden)
++    Extras = {
++        BetrunkenSec = 45,        -- Torkeln, verschwommene Sicht
++        TanzzwangSec = 15,        -- Ziel muss tanzen
++        KuhregenCount = 8,        -- Anzahl Kühe, die vom Himmel fallen
++        KuhregenCleanupSec = 20,  -- danach werden die Kühe gelöscht
++        GlatteisSec = 25,         -- Fahrzeug des Ziels hat kaum Grip
++        MondschwerkraftSec = 30,  -- Ziel springt/fährt wie auf dem Mond
++        StolperfluchSec = 30,     -- Ziel stolpert alle paar Sekunden
++        FeuerwerkBursts = 12,     -- Anzahl Raketen über dem Ziel (für alle sichtbar)
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/*
++{"webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"esx_resources":{"webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557
+```
+`~ resources/[selfcode]/rmc_core/server/hotdog.lua`
+```diff
++-- ============================================
++-- NPC-Zustand eines Stands beenden
++-- ============================================
++
++-- Blendet die Sprechblase bei allen Spielern aus und vergisst den Passanten.
++-- deletePed = true löscht die Figur serverseitig (wenn der Besitzer nicht mehr da ist).
++local function releaseNpc(s, deletePed)
++    local npc = s.npc
++    if not npc then return end
++    s.npc = nil
+```
+`~ resources/[selfcode]/rmc_core/server/troll.lua`
+```diff
++    -- Spaß-Effekte
++    betrunken      = true,
++    tanzzwang      = true,
++    rakete         = true,
++    kuhregen       = true,
++    glatteis       = true,
++    mondschwerkraft = true,
++    stolperfluch   = true,
++    feuerwerk      = true,
++    erdbeben       = true,
+```
+
 ## 2026-11-21 23:23 Uhr
 **+6** neu · **~8** geändert · **-0** gelöscht
 `+ backups/okokNotify-orig-2026-11-21/config.lua`
@@ -2306,12 +2379,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "value": 500,
 -            "receiver_name": "cd_garage",
 -            "date": "2026/10/06 - 21:19:34"
-```
-
-## 2026-11-18 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
-+{"categoryId":"1551161549018759170","webhooks":{"chopshop":{"webhookId":"1552971074814218312","url":"https://discord.com/api/webhooks/1552971074814218312/***","channelId":"1552971071882399744"},"me":{"webhookId":"1513950212480307490","url":"https://discord.com/api/webhooks/1513950212480307490/***",
 ```
