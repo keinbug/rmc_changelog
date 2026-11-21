@@ -73081,6 +73081,71 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T14:22:35+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 6,
+        "total": 77612
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [],
+      "deleted": [
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-screen",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin",
+        "resources/[selfcode]/api_new/settings.lua.bak-rolesync",
+        "resources/[selfcode]/api_new/settings.lua.bak-txadmin"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-screen",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua.bak-rolesync",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/settings.lua.bak-txadmin",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
