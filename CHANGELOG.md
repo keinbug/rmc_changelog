@@ -2,6 +2,72 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-21 22:23 Uhr
+**+3** neu · **~4** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/marriage.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-    "lastBackup": 1795208376,
++    "lastBackup": 1795294988,
++            "backupDate": "21_48_17_11_2026",
+-            "backupDate": "21_45_16_11_2026",
+-            "backupTimestamp": 1794861929,
+-            "backupFile": "banlist_21_45_16_11_2026.json"
++            "backupFile": "banlist_21_48_17_11_2026.json",
++            "backupTimestamp": 1794948490
++            "backupDate": "21_50_17_11_2026",
+-            "backupDate": "21_47_16_11_2026",
+```
+`~ resources/[selfcode]/api_new/README.md`
+```diff
++
++## Heiraten (rmc_core, Standesamt)
++
++Liest die Hochzeiten über den Export `exports[rmc_core]:GetMarriages({ after, limit })` (Tabelle `bc_marriages`). Der Discord-Bot holt darüber neue Hochzeiten ab und postet sie.
++
++### Neueste Hochzeiten / nur neue seit einer ID
++```bash
++curl "$API/marriage/list?limit=20" -H "X-API-Key: $KEY"
++curl "$API/marriage/list?after=51" -H "X-API-Key: $KEY"
++```
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/marriage.lua',
+```
+`~ resources/[selfcode]/rmc_core/server/marry.lua`
+```diff
+-end, false)
++end, false)
++
++-- ============================================
++-- EXPORTS (für api_new / Discord-Bot)
++-- ============================================
++--- Hochzeiten auslesen, älteste zuerst.
++---   exports['rmc_core']:GetMarriages({ after = 51, limit = 20 })
++---   after = nur Ehen mit höherer ID (optional), limit = 1-100 (Standard 20)
++--- Rückgabe: { latest = <höchste ID>, marriages = { { id, partner1, partner2, timestamp, active } } }
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_45_16_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_47_16_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-21 21:23 Uhr
 **+0** neu · **~36** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/client/adminjail.lua`
@@ -2148,88 +2214,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-17T23:19:35Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714
 +{"updatedAt":"2026-11-18T09:00:42Z","categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","url":"https://discord.com/api/webhooks/1560007815156998144/***","webhookId":"1560007815156998144"},"marriage":{"channelId":"1467556343492640830","url":"https://discord.com
-```
-
-## 2026-11-18 00:23 Uhr
-**+3** neu · **~9** geändert · **-0** gelöscht
-`+ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-sql-slots.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/multichar.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_api/server/modules/multichar.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/ks-multicharacter/fxmanifest.lua`
-```diff
-+    'ks-libs-configs/ks-sql-slots.lua', -- muss VOR ks-server.lua geladen werden
-```
-`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.js`
-```diff
--ksConfig.DiscordSlotTxt = 'Du musst eine Rolle auf Discord haben, um ihn freizuschalten.';
-+ksConfig.DiscordSlotTxt = 'Dieser Slot muss vom Team für dich freigeschaltet werden.';
-```
-`~ resources/[esx_addons]/ks-multicharacter/ks-libs-configs/ks-config.lua`
-```diff
--ksConfig = {}
--
--ksConfig.QBcore = 'qb-core'
--ksConfig.ESX = 'es_extended'
--ksConfig.Framework = ksGetFramework(ksConfig.QBcore, ksConfig.ESX)
--
--ksConfig.EmptySlots = 1 -- Default slots for all players
--
--ksConfig.EnableDiscord = true
--
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/multichar.lua',
-```
-`~ resources/[selfcode]/api_new/server/refunds.lua`
-```diff
-+    GET    /refunds/account/:license alle offenen Rückerstattungen eines Spielkontos (alle Charaktere)
-+-- Alle offenen Rückerstattungen eines Spielkontos: Lizenz ohne Charakter-Slot, findet char1:…, char2:… usw.
-+Api.addRoute('GET', '/refunds/account/:license', function(res, params)
-+    local license = (tostring(params[1] or ''):gsub('^license:', ''))
-+    if #license < 20 or #license > 64 or not license:match('^%w+$') then return fail(res, 400, 'Ungültige Lizenz') end
-+
-+    local rows = dbQuery(('SELECT * FROM `%s` WHERE identifier = ? OR identifier LIKE ? ORDER BY id DESC LIMIT 50'):format(TABLE),
-+        { license, 'char%:' .. license }) or {}
-+    local E = esx()
-+    local list = {}
-```
-`~ resources/[selfcode]/rmc_api/config/api_key.lua`
-```diff
-+-- ========================================
-+--  MULTICHAR-SLOTS (ks-multicharacter)
-+-- ========================================
-+-- Beide Werte müssen zu ksConfig.SqlSlots in ks-multicharacter/ks-libs-configs/ks-config.lua passen.
-+Config.Multichar = {
-+    Table = 'rmc_multichar_slots',
-+    MaxExtraSlots = 3,
-+}
-+
-```
-`~ resources/[selfcode]/rmc_api/fxmanifest.lua`
-```diff
-+    'server/modules/multichar.lua',
-```
-`~ resources/[selfcode]/rmc_api/server/main.lua`
-```diff
-+    -- Multichar-Slots (ks-multicharacter, SQL statt Discord-Rollen)
-+    { method = 'GET',  path = '/multichar/list',                      handler = function(req, res) MulticharModule.list(req, res) end },
-+    { method = 'GET',  path = '/multichar/status/:id',                handler = function(req, res, p) MulticharModule.status(req, res, p[1]) end },
-+    { method = 'POST', path = '/multichar/grant',                     handler = function(req, res) MulticharModule.grant(req, res) end },
-+    { method = 'POST', path = '/multichar/revoke',                    handler = function(req, res) MulticharModule.revoke(req, res) end },
-+
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","webhookId":"1557386326951592027","channelId":"1420103430562910370"},"minijobs":{"url":"https://discord.com/api/webhooks/1570426351809335326/***","webhookId":"1570426351809335326","channelId":"1570426349213188196"}
-+{"updatedAt":"2026-11-17T23:19:35Z","webhooks":{"chopshop":{"channelId":"1552971071882399744","url":"https://discord.com/api/webhooks/1552971074814218312/***","webhookId":"1552971074814218312"},"einreise":{"channelId":"1552971085937381431","url":"https://discord.com/api/webhooks/1552971088328392714
 ```

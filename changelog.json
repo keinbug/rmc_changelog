@@ -75094,6 +75094,205 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T22:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 4,
+        "deleted": 2,
+        "total": 77599
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json",
+        "resources/[selfcode]/api_new/server/marriage.lua"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/rmc_core/server/marry.lua"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_45_16_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_47_16_11_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/marriage.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-    \"lastBackup\": 1795208376,",
+            "+    \"lastBackup\": 1795294988,",
+            "+            \"backupDate\": \"21_48_17_11_2026\",",
+            "-            \"backupDate\": \"21_45_16_11_2026\",",
+            "-            \"backupTimestamp\": 1794861929,",
+            "-            \"backupFile\": \"banlist_21_45_16_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_48_17_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794948490",
+            "+            \"backupDate\": \"21_50_17_11_2026\",",
+            "-            \"backupDate\": \"21_47_16_11_2026\",",
+            "-            \"backupTimestamp\": 1794862054,",
+            "-            \"backupFile\": \"banlist_21_47_16_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_50_17_11_2026.json\",",
+            "+            \"backupTimestamp\": 1794948615",
+            "-            \"backupDate\": \"21_48_17_11_2026\",",
+            "-            \"backupTimestamp\": 1794948490,",
+            "-            \"backupFile\": \"banlist_21_48_17_11_2026.json\"",
+            "+            \"backupDate\": \"21_51_18_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_51_18_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795035117",
+            "+            \"backupDate\": \"21_54_18_11_2026\",",
+            "-            \"backupDate\": \"21_50_17_11_2026\",",
+            "-            \"backupTimestamp\": 1794948615,",
+            "-            \"backupFile\": \"banlist_21_50_17_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_54_18_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795035242",
+            "+            \"backupDate\": \"21_54_19_11_2026\",",
+            "-            \"backupFile\": \"banlist_21_51_18_11_2026.json\",",
+            "-            \"backupTimestamp\": 1795035117,",
+            "-            \"backupDate\": \"21_51_18_11_2026\"",
+            "+            \"backupFile\": \"banlist_21_54_19_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795121677",
+            "+            \"backupDate\": \"21_56_19_11_2026\",",
+            "-            \"backupDate\": \"21_54_18_11_2026\",",
+            "-            \"backupTimestamp\": 1795035242,",
+            "-            \"backupFile\": \"banlist_21_54_18_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_21_56_19_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795121802",
+            "-            \"backupDate\": \"21_54_19_11_2026\",",
+            "-            \"backupTimestamp\": 1795121677,",
+            "-            \"backupFile\": \"banlist_21_54_19_11_2026.json\"",
+            "+            \"backupDate\": \"21_57_20_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_57_20_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795208251",
+            "-            \"backupDate\": \"21_56_19_11_2026\",",
+            "-            \"backupTimestamp\": 1795121802,",
+            "-            \"backupFile\": \"banlist_21_56_19_11_2026.json\"",
+            "+            \"backupDate\": \"21_59_20_11_2026\",",
+            "+            \"backupFile\": \"banlist_21_59_20_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795208376",
+            "-            \"backupFile\": \"banlist_21_57_20_11_2026.json\",",
+            "-            \"backupTimestamp\": 1795208251,",
+            "-            \"backupDate\": \"21_57_20_11_2026\"",
+            "+            \"backupDate\": \"22_01_21_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_01_21_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795294863",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_21_59_20_11_2026.json\",",
+            "-            \"backupTimestamp\": 1795208376,",
+            "-            \"backupDate\": \"21_59_20_11_2026\""
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "M",
+          "lines": [
+            "+",
+            "+## Heiraten (rmc_core, Standesamt)",
+            "+",
+            "+Liest die Hochzeiten über den Export `exports[rmc_core]:GetMarriages({ after, limit })` (Tabelle `bc_marriages`). Der Discord-Bot holt darüber neue Hochzeiten ab und postet sie.",
+            "+",
+            "+### Neueste Hochzeiten / nur neue seit einer ID",
+            "+```bash",
+            "+curl \"$API/marriage/list?limit=20\" -H \"X-API-Key: $KEY\"",
+            "+curl \"$API/marriage/list?after=51\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+Antwort: `{ latest, count, marriages: [{ id, partner1, partner2, timestamp, active }] }` – `partner1` hat den Antrag gemacht, `active = false` heißt inzwischen geschieden, `latest` ist die höchste vorhandene ID."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/marriage.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/marry.lua",
+          "status": "M",
+          "lines": [
+            "-end, false)",
+            "+end, false)",
+            "+",
+            "+-- ============================================",
+            "+-- EXPORTS (für api_new / Discord-Bot)",
+            "+-- ============================================",
+            "+--- Hochzeiten auslesen, älteste zuerst.",
+            "+---   exports['rmc_core']:GetMarriages({ after = 51, limit = 20 })",
+            "+---   after = nur Ehen mit höherer ID (optional), limit = 1-100 (Standard 20)",
+            "+--- Rückgabe: { latest = <höchste ID>, marriages = { { id, partner1, partner2, timestamp, active } } }",
+            "+---   partner1 hat den Antrag gemacht, partner2 hat angenommen; active = false -> inzwischen geschieden",
+            "+exports('GetMarriages', function(opts)",
+            "+    opts = type(opts) == 'table' and opts or {}",
+            "+    local limit = math.floor(math.max(1, math.min(100, tonumber(opts.limit) or 20)))",
+            "+    local after = tonumber(opts.after)",
+            "+    local cols = 'id, player1_name, player2_name, is_active, UNIX_TIMESTAMP(marriage_date) AS ts'",
+            "+",
+            "+    local rows",
+            "+    if after then",
+            "+        rows = MySQL.query.await(('SELECT %s FROM bc_marriages WHERE id > ? ORDER BY id ASC LIMIT %d'):format(cols, limit), { math.floor(after) })",
+            "+    else",
+            "+        rows = MySQL.query.await(('SELECT * FROM (SELECT %s FROM bc_marriages ORDER BY id DESC LIMIT %d) t ORDER BY id ASC'):format(cols, limit))",
+            "+    end",
+            "+",
+            "+    local marriages = {}",
+            "+    for i, row in ipairs(rows or {}) do",
+            "+        marriages[i] = {",
+            "+            id        = tonumber(row.id),",
+            "+            partner1  = tostring(row.player1_name or ''),",
+            "+            partner2  = tostring(row.player2_name or ''),",
+            "+            timestamp = tonumber(row.ts),",
+            "+            active    = row.is_active == true or row.is_active == 1,",
+            "+        }",
+            "+    end",
+            "+",
+            "+    return {",
+            "+        latest    = tonumber(MySQL.scalar.await('SELECT MAX(id) FROM bc_marriages')) or 0,",
+            "+        marriages = marriages,",
+            "+    }",
+            "+end)"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_45_16_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_47_16_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
