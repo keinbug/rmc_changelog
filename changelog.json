@@ -74504,6 +74504,596 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T21:23:19+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 36,
+        "deleted": 0,
+        "total": 77598
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/client/adminjail.lua",
+        "resources/[selfcode]/rmc_core/client/ausweis.lua",
+        "resources/[selfcode]/rmc_core/client/bell.lua",
+        "resources/[selfcode]/rmc_core/client/carradio.lua",
+        "resources/[selfcode]/rmc_core/client/clothing_strip.lua",
+        "resources/[selfcode]/rmc_core/client/coords.lua",
+        "resources/[selfcode]/rmc_core/client/death_owner_notify.lua",
+        "resources/[selfcode]/rmc_core/client/discord_id.lua",
+        "resources/[selfcode]/rmc_core/client/flatbed.lua",
+        "resources/[selfcode]/rmc_core/client/frakmenu.lua",
+        "resources/[selfcode]/rmc_core/client/freecam.lua",
+        "resources/[selfcode]/rmc_core/client/gps_tracker.lua",
+        "resources/[selfcode]/rmc_core/client/handysteuer.lua",
+        "resources/[selfcode]/rmc_core/client/heli_drop.lua",
+        "resources/[selfcode]/rmc_core/client/hostage.lua",
+        "resources/[selfcode]/rmc_core/client/jammer.lua",
+        "resources/[selfcode]/rmc_core/client/kfzsteuer.lua",
+        "resources/[selfcode]/rmc_core/client/mechanic_shop.lua",
+        "resources/[selfcode]/rmc_core/client/naturkatastrophen.lua",
+        "resources/[selfcode]/rmc_core/client/pawn.lua",
+        "resources/[selfcode]/rmc_core/client/plz.lua",
+        "resources/[selfcode]/rmc_core/client/saltychat.lua",
+        "resources/[selfcode]/rmc_core/client/schutzweste.lua",
+        "resources/[selfcode]/rmc_core/client/seatbelt.lua",
+        "resources/[selfcode]/rmc_core/client/sit.lua",
+        "resources/[selfcode]/rmc_core/client/strafzettel.lua",
+        "resources/[selfcode]/rmc_core/client/troll.lua",
+        "resources/[selfcode]/rmc_core/client/troll_rc.lua",
+        "resources/[selfcode]/rmc_core/client/vehicledamage.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/carradio.lua",
+        "resources/[selfcode]/rmc_core/server/freecam_photo.lua",
+        "resources/[selfcode]/rmc_core/server/jammer.lua",
+        "resources/[selfcode]/rmc_core/server/saltychat.lua",
+        "resources/[selfcode]/rmc_core/server/strafzettel.lua",
+        "resources/[selfcode]/rmc_core/server/webhook_setup.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/client/adminjail.lua",
+          "status": "M",
+          "lines": [
+            "-    if lib and lib.notify then",
+            "-        lib.notify({",
+            "-            title = \"RedMoon-City\",",
+            "-            description = msg,",
+            "-            type = \"inform\",",
+            "-            duration = 6500,",
+            "-            position = \"top-right\",",
+            "-        })",
+            "+    if ESX and ESX.ShowNotification then",
+            "+        ESX.ShowNotification(msg, \"info\", 6500, \"RedMoon-City\")",
+            "-    TriggerEvent(\"esx:showNotification\", msg)",
+            "+    TriggerEvent(\"esx:showNotification\", msg, \"info\", 6500, \"RedMoon-City\")"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/ausweis.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ or 'inform', description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/bell.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ description = msg, type = typ or 'inform' })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/carradio.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({ type = kind, title = 'Auto-Radio', description = msg })",
+            "+    ESX.ShowNotification(msg, kind, nil, 'Auto-Radio')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/clothing_strip.lua",
+          "status": "M",
+          "lines": [
+            "-    -- Immer sichtbar: ox_lib Notify (Server hat ox_lib als Abhängigkeit)",
+            "-    if lib and lib.notify then",
+            "-        lib.notify({",
+            "-            title = 'Kleidung',",
+            "-            description = line,",
+            "-            type = 'inform',",
+            "-            duration = durationMs,",
+            "-            position = 'top',",
+            "-        })",
+            "+    if ESX and ESX.ShowNotification then",
+            "+        ESX.ShowNotification(line, 'info', durationMs, 'Kleidung')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/coords.lua",
+          "status": "M",
+          "lines": [
+            "-        lib.notify({ type = 'error', title = 'Coords', description = ('Modell \"%s\" konnte nicht geladen werden.'):format(modelName) })",
+            "+        ESX.ShowNotification(('Modell \"%s\" konnte nicht geladen werden.'):format(modelName), 'error', nil, 'Coords')",
+            "-        lib.notify({ type = 'error', title = 'Coords', description = ('Ped-Modell \"%s\" konnte nicht geladen werden.'):format(modelName) })",
+            "+        ESX.ShowNotification(('Ped-Modell \"%s\" konnte nicht geladen werden.'):format(modelName), 'error', nil, 'Coords')",
+            "-        lib.notify({ type = 'error', title = 'Coords', description = ('Ped-Modell \"%s\" konnte nicht geladen werden.'):format(modelName) })",
+            "+        ESX.ShowNotification(('Ped-Modell \"%s\" konnte nicht geladen werden.'):format(modelName), 'error', nil, 'Coords')",
+            "-        lib.notify({ type = 'error', title = 'Coords', description = ('Anim \"%s\" konnte nicht geladen werden.'):format(animDict) })",
+            "+        ESX.ShowNotification(('Anim \"%s\" konnte nicht geladen werden.'):format(animDict), 'error', nil, 'Coords')",
+            "-        lib.notify({ type = 'error', title = 'Coords', description = 'Passout3-Ped konnte nicht erstellt werden.' })",
+            "+        ESX.ShowNotification('Passout3-Ped konnte nicht erstellt werden.', 'error', nil, 'Coords')",
+            "-    lib.notify({ type = 'inform', title = 'Coords', description = 'Passout3-Ped vor dir – jetzt ausrichten.' })",
+            "+    ESX.ShowNotification('Passout3-Ped vor dir – jetzt ausrichten.', 'info', nil, 'Coords')",
+            "-            lib.notify({ type = 'error', title = 'Coords', description = 'Passout3-Ped wurde gelöscht.' })",
+            "+            ESX.ShowNotification('Passout3-Ped wurde gelöscht.', 'error', nil, 'Coords')",
+            "-    lib.notify({ type = 'success', title = 'Coords', description = 'NPC-Position (vector4) kopiert.' })",
+            "+    ESX.ShowNotification('NPC-Position (vector4) kopiert.', 'success', nil, 'Coords')",
+            "-    lib.notify({",
+            "-        type = 'success',",
+            "-        title = 'Coords',",
+            "-        description = ('Exakt kopiert: %s'):format(snippet),",
+            "-    })",
+            "+    ESX.ShowNotification(('Exakt kopiert: %s'):format(snippet), 'success', nil, 'Coords')",
+            "-    lib.notify({",
+            "-        type = 'success',",
+            "-        title = 'Coords',",
+            "-        description = ('%s \"%s\" in die Zwischenablage kopiert.'):format(kind, id),",
+            "-    })",
+            "+    ESX.ShowNotification(('%s \"%s\" in die Zwischenablage kopiert.'):format(kind, id), 'success', nil, 'Coords')",
+            "-    lib.notify({ type = 'inform', title = 'Coords', description = 'Eingang erfasst – jetzt das Boot platzieren.' })",
+            "+    ESX.ShowNotification('Eingang erfasst – jetzt das Boot platzieren.', 'info', nil, 'Coords')",
+            "-    lib.notify({ type = 'inform', title = 'Coords', description = 'Eingang erfasst.' })",
+            "+    ESX.ShowNotification('Eingang erfasst.', 'info', nil, 'Coords')",
+            "-        lib.notify({ type = 'error', title = 'Coords', description = 'Keine Berechtigung.' })",
+            "+        ESX.ShowNotification('Keine Berechtigung.', 'error', nil, 'Coords')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/death_owner_notify.lua",
+          "status": "M",
+          "lines": [
+            "-    if lib and lib.notify then\r",
+            "+    if ESX and ESX.ShowNotification then\r",
+            "+        -- okokNotify rendert HTML: Zeilenumbruch per <br>, Spielernamen escapen\r",
+            "+        local function esc(s)\r",
+            "+            return (tostring(s or \"?\"):gsub(\"&\", \"&amp;\"):gsub(\"<\", \"&lt;\"):gsub(\">\", \"&gt;\"))\r",
+            "+        end\r",
+            "-            desc = (\"Täter: %s (ID %s)\\nOpfer: %s (ID %s)\\nGrund: %s\"):format(\r",
+            "-                entry.killerName or \"?\",\r",
+            "+            desc = (\"Täter: %s (ID %s)<br>Opfer: %s (ID %s)<br>Grund: %s\"):format(\r",
+            "+                esc(entry.killerName),\r",
+            "-                entry.victimName or \"?\",\r",
+            "+                esc(entry.victimName),\r",
+            "-                entry.reason or \"?\"\r",
+            "+                esc(entry.reason)\r",
+            "-            desc = (\"Opfer: %s (ID %s)\\nGrund: %s\"):format(\r",
+            "-                entry.victimName or \"?\",\r",
+            "+            desc = (\"Opfer: %s (ID %s)<br>Grund: %s\"):format(\r",
+            "+                esc(entry.victimName),\r",
+            "-                entry.reason or \"?\"\r",
+            "+                esc(entry.reason)\r",
+            "-        lib.notify({\r",
+            "-            title = subject or \"Kill / Tod\",\r",
+            "-            description = desc,\r",
+            "-            type = (entry and entry.killerId) and \"error\" or \"inform\",\r",
+            "-            duration = 8000,\r",
+            "-            position = \"top-right\",\r",
+            "-        })\r",
+            "+        ESX.ShowNotification(\r",
+            "+            desc,\r",
+            "+            (entry and entry.killerId) and \"error\" or \"info\",\r",
+            "+            8000,\r",
+            "+            subject or \"Kill / Tod\"\r",
+            "+        )\r",
+            "-        if lib and lib.notify then\r",
+            "-            lib.notify({ title = \"Todeshistorie\", description = \"Noch keine Tode gespeichert.\", type = \"inform\" })\r",
+            "-        else\r",
+            "-            TriggerEvent(\"esx:showNotification\", \"~y~Noch keine Tode gespeichert.\")\r",
+            "-        end\r",
+            "+        ESX.ShowNotification(\"Noch keine Tode gespeichert.\", \"info\", nil, \"Todeshistorie\")\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/discord_id.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then\r",
+            "-        lib.notify({ type = typ, description = msg, duration = 6000 })\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/flatbed.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ or 'inform', description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/frakmenu.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({ title = 'Fraktion', description = msg, type = kind or 'inform' })",
+            "+    ESX.ShowNotification(msg, kind or 'info', nil, 'Fraktion')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/freecam.lua",
+          "status": "M",
+          "lines": [
+            "-        if lib and lib.notify then\r",
+            "-            lib.notify({ type = 'error', title = 'Foto', description = 'Upload ist deaktiviert.' })\r",
+            "-        end\r",
+            "+        ESX.ShowNotification('Upload ist deaktiviert.', 'error', nil, 'Foto')\r",
+            "-        if lib and lib.notify then\r",
+            "-            lib.notify({ type = 'error', title = 'Foto', description = 'screenshot-basic muss installiert und gestartet sein.' })\r",
+            "-        end\r",
+            "+        ESX.ShowNotification('screenshot-basic muss installiert und gestartet sein.', 'error', nil, 'Foto')\r",
+            "-            if lib and lib.notify then\r",
+            "-                lib.notify({ type = 'error', title = 'Foto', description = 'Upload zeitüberschritten.' })\r",
+            "-            end\r",
+            "+            ESX.ShowNotification('Upload zeitüberschritten.', 'error', nil, 'Foto')\r",
+            "-        if lib and lib.notify then\r",
+            "-            lib.notify({ type = 'error', title = 'Foto', description = 'screenshot-basic muss installiert und gestartet sein.' })\r",
+            "-        end\r",
+            "+        ESX.ShowNotification('screenshot-basic muss installiert und gestartet sein.', 'error', nil, 'Foto')\r",
+            "-            if lib and lib.notify then\r",
+            "-                lib.notify({ type = 'error', title = 'Foto', description = 'Keine Antwort von der Foto-API.' })\r",
+            "-            end\r",
+            "+            ESX.ShowNotification('Keine Antwort von der Foto-API.', 'error', nil, 'Foto')\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/gps_tracker.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ or 'inform', description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/handysteuer.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ title = 'Handysteuer', description = msg, type = typ or 'inform' })",
+            "-        ESX.ShowNotification(msg, typ or 'info', 5000)",
+            "+        ESX.ShowNotification(msg, typ or 'info', 5000, 'Handysteuer')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/heli_drop.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ or 'inform', description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/hostage.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({",
+            "-        type = \"error\",",
+            "-        title = t(\"title\"),",
+            "-        description = message,",
+            "-        position = \"bottom\"",
+            "-    })",
+            "+    ESX.ShowNotification(message, \"error\", nil, t(\"title\"))"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/jammer.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({ title = 'Störsender', description = msg, type = nType or 'inform' })",
+            "+    ESX.ShowNotification(msg, nType or 'info', nil, 'Störsender')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/kfzsteuer.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ title = 'KFZ-Steuer', description = msg, type = typ or 'inform' })",
+            "-        ESX.ShowNotification(msg, typ or 'info', 5000)",
+            "+        ESX.ShowNotification(msg, typ or 'info', 5000, 'KFZ-Steuer')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/mechanic_shop.lua",
+          "status": "M",
+          "lines": [
+            "-        lib.notify({ type = 'error', description = T.NpcGone })",
+            "+        ESX.ShowNotification(T.NpcGone, 'error')",
+            "-        lib.notify({ type = 'success', description = (T.Bought):format(res.amount, Config.ItemLabel, res.total) })",
+            "+        ESX.ShowNotification((T.Bought):format(res.amount, Config.ItemLabel, res.total), 'success')",
+            "-        lib.notify({ type = 'error', description = T[res.reason] })",
+            "+        ESX.ShowNotification(T[res.reason], 'error')",
+            "-        lib.notify({ type = 'error', description = T.Error })",
+            "+        ESX.ShowNotification(T.Error, 'error')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/naturkatastrophen.lua",
+          "status": "M",
+          "lines": [
+            "-        lib.notify({ type = 'error', description = SS.Notify })",
+            "+        ESX.ShowNotification(SS.Notify, 'error')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/pawn.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify(data)",
+            "+    if type(data) ~= 'table' then return end",
+            "+    ESX.ShowNotification(data.description or '', data.type or 'info', data.duration, data.title)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/plz.lua",
+          "status": "M",
+          "lines": [
+            "-    if lib and lib.notify then",
+            "-        lib.notify({",
+            "-            title = 'PLZ',",
+            "-            description = msg,",
+            "-            type = typ or 'inform',",
+            "-        })",
+            "+    if ESX and ESX.ShowNotification then",
+            "+        ESX.ShowNotification(msg, typ or 'info', nil, 'PLZ')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/saltychat.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({",
+            "-        title = 'SaltyChat',",
+            "-        description = desc,",
+            "-        type = nType or 'inform',",
+            "-    })",
+            "+    ESX.ShowNotification(desc, nType or 'info', nil, 'SaltyChat')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/schutzweste.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ, description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/seatbelt.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ, description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/sit.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({ type = kind, title = 'Sitz', description = description })",
+            "+    ESX.ShowNotification(description, kind, nil, 'Sitz')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/strafzettel.lua",
+          "status": "M",
+          "lines": [
+            "-                    lib.notify({\r",
+            "-                        title = 'LSPD',\r",
+            "-                        description = 'Kein Kennzeichen gefunden.',\r",
+            "-                        type = 'error'\r",
+            "-                    })\r",
+            "+                    ESX.ShowNotification('Kein Kennzeichen gefunden.', 'error', nil, 'LSPD')\r",
+            "-                    lib.notify({\r",
+            "-                        title = 'LSPD',\r",
+            "-                        description = 'Ungültiger Betrag.',\r",
+            "-                        type = 'error'\r",
+            "-                    })\r",
+            "+                    ESX.ShowNotification('Ungültiger Betrag.', 'error', nil, 'LSPD')\r",
+            "-                    lib.notify({\r",
+            "-                        title = 'LSPD',\r",
+            "-                        description = 'Du musst einen Grund angeben.',\r",
+            "-                        type = 'error'\r",
+            "-                    })\r",
+            "+                    ESX.ShowNotification('Du musst einen Grund angeben.', 'error', nil, 'LSPD')\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/troll.lua",
+          "status": "M",
+          "lines": [
+            "-                lib.notify({",
+            "-                    title = 'Troll',",
+            "-                    description = ('%s → ID %s'):format(actionLabel, serverId),",
+            "-                    type = 'success',",
+            "-                })",
+            "+                ESX.ShowNotification(('%s → ID %s'):format(actionLabel, serverId), 'success', nil, 'Troll')",
+            "-        lib.notify({ title = 'Troll', description = 'Keine Spieler online.', type = 'inform' })",
+            "+        ESX.ShowNotification('Keine Spieler online.', 'info', nil, 'Troll')",
+            "-                lib.notify({",
+            "-                    title = 'Troll · Größe',",
+            "-                    description = ('Skalierung %.2f → Spieler-ID %s'):format(sc, serverId),",
+            "-                    type = 'success',",
+            "-                })",
+            "+                ESX.ShowNotification(('Skalierung %.2f → Spieler-ID %s'):format(sc, serverId), 'success', nil, 'Troll · Größe')",
+            "-        lib.notify({ title = 'Troll', description = 'Keine Spieler online.', type = 'inform' })",
+            "+        ESX.ShowNotification('Keine Spieler online.', 'info', nil, 'Troll')",
+            "-        lib.notify({ title = title or 'Fake-SMS', description = msg, type = typ or 'inform' })",
+            "+        TriggerEvent('esx:showNotification', msg, typ or 'info', 8000, title or 'Fake-SMS')",
+            "-        lib.notify({ title = 'Troll', description = 'Keine Berechtigung.', type = 'error' })",
+            "+        ESX.ShowNotification('Keine Berechtigung.', 'error', nil, 'Troll')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/troll_rc.lua",
+          "status": "M",
+          "lines": [
+            "-    lib.notify({ title = 'Troll · Fernsteuerung', description = msg, type = typ or 'inform' })",
+            "+    ESX.ShowNotification(msg, typ or 'info', nil, 'Troll · Fernsteuerung')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/vehicledamage.lua",
+          "status": "M",
+          "lines": [
+            "-    elseif lib and lib.notify then",
+            "-        lib.notify({ type = typ, description = msg })"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-21T17:39:10Z\",\"webhooks\":{\"clothing_strip\":{\"channelId\":\"1551161585614061618\",\"webhookId\":\"1551161592467423353\",\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\"},\"bell\":{\"channelId\":\"1471556817061544068\",\"webhookId\":\"1471556835994767400\",\"url\":\"https://discord.",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-21T20:02:45Z\",\"webhooks\":{\"esx\":{\"webhookId\":\"1557386326951592027\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",\"channelId\":\"1420103430562910370\"},\"staff\":{\"webhookId\":\"1552971123233394708\",\"url\":\"https://discord.com/api/w"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/carradio.lua",
+          "status": "M",
+          "lines": [
+            "-    TriggerClientEvent('ox_lib:notify', src, { type = 'error', title = 'Auto-Radio', description = msg })",
+            "+    TriggerClientEvent('esx:showNotification', src, msg, 'error', nil, 'Auto-Radio')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/freecam_photo.lua",
+          "status": "M",
+          "lines": [
+            "-    TriggerClientEvent('ox_lib:notify', src, {\r",
+            "-        type = typ or 'inform',\r",
+            "-        title = title or 'Foto',\r",
+            "-        description = description or '',\r",
+            "-        duration = duration or 5000,\r",
+            "-    })\r",
+            "+    TriggerClientEvent('esx:showNotification', src, description or '', typ or 'info', duration or 5000, title or 'Foto')\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/jammer.lua",
+          "status": "M",
+          "lines": [
+            "-    TriggerClientEvent('ox_lib:notify', src, {",
+            "-        title = 'Störsender',",
+            "-        description = msg,",
+            "-        type = nType or 'inform',",
+            "-    })",
+            "+    TriggerClientEvent('esx:showNotification', src, msg, nType or 'info', nil, 'Störsender')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/saltychat.lua",
+          "status": "M",
+          "lines": [
+            "-            TriggerClientEvent('ox_lib:notify', targetId, {",
+            "-                title = 'SaltyChat',",
+            "-                description = 'Du wurdest von einem Teammitglied aus dem Funk entfernt.',",
+            "-                type = 'inform',",
+            "-            })",
+            "+            TriggerClientEvent('esx:showNotification', targetId, 'Du wurdest von einem Teammitglied aus dem Funk entfernt.', 'info', nil, 'SaltyChat')",
+            "-        TriggerClientEvent('ox_lib:notify', adminId, {",
+            "-            title = 'SaltyChat',",
+            "-            description = 'Mithören beendet – Ziel hat den Server verlassen.',",
+            "-            type = 'inform',",
+            "-        })",
+            "+        TriggerClientEvent('esx:showNotification', adminId, 'Mithören beendet – Ziel hat den Server verlassen.', 'info', nil, 'SaltyChat')"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/strafzettel.lua",
+          "status": "M",
+          "lines": [
+            "+-- okokNotify (via ESX) rendert HTML -> Freitext escapen\r",
+            "+local function escHtml(s)\r",
+            "+    return (tostring(s or ''):gsub('&', '&amp;'):gsub('<', '&lt;'):gsub('>', '&gt;'))\r",
+            "+end\r",
+            "+\r",
+            "+-- Config.Notify-Eintrag ({ title, description, type, duration }) als ESX-Notification senden\r",
+            "+local function notifyCfg(target, data)\r",
+            "+    if type(data) ~= 'table' then return end\r",
+            "+    local typ = data.type == 'inform' and 'info' or (data.type or 'info')\r",
+            "+    TriggerClientEvent('esx:showNotification', target, data.description or '', typ, data.duration, data.title)\r",
+            "+end\r",
+            "+\r",
+            "-        TriggerClientEvent(\r",
+            "-            'ox_lib:notify',\r",
+            "-            source,\r",
+            "-            Config.Notify.NoOwner\r",
+            "-        )\r",
+            "+        notifyCfg(source, Config.Notify.NoOwner)\r",
+            "-        TriggerClientEvent('ox_lib:notify', source, {\r",
+            "-            title = 'LSPD',\r",
+            "-            description = 'Du kannst dir selbst keinen Strafzettel ausstellen.',\r",
+            "-            type = 'error'\r",
+            "-        })\r",
+            "+        TriggerClientEvent('esx:showNotification', source, 'Du kannst dir selbst keinen Strafzettel ausstellen.', 'error', nil, 'LSPD')\r",
+            "-        TriggerClientEvent('ox_lib:notify', source, {\r",
+            "-            title = 'LSPD',\r",
+            "-            description = 'Der Strafzettel konnte nicht gespeichert werden.',\r",
+            "-            type = 'error'\r",
+            "-        })\r",
+            "+        TriggerClientEvent('esx:showNotification', source, 'Der Strafzettel konnte nicht gespeichert werden.', 'error', nil, 'LSPD')\r",
+            "-            TriggerClientEvent('ox_lib:notify', targetSource, {\r",
+            "-                title = '📄 Strafzettel erhalten',\r",
+            "-                description = ('Du hast einen Strafzettel über $%s erhalten.\\nGrund: %s'):format(\r",
+            "+            TriggerClientEvent(\r",
+            "+                'esx:showNotification',\r",
+            "+                targetSource,\r",
+            "+                ('Du hast einen Strafzettel über $%s erhalten.<br>Grund: %s'):format(\r",
+            "-                    reason\r",
+            "+                    escHtml(reason)\r",
+            "-                type = 'error',\r",
+            "-                duration = 10000\r",
+            "-            })\r",
+            "+                'error',\r",
+            "+                10000,\r",
+            "+                '📄 Strafzettel erhalten'\r",
+            "+            )\r",
+            "-        TriggerClientEvent('ox_lib:notify', source, {\r",
+            "-            title = 'LSPD',\r",
+            "-            description = ('Strafzettel #%s wurde erfolgreich ausgestellt.'):format(\r",
+            "-                ticketId\r",
+            "-            ),\r",
+            "-            type = 'success'\r",
+            "-        })\r",
+            "+        TriggerClientEvent(\r",
+            "+            'esx:showNotification',\r",
+            "+            source,\r",
+            "+            ('Strafzettel #%s wurde erfolgreich ausgestellt.'):format(ticketId),\r",
+            "+            'success',\r",
+            "+            nil,\r",
+            "+            'LSPD'\r"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/webhook_setup.lua",
+          "status": "M",
+          "lines": [
+            "-    if lib and lib.notify then",
+            "-        TriggerClientEvent('ox_lib:notify', src, {",
+            "-            title = 'Discord-Setup',",
+            "-            description = msg,",
+            "-            type = 'inform',",
+            "-        })",
+            "-    end",
+            "+    TriggerClientEvent('esx:showNotification', src, msg, 'info', nil, 'Discord-Setup')"
+          ]
+        }
+      ]
     }
   ]
 }
