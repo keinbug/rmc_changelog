@@ -73172,6 +73172,279 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-21T16:23:08+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 12,
+        "deleted": 0,
+        "total": 77612
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[devcore]/devcore_smoke/configs/config.lua",
+        "resources/[manuell_start]/ox_inventory/client.lua",
+        "resources/[manuell_start]/ox_inventory/data/shops.lua",
+        "resources/[manuell_start]/ox_inventory/locales/de.json",
+        "resources/[manuell_start]/ox_inventory/locales/en.json",
+        "resources/[manuell_start]/ox_inventory/modules/shops/server.lua",
+        "resources/[manuell_start]/ox_inventory/web/build/assets/index.css",
+        "resources/[manuell_start]/ox_inventory/web/build/assets/index.js",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_housing/client/garage.lua",
+        "resources/[selfcode]/rmc_housing/client/main.lua",
+        "resources/[selfcode]/rmc_housing/server/main.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[devcore]/devcore_smoke/configs/config.lua",
+          "status": "M",
+          "lines": [
+            "-        ESX.ShowNotification(message, 2000, type) -- Default ESX Notify\r",
+            "+        ESX.ShowNotification(message, type or 'info', 5000) -- (text, notifyType, length)\r"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/client.lua",
+          "status": "M",
+          "lines": [
+            "+\t-- data.paymentMethod ('cash' | 'card') kommt vom Bar/Karte-Umschalter der NUI; der Server prueft die Angabe"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/shops.lua",
+          "status": "M",
+          "lines": [
+            "+\t\tallowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+\t\tallowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+\t\tallowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar",
+            "+\t\tallowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/de.json",
+          "status": "M",
+          "lines": [
+            "+  \"ui_pay_cash\": \"Bar\",",
+            "+  \"ui_pay_card\": \"Karte\",",
+            "+  \"shop_no_card\": \"Du hast keine Bank Karte dabei\",",
+            "+  \"shop_card_declined\": \"Kartenzahlung abgelehnt – nicht genug Guthaben auf dem Konto\",",
+            "+  \"paid_by_card\": \" (Karte)\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/locales/en.json",
+          "status": "M",
+          "lines": [
+            "+  \"ui_pay_cash\": \"Cash\",",
+            "+  \"ui_pay_card\": \"Card\",",
+            "+  \"shop_no_card\": \"You don't have a bank card with you\",",
+            "+  \"shop_card_declined\": \"Card declined – insufficient bank balance\",",
+            "+  \"paid_by_card\": \" (card)\","
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/modules/shops/server.lua",
+          "status": "M",
+          "lines": [
+            "+\t\t\tallowCard = properties.allowCard,",
+            "+\t\tallowCard = shop.allowCard,",
+            "-local function canAffordItem(inv, currency, price)",
+            "+---Bankkonto des Spielers (ESX) fuer Kartenzahlung.",
+            "+local function getBankBalance(inv)",
+            "+\tlocal player = server.GetPlayerFromId and server.GetPlayerFromId(inv.id)",
+            "+\tlocal account = player and player.getAccount and player.getAccount('bank')",
+            "+",
+            "+\treturn player, account and account.money or 0",
+            "+end",
+            "+",
+            "+local function canAffordItem(inv, currency, price, useCard)",
+            "+\tif useCard then",
+            "+\t\tlocal _, balance = getBankBalance(inv)",
+            "+",
+            "+\t\treturn (price >= 0 and balance >= price) or {",
+            "+\t\t\ttype = 'error',",
+            "+\t\t\tdescription = locale('shop_card_declined')",
+            "+\t\t}",
+            "+\tend",
+            "+",
+            "-local function removeCurrency(inv, currency, price)",
+            "+local function removeCurrency(inv, currency, price, useCard, reason)",
+            "+\tif useCard then",
+            "+\t\tlocal player = getBankBalance(inv)",
+            "+",
+            "+\t\tif player then player.removeAccountMoney('bank', price, reason) end",
+            "+",
+            "+\t\treturn",
+            "+\tend",
+            "+",
+            "+\t\t\tlocal useCard = data.paymentMethod == 'card'",
+            "+",
+            "+\t\t\tif useCard then",
+            "+\t\t\t\tif not shop.allowCard or currency ~= 'money' then",
+            "+\t\t\t\t\tuseCard = false",
+            "+\t\t\t\telseif Inventory.GetItemCount(playerInv, 'bank_card') < 1 then",
+            "+\t\t\t\t\treturn false, false, { type = 'error', description = locale('shop_no_card') }",
+            "+\t\t\t\tend",
+            "+\t\t\tend",
+            "+",
+            "-\t\t\t\tlocal canAfford = canAffordItem(playerInv, currency, price)",
+            "+\t\t\t\tlocal canAfford = canAffordItem(playerInv, currency, price, useCard)",
+            "+\t\t\t\t\tpaymentMethod = useCard and 'card' or 'cash',",
+            "-\t\t\t\tremoveCurrency(playerInv, currency, price)",
+            "+\t\t\t\tremoveCurrency(playerInv, currency, price, useCard, ('Shop: %s'):format(shop.label or shopType))",
+            "+\t\t\t\tif useCard then message = message .. locale('paid_by_card') end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/build/assets/index.css",
+          "status": "M",
+          "lines": [
+            "+",
+            "+.inventory-control .inventory-control-payment{display:flex;width:100%;gap:4px;padding:4px;box-sizing:border-box;background-color:#0c0c0c66;border-radius:4px}.inventory-control .inventory-control-payment-button{flex:1;color:#ffffff99;text-transform:uppercase;background-color:transparent;border:none;"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/build/assets/index.js",
+          "status": "M",
+          "lines": [
+            "-`).replace(Md,``)}function Pd(e,t){return t=Nd(t),Nd(e)===t}function Z(e,t,n,r,a,o){switch(n){case`children`:typeof r==`string`?t===`body`||t===`textarea`&&r===``||Gt(e,r):(typeof r==`number`||typeof r==`bigint`)&&t!==`body`&&Gt(e,``+r);break;case`className`:kt(e,`class`,r);break;case`tabIndex`:kt(",
+            "+`).replace(Md,``)}function Pd(e,t){return t=Nd(t),Nd(e)===t}function Z(e,t,n,r,a,o){switch(n){case`children`:typeof r==`string`?t===`body`||t===`textarea`&&r===``||Gt(e,r):(typeof r==`number`||typeof r==`bigint`)&&t!==`body`&&Gt(e,``+r);break;case`className`:kt(e,`class`,r);break;case`tabIndex`:kt("
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-21T09:00:58Z\",\"webhooks\":{\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297200\"},\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/155297193186977",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"faction\":{\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"channelId\":\"1551161570439208960\",\"webhookId\":\"1551161573194731652\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/garage.lua",
+          "status": "M",
+          "lines": [
+            "+    ClearInside()",
+            "+    MarkInside(p.id, data.layout.entry, true)"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/client/main.lua",
+          "status": "M",
+          "lines": [
+            "+---------------------------------------------------------------------",
+            "+-- Merker \"bin drinnen\": übersteht Logout, Crash, Script- und Server-Neustart",
+            "+---------------------------------------------------------------------",
+            "+local INSIDE_KVP = 'rmch_inside'",
+            "+",
+            "+-- at = Position im Interior (Spawn), damit ein veralteter Merker später nicht greift",
+            "+function MarkInside(pid, at, garage)",
+            "+    SetResourceKvp(INSIDE_KVP, json.encode({ who = ESX.GetPlayerData().identifier, pid = pid, garage = garage == true,",
+            "+        x = at.x, y = at.y, z = at.z }))",
+            "+end",
+            "+",
+            "+function ClearInside() DeleteResourceKvp(INSIDE_KVP) end",
+            "+",
+            "+-- nil, wenn kein Merker da ist, er zu einem anderen Charakter gehört oder der Spieler längst woanders steht",
+            "+local function insideMarker()",
+            "+    local raw = GetResourceKvpString(INSIDE_KVP)",
+            "+    local m = raw and json.decode(raw)",
+            "+    if type(m) ~= 'table' or not m.x or m.who ~= ESX.GetPlayerData().identifier then return nil end",
+            "+    if #(GetEntityCoords(cache.ped) - vec3(m.x, m.y, m.z)) > 100.0 then return nil end",
+            "+    return m",
+            "+end",
+            "+",
+            "-function EnterProperty(pid, mode)",
+            "+-- silent = true: Ablehnung nicht anzeigen (Aufwachen nach dem Login, der Aufrufer weicht dann vor die Tür aus)",
+            "+function EnterProperty(pid, mode, silent)",
+            "-    if not ok then busy = false return notify(data, 'error') end",
+            "+    if not ok then busy = false if not silent then notify(data, 'error') end return end",
+            "+    MarkInside(pid, data.spawn)",
+            "+    ClearInside()",
+            "+-- Ohne Merker (z. B. vor diesem Update im Haus ausgeloggt): steht der Spieler wirklich IN einem der Interiors?",
+            "+-- Nähe allein reicht nicht: Stelzenhäuser liegen in der Welt, die Haustür ist nur ein paar Meter vom Interior weg.",
+            "+local function strandedInside()",
+            "+    local ped = cache.ped",
+            "+    local pos = GetEntityCoords(ped)",
+            "+    local spots = {}",
+            "+    for _, int in pairs(Interiors) do spots[#spots + 1] = int.spawn end",
+            "+    for _, g in pairs(Config.Garage.interiors) do spots[#spots + 1] = g.center end",
+            "+    local near = {}",
+            "+    for _, s in ipairs(spots) do",
+            "+        if #(pos - vec3(s.x, s.y, s.z)) < 40.0 then near[#near + 1] = s end",
+            "+    end",
+            "+    if #near == 0 then return false end",
+            "+",
+            "+    local t = GetGameTimer()",
+            "+    while not HasCollisionLoadedAroundEntity(ped) and GetGameTimer() - t < 5000 do Wait(100) end",
+            "+    t = GetGameTimer()",
+            "+    while GetInteriorFromEntity(ped) == 0 and GetGameTimer() - t < 2000 do Wait(100) end",
+            "+    local mine = GetInteriorFromEntity(ped)",
+            "+    for _, s in ipairs(near) do",
+            "+        local id = GetInteriorAtCoords(s.x, s.y, s.z)",
+            "+        if id == 0 or id == mine then return true end -- id 0: IPL nicht geladen, der Spieler hängt im Leeren",
+            "+    end",
+            "+    return false",
+            "+end",
+            "+",
+            "-    -- im Interior ausgeloggt oder Script neu gestartet? -> zurück vor die Tür",
+            "-    local pos = GetEntityCoords(cache.ped)",
+            "-    local spots = {}",
+            "-    for _, int in pairs(Interiors) do spots[#spots + 1] = int.spawn end",
+            "-    for _, g in pairs(Config.Garage.interiors) do spots[#spots + 1] = g.center end -- auch in der Hausgarage ausgeloggt"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_housing/server/main.lua",
+          "status": "M",
+          "lines": [
+            "+WakePending = {}  -- [src] = propertyId (darf nach dem Login einmalig direkt im Haus aufwachen)",
+            "-    if mode ~= 'admin' and distTo(src, p.entrance) > 8.0 then",
+            "+    if mode == 'wake' then",
+            "+        -- nach dem Login im eigenen Zuhause aufwachen: nur mit Freigabe aus rmc_housing:recover, dafür ohne Tür-Abstand",
+            "+        if WakePending[src] ~= pid then return false, 'Aufwachen im Haus nicht möglich.' end",
+            "+        WakePending[src] = nil",
+            "+        mode = 'enter'",
+            "+    elseif mode ~= 'admin' and distTo(src, p.entrance) > 8.0 then",
+            "-lib.callback.register('rmc_housing:recover', function(src)",
+            "+-- Spieler hat sich im Interior ausgeloggt: zurück an die Tür.",
+            "+-- marker   = { pid, garage } vom Client gemerkt (übersteht auch einen Server-Neustart)",
+            "+-- stranded = der Client steht nachweislich in einem Interior, ohne zu wissen in welchem",
+            "+-- Wer nicht drinnen war, bekommt nil und bleibt, wo er ist.",
+            "+lib.callback.register('rmc_housing:recover', function(src, marker, stranded)",
+            "-    if bucket ~= 0 then SetPlayerRoutingBucket(src, 0) end",
+            "+    -- fremde Buckets (andere Scripts) nicht anfassen: nur zurücksetzen, wenn der Spieler bei uns drinnen war",
+            "+    if bucket ~= 0 and (hp or gp or marker or stranded) then SetPlayerRoutingBucket(src, 0) end",
+            "+    local mid = type(marker) == 'table' and tonumber(marker.pid) or nil",
+            "+    local mp = mid and Properties[mid] or nil",
+            "+    if mp then",
+            "+        if marker.garage then return mp.garage or mp.entrance end",
+            "+        -- in der eigenen Wohnung schlafen gegangen (Mieter / Schlüssel mit Zutritt): der Client darf dort wieder aufwachen",
+            "+        local l = Leases[mid]",
+            "+        local r, k = Housing.role(src, mid, true)",
+            "+        local home = l and l.status ~= 'lockout' and (r == 'owner' or (k and truthy(k.perm_enter)))",
+            "+        WakePending[src] = home and mid or nil",
+            "+        return mp.entrance, home and mid or nil",
+            "+    end",
+            "+    if not marker and not stranded then return nil end",
+            "+",
+            "+    -- drinnen, aber das Objekt ist unbekannt oder gelöscht: eigene Wohnung, sonst das Büro",
+            "-        if l.owner == x.identifier then return Properties[id].entrance end",
+            "+        if l.owner == x.identifier and Properties[id] then return Properties[id].entrance end",
+            "+    WakePending[src] = nil"
+          ]
+        }
+      ]
     }
   ]
 }

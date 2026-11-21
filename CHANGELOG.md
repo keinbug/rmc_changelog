@@ -2,6 +2,105 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-21 16:23 Uhr
+**+0** neu · **~12** geändert · **-0** gelöscht
+`~ resources/[devcore]/devcore_smoke/configs/config.lua`
+```diff
+-        ESX.ShowNotification(message, 2000, type) -- Default ESX Notify
++        ESX.ShowNotification(message, type or 'info', 5000) -- (text, notifyType, length)
+```
+`~ resources/[manuell_start]/ox_inventory/client.lua`
+```diff
++	-- data.paymentMethod ('cash' | 'card') kommt vom Bar/Karte-Umschalter der NUI; der Server prueft die Angabe
+```
+`~ resources/[manuell_start]/ox_inventory/data/shops.lua`
+```diff
++		allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++		allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++		allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++        allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
++		allowCard = true, -- Kartenzahlung (Bank) erlaubt; false/entfernen = nur Bar
+```
+`~ resources/[manuell_start]/ox_inventory/locales/de.json`
+```diff
++  "ui_pay_cash": "Bar",
++  "ui_pay_card": "Karte",
++  "shop_no_card": "Du hast keine Bank Karte dabei",
++  "shop_card_declined": "Kartenzahlung abgelehnt – nicht genug Guthaben auf dem Konto",
++  "paid_by_card": " (Karte)",
+```
+`~ resources/[manuell_start]/ox_inventory/locales/en.json`
+```diff
++  "ui_pay_cash": "Cash",
++  "ui_pay_card": "Card",
++  "shop_no_card": "You don't have a bank card with you",
++  "shop_card_declined": "Card declined – insufficient bank balance",
++  "paid_by_card": " (card)",
+```
+`~ resources/[manuell_start]/ox_inventory/modules/shops/server.lua`
+```diff
++			allowCard = properties.allowCard,
++		allowCard = shop.allowCard,
+-local function canAffordItem(inv, currency, price)
++---Bankkonto des Spielers (ESX) fuer Kartenzahlung.
++local function getBankBalance(inv)
++	local player = server.GetPlayerFromId and server.GetPlayerFromId(inv.id)
++	local account = player and player.getAccount and player.getAccount('bank')
++
++	return player, account and account.money or 0
++end
+```
+`~ resources/[manuell_start]/ox_inventory/web/build/assets/index.css`
+```diff
++
++.inventory-control .inventory-control-payment{display:flex;width:100%;gap:4px;padding:4px;box-sizing:border-box;background-color:#0c0c0c66;border-radius:4px}.inventory-control .inventory-control-payment-button{flex:1;color:#ffffff99;text-transform:uppercase;background-color:transparent;border:none;
+```
+`~ resources/[manuell_start]/ox_inventory/web/build/assets/index.js`
+```diff
+-`).replace(Md,``)}function Pd(e,t){return t=Nd(t),Nd(e)===t}function Z(e,t,n,r,a,o){switch(n){case`children`:typeof r==`string`?t===`body`||t===`textarea`&&r===``||Gt(e,r):(typeof r==`number`||typeof r==`bigint`)&&t!==`body`&&Gt(e,``+r);break;case`className`:kt(e,`class`,r);break;case`tabIndex`:kt(
++`).replace(Md,``)}function Pd(e,t){return t=Nd(t),Nd(e)===t}function Z(e,t,n,r,a,o){switch(n){case`children`:typeof r==`string`?t===`body`||t===`textarea`&&r===``||Gt(e,r):(typeof r==`number`||typeof r==`bigint`)&&t!==`body`&&Gt(e,``+r);break;case`className`:kt(e,`class`,r);break;case`tabIndex`:kt(
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T09:00:58Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"basicneeds":{"url":"https://discord.com/api/webhooks/155297193186977
++{"categoryId":"1551161549018759170","webhooks":{"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960","webhookId":"1551161573194731652"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
+```
+`~ resources/[selfcode]/rmc_housing/client/garage.lua`
+```diff
++    ClearInside()
++    MarkInside(p.id, data.layout.entry, true)
+```
+`~ resources/[selfcode]/rmc_housing/client/main.lua`
+```diff
++---------------------------------------------------------------------
++-- Merker "bin drinnen": übersteht Logout, Crash, Script- und Server-Neustart
++---------------------------------------------------------------------
++local INSIDE_KVP = 'rmch_inside'
++
++-- at = Position im Interior (Spawn), damit ein veralteter Merker später nicht greift
++function MarkInside(pid, at, garage)
++    SetResourceKvp(INSIDE_KVP, json.encode({ who = ESX.GetPlayerData().identifier, pid = pid, garage = garage == true,
++        x = at.x, y = at.y, z = at.z }))
++end
+```
+`~ resources/[selfcode]/rmc_housing/server/main.lua`
+```diff
++WakePending = {}  -- [src] = propertyId (darf nach dem Login einmalig direkt im Haus aufwachen)
+-    if mode ~= 'admin' and distTo(src, p.entrance) > 8.0 then
++    if mode == 'wake' then
++        -- nach dem Login im eigenen Zuhause aufwachen: nur mit Freigabe aus rmc_housing:recover, dafür ohne Tür-Abstand
++        if WakePending[src] ~= pid then return false, 'Aufwachen im Haus nicht möglich.' end
++        WakePending[src] = nil
++        mode = 'enter'
++    elseif mode ~= 'admin' and distTo(src, p.entrance) > 8.0 then
+-lib.callback.register('rmc_housing:recover', function(src)
++-- Spieler hat sich im Interior ausgeloggt: zurück an die Tür.
+```
+
 ## 2026-11-21 15:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/server/discord_config.lua`
@@ -1597,20 +1696,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    if not raw and AdminInside[src] == pid and Inside[src] == pid then return 'owner', nil, true end
 +    -- Admin in einem vermieteten Objekt: verhält sich wie der Hauptmieter
 +    local admin = mode == 'admin'
-```
-
-## 2026-11-17 14:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[devcore]/devcore_needs/configs/items.lua`
-```diff
-+            Stress = nil, -- How much stress do you want to remove after using the item if you don't want to use the stress system leave nil
-+            Alcohol = nil -- Set the amount of alcohol the item should add after each drink.
-+        },
-+    },
-+
-+    ["cooked_chicken"] = {-- item name
-+        Size = 220, -- Item size
-+        Type = 'FOOD', -- Item type 'DRINK' , 'FOOD' , 'GLASS'
-+        Prop = { -- Prop spawn data for idle & usage.
-+            Main = {
 ```
