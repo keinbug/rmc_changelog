@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-21 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T09:00:58Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"basicneeds":{"url":"https://discord.com/api/webhooks/155297193186977
+```
+
 ## 2026-11-21 00:22 Uhr
 **+0** neu · **~3** geändert · **-0** gelöscht
 `~ resources/[selfcode]/lb-tvcast/client/screen.lua`
@@ -1649,20 +1657,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-16T17:00:42Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"minijobs":{"webhookId":"1570426351809335326","url":"https://discord
 +{"categoryId":"1551161549018759170","webhooks":{"doors":{"channelId":"1559665845330907296","webhookId":"1559665847771988080","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"esx":{"channelId":"1420103430562910370","webhookId":"1557386326951592027","url":"https://discord.com/api/we
-```
-
-## 2026-11-17 01:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_housing/client/garage.lua`
-```diff
--    Wait(0)
--    SetVehicleOnGroundProperly(veh)
--    FreezeEntityPosition(veh, true)
-+    -- Erst einfrieren, wenn das Fahrzeug wirklich auf dem Boden steht (sonst schwebt es auf Spawn-Höhe).
-+    -- Läuft pro Fahrzeug im Hintergrund, damit das Betreten nicht hängt.
-+    CreateThread(function()
-+        RequestCollisionAtCoord(pos.x, pos.y, pos.z)
-+        ActivatePhysics(veh)
-+        local t = GetGameTimer()
-+        local grounded = false
 ```
