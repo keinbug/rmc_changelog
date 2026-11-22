@@ -76100,6 +76100,50 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-22T03:23:03+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77605
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "+        {",
+            "+            \"type\": \"deposit\",",
+            "+            \"receiver_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"receiver_name\": \"Kendrik Walker\",",
+            "+            \"date\": \"2026/11/22 - 02:43:07\",",
+            "+            \"value\": 200000,",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"sender_name\": \"Geldbörse\",",
+            "+            \"reason\": \"Einzahlung auf Bankkonto\"",
+            "+        },",
+            "+        {",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_identifier\": \"bank\",",
+            "+            \"receiver_name\": \"Geldbörse\",",
+            "+            \"date\": \"2026/11/22 - 02:42:31\",",
+            "+            \"value\": 25000,",
+            "+            \"sender_identifier\": \"char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c\",",
+            "+            \"sender_name\": \"Kendrik Walker\",",
+            "+            \"reason\": \"Auszahlung vom Bankkonto\"",
+            "+        },"
+          ]
+        }
+      ]
     }
   ]
 }

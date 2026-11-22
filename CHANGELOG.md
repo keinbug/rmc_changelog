@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-22 03:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
++        {
++            "type": "deposit",
++            "receiver_identifier": "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
++            "receiver_name": "Kendrik Walker",
++            "date": "2026/11/22 - 02:43:07",
++            "value": 200000,
++            "sender_identifier": "bank",
++            "sender_name": "Geldbörse",
++            "reason": "Einzahlung auf Bankkonto"
++        },
+```
+
 ## 2026-11-22 01:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -2363,20 +2379,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "backupDate": "21_37_13_11_2026",
 -            "backupTimestamp": 1794602238,
 -            "id": 11,
-```
-
-## 2026-11-18 20:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "type": "deposit",
-+            "receiver_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
-+            "reason": "Einzahlung auf Bankkonto",
-+            "date": "2026/11/18 - 19:28:35",
-+            "sender_identifier": "bank",
-+            "value": 100000,
-+            "receiver_name": "Jasmin Winchester",
-+            "sender_name": "Geldbörse"
-+        },
 ```
