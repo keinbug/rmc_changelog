@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-23 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-22T17:00:43Z","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"faction":{"url":"https://discord.com/api/webhooks/155116157319473165
++{"updatedAt":"2026-11-22T23:00:53Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***
+```
+
 ## 2026-11-22 22:22 Uhr
 **+2** neu · **~1** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_04_22_11_2026.json`
@@ -2387,12 +2395,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -            "value": 100000,
 -            "receiver_name": "Jasmin Winchester",
 -            "sender_name": "Geldbörse"
-```
-
-## 2026-11-19 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"willkommen":{"webhookId":"1551161597853049005","url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575"},"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386
-+{"categoryId":"1551161549018759170","webhooks":{"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","c
 ```
