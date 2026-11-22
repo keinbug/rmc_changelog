@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-22 01:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
+-        {
+-            "receiver_identifier": "cd_garage",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "value": 500,
+-            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
+-            "type": "withdraw",
+-            "receiver_name": "cd_garage",
+-            "date": "2026/11/19 - 18:53:23",
+-            "sender_name": "Jasmin Anderson"
+```
+
 ## 2026-11-22 00:22 Uhr
 **+0** neu · **~6** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/client/hotdog.lua`
@@ -2363,20 +2379,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "receiver_name": "Jasmin Winchester",
 +            "sender_name": "Geldbörse"
 +        },
-```
-
-## 2026-11-18 19:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c": [
-+    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
--            "reason": "Fahrzeugrückgabegebühr",
--            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
--            "type": "withdraw",
--            "receiver_identifier": "cd_garage",
--            "sender_name": "Timo Anderson",
--            "value": 500,
--            "receiver_name": "cd_garage",
--            "date": "2026/10/06 - 21:19:34"
 ```

@@ -76016,6 +76016,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-22T01:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77605
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\": [",
+            "-        {",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"value\": 500,",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"date\": \"2026/11/19 - 18:53:23\",",
+            "-            \"sender_name\": \"Jasmin Anderson\"",
+            "-        },",
+            "-        {",
+            "-            \"receiver_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\",",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"type\": \"deposit\",",
+            "-            \"receiver_name\": \"Jasmin Winchester\",",
+            "-            \"date\": \"2026/11/18 - 19:28:35\",",
+            "-            \"value\": 100000",
+            "-        },",
+            "-        {",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"value\": 5000,",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"sender_name\": \"Bonnie Parker\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/10/28 - 01:26:09\"",
+            "-        },",
+            "-        {",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"reason\": \"Kartenkauf: Gold Card\",",
+            "-            \"value\": 300,",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"sender_name\": \"Bonnie Parker\",",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"date\": \"2026/10/27 - 22:01:14\"",
+            "-        },",
+            "-        {",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"value\": 3000,",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"sender_name\": \"Bonnie Parker\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/10/27 - 22:01:07\"",
+            "-        },",
+            "+    \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\": [",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"reason\": \"Auszahlung vom Bankkonto\",",
+            "-            \"value\": 1500,",
+            "-            \"sender_identifier\": \"char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5\",",
+            "-            \"sender_name\": \"Lana Cooper\",",
+            "-            \"receiver_name\": \"Geldbörse\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"date\": \"2026/10/27 - 18:10:57\""
+          ]
+        }
+      ]
     }
   ]
 }
