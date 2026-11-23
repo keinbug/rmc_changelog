@@ -2,6 +2,81 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-23 20:23 Uhr
+**+0** neu · **~7** geändert · **-0** gelöscht
+`~ resources/[oresmon]/0r-radio/client/events.lua`
+```diff
+-playerSpawned = false
+-PlayerData = {}
+-AddEventHandler('onResourceStart', function(resource)
+-    if resource ~= GetCurrentResourceName() then
+-        return
+-    end
+-    local startTime = GetGameTimer()
+-    while not CoreReady do 
+-        Citizen.Wait(100)
+-        if GetGameTimer() - startTime > 5000 then
+```
+`~ resources/[oresmon]/0r-radio/server/server.lua`
+```diff
+-local SpawnedObjects = {}
+-local UsedObjectIds = {}
+-local PlayerChannels = {} -- Server-side fallback tracker for SaltyChat
+-
+-RegisterUseableItem2(Config.RadioItem)
+-if Config.JammerSettings.available then
+-    RegisterUseableItem(Config.JammerSettings.item_name)
+-end
+-
+-RegisterNetEvent('0R-radio:server:SetPlayerChannel', function(channel)
+```
+`~ resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css`
+```diff
++.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-height:18
++.text-\[\#FFD60A\]{--tw-text-opacity:1;color:rgb(255 214 10/var(--tw-text-opacity))}
+```
+`~ resources/[oresmon]/0r-radio/web/build/assets/index-b4b884cd.js`
+```diff
+-`,e.getElementsByTagName("head")[0].appendChild(t)),e.body&&Yc(e.body,"react-draggable-transparent-selection")}function F2(e){if(e)try{if(e.body&&Xc(e.body,"react-draggable-transparent-selection"),e.selection)e.selection.empty();else{const t=(e.defaultView||window).getSelection();t&&t.type!=="Caret
++`,e.getElementsByTagName("head")[0].appendChild(t)),e.body&&Yc(e.body,"react-draggable-transparent-selection")}function F2(e){if(e)try{if(e.body&&Xc(e.body,"react-draggable-transparent-selection"),e.selection)e.selection.empty();else{const t=(e.defaultView||window).getSelection();t&&t.type!=="Caret
+```
+`~ resources/[oresmon]/0r-radio/web/src/components/MemberList/index.tsx`
+```diff
++import "../Radio/index.css";
+-        const position = localStorage.getItem("membersMenuPosition");
++        const position = localStorage.getItem("membersMenuPositionV3");
+-        localStorage.removeItem("membersMenuPosition");
++        localStorage.removeItem("membersMenuPositionV3");
+-        localStorage.setItem("membersMenuPosition", JSON.stringify({ x: data.x, y: data.y }));
++        localStorage.setItem("membersMenuPositionV3", JSON.stringify({ x: data.x, y: data.y }));
+-        <>
++        <div className="members-list-anchor">
+-                <Transition unmount={false} show={visible} as={Fragment} enter="transition-all duration-300 ease-out" enterFrom="bottom-[-70%] opacity-0" enterTo="bottom-[5vh] opacity-1" leave="transition-all duration-300 ease-in" leaveFrom="bottom-[5vh] opacity-1" leaveTo="bottom-[-70%] opacity-0"
+```
+`~ resources/[oresmon]/0r-radio/web/src/components/Radio/index.css`
+```diff
++
++/* Members list: mittig links */
++.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}
++.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}
++.members-list-box>div{max-height:185px}
++.members-list-box .overflow-auto{min-height:0}
++
+```
+`~ resources/[sprache]/saltychat/client/client_open.lua`
+```diff
+-function onRadioStart()
+-
+-end
+-
+-function onRadioEnd()
+-
+-end
+-
+-function skipRadioChecks()
+-    local state = LocalPlayer.state
+```
+
 ## 2026-11-23 18:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2346,25 +2421,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    PublicUrl            = 'https://fivem-api.rmc-rp.de',   -- Basis für "imageUrl" ('' = aus dem Request)
 +    CacheSeconds         = 60,                              -- so lange wird die Item-Liste gecacht
 +    MaxRequestsPerMinute = 240,                             -- pro Besucher-IP (JSON-Routen)
-```
-
-## 2026-11-19 21:23 Uhr
-**+0** neu · **~2** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "receiver_identifier": "bank",
-+            "reason": "Auszahlung vom Bankkonto",
-+            "sender_identifier": "char2:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "date": "2026/11/19 - 20:46:03",
-+            "value": 100000,
-+            "type": "withdraw",
-+            "sender_name": "Timo Anderson",
-+            "receiver_name": "Geldbörse"
-+        },
-```
-`~ resources/[selfcode]/rmc_core/data/sits.json`
-```diff
--[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
-+[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
 ```
