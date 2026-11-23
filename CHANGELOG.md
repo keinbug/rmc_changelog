@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-24 00:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/a
++{"webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"
+```
+
 ## 2026-11-23 22:23 Uhr
 **+2** neu · **~1** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_23_11_2026.json`
@@ -2378,12 +2386,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/a
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T17:01:07Z","webhooks":{"esx_jobs":{"url":"https://discord.com/api/webhooks/1557386364578955274/***","webhookId":"1557386364578955274","channelId":"1557386361172918374"},"poster":{"url":"https://discord.com/api/webhooks/1560007815156998144/
-```
-
-## 2026-11-20 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"minijobs":{"channelId":"1570426349213188196","url":"https://discord.com/api/webhooks/157042635180
-+{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/a
 ```
