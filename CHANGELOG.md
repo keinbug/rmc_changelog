@@ -2,6 +2,23 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-23 21:23 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"155738635222
++{"categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/a
+```
+`~ resources/[selfcode]/rmc_core/server/discord_config.lua`
+```diff
+-    Token = '***TOKEN***',
++    Token = '***TOKEN***',
+```
+`~ server.cfg`
+```diff
+(Secrets — Inhalt unterdrückt)
+```
+
 ## 2026-11-23 20:23 Uhr
 **+0** neu · **~7** geändert · **-0** gelöscht
 `~ resources/[oresmon]/0r-radio/client/events.lua`
@@ -2345,80 +2362,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","c
 +{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"minijobs":{"channelId":"1570426349213188196","url":"https://discord.com/api/webhooks/157042635180
-```
-
-## 2026-11-19 22:23 Uhr
-**+1** neu · **~6** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/server/items.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
-+    "lastBackup": 1795121802,
--        {
--            "backupDate": "21_37_14_11_2026",
--            "id": 11,
--            "backupFile": "banlist_21_37_14_11_2026.json",
--            "backupTimestamp": 1794688675
--        },
--        {
--            "backupDate": "21_40_14_11_2026",
--            "id": 11,
-```
-`~ resources/[selfcode]/api_new/README.md`
-```diff
--Jeder Request braucht den API-Key aus `settings.lua` (`Settings.ApiKey`):
-+Jeder Request braucht den API-Key aus `settings.lua` (`Settings.ApiKey`). Einzige Ausnahme sind die öffentlichen [Item-Routen](#items-ox_inventory--öffentlich):
-+## Items (ox_inventory) – öffentlich
-+
-+Diese Routen brauchen **keinen API-Key** und sind nicht an die IP-Whitelist gebunden. Sie liefern nur Item-Definitionen (keine Spieler- oder Inventardaten) und sind über `https://fivem-api.rmc-rp.de` erreichbar.
-+
-+```bash
-+PUB="https://fivem-api.rmc-rp.de"
-+
-+curl "$PUB/items"                              # alle Items mit Metadaten
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/items.lua',
-```
-`~ resources/[selfcode]/api_new/server/http.js`
-```diff
-+const fs = require('fs');
-+const path = require('path');
-+// ============================================================
-+//  Item-Bilder (ox_inventory/web/images) - öffentlich, ohne API-Key
-+//  GET /items/image/:name   (:name = Item- oder Dateiname, Endung optional)
-+// ============================================================
-+
-+const IMAGE_TYPES = {
-+    png: 'image/png',
-+    webp: 'image/webp',
-```
-`~ resources/[selfcode]/api_new/server/main.lua`
-```diff
-+      GET  /items, /items/:name, /items/image/:name
-+                                   -> ÖFFENTLICH (ohne Key), siehe server/items.lua
-+-- Öffentliche Route: KEIN API-Key, KEINE IP-Whitelist (z.B. Item-Liste und -Bilder).
-+-- Nur für Daten nutzen, die jeder sehen darf. Eigenes Rate-Limit pro Besucher-IP.
-+--  Api.addPublicRoute('GET', '/items/:name', function(res, params, body, query, req) ... end, 240)
-+local publicRoutes = {}
-+local publicRate = {}
-+
-+function Api.addPublicRoute(method, pattern, handler, maxPerMinute)
-+    local regex = '^' .. pattern:gsub('[%-%.]', '%%%0'):gsub(':[%w_]+', '([^/]+)') .. '$'
-```
-`~ resources/[selfcode]/api_new/settings.lua`
-```diff
-+
-+-- Items-Endpunkte (/items/...): ox_inventory-Items, Metadaten und Bilder
-+-- ÖFFENTLICH - kein API-Key, keine IP-Whitelist (nur Item-Definitionen, keine Spielerdaten)
-+Settings.Items = {
-+    Enabled              = true,
-+    Resource             = 'ox_inventory',
-+    ImageDir             = 'web/images',                    -- Ordner in der Resource
-+    PublicUrl            = 'https://fivem-api.rmc-rp.de',   -- Basis für "imageUrl" ('' = aus dem Request)
-+    CacheSeconds         = 60,                              -- so lange wird die Item-Liste gecacht
-+    MaxRequestsPerMinute = 240,                             -- pro Besucher-IP (JSON-Routen)
 ```
