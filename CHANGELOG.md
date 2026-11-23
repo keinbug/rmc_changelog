@@ -2,6 +2,38 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-23 22:23 Uhr
+**+2** neu · **~1** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_23_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_09_23_11_2026.json`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "backupFile": "banlist_21_51_18_11_2026.json",
+-            "id": 11,
+-            "backupDate": "21_51_18_11_2026",
+-            "backupTimestamp": 1795035117
+-        },
+-        {
+-            "backupFile": "banlist_21_54_18_11_2026.json",
+-            "id": 11,
+-            "backupDate": "21_54_18_11_2026",
+-            "backupTimestamp": 1795035242
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_51_18_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_18_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-23 21:23 Uhr
 **+0** neu · **~3** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2354,12 +2386,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"minijobs":{"channelId":"1570426349213188196","url":"https://discord.com/api/webhooks/157042635180
 +{"categoryId":"1551161549018759170","webhooks":{"esx_jobs":{"channelId":"1557386361172918374","webhookId":"1557386364578955274","url":"https://discord.com/api/webhooks/1557386364578955274/***"},"troll":{"channelId":"1552971103910236172","webhookId":"1552971107500433498","url":"https://discord.com/a
-```
-
-## 2026-11-20 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"afk":{"webhookId":"1512475306554953789","url":"https://discord.com/api/webhooks/1512475306554953789/***","channelId":"1512475286229356617"},"lager":{"webhookId":"1551161582942158879","url":"https://discord.com/api/webhooks/1551161582942158879/***","c
-+{"categoryId":"1551161549018759170","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","url":"https://discord.com/api/webhooks/1557386342755991582/***","webhookId":"1557386342755991582"},"minijobs":{"channelId":"1570426349213188196","url":"https://discord.com/api/webhooks/157042635180
 ```
