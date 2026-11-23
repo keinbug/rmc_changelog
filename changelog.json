@@ -76358,6 +76358,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-23T18:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77605
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-23T09:01:08Z\",\"webhooks\":{\"housing\":{\"url\":\"https://discord.com/api/webhooks/1570424984998912021/***\",\"channelId\":\"1570424980183842916\",\"webhookId\":\"1570424984998912021\"},\"clothing_strip\":{\"url\":\"https://discord.com/api/webhooks/1551161592467423353/***\",\"channelId\":\"1551161585",
+            "+{\"webhooks\":{\"einreise\":{\"webhookId\":\"1552971088328392714\",\"url\":\"https://discord.com/api/webhooks/1552971088328392714/***\",\"channelId\":\"1552971085937381431\"},\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"155738635222"
+          ]
+        }
+      ]
     }
   ]
 }

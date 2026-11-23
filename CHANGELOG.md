@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-23 18:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-23T09:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","channelId":"1570424980183842916","webhookId":"1570424984998912021"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
++{"webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"155738635222
+```
+
 ## 2026-11-23 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2358,33 +2366,5 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ resources/[selfcode]/rmc_core/data/sits.json`
 ```diff
 -[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
-+[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
-```
-
-## 2026-11-19 20:23 Uhr
-**+5** neu · **~1** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_skate/client.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_skate/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_skate/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_skate/server.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_skate/stream/p_defilied_ragdoll_01_s.ydr`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_core/data/sits.json`
-```diff
--[{"x":1225.8873,"id":"sit_1791572244_8861","z":68.0417,"label":"Sit Chair 4","dict":"timetable@ron@ig_3_couch","anim":"base","h":255.6565,"y":-420.7482},{"x":1226.4694,"id":"sit_1791572300_6917","z":68.0817,"label":"Sit Chair 2","dict":"timetable@ron@ig_5_p3","anim":"ig_5_p3_base","h":271.1957,"y":
 +[{"x":1225.8873,"y":-420.7482,"z":68.0417,"label":"Sit Chair 4","h":255.6565,"id":"sit_1791572244_8861","dict":"timetable@ron@ig_3_couch","anim":"base"},{"x":1226.4694,"y":-419.3795,"z":68.0817,"label":"Sit Chair 2","h":271.1957,"id":"sit_1791572300_6917","dict":"timetable@ron@ig_5_p3","anim":"ig_5
 ```
