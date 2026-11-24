@@ -76959,6 +76959,71 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-24T21:23:09+01:00",
+      "initial": false,
+      "counts": {
+        "added": 6,
+        "modified": 0,
+        "deleted": 0,
+        "total": 77613
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/tms-bridge/README.md",
+        "resources/[selfcode]/tms-bridge/client.lua",
+        "resources/[selfcode]/tms-bridge/config.lua",
+        "resources/[selfcode]/tms-bridge/endpoint.lua",
+        "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+        "resources/[selfcode]/tms-bridge/server.lua"
+      ],
+      "modified": [],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/tms-bridge/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/endpoint.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        }
+      ]
     }
   ]
 }
