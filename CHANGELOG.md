@@ -2,6 +2,99 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-24 22:23 Uhr
+**+3** neu · **~6** geändert · **-2** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_10_24_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_12_24_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-bridge/html/index.html`
+```diff
++ Neue Datei
+```
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-            "id": 11,
+-            "backupDate": "21_54_19_11_2026",
+-            "backupFile": "banlist_21_54_19_11_2026.json",
+-            "backupTimestamp": 1795121677
+-        },
+-        {
+-            "id": 11,
+-            "backupDate": "21_56_19_11_2026",
+-            "backupFile": "banlist_21_56_19_11_2026.json",
+-            "backupTimestamp": 1795121802
+```
+`~ resources/[selfcode]/tms-bridge/README.md`
+```diff
++### Ränge
++
++Beim Abgleich überträgt die Ressource auch alle Jobs mit ihren Rängen (ESX: `job_grades`, QBCore/Qbox: `Shared.Jobs`).
++Im MDT unter **Ränge & Rechte → Aus dem Spiel** übernimmst du die Ränge eines Jobs für eine Fraktion.
++
++### Mugshots
++
++Mit `Config.Mugshots = true` nimmt die Ressource einmal alle 24 Stunden das Kopfbild jedes Charakters auf, der online ist.
++Das Bild landet in der Datenbank des Panels und erscheint in der Akte. Auf dem Spielserver wird nichts gespeichert.
++Ohne Freigabe im Panel werden keine Bilder aufgenommen.
+```
+`~ resources/[selfcode]/tms-bridge/client.lua`
+```diff
++-- ─── Mugshot ───────────────────────────────────────────────────────────────
++-- Der Server fordert höchstens einmal in 24 Stunden ein Bild an. Aufgenommen wird das Kopfbild des
++-- eigenen Charakters (wie im Pausemenü); die unsichtbare NUI-Seite wandelt es in ein JPEG um.
++
++local mugToken = nil
++
++RegisterNetEvent('tms-bridge:mugshot', function(token)
++  if mugToken then return end
++  mugToken = token
++  CreateThread(function()
+```
+`~ resources/[selfcode]/tms-bridge/config.lua`
+```diff
++-- Mugshots: einmal alle 24 Stunden pro Charakter ein Kopfbild aufnehmen und an TMS senden.
++-- Gespeichert wird das Bild in der Datenbank des Panels. Gilt nur mit Freigabe im Panel (wie oben).
++Config.Mugshots = true
++
+-Config.Notruf = false
++Config.Notruf = true
+```
+`~ resources/[selfcode]/tms-bridge/fxmanifest.lua`
+```diff
+-version '0.3.0'
++version '0.4.0'
++-- Unsichtbare Seite, die das Kopfbild des Charakters in ein JPEG umwandelt (Mugshots)
++ui_page 'html/index.html'
++files { 'html/index.html' }
++
+```
+`~ resources/[selfcode]/tms-bridge/server.lua`
+```diff
++  -- Jobs mit ihren Rängen: ESX führt sie in der Datenbank, QBCore und Qbox in ihrer Konfiguration.
++  local okGrades = okVehicles and (function()
++    local out = {}
++    if layout == 'esx' then
++      local rows = query('SELECT g.job_name AS job, g.grade, g.label, j.label AS jobLabel FROM job_grades g LEFT JOIN jobs j ON j.name = g.job_name')
++      if not rows then return false end
++      for i = 1, #rows do
++        local r = rows[i]
++        if r.job ~= 'unemployed' then out[#out + 1] = { job = r.job, grade = tonumber(r.grade) or 0, label = r.label, jobLabel = r.jobLabel } end
++      end
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_19_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_56_19_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-24 21:23 Uhr
 **+6** neu · **~0** geändert · **-0** gelöscht
 `+ resources/[selfcode]/tms-bridge/README.md`
@@ -1512,182 +1605,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    if hp then LastInside[x.identifier] = nil return hp.entrance end
 +    if gp then LastInside[x.identifier] = nil return gp.garage or gp.entrance end
 +
-```
-
-## 2026-11-20 22:23 Uhr
-**+2** neu · **~6** geändert · **-25** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_57_20_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_21_59_20_11_2026.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1795121802,
-+    "lastBackup": 1795208376,
--            "backupDate": "21_41_15_11_2026",
--            "backupTimestamp": 1794775302,
--            "backupFile": "banlist_21_41_15_11_2026.json"
--        },
--        {
--            "backupDate": "21_43_15_11_2026",
--            "backupTimestamp": 1794775427,
--            "id": 11,
-```
-`~ resources/[selfcode]/lb-tvcast/client/main.lua`
-```diff
--local function drawScreen(q, txn)
--    local a, b, c, d = q[1], q[2], q[3], q[4]
--    -- Vorder- und Rückseite, damit die Zeichenrichtung keine Rolle spielt
--    DrawSpritePoly(a.x, a.y, a.z, b.x, b.y, b.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0)
--    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, d.x, d.y, d.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0)
--    DrawSpritePoly(a.x, a.y, a.z, c.x, c.y, c.z, b.x, b.y, b.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0)
--    DrawSpritePoly(a.x, a.y, a.z, d.x, d.y, d.z, c.x, c.y, c.z, 255, 255, 255, 255, TXD, txn, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0)
-+-- points: obere Kante links->rechts, dann untere Kante links->rechts (siehe client/screen.lua)
-+local function drawScreen(points, txn)
-+    local count = #points / 2
-```
-`~ resources/[selfcode]/lb-tvcast/client/screen.lua`
-```diff
-+--
-+-- Eine Bildfläche ist eine Liste von Punkten in Weltkoordinaten:
-+-- erst die obere Kante von links nach rechts, dann die untere Kante von links nach rechts.
-+-- 4 Punkte = flaches Bild, mehr Punkte = Bild folgt einer gewölbten Leinwand.
-+local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht
-+local SURFACE_GAP = 0.012 -- Abstand des Bildes zur Oberfläche (gegen Flackern)
-+local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen
-+
--local function quadFrom(center, normal, up, width, height)
--    local right = normalize(crossProduct(-normal, up)) -- rechts aus Sicht des Zuschauers
-```
-`~ resources/[selfcode]/lb-tvcast/config.lua`
-```diff
--Config.ScreenInset = 0.06         -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
--Config.WallScreen  = {            -- Bildbreite (Meter), wenn auf eine Wand / Map-Fernseher gezielt wird
-+Config.OnlyProps   = true         -- true = beim Zielen nur Props (Objekte), keine Wände / kein Boden / keine Map-Teile
-+Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
-+Config.WallScreen  = {            -- nur bei OnlyProps = false: Bildbreite (Meter) auf einer Wand / einem Map-Fernseher
--    max = 4.0,
-+    max = 6.0,
-```
-`~ resources/[selfcode]/lb-tvcast/locales.lua`
-```diff
-+        aim_none_props = 'Ziele auf einen Fernseher oder eine Leinwand~n~~INPUT_FRONTEND_RRIGHT~ Abbrechen',
-+        aim_none_props = 'Aim at a TV or a screen prop~n~~INPUT_FRONTEND_RRIGHT~ Cancel',
-```
-`~ resources/[selfcode]/lb-tvcast/server/main.lua`
-```diff
-+-- Bildfläche: obere Kante links->rechts, dann untere Kante links->rechts (4 bis 40 Punkte)
--    if type(c) ~= 'table' or #c ~= 4 then return false end
--    for i = 1, 4 do
-+    if type(c) ~= 'table' then return false end
-+    local n = #c
-+    if n < 4 or n > 40 or n % 2 ~= 0 then return false end
-+    for i = 1, n do
--    local width, height = #(c[2] - c[1]), #(c[4] - c[1])
--    return width >= 0.2 and width <= 8.0 and height >= 0.1 and height <= 5.0
-+    local count = n // 2
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_41_15_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_43_15_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/.fxap`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/Readme.txt`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/client/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/config.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/fxmanifest.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/BebasNeueBold.ttf`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/img/close.png`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/scripts.js`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/styles.css`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/tv/img/background.png`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/tv/index.html`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/tv/style.css`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/ui.html`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/video.css`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/video.html`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/html/video.js`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/language/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/server/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/server/other.lua`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/sql_ESX.sql`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/sql_QBCORE.sql`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/stream/rtxtv.gfx`
-```diff
-- Gelöscht
-```
-`− resources/[rtx]/rtx_tv/utils/mock_data.js`
-```diff
-- Gelöscht
 ```

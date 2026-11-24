@@ -77024,6 +77024,280 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-24T22:23:10+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 6,
+        "deleted": 2,
+        "total": 77614
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_10_24_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_12_24_11_2026.json",
+        "resources/[selfcode]/tms-bridge/html/index.html"
+      ],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[selfcode]/tms-bridge/README.md",
+        "resources/[selfcode]/tms-bridge/client.lua",
+        "resources/[selfcode]/tms-bridge/config.lua",
+        "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+        "resources/[selfcode]/tms-bridge/server.lua"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_19_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_21_56_19_11_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_10_24_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_12_24_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/html/index.html",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"21_54_19_11_2026\",",
+            "-            \"backupFile\": \"banlist_21_54_19_11_2026.json\",",
+            "-            \"backupTimestamp\": 1795121677",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"21_56_19_11_2026\",",
+            "-            \"backupFile\": \"banlist_21_56_19_11_2026.json\",",
+            "-            \"backupTimestamp\": 1795121802",
+            "-        },",
+            "-        {",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795208251,",
+            "-            \"backupTimestamp\": 1795208251",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795208376,",
+            "-            \"backupTimestamp\": 1795208376",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795294863,",
+            "-            \"backupTimestamp\": 1795294863",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795294988,",
+            "-            \"backupTimestamp\": 1795294988",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795381456,",
+            "-            \"backupTimestamp\": 1795381456",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795381581,",
+            "-            \"backupTimestamp\": 1795381581",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795468018,",
+            "-            \"backupTimestamp\": 1795468018",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "+            \"backupTimestamp\": 1795468143,",
+            "-            \"backupTimestamp\": 1795468143",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1795554633,",
+            "+            \"backupDate\": \"22_10_24_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_10_24_11_2026.json\",",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1795554758,",
+            "+            \"backupDate\": \"22_12_24_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_12_24_11_2026.json\",",
+            "+            \"id\": 11",
+            "-    \"lastBackup\": 1795468143",
+            "+    \"lastBackup\": 1795554758"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/README.md",
+          "status": "M",
+          "lines": [
+            "+### Ränge",
+            "+",
+            "+Beim Abgleich überträgt die Ressource auch alle Jobs mit ihren Rängen (ESX: `job_grades`, QBCore/Qbox: `Shared.Jobs`).",
+            "+Im MDT unter **Ränge & Rechte → Aus dem Spiel** übernimmst du die Ränge eines Jobs für eine Fraktion.",
+            "+",
+            "+### Mugshots",
+            "+",
+            "+Mit `Config.Mugshots = true` nimmt die Ressource einmal alle 24 Stunden das Kopfbild jedes Charakters auf, der online ist.",
+            "+Das Bild landet in der Datenbank des Panels und erscheint in der Akte. Auf dem Spielserver wird nichts gespeichert.",
+            "+Ohne Freigabe im Panel werden keine Bilder aufgenommen.",
+            "+",
+            "+| GET | `/mugshots?ids=a,b` | Welche Charaktere brauchen ein neues Bild? |",
+            "+| POST | `/mugshots` | Mugshot speichern (höchstens alle 24 Stunden) |"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/client.lua",
+          "status": "M",
+          "lines": [
+            "+-- ─── Mugshot ───────────────────────────────────────────────────────────────",
+            "+-- Der Server fordert höchstens einmal in 24 Stunden ein Bild an. Aufgenommen wird das Kopfbild des",
+            "+-- eigenen Charakters (wie im Pausemenü); die unsichtbare NUI-Seite wandelt es in ein JPEG um.",
+            "+",
+            "+local mugToken = nil",
+            "+",
+            "+RegisterNetEvent('tms-bridge:mugshot', function(token)",
+            "+  if mugToken then return end",
+            "+  mugToken = token",
+            "+  CreateThread(function()",
+            "+    local ped = PlayerPedId()",
+            "+    local handle = RegisterPedheadshot(ped)",
+            "+    local deadline = GetGameTimer() + 8000",
+            "+    while (not IsPedheadshotReady(handle) or not IsPedheadshotValid(handle)) and GetGameTimer() < deadline do Wait(100) end",
+            "+    if IsPedheadshotReady(handle) and IsPedheadshotValid(handle) then",
+            "+      SendNUIMessage({ type = 'tms_mugshot', id = token, txd = GetPedheadshotTxdString(handle) })",
+            "+      Wait(4000) -- der NUI-Seite Zeit zum Laden der Textur geben",
+            "+    end",
+            "+    UnregisterPedheadshot(handle)",
+            "+    mugToken = nil",
+            "+  end)",
+            "+end)",
+            "+",
+            "+RegisterNUICallback('tms_mugshot', function(data, cb)",
+            "+  cb('ok')",
+            "+  if type(data) ~= 'table' or type(data.image) ~= 'string' or data.id ~= mugToken then return end",
+            "+  -- Latent, weil ein Bild für ein normales Event recht groß ist",
+            "+  TriggerLatentServerEvent('tms-bridge:mugshotResult', 60000, data.id, data.image)",
+            "+end)",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/config.lua",
+          "status": "M",
+          "lines": [
+            "+-- Mugshots: einmal alle 24 Stunden pro Charakter ein Kopfbild aufnehmen und an TMS senden.",
+            "+-- Gespeichert wird das Bild in der Datenbank des Panels. Gilt nur mit Freigabe im Panel (wie oben).",
+            "+Config.Mugshots = true",
+            "+",
+            "-Config.Notruf = false",
+            "+Config.Notruf = true"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "-version '0.3.0'",
+            "+version '0.4.0'",
+            "+-- Unsichtbare Seite, die das Kopfbild des Charakters in ein JPEG umwandelt (Mugshots)",
+            "+ui_page 'html/index.html'",
+            "+files { 'html/index.html' }",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/server.lua",
+          "status": "M",
+          "lines": [
+            "+  -- Jobs mit ihren Rängen: ESX führt sie in der Datenbank, QBCore und Qbox in ihrer Konfiguration.",
+            "+  local okGrades = okVehicles and (function()",
+            "+    local out = {}",
+            "+    if layout == 'esx' then",
+            "+      local rows = query('SELECT g.job_name AS job, g.grade, g.label, j.label AS jobLabel FROM job_grades g LEFT JOIN jobs j ON j.name = g.job_name')",
+            "+      if not rows then return false end",
+            "+      for i = 1, #rows do",
+            "+        local r = rows[i]",
+            "+        if r.job ~= 'unemployed' then out[#out + 1] = { job = r.job, grade = tonumber(r.grade) or 0, label = r.label, jobLabel = r.jobLabel } end",
+            "+      end",
+            "+    else",
+            "+      local ok, jobs = pcall(function()",
+            "+        if GetResourceState('qbx_core') == 'started' then return exports.qbx_core:GetJobs() end",
+            "+        return exports['qb-core']:GetCoreObject().Shared.Jobs",
+            "+      end)",
+            "+      if not ok or type(jobs) ~= 'table' then return true end -- Ränge sind kein Muss, der Rest zählt trotzdem",
+            "+      for name, job in pairs(jobs) do",
+            "+        if name ~= 'unemployed' and type(job) == 'table' and type(job.grades) == 'table' then",
+            "+          for grade, g in pairs(job.grades) do",
+            "+            out[#out + 1] = { job = name, grade = tonumber(grade) or 0, label = type(g) == 'table' and g.name or tostring(g), jobLabel = job.label }",
+            "+          end",
+            "+        end",
+            "+      end",
+            "+    end",
+            "+    for i = 1, #out, 400 do",
+            "+      local part = {}",
+            "+      for k = i, math.min(i + 399, #out) do part[#part + 1] = out[k] end",
+            "+      if not push({ kind = 'grades', run = run, rows = part }) then return false end",
+            "+    end",
+            "+    return true",
+            "+  end)()",
+            "+",
+            "-  if okChars and okVehicles then",
+            "+  if okChars and okVehicles and okGrades then",
+            "+  if state == 'approved' and TMS_MugshotTick then TMS_MugshotTick() end",
+            "+end",
+            "+",
+            "+-- ─── Mugshots ──────────────────────────────────────────────────────────────",
+            "+-- Einmal alle 24 Stunden pro Charakter: Der Client nimmt das Kopfbild seines Charakters auf,",
+            "+-- der Server schickt es an TMS. Gespeichert wird es in der Datenbank des Panels, nicht auf dem Spielserver.",
+            "+-- TMS sagt, welche Charaktere ein neues Bild brauchen – es wird also nichts doppelt aufgenommen.",
+            "+",
+            "+local mugPending = {}   -- [src] = { id = Charakter-ID, token = Zufallswert, at = Zeit }",
+            "+local mugTried = {}     -- [src] = letzte Anforderung, damit ein Client ohne Antwort nicht im Minutentakt gefragt wird",
+            "+local mugBusy = false",
+            "+",
+            "+local function characterId(src)",
+            "+  local ok, id = pcall(function()",
+            "+    if GetResourceState('es_extended') == 'started' then",
+            "+      local x = exports.es_extended:getSharedObject().GetPlayerFromId(src)",
+            "+      return x and x.identifier",
+            "+    elseif GetResourceState('qbx_core') == 'started' then",
+            "+      local p = exports.qbx_core:GetPlayer(src)",
+            "+      return p and p.PlayerData and p.PlayerData.citizenid",
+            "+    elseif GetResourceState('qb-core') == 'started' then",
+            "+      local p = exports['qb-core']:GetCoreObject().Functions.GetPlayer(src)",
+            "+      return p and p.PlayerData and p.PlayerData.citizenid",
+            "+    end",
+            "+  end)",
+            "+  return ok and type(id) == 'string' and id ~= '' and id or nil"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_19_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_21_56_19_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
