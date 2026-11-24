@@ -76907,6 +76907,58 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-24T18:23:11+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77607
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/api_new/server/inventory.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/server/inventory.lua",
+          "status": "M",
+          "lines": [
+            "-    local ref",
+            "-        ref = owner and { id = id, owner = owner } or id",
+            "-    else",
+            "-        ref = (kind == 'trunk' and 'trunk' or 'glove') .. trim(id)",
+            "+        local ref = owner and { id = id, owner = owner } or id",
+            "+        local r = withTimeout(4000, function() return exports.ox_inventory:GetInventory(ref) end)",
+            "+        if r == nil then return nil, nil, 'ox_inventory hat das Inventar nicht rechtzeitig geladen' end",
+            "+        if r[1] and type(r[2]) == 'table' then return ref end",
+            "+        return nil",
+            "-    local r = withTimeout(4000, function() return exports.ox_inventory:GetInventory(ref) end)",
+            "-    if r == nil then return nil, nil, 'ox_inventory hat das Inventar nicht rechtzeitig geladen' end",
+            "-    if r[1] and type(r[2]) == 'table' then return ref end",
+            "+    -- Fahrzeuge: nur nachsehen, ob das Inventar schon im Speicher liegt. Der feste Typ verhindert, dass ox",
+            "+    -- versucht, es über das Fahrzeug in der Welt zu laden (wartet auf den Client und schreibt für jedes",
+            "+    -- eingeparkte Fahrzeug \"Failed to load vehicle inventory data\" in die Konsole). Nicht geladen = Datenbank.",
+            "+    local prefix = kind == 'trunk' and 'trunk' or 'glove'",
+            "+    local seen = {}",
+            "+    for _, plate in ipairs({ trim(id), id }) do",
+            "+        if not seen[plate] then",
+            "+            seen[plate] = true",
+            "+            local ref = { id = prefix .. plate, type = 'stash' }",
+            "+            local called, inv = pcall(function() return exports.ox_inventory:GetInventory(ref) end)",
+            "+            if called and type(inv) == 'table' then return ref end",
+            "+        end",
+            "+    end",
+            "+            -- ox speichert erst später: die gespeicherte Zeile gleich mitziehen, damit die Suche im Panel",
+            "+            -- den Ort nicht bis zum nächsten Speichern weiter anzeigt. ox überschreibt sie danach ohnehin.",
+            "+            pcall(removeStored, kind, id, owner, item, count and removed or nil)"
+          ]
+        }
+      ]
     }
   ]
 }
