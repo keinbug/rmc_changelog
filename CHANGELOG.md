@@ -2,6 +2,53 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-24 23:23 Uhr
+**+0** neu · **~4** geändert · **-0** gelöscht
+`~ resources/[selfcode]/tms-bridge/README.md`
+```diff
++## Alarmierung aus dem Panel ins Spiel
++
++In der Leitstelle im MDT: Einsatz öffnen → **Alarmieren → Im Spiel alarmieren** → Fraktion wählen.
++Alle Spieler mit dem Job der Fraktion (z. B. `police`, `ambulance`) bekommen die Meldung innerhalb weniger Sekunden.
++
++- Mit **cd_dispatch** (Codesign) erscheint sie dort als Meldung mit Blip.
++- Für andere Dispatch-Skripte feuert die Ressource das Server-Event `tms-bridge:alert`:
++
++```lua
++AddEventHandler('tms-bridge:alert', function(alert)
+```
+`~ resources/[selfcode]/tms-bridge/config.lua`
+```diff
++-- Alarmierung aus dem Panel ins Spiel: Wird in der Leitstelle „Im Spiel alarmieren“ gewählt,
++-- bekommen alle Spieler mit dem Job der Fraktion (z. B. police, ambulance) die Meldung.
++-- Läuft cd_dispatch (Codesign), erscheint sie dort mit Blip. Andere Skripte: Server-Event 'tms-bridge:alert'.
++Config.Alerts = true
++
++-- Wie oft die Ressource nach neuen Alarmierungen fragt, in Sekunden (mindestens 2).
++Config.AlertInterval = 5
++
++-- Blip und Ton für cd_dispatch.
++Config.AlertBlip = { sprite = 431, scale = 1.2, time = 5, sound = 1 }
+```
+`~ resources/[selfcode]/tms-bridge/fxmanifest.lua`
+```diff
+-version '0.4.0'
++version '0.6.1'
+```
+`~ resources/[selfcode]/tms-bridge/server.lua`
+```diff
++-- ─── Alarmierung aus dem Panel ─────────────────────────────────────────────
++-- Die Leitstelle alarmiert im MDT eine Fraktion („Im Spiel alarmieren“). Die Ressource holt die
++-- Alarmierung ab und löst sie für alle Spieler mit dem passenden Job aus.
++--   · cd_dispatch (Codesign): Meldung mit Blip über cd_dispatch:AddNotification
++--   · immer zusätzlich das Server-Event 'tms-bridge:alert' (alert) – für andere Dispatch-Skripte
++
++local function fireAlert(a)
++  local jobs = type(a.jobs) == 'table' and a.jobs or {}
++  local blipCfg = type(Config.AlertBlip) == 'table' and Config.AlertBlip or {}
++  local title = (a.keyword and a.keyword ~= '' and (a.keyword .. ' - ') or '') .. tostring(a.title or 'Einsatz')
+```
+
 ## 2026-11-24 22:23 Uhr
 **+3** neu · **~6** geändert · **-2** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_10_24_11_2026.json`
@@ -1506,103 +1553,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"15529898236
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
-```
-
-## 2026-11-20 23:23 Uhr
-**+0** neu · **~8** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_housing/README.md`
-```diff
--- **Dusche:** *Gerät aufstellen* → *Dusche* → *Bestehendes Objekt auswählen* → auf den **Boden der Dusche** zielen und „Diese Stelle“ mit `E` bestätigen.
--  Danach `ox_target` → *Duschen*: Die Figur läuft hin, zieht sich aus (nur `esx_skin`), duscht 20 Sek. und ist danach sauber (Blut/Dreck weg) und nass.
-+- **Dusche:** *Gerät aufstellen* → *Dusche* → *Bestehendes Objekt auswählen*. Schritt 1: die **Bedien-Stelle** (ox_target) setzen, z. B. Armatur oder Wand. Schritt 2: die **Wasser-Stelle** setzen, also den Boden unter dem Duschkopf (max. 3 m von der Bedien-Stelle).
-+  Danach `ox_target` → *Duschen*: Die Figur läuft zur Wasser-Stelle, duscht 20 Sek. unter der Regendusche und ist danach sauber (Blut/Dreck weg) und nass.
-```
-`~ resources/[selfcode]/rmc_housing/client/appliances.lua`
-```diff
--local KIND_DESC = { oven = 'z. B. TK-Pizza backen', shower = 'Dusche im Bad anvisieren, dort wird geduscht' }
-+local KIND_DESC = { oven = 'z. B. TK-Pizza backen', shower = 'Erst die Bedien-Stelle (ox_target), dann die Wasser-Stelle setzen' }
--            description = kind == 'shower' and 'Die Dusche im Bad anvisieren · „Diese Stelle“ = hier wird geduscht'
-+            description = kind == 'shower' and 'Armatur oder Wand anvisieren · danach setzt du die Wasser-Stelle'
-+    local r
--        local r = Appliances.pickExisting()
-+        r = Appliances.pickExisting(kind == 'shower' and {
-+            hint = 'Schritt 1/2 · Bedien-Stelle (ox_target)  \n[Zielen] Armatur / Wand anvisieren  \n[Mausrad] Objekt / „Diese Stelle“ wechseln  \n[E] Auswählen  \n[BACKSPACE] Abbrechen' } or nil)
--        return r
-+    else
-```
-`~ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
--    if save and e.dirty then
-+    if save then -- immer speichern: Admin-Punkte ersetzen dabei die eigenen Punkte des Mieters
--    opts[#opts + 1] = { title = Edit.dirty and 'Speichern & zurück' or 'Fertig & zurück', icon = 'floppy-disk', onSelect = function() stopEdit(true) end }
-+    opts[#opts + 1] = { title = 'Speichern & zurück', icon = 'floppy-disk', description = 'Deine Punkte gelten danach für alle · eigene Punkte des Mieters werden ersetzt', onSelect = function() stopEdit(true) end }
--    if not lib.callback.await('rmc_housing:admin:preview', false, true) then return end
-+    local okPrev, inside = lib.callback.await('rmc_housing:admin:preview', false, true, p.id)
-+    if not okPrev then return end
-+    if inside then Notify(('Du bist in der Dimension des Hauses · %d Spieler drin.'):format(inside), 'inform') end
-```
-`~ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
--local function boot()
-+-- restarted = true: das Script wurde neu gestartet (kein Login)
-+local function boot(restarted)
--    -- im Interior ausgeloggt? -> zurück vor die Tür
-+    -- im Interior ausgeloggt oder Script neu gestartet? -> zurück vor die Tür
--                notify('Du bist vor deiner Tür aufgewacht.', 'inform')
-+                if restarted then
-+                    ESX.ShowNotification('Du wurdest wegen eines Neustarts aus dem Haus entfernt.')
-+                else
-+                    notify('Du bist vor deiner Tür aufgewacht.', 'inform')
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
--        -- Dusche: am einfachsten "Bestehendes Objekt auswählen" → die Dusche im Bad anvisieren ("Diese Stelle").
-+        -- Dusche: "Bestehendes Objekt auswählen" → erst die Bedien-Stelle (ox_target), dann die Wasser-Stelle (Boden unter dem Duschkopf) setzen.
--            undress = true,      -- zum Duschen ausziehen (nur mit Config.Clothing.provider = 'esx_skin'), danach wieder anziehen
-+            undress = false,     -- zum Duschen ausziehen (nur mit Config.Clothing.provider = 'esx_skin'), danach wieder anziehen
--            particle = { dict = 'core', name = 'ent_sht_water', scale = 1.0, height = 1.1, interval = 350 }, -- Wasser über dem Kopf
-+            -- Regendusche: mehrere durchgehende Wasserstrahlen von oben, fest über der Dusch-Stelle (bei jeder Dusche gleich).
-+            -- Sprüht das Wasser in die falsche Richtung: rot = vec3(0.0, 0.0, 0.0) und height = 1.2 setzen (Wasser auf Brusthöhe).
-+            particle = {
-+                dict = 'core', name = 'ent_sht_water',
-+                streams = 9,                   -- Anzahl Strahlen je Ebene (1 in der Mitte, Rest im Kreis) · mehr = mehr Wasser
-```
-`~ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+    -- Admin-Punkte haben Vorrang: für jeden Punkt, den der Admin gesetzt hat, wird der eigene Punkt des Mieters gelöscht
-+    local l, cleared = Leases[p.id], 0
-+    if l and l.points then
-+        for _, k in ipairs(POINT_KEYS) do
-+            if points[k] and l.points[k] then l.points[k] = nil; cleared = cleared + 1 end
-+        end
-+        if cleared > 0 then Housing.saveLease(l) end
-+    end
--    return true, 'Punkte gespeichert.'
-+    return true, cleared > 0 and ('Punkte gespeichert. %d eigene(r) Punkt(e) des Mieters ersetzt.'):format(cleared) or 'Punkte gespeichert.'
-```
-`~ resources/[selfcode]/rmc_housing/server/appliances.lua`
-```diff
-+    elseif a.kind == 'shower' and type(a.water) == 'table' then
-+        -- eigene Wasser-Stelle (Boden unter dem Duschkopf): dort steht man und dort kommt das Wasser herunter
-+        local wx, wy, wz = tonumber(a.water.x), tonumber(a.water.y), tonumber(a.water.z)
-+        if wx and wy and wz and #(vector3(wx, wy, wz) - vector3(x, y, z)) <= 3.0 then
-+            out.water = { x = round(wx, 3), y = round(wy, 3), z = round(wz, 3) }
-+        end
--        out[#out + 1] = { id = a.id, kind = a.kind, model = a.model, existing = a.existing, spot = a.spot, x = a.x, y = a.y, z = a.z, h = a.h,
-+        out[#out + 1] = { id = a.id, kind = a.kind, model = a.model, existing = a.existing, spot = a.spot, x = a.x, y = a.y, z = a.z, h = a.h, water = a.water,
--    Showers[key] = { src = src, untilAt = os.time() + seconds + 4 }
--    Housing.forInside(pid, function(p) TriggerClientEvent('rmc_housing:shower', p, pid, a.id, src, true, seconds + 4) end)
-```
-`~ resources/[selfcode]/rmc_housing/server/main.lua`
-```diff
-+    while not Housing.ready do Wait(100) end
-+
-+    -- Script-Neustart: der Routing-Bucket bleibt erhalten und verrät, in welchem Objekt (Wohnung / Garage) der Spieler war
-+    local bucket = GetPlayerRoutingBucket(src)
-+    local hp, gp = Properties[bucket - Config.BucketOffset], Properties[bucket - Config.Garage.bucketOffset]
-+    Inside[src], AdminInside[src], CamViewers[src] = nil, nil, nil
-+    if bucket ~= 0 then SetPlayerRoutingBucket(src, 0) end
-+    if hp then LastInside[x.identifier] = nil return hp.entrance end
-+    if gp then LastInside[x.identifier] = nil return gp.garage or gp.entrance end
-+
 ```
