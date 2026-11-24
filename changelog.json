@@ -77469,6 +77469,50 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-25T00:22:35+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77614
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css",
+        "resources/[oresmon]/0r-radio/web/src/components/Radio/index.css",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css",
+          "status": "M",
+          "lines": [
+            "-.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-height:18",
+            "+.members-list-anchor{position:absolute;top:0;bottom:360px;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-heigh"
+          ]
+        },
+        {
+          "path": "resources/[oresmon]/0r-radio/web/src/components/Radio/index.css",
+          "status": "M",
+          "lines": [
+            "-.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}",
+            "+.members-list-anchor{position:absolute;top:0;bottom:360px;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\"},\"housing\":{\"url\":\"https://discord.com/api/webhooks/1570424984998912021/***\",\"webhookId\":\"1570424984998912021\",\"channelId\":\"1570424980183842916\"",
+            "+{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-24T23:01:08Z\",\"webhooks\":{\"housing\":{\"url\":\"https://discord.com/api/webhooks/1570424984998912021/***\",\"webhookId\":\"1570424984998912021\",\"channelId\":\"1570424980183842916\"},\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/**"
+          ]
+        }
+      ]
     }
   ]
 }

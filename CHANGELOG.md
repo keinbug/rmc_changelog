@@ -2,6 +2,24 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-25 00:22 Uhr
+**+0** neu · **~3** geändert · **-0** gelöscht
+`~ resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css`
+```diff
+-.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-height:18
++.members-list-anchor{position:absolute;top:0;bottom:360px;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-heigh
+```
+`~ resources/[oresmon]/0r-radio/web/src/components/Radio/index.css`
+```diff
+-.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}
++.members-list-anchor{position:absolute;top:0;bottom:360px;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","webhookId":"1570424984998912021","channelId":"1570424980183842916"
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-24T23:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","webhookId":"1570424984998912021","channelId":"1570424980183842916"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/**
+```
+
 ## 2026-11-24 23:23 Uhr
 **+0** neu · **~4** geändert · **-0** gelöscht
 `~ resources/[selfcode]/tms-bridge/README.md`
@@ -1525,32 +1543,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T09:00:58Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"basicneeds":{"url":"https://discord.com/api/webhooks/155297193186977
-```
-
-## 2026-11-21 00:22 Uhr
-**+0** neu · **~3** geändert · **-0** gelöscht
-`~ resources/[selfcode]/lb-tvcast/client/screen.lua`
-```diff
-+-- Geometrie: Fernseher finden, Form der Bildfläche erkennen, Zielmodus.
-+--
-+-- Die Form wird über die Kollision des Objekts ertastet: vom Startpunkt aus wird in alle
-+-- vier Richtungen so weit gegangen, bis die Fläche endet (Kante, Stufe oder anderes Objekt).
--local PROBE = 0.8       -- so weit vor/hinter der vermuteten Fläche wird nach der echten Oberfläche gesucht
-+local PROBE = 1.2         -- so weit vor/hinter der vermuteten Fläche wird nach der Oberfläche gesucht
--local COLUMNS = 10      -- Unterteilung bei gewölbten Flächen
-+local COLUMNS = 10        -- Unterteilung bei gewölbten Flächen
-+local EDGE_STEP = 0.05    -- Schrittweite beim Abtasten der Kanten
-+local EDGE_TOLERANCE = 0.02 -- ab dieser Stufe gilt die Fläche als zu Ende
-```
-`~ resources/[selfcode]/lb-tvcast/config.lua`
-```diff
--Config.ScreenInset = 0.06        -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
-+Config.ScreenFit   = 'contain'    -- 'contain' = Bild bleibt 16:9 und wird in die erkannte Fläche eingepasst
-+                                  -- 'stretch' = Bild füllt die erkannte Fläche komplett (kann verzerren)
-+Config.ScreenInset = 0.06       -- Rand (Anteil), der bei erkannten TV-Modellen für den Rahmen abgezogen wird
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"esx_resources":{"url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557386346782265425","webhookId":"1557386349395583076"},"txadmin":{"url":"https://discord.com/api/webhooks/1552989826213617715/***","channelId":"15529898236
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
 ```
