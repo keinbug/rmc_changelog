@@ -2,6 +2,33 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-24 17:23 Uhr
+**+2** neu · **~3** geändert · **-0** gelöscht
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/inventory.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/inventory.lua',
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
+-    Price     = 5000,
+-    MaxAmount = 10,                 -- max. Stück pro Kauf
++    Price     = 12000,
++    MaxAmount = 5,                 -- max. Stück pro Kauf
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297
++{"webhooks":{"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/***","webhookId":"1552971107500433498","channelId":"1552971103910236172"},"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","webhookId":"1570424984998912021","channelId":"1570424980183842916"
+```
+
 ## 2026-11-24 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -2341,49 +2368,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ server.cfg.bkp`
 ```diff
 (Secrets — Inhalt unterdrückt)
-```
-
-## 2026-11-20 19:23 Uhr
-**+3** neu · **~3** geändert · **-0** gelöscht
-`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/rolesync.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/settings.lua.bak-rolesync`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/banlist.json`
-```diff
--        "banid": 1,
--        "reason": "Test ( Spielername: Unknown - table: 3c6ef372fe94f824 ), \nGebannt von: Sebbi",
--        "expireString": "20/11/2026 \t19:17:00",
--        "identifiers": [
--            "license:dcdd8750773c33c2ce3ff658853fe0c909367dba"
--        ],
--        "banner": "Sebbi",
--        "expire": 1795198620,
--        "name": "Unknown"
--    },
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/rolesync.lua',
-```
-`~ resources/[selfcode]/api_new/settings.lua`
-```diff
-+
-+-- Role Sync (server/rolesync.lua): Discord-Rolle -> Ingame-Gruppe beim Join
-+-- Token und Guild kommen aus rmc_core (server/discord_config.lua bzw. Convar rmc_discord_bot_token).
-+Settings.RoleSync = {
-+    Enabled = true,
-+    Roles = { -- Reihenfolge = Priorität (die erste passende Rolle gewinnt)
-+        { id = '1573394820427157634', label = 'Owner',   group = 'owner' },
-+        { id = '1573394990757978212', label = 'Admin',   group = 'admin' },
-+        { id = '1573395118583709877', label = 'Mod',     group = 'mod' },
-+        { id = '1573395173361197136', label = 'Support', group = 'support' },
 ```

@@ -76845,6 +76845,68 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-24T17:23:13+01:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 3,
+        "deleted": 0,
+        "total": 77607
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory",
+        "resources/[selfcode]/api_new/server/inventory.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/inventory.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/inventory.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "-    Price     = 5000,",
+            "-    MaxAmount = 10,                 -- max. Stück pro Kauf",
+            "+    Price     = 12000,",
+            "+    MaxAmount = 5,                 -- max. Stück pro Kauf"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"webhooks\":{\"default\":{\"url\":\"https://discord.com/api/webhooks/1551161552537653269/***\",\"webhookId\":\"1551161552537653269\",\"channelId\":\"1551161550096699392\"},\"ausbluten\":{\"url\":\"https://discord.com/api/webhooks/1552971079239077968/***\",\"webhookId\":\"1552971079239077968\",\"channelId\":\"1552971076718297",
+            "+{\"webhooks\":{\"troll\":{\"url\":\"https://discord.com/api/webhooks/1552971107500433498/***\",\"webhookId\":\"1552971107500433498\",\"channelId\":\"1552971103910236172\"},\"housing\":{\"url\":\"https://discord.com/api/webhooks/1570424984998912021/***\",\"webhookId\":\"1570424984998912021\",\"channelId\":\"1570424980183842916\""
+          ]
+        }
+      ]
     }
   ]
 }
