@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 00:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-25T17:01:01Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/**
++{"updatedAt":"2026-11-25T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.
+```
+
 ## 2026-11-25 22:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -1288,161 +1296,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +        syncDraft(); hide();
 +        return post('creator:askDoor', { draft: D });
 +      }
-```
-
-## 2026-11-21 17:23 Uhr
-**+8** neu · **~12** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_housing/client/doors.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/README.md`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/client/cutscene.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/client/main.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/client/missions.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/config.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/rmc_missions/server/main.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_doors/server/main.lua`
-```diff
-+
-+---------------------------------------------------------------------
-+-- Exports für andere Scripts (z. B. rmc_housing): Türen anlegen / entfernen
-+---------------------------------------------------------------------
-+local function insertDoor(door)
-+    local inserted = MySQL.insert.await('INSERT INTO rmc_doors (name, data) VALUES (?, ?)', {
-+        door.name, encodeDoor(door),
-+    })
-+    local id = tonumber(type(inserted) == 'table' and (inserted.insertId or inserted[1]) or inserted)
-+    if not id then return nil end
-```
-`~ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-+-- Vorschlag für Name / Adresse / Bezirk aus der Position (Standard: da, wo der Admin steht).
-+-- GTA kennt keine Hausnummern: die Nummer wird fest aus den Koordinaten gebildet, dieselbe Tür ergibt immer dieselbe Nummer.
-+RegisterNUICallback('creator:getAddress', function(d, cb)
-+    local p = type(d) == 'table' and tonumber(d.x) and tonumber(d.y) and tonumber(d.z) and d or myPos()
-+    local hash = GetStreetNameAtCoord(p.x + 0.0, p.y + 0.0, p.z + 0.0)
-+    local street = hash ~= 0 and GetStreetNameFromHashKey(hash) or ''
-+    local zone = GetLabelText(GetNameOfZone(p.x + 0.0, p.y + 0.0, p.z + 0.0))
-+    if not zone or zone == 'NULL' then zone = '' end
-+    local address = ''
-+    if street ~= '' then
-```
-`~ resources/[selfcode]/rmc_housing/client/garage.lua`
-```diff
-+    RestoreMinimap()
-+        HideMinimap()
-```
-`~ resources/[selfcode]/rmc_housing/client/interior.lua`
-```diff
-+            -- Gruppen (nur eins wählbar): ist nichts gewählt, gilt der Standard der Gruppe
-+            local chosen = {}
-+            for _, set in ipairs(int.entitySets or {}) do
-+                if set.group and d.sets and d.sets[set.key] then chosen[set.group] = true end
-+            end
-+            for _, set in ipairs(int.entitySets or {}) do
-+                if set.group and set.default and not chosen[set.group] then ActivateInteriorEntitySet(id, set.key) end
-+            end
-```
-`~ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
--function OpenMarket(selected)
-+-- single = true (an der Haustür): nur das gewählte Objekt zeigen, nicht den ganzen Mietmarkt
-+function OpenMarket(selected, single)
--    OpenNui({ action = 'open', screen = 'market', data = data, selected = selected })
-+    if single then
-+        local only = {}
-+        for _, p in ipairs(data.properties) do
-+            if p.id == selected then only[1] = p end
-+        end
-+        if not only[1] then return notify('Für dieses Objekt gibt es kein Angebot.', 'error') end
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
-+        bunker = 800, clubhouse = 550, lab = 600, warehouse = 400,
-+        hangar = 1200, facility = 1500, nightclub = 1100,
-+-- Türen im Interior, die der Admin unter "Punkte bearbeiten" verschließen oder löschen kann
-+Config.Doors = { max = 20 }
-+
-+-- Minimap ausblenden, solange man in einer Wohnung oder Hausgarage ist (beim Verlassen kommt sie zurück)
-+Config.HideMinimapInside = true
-+
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'client/doors.lua',
-```
-`~ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+-- Verschlossene / gelöschte Türen im Interior: { model, x, y, z, h, mode = 'lock' | 'remove' }
-+local function cleanDoors(list, spawn)
-+    local out = {}
-+    if type(list) ~= 'table' then return out end
-+    for _, d in ipairs(list) do
-+        local v = type(d) == 'table' and vec(d)
-+        local model = v and tonumber(d.model)
-+        if model and model ~= 0 and #out < Config.Doors.max
-+            and #(vector3(v.x, v.y, v.z) - vector3(spawn.x, spawn.y, spawn.z)) <= 80.0 then
-+            out[#out + 1] = { model = math.floor(model), x = v.x, y = v.y, z = v.z, h = (tonumber(d.h) or 0.0) + 0.0,
-```
-`~ resources/[selfcode]/rmc_housing/shared/interiors.lua`
-```diff
-+---------------------------------------------------------------------
-+-- Story-Häuser & Motel (liegen in der Welt bzw. sind immer geladen, bob74_ipl räumt sie auf)
-+---------------------------------------------------------------------
-+static('motel',           'Motelzimmer',                    'lowend',  'house', 'lowend',  vec4(152.2605, -1004.471, -98.99999, 0.0))
-+static('sp_michael',      'Villa · Rockford Hills',         'stilt',   'house', 'highend', vec4(-813.603, 179.474, 72.1548, 0.0))
-+static('sp_franklin',     'Villa · 3671 Whispymound Drive', 'stilt',   'house', 'stilt1',  vec4(7.11903, 536.615, 176.028, 0.0))
-+static('sp_franklin_aunt','Haus · Forum Drive',             'medium',  'house', 'medium',  vec4(-9.96562, -1438.54, 31.1015, 0.0))
-+static('sp_trevor',       'Trailer · Sandy Shores',         'lowend',  'house', 'lowend',  vec4(1972.61, 3817.04, 33.4283, 0.0))
-+static('sp_floyd',        'Apartment · Vespucci Beach',     'medium',  'house', 'medium',  vec4(-1150.703, -1520.713, 10.633, 0.0))
-+static('sp_lester',       'Haus · El Burro Heights',        'lowend',  'house', 'lowend',  vec4(1273.9, -1719.305, 54.771, 0.0))
-```
-`~ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
--  if (m.screen === 'market') openMarket(m.data, m.selected);
-+  if (m.screen === 'market') openMarket(m.data, m.selected, m.single);
--function openMarket(data, selected) {
-+// single: an der Haustür geöffnet, es gibt nur dieses eine Objekt (ohne Liste, Suche und Filter)
-+function openMarket(data, selected, single) {
-+  S.mSingle = !!single;
-+  $('#v-market').classList.toggle('single', S.mSingle);
-+  $('#m-eyebrow').textContent = S.mSingle ? 'Mietangebot' : 'Immobilienbüro';
-+  $('#m-title').textContent = S.mSingle ? ((list[0] || {}).label || 'Objekt') : 'Häuser & Wohnungen mieten';
-+  if (S.mSingle) { // Suche/Filter vom letzten Besuch im Büro dürfen das Objekt nicht ausblenden
-```
-`~ resources/[selfcode]/rmc_housing/web/index.html`
-```diff
--        <div><div class="eyebrow">Immobilienbüro</div><h2>Häuser &amp; Wohnungen mieten</h2></div>
-+        <div><div class="eyebrow" id="m-eyebrow">Immobilienbüro</div><h2 id="m-title">Häuser &amp; Wohnungen mieten</h2></div>
-```
-`~ resources/[selfcode]/rmc_housing/web/style.css`
-```diff
-+
-+/* Mietangebot an der Haustür: nur dieses eine Objekt, ohne Liste */
-+#app #v-market.single{max-width:540px}
-+#v-market.single .market{grid-template-columns:1fr;height:auto;max-height:calc(94vh - 84px)}
-+#v-market.single .m-list{display:none}
 ```
