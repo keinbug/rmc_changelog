@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-25 18:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-25T10:34:50Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"15529710
++{"updatedAt":"2026-11-25T17:01:01Z","categoryId":"1551161549018759170","webhooks":{"willkommen":{"url":"https://discord.com/api/webhooks/1551161597853049005/***","channelId":"1551161595436990575","webhookId":"1551161597853049005"},"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/**
+```
+
 ## 2026-11-25 12:22 Uhr
 **+1** neu · **~1** geändert · **-0** gelöscht
 `+ core`
@@ -1520,12 +1528,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    elseif mode ~= 'admin' and distTo(src, p.entrance) > 8.0 then
 -lib.callback.register('rmc_housing:recover', function(src)
 +-- Spieler hat sich im Interior ausgeloggt: zurück an die Tür.
-```
-
-## 2026-11-21 15:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/server/discord_config.lua`
-```diff
--    Token = '***TOKEN***',
-+    Token = '***TOKEN***',
 ```
