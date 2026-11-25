@@ -2,6 +2,18 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-25 12:22 Uhr
+**+1** neu · **~1** geändert · **-0** gelöscht
+`+ core`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-25T09:01:24Z","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"poster":{"channelId":"1560007812342489120","webhookId":"156000
++{"updatedAt":"2026-11-25T10:34:50Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","channelId":"1417917687723724872","webhookId":"1552971931869777932"},"sozialstunden":{"url":"https://discord.com/api/webhooks/1552971083731181709/***","channelId":"15529710
+```
+
 ## 2026-11-25 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1516,31 +1528,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -    Token = '***TOKEN***',
 +    Token = '***TOKEN***',
-```
-
-## 2026-11-21 14:22 Uhr
-**+0** neu · **~0** geändert · **-6** gelöscht
-`− resources/[selfcode]/api_new/fxmanifest.lua.bak-refunds`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/api_new/fxmanifest.lua.bak-rolesync`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/api_new/fxmanifest.lua.bak-screen`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/api_new/fxmanifest.lua.bak-txadmin`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/api_new/settings.lua.bak-rolesync`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/api_new/settings.lua.bak-txadmin`
-```diff
-- Gelöscht
 ```
