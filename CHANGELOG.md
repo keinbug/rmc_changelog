@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-25 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-24T23:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","webhookId":"1570424984998912021","channelId":"1570424980183842916"},"troll":{"url":"https://discord.com/api/webhooks/1552971107500433498/**
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-25T09:01:24Z","webhooks":{"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***"},"poster":{"channelId":"1560007812342489120","webhookId":"156000
+```
+
 ## 2026-11-25 00:22 Uhr
 **+0** neu · **~3** geändert · **-0** gelöscht
 `~ resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css`
@@ -1535,12 +1543,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/api_new/settings.lua.bak-txadmin`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-21 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-20T23:00:42Z","webhooks":{"faction":{"channelId":"1551161570439208960","webhookId":"1551161573194731652","url":"https://discord.com/api/webhooks/1551161573194731652/***"},"troll":{"channelId":"1552971103910236172","webhookId":"155297110750043
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T09:00:58Z","webhooks":{"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297200"},"basicneeds":{"url":"https://discord.com/api/webhooks/155297193186977
 ```
