@@ -2,6 +2,57 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 15:22 Uhr
+**+12** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[selfcode]/tms-pawn/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-pawn/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-pawn/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-pawn/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-pawn/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-pawn/server_config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/server/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-poster/server_config.lua`
+```diff
++ Neue Datei
+```
+
 ## 2026-11-26 10:22 Uhr
 **+0** neu · **~2** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -1101,137 +1152,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -        })
 -    end
 +    TriggerClientEvent('esx:showNotification', src, msg, 'info', nil, 'Discord-Setup')
-```
-
-## 2026-11-21 19:23 Uhr
-**+2** neu · **~3** geändert · **-25** gelöscht
-`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/lifeinvader.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/api_new/README.md`
-```diff
-+
-+---
-+
-+## Lifeinvader (rmc_lifeinvader)
-+
-+Liest die Werbungen aus der Tabelle `lifeinvader_ads`. Der Discord-Bot holt darüber neue Werbungen ab und postet sie.
-+
-+### Neueste Werbungen / nur neue seit einer ID
-+```bash
-+curl "$API/lifeinvader/ads?limit=20" -H "X-API-Key: $KEY"
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/lifeinvader.lua',
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"faction":{"url":"https://discord.com/api/webhooks/1551161573194731652/***","channelId":"1551161570439208960","webhookId":"1551161573194731652"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
-+{"updatedAt":"2026-11-21T17:39:10Z","webhooks":{"clothing_strip":{"channelId":"1551161585614061618","webhookId":"1551161592467423353","url":"https://discord.com/api/webhooks/1551161592467423353/***"},"bell":{"channelId":"1471556817061544068","webhookId":"1471556835994767400","url":"https://discord.
-```
-`− resources/[selfcode]/rmc_api/client/admin_actions.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/client/phone.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/config/api_key.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/config/sakura_lager.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/fxmanifest.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/main.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/admin.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/banking.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/billing.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/boss.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/einreise.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/hotel.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/inventory.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/items.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/medical.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/multichar.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/phone.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/players.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/refunds.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/sakura_lager.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/server_info.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/txadmin.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/modules/txadmin_profile.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/utils/auth.lua`
-```diff
-- Gelöscht
-```
-`− resources/[selfcode]/rmc_api/server/utils/response.lua`
-```diff
-- Gelöscht
 ```
