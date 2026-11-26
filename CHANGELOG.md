@@ -2,6 +2,27 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 10:22 Uhr
+**+0** neu · **~2** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb": [
+-        {
+-            "value": 100,
+-            "receiver_name": "Bank (Kartenerneuerung)",
+-            "date": "2026/02/17 - 21:57:11",
+-            "sender_identifier": "char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb",
+-            "sender_name": "Nova Brandt",
+-            "receiver_identifier": "bank"
+-        },
+-        {
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-25T23:01:09Z","categoryId":"1551161549018759170","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"doors":{"webhookId":"1559665847771988080","url":"https://discord.
++{"categoryId":"1551161549018759170","webhooks":{"me":{"url":"https://discord.com/api/webhooks/1513950212480307490/***","channelId":"1513950191936344245","webhookId":"1513950212480307490"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"1552971094267527169","web
+```
+
 ## 2026-11-26 00:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -1213,87 +1234,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[selfcode]/rmc_api/server/utils/response.lua`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-21 18:23 Uhr
-**+1** neu · **~7** geändert · **-0** gelöscht
-`+ resources/[selfcode]/rmc_housing/server/presets.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[selfcode]/rmc_housing/client/creator.lua`
-```diff
-+-- Nach dem Setzen des Eingangs: fragen, ob die echte Haustür dauerhaft verschlossen werden soll (über rmc_doors).
-+-- Bei Ja visiert der Admin die Tür an (vorher schließen). Angelegt wird die Sperre erst mit dem Objekt.
-+local function pickHouseDoor()
-+    local leaves = {}
-+    for i = 1, 2 do
-+        local r = Appliances.pickExisting({ maxDist = 10.0,
-+            hint = (i == 1 and '[Zielen] Haustür anvisieren' or '[Zielen] Zweiten Türflügel anvisieren') .. '  \n[Mausrad] Objekt wechseln  \n[E] Auswählen  \n[BACKSPACE] Abbrechen' })
-+        if not r then break end
-+        if r.spot or not r.model or r.model == 0 then
-+            Notify('Ziele direkt auf die Tür, bis sie umrandet ist.', 'error')
-```
-`~ resources/[selfcode]/rmc_housing/client/main.lua`
-```diff
-+-- Mehrere Wohnungen hinter einem Eingang: erst die Wohnung wählen, dann das normale Tür-Menü
-+function BuildingMenu(list)
-+    local opts = {}
-+    for _, p in ipairs(list) do
-+        local desc, icon = 'Vermietet', 'door-closed'
-+        if p.role == 'owner' then desc, icon = 'Dein Zuhause', 'house-user'
-+        elseif p.role == 'key' then desc, icon = 'Du hast einen Schlüssel', 'key'
-+        elseif p.status == 'free' then desc, icon = ('Zu vermieten · %s $ / Woche'):format(ESX.Math.GroupDigits(p.rent)), 'file-signature' end
-+        opts[#opts + 1] = { title = p.label, description = desc, icon = icon, arrow = true, onSelect = function() DoorMenu(p) end }
-+    end
-```
-`~ resources/[selfcode]/rmc_housing/config.lua`
-```diff
--            -- Regendusche: mehrere durchgehende Wasserstrahlen von oben, fest über der Dusch-Stelle (bei jeder Dusche gleich).
--            -- Sprüht das Wasser in die falsche Richtung: rot = vec3(0.0, 0.0, 0.0) und height = 1.2 setzen (Wasser auf Brusthöhe).
-+            -- Regendusche: mehrere durchgehende Wasserstrahlen, fest an der Dusch-Stelle (bei jeder Dusche gleich).
--                levels  = { 2.15, 1.45, 0.75 }, -- Höhen, auf denen Wasser startet · mehrere Ebenen = Wasser reicht bis zum Boden
--                rot     = vec3(180.0, 0.0, 0.0), -- 180 = Strahl zeigt nach unten
--                scale   = 1.2,                 -- Stärke je Strahl
-+                -- Höhen über dem Boden, auf denen Wasser startet. Der Effekt schießt von dort gut 2 m nach OBEN und fällt dann herunter.
-+                -- Darum tief starten: zu hohe Werte (z. B. 1.45 / 2.15) drücken das Wasser durch die Decke ins Stockwerk darüber.
-+                -- Kommt oben immer noch Wasser durch: scale kleiner stellen. Reicht es nicht bis zum Duschkopf: scale etwas größer.
-+                levels  = { 0.0, 0.25 },
-```
-`~ resources/[selfcode]/rmc_housing/fxmanifest.lua`
-```diff
-+    'server/presets.lua',
-```
-`~ resources/[selfcode]/rmc_housing/server/admin.lua`
-```diff
-+-- Dauerhaft verschlossene Haustür (rmc_doors): der Name enthält die Objekt-ID, darüber wird sie beim Löschen wiedergefunden
-+local function houseDoorName(pid) return ('Housing #%d Haustür'):format(pid) end
-+
-+local function lockHouseDoor(pid, leaves, entrance)
-+    if type(leaves) ~= 'table' or #leaves == 0 then return end
-+    if GetResourceState('rmc_doors') ~= 'started' then return false, 'rmc_doors läuft nicht.' end
-+    local list = {}
-+    for i = 1, math.min(#leaves, 2) do
-+        local v = type(leaves[i]) == 'table' and vec(leaves[i])
-+        local model = v and tonumber(leaves[i].model)
-```
-`~ resources/[selfcode]/rmc_housing/shared/interiors.lua`
-```diff
--customApt('custom_apt_1', 'Custom Apartment 1 · Eclipse Towers', 'a', vec4(-786.8663, 315.7642, 217.6385, 0.0))
--customApt('custom_apt_2', 'Custom Apartment 2 · Eclipse Towers', 'c', vec4(-786.9563, 315.6229, 187.9136, 0.0))
--customApt('custom_apt_3', 'Custom Apartment 3 · Eclipse Towers', 'b', vec4(-774.0126, 342.0428, 196.6864, 0.0))
-+customApt('custom_apt_1', 'Eclipse Towers · Penthouse Suite 1', 'a', vec4(-786.8663, 315.7642, 217.6385, 0.0))
-+customApt('custom_apt_2', 'Eclipse Towers · Penthouse Suite 3', 'c', vec4(-786.9563, 315.6229, 187.9136, 0.0))
-+customApt('custom_apt_3', 'Eclipse Towers · Penthouse Suite 2', 'b', vec4(-774.0126, 342.0428, 196.6864, 0.0))
-```
-`~ resources/[selfcode]/rmc_housing/web/app.js`
-```diff
--    label: '', type: 'Wohnung', address: '', zone: '', entrance: null, garageOn: false, garage: null,
-+    label: '', type: 'Wohnung', address: '', zone: '', entrance: null, lockDoor: null, garageOn: false, garage: null,
-+      ${D.entrance ? `<div class="hint" style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px"><span>${Array.isArray(D.lockDoor) && D.lockDoor.length ? `Haustür wird dauerhaft verschlossen (${D.lockDoor.length === 2 ? 'Doppeltür' : '1 Tür'})` : 'Haustür bl
-+  if (el.hasAttribute('data-unlock-door')) { D.lockDoor = null; queueSync(); return renderCreator(); }
-+      if (el.dataset.pos === 'entrance') { // Eingang gesetzt: im Spiel fragen, ob die Haustür verschlossen werden soll
-+        syncDraft(); hide();
-+        return post('creator:askDoor', { draft: D });
-+      }
 ```

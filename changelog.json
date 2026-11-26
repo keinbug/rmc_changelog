@@ -77708,6 +77708,99 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-26T10:22:33+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77615
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\": [",
+            "-        {",
+            "-            \"value\": 100,",
+            "-            \"receiver_name\": \"Bank (Kartenerneuerung)\",",
+            "-            \"date\": \"2026/02/17 - 21:57:11\",",
+            "-            \"sender_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"sender_name\": \"Nova Brandt\",",
+            "-            \"receiver_identifier\": \"bank\"",
+            "-        },",
+            "-        {",
+            "-            \"type\": \"loan_payment\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"receiver_name\": \"Kreditzahlung\",",
+            "-            \"date\": \"2026/02/03 - 17:12:59\",",
+            "-            \"value\": 5275,",
+            "-            \"sender_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"sender_name\": \"Nova Brandt\",",
+            "-            \"reason\": \"Kreditzahlung: Starter Loan\"",
+            "-        },",
+            "-        {",
+            "-            \"type\": \"card_purchase\",",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"receiver_name\": \"Bank (Kartenkauf)\",",
+            "-            \"date\": \"2026/02/03 - 16:38:54\",",
+            "-            \"value\": 100,",
+            "-            \"sender_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"sender_name\": \"Nova Brandt\",",
+            "-            \"reason\": \"Kartenkauf: Standard Card\"",
+            "-        },",
+            "-        {",
+            "-            \"value\": 200,",
+            "-            \"receiver_name\": \"Bank (IBAN-Änderung)\",",
+            "-            \"date\": \"2026/02/03 - 16:38:39\",",
+            "-            \"sender_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"sender_name\": \"Nova Brandt\",",
+            "-            \"receiver_identifier\": \"bank\"",
+            "-        },",
+            "-        {",
+            "-            \"type\": \"deposit\",",
+            "-            \"receiver_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"receiver_name\": \"Nova Brandt\",",
+            "-            \"date\": \"2026/02/03 - 16:31:39\",",
+            "-            \"value\": 12504,",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\"",
+            "-        },",
+            "-        {",
+            "-            \"type\": \"deposit\",",
+            "-            \"receiver_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\",",
+            "-            \"receiver_name\": \"Nova Brandt\",",
+            "-            \"date\": \"2026/02/03 - 16:27:08\",",
+            "-            \"value\": 2,",
+            "-            \"sender_identifier\": \"bank\",",
+            "-            \"sender_name\": \"Geldbörse\",",
+            "-            \"reason\": \"Einzahlung auf Bankkonto\"",
+            "-        },",
+            "-        {",
+            "-            \"type\": \"loan\",",
+            "-            \"receiver_identifier\": \"char1:66c02ef36d33a8fd6b8a8025e2fbb923addd21cb\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-25T23:01:09Z\",\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_paycheck\":{\"webhookId\":\"1557386357381533816\",\"url\":\"https://discord.com/api/webhooks/1557386357381533816/***\",\"channelId\":\"1557386352226598913\"},\"doors\":{\"webhookId\":\"1559665847771988080\",\"url\":\"https://discord.",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"me\":{\"url\":\"https://discord.com/api/webhooks/1513950212480307490/***\",\"channelId\":\"1513950191936344245\",\"webhookId\":\"1513950212480307490\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"1552971094267527169\",\"web"
+          ]
+        }
+      ]
     }
   ]
 }
