@@ -78170,6 +78170,107 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-26T22:22:56+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 2,
+        "total": 77628
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-            \"backupDate\": \"22_01_21_11_2026\",",
+            "-            \"backupTimestamp\": 1795294863,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_01_21_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"22_03_21_11_2026\",",
+            "-            \"backupTimestamp\": 1795294988,",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_03_21_11_2026.json\"",
+            "-        },",
+            "-        {",
+            "-            \"backupDate\": \"22_04_22_11_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_04_22_11_2026.json\"",
+            "+            \"backupDate\": \"22_04_22_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_04_22_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"backupDate\": \"22_06_22_11_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_06_22_11_2026.json\"",
+            "+            \"backupDate\": \"22_06_22_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_06_22_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"backupDate\": \"22_06_23_11_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_06_23_11_2026.json\"",
+            "+            \"backupDate\": \"22_06_23_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_06_23_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"backupDate\": \"22_09_23_11_2026\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_09_23_11_2026.json\"",
+            "+            \"backupDate\": \"22_09_23_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_09_23_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_10_24_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_22_10_24_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_12_24_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_22_12_24_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"backupFile\": \"banlist_22_12_25_11_2026.json\",",
+            "-            \"id\": 11,",
+            "-            \"backupDate\": \"22_12_25_11_2026\"",
+            "+            \"backupFile\": \"banlist_22_12_25_11_2026.json\",",
+            "+            \"backupDate\": \"22_12_25_11_2026\",",
+            "+            \"id\": 11",
+            "-            \"backupDate\": \"22_14_25_11_2026\",",
+            "+            \"backupDate\": \"22_14_25_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_14_25_11_2026.json\",",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "-            \"backupFile\": \"banlist_22_14_25_11_2026.json\"",
+            "+            \"backupFile\": \"banlist_22_16_26_11_2026.json\",",
+            "+            \"backupDate\": \"22_16_26_11_2026\",",
+            "+            \"backupTimestamp\": 1795727801"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
