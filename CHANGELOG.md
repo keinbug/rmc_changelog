@@ -2,6 +2,56 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 21:23 Uhr
+**+3** neu · **~4** geändert · **-0** gelöscht
+`+ resources/[manuell_start]/ox_inventory/web/images/pepperspray.png`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/client/pfefferspray.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/rmc_core/server/pfefferspray.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[manuell_start]/ox_inventory/data/items.lua`
+```diff
++	["pepperspray"] = {
++		label = "Pfefferspray",
++		weight = 300,
++		stack = false,
++		close = true,
++		consume = 0,
++		description = "Reizgas – blendet Getroffene für kurze Zeit. Benutzen zum Ziehen/Wegstecken.",
++		client = {
++			export = "rmc_core.usePepperSpray",
++			image = "pepperspray.png",
+```
+`~ resources/[selfcode]/rmc_core/config.lua`
+```diff
++            { key = 'pepperspray',    name = 'pfefferspray',    topic = 'Pfefferspray-Treffer',              label = 'Pfefferspray' },
++-- ====== PFEFFERSPRAY ======
++-- Item "pepperspray" (ox_inventory) benutzen = ziehen / wegstecken.
++-- Gezogen: [LMB] halten = sprühen, [X] = wegstecken.
++-- Getroffene Spieler sehen EffectDuration ms lang verschwommen.
++Config.Pfefferspray = {
++    Enabled = true,
++    Item = 'pepperspray',
++    -- nil = jeder darf sprühen. Später nur Polizei z.B.: { police = true, sheriff = true }
++    AllowedJobs = nil,
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-26T17:00:36Z","webhooks":{"basicneeds":{"url":"https://discord.com/api/webhooks/1552971931869777932/***","webhookId":"1552971931869777932","channelId":"1417917687723724872"},"faction":{"url":"https://discord.com/api/webhooks/15511615731947316
++{"updatedAt":"2026-11-26T19:59:05Z","webhooks":{"joinleave":{"url":"https://discord.com/api/webhooks/1570427416076091415/***","channelId":"1570427413605781594","webhookId":"1570427416076091415"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"155297109426752716
+```
+`~ resources/[selfcode]/rmc_core/fxmanifest.lua`
+```diff
++    'usePepperSpray',
+```
+
 ## 2026-11-26 19:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[okok]/okokBanking/transactions.json`
@@ -693,125 +743,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +    stolperfluch   = true,
 +    feuerwerk      = true,
 +    erdbeben       = true,
-```
-
-## 2026-11-21 23:23 Uhr
-**+6** neu · **~8** geändert · **-0** gelöscht
-`+ backups/okokNotify-orig-2026-11-21/config.lua`
-```diff
-+ Neue Datei
-```
-`+ backups/okokNotify-orig-2026-11-21/fxmanifest.lua`
-```diff
-+ Neue Datei
-```
-`+ backups/okokNotify-orig-2026-11-21/web/scripts.js`
-```diff
-+ Neue Datei
-```
-`+ backups/okokNotify-orig-2026-11-21/web/sound.mp3`
-```diff
-+ Neue Datei
-```
-`+ backups/okokNotify-orig-2026-11-21/web/styles.css`
-```diff
-+ Neue Datei
-```
-`+ backups/okokNotify-orig-2026-11-21/web/ui.html`
-```diff
-+ Neue Datei
-```
-`~ resources/[okok]/okokNotify/web/scripts.js`
-```diff
--let Config
--
--const containerElement = document.getElementById('container')
--let containerElementTopOffset = 0
--
--let notifications = []
--
--function addNotification(title, message, time, type, playSound) {
--	containerElementTopOffset = container.getBoundingClientRect().top
--
-```
-`~ resources/[okok]/okokNotify/web/styles.css`
-```diff
--html {
--	font-size: calc(16 / 19.2 * 1vw);
--}
--
--@media (min-aspect-ratio: 16 / 9) {
--	html {
--		font-size: calc(16 / 10.8 * 1vh);
--	}
--}
--
-```
-`~ resources/[okok]/okokNotify/web/ui.html`
-```diff
--<!DOCTYPE html>
--<html>
--	<head>
--		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
--		<link rel="stylesheet" href="styles.css">
--	</head>
--	<body>
--		<div id="container"></div>
--		
--		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-```
-`~ resources/[selfcode]/rmc_core/client/afk.lua`
-```diff
--        if Config.ClientNotify then
--            Config.ClientNotify('AFK', 'Du bist jetzt AFK. Nutze /afk um wieder da zu sein.', 3000, 'info', true)
--        end
-+        ESX.ShowNotification('Du bist jetzt AFK. Nutze /afk um wieder da zu sein.', 'info', 3000, 'AFK')
--        if Config.ClientNotify then
--            Config.ClientNotify('AFK', 'Du bist wieder da.', 3000, 'success', true)
--        end
-+        ESX.ShowNotification('Du bist wieder da.', 'success', 3000, 'AFK')
-```
-`~ resources/[selfcode]/rmc_core/client/hotdog.lua`
-```diff
--    rmc_core – Hotdog Stand (ehemals rmc_hotdog)
--    Platzierbarer Imbiss-Stand mit Bestellungen.
--]]
--
--ESX = exports["es_extended"]:getSharedObject()
--
--if not Config.Hotdog or not Config.Hotdog.Enabled then return end
--
--local cfg = Config.Hotdog
--local ESX = nil
-```
-`~ resources/[selfcode]/rmc_core/config.lua`
-```diff
-+-- /hotdog – Platzierbarer Imbiss-Stand mit Speisekarte, Warteschlange,
-+-- NPC-Kunden, Ruf/Statistik und Zahlung bar oder auf Rechnung (okokBilling)
--    MaxStands = 2,
-+    MaxStands = 2,              -- gleichzeitig auf dem ganzen Server
-+    MinStandDistance = 6.0,     -- Mindestabstand zwischen zwei Ständen
-+    -- Platzieren
-+    MaxPlaceDistance = 12.0,    -- Server lehnt weiter entfernte Positionen ab
-+    ConfirmPlaceKey = 191,      -- Enter
-+    CancelPlaceKey = 177,       -- Rücktaste / ESC / Rechtsklick
--    ConfirmPlaceKey = 191,
-```
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-21T20:02:45Z","webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"staff":{"webhookId":"1552971123233394708","url":"https://discord.com/api/w
-+{"categoryId":"1551161549018759170","webhooks":{"willkommen":{"channelId":"1551161595436990575","url":"https://discord.com/api/webhooks/1551161597853049005/***","webhookId":"1551161597853049005"},"frak":{"channelId":"1552971094267527169","url":"https://discord.com/api/webhooks/1552971096847028264/*
-```
-`~ resources/[selfcode]/rmc_core/server/hotdog.lua`
-```diff
--    rmc_core – Hotdog Stand (ehemals rmc_hotdog)
--    Platzierbarer Imbiss-Stand mit Bestellungen.
--]]
--
--if not Config.Hotdog or not Config.Hotdog.Enabled then return end
--
--local cfg = Config.Hotdog
--local ESX = nil
--local Stands = {}
--local StandIdCounter = 0
 ```

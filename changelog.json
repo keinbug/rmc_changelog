@@ -78024,6 +78024,152 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-26T21:23:16+01:00",
+      "initial": false,
+      "counts": {
+        "added": 3,
+        "modified": 4,
+        "deleted": 0,
+        "total": 77630
+      },
+      "truncated": false,
+      "added": [
+        "resources/[manuell_start]/ox_inventory/web/images/pepperspray.png",
+        "resources/[selfcode]/rmc_core/client/pfefferspray.lua",
+        "resources/[selfcode]/rmc_core/server/pfefferspray.lua"
+      ],
+      "modified": [
+        "resources/[manuell_start]/ox_inventory/data/items.lua",
+        "resources/[selfcode]/rmc_core/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/fxmanifest.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[manuell_start]/ox_inventory/web/images/pepperspray.png",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/client/pfefferspray.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/pfefferspray.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[manuell_start]/ox_inventory/data/items.lua",
+          "status": "M",
+          "lines": [
+            "+\t[\"pepperspray\"] = {",
+            "+\t\tlabel = \"Pfefferspray\",",
+            "+\t\tweight = 300,",
+            "+\t\tstack = false,",
+            "+\t\tclose = true,",
+            "+\t\tconsume = 0,",
+            "+\t\tdescription = \"Reizgas – blendet Getroffene für kurze Zeit. Benutzen zum Ziehen/Wegstecken.\",",
+            "+\t\tclient = {",
+            "+\t\t\texport = \"rmc_core.usePepperSpray\",",
+            "+\t\t\timage = \"pepperspray.png\",",
+            "+\t\t},",
+            "+\t},",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/config.lua",
+          "status": "M",
+          "lines": [
+            "+            { key = 'pepperspray',    name = 'pfefferspray',    topic = 'Pfefferspray-Treffer',              label = 'Pfefferspray' },",
+            "+-- ====== PFEFFERSPRAY ======",
+            "+-- Item \"pepperspray\" (ox_inventory) benutzen = ziehen / wegstecken.",
+            "+-- Gezogen: [LMB] halten = sprühen, [X] = wegstecken.",
+            "+-- Getroffene Spieler sehen EffectDuration ms lang verschwommen.",
+            "+Config.Pfefferspray = {",
+            "+    Enabled = true,",
+            "+    Item = 'pepperspray',",
+            "+    -- nil = jeder darf sprühen. Später nur Polizei z.B.: { police = true, sheriff = true }",
+            "+    AllowedJobs = nil,",
+            "+",
+            "+    EffectDuration = 15000,   -- ms \"blind\"",
+            "+    FadeOutTime = 3000,       -- ms am Ende langsam ausblenden",
+            "+    Range = 4.0,              -- m Reichweite",
+            "+    ConeAngle = 30.0,         -- Grad (halber Öffnungswinkel vor dem Sprüher)",
+            "+    Charges = 20,             -- Sprühstöße pro Dose (1 Stoß = 1 Tick), 0 = unendlich",
+            "+    TickInterval = 1000,      -- ms: alle X ms wird getroffen + 1 Ladung verbraucht",
+            "+    PutAwayKey = 73,          -- 73 = X",
+            "+",
+            "+    Prop = {",
+            "+        model = 'prop_cs_spray_can',",
+            "+        bone = 57005,                     -- rechte Hand",
+            "+        pos = vec3(0.13, 0.03, -0.03),",
+            "+        rot = vec3(-80.0, 0.0, 0.0),",
+            "+    },",
+            "+    -- Partikel-Kandidaten: der erste, der funktioniert, wird benutzt",
+            "+    Ptfx = {",
+            "+        { asset = 'core', name = 'ent_sht_extinguisher', scale = 0.35 },",
+            "+        { asset = 'core', name = 'exp_sht_extinguisher', scale = 0.35 },",
+            "+        { asset = 'core', name = 'ent_sht_steam',        scale = 0.6 },",
+            "+    },",
+            "+    -- Strahl-Position relativ zum Spieler (x = rechts, y = vorne, z = hoch) – im Spiel feinjustieren",
+            "+    PtfxOffset = vec3(0.15, 0.55, 0.45),",
+            "+    PtfxRot = vec3(0.0, 0.0, 0.0),",
+            "+",
+            "+    HoldAnim = { dict = 'weapons@first_person@aim_rng@generic@projectile@shared@core', clip = 'idlerng_med' },",
+            "+    VictimAnim = { dict = 'anim@mp_player_intcelebrationmale@face_palm', clip = 'face_palm' },",
+            "+",
+            "+    Timecycle = 'hud_def_blur',",
+            "+    TimecycleStrength = 1.0,",
+            "+    Shake = { type = 'DRUNK_SHAKE', amp = 1.5 },",
+            "+    MoveRate = 0.75,          -- Laufgeschwindigkeit während des Effekts",
+            "+    AffectNPCs = true,        -- NPCs reiben Augen und fliehen",
+            "+",
+            "+    Log = true,               -- Discord-Log (Webhook-Key 'pepperspray')",
+            "+",
+            "+    -- Test-Commands (nur für diese Gruppen, Konsole geht immer)",
+            "+    TestGroups = { owner = true },",
+            "+    GiveCommand = 'pfefferspray',   -- /pfefferspray -> Spray OHNE Item in die Hand (nochmal = wegstecken), leer sprühbar",
+            "+    EffectCommand = 'pfeffertest',  -- /pfeffertest [id]   -> Blend-Effekt auslösen (ohne id = selbst)",
+            "+",
+            "+    Locale = {",
+            "+        Title = 'Pfefferspray',",
+            "+        Drawn = 'Pfefferspray gezogen. [LMB] sprühen · [X] wegstecken',",
+            "+        Help = '~INPUT_ATTACK~ Sprühen~n~~INPUT_VEH_DUCK~ Wegstecken',",
+            "+        PutAway = 'Pfefferspray weggesteckt.',",
+            "+        Empty = 'Das Pfefferspray ist leer.',",
+            "+        NotAllowed = 'Du darfst kein Pfefferspray benutzen.',",
+            "+        InVehicle = 'Nicht im Fahrzeug möglich.',",
+            "+        Hit = 'Du wurdest mit Pfefferspray besprüht!',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-26T17:00:36Z\",\"webhooks\":{\"basicneeds\":{\"url\":\"https://discord.com/api/webhooks/1552971931869777932/***\",\"webhookId\":\"1552971931869777932\",\"channelId\":\"1417917687723724872\"},\"faction\":{\"url\":\"https://discord.com/api/webhooks/15511615731947316",
+            "+{\"updatedAt\":\"2026-11-26T19:59:05Z\",\"webhooks\":{\"joinleave\":{\"url\":\"https://discord.com/api/webhooks/1570427416076091415/***\",\"channelId\":\"1570427413605781594\",\"webhookId\":\"1570427416076091415\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"155297109426752716"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'usePepperSpray',"
+          ]
+        }
+      ]
     }
   ]
 }
