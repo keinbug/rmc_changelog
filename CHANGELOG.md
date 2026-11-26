@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 19:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:dcdd8750773c33c2ce3ff658853fe0c909367dba": [
++    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
++            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
++            "date": "2026/09/16 - 20:15:27",
++            "reason": "Fahrzeugrückgabegebühr",
+-            "value": 500,
+-            "date": "2026/09/25 - 21:55:44",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "sender_identifier": "char1:dcdd8750773c33c2ce3ff658853fe0c909367dba"
+-        }
+```
+
 ## 2026-11-26 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -798,70 +814,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -local ESX = nil
 -local Stands = {}
 -local StandIdCounter = 0
-```
-
-## 2026-11-21 22:23 Uhr
-**+3** neu · **~4** geändert · **-2** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_01_21_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_03_21_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[selfcode]/api_new/server/marriage.lua`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1795208376,
-+    "lastBackup": 1795294988,
-+            "backupDate": "21_48_17_11_2026",
--            "backupDate": "21_45_16_11_2026",
--            "backupTimestamp": 1794861929,
--            "backupFile": "banlist_21_45_16_11_2026.json"
-+            "backupFile": "banlist_21_48_17_11_2026.json",
-+            "backupTimestamp": 1794948490
-+            "backupDate": "21_50_17_11_2026",
--            "backupDate": "21_47_16_11_2026",
-```
-`~ resources/[selfcode]/api_new/README.md`
-```diff
-+
-+## Heiraten (rmc_core, Standesamt)
-+
-+Liest die Hochzeiten über den Export `exports[rmc_core]:GetMarriages({ after, limit })` (Tabelle `bc_marriages`). Der Discord-Bot holt darüber neue Hochzeiten ab und postet sie.
-+
-+### Neueste Hochzeiten / nur neue seit einer ID
-+```bash
-+curl "$API/marriage/list?limit=20" -H "X-API-Key: $KEY"
-+curl "$API/marriage/list?after=51" -H "X-API-Key: $KEY"
-+```
-```
-`~ resources/[selfcode]/api_new/fxmanifest.lua`
-```diff
-+    'server/marriage.lua',
-```
-`~ resources/[selfcode]/rmc_core/server/marry.lua`
-```diff
--end, false)
-+end, false)
-+
-+-- ============================================
-+-- EXPORTS (für api_new / Discord-Bot)
-+-- ============================================
-+--- Hochzeiten auslesen, älteste zuerst.
-+---   exports['rmc_core']:GetMarriages({ after = 51, limit = 20 })
-+---   after = nur Ehen mit höherer ID (optional), limit = 1-100 (Standard 20)
-+--- Rückgabe: { latest = <höchste ID>, marriages = { { id, partner1, partner2, timestamp, active } } }
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_45_16_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_47_16_11_2026.json`
-```diff
-- Gelöscht
 ```

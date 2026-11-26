@@ -77940,6 +77940,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-26T19:23:03+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77627
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:dcdd8750773c33c2ce3ff658853fe0c909367dba\": [",
+            "+    \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"date\": \"2026/09/16 - 20:15:27\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"value\": 500,",
+            "-            \"date\": \"2026/09/25 - 21:55:44\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"sender_identifier\": \"char1:dcdd8750773c33c2ce3ff658853fe0c909367dba\"",
+            "-        }",
+            "-    ],",
+            "-    \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "-        {",
+            "-            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"value\": 1036,",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"date\": \"2026/11/26 - 10:01:09\",",
+            "-            \"reason\": \"Savings account interest payment (Period 45)\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"value\": 500",
+            "-            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"value\": 1011,",
+            "-            \"date\": \"2026/11/18 - 10:00:25\",",
+            "-            \"reason\": \"Savings account interest payment (Period 44)\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"date\": \"2026/09/15 - 23:01:29\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 2500",
+            "-            \"receiver_identifier\": \"char1:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "-            \"sender_name\": \"Savings Interest\",",
+            "-            \"type\": \"interest_savings\",",
+            "-            \"receiver_name\": \"Savings Account\",",
+            "-            \"value\": 986,",
+            "-            \"date\": \"2026/11/10 - 10:00:58\",",
+            "-            \"reason\": \"Savings account interest payment (Period 43)\",",
+            "-            \"sender_identifier\": \"bank\"",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"date\": \"2026/09/13 - 23:31:22\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Jayden Anderson\",",
+            "+            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "+            \"type\": \"withdraw\",",
+            "+            \"receiver_name\": \"cd_garage\",",
+            "+            \"value\": 500",
+            "-            \"receiver_identifier\": \"bank\",",
+            "-            \"sender_name\": \"Mellie Anderson\",",
+            "+            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "+            \"date\": \"2026/09/13 - 21:13:23\",",
+            "+            \"receiver_identifier\": \"cd_garage\",",
+            "+            \"sender_name\": \"Jayden Anderson\","
+          ]
+        }
+      ]
     }
   ]
 }
