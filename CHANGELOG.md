@@ -2,6 +2,161 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-26 23:23 Uhr
+**+7** neu · **~5** geändert · **-19** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_16_26_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_18_26_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[okok]/okokBanking/cl_utils.lua.bak-pfaendung`
+```diff
++ Neue Datei
+```
+`+ resources/[okok]/okokBanking/sv_utils.lua.bak-pfaendung`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/README.md.bak-pfaendung`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/api_new/server/seizure.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[okok]/okokBanking/cl_utils.lua`
+```diff
++-- Pfändung (api_new): gepfändete Spieler kommen nicht an Bank und ATM (State Bag vom Server).
++local lastSeizedHint = 0
++
++    if LocalPlayer.state.pfaendung then
++        local now = GetGameTimer()
++        if now - lastSeizedHint > 8000 then
++            lastSeizedHint = now
++            if Config.okokNotify then
++                exports['okokNotify']:Alert('Bank', 'Dein Konto ist gepfändet.', 5000, 'error')
++            else
+```
+`~ resources/[okok]/okokBanking/sv_utils.lua`
+```diff
++-- Pfändung (api_new): Solange ein Charakter gepfändet ist, sieht okokBanking bei ihm kein Geld.
++-- Abheben, Einzahlen, Überweisen und Rechnungen zahlen scheitern damit an "nicht genug Geld".
++function IsSeized(xPlayer)
++    if not xPlayer or GetResourceState('api_new') ~= 'started' then return false end
++    local ok, seized = pcall(function() return exports['api_new']:isSeized(xPlayer.identifier) end)
++    return ok and seized == true
++end
++
++    if IsSeized(xPlayer) then return 0 end
++    if IsSeized(xPlayer) then return 0 end
+```
+`~ resources/[selfcode]/api_new/README.md`
+```diff
++
++---
++
++## Pfändung (LSPD-Dashboard)
++
++Zieht das komplette Bargeld, das komplette Bankguthaben und alle Fahrzeuge eines Charakters ein und gibt sie später zurück. Alles steht in der Tabelle `rmc_seizure` (wird beim Start angelegt). Funktioniert online und offline.
++
++### Was würde eingezogen?
++```bash
++curl "$API/seizure/preview/char1:abc123" -H "X-API-Key: $KEY"
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/seizure.lua',
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-26T19:59:05Z","webhooks":{"joinleave":{"url":"https://discord.com/api/webhooks/1570427416076091415/***","channelId":"1570427413605781594","webhookId":"1570427416076091415"},"frak":{"url":"https://discord.com/api/webhooks/1552971096847028264/***","channelId":"155297109426752716
++{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***",
+```
+`− resources/[selfcode]/tms-bridge/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/client.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/endpoint.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/html/index.html`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-bridge/server.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/server/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-pawn/server_config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/server/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-poster/server_config.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-26 22:22 Uhr
 **+0** neu · **~1** geändert · **-2** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -678,20 +833,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 +            "sender_name": "Geldbörse",
 +            "reason": "Einzahlung auf Bankkonto"
 +        },
-```
-
-## 2026-11-22 01:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
--    "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5": [
--        {
--            "receiver_identifier": "cd_garage",
--            "reason": "Fahrzeugrückgabegebühr",
--            "value": 500,
--            "sender_identifier": "char1:f6a7d1d68111745581e11c74b2f45c0a9822fca5",
--            "type": "withdraw",
--            "receiver_name": "cd_garage",
--            "date": "2026/11/19 - 18:53:23",
--            "sender_name": "Jasmin Anderson"
 ```

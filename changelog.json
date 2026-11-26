@@ -78271,6 +78271,327 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-26T23:23:05+01:00",
+      "initial": false,
+      "counts": {
+        "added": 7,
+        "modified": 5,
+        "deleted": 19,
+        "total": 77616
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_16_26_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_18_26_11_2026.json",
+        "resources/[okok]/okokBanking/cl_utils.lua.bak-pfaendung",
+        "resources/[okok]/okokBanking/sv_utils.lua.bak-pfaendung",
+        "resources/[selfcode]/api_new/README.md.bak-pfaendung",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung",
+        "resources/[selfcode]/api_new/server/seizure.lua"
+      ],
+      "modified": [
+        "resources/[okok]/okokBanking/cl_utils.lua",
+        "resources/[okok]/okokBanking/sv_utils.lua",
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/fxmanifest.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [
+        "resources/[selfcode]/tms-bridge/README.md",
+        "resources/[selfcode]/tms-bridge/client.lua",
+        "resources/[selfcode]/tms-bridge/config.lua",
+        "resources/[selfcode]/tms-bridge/endpoint.lua",
+        "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+        "resources/[selfcode]/tms-bridge/html/index.html",
+        "resources/[selfcode]/tms-bridge/server.lua",
+        "resources/[selfcode]/tms-pawn/README.md",
+        "resources/[selfcode]/tms-pawn/client/main.lua",
+        "resources/[selfcode]/tms-pawn/config.lua",
+        "resources/[selfcode]/tms-pawn/fxmanifest.lua",
+        "resources/[selfcode]/tms-pawn/server/main.lua",
+        "resources/[selfcode]/tms-pawn/server_config.lua",
+        "resources/[selfcode]/tms-poster/README.md",
+        "resources/[selfcode]/tms-poster/client/main.lua",
+        "resources/[selfcode]/tms-poster/config.lua",
+        "resources/[selfcode]/tms-poster/fxmanifest.lua",
+        "resources/[selfcode]/tms-poster/server/main.lua",
+        "resources/[selfcode]/tms-poster/server_config.lua"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_16_26_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_18_26_11_2026.json",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/cl_utils.lua.bak-pfaendung",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/sv_utils.lua.bak-pfaendung",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md.bak-pfaendung",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/server/seizure.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/cl_utils.lua",
+          "status": "M",
+          "lines": [
+            "+-- Pfändung (api_new): gepfändete Spieler kommen nicht an Bank und ATM (State Bag vom Server).",
+            "+local lastSeizedHint = 0",
+            "+",
+            "+    if LocalPlayer.state.pfaendung then",
+            "+        local now = GetGameTimer()",
+            "+        if now - lastSeizedHint > 8000 then",
+            "+            lastSeizedHint = now",
+            "+            if Config.okokNotify then",
+            "+                exports['okokNotify']:Alert('Bank', 'Dein Konto ist gepfändet.', 5000, 'error')",
+            "+            else",
+            "+                ESX.ShowNotification('Dein Konto ist gepfändet.')",
+            "+            end",
+            "+        end",
+            "+        return true",
+            "+    end"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/sv_utils.lua",
+          "status": "M",
+          "lines": [
+            "+-- Pfändung (api_new): Solange ein Charakter gepfändet ist, sieht okokBanking bei ihm kein Geld.",
+            "+-- Abheben, Einzahlen, Überweisen und Rechnungen zahlen scheitern damit an \"nicht genug Geld\".",
+            "+function IsSeized(xPlayer)",
+            "+    if not xPlayer or GetResourceState('api_new') ~= 'started' then return false end",
+            "+    local ok, seized = pcall(function() return exports['api_new']:isSeized(xPlayer.identifier) end)",
+            "+    return ok and seized == true",
+            "+end",
+            "+",
+            "+    if IsSeized(xPlayer) then return 0 end",
+            "+    if IsSeized(xPlayer) then return 0 end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "M",
+          "lines": [
+            "+",
+            "+---",
+            "+",
+            "+## Pfändung (LSPD-Dashboard)",
+            "+",
+            "+Zieht das komplette Bargeld, das komplette Bankguthaben und alle Fahrzeuge eines Charakters ein und gibt sie später zurück. Alles steht in der Tabelle `rmc_seizure` (wird beim Start angelegt). Funktioniert online und offline.",
+            "+",
+            "+### Was würde eingezogen?",
+            "+```bash",
+            "+curl \"$API/seizure/preview/char1:abc123\" -H \"X-API-Key: $KEY\"",
+            "+```",
+            "+",
+            "+### Pfänden",
+            "+```bash",
+            "+curl -X POST \"$API/seizure/seize\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" \\",
+            "+  -d '{\"identifier\":\"char1:abc123\",\"reason\":\"Offene Bußgelder\",\"officer\":\"Max Mustermann\"}'",
+            "+```",
+            "+`409`, wenn die Person schon gepfändet ist. Fahrzeuge bekommen so lange den Besitzer `pfand:<id>`.",
+            "+",
+            "+### Zurückgeben",
+            "+```bash",
+            "+curl -X POST \"$API/seizure/return\" -H \"X-API-Key: $KEY\" -H \"Content-Type: application/json\" \\",
+            "+  -d '{\"id\":1,\"officer\":\"Max Mustermann\"}'",
+            "+```",
+            "+",
+            "+### Export und State Bag",
+            "+```lua",
+            "+exports['api_new']:isSeized(target)   -- target = Server-ID oder ESX-Identifier -> true / false",
+            "+LocalPlayer.state.pfaendung           -- Client: true, solange gepfändet",
+            "+```",
+            "+okokBanking nutzt beides in `sv_utils.lua` (`IsSeized`) und `cl_utils.lua` (`IsDead`). Originale: `*.bak-pfaendung`."
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/seizure.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"updatedAt\":\"2026-11-26T19:59:05Z\",\"webhooks\":{\"joinleave\":{\"url\":\"https://discord.com/api/webhooks/1570427416076091415/***\",\"channelId\":\"1570427413605781594\",\"webhookId\":\"1570427416076091415\"},\"frak\":{\"url\":\"https://discord.com/api/webhooks/1552971096847028264/***\",\"channelId\":\"155297109426752716",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"faction\":{\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\"},\"esx\":{\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\","
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/client.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/endpoint.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/html/index.html",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-bridge/server.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-pawn/server_config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-poster/server_config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
