@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-28 00:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"updatedAt":"2026-11-27T17:01:14Z","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://discord.com/api/webhooks/15704274160760
++{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/15573863427559
+```
+
 ## 2026-11-27 23:23 Uhr
 **+2** neu · **~0** geändert · **-0** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_19_27_11_2026.json`
@@ -856,12 +864,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 -
 -function skipRadioChecks()
 -    local state = LocalPlayer.state
-```
-
-## 2026-11-23 18:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-23T09:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","channelId":"1570424980183842916","webhookId":"1570424984998912021"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
-+{"webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"155738635222
 ```
