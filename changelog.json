@@ -78803,6 +78803,150 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-27T22:23:04+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 2,
+        "total": 77610
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+        "resources/[okok]/okokBanking/transactions.json"
+      ],
+      "deleted": [
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_04_22_11_2026.json",
+        "resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_22_11_2026.json"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/_backups.json",
+          "status": "M",
+          "lines": [
+            "-        {",
+            "-            \"backupTimestamp\": 1795381456,",
+            "-            \"backupDate\": \"22_04_22_11_2026\",",
+            "-            \"backupFile\": \"banlist_22_04_22_11_2026.json\",",
+            "-            \"id\": 11",
+            "-        },",
+            "-        {",
+            "-            \"backupTimestamp\": 1795381581,",
+            "-            \"backupDate\": \"22_06_22_11_2026\",",
+            "-            \"backupFile\": \"banlist_22_06_22_11_2026.json\",",
+            "-            \"id\": 11",
+            "-        },",
+            "-            \"backupFile\": \"banlist_22_12_25_11_2026.json\",",
+            "+            \"backupFile\": \"banlist_22_12_25_11_2026.json\",",
+            "-            \"id\": 11,",
+            "-            \"backupFile\": \"banlist_22_16_26_11_2026.json\",",
+            "+            \"backupTimestamp\": 1795727801,",
+            "-            \"backupTimestamp\": 1795727801",
+            "+            \"backupFile\": \"banlist_22_16_26_11_2026.json\",",
+            "+            \"id\": 11",
+            "-            \"backupDate\": \"22_18_26_11_2026\",",
+            "+            \"backupDate\": \"22_18_26_11_2026\",",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1795814362,",
+            "+            \"backupDate\": \"22_19_27_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_19_27_11_2026.json\",",
+            "+            \"id\": 11",
+            "+        },",
+            "+        {",
+            "+            \"backupTimestamp\": 1795814487,",
+            "+            \"backupDate\": \"22_21_27_11_2026\",",
+            "+            \"backupFile\": \"banlist_22_21_27_11_2026.json\",",
+            "+            \"id\": 11",
+            "-    \"lastBackup\": 1795727926",
+            "+    \"lastBackup\": 1795814487"
+          ]
+        },
+        {
+          "path": "resources/[okok]/okokBanking/transactions.json",
+          "status": "M",
+          "lines": [
+            "-    \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\": [",
+            "+    \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\": [",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"date\": \"2026/09/16 - 20:15:27\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500",
+            "+            \"reason\": \"Savings account interest payment (Period 45)\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"value\": 3016,",
+            "+            \"date\": \"2026/11/26 - 10:01:09\",",
+            "+            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"date\": \"2026/09/15 - 23:01:29\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 2500",
+            "+            \"reason\": \"Savings account interest payment (Period 44)\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"value\": 2943,",
+            "+            \"date\": \"2026/11/18 - 10:00:25\",",
+            "+            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"date\": \"2026/09/13 - 23:31:22\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500",
+            "+            \"reason\": \"Savings account interest payment (Period 43)\",",
+            "+            \"sender_identifier\": \"bank\",",
+            "+            \"type\": \"interest_savings\",",
+            "+            \"receiver_name\": \"Savings Account\",",
+            "+            \"value\": 2871,",
+            "+            \"date\": \"2026/11/10 - 10:00:58\",",
+            "+            \"receiver_identifier\": \"char4:95e98569cca18ee079f5fe27ab54152ede42f277\",",
+            "+            \"sender_name\": \"Savings Interest\"",
+            "-            \"sender_identifier\": \"char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9\",",
+            "-            \"date\": \"2026/09/13 - 21:13:23\",",
+            "-            \"receiver_identifier\": \"cd_garage\",",
+            "-            \"sender_name\": \"Jayden Anderson\",",
+            "-            \"reason\": \"Fahrzeugrückgabegebühr\",",
+            "-            \"type\": \"withdraw\",",
+            "-            \"receiver_name\": \"cd_garage\",",
+            "-            \"value\": 500",
+            "+            \"reason\": \"Savings account interest payment (Period 42)\",",
+            "+            \"sender_identifier\": \"bank\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_04_22_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_22_11_2026.json",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }

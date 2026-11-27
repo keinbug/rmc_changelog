@@ -2,6 +2,43 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 22:23 Uhr
+**+0** neu · **~2** geändert · **-2** gelöscht
+`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
+```diff
+-        {
+-            "backupTimestamp": 1795381456,
+-            "backupDate": "22_04_22_11_2026",
+-            "backupFile": "banlist_22_04_22_11_2026.json",
+-            "id": 11
+-        },
+-        {
+-            "backupTimestamp": 1795381581,
+-            "backupDate": "22_06_22_11_2026",
+-            "backupFile": "banlist_22_06_22_11_2026.json",
+```
+`~ resources/[okok]/okokBanking/transactions.json`
+```diff
+-    "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9": [
++    "char4:95e98569cca18ee079f5fe27ab54152ede42f277": [
+-            "sender_identifier": "char1:ed00a18aa373b82fda2a51a5f23d0c0567f13db9",
+-            "date": "2026/09/16 - 20:15:27",
+-            "receiver_identifier": "cd_garage",
+-            "sender_name": "Jayden Anderson",
+-            "reason": "Fahrzeugrückgabegebühr",
+-            "type": "withdraw",
+-            "receiver_name": "cd_garage",
+-            "value": 500
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_22_04_22_11_2026.json`
+```diff
+- Gelöscht
+```
+`− resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_22_11_2026.json`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-27 18:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -824,12 +861,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-22T23:00:53Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***
 +{"updatedAt":"2026-11-23T09:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","channelId":"1570424980183842916","webhookId":"1570424984998912021"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
-```
-
-## 2026-11-23 00:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","updatedAt":"2026-11-22T17:00:43Z","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"faction":{"url":"https://discord.com/api/webhooks/155116157319473165
-+{"updatedAt":"2026-11-22T23:00:53Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***
 ```
