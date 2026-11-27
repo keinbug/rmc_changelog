@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 18:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"afk":{"webhookId":"1512475306554953789","channelId":"1512475286229356617","url":"https://discord.com/api
++{"updatedAt":"2026-11-27T17:01:14Z","webhooks":{"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"1557386352226598913"},"joinleave":{"webhookId":"1570427416076091415","url":"https://discord.com/api/webhooks/15704274160760
+```
+
 ## 2026-11-27 17:23 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/api_new/server/faction.lua`
@@ -824,36 +832,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","updatedAt":"2026-11-22T17:00:43Z","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"faction":{"url":"https://discord.com/api/webhooks/155116157319473165
 +{"updatedAt":"2026-11-22T23:00:53Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***
-```
-
-## 2026-11-22 22:22 Uhr
-**+2** neu · **~1** geändert · **-2** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_04_22_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_22_11_2026.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--    "lastBackup": 1795294988,
--            "backupDate": "21_48_17_11_2026",
--            "id": 11,
--            "backupFile": "banlist_21_48_17_11_2026.json",
--            "backupTimestamp": 1794948490
--        },
--        {
--            "backupDate": "21_50_17_11_2026",
--            "id": 11,
--            "backupFile": "banlist_21_50_17_11_2026.json",
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_48_17_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_50_17_11_2026.json`
-```diff
-- Gelöscht
 ```
