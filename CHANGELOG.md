@@ -2,6 +2,37 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 16:22 Uhr
+**+1** neu · **~1** geändert · **-5** gelöscht
+`+ resources/[selfcode]/api_new/server/faction.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[selfcode]/api_new/fxmanifest.lua`
+```diff
++    'server/faction.lua',
+```
+`− resources/[selfcode]/api_new/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/api_new/README.md.bak-pfaendung`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-27 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -817,12 +848,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","
 +{"categoryId":"1551161549018759170","updatedAt":"2026-11-22T17:00:43Z","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"faction":{"url":"https://discord.com/api/webhooks/155116157319473165
-```
-
-## 2026-11-22 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"esx_resources":{"webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557
-+{"categoryId":"1551161549018759170","webhooks":{"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","
 ```

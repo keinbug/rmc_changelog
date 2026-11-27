@@ -78618,6 +78618,81 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-27T16:22:58+01:00",
+      "initial": false,
+      "counts": {
+        "added": 1,
+        "modified": 1,
+        "deleted": 5,
+        "total": 77612
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/api_new/server/faction.lua"
+      ],
+      "modified": [
+        "resources/[selfcode]/api_new/fxmanifest.lua"
+      ],
+      "deleted": [
+        "resources/[selfcode]/api_new/README.md",
+        "resources/[selfcode]/api_new/README.md.bak-pfaendung",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader",
+        "resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/server/faction.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua",
+          "status": "M",
+          "lines": [
+            "+    'server/faction.lua',"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/README.md.bak-pfaendung",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-inventory",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-lifeinvader",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/api_new/fxmanifest.lua.bak-pfaendung",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
