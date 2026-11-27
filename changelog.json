@@ -78592,6 +78592,32 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-27T10:22:32+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77616
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"faction\":{\"channelId\":\"1551161570439208960\",\"url\":\"https://discord.com/api/webhooks/1551161573194731652/***\",\"webhookId\":\"1551161573194731652\"},\"esx\":{\"channelId\":\"1420103430562910370\",\"url\":\"https://discord.com/api/webhooks/1557386326951592027/***\",",
+            "+{\"categoryId\":\"1551161549018759170\",\"webhooks\":{\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"afk\":{\"webhookId\":\"1512475306554953789\",\"channelId\":\"1512475286229356617\",\"url\":\"https://discord.com/api"
+          ]
+        }
+      ]
     }
   ]
 }

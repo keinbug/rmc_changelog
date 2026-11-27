@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","webhooks":{"faction":{"channelId":"1551161570439208960","url":"https://discord.com/api/webhooks/1551161573194731652/***","webhookId":"1551161573194731652"},"esx":{"channelId":"1420103430562910370","url":"https://discord.com/api/webhooks/1557386326951592027/***",
++{"categoryId":"1551161549018759170","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"afk":{"webhookId":"1512475306554953789","channelId":"1512475286229356617","url":"https://discord.com/api
+```
+
 ## 2026-11-26 23:23 Uhr
 **+7** neu · **~5** geändert · **-19** gelöscht
 `+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_16_26_11_2026.json`
@@ -817,20 +825,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"esx_useractions":{"webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/1557386342755991582/***","channelId":"1557386339866120252"},"esx_resources":{"webhookId":"1557386349395583076","url":"https://discord.com/api/webhooks/1557386349395583076/***","channelId":"1557
 +{"categoryId":"1551161549018759170","webhooks":{"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","
-```
-
-## 2026-11-22 03:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[okok]/okokBanking/transactions.json`
-```diff
-+        {
-+            "type": "deposit",
-+            "receiver_identifier": "char3:5d9a7aa1b89a5c67108c44299d6b73c6e39c062c",
-+            "receiver_name": "Kendrik Walker",
-+            "date": "2026/11/22 - 02:43:07",
-+            "value": 200000,
-+            "sender_identifier": "bank",
-+            "sender_name": "Geldbörse",
-+            "reason": "Einzahlung auf Bankkonto"
-+        },
 ```
