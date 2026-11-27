@@ -2,6 +2,22 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 17:23 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/api_new/server/faction.lua`
+```diff
+-                                 [{ name, owner, items }]
++                                 [{ name, owner, label, items }]
++                                 search findet ID und Anzeigenamen (z. B. "Midnight Elite Lager").
++                                 Anzeigenamen kennt ox nur für geladene Lager; sie werden gemerkt (KVP).
++-- Anzeigenamen ("Midnight Elite Lager") kennt ox nur für geladene Lager -> merken (KVP, überlebt Neustarts)
++local function labelKey(name, owner) return 'stashlabel:' .. name .. '|' .. (owner or '') end
++
++local function rememberLabel(name, owner, label)
++    if type(label) == 'string' and label ~= '' and label ~= name then
++        SetResourceKvp(labelKey(name, owner), label)
+```
+
 ## 2026-11-27 16:22 Uhr
 **+1** neu · **~1** geändert · **-5** gelöscht
 `+ resources/[selfcode]/api_new/server/faction.lua`
@@ -840,12 +856,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_50_17_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-22 18:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"hotdog":{"url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979","webhookId":"1474547103081566412"},"esx":{"url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370","
-+{"categoryId":"1551161549018759170","updatedAt":"2026-11-22T17:00:43Z","webhooks":{"adminjail":{"url":"https://discord.com/api/webhooks/1551161578009796630/***","webhookId":"1551161578009796630","channelId":"1551161575690211428"},"faction":{"url":"https://discord.com/api/webhooks/155116157319473165
 ```

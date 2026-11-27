@@ -78693,6 +78693,90 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-27T17:23:00+01:00",
+      "initial": false,
+      "counts": {
+        "added": 0,
+        "modified": 1,
+        "deleted": 0,
+        "total": 77612
+      },
+      "truncated": false,
+      "added": [],
+      "modified": [
+        "resources/[selfcode]/api_new/server/faction.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/api_new/server/faction.lua",
+          "status": "M",
+          "lines": [
+            "-                                 [{ name, owner, items }]",
+            "+                                 [{ name, owner, label, items }]",
+            "+                                 search findet ID und Anzeigenamen (z. B. \"Midnight Elite Lager\").",
+            "+                                 Anzeigenamen kennt ox nur für geladene Lager; sie werden gemerkt (KVP).",
+            "+-- Anzeigenamen (\"Midnight Elite Lager\") kennt ox nur für geladene Lager -> merken (KVP, überlebt Neustarts)",
+            "+local function labelKey(name, owner) return 'stashlabel:' .. name .. '|' .. (owner or '') end",
+            "+",
+            "+local function rememberLabel(name, owner, label)",
+            "+    if type(label) == 'string' and label ~= '' and label ~= name then",
+            "+        SetResourceKvp(labelKey(name, owner), label)",
+            "+    end",
+            "+end",
+            "+",
+            "+local function knownLabel(name, owner)",
+            "+    -- geladenes Lager direkt fragen (nur nachsehen, nichts laden)",
+            "+    if oxReady() then",
+            "+        local called, inv = pcall(function()",
+            "+            return exports.ox_inventory:GetInventory(name, owner or false)",
+            "+        end)",
+            "+        if called and type(inv) == 'table' and type(inv.label) == 'string' then",
+            "+            rememberLabel(name, owner, inv.label)",
+            "+            if inv.label ~= name then return inv.label end",
+            "+        end",
+            "+    end",
+            "+    return GetResourceKvpString(labelKey(name, owner))",
+            "+end",
+            "+",
+            "-    local sql = 'SELECT `name`, `owner`, `data` FROM `ox_inventory`'",
+            "-    local params = {}",
+            "-    if search and search ~= '' then",
+            "-        sql = sql .. ' WHERE `name` LIKE ?'",
+            "-        params[1] = '%' .. search:gsub('[\\\\%%_]', '\\\\%0') .. '%'",
+            "-    end",
+            "-    sql = sql .. ' ORDER BY `name` LIMIT ' .. limit",
+            "+    local needle = (search or ''):lower()",
+            "-    for _, r in ipairs(db(sql, params)) do",
+            "-        local data = decode(r.data) or {}",
+            "-        local n = 0",
+            "-        for _, it in pairs(data) do",
+            "-            if type(it) == 'table' and it.name then n = n + 1 end",
+            "+    for _, r in ipairs(db('SELECT `name`, `owner`, `data` FROM `ox_inventory` ORDER BY `name`')) do",
+            "+        local owner = (r.owner ~= nil and r.owner ~= '') and r.owner or nil",
+            "+        local label = knownLabel(r.name, owner)",
+            "+        local hay = (r.name .. ' ' .. (label or '')):lower()",
+            "+        if needle == '' or hay:find(needle, 1, true) then",
+            "+            local data = decode(r.data) or {}",
+            "+            local n = 0",
+            "+            for _, it in pairs(data) do",
+            "+                if type(it) == 'table' and it.name then n = n + 1 end",
+            "+            end",
+            "+            out[#out + 1] = { name = r.name, owner = owner, label = label, items = n }",
+            "+            if #out >= limit then break end",
+            "-        out[#out + 1] = {",
+            "-            name = r.name,",
+            "-            owner = (r.owner ~= nil and r.owner ~= '') and r.owner or nil,",
+            "-            items = n,",
+            "-        }",
+            "+    -- Lager mit bekanntem Namen zuerst",
+            "+    table.sort(out, function(a, b)",
+            "+        if (a.label ~= nil) ~= (b.label ~= nil) then return a.label ~= nil end"
+          ]
+        }
+      ]
     }
   ]
 }
