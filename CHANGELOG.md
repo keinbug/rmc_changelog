@@ -2,6 +2,17 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-27 23:23 Uhr
+**+2** neu · **~0** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_19_27_11_2026.json`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_21_27_11_2026.json`
+```diff
++ Neue Datei
+```
+
 ## 2026-11-27 22:23 Uhr
 **+0** neu · **~2** geändert · **-2** gelöscht
 `~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
@@ -853,12 +864,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"updatedAt":"2026-11-23T09:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","channelId":"1570424980183842916","webhookId":"1570424984998912021"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
 +{"webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"155738635222
-```
-
-## 2026-11-23 10:22 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"updatedAt":"2026-11-22T23:00:53Z","categoryId":"1551161549018759170","webhooks":{"join":{"url":"https://discord.com/api/webhooks/1552971091771924552/***","channelId":"1448120760391565352","webhookId":"1552971091771924552"},"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***
-+{"updatedAt":"2026-11-23T09:01:08Z","webhooks":{"housing":{"url":"https://discord.com/api/webhooks/1570424984998912021/***","channelId":"1570424980183842916","webhookId":"1570424984998912021"},"clothing_strip":{"url":"https://discord.com/api/webhooks/1551161592467423353/***","channelId":"1551161585
 ```
