@@ -2,6 +2,78 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-28 16:23 Uhr
+**+6** neu · **~4** geändert · **-0** gelöscht
+`+ resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_server.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_shared.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_client.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_server.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_shared.lua`
+```diff
++ Neue Datei
+```
+`~ cfg/rechte.cfg`
+```diff
++add_ace group.admin easyadmin.player.inventory allow
++add_ace group.admin easyadmin.server.stash allow
++add_ace group.admin easyadmin.server.cleanup.laser allow
+```
+`~ resources/[esx_addons]/EasyAdmin/client/gui_c.lua`
+```diff
+-	if DoesPlayerHavePermissionForCategory(-1, "server") then
+-		if permissions["server.announce"] then
+-			local thisItem = NativeUI.CreateItem(GetLocalisedText("announcement"), GetLocalisedText("announcementguide"))
+-			servermanagement:AddItem(thisItem)
+-			thisItem.Activated = function(ParentMenu,SelectedItem)
+-				local result = displayKeyboardInput("FMMC_KEY_TIP8", "", 128)
+-				
+-				if result then
+-					TriggerServerEvent("EasyAdmin:Announce", result)
+-				end
+```
+`~ resources/[esx_addons]/EasyAdmin/language/de.json`
+```diff
+-    "screenreaderspeedguide":"Passt Geschwindigkeit des Screen-Readers an."
++    "screenreaderspeedguide":"Passt Geschwindigkeit des Screen-Readers an.",
++
++    "oxinventory": "~o~[OX]~s~ Inventar",
++    "oxinventoryguide": "Inventar-Werkzeuge für diesen Spieler (ox_inventory).",
++    "oxinvopen": "Inventar öffnen",
++    "oxinvopenguide": "Öffnet das Inventar des Spielers zum Bearbeiten oder nur zum Ansehen.",
++    "oxinvedit": "Bearbeiten",
++    "oxinvview": "Nur ansehen",
++    "oxinvgive": "Item geben",
+```
+`~ resources/[esx_addons]/EasyAdmin/language/en.json`
+```diff
+-    "screenreaderspeedguide":"Adjusts the speed of the text-to-speech feature."
++    "screenreaderspeedguide":"Adjusts the speed of the text-to-speech feature.",
++    "oxinventory": "~o~[OX]~s~ Inventory",
++    "oxinventoryguide": "Inventory tools for this player (ox_inventory).",
++    "oxinvopen": "Open Inventory",
++    "oxinvopenguide": "Opens the player's inventory for editing or read-only viewing.",
++    "oxinvedit": "Edit",
++    "oxinvview": "View only",
++    "oxinvgive": "Give Item",
++    "oxinvgiveguide": "Gives the player an item. Enter item name, then amount.",
+```
+
 ## 2026-11-28 15:23 Uhr
 **+2** neu · **~6** geändert · **-8** gelöscht
 `+ resources/[lb]/lb-phone/migrate_fixed_numbers.sql`
@@ -898,12 +970,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"
 +{"webhooks":{"default":{"url":"https://discord.com/api/webhooks/1551161552537653269/***","webhookId":"1551161552537653269","channelId":"1551161550096699392"},"ausbluten":{"url":"https://discord.com/api/webhooks/1552971079239077968/***","webhookId":"1552971079239077968","channelId":"1552971076718297
-```
-
-## 2026-11-24 00:23 Uhr
-**+0** neu · **~1** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/a
-+{"webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"
 ```

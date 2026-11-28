@@ -79499,6 +79499,283 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-28T16:23:21+01:00",
+      "initial": false,
+      "counts": {
+        "added": 6,
+        "modified": 4,
+        "deleted": 0,
+        "total": 77620
+      },
+      "truncated": false,
+      "added": [
+        "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_client.lua",
+        "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_server.lua",
+        "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_shared.lua",
+        "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_client.lua",
+        "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_server.lua",
+        "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_shared.lua"
+      ],
+      "modified": [
+        "cfg/rechte.cfg",
+        "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+        "resources/[esx_addons]/EasyAdmin/language/de.json",
+        "resources/[esx_addons]/EasyAdmin/language/en.json"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/entitylaser/laser_shared.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_client.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_server.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/plugins/ox_inventory/oxinv_shared.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "cfg/rechte.cfg",
+          "status": "M",
+          "lines": [
+            "+add_ace group.admin easyadmin.player.inventory allow",
+            "+add_ace group.admin easyadmin.server.stash allow",
+            "+add_ace group.admin easyadmin.server.cleanup.laser allow"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/client/gui_c.lua",
+          "status": "M",
+          "lines": [
+            "-\tif DoesPlayerHavePermissionForCategory(-1, \"server\") then",
+            "-\t\tif permissions[\"server.announce\"] then",
+            "-\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"announcement\"), GetLocalisedText(\"announcementguide\"))",
+            "-\t\t\tservermanagement:AddItem(thisItem)",
+            "-\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "-\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 128)",
+            "-\t\t\t\t",
+            "-\t\t\t\tif result then",
+            "-\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:Announce\", result)",
+            "-\t\t\t\tend",
+            "-\t\t\tend",
+            "-\t\tend",
+            "-",
+            "-\t\tif permissions[\"server.convars\"] then",
+            "-\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"setgametype\"), GetLocalisedText(\"setgametypeguide\"))",
+            "-\t\t\tservermanagement:AddItem(thisItem)",
+            "-\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "-\t\t\t\t",
+            "-\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 32)",
+            "-\t\t\t\t",
+            "-\t\t\t\tif result then",
+            "-\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:SetGameType\", result)",
+            "-\t\t\t\tend",
+            "-\t\t\tend",
+            "-\t\t\t",
+            "-\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"setmapname\"), GetLocalisedText(\"setmapnameguide\"))",
+            "-\t\t\tservermanagement:AddItem(thisItem)",
+            "-\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "-\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 32)",
+            "-\t\t\t\t",
+            "-\t\t\t\tif result then",
+            "-\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:SetMapName\", result)",
+            "-\t\t\t\tend",
+            "-\t\t\tend",
+            "-\t\tend",
+            "-",
+            "-\t\tif permissions[\"server.resources.start\"] then",
+            "-\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"startresourcebyname\"), GetLocalisedText(\"startresourcebynameguide\"))",
+            "-\t\t\tservermanagement:AddItem(thisItem)",
+            "-\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "-\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 32)",
+            "-\t\t\t\t",
+            "-\t\t\t\tif result then",
+            "-\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:StartResource\", result)",
+            "-\t\t\t\tend",
+            "-\t\t\tend",
+            "-\t\tend",
+            "-",
+            "-\t\tif permissions[\"server.resources.stop\"] then",
+            "-\t\t\tlocal thisItem = NativeUI.CreateItem(GetLocalisedText(\"stopresourcebyname\"), GetLocalisedText(\"stopresourcebynameguide\"))",
+            "-\t\t\tservermanagement:AddItem(thisItem)",
+            "-\t\t\tthisItem.Activated = function(ParentMenu,SelectedItem)",
+            "-\t\t\t\tlocal result = displayKeyboardInput(\"FMMC_KEY_TIP8\", \"\", 32)",
+            "-\t\t\t\t",
+            "-\t\t\t\tif result then",
+            "-\t\t\t\t\tif result ~= GetCurrentResourceName() then",
+            "-\t\t\t\t\t\tTriggerServerEvent(\"EasyAdmin:StopResource\", result)",
+            "-\t\t\t\t\telse",
+            "-\t\t\t\t\t\tTriggerEvent(\"EasyAdmin:showNotification\", GetLocalisedText(\"badidea\"))",
+            "-\t\t\t\t\tend"
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/de.json",
+          "status": "M",
+          "lines": [
+            "-    \"screenreaderspeedguide\":\"Passt Geschwindigkeit des Screen-Readers an.\"",
+            "+    \"screenreaderspeedguide\":\"Passt Geschwindigkeit des Screen-Readers an.\",",
+            "+",
+            "+    \"oxinventory\": \"~o~[OX]~s~ Inventar\",",
+            "+    \"oxinventoryguide\": \"Inventar-Werkzeuge für diesen Spieler (ox_inventory).\",",
+            "+    \"oxinvopen\": \"Inventar öffnen\",",
+            "+    \"oxinvopenguide\": \"Öffnet das Inventar des Spielers zum Bearbeiten oder nur zum Ansehen.\",",
+            "+    \"oxinvedit\": \"Bearbeiten\",",
+            "+    \"oxinvview\": \"Nur ansehen\",",
+            "+    \"oxinvgive\": \"Item geben\",",
+            "+    \"oxinvgiveguide\": \"Gibt dem Spieler ein Item. Erst Itemname, dann Anzahl eingeben.\",",
+            "+    \"oxinvremove\": \"Item entfernen\",",
+            "+    \"oxinvremoveguide\": \"Entfernt ein Item aus dem Inventar. Erst Itemname, dann Anzahl eingeben.\",",
+            "+    \"oxinvconfiscate\": \"~r~Inventar beschlagnahmen\",",
+            "+    \"oxinvconfiscateguide\": \"Nimmt dem Spieler alle Items weg. Mit 'Inventar zurückgeben' wiederherstellbar.\",",
+            "+    \"oxinvreturn\": \"~g~Inventar zurückgeben\",",
+            "+    \"oxinvreturnguide\": \"Gibt ein zuvor beschlagnahmtes Inventar zurück.\",",
+            "+    \"oxinvinvalidamount\": \"Ungültige Anzahl.\",",
+            "+    \"oxinvnotrunning\": \"ox_inventory läuft nicht.\",",
+            "+    \"oxinvplayernotfound\": \"Spieler nicht gefunden.\",",
+            "+    \"oxinvinvaliditem\": \"Item '%s' existiert nicht.\",",
+            "+    \"oxinvcantcarry\": \"%s kann das nicht tragen (zu schwer / kein Platz).\",",
+            "+    \"oxinvnotenough\": \"%s hat nur %sx %s.\",",
+            "+    \"oxinvfailed\": \"Aktion fehlgeschlagen: %s\",",
+            "+    \"oxinvgiven\": \"%sx %s an %s gegeben.\",",
+            "+    \"oxinvremoved\": \"%sx %s von %s entfernt.\",",
+            "+    \"oxinvconfiscated\": \"Inventar von %s beschlagnahmt.\",",
+            "+    \"oxinvreturned\": \"Inventar an %s zurückgegeben.\",",
+            "+    \"oxinvlogopen\": \"**%s** hat das Inventar von **%s** geöffnet (%s).\",",
+            "+    \"oxinvloggive\": \"**%s** hat **%sx %s** an **%s** gegeben.\",",
+            "+    \"oxinvlogremove\": \"**%s** hat **%sx %s** von **%s** entfernt.\",",
+            "+    \"oxinvlogconfiscate\": \"**%s** hat das Inventar von **%s** beschlagnahmt.\",",
+            "+    \"oxinvlogreturn\": \"**%s** hat das Inventar an **%s** zurückgegeben.\",",
+            "+",
+            "+    \"oxinvvehicle\": \"Fahrzeug-Inventar\",",
+            "+    \"oxinvvehicleguide\": \"Öffnet Kofferraum oder Handschuhfach des Fahrzeugs, in dem der Spieler sitzt (sonst das nächste im Umkreis von 15m). Ohne Schloss- und Distanzprüfung.\",",
+            "+    \"oxinvtrunk\": \"Kofferraum\",",
+            "+    \"oxinvglovebox\": \"Handschuhfach\",",
+            "+    \"oxinvnovehicle\": \"%s sitzt in keinem Fahrzeug und es ist keins in der Nähe.\",",
+            "+    \"oxinvvehiclefailed\": \"Fahrzeug-Inventar von %s konnte nicht geöffnet werden (keins für diese Fahrzeugklasse?).\",",
+            "+    \"oxinvvehicleopened\": \"Fahrzeug-Inventar von %s geöffnet.\",",
+            "+    \"oxinvvehicleopenednear\": \"Spieler sitzt in keinem Fahrzeug – nächstes Fahrzeug %s geöffnet.\",",
+            "+    \"oxinvlogvehicle\": \"**%s** hat %s von **%s** geöffnet (Spieler **%s**).\",",
+            "+    \"oxstashes\": \"~o~[OX]~s~ Stashes\",",
+            "+    \"oxstashesguide\": \"Lager (Stashes) von Fraktionen, Häusern usw. öffnen.\",",
+            "+    \"oxstashopen\": \"Stash öffnen (Name eingeben)\",",
+            "+    \"oxstashopenguide\": \"Erst Stash-Name, dann optional Besitzer (Identifier) eingeben. Besitzer leer lassen bei gemeinsamen Lagern.\",",
+            "+    \"oxstashsearch\": \"Stashes durchsuchen\",",
+            "+    \"oxstashsearchguide\": \"Sucht in der Datenbank nach Stash-Name oder Besitzer. Leer lassen für alle (max. 50).\",",
+            "+    \"oxstashresults\": \"Suchergebnisse\",",
+            "+    \"oxstashnoresults\": \"Keine Treffer\",",
+            "+    \"oxstashowner\": \"Besitzer: %s\",",
+            "+    \"oxstashshared\": \"Gemeinsames Lager (kein Besitzer)\",",
+            "+    \"oxstashnotfound\": \"Stash '%s' konnte nicht geöffnet werden (nicht registriert oder falscher Besitzer).\",",
+            "+    \"oxstashlogopen\": \"**%s** hat den Stash **%s** geöffnet.\",",
+            "+",
+            "+    \"laseritem\": \"~r~Laser~s~ (Entities löschen)\",",
+            "+    \"laserguide\": \"Zielen und mit [E] oder Linksklick Fahrzeuge, Objekte und NPCs für alle löschen. [X] beendet den Laser. Auch per Taste belegbar (Einstellungen > Tastenbelegung > FiveM).\",",
+            "+    \"laserrestore\": \"Gelöschte Map-Objekte wiederherstellen\",",
+            "+    \"laserrestoreguide\": \"Macht alle per Laser ausgeblendeten Map-Objekte (z. B. Zäune, Laternen) für alle wieder sichtbar.\","
+          ]
+        },
+        {
+          "path": "resources/[esx_addons]/EasyAdmin/language/en.json",
+          "status": "M",
+          "lines": [
+            "-    \"screenreaderspeedguide\":\"Adjusts the speed of the text-to-speech feature.\"",
+            "+    \"screenreaderspeedguide\":\"Adjusts the speed of the text-to-speech feature.\",",
+            "+    \"oxinventory\": \"~o~[OX]~s~ Inventory\",",
+            "+    \"oxinventoryguide\": \"Inventory tools for this player (ox_inventory).\",",
+            "+    \"oxinvopen\": \"Open Inventory\",",
+            "+    \"oxinvopenguide\": \"Opens the player's inventory for editing or read-only viewing.\",",
+            "+    \"oxinvedit\": \"Edit\",",
+            "+    \"oxinvview\": \"View only\",",
+            "+    \"oxinvgive\": \"Give Item\",",
+            "+    \"oxinvgiveguide\": \"Gives the player an item. Enter item name, then amount.\",",
+            "+    \"oxinvremove\": \"Remove Item\",",
+            "+    \"oxinvremoveguide\": \"Removes an item from the inventory. Enter item name, then amount.\",",
+            "+    \"oxinvconfiscate\": \"~r~Confiscate Inventory\",",
+            "+    \"oxinvconfiscateguide\": \"Takes away all items. Can be restored with 'Return Inventory'.\",",
+            "+    \"oxinvreturn\": \"~g~Return Inventory\",",
+            "+    \"oxinvreturnguide\": \"Returns a previously confiscated inventory.\",",
+            "+    \"oxinvinvalidamount\": \"Invalid amount.\",",
+            "+    \"oxinvnotrunning\": \"ox_inventory is not running.\",",
+            "+    \"oxinvplayernotfound\": \"Player not found.\",",
+            "+    \"oxinvinvaliditem\": \"Item '%s' does not exist.\",",
+            "+    \"oxinvcantcarry\": \"%s cannot carry that (too heavy / no space).\",",
+            "+    \"oxinvnotenough\": \"%s only has %sx %s.\",",
+            "+    \"oxinvfailed\": \"Action failed: %s\",",
+            "+    \"oxinvgiven\": \"Gave %sx %s to %s.\",",
+            "+    \"oxinvremoved\": \"Removed %sx %s from %s.\",",
+            "+    \"oxinvconfiscated\": \"Confiscated inventory of %s.\",",
+            "+    \"oxinvreturned\": \"Returned inventory to %s.\",",
+            "+    \"oxinvlogopen\": \"**%s** opened the inventory of **%s** (%s).\",",
+            "+    \"oxinvloggive\": \"**%s** gave **%sx %s** to **%s**.\",",
+            "+    \"oxinvlogremove\": \"**%s** removed **%sx %s** from **%s**.\",",
+            "+    \"oxinvlogconfiscate\": \"**%s** confiscated the inventory of **%s**.\",",
+            "+    \"oxinvlogreturn\": \"**%s** returned the inventory to **%s**.\",",
+            "+",
+            "+    \"oxinvvehicle\": \"Vehicle Inventory\",",
+            "+    \"oxinvvehicleguide\": \"Opens trunk or glovebox of the vehicle the player is in (otherwise the closest one within 15m). No lock or distance checks.\",",
+            "+    \"oxinvtrunk\": \"Trunk\",",
+            "+    \"oxinvglovebox\": \"Glovebox\",",
+            "+    \"oxinvnovehicle\": \"%s is not in a vehicle and none is nearby.\",",
+            "+    \"oxinvvehiclefailed\": \"Could not open vehicle inventory of %s (none for this vehicle class?).\",",
+            "+    \"oxinvvehicleopened\": \"Opened vehicle inventory of %s.\",",
+            "+    \"oxinvvehicleopenednear\": \"Player is not in a vehicle - opened closest vehicle %s.\",",
+            "+    \"oxinvlogvehicle\": \"**%s** opened %s of **%s** (player **%s**).\",",
+            "+    \"oxstashes\": \"~o~[OX]~s~ Stashes\",",
+            "+    \"oxstashesguide\": \"Open stashes of factions, houses etc.\",",
+            "+    \"oxstashopen\": \"Open Stash (enter name)\",",
+            "+    \"oxstashopenguide\": \"Enter stash name, then optionally the owner (identifier). Leave owner empty for shared stashes.\",",
+            "+    \"oxstashsearch\": \"Search Stashes\",",
+            "+    \"oxstashsearchguide\": \"Searches the database for stash name or owner. Leave empty for all (max. 50).\",",
+            "+    \"oxstashresults\": \"Search Results\",",
+            "+    \"oxstashnoresults\": \"No results\",",
+            "+    \"oxstashowner\": \"Owner: %s\",",
+            "+    \"oxstashshared\": \"Shared stash (no owner)\",",
+            "+    \"oxstashnotfound\": \"Could not open stash '%s' (not registered or wrong owner).\",",
+            "+    \"oxstashlogopen\": \"**%s** opened stash **%s**.\",",
+            "+",
+            "+    \"laseritem\": \"~r~Laser~s~ (delete entities)\",",
+            "+    \"laserguide\": \"Aim and press [E] or left click to delete vehicles, objects and NPCs for everyone. [X] turns the laser off. Can also be bound to a key (Settings > Key Bindings > FiveM).\",",
+            "+    \"laserrestore\": \"Restore deleted map objects\",",
+            "+    \"laserrestoreguide\": \"Makes all map objects hidden by the laser (e.g. fences, lamps) visible again for everyone.\",",
+            "+    \"laserhelp\": \"~r~[E]/Left click~s~ Delete   ~b~[X]~s~ Laser off\","
+          ]
+        }
+      ]
     }
   ]
 }
