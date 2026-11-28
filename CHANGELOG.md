@@ -2,6 +2,109 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-28 15:23 Uhr
+**+2** neu · **~6** geändert · **-8** gelöscht
+`+ resources/[lb]/lb-phone/migrate_fixed_numbers.sql`
+```diff
++ Neue Datei
+```
+`+ resources/[lb]/lb-phone/server/custom/frameworks/esx/nameNumbers.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[brutal]/brutal_ambulancejob/sv_utils.lua`
+```diff
+-local YourWebhook = 'https://discord.com/api/webhooks/1433556978243862619/***'  -- help: https://docs.brutalscripts.com/site/others/discord-webhook
+-
+-function GetWebhook()
+-    return YourWebhook
+-end
+-
+-function notification(source, title, text, time, type)
+-    if Config.BrutalNotify then
+-        TriggerClientEvent('brutal_notify:SendAlert', source, title, text, time, type)
+-    else
+```
+`~ resources/[lb]/lb-phone/client/custom/frameworks/esx/esx.lua`
+```diff
++        if not Config.Item.Unique then
++            AwaitCallback("nameNumber:sync")
++        end
++
++if not Config.Item.Unique then
++    AwaitCallback("nameNumber:sync") -- hand over the number of a deleted character with the same name before the phone loads
++end
++
+```
+`~ resources/[lb]/lb-phone/client/custom/frameworks/esx/item.lua`
+```diff
++-- Reload the phone when the player receives a phone item again (no relog needed)
++if Config.Item.Require and not Config.Item.Unique then
++    local hadPhoneItem
++    local reloading = false
++
++    CreateThread(function()
++        while not FrameworkLoaded do
++            Wait(500)
++        end
++
+```
+`~ resources/[lb]/lb-phone/config/config.lua`
+```diff
+-Config.Item.Unique = true -- should each phone be unique? https://docs.lbscripts.com/phone/configuration/#unique-phones
++Config.Item.Unique = false -- should each phone be unique? https://docs.lbscripts.com/phone/configuration/#unique-phones
+```
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"categoryId":"1551161549018759170","updatedAt":"2026-11-28T09:00:37Z","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"doors":{"webhookId":"1559665847771988080","channelId":"15596658453309
++{"webhooks":{"doors":{"webhookId":"1559665847771988080","channelId":"1559665845330907296","url":"https://discord.com/api/webhooks/1559665847771988080/***"},"lager":{"webhookId":"1551161582942158879","channelId":"1551161580324921455","url":"https://discord.com/api/webhooks/1551161582942158879/***"},
+```
+`~ resources/[selfcode]/rmc_core/server/ausbluten.lua`
+```diff
++-- ox_inventory:GetInventoryItems() liefert Items nach Slot-Nummer (z.B. [1], [2], [5], [9]).
++-- Solche Tabellen haben Lücken: # und ipairs brechen am ersten leeren Slot ab.
++-- Aus der DB kommen alte Einträge evtl. als Objekt ({"1":..,"5":..}) oder mit null-Lücken.
++-- Hier wird alles in eine lückenlose Liste { {name, count, metadata}, ... } umgewandelt.
++local function NormalizeItems(items)
++    local list = {}
++    if type(items) ~= 'table' then return list end
++
++    local keys = {}
++    for k in pairs(items) do keys[#keys + 1] = k end
+```
+`− resources/[selfcode]/tms-refund/README.md`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/client/main.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/fxmanifest.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/install.sql`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/server/bot.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/server/bot_config.lua`
+```diff
+- Gelöscht
+```
+`− resources/[selfcode]/tms-refund/server/main.lua`
+```diff
+- Gelöscht
+```
+
 ## 2026-11-28 14:23 Uhr
 **+8** neu · **~2** geändert · **-0** gelöscht
 `+ resources/[selfcode]/tms-refund/README.md`
@@ -803,36 +906,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 ```diff
 -{"categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/a
 +{"webhooks":{"esx":{"webhookId":"1557386326951592027","url":"https://discord.com/api/webhooks/1557386326951592027/***","channelId":"1420103430562910370"},"hotdog":{"webhookId":"1474547103081566412","url":"https://discord.com/api/webhooks/1474547103081566412/***","channelId":"1474547082076622979"},"
-```
-
-## 2026-11-23 22:23 Uhr
-**+2** neu · **~1** geändert · **-2** gelöscht
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_06_23_11_2026.json`
-```diff
-+ Neue Datei
-```
-`+ resources/[esx_addons]/EasyAdmin/backups/banlist_22_09_23_11_2026.json`
-```diff
-+ Neue Datei
-```
-`~ resources/[esx_addons]/EasyAdmin/backups/_backups.json`
-```diff
--            "backupFile": "banlist_21_51_18_11_2026.json",
--            "id": 11,
--            "backupDate": "21_51_18_11_2026",
--            "backupTimestamp": 1795035117
--        },
--        {
--            "backupFile": "banlist_21_54_18_11_2026.json",
--            "id": 11,
--            "backupDate": "21_54_18_11_2026",
--            "backupTimestamp": 1795035242
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_51_18_11_2026.json`
-```diff
-- Gelöscht
-```
-`− resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_18_11_2026.json`
-```diff
-- Gelöscht
 ```

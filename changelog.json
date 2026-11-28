@@ -79192,6 +79192,313 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-28T15:23:07+01:00",
+      "initial": false,
+      "counts": {
+        "added": 2,
+        "modified": 6,
+        "deleted": 8,
+        "total": 77614
+      },
+      "truncated": false,
+      "added": [
+        "resources/[lb]/lb-phone/migrate_fixed_numbers.sql",
+        "resources/[lb]/lb-phone/server/custom/frameworks/esx/nameNumbers.lua"
+      ],
+      "modified": [
+        "resources/[brutal]/brutal_ambulancejob/sv_utils.lua",
+        "resources/[lb]/lb-phone/client/custom/frameworks/esx/esx.lua",
+        "resources/[lb]/lb-phone/client/custom/frameworks/esx/item.lua",
+        "resources/[lb]/lb-phone/config/config.lua",
+        "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+        "resources/[selfcode]/rmc_core/server/ausbluten.lua"
+      ],
+      "deleted": [
+        "resources/[selfcode]/tms-refund/README.md",
+        "resources/[selfcode]/tms-refund/client/main.lua",
+        "resources/[selfcode]/tms-refund/config.lua",
+        "resources/[selfcode]/tms-refund/fxmanifest.lua",
+        "resources/[selfcode]/tms-refund/install.sql",
+        "resources/[selfcode]/tms-refund/server/bot.lua",
+        "resources/[selfcode]/tms-refund/server/bot_config.lua",
+        "resources/[selfcode]/tms-refund/server/main.lua"
+      ],
+      "diffs": [
+        {
+          "path": "resources/[lb]/lb-phone/migrate_fixed_numbers.sql",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[lb]/lb-phone/server/custom/frameworks/esx/nameNumbers.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[brutal]/brutal_ambulancejob/sv_utils.lua",
+          "status": "M",
+          "lines": [
+            "-local YourWebhook = 'https://discord.com/api/webhooks/1433556978243862619/***'  -- help: https://docs.brutalscripts.com/site/others/discord-webhook",
+            "-",
+            "-function GetWebhook()",
+            "-    return YourWebhook",
+            "-end",
+            "-",
+            "-function notification(source, title, text, time, type)",
+            "-    if Config.BrutalNotify then",
+            "-        TriggerClientEvent('brutal_notify:SendAlert', source, title, text, time, type)",
+            "-    else",
+            "-        TriggerClientEvent('brutal_ambulancejob:client:DefaultNotify', source, text)",
+            "-    end",
+            "-end",
+            "-",
+            "-local function sendDiscordEmbed(webhookUrl, embed)",
+            "-\tif not webhookUrl or webhookUrl == '' then return end",
+            "-",
+            "-\tlocal payload = {",
+            "-\t\tusername = 'Ambulance Logs',",
+            "-\t\tavatar_url = nil,",
+            "-\t\tembeds = { embed }",
+            "-\t}",
+            "-",
+            "-\tPerformHttpRequest(webhookUrl, function() end, 'POST', json.encode(payload), { ['Content-Type'] = 'application/json' })",
+            "-end",
+            "-",
+            "-",
+            "-",
+            "-local function TMSSaveRefund(source, reason)",
+            "-    if GetResourceState('tms-refund') ~= 'started' then",
+            "-        print(\"^3[tms-refund]^7 Resource 'tms-refund' ist nicht gestartet - kein Refund gespeichert!\")",
+            "-        return false",
+            "-    end",
+            "-    local ok, refundId = pcall(function()",
+            "-        return exports['tms-refund']:SaveInventory(source, reason or 'death')",
+            "-    end)",
+            "-    if ok and refundId then",
+            "-        print(\"^2[tms-refund]^7 Refund #\" .. tostring(refundId) .. \" für \" .. GetPlayerName(source) .. \" (ID: \" .. source .. \") gespeichert\")",
+            "-        return refundId",
+            "-    end",
+            "-    if not ok then",
+            "-        print(\"^1[tms-refund]^7 FEHLER bei SaveInventory für \" .. GetPlayerName(source) .. \" (ID: \" .. source .. \"): \" .. tostring(refundId))",
+            "-    end",
+            "-    return false",
+            "-end",
+            "-",
+            "-local function RMCInsuranceClear(source)",
+            "-    if GetResourceState('rmc_core') ~= 'started' then return false end",
+            "-",
+            "-    local ok, coverage = pcall(function()",
+            "-        return exports['rmc_core']:GetInsuranceCoverage(source)",
+            "-    end)",
+            "-    if not ok or type(coverage) ~= 'table' or not coverage.active then",
+            "-        return false",
+            "-    end",
+            "-",
+            "-    local isOx = Config.Inventory:lower() == 'ox_inventory'",
+            "-    local items = {}",
+            "-    if isOx then",
+            "-        items = exports.ox_inventory:GetInventoryItems(source) or {}"
+          ]
+        },
+        {
+          "path": "resources/[lb]/lb-phone/client/custom/frameworks/esx/esx.lua",
+          "status": "M",
+          "lines": [
+            "+        if not Config.Item.Unique then",
+            "+            AwaitCallback(\"nameNumber:sync\")",
+            "+        end",
+            "+",
+            "+if not Config.Item.Unique then",
+            "+    AwaitCallback(\"nameNumber:sync\") -- hand over the number of a deleted character with the same name before the phone loads",
+            "+end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[lb]/lb-phone/client/custom/frameworks/esx/item.lua",
+          "status": "M",
+          "lines": [
+            "+-- Reload the phone when the player receives a phone item again (no relog needed)",
+            "+if Config.Item.Require and not Config.Item.Unique then",
+            "+    local hadPhoneItem",
+            "+    local reloading = false",
+            "+",
+            "+    CreateThread(function()",
+            "+        while not FrameworkLoaded do",
+            "+            Wait(500)",
+            "+        end",
+            "+",
+            "+        Wait(2000)",
+            "+        hadPhoneItem = HasPhoneItem()",
+            "+    end)",
+            "+",
+            "+    AddEventHandler(\"ox_inventory:itemCount\", function(itemName)",
+            "+        if hadPhoneItem == nil or reloading or not IsItemAPhone(itemName) then",
+            "+            return",
+            "+        end",
+            "+",
+            "+        reloading = true",
+            "+        Wait(500)",
+            "+",
+            "+        local hasPhoneItem = HasPhoneItem()",
+            "+",
+            "+        if hasPhoneItem and not hadPhoneItem then",
+            "+            debugprint(\"Phone item received, reloading phone\")",
+            "+            ReloadPhone()",
+            "+        end",
+            "+",
+            "+        hadPhoneItem = hasPhoneItem",
+            "+        reloading = false",
+            "+    end)",
+            "+end",
+            "+"
+          ]
+        },
+        {
+          "path": "resources/[lb]/lb-phone/config/config.lua",
+          "status": "M",
+          "lines": [
+            "-Config.Item.Unique = true -- should each phone be unique? https://docs.lbscripts.com/phone/configuration/#unique-phones",
+            "+Config.Item.Unique = false -- should each phone be unique? https://docs.lbscripts.com/phone/configuration/#unique-phones"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/data/discord_webhooks.json",
+          "status": "M",
+          "lines": [
+            "-{\"categoryId\":\"1551161549018759170\",\"updatedAt\":\"2026-11-28T09:00:37Z\",\"webhooks\":{\"esx_chat\":{\"webhookId\":\"1557386337580220497\",\"channelId\":\"1557386335512305664\",\"url\":\"https://discord.com/api/webhooks/1557386337580220497/***\"},\"doors\":{\"webhookId\":\"1559665847771988080\",\"channelId\":\"15596658453309",
+            "+{\"webhooks\":{\"doors\":{\"webhookId\":\"1559665847771988080\",\"channelId\":\"1559665845330907296\",\"url\":\"https://discord.com/api/webhooks/1559665847771988080/***\"},\"lager\":{\"webhookId\":\"1551161582942158879\",\"channelId\":\"1551161580324921455\",\"url\":\"https://discord.com/api/webhooks/1551161582942158879/***\"},"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/rmc_core/server/ausbluten.lua",
+          "status": "M",
+          "lines": [
+            "+-- ox_inventory:GetInventoryItems() liefert Items nach Slot-Nummer (z.B. [1], [2], [5], [9]).",
+            "+-- Solche Tabellen haben Lücken: # und ipairs brechen am ersten leeren Slot ab.",
+            "+-- Aus der DB kommen alte Einträge evtl. als Objekt ({\"1\":..,\"5\":..}) oder mit null-Lücken.",
+            "+-- Hier wird alles in eine lückenlose Liste { {name, count, metadata}, ... } umgewandelt.",
+            "+local function NormalizeItems(items)",
+            "+    local list = {}",
+            "+    if type(items) ~= 'table' then return list end",
+            "+",
+            "+    local keys = {}",
+            "+    for k in pairs(items) do keys[#keys + 1] = k end",
+            "+    table.sort(keys, function(a, b)",
+            "+        local na, nb = tonumber(a), tonumber(b)",
+            "+        if na and nb then return na < nb end",
+            "+        return tostring(a) < tostring(b)",
+            "+    end)",
+            "+",
+            "+    for _, k in ipairs(keys) do",
+            "+        local item = items[k]",
+            "+        if type(item) == 'table' and item.name then",
+            "+            local count = tonumber(item.count) or 0",
+            "+            if count > 0 then",
+            "+                list[#list + 1] = {",
+            "+                    name = item.name,",
+            "+                    count = count,",
+            "+                    metadata = (type(item.metadata) == 'table' and next(item.metadata)) and item.metadata or nil,",
+            "+                }",
+            "+            end",
+            "+        end",
+            "+    end",
+            "+    return list",
+            "+end",
+            "+",
+            "+local function DecodeItems(raw)",
+            "+    if not raw or raw == 'null' or raw == '' then return {} end",
+            "+    local ok, decoded = pcall(json.decode, raw)",
+            "+    if not ok then return {} end",
+            "+    return NormalizeItems(decoded)",
+            "+end",
+            "+",
+            "-    if not items or type(items) ~= 'table' or #items == 0 then",
+            "+    items = NormalizeItems(items)",
+            "+    if #items == 0 then",
+            "-local function RefundItemsOnline(source, items)",
+            "-    if not items or type(items) ~= 'table' then return end",
+            "+local function GiveRefundItems(target, items)",
+            "-    for _, item in ipairs(items) do",
+            "-        if item and item.name and item.count then",
+            "-            ox:AddItem(source, item.name, item.count)",
+            "+    for _, item in ipairs(NormalizeItems(items)) do",
+            "+        local ok, success, reason = pcall(function()",
+            "+            return ox:AddItem(target, item.name, item.count, item.metadata)",
+            "+        end)",
+            "+        if not ok or not success then",
+            "+            print(('^1[rmc_core]^7 Refund: %sx %s konnte nicht an %s gegeben werden (%s)'):format(",
+            "+                item.count, item.name, tostring(target), tostring(ok and reason or success)))",
+            "+local function RefundItemsOnline(source, items)",
+            "+    GiveRefundItems(source, items)",
+            "+end",
+            "+",
+            "-    if not items or type(items) ~= 'table' then return end"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/README.md",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/client/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/fxmanifest.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/install.sql",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/bot.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/bot_config.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/main.lua",
+          "status": "D",
+          "lines": [
+            "- Gelöscht"
+          ]
+        }
+      ]
     }
   ]
 }
