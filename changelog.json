@@ -79032,6 +79032,166 @@
           ]
         }
       ]
+    },
+    {
+      "time": "2026-11-28T14:23:12+01:00",
+      "initial": false,
+      "counts": {
+        "added": 8,
+        "modified": 2,
+        "deleted": 0,
+        "total": 77620
+      },
+      "truncated": false,
+      "added": [
+        "resources/[selfcode]/tms-refund/README.md",
+        "resources/[selfcode]/tms-refund/client/main.lua",
+        "resources/[selfcode]/tms-refund/config.lua",
+        "resources/[selfcode]/tms-refund/fxmanifest.lua",
+        "resources/[selfcode]/tms-refund/install.sql",
+        "resources/[selfcode]/tms-refund/server/bot.lua",
+        "resources/[selfcode]/tms-refund/server/bot_config.lua",
+        "resources/[selfcode]/tms-refund/server/main.lua"
+      ],
+      "modified": [
+        "resources/[brutal]/brutal_ambulancejob/config.lua",
+        "resources/[brutal]/brutal_ambulancejob/sv_utils.lua"
+      ],
+      "deleted": [],
+      "diffs": [
+        {
+          "path": "resources/[selfcode]/tms-refund/README.md",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/client/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/fxmanifest.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/install.sql",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/bot.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/bot_config.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[selfcode]/tms-refund/server/main.lua",
+          "status": "A",
+          "lines": [
+            "+ Neue Datei"
+          ]
+        },
+        {
+          "path": "resources/[brutal]/brutal_ambulancejob/config.lua",
+          "status": "M",
+          "lines": [
+            "-    DeathTime = 900, -- time til respawn is available",
+            "-    WaitTime = 100,   -- time til the player bleeds out",
+            "+    DeathTime = 2, -- time til respawn is available",
+            "+    WaitTime = 2,   -- time til the player bleeds out"
+          ]
+        },
+        {
+          "path": "resources/[brutal]/brutal_ambulancejob/sv_utils.lua",
+          "status": "M",
+          "lines": [
+            "-local YourWebhook = 'https://discord.com/api/webhooks/1433556978243862619/***'  -- help: https://docs.brutalscripts.com/site/others/discord-webhook\r",
+            "-\r",
+            "-function GetWebhook()\r",
+            "-    return YourWebhook\r",
+            "-end\r",
+            "-\r",
+            "-function notification(source, title, text, time, type)\r",
+            "-    if Config.BrutalNotify then\r",
+            "-        TriggerClientEvent('brutal_notify:SendAlert', source, title, text, time, type)\r",
+            "-    else\r",
+            "-        TriggerClientEvent('brutal_ambulancejob:client:DefaultNotify', source, text)\r",
+            "-    end\r",
+            "-end\r",
+            "-\r",
+            "-local function sendDiscordEmbed(webhookUrl, embed)\r",
+            "-\tif not webhookUrl or webhookUrl == '' then return end\r",
+            "-\r",
+            "-\tlocal payload = {\r",
+            "-\t\tusername = 'Ambulance Logs',\r",
+            "-\t\tavatar_url = nil,\r",
+            "-\t\tembeds = { embed }\r",
+            "-\t}\r",
+            "-\r",
+            "-\tPerformHttpRequest(webhookUrl, function() end, 'POST', json.encode(payload), { ['Content-Type'] = 'application/json' })\r",
+            "-end\r",
+            "-\r",
+            "-\r",
+            "-\r",
+            "-local function RMCInsuranceClear(source)\r",
+            "-    if GetResourceState('rmc_core') ~= 'started' then return false end\r",
+            "-\r",
+            "-    local ok, coverage = pcall(function()\r",
+            "-        return exports['rmc_core']:GetInsuranceCoverage(source)\r",
+            "-    end)\r",
+            "-    if not ok or type(coverage) ~= 'table' or not coverage.active then\r",
+            "-        return false\r",
+            "-    end\r",
+            "-\r",
+            "-    local isOx = Config.Inventory:lower() == 'ox_inventory'\r",
+            "-    local items = {}\r",
+            "-    if isOx then\r",
+            "-        items = exports.ox_inventory:GetInventoryItems(source) or {}\r",
+            "-    end\r",
+            "-\r",
+            "-    local function report(kept, lost)\r",
+            "-        pcall(function()\r",
+            "-            exports['rmc_core']:ReportInsuranceClaim(source, { kept = kept, lost = lost, reason = 'Tod' })\r",
+            "-        end)\r",
+            "-    end\r",
+            "-\r",
+            "-    local total = 0\r",
+            "-    for _ in pairs(items) do total = total + 1 end\r",
+            "-\r",
+            "-    if coverage.keepAll then\r",
+            "-        print(\"^2[rmc_core]^7 Versicherung '\" .. tostring(coverage.name) .. \"': Inventar von \" .. GetPlayerName(source) .. \" (ID: \" .. source .. \") wird NICHT geleert!\")\r",
+            "-        report(total, 0)\r",
+            "-        return true\r",
+            "-    end\r",
+            "-\r",
+            "-    if not isOx then return false end\r"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2,6 +2,61 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-28 14:23 Uhr
+**+8** neu · **~2** geändert · **-0** gelöscht
+`+ resources/[selfcode]/tms-refund/README.md`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/client/main.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/fxmanifest.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/install.sql`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/server/bot.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/server/bot_config.lua`
+```diff
++ Neue Datei
+```
+`+ resources/[selfcode]/tms-refund/server/main.lua`
+```diff
++ Neue Datei
+```
+`~ resources/[brutal]/brutal_ambulancejob/config.lua`
+```diff
+-    DeathTime = 900, -- time til respawn is available
+-    WaitTime = 100,   -- time til the player bleeds out
++    DeathTime = 2, -- time til respawn is available
++    WaitTime = 2,   -- time til the player bleeds out
+```
+`~ resources/[brutal]/brutal_ambulancejob/sv_utils.lua`
+```diff
+-local YourWebhook = 'https://discord.com/api/webhooks/1433556978243862619/***'  -- help: https://docs.brutalscripts.com/site/others/discord-webhook
+-
+-function GetWebhook()
+-    return YourWebhook
+-end
+-
+-function notification(source, title, text, time, type)
+-    if Config.BrutalNotify then
+-        TriggerClientEvent('brutal_notify:SendAlert', source, title, text, time, type)
+-    else
+```
+
 ## 2026-11-28 10:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -780,21 +835,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `− resources/[esx_addons]/EasyAdmin/backups/banlist_21_54_18_11_2026.json`
 ```diff
 - Gelöscht
-```
-
-## 2026-11-23 21:23 Uhr
-**+0** neu · **~3** geändert · **-0** gelöscht
-`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
-```diff
--{"webhooks":{"einreise":{"webhookId":"1552971088328392714","url":"https://discord.com/api/webhooks/1552971088328392714/***","channelId":"1552971085937381431"},"esx_paycheck":{"webhookId":"1557386357381533816","url":"https://discord.com/api/webhooks/1557386357381533816/***","channelId":"155738635222
-+{"categoryId":"1551161549018759170","webhooks":{"poster":{"channelId":"1560007812342489120","webhookId":"1560007815156998144","url":"https://discord.com/api/webhooks/1560007815156998144/***"},"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/a
-```
-`~ resources/[selfcode]/rmc_core/server/discord_config.lua`
-```diff
--    Token = '***TOKEN***',
-+    Token = '***TOKEN***',
-```
-`~ server.cfg`
-```diff
-(Secrets — Inhalt unterdrückt)
 ```
