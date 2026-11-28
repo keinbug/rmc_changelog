@@ -2,6 +2,14 @@
 
 Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 
+## 2026-11-28 10:22 Uhr
+**+0** neu · **~1** geändert · **-0** gelöscht
+`~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
+```diff
+-{"webhooks":{"txadmin":{"channelId":"1552989823604756600","webhookId":"1552989826213617715","url":"https://discord.com/api/webhooks/1552989826213617715/***"},"esx_useractions":{"channelId":"1557386339866120252","webhookId":"1557386342755991582","url":"https://discord.com/api/webhooks/15573863427559
++{"categoryId":"1551161549018759170","updatedAt":"2026-11-28T09:00:37Z","webhooks":{"esx_chat":{"webhookId":"1557386337580220497","channelId":"1557386335512305664","url":"https://discord.com/api/webhooks/1557386337580220497/***"},"doors":{"webhookId":"1559665847771988080","channelId":"15596658453309
+```
+
 ## 2026-11-28 00:22 Uhr
 **+0** neu · **~1** geändert · **-0** gelöscht
 `~ resources/[selfcode]/rmc_core/data/discord_webhooks.json`
@@ -789,79 +797,4 @@ Automatisch generiert aus `/home/FiveM` — stündlich aktualisiert.
 `~ server.cfg`
 ```diff
 (Secrets — Inhalt unterdrückt)
-```
-
-## 2026-11-23 20:23 Uhr
-**+0** neu · **~7** geändert · **-0** gelöscht
-`~ resources/[oresmon]/0r-radio/client/events.lua`
-```diff
--playerSpawned = false
--PlayerData = {}
--AddEventHandler('onResourceStart', function(resource)
--    if resource ~= GetCurrentResourceName() then
--        return
--    end
--    local startTime = GetGameTimer()
--    while not CoreReady do 
--        Citizen.Wait(100)
--        if GetGameTimer() - startTime > 5000 then
-```
-`~ resources/[oresmon]/0r-radio/server/server.lua`
-```diff
--local SpawnedObjects = {}
--local UsedObjectIds = {}
--local PlayerChannels = {} -- Server-side fallback tracker for SaltyChat
--
--RegisterUseableItem2(Config.RadioItem)
--if Config.JammerSettings.available then
--    RegisterUseableItem(Config.JammerSettings.item_name)
--end
--
--RegisterNetEvent('0R-radio:server:SetPlayerChannel', function(channel)
-```
-`~ resources/[oresmon]/0r-radio/web/build/assets/index-8e4836f8.css`
-```diff
-+.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}.members-list-box>div{max-height:18
-+.text-\[\#FFD60A\]{--tw-text-opacity:1;color:rgb(255 214 10/var(--tw-text-opacity))}
-```
-`~ resources/[oresmon]/0r-radio/web/build/assets/index-b4b884cd.js`
-```diff
--`,e.getElementsByTagName("head")[0].appendChild(t)),e.body&&Yc(e.body,"react-draggable-transparent-selection")}function F2(e){if(e)try{if(e.body&&Xc(e.body,"react-draggable-transparent-selection"),e.selection)e.selection.empty();else{const t=(e.defaultView||window).getSelection();t&&t.type!=="Caret
-+`,e.getElementsByTagName("head")[0].appendChild(t)),e.body&&Yc(e.body,"react-draggable-transparent-selection")}function F2(e){if(e)try{if(e.body&&Xc(e.body,"react-draggable-transparent-selection"),e.selection)e.selection.empty();else{const t=(e.defaultView||window).getSelection();t&&t.type!=="Caret
-```
-`~ resources/[oresmon]/0r-radio/web/src/components/MemberList/index.tsx`
-```diff
-+import "../Radio/index.css";
--        const position = localStorage.getItem("membersMenuPosition");
-+        const position = localStorage.getItem("membersMenuPositionV3");
--        localStorage.removeItem("membersMenuPosition");
-+        localStorage.removeItem("membersMenuPositionV3");
--        localStorage.setItem("membersMenuPosition", JSON.stringify({ x: data.x, y: data.y }));
-+        localStorage.setItem("membersMenuPositionV3", JSON.stringify({ x: data.x, y: data.y }));
--        <>
-+        <div className="members-list-anchor">
--                <Transition unmount={false} show={visible} as={Fragment} enter="transition-all duration-300 ease-out" enterFrom="bottom-[-70%] opacity-0" enterTo="bottom-[5vh] opacity-1" leave="transition-all duration-300 ease-in" leaveFrom="bottom-[5vh] opacity-1" leaveTo="bottom-[-70%] opacity-0"
-```
-`~ resources/[oresmon]/0r-radio/web/src/components/Radio/index.css`
-```diff
-+
-+/* Members list: mittig links */
-+.members-list-anchor{position:absolute;top:0;bottom:0;left:29px;display:flex;align-items:center;pointer-events:none;z-index:120}
-+.members-list-box{position:relative;pointer-events:auto;width:135px;max-height:185px;overflow:hidden;display:flex;flex-direction:column}
-+.members-list-box>div{max-height:185px}
-+.members-list-box .overflow-auto{min-height:0}
-+
-```
-`~ resources/[sprache]/saltychat/client/client_open.lua`
-```diff
--function onRadioStart()
--
--end
--
--function onRadioEnd()
--
--end
--
--function skipRadioChecks()
--    local state = LocalPlayer.state
 ```
